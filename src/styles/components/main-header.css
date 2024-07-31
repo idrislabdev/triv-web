@@ -1,0 +1,26 @@
+.main-header {
+    @apply fixed top-0 inset-x-0 flex items-center justify-between py-[24px] px-[100px] z-10;
+    &.active {
+        @apply bg-white text-black;
+    }
+    .main-header-menu {
+        ul {
+            @apply flex gap-[30px];
+            li {
+                @apply text-[14px]/[21px] font-medium;
+            }
+        }
+    }
+    .main-header-action {
+        @apply flex items-center gap-[20px];
+        .main-header-action-list {
+            ul {
+                @apply flex gap-[20px] items-center;
+                li {
+                    @apply text-[14px]/[21px] font-medium;
+                }
+
+            }
+        }
+    }
+}

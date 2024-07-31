@@ -1,0 +1,272 @@
+.home-banner-section {
+    @apply  h-[750px] pt-[150px] relative;
+    background: linear-gradient(to bottom, transparent,#76DAC7) #5E9CB2;
+
+
+    .home-banner-section-area {
+        @apply flex px-[100px] gap-[10px];
+        .section-text {
+            @apply flex flex-col w-2/3 gap-[40px] z-[1];
+            h1 {
+                @apply text-[44px]/[70px] text-white font-medium;
+            }
+            p {
+                @apply text-[16px]/[32px] text-white font-medium;
+            }
+            a {
+                @apply bg-white text-[#71BBED] text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
+            }
+            .section-terdaftar {
+                @apply flex gap-[30px] items-center;
+                label  {
+                    @apply text-[16px]/[32px] text-white font-medium;
+                }
+                .terdaftar-list-logo {
+                    @apply flex gap-[14px];
+                    
+                }
+            }
+        }
+        .section-device {
+            @apply flex-1 relative z-[1];
+            .device-macbook {
+                @apply w-[556px]
+            }
+            .device-iphone {
+                @apply w-[189px] absolute top-[100px];
+            }
+        }
+        &::after {
+            content: '';
+            @apply absolute right-0 bottom-0 w-[830px] h-[575px];
+            background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
+        }
+    }
+}
+
+.home-assets-crypto-section {
+    @apply px-[100px] py-[60px] flex flex-col gap-[40px];
+    .crypto-section-title {
+        @apply flex justify-between items-center;
+        h2 {
+            @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        a {
+            @apply text-[14px]/[21px] font-medium text-neutral-900;
+        }
+    }
+    .crypto-section-thumbs {
+        @apply flex gap-[20px] justify-between;
+        .asset-crypto-thumb {
+            @apply border rounded-[14px] border-neutral-200 flex flex-col justify-between px-[20px] py-[16px] h-[140px];
+            .crypto-thumb-top {
+                @apply flex gap-[14px] items-center;
+                .icon-thumb-top {
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+                label {
+                    @apply text-[14px]/[21px] font-bold text-neutral-900;
+                }
+            }
+            .crypto-thumb-bottom {
+                @apply flex flex-col gap-[5px];
+                label {
+                    &.thumb-bottom-idr {
+                        @apply text-[14px]/[21px] font-medium text-neutral-900;
+                    }
+                    &.thumb-bottom-index {
+                        @apply text-[12px]/[18px] font-medium text-primary;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-rancang-section {
+    @apply flex items-center px-[100px] py-[60px] relative;
+    .home-rancang-device {
+        @apply w-1/2 relative flex flex-col items-center;
+        img {
+            width: 492px;
+            height: 407px;
+        }
+        &::after {
+            content: '';
+            @apply absolute bottom-[-50px] w-[642px] h-[642px] z-[-1];
+            background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
+        }
+    }
+    .home-rancang-description {
+        @apply flex flex-col gap-[60px] w-1/2 justify-center items-center text-center;
+        h2 {
+            @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        .rancang-description-details {
+            @apply flex flex-col gap-[40px];
+            .rancang-description-detail {
+                @apply flex flex-col gap-[10px] w-1/2 justify-center text-center items-center;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+                h5 {
+                    @apply text-[16px]/[24px] font-semibold text-neutral-900;
+                }
+                p {
+                    @apply text-[12px]/[18px] font-medium text-neutral-900;
+                }
+            }
+        }
+    }
+}
+
+.home-investasi-section {
+    @apply flex flex-col items-center px-[100px] py-[60px] relative;
+    .investasi-section-box {
+        @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] gap-[60px] relative;
+        h2 {
+            @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        .investasi-details {
+            @apply flex gap-[100px];
+            .investasi-detail {
+                @apply flex flex-col items-center gap-[30px];
+                .investasi-detail-description {
+                    @apply flex flex-col gap-[10px] items-center;
+                    h5 {
+                        @apply text-[16px]/[24px] font-semibold text-neutral-900;
+                    }
+                    p {
+                        @apply text-[12px]/[18px] font-medium text-neutral-900;
+                    }
+                }
+            }
+        }
+        &::after {
+            content: '';
+            @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+            background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
+        }
+        &::before {
+            content: '';
+            @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+            background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
+        }
+    }
+
+}
+
+.home-dividen-staking-section {
+    @apply flex items-center  px-[100px] py-[60px];
+    .dividen-staking-device {
+        @apply w-1/2 relative flex flex-col justify-center items-center;
+        img {
+            width: 505px;
+            height: 386px;
+        }
+    }
+    .dividen-staking-description {
+        @apply flex flex-1 flex-col gap-[40px] py-[60px] px-[40px];
+        .staking-description-title {
+            @apply flex flex-col gap-[20px];
+            h2 {
+                @apply text-[28px]/[42px] font-bold text-neutral-900;
+            }
+            p {
+                @apply text-[18px]/[32px] font-medium text-neutral-700;
+            }
+        }
+        a {
+            @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+        }
+    }
+}
+
+.home-ewallet-section {
+    @apply flex items-center  px-[100px] py-[60px];
+    .ewallet-description {
+        @apply flex-1 flex flex-col gap-[26px] py-[20px];
+        h2 {
+            @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        h5 {
+            @apply text-[20px]/[30px] font-bold text-neutral-900;
+        }
+        p {
+            @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+    }
+    .ewallet-image {
+        @apply w-[455px];
+        img {
+           @apply w-[455px] h-[435px];
+        }
+    }
+}
+
+.home-buy-sell-assets-section {
+    @apply flex items-center  px-[100px] py-[60px] gap-[38px];
+    .home-buy-sell-device {
+        @apply w-[600px] h-[600px] flex flex-col justify-center items-end relative;
+        img {
+            @apply  w-[392px] h-[355px] ;
+        }
+        &::before {
+            content: '';
+            @apply absolute bottom-0 w-[642px] h-[642px] z-[-1];
+            background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
+        }
+    }
+    .home-buy-sell-descriptions {
+        @apply flex flex-1 flex-col gap-[30px];
+        .home-buy-sell-description {
+            @apply flex-1 flex flex-col gap-[18px] py-[20px];
+            h2 {
+                @apply text-[28px]/[42px] font-bold text-neutral-900;
+            }
+            h5 {
+                @apply text-[20px]/[30px] font-bold text-neutral-900;
+            }
+            p {
+                @apply text-[16px]/[32px] font-medium text-neutral-700;
+            }
+        }
+        a {
+            @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+        }
+        .home-buy-sell-store {
+            @apply flex gap-[14px] items-center;
+            img {
+                &.buy-sell-playtore {
+                    @apply w-[130px] h-[38px];
+                }
+                &.buy-sell-appstore {
+                    @apply w-[114px] h-[38px];
+
+                }
+            }
+        }
+    }
+}
+
+.home-media-section {
+    @apply flex flex-col justify-center items-center  p-[100px] gap-[40px];
+    h2 {
+        @apply text-[28px]/[42px] font-bold text-neutral-900;
+    }
+    .media-list {
+        @apply flex gap-[80px] justify-center;
+        .media-thumb {
+            @apply w-1/6;
+            img {
+                @apply w-[130px] h-[36px]
+            }
+        }
+
+    }
+}

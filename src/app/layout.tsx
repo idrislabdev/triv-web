@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
+import "@/styles/components/main-header.css";
+import "@/styles/components/footer.css";
+import "@/styles/home.css"
+import MainHeader from "./@core/components/main-header";
+import Footer from "./@core/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>TRIV - Indonesian Digital Asset &amp; Cryptocurrency Marketplace</title>
+        <meta name="description" content="TRIV - Indonesian Digital Asset & Cryptocurrency Marketplace" />
+      </head>
+      <body>
+        <MainHeader />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
