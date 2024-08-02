@@ -20,12 +20,33 @@ const MoonIcon = (props :{ color: any }) => {
             <circle cx="19" cy="12" r="1" fill={currentColor}/>
             <circle cx="20" cy="8" r="1" fill={currentColor}/>
         </svg>
+    )
+}
 
+const CaretUp = (props :{ color: any }) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 12L9 5L3 12L15 12Z" fill={currentColor}/>
+        </svg>
 
+    )
+}
+
+const CaretDown = (props :{ color: any }) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6L9 13L15 6L3 6Z" fill={currentColor}/>
+        </svg>
     )
 }
 
 export {
     TrivIcon,
-    MoonIcon
+    MoonIcon,
+    CaretUp,
+    CaretDown
 }

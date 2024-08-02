@@ -21,8 +21,12 @@ const config: Config = {
         primary: '#71BBED',
         neutral: {
           200: '#EBEEF4',
+          500: '#838899',
           700: '#4B5060',
           900: '#191B20'
+        },
+        red: {
+          600: '#EB5757'
         }
       }
     },

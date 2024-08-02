@@ -1,14 +1,10 @@
-
 import React, { useEffect } from 'react'
-import axiosInstance from '@/app/@core/utils/axios'
 import Image from 'next/image'
-import { getLiverateMini } from '@/app/@core/services/api'
 import { ILiverateMini } from '@/app/@core/@types/interfaces'
 
 
-const HomeAssetCryptoSection = async () => {
-    const resp = await getLiverateMini();
-    const assets = resp.data.data
+const HomeAssetCryptoSection = async (props : {liverates:ILiverateMini[]}) => {
+    const {liverates} = props
     return (
         <section className='home-assets-crypto-section'>
             <div className='crypto-section-title'>
@@ -16,7 +12,7 @@ const HomeAssetCryptoSection = async () => {
                 <a>Lihat Aset Lainnya</a>
             </div>
             <div className='crypto-section-thumbs'>
-                {assets.map((item:ILiverateMini, index:number) => (
+                {liverates?.map((item:ILiverateMini, index:number) => (
                     <div className='asset-crypto-thumb w-1/6' key={index}>
                         <div className='crypto-thumb-top'>
                             <div className='icon-thumb-top'>
