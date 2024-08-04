@@ -1,7 +1,16 @@
 .main-header {
-    @apply fixed top-0 inset-x-0 flex items-center justify-between py-[24px] px-[100px] z-10;
-    &.active {
+    @apply fixed top-0 inset-x-0 flex items-center justify-between py-[24px] px-[100px] z-10 text-white;
+    &.header-white {
         @apply bg-white text-black;
+        .main-header-action {
+            ul {
+                li {
+                    .btn-signup-header{
+                        @apply  bg-primary text-white rounded-[8px] py-[8px] w-full;
+                    }
+                }
+            }
+        }
     }
     .main-header-menu {
         ul {
@@ -15,9 +24,18 @@
         @apply flex items-center gap-[20px];
         .main-header-action-list {
             ul {
-                @apply flex gap-[20px] items-center;
+                @apply flex items-center;
                 li {
                     @apply text-[14px]/[21px] font-medium;
+                    &:not(:first-child) {
+                        &::before {
+                            content: '';
+                            @apply border-l border-l-neutral-300 mx-[20px]
+                        }
+                    } 
+                    .btn-signup-header {
+                        @apply w-[73px]
+                    } 
                 }
 
             }

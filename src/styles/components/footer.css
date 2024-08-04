@@ -1,5 +1,5 @@
 .footer {
-    @apply bg-black flex flex-col gap-[75px] p-[100px];
+    @apply bg-black text-white flex flex-col gap-[75px] p-[100px];
     .footer-primary {
         @apply flex justify-between;
         .footer-primary-left {

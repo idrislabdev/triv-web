@@ -3,9 +3,8 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import "@/styles/components/main-header.css";
 import "@/styles/components/footer.css";
-import "@/styles/home.css"
-import MainHeader from "./@core/components/main-header";
-import Footer from "./@core/components/footer";
+import MainHeader from "../@core/components/main-header";
+import Footer from "../@core/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +25,6 @@ export default function RootLayout({
         <meta name="description" content="TRIV - Indonesian Digital Asset & Cryptocurrency Marketplace" />
       </head>
       <body>
-        <MainHeader />
         {children}
         <Footer />
       </body>

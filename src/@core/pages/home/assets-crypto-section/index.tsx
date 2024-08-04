@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { ILiverateMini } from '@/app/@core/@types/interfaces'
+import { ILiverateMini } from '@/@core/@types/interfaces'
 
 
 const HomeAssetCryptoSection = async (props : {liverates:ILiverateMini[]}) => {

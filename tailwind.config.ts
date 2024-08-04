@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/@core/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/@core/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -21,6 +22,7 @@ const config: Config = {
         primary: '#71BBED',
         neutral: {
           200: '#EBEEF4',
+          300: '#C1C3CC',
           500: '#838899',
           700: '#4B5060',
           900: '#191B20'

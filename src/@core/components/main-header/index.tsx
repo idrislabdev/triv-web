@@ -3,31 +3,35 @@ import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
 import { MoonIcon, TrivIcon } from '../custom-icons';
 
-const MainHeader = () => {
+const MainHeader = (props: {classText:string}) => {
+     const { classText } = props
     const [active, setActive] = useState(false);
 
     const onScroll = useCallback(() => {
         const { scrollY } = window;
         if ( scrollY >= 60) {
-            document.getElementsByTagName("header")[0].classList.add('active');
+            document.getElementsByTagName("header")[0].classList.add('header-white');
             setActive(true)
         } else {
-            document.getElementsByTagName("header")[0].classList.remove('active');
+            document.getElementsByTagName("header")[0].classList.remove('header-white');
             setActive(false)
         }
     }, []);
 
     useEffect(() => {
-        window.addEventListener("scroll", onScroll, { passive: true });
-        return () => {
-           window.removeEventListener("scroll", onScroll, { passive: true });
+        if (classText === '') {
+            window.addEventListener("scroll", onScroll, { passive: true });
+            return () => {
+               window.removeEventListener("scroll", onScroll, { passive: true });
+            }
         }
-      });
+
+    });
     
     return (
-        <header className='main-header'>
+        <header className={`main-header ${classText}`}>
             <div>
-                <TrivIcon color={active === false ? '#fff': '#318AC6'} />
+                <TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} />
             </div>
             <div className='main-header-menu'>
                 <ul>

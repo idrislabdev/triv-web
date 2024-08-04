@@ -3,7 +3,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import 'swiper/css';
-import { ILiverateMini } from '@/app/@core/@types/interfaces';
+import { ILiverateMini } from '@/@core/@types/interfaces';
 
 const BaruCryptoSection = () => {
     return (
