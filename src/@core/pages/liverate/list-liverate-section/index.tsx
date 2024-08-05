@@ -6,7 +6,7 @@ import React from 'react'
 const LiverateListSection = (props: {liverates: ILiverate[]}) => {
   const { liverates } = props
   return (
-    <div className='liverate-list-section'>
+    <section className='liverate-list-section'>
         <div className='list-header'>
             <div className='liverate-menu'>
               <ul>
@@ -59,7 +59,7 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
             }
           </div>
         </div>
-    </div>
+    </section>
   )
 }
 

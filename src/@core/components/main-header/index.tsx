@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
 import { MoonIcon, TrivIcon } from '../custom-icons';
+import Link from 'next/link';
 
 const MainHeader = (props: {classText:string}) => {
      const { classText } = props
@@ -31,11 +32,11 @@ const MainHeader = (props: {classText:string}) => {
     return (
         <header className={`main-header ${classText}`}>
             <div>
-                <TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} />
+                <Link href="/"><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
             </div>
             <div className='main-header-menu'>
                 <ul>
-                    <li>Harga (Jual Beli)</li>
+                    <li><Link href="/liverate">Harga (Jual Beli)</Link></li>
                     <li>Service</li>
                     <li>Staking</li>
                     <li>Market</li>

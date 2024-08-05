@@ -7,6 +7,9 @@ import LiverateTopMoverSection from '@/@core/pages/liverate/top-mover-section'
 import { getLiverateHighlights, getLiverates } from '@/@core/services/api'
 import { IHighlight, ILiverate } from '@/@core/@types/interfaces'
 import LiverateListSection from '@/@core/pages/liverate/list-liverate-section'
+import LiverateAskSection from '@/@core/pages/liverate/ask-section'
+import LiverateInvestasiNowSection from '@/@core/pages/liverate/invenstasi-now-section'
+import LiverateTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
 
 export default async function  Liverate() {
     const resp =  await getLiverateHighlights();
@@ -20,6 +23,9 @@ export default async function  Liverate() {
         <LiverateHeaderSection />
         <LiverateTopMoverSection hightlight={hightlight}/>
         <LiverateListSection liverates={liverates}/>
+        <LiverateAskSection />
+        <LiverateInvestasiNowSection />
+        <LiverateTestimonyCarouselSection />
     </>
   )
 }

@@ -115,3 +115,165 @@
         }
     }
 }
+
+.liverate-ask-section {
+    @apply py-[20px] px-[100px] flex flex-col gap-[20px];
+    h2 {
+        @apply text-[28px]/[42px] font-bold text-black text-center;
+    }
+    .ask-answer-liverate{
+        p {
+            @apply text-[18px]/[32px] font-normal text-neutral-700;
+        }
+    }
+    .question-ask-liverate {
+        @apply flex gap-[80px] items-center;
+        .question-ask-accordion {
+            @apply w-[80%];
+            ul {
+                li {
+                    &:not(:last-child, :first-child) {
+                        @apply relative py-[20px];
+                    }
+                    button {
+                        @apply w-full py-[8px] text-left;
+                        .header-button {
+                            @apply flex items-center justify-between;
+                            label {
+                                @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
+                            }
+                        }
+                    }
+                    .accordion-content {
+                        @apply relative overflow-hidden transition-all duration-700;
+                        .content-area {
+                            @apply py-[8px];
+                            p {
+                                @apply text-[14px]/[21px] font-normal text-neutral-800;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .question-ask-imag {
+            @apply flex-1 flex flex-col justify-center;
+            img {
+                @apply w-[237px] h-[303px];
+            }
+        }
+    }
+}
+
+.liverate-investasi-now-section {
+    @apply flex items-center  px-[100px] py-[30px] gap-[60px];
+    .investasi-now-device {
+        @apply w-[600px] h-[600px] flex flex-col justify-center items-end relative;
+        img {
+            @apply  w-[392px] h-[355px] ;
+        }
+        &::before {
+            content: '';
+            @apply absolute bottom-0 w-[642px] h-[642px] z-[-1];
+            background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
+        }
+    }
+    .investasi-now-descriptions {
+        @apply flex flex-1 flex-col gap-[30px];
+        .investasi-now-description {
+            @apply flex-1 flex flex-col gap-[18px];
+            h2 {
+                @apply text-[28px]/[42px] font-bold text-neutral-900;
+            }
+            h5 {
+                @apply text-[20px]/[30px] font-bold text-neutral-900;
+            }
+            p {
+                @apply text-[16px]/[32px] font-medium text-neutral-700;
+            }
+        }
+       .investasi-button-logo {
+            @apply flex gap-[30px];
+            a {
+                @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+            }
+            .investasi-now-store {
+                @apply flex gap-[14px] items-center;
+                img {
+                    &.apple-logo {
+                        @apply w-[31px] h-[37px];
+                    }
+                    &.playstore-logo {
+                        @apply w-[30px] h-[32px];
+
+                    }
+                }
+            }
+       }
+    }
+}
+
+.liverate-testimony-carousel-section {
+    @apply px-[100px] pt-[30px] pb-[100px] gap-[60px] flex justify-center items-center;
+    .swiper {
+        @apply relative w-[1250px] overflow-hidden;
+        .swiper-wrapper {
+            @apply flex items-center relative z-[1];
+            .swiper-slide {
+                @apply !w-[339px] mr-[25px] ml-[25px];
+                &.swiper-slide-active{
+                    @apply !w-[500px] h-[215px];
+                    .testimony-card {
+                        @apply w-[500px] h-[215px] opacity-100;
+                        .testimony-thumb {
+                            @apply w-[250px];
+                            img {
+                                @apply w-[250px] h-[215px];
+                            }
+                        }
+                        .testimony-content {
+                            @apply flex-1 flex flex-col justify-center gap-[31px];
+                            p {
+                                @apply text-[12px]/[18px] font-medium text-neutral-700;
+                            }
+                            .testimony-name-tag {
+                                @apply flex flex-col gap-[7px];
+                                h5 {
+                                    @apply text-[12px]/[18px] font-bold text-[#293238];
+                                }
+                                p {
+                                    @apply text-[12px]/[18px] font-semibold text-[#7D7A7A];
+                                }
+                            }
+                        }
+                    }
+                }
+                .testimony-card {
+                    @apply flex w-[339px] h-[160px] gap-[18px] border border-neutral-200 rounded-[20px] opacity-40;
+                    .testimony-thumb {
+                        @apply w-[170px];
+                        img {
+                            @apply w-[170px] h-[160px];
+                        }
+                    }
+                    .testimony-content {
+                        @apply flex-1 flex flex-col justify-center gap-[31px];
+                        p {
+                            @apply text-[8px]/[13px] font-medium text-neutral-700;
+                        }
+                        .testimony-name-tag {
+                            @apply flex flex-col gap-[7px];
+                            h5 {
+                                @apply text-[8px]/[13px] font-bold text-[#293238];
+                            }
+                            p {
+                                @apply text-[8px]/[13px] font-semibold text-[#7D7A7A];
+                            }
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+}
