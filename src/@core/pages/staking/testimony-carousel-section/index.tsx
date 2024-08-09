@@ -4,10 +4,10 @@ import Image from 'next/image'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-const LiverateTestimonyCarouselSection = () => {
+const StakingTestimonyCarouselSection = () => {
   return (
-    <section className='liverate-testimony-carousel-section'>
-         <div className='swiper-testimony'>
+    <section className='staking-testimony-carousel-section'>
+        <div className='swiper-testimony'>
             <Swiper slidesPerView={3} loop={true} centeredSlides={true}>
                 <SwiperSlide>
                     <div className='testimony-card'>
@@ -105,4 +105,4 @@ const LiverateTestimonyCarouselSection = () => {
   )
 }
 
-export default LiverateTestimonyCarouselSection
+export default StakingTestimonyCarouselSection

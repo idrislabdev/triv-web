@@ -1,0 +1,63 @@
+.swiper-testimony {
+    .swiper {
+        @apply relative w-[1250px] overflow-hidden;
+        .swiper-wrapper {
+            @apply flex items-center relative z-[1];
+            .swiper-slide {
+                @apply !w-[339px] mr-[25px] ml-[25px];
+                &.swiper-slide-active{
+                    @apply !w-[500px] h-[215px];
+                    .testimony-card {
+                        @apply w-[500px] h-[215px] opacity-100 cursor-grab;
+                        .testimony-thumb {
+                            @apply w-[250px];
+                            img {
+                                @apply w-[250px] h-[215px] select-none;
+                            }
+                        }
+                        .testimony-content {
+                            @apply flex-1 flex flex-col justify-center gap-[31px];
+                            p {
+                                @apply text-[12px]/[18px] font-medium text-neutral-700 select-none;
+                            }
+                            .testimony-name-tag {
+                                @apply flex flex-col gap-[7px];
+                                h5 {
+                                    @apply text-[12px]/[18px] font-bold text-[#293238] select-none;
+                                }
+                                p {
+                                    @apply text-[12px]/[18px] font-semibold text-[#7D7A7A] select-none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .testimony-card {
+                    @apply flex w-[339px] h-[160px] gap-[18px] border border-neutral-200 rounded-[20px] opacity-40;
+                    .testimony-thumb {
+                        @apply w-[170px];
+                        img {
+                            @apply w-[170px] h-[160px];
+                        }
+                    }
+                    .testimony-content {
+                        @apply flex-1 flex flex-col justify-center gap-[31px];
+                        p {
+                            @apply text-[8px]/[13px] font-medium text-neutral-700;
+                        }
+                        .testimony-name-tag {
+                            @apply flex flex-col gap-[7px];
+                            h5 {
+                                @apply text-[8px]/[13px] font-bold text-[#293238];
+                            }
+                            p {
+                                @apply text-[8px]/[13px] font-semibold text-[#7D7A7A];
+                            }
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+}
