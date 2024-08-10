@@ -14,3 +14,8 @@ export const getLiverates = async () => {
     const resp = await axiosInstance.get(`/v2/liverate`)
     return resp
 }
+
+export const getStakings = async () => {
+    const resp = await axiosInstance.get(`/v2/staking`)
+    return resp
+}

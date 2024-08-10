@@ -1,0 +1,13 @@
+input {
+    @apply border border-neutral-200 rounded-[10px] text-black text-[14px]/[21px] px-[20px] py-[10px] outline-none;
+}
+.group-input {
+    @apply relative;
+    span {
+        @apply absolute text-[14px]/[21px] text-neutral-500 right-[20px] top-[10px];
+    }
+}
+
+select {
+    @apply border border-neutral-200 rounded-[10px] text-black text-[14px]/[21px] px-[20px] py-[10px] outline-none;
+}

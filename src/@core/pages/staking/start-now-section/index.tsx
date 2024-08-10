@@ -4,10 +4,10 @@ import Image from 'next/image'
 const StakingStartNowSection = () => {
     return (
         <section className='staking-start-now-section'>
-            <div className='start-now-device'>
+            <div className='image-container'>
                 <Image src='/images/devices/imac.png' alt='imac' width={392} height={355}/>
             </div>
-            <div className='start-now-descriptions'>
+            <div className='description-container'>
                 <div className='start-now-description'>
                     <h2>Triv Crypto Staking Terbaik, Mulai Hanya Dengan Rp 50.000 !</h2>
                     <p>Bangun portfolio kriptomu. kembangkan dengan staking crypto terbaik di ecosytem Triv marketplace Cryptocurrency Indonesia, terdaftar dan diawasi oleh Bappebti.</p>

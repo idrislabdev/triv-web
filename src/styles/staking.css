@@ -19,7 +19,7 @@
         }
     }
     .staking-header-section {
-        @apply  pb-[50px] pt-[150px] px-[100px] flex flex-col gap-[20px] text-center;
+        @apply  pb-[50px] pt-[120px] px-[100px] flex flex-col gap-[20px] text-center;
         h1 {
             @apply text-[28px]/[42px] font-bold;
         }
@@ -110,7 +110,7 @@
                 }
             }
         }
-        .guide-phone {
+        .image-container {
             @apply flex flex-col justify-center w-1/2;
             img {
                 @apply w-[620px] h-[519px] object-contain;
@@ -169,7 +169,7 @@
 
     .staking-start-now-section {
         @apply flex items-center py-[50px]  px-[100px] gap-[60px];
-        .start-now-device {
+        .image-container {
             @apply w-[600px] flex flex-col justify-center items-end relative;
             img {
                 @apply  w-[392px] h-[355px] ;
@@ -180,7 +180,7 @@
                 background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
             }
         }
-        .start-now-descriptions {
+        .description-container {
             @apply flex flex-1 flex-col gap-[30px];
             .start-now-description {
                 @apply flex-1 flex flex-col gap-[18px];
@@ -219,5 +219,78 @@
         @apply px-[100px] pt-[30px] pb-[100px] gap-[60px] flex justify-center items-center;
     }
     
-    
+    .staking-coins-section {
+        @apply px-[100px] pt-[30px] pb-[100px] gap-[80px] flex flex-col justify-center items-center;
+        
+        .header-coins-staking {
+            @apply flex flex-col gap-[20px] text-center;
+            h2 {
+                @apply text-[28px]/[42px] font-bold;
+            }
+            p {
+                @apply text-[16px]/[32px] font-medium text-neutral-700;
+            }
+        }
+        .list-coins-staking {
+            @apply flex flex-wrap;
+            .coin-staking-container {
+                @apply w-1/3 p-[20px];
+            }
+        }
+    }
+    .staking-calculator-section {
+        @apply px-[100px] pt-[30px] pb-[100px] gap-[80px] flex flex-col justify-center items-center;
+        
+        .card-staking-calculator{
+            @apply flex items-center gap-[73px] p-[40px] rounded-[20px];
+            box-shadow: 4px 14px 30px 0px #00000014;
+            .image-container {
+                @apply w-[372px];
+                img {
+                    @apply w-[372px] h-[233px];
+                }
+            }
+            .calculator-container {
+                @apply flex flex-col flex-1 gap-[24px];
+                .top-subcontainer {
+                    @apply flex flex-col gap-[20px];
+                    h2 {
+                        @apply text-[28px]/[42px] font-bold;
+                    }
+                    .sub-subcontainer {
+                        @apply flex gap-[20px];
+                        .form-input {
+                            @apply flex gap-[8px] items-center;
+                            label {
+                                @apply text-[12px]/[18px] font-medium text-neutral-700;
+                            }
+                            input, select {
+                                @apply w-[220px];
+                            }
+                        }
+                    }
+                }
+                .middle-subcontainer {
+                    @apply flex gap-[100px];
+                    .sub-subcontainer {
+                        @apply flex flex-col gap-[8px];
+                        label {
+                            @apply text-[24px]/[36px] font-bold text-primary;
+                            span {
+                                @apply text-[14px]/[21px] font-medium text-primary;
+                            }
+                        }
+                        span {
+                            @apply text-neutral-700;
+                        }
+                    }
+                }
+                .bottom-subcontainer{
+                    p {
+                        @apply text-[10px]/[15px] font-medium text-neutral-500;
+                    }
+                }
+            }
+        }
+    }
 }

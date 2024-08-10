@@ -46,7 +46,7 @@ const StakingGuideCryptoSection = () => {
                 </ul>
             </div>
         </div>
-        <div className='guide-phone'>
+        <div className='image-container'>
             <Image src='/images/devices/iphone-with-description-2.png' alt='iphone with description' width={620} height={519} />
         </div>
     </section>

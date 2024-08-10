@@ -41,3 +41,10 @@ export interface ILiverate {
     change_24h: number,
     icon_url: string,
 }
+
+export interface IStaking {
+    label: string,
+    currency: string,
+    apy: number,
+    icon_url: string,
+}
