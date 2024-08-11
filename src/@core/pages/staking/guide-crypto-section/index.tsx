@@ -10,7 +10,7 @@ const StakingGuideCryptoSection = () => {
                 <ul>
                     <li>
                         <div className='guide-icon'>
-                            <Image src='/images/others/step-koin.png' alt='step koin' width={60} height={60}/>\
+                            <Image src='/images/others/step-koin.png' alt='step koin' width={60} height={60}/>
                         </div>
                         <div className='guide-desc'>
                             <h5>Pilih koin favorit Anda</h5>
@@ -22,7 +22,7 @@ const StakingGuideCryptoSection = () => {
                     </li>
                     <li>
                         <div className='guide-icon'>
-                            <Image src='/images/others/step-jumlah.png' alt='step koin' width={60} height={60}/>\
+                            <Image src='/images/others/step-jumlah.png' alt='step koin' width={60} height={60}/>
                         </div>
                         <div className='guide-desc'>
                             <h5>Masukkan jumlah Staking</h5>
@@ -33,7 +33,7 @@ const StakingGuideCryptoSection = () => {
                     </li>
                     <li>
                         <div className='guide-icon'>
-                            <Image src='/images/others/step-bunga.png' alt='step koin' className='!w-[65.5px] !h-[74px]' width={65.5} height={74}/>\
+                            <Image src='/images/others/step-bunga.png' alt='step koin' className='step-koin' width={65.5} height={74}/>
                         </div>
                         <div className='guide-desc'>
                             <h5>Terima bunga staking !</h5>

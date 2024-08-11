@@ -1,5 +1,8 @@
+@tailwind components;
+
 .main-header {
-    @apply fixed top-0 inset-x-0 flex items-center justify-between py-[24px] px-[100px] z-10 text-white;
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white;
+
     &.header-white {
         @apply bg-white text-black;
         .main-header-action {
@@ -22,7 +25,11 @@
     }
     .main-header-action {
         @apply flex items-center gap-[20px];
+        .burger-menu {
+            @apply hidden;
+        }
         .main-header-action-list {
+            @apply flex gap-[20px] items-center;
             ul {
                 @apply flex items-center;
                 li {
@@ -38,6 +45,72 @@
                     } 
                 }
 
+            }
+        }
+    }
+    @layer components {
+        &.mobile-responsive {
+            @apply px-[20px] py-[15px];
+            .triv-logo-header {
+                a {
+                    svg {
+                        @apply !w-[71px] !h-[20.11px];
+                    }
+                }
+            }
+            .main-header-menu {
+                @apply hidden;
+            }
+            .main-header-action {
+                .burger-menu {
+                    @apply block;
+                }
+                .main-header-action-list {
+                   @apply hidden;
+                }
+            }
+        }
+    }
+}
+
+.main-sidebar-overlay {
+    @apply bg-black opacity-50 h-full w-full fixed z-10;
+}
+
+.main-sidebar-menu {
+    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[10] justify-between transition-all duration-500;
+    &.show {
+        @apply mr-[0px];
+    }
+    .sidebar-menu-top {
+        @apply flex flex-col gap-[46px];
+        .sidebar-header {
+            @apply flex justify-between items-center;
+            .sidebar-header-logo {
+                svg {
+                    @apply w-[71px] h-[20.11px];
+                }
+            }
+            .sidebar-header-action {
+                @apply flex gap-[8px] items-center;
+            }
+        }
+        .sidebar-list {
+            @apply overflow-y-auto;
+            ul {
+                @apply text-black flex flex-col gap-[30px];
+                li {
+                    @apply text-[14px]/[21px] font-medium;
+                    ul {
+                        &.sidebar-submenu {
+                            @apply p-[5px] gap-[0px] transition-all duration-500;
+                            li {
+                                @apply text-[12px]/[18px] font-normal;
+
+                            }
+                        }
+                    }
+                }
             }
         }
     }

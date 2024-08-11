@@ -114,7 +114,7 @@ const LiverateAskSection = () => {
                     </ul>
                 </div>
                 <div className='question-ask-image'>
-                    <Image src='/images/others/3d-faq.png' alt='3d-faq' width={197} height={252}/>\
+                    <Image src='/images/others/3d-faq.png' alt='3d-faq' width={197} height={252}/>
                 </div>
             </div>
         </section>

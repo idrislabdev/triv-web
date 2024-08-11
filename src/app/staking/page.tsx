@@ -19,7 +19,7 @@ export default async function  Staking() {
   return (
     <>
       <MainHeader classText="header-white" />
-      <main className='staking-page light-theme'>
+      <main className='staking-page sm:mobile-responsive light-theme'>
         <StakingHeaderSection />
         <StakingBenefitSection />
         <StakingGuideCryptoSection />
@@ -27,7 +27,7 @@ export default async function  Staking() {
         <StakingCoinsSection stakings={stakings}/>
         <StakingFaqSection />
         <StakingStartNowSection />
-        <StakingTestimonyCarouselSection />
+        {/* <StakingTestimonyCarouselSection /> */}
       </main>
     </>
   )

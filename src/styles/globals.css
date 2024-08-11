@@ -24,6 +24,10 @@ body {
   font-family: 'Inter';
 }
 
+main {
+  @apply pb-[50px] pt-[80px];
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

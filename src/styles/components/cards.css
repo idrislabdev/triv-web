@@ -6,13 +6,13 @@
     .card-coin-desc {
         @apply flex flex-col gap-[6px];
         label {
-            @apply text-[20px]/[30px] font-medium text-black;
+            @apply text-[20px]/[30px] font-bold text-black;
         }
         span {
             @apply text-[14px]/[21px] font-medium text-black;
         }
         a {
-            @apply text-[16px]/[24px] font-medium text-primary;
+            @apply text-[16px]/[24px] font-semibold text-primary;
         }
     }
 }
