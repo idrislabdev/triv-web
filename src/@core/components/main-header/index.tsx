@@ -4,11 +4,15 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { BurgerIcon, MoonIcon, TrivIcon } from '../custom-icons';
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
+import { usePathname, useRouter } from 'next/navigation';
 
-const MainHeader = (props: {classText:string}) => {
-    const { classText } = props
+const MainHeader = (props: {classText:string, lang: string}) => {
+    const { classText, lang } = props
     const [active, setActive] = useState(false);
+    const [showFlags, setShowFlags] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false);
+    const pathname = usePathname()
+    const router = useRouter();
 
     const onScroll = useCallback(() => {
         const { scrollY } = window;
@@ -24,6 +28,13 @@ const MainHeader = (props: {classText:string}) => {
     const showMobileSidebar = () => {
         setShowSidebar(true)
         document.body.classList.add('overflow-hidden')
+    }
+
+    const switchLang = (langText:string) => {
+        let paths = pathname.split("/")
+        paths[1] = langText
+        router.push(paths.join("/"))
+
     }
 
     useEffect(() => {
@@ -58,7 +69,33 @@ const MainHeader = (props: {classText:string}) => {
                     <div className='main-header-action-list'>
                         <a><MoonIcon color={classText === '' ? '#fff': '#F2AF22'} /></a>
                         <ul>
-                            <li><Image src='/images/flags/id.png' alt='english language' width={'28'} height={'20'} /></li>
+                            <li>
+                                <a className='flex items-center gap-[4px]' onClick={_ => setShowFlags(!showFlags)}>
+                                    <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
+                                    <svg 
+                                        className={`w-3 h-3`} 
+                                        fill="none" strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        strokeWidth="2" 
+                                        viewBox="0 0 24 24" 
+                                        stroke="#000"
+                                    >
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <ul className={`list-flags ${showFlags ? 'show': ''}`}>
+                                    <li>
+                                        <a onClick={_ => switchLang('id')}>
+                                            <Image src={`/images/flags/id.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onClick={_ => switchLang('en')}>
+                                            <Image src={`/images/flags/en.png`} alt='english flags' width={'28'} height={'20'} />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><button className='btn-login-header'>Login</button></li>
                             <li><button className='btn-signup-header'>Sign Up</button></li>
                         </ul>

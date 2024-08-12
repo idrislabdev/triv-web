@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-const StakingCalculatorSection = () => {
+const StakingCalculatorSection = (props: {lang:any}) => {
+    const { lang } = props
     const [selectedAsset, setSelectedAsset] = useState('ETH')
 
     return (
@@ -14,7 +15,7 @@ const StakingCalculatorSection = () => {
                 </div>
                 <div className='calculator-container'>
                     <div className='top-subcontainer'>
-                        <h2>Lihat berapa banyak yang bisa Anda hasilkan🚀</h2>
+                        <h2>{lang.title}</h2>
                         <div className='sub-subcontainer'>
                             <div className='form-input'>
                                 <label>Stake Asset</label>
@@ -48,7 +49,7 @@ const StakingCalculatorSection = () => {
                         </div>
                     </div>
                     <div className='bottom-subcontainer'>
-                        <p>*Perhitungan diatas hanya merupakan perhitungan indikatif , bunga staking dapat berubah sewaktu-waktu sesuai dengan supply dan demand pada on-chain terkait.</p>
+                        <p>{lang.description}</p>
                     </div>
                 </div>
             </div>

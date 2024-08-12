@@ -243,5 +243,5 @@ export {
     TiktokIcon,
     TelegramIcon,
     BurgerIcon,
-    TimesIcon,
+    TimesIcon
 }

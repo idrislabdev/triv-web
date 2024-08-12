@@ -33,7 +33,7 @@
             ul {
                 @apply flex items-center;
                 li {
-                    @apply text-[14px]/[21px] font-medium;
+                    @apply text-[14px]/[21px] font-medium relative cursor-pointer select-none;
                     &:not(:first-child) {
                         &::before {
                             content: '';
@@ -41,8 +41,21 @@
                         }
                     } 
                     .btn-signup-header {
-                        @apply w-[73px]
+                        @apply w-[73px];
                     } 
+                    ul {
+                        &.list-flags {
+                            @apply absolute top-[27px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
+                            &.show {
+                                transform: translateX(0%);
+                            }
+                            li {
+                                &::before {
+                                    @apply !content-none;
+                                }
+                            }
+                        }
+                    }
                 }
 
             }

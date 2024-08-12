@@ -1,13 +1,11 @@
 import React from 'react'
 
-const StakingHeaderSection = () => {
+const StakingHeaderSection = (props: {lang:any}) => {
+  const { lang } = props
   return (
     <section className='staking-header-section'>
-        <h1>Dapatkan Penghasilan Tambahan Dengan Crypto Staking</h1>
-        <p>
-            Dapatkan penghasilan tambahan dengan melakukan staking crypto favorit anda. Cara kerja Crypto Staking adalah dengan mengamankan protokol koin terkait dan sebagai imbalan anda akan mendapatkan bunga dari coin anda. 
-            Tidak seperti deposito bank, bunga staking dapat diambil secara harian atau mingguan.
-        </p>
+        <h1>{lang.title}</h1>
+        <p>{lang.description}</p>
     </section>
   )
 }
