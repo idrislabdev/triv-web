@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const StakingStartNowSection = (props: {lang:string}) => {
+const StakingStartNowSection = (props: {lang:any}) => {
     const { lang } = props
     return (
         <section className='staking-start-now-section'>

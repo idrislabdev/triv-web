@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { useRef, useState } from 'react'
 
-const StakingFaqSection = (props: {lang:string}) => {
+const StakingFaqSection = (props: {lang:any}) => {
     const { lang } = props
     const [selected, setSelected] = useState("1")
     const container1: any = useRef(null);

@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-const StakingCalculatorSection = (props: {lang:string}) => {
+const StakingCalculatorSection = (props: {lang:any}) => {
     const { lang } = props
     const [selectedAsset, setSelectedAsset] = useState('ETH')
 

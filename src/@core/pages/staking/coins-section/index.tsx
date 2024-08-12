@@ -2,7 +2,7 @@ import { IStaking } from '@/@core/@types/interfaces'
 import CardCoinStaking from '@/@core/components/cards/card-coin-staking'
 import React from 'react'
 
-const StakingCoinsSection = (props: {stakings:IStaking[], lang:string}) => {
+const StakingCoinsSection = (props: {stakings:IStaking[], lang:any}) => {
     const { stakings, lang } = props
     return (
         <section className='staking-coins-section'>

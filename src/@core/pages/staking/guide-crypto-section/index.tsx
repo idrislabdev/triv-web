@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const StakingGuideCryptoSection = (props: {lang:string}) => {
+const StakingGuideCryptoSection = (props: {lang:any}) => {
     const { lang } = props
     return (
         <section className='staking-guide-crypto-section'>
