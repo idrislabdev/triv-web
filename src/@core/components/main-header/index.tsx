@@ -6,7 +6,7 @@ import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
 
-const MainHeader = (props: {classText:string, lang: string}) => {
+const MainHeader = (props: {classText:string, lang: any}) => {
     const { classText, lang } = props
     const [active, setActive] = useState(false);
     const [showFlags, setShowFlags] = useState(false);
