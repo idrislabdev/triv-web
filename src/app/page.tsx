@@ -18,7 +18,7 @@ export default async function  Home() {
 
   return (
     <>
-      <MainHeader classText=""/>
+      <MainHeader classText="" lang={'id'}/>
       <HomeBannerSection />
       <HomeIndexCryptoSection liverates={liverates}/>
       <HomeAssetCryptoSection liverates={liverates}/>

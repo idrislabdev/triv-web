@@ -11,7 +11,7 @@ import LiverateAskSection from '@/@core/pages/liverate/ask-section'
 import LiverateInvestasiNowSection from '@/@core/pages/liverate/invenstasi-now-section'
 import LiverateTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
 
-export default async function  Liverate() {
+export default async function  Liverate({ params }: any) {
     const resp =  await getLiverateHighlights();
     const hightlight:IHighlight = resp.data.data
 
@@ -19,7 +19,7 @@ export default async function  Liverate() {
     const liverates:ILiverate[] = respLiverate.data.data
     return (
     <>
-        <MainHeader classText="header-white"/>
+        <MainHeader classText="header-white" lang={params.lang}/>
         <LiverateHeaderSection />
         <LiverateTopMoverSection hightlight={hightlight}/>
         <LiverateListSection liverates={liverates}/>
