@@ -1,218 +1,523 @@
-.liverate-header-section {
-    @apply  pb-[20px] pt-[150px] px-[100px] flex flex-col gap-[20px];
-    h2 {
-        @apply text-[28px]/[42px] font-bold text-black;
-    }
-    p {
-        @apply text-[18px]/[36px] font-medium text-neutral-700
-    }
-}
+@tailwind components;
 
-.liverate-top-mover-section {
-    @apply py-[20px] px-[100px] flex flex-col gap-[20px];
-    h2 {
-        @apply text-[28px]/[42px] font-bold text-black;
+.liverate-page {
+    &.dark-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-slate-200;
+        }
+        p {
+            @apply text-slate-300;
+        }
+        a {
+            @apply text-[#737aff]
+        }
     }
-    .top-mover-containers {
-        @apply flex justify-between gap-[50px];
-        .top-mover-container {
-            @apply flex flex-col gap-[20px] border border-neutral-200 rounded-[16px] w-1/3 p-[20px];
-            .top-mover-container-title {
-                @apply flex justify-between items-center;
-                label {
-                    @apply text-[18px]/[27px] font-bold text-primary;
+    &.light-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-black;
+        }
+        p {
+            @apply text-neutral-700;
+        }
+    }
+
+    .liverate-header-section {
+        @apply  pt-[50px] pb-[20px] px-[100px] flex flex-col gap-[20px];
+        h2 {
+            @apply text-[28px]/[42px] font-bold;
+        }
+        p {
+            @apply text-[18px]/[36px] font-medium;
+        }
+    }
+    
+    .liverate-top-mover-section {
+        @apply py-[20px] px-[100px] flex flex-col gap-[20px];
+        h2 {
+            @apply text-[28px]/[42px] font-bold;
+        }
+        .top-mover-containers {
+            @apply flex items-center justify-between gap-[40px];
+            .top-mover-container {
+                @apply flex gap-[20px] border justify-between border-neutral-200 rounded-[16px] w-1/3 p-[20px];
+                .top-mover-container-left {
+                    @apply flex flex-col gap-[20px] justify-between items-start;
+                    label {
+                        @apply text-[18px]/[27px] font-bold text-primary;
+                    }
+                    .top-mover-text-icon {
+                        @apply flex gap-[10px];
+                        img {
+                            @apply w-[56px] h-[56px];
+                        }
+                        .top-mover-text {
+                            @apply flex flex-col;
+                            label {
+                                @apply text-[16px]/[24px] font-bold;
+                            }
+                            p {
+                                @apply text-[14px]/[21px] font-medium text-black;
+                            }
+                        }
+                        .top-mover-text-mobile {
+                            @apply hidden;
+                        }
+                    }
                 }
-                span {
-                    @apply flex items-center text-[16px]/[24px] font-semibold text-primary;
+                .top-mover-text-mobile {
+                    @apply hidden;
+                }
+                .top-mover-container-right {
+                    @apply flex gap-[20px] flex-col justify-between items-start;
+                    span {
+                        @apply flex items-center text-[16px]/[24px] font-semibold text-primary;
+                    }
+                    .top-mover-graph {
+                        @apply flex flex-col justify-center items-center h-[56px];
+                    }
+
+                }
+    
+            }
+        }
+    }
+    
+    .liverate-list-section {
+        @apply py-[20px] px-[100px] flex flex-col gap-[40px];
+        .list-header {
+            @apply flex justify-between items-center;
+            .liverate-menu {
+                ul {
+                    @apply flex items-center gap-[30px];
+                    li {
+                        a {
+                            @apply cursor-pointer flex flex-col justify-self-center items-center gap-[6px] text-[14px]/[21px] font-medium;
+                        }
+                    }
                 }
             }
-            .top-mover-container-content {
-                @apply flex justify-between items-center;
-                .top-mover-text-icon {
-                    @apply flex gap-[10px];
-                    img {
-                        @apply w-[56px] h-[56px];
+            input {
+                @apply border border-neutral-200 rounded-[10px] px-[20px] py-[10px];
+            }
+        }
+        .list-liverate-content {
+            @apply flex flex-col gap-[40px];
+            .list-table-header {
+                @apply flex;
+                .col-left {
+                    @apply w-[35%] flex items-center;
+                    .col-nama {
+                        @apply w-full;
                     }
-                    .top-mover-text {
-                        label {
-                            @apply flex items-center text-[16px]/[24px] font-bold text-black;
+                }
+                .col-right {
+                    @apply w-[55%] flex items-center;
+
+                    .col-beli, .col-jual {
+                        @apply w-[35%];
+                    }
+                    .col-change, .col-trend {
+                        @apply w-[15%];
+                    }
+                }
+                .col-aksi {
+                    @apply w-[10%]
+                }
+                label {
+                    @apply text-[16px]/[24px] font-bold text-black;
+                }
+            }
+            .list-table-body {
+                @apply flex flex-col gap-[40px];
+                .row-list {
+                    @apply flex;
+                    .col-left {
+                        @apply w-[35%] flex items-center;
+                        .col-nama {
+                            @apply w-full flex gap-[20px] items-center;
+                            .col-nama-desc {
+                                p {
+                                    @apply text-[16px]/[24px] font-medium text-black;
+                                    
+                                }
+                                span {
+                                    @apply hidden;
+                                }
+                            }
+                        }
+                    }
+                    .col-right {
+                        @apply w-[55%] flex items-center;
+                        .col-beli, .col-jual {
+                            @apply w-[35%];
+                        }
+                        .col-change, .col-trend{
+                            @apply w-[15%];
+                        }
+                        .col-change {
+                            label {
+                                @apply flex items-center gap-[4px];
+                            }
+                        }
+                    }
+                    .col-aksi {
+                        @apply w-[10%]
+                    }
+                    
+                   
+                    label {
+                        @apply text-[16px]/[24px] font-medium text-black;
+                    }
+                    img {
+                        &.icon-liverate {
+                            @apply w-[46px] h-[46px];
+                        }
+                        &.graph {
+                            @apply w-[51px] h-[28px];
+                        }
+                    } 
+                    button {
+                        @apply flex justify-center items-center bg-primary text-white rounded-[20px] py-[8px] w-[96px] text-[14px]/[21px] font-medium;
+                    
+                    }
+                }
+            }
+        }
+    }
+    
+    .liverate-ask-section {
+        @apply py-[20px] px-[100px] flex flex-col gap-[20px];
+        h2 {
+            @apply text-[28px]/[42px] font-bold text-black text-center;
+        }
+        .ask-answer-liverate{
+            p {
+                @apply text-[18px]/[32px] font-normal text-neutral-700;
+            }
+        }
+        .question-ask-liverate {
+            @apply flex gap-[80px] items-center;
+            .question-ask-accordion {
+                @apply w-[80%];
+                ul {
+                    li {
+                        &:not(:last-child, :first-child) {
+                            @apply relative py-[20px];
+                        }
+                        button {
+                            @apply w-full py-[8px] text-left;
+                            .header-button {
+                                @apply flex items-center justify-between;
+                                label {
+                                    @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
+                                }
+                            }
+                        }
+                        .accordion-content {
+                            @apply relative overflow-hidden transition-all duration-700;
+                            .content-area {
+                                @apply py-[8px];
+                                p {
+                                    @apply text-[14px]/[21px] font-normal text-neutral-800;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .question-ask-imag {
+                @apply flex-1 flex flex-col justify-center;
+                img {
+                    @apply w-[237px] h-[303px];
+                }
+            }
+        }
+    }
+    .liverate-investasi-now-section {
+        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        .image-container {
+            @apply w-[600px] flex flex-col justify-center items-end relative;
+            img {
+                @apply  w-[392px] h-[355px] ;
+            }
+            &::before {
+                content: '';
+                @apply absolute left-[-10px] w-[500px] h-[500px] z-[-1];
+                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+            }
+        }
+        .description-container {
+            @apply flex flex-1 flex-col gap-[30px];
+            .start-now-description {
+                @apply flex-1 flex flex-col gap-[18px];
+                h2 {
+                    @apply text-[28px]/[42px] font-bold text-neutral-900;
+                }
+                p {
+                    @apply text-[16px]/[32px] font-medium text-neutral-700;
+                }
+            }
+           .start-button-logo {
+                @apply flex gap-[30px];
+                a {
+                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                }
+                .start-now-store {
+                    @apply flex gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[31px] h-[37px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[30px] h-[32px];
+    
+                        }
+                    }
+                }
+                .start-now-store-mobile {
+                    @apply hidden gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[130.64px] h-[38.71px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[114.43px] h-[37.02px];
+    
+                        }
+                    }
+                }
+           }
+        }
+    }
+
+    
+    .liverate-testimony-carousel-section {
+        @apply px-[100px] pt-[30px] pb-[100px] gap-[60px] flex justify-center items-center;
+    }
+
+    @layer components {
+        &.mobile-responsive {
+            @apply pt-[40px];
+            .liverate-header-section {
+                @apply  px-[20px] gap-[10px] pt-[30px] pb-[15px];
+                h2 {
+                    @apply text-[14px]/[21px];
+                }
+                p {
+                    @apply text-[12px]/[18px];
+                }
+            }
+            .liverate-top-mover-section {
+                @apply py-[15px] px-[20px] gap-[10px];
+                h2 {
+                    @apply text-[12px]/[18px] font-bold;
+                }
+                .top-mover-containers {
+                    @apply gap-[10px];
+                    .top-mover-container {
+                        @apply flex-col gap-[10px] h-[101px] px-[10px] py-[8px] rounded-[8px];
+                        .top-mover-container-left {
+                            @apply gap-[10px];
+                            label {
+                                @apply text-center w-full text-[7px]/[10.5px] font-bold text-neutral-900;
+                            }
+                            .top-mover-text-icon {
+                                @apply items-center;
+                                img {
+                                    @apply w-[20px] h-[20px];
+                                }
+                                .top-mover-text {
+                                    label {
+                                        @apply flex items-center text-[8px]/[12px] font-bold;
+                                    }
+                                    p {
+                                        @apply hidden;
+                                    }
+                                }
+                            }
+                        }
+                        .top-mover-text-mobile {
+                            @apply block text-[8px]/[12px] font-medium text-black;
+                        }
+                        .top-mover-container-right {
+                            @apply gap-[10px];
+                            span {
+                                @apply text-[8px]/[12px];
+                                svg {
+                                    @apply w-[10px] h-[10px];
+                                }
+                            }
+                            .top-mover-graph {
+                                @apply hidden;
+                            }
+                        }
+                    }
+                }
+            }
+            .liverate-list-section {
+                @apply py-[15px] px-[20px] gap-[10px];
+                .list-header {
+                    .liverate-menu {
+                        @apply w-full;
+                        ul {
+                            @apply  w-full justify-between;
+                            li {
+                                a {
+                                    @apply text-[10px]/[15px];
+                                    svg {
+                                        @apply w-[18.33px] h-[18.33px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    input {
+                       @apply hidden;
+                    }
+                }
+                .list-liverate-content {
+                    .list-table-header {
+                        @apply hidden;
+                    }
+                    .list-table-body {
+                        .row-list {
+                            @apply gap-[12px] items-center;
+                            .col-left {
+                                @apply w-[40%];
+                                .col-nama {
+                                    @apply gap-[14px];
+                                    img {
+                                        &.icon-liverate {
+                                            @apply w-[36px] h-[36px];
+                                        }
+                                    }
+                                    .col-nama-desc {
+                                        p {
+                                            @apply text-[12px]/[18px];
+                                            span {
+                                                @apply hidden;
+                                            }
+                                        }
+                                        span {
+                                            @apply block text-[12px]/[18px] font-medium text-neutral-500;
+    
+                                        }
+                                    }
+                                }
+                            }
+                            .col-right {
+                                @apply w-[40%] flex-col text-right;
+                                .col-beli {
+                                    @apply w-full;
+                                }
+                                .col-change {
+                                    @apply w-full;
+                                }
+                                .col-trend {
+                                    @apply w-full;  
+                                }
+                                .col-jual {
+                                    @apply hidden;
+                                }
+                                .col-trend {
+                                    @apply hidden;
+                                }
+                                .col-change {
+                                   label {
+                                        @apply justify-end;
+                                        span {
+                                            svg {
+                                                @apply w-[10px] h-[10px];
+                                            }
+                                        }
+                                   }
+                                }
+                                label {
+                                    @apply text-[12px]/[18px];
+                                }
+                              
+                            }
+                            .col-aksi {
+                                @apply w-[20%];
+                                button {
+                                    @apply w-[60px] text-[10px]/[12px];
+                                }
+                            }
+                          
+                        }
+                    }
+                }
+            }
+            .liverate-ask-section {
+                @apply py-[30px] px-[20px] gap-[20px];
+                h2 {
+                    @apply text-[16px]/[24px];
+                }
+                .ask-answer-liverate {
+                    p {
+                        @apply text-[10px]/[15px] text-center;
+                    }
+                }
+                .question-ask-liverate{
+                    @apply flex-col-reverse gap-[31px];
+                    .question-ask-image {
+                        @apply w-full items-center flex-col justify-center flex;
+                        img {
+                            @apply w-[157px] h-[201px];
+                        }
+                    }
+                    .question-ask-accordion {
+                        @apply w-full;
+                        ul {
+                            li {
+                                button {
+                                    @apply py-[4px];
+                                    .header-button {
+                                        label {
+                                            @apply text-[12px]/[18px];
+                                        }
+                                    }
+                                }
+                                .accordion-content {
+                                    .content-area {
+                                        @apply py-[4px];
+                                        p {
+                                            @apply text-[10px]/[15px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .liverate-investasi-now-section {
+                @apply py-[30px] px-[20px] gap-[20px] flex-col;
+                .image-container {
+                    @apply hidden;
+                }
+                .description-container {
+                    .start-now-description {
+                        @apply text-center gap-[10px];
+                        h2 {
+                            @apply text-[14px]/[21px];
                         }
                         p {
-                            @apply flex items-center text-[14px]/[21px] font-medium text-black;
+                            @apply text-[12px]/[18px];
                         }
                     }
                 }
-            }
-
-        }
-    }
-}
-
-.liverate-list-section {
-    @apply py-[20px] px-[100px] flex flex-col gap-[40px];
-    .list-header {
-        @apply flex justify-between items-center;
-        .liverate-menu {
-            ul {
-                @apply flex items-center gap-[30px];
-                li {
+                .start-button-logo {
+                    @apply flex-col justify-center items-center gap-[30px];
                     a {
-                        @apply cursor-pointer flex flex-col justify-self-center items-center gap-[6px] text-[14px]/[21px] font-medium;
+                        @apply w-[80%] text-[12px]/[18px] py-[8px];
                     }
                 }
             }
-        }
-        input {
-            @apply border border-neutral-200 rounded-[10px] px-[20px] py-[10px];
-        }
-    }
-    .list-liverate-content {
-        @apply flex flex-col gap-[40px];
-        .list-table-header {
-            @apply flex;
-            .col-nama {
-                @apply w-[35%];
-            }
-            .col-beli, .col-jual {
-                @apply w-[17.5%];
-            }
-            .col-change, .col-trend, .col-aksi {
-                @apply w-[10%];
-            }
-            label {
-                @apply text-[16px]/[24px] font-bold text-black;
-            }
-        }
-        .list-table-body {
-            @apply flex flex-col gap-[40px];
-            .row-list {
-                @apply flex;
-                .col-nama {
-                    @apply w-[35%] flex gap-[20px] items-center;
-                }
-                .col-beli, .col-jual {
-                    @apply w-[17.5%];
-                }
-                .col-change, .col-trend, .col-aksi {
-                    @apply w-[10%];
-                }
-                label {
-                    @apply text-[16px]/[24px] font-medium text-black;
-                }
-                img {
-                    &.icon-liverate {
-                        @apply w-[46px] h-[46px];
-                    }
-                    &.graph {
-                        @apply w-[51px] h-[28px];
-                    }
-                } 
-                button {
-                    @apply flex justify-center items-center bg-primary text-white rounded-[20px] py-[8px] w-[96px] text-[14px]/[21px] font-medium;
-                
-                }
+            .liverate-testimony-carousel-section {
+                @apply py-[30px] px-[20px];
             }
         }
     }
-}
-
-.liverate-ask-section {
-    @apply py-[20px] px-[100px] flex flex-col gap-[20px];
-    h2 {
-        @apply text-[28px]/[42px] font-bold text-black text-center;
-    }
-    .ask-answer-liverate{
-        p {
-            @apply text-[18px]/[32px] font-normal text-neutral-700;
-        }
-    }
-    .question-ask-liverate {
-        @apply flex gap-[80px] items-center;
-        .question-ask-accordion {
-            @apply w-[80%];
-            ul {
-                li {
-                    &:not(:last-child, :first-child) {
-                        @apply relative py-[20px];
-                    }
-                    button {
-                        @apply w-full py-[8px] text-left;
-                        .header-button {
-                            @apply flex items-center justify-between;
-                            label {
-                                @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
-                            }
-                        }
-                    }
-                    .accordion-content {
-                        @apply relative overflow-hidden transition-all duration-700;
-                        .content-area {
-                            @apply py-[8px];
-                            p {
-                                @apply text-[14px]/[21px] font-normal text-neutral-800;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .question-ask-imag {
-            @apply flex-1 flex flex-col justify-center;
-            img {
-                @apply w-[237px] h-[303px];
-            }
-        }
-    }
-}
-
-.liverate-investasi-now-section {
-    @apply flex items-center  px-[100px] py-[30px] gap-[60px];
-    .investasi-now-device {
-        @apply w-[600px] h-[600px] flex flex-col justify-center items-end relative;
-        img {
-            @apply  w-[392px] h-[355px] ;
-        }
-        &::before {
-            content: '';
-            @apply absolute bottom-0 w-[642px] h-[642px] z-[-1];
-            background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
-        }
-    }
-    .investasi-now-descriptions {
-        @apply flex flex-1 flex-col gap-[30px];
-        .investasi-now-description {
-            @apply flex-1 flex flex-col gap-[18px];
-            h2 {
-                @apply text-[28px]/[42px] font-bold text-neutral-900;
-            }
-            h5 {
-                @apply text-[20px]/[30px] font-bold text-neutral-900;
-            }
-            p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700;
-            }
-        }
-       .investasi-button-logo {
-            @apply flex gap-[30px];
-            a {
-                @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-            }
-            .investasi-now-store {
-                @apply flex gap-[14px] items-center;
-                img {
-                    &.apple-logo {
-                        @apply w-[31px] h-[37px];
-                    }
-                    &.playstore-logo {
-                        @apply w-[30px] h-[32px];
-
-                    }
-                }
-            }
-       }
-    }
-}
-
-.liverate-testimony-carousel-section {
-    @apply px-[100px] pt-[30px] pb-[100px] gap-[60px] flex justify-center items-center;
+    
 }

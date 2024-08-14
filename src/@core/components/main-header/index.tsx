@@ -54,9 +54,9 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 </div>
                 <div className={`main-header-menu`}>
                     <ul>
-                        <li><Link href="/liverate">Harga (Jual Beli)</Link></li>
+                        <li><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
                         <li>Service</li>
-                        <li>Staking</li>
+                        <li><Link href={`/${lang}/staking`}>Staking</Link></li>
                         <li>Market</li>
                         <li>US Stock</li>
                         <li>Affliate</li>
@@ -102,7 +102,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                     </div>
                 </div>
             </header>
-            <MainSidebarMenu show={showSidebar} setShow={setShowSidebar}/>
+            <MainSidebarMenu lang={lang} show={showSidebar} setShow={setShowSidebar}/>
         </>
   )
 }

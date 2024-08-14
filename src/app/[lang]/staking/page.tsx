@@ -13,7 +13,7 @@ import { getStakings } from '@/@core/services/api'
 import { IStaking } from '@/@core/@types/interfaces'
 import StakingCalculatorSection from '@/@core/pages/staking/calculator-section'
 
-import { getDictionaryStaking } from "../../dictionaries";
+import { getDictionaryStaking } from "@/app/dictionaries";
 
  
 export default async function  Staking({ params }: any) {
@@ -42,7 +42,7 @@ export default async function  Staking({ params }: any) {
         <StakingCoinsSection stakings={stakings} lang={coin_section}/>
         <StakingFaqSection lang={faq_section}/>
         <StakingStartNowSection lang={start_now_section}/>
-        {/* <StakingTestimonyCarouselSection /> */}
+        <StakingTestimonyCarouselSection />
       </main>
     </>
   )

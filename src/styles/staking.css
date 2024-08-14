@@ -559,6 +559,9 @@
                     }
                 }
             }
+            .staking-testimony-carousel-section {
+                @apply py-[30px] px-[20px];
+            }
         }
     }
       

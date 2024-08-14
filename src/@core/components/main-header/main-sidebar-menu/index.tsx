@@ -1,9 +1,10 @@
 "use client"
 import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import { MoonIcon, TimesIcon, TrivIcon } from '../../custom-icons'
+import Link from 'next/link'
 
-const MainSidebarMenu = (props: { show:boolean, setShow: Dispatch<SetStateAction<boolean>> }) => {
-    const { show, setShow } = props
+const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<SetStateAction<boolean>> }) => {
+    const { lang, show, setShow } = props
     const toggleSubMenu = (id:string) => {
         const element = document.getElementById(id)
         const elementChevron = document.getElementById(id+'--chevron')
@@ -39,7 +40,7 @@ const MainSidebarMenu = (props: { show:boolean, setShow: Dispatch<SetStateAction
                     </div>
                     <div className='sidebar-list'>
                         <ul>
-                            <li>Harga (Jual Beli)</li>
+                            <li><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
                             <li>
                                 <a className='flex justify-between items-center' onClick={_ => toggleSubMenu('submenu--emoney')}>
                                     <span>E-money</span>
@@ -80,7 +81,7 @@ const MainSidebarMenu = (props: { show:boolean, setShow: Dispatch<SetStateAction
                                     <li>Electricty Token</li>
                                 </ul>
                             </li>
-                            <li>Staking</li>
+                            <li><Link href={`/${lang}/staking`}>Staking</Link></li>
                             <li>US Stock</li>
                             <li>Affliate</li>
                             <li>Blog</li>

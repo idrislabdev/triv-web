@@ -1,10 +1,20 @@
+
+@tailwind components;
+
 .swiper-testimony {
+    @apply w-full flex items-center overflow-hidden;
     .swiper {
-        @apply relative w-[1250px] overflow-hidden;
+        @apply w-full relative flex items-center ml-auto mr-auto max-w-[1270px];
         .swiper-wrapper {
-            @apply flex items-center relative z-[1];
+            @apply flex items-center z-[1] w-full h-full relative;
             .swiper-slide {
-                @apply !w-[339px] mr-[25px] ml-[25px];
+                @apply !w-[339px] mr-[25px] ml-[25px] flex justify-center;
+                &:first-child {
+                    @apply !ml-auto;
+                }
+                &:last-child {
+                    @apply !mr-auto;
+                }
                 &.swiper-slide-active{
                     @apply !w-[500px] h-[215px];
                     .testimony-card {
@@ -56,6 +66,112 @@
                         }
                     }
             
+                }
+            }
+        }
+        .swiper-button-prev {
+            @apply absolute w-[58px] h-[58px] rounded-[50%] bg-white top-[90px] left-[10%] z-[1] flex flex-col items-center justify-center;
+            &::before {
+                content: '';
+                background-image: url("/svgs/chevron-left.svg");
+                background-size: 19px 33px;
+                width: 19px;
+                height: 33px;
+                cursor: pointer;
+            }
+        }
+        .swiper-button-next {
+            @apply absolute w-[58px] h-[58px] rounded-[50%] bg-white top-[90px] right-[10%] z-[1] flex flex-col items-center justify-center;
+            &::before {
+                content: '';
+                background-image: url("/svgs/chevron-right.svg");
+                background-size: 19px 33px;
+                width: 19px;
+                height: 33px;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+@layer components {
+    .mobile-responsive {
+        .swiper-testimony {
+            .swiper {
+                /* @apply w-full overflow-hidden; */
+                .swiper-wrapper {
+                    @apply flex items-center justify-center;
+                    .swiper-slide {
+                        @apply !w-[223.71px] mr-[5px] ml-[5px];
+                        &.swiper-slide-active{
+                            @apply !w-[223.71px] h-[100.41px];
+                            .testimony-card {
+                                @apply w-[223.71px] h-[100.41px] opacity-100 cursor-grab;
+                                .testimony-thumb {
+                                    @apply w-[116.76px];
+                                    img {
+                                        @apply w-[116.76px] h-[100.41px] select-none;
+                                    }
+                                }
+                                .testimony-content {
+                                    @apply flex-1 flex flex-col justify-center gap-[14px];
+                                    p {
+                                        @apply text-[5px]/[8px] font-medium text-neutral-700 select-none;
+                                    }
+                                    .testimony-name-tag {
+                                        @apply flex flex-col gap-[7px];
+                                        h5 {
+                                            @apply text-[5px]/[8px] font-bold text-[#293238] select-none;
+                                        }
+                                        p {
+                                            @apply text-[5px]/[8px] font-semibold text-[#7D7A7A] select-none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .testimony-card {
+                            @apply flex w-[158px] h-[75px] gap-[18px] border border-neutral-200 rounded-[9px] opacity-40;
+                            .testimony-thumb {
+                                @apply w-[79px];
+                                img {
+                                    @apply w-[79px] h-[74px];
+                                }
+                            }
+                            .testimony-content {
+                                @apply flex-1 flex flex-col justify-center gap-[14px];
+                                p {
+                                    @apply text-[4px]/[6px] font-medium text-neutral-700;
+                                }
+                                .testimony-name-tag {
+                                    @apply flex flex-col gap-[7px];
+                                    h5 {
+                                        @apply text-[4px]/[6px] font-bold text-[#293238];
+                                    }
+                                    p {
+                                        @apply text-[4px]/[6px] font-semibold text-[#7D7A7A];
+                                    }
+                                }
+                            }
+                    
+                        }
+                    }
+                }
+                .swiper-button-prev {
+                    @apply absolute w-[27px] h-[27px] top-[45px] left-[10px];
+                    &::before {      
+                        background-size: 9px 15px;
+                        width: 9px;
+                        height: 15px;
+                    }
+                }
+                .swiper-button-next {
+                    @apply absolute w-[27px] h-[27px] top-[45px] right-[10px];
+                    &::before {
+                        background-size: 9px 15px;
+                        width: 9px;
+                        height: 15px;
+                    }
                 }
             }
         }

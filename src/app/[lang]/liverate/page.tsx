@@ -20,12 +20,15 @@ export default async function  Liverate({ params }: any) {
     return (
     <>
         <MainHeader classText="header-white" lang={params.lang}/>
-        <LiverateHeaderSection />
-        <LiverateTopMoverSection hightlight={hightlight}/>
-        <LiverateListSection liverates={liverates}/>
-        <LiverateAskSection />
-        <LiverateInvestasiNowSection />
-        <LiverateTestimonyCarouselSection />
+        <main className='liverate-page sm:mobile-responsive light-theme'>
+          <LiverateHeaderSection />
+          <LiverateTopMoverSection hightlight={hightlight}/>
+          <LiverateListSection liverates={liverates}/>
+          <LiverateAskSection />
+          <LiverateInvestasiNowSection />
+          <LiverateTestimonyCarouselSection />
+        </main>
+
     </>
   )
 }
