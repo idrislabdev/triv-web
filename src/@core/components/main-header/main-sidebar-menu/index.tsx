@@ -31,7 +31,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                 <div className='sidebar-menu-top'>
                     <div className='sidebar-header'>
                         <div className='sidebar-header-logo'>
-                            <TrivIcon color={'#318AC6'} />
+                            <Link href="/"><TrivIcon color={'#318AC6'} /></Link>
                         </div>
                         <div className='sidebar-header-action'>
                             <a><MoonIcon color={'#F2AF22'} /></a>
