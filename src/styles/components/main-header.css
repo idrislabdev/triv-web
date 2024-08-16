@@ -1,15 +1,49 @@
 @tailwind components;
 
 .main-header {
-    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white;
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white h-[70px];
 
     &.header-white {
         @apply bg-white text-black;
         .main-header-action {
+            a {
+                &.button-switch-theme {
+                    svg {
+                        path {
+                            @apply fill-yellow-600;
+                        }
+                        circle {
+                            @apply fill-yellow-600;
+                        }
+                    }
+                }
+            }
             ul {
                 li {
                     .btn-signup-header{
                         @apply  bg-primary text-white rounded-[8px] py-[8px] w-full;
+                    }
+                }
+            }
+            .main-header-action-list {
+                ul {
+                    li {
+                        a {
+                            &.flag-button {
+                                svg {
+                                    @apply stroke-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                &.burger-menu {
+                    svg {
+                        path {
+                            @apply fill-black;
+                        }
                     }
                 }
             }
@@ -43,6 +77,11 @@
                     .btn-signup-header {
                         @apply w-[73px];
                     } 
+                    a {
+                        &.flag-button {
+                            @apply flex items-center gap-[4px];
+                        }
+                    }
                     ul {
                         &.list-flags {
                             @apply absolute top-[27px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;

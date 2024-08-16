@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
-import { BurgerIcon, MoonIcon, TrivIcon } from '../custom-icons';
+import { BurgerIcon, ChevronIconDown, MoonIcon, TrivIcon } from '../custom-icons';
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
@@ -67,21 +67,12 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 <div className='main-header-action'>
                     <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={classText === '' ? '#fff': '#000'} /></a>
                     <div className='main-header-action-list'>
-                        <a><MoonIcon color={classText === '' ? '#fff': '#F2AF22'} /></a>
+                        <a className='button-switch-theme'><MoonIcon color='#fff' /></a>
                         <ul>
                             <li>
-                                <a className='flex items-center gap-[4px]' onClick={_ => setShowFlags(!showFlags)}>
+                                <a className='flag-button' onClick={_ => setShowFlags(!showFlags)}>
                                     <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
-                                    <svg 
-                                        className={`w-3 h-3`} 
-                                        fill="none" strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        strokeWidth="2" 
-                                        viewBox="0 0 24 24" 
-                                        stroke="#000"
-                                    >
-                                        <path d="M19 9l-7 7-7-7"></path>
-                                    </svg>
+                                    <ChevronIconDown color={'#fff'}/>
                                 </a>
                                 <ul className={`list-flags ${showFlags ? 'show': ''}`}>
                                     <li>

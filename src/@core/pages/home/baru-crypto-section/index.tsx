@@ -14,7 +14,7 @@ const BaruCryptoSection = () => {
                 <a>Lihat Semua Video</a>
             </div>
             <div className='baru-crypto-videos'>
-                <Swiper>
+                <Swiper slidesPerView={'auto'}>
                     <SwiperSlide>
                         <div className='crypto-thumb-video'>
                             <div className='video-thumb'>
@@ -93,6 +93,7 @@ const BaruCryptoSection = () => {
                         </div>
                     </SwiperSlide>
                 </Swiper>
+                <a>Lihat Semua Video</a>
             </div>
         </section>
         // <Swiper

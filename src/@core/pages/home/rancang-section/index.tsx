@@ -10,7 +10,7 @@ const HomeRancangSection = () => {
         <div className='home-rancang-description'>
             <h2>Dirancang khusus untuk analisis, trading investasi crypto</h2>
             <div className='rancang-description-details'>
-                <div className='flex items-start gap-[40px]'>
+                <div className='rancang-description-details-sub'>
                     <div className='rancang-description-detail'>
                         <Image src='/images/3d-icons/3d-bitcoin.png' alt='3d bitcoin' width={70} height={70}/>
                         <h5>700+ Cryptocurrencies</h5>
@@ -22,7 +22,7 @@ const HomeRancangSection = () => {
                         <p>Beli secara cepat dengan 2 klik atau trading dengan limit dan stop loss order</p>
                     </div>
                 </div>
-                <div className='flex items-start gap-[40px]'>
+                <div className='rancang-description-details-sub'>
                     <div className='rancang-description-detail'>
                         <Image src='/images/3d-icons/3d-blockchain.png' alt='3d blockchain' width={70} height={70}/>
                         <h5>Spread selisih harga jual-beli Triv</h5>

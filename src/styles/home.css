@@ -1,301 +1,255 @@
-.home-banner-section {
-    @apply  h-[750px] pt-[150px] relative;
-    background: linear-gradient(to bottom, transparent,#76DAC7) #5E9CB2;
-
-
-    .home-banner-section-area {
-        @apply flex px-[100px] gap-[10px];
-        .section-text {
-            @apply flex flex-col w-2/3 gap-[40px] z-[1];
-            h1 {
-                @apply text-[44px]/[70px] text-white font-medium;
-            }
-            p {
-                @apply text-[16px]/[32px] text-white font-medium;
-            }
-            a {
-                @apply bg-white text-[#71BBED] text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
-            }
-            .section-terdaftar {
-                @apply flex gap-[30px] items-center;
-                label  {
-                    @apply text-[16px]/[32px] text-white font-medium;
-                }
-                .terdaftar-list-logo {
-                    @apply flex gap-[14px];
-                    
-                }
-            }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.home-page {
+    @apply pt-0;
+    &.dark-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-slate-200;
         }
-        .section-device {
-            @apply flex-1 relative z-[1];
-            .device-macbook {
-                @apply w-[556px]
-            }
-            .device-iphone {
-                @apply w-[189px] absolute top-[100px];
-            }
-        }
-        &::after {
-            content: '';
-            @apply absolute right-0 bottom-0 w-[830px] h-[575px];
-            background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
-        }
-    }
-}
-
-.home-index-crypto-section {
-    @apply py-[40px] px-[100px] relative overflow-hidden;
-    .swiper {
-        .swiper-wrapper {
-            @apply flex w-full gap-[20px] relative;
-            .swiper-slide {
-                @apply !w-[210px];
-                .index-cyrpto-content {
-                    @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-[210px];
-                    .crypto-title{
-                        label {
-                            @apply text-[12px]/[18px] font-medium text-neutral-500;
-                        }
-                    }
-                    .crypto-index{
-                        label {
-                            @apply text-[12px]/[18px] font-medium flex items-center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.home-assets-crypto-section {
-    @apply px-[100px] py-[40px] flex flex-col gap-[40px];
-    .crypto-section-title {
-        @apply flex justify-between items-center;
-        h2 {
-            @apply text-[28px]/[42px] font-bold text-neutral-900;
+        p {
+            @apply text-slate-300;
         }
         a {
-            @apply text-[14px]/[21px] font-medium text-neutral-900;
+            @apply text-[#737aff]
         }
     }
-    .crypto-section-thumbs {
-        @apply flex gap-[20px] justify-between;
-        .asset-crypto-thumb {
-            @apply border rounded-[14px] border-neutral-200 flex flex-col justify-between px-[20px] py-[16px] h-[140px];
-            .crypto-thumb-top {
-                @apply flex gap-[14px] items-center;
-                .icon-thumb-top {
-                    img {
-                        width: 36px;
-                        height: 36px;
-                    }
-                }
-                label {
-                    @apply text-[14px]/[21px] font-bold text-neutral-900;
-                }
-            }
-            .crypto-thumb-bottom {
-                @apply flex flex-col gap-[5px];
-                label {
-                    &.thumb-bottom-idr {
-                        @apply text-[14px]/[21px] font-medium text-neutral-900;
-                    }
-                    &.thumb-bottom-index {
-                        @apply text-[12px]/[18px] font-medium text-primary;
-
-                    }
-                }
-            }
+    &.light-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-black;
+        }
+        p {
+            @apply text-neutral-700;
         }
     }
-}
-
-.home-rancang-section {
-    @apply flex items-center px-[100px] py-[40px] relative;
-    .home-rancang-device {
-        @apply w-1/2 relative flex flex-col items-center;
-        img {
-            width: 492px;
-            height: 407px;
-        }
-        &::after {
-            content: '';
-            @apply absolute bottom-[-50px] w-[642px] h-[642px] z-[-1];
-            background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
-        }
-    }
-    .home-rancang-description {
-        @apply flex flex-col gap-[60px] w-1/2 justify-center items-center text-center;
-        h2 {
-            @apply text-[28px]/[42px] font-bold text-neutral-900;
-        }
-        .rancang-description-details {
-            @apply flex flex-col gap-[40px];
-            .rancang-description-detail {
-                @apply flex flex-col gap-[10px] w-1/2 justify-center text-center items-center;
-                img {
-                    width: 70px;
-                    height: 70px;
-                }
-                h5 {
-                    @apply text-[16px]/[24px] font-semibold text-neutral-900;
+    .home-banner-section {
+        @apply  h-[750px] pt-[150px] relative;
+        background: linear-gradient(to bottom, transparent,#76DAC7) #5E9CB2;
+    
+    
+        .home-banner-section-area {
+            @apply flex px-[100px] gap-[10px];
+            .section-text {
+                @apply flex flex-col w-2/3 gap-[40px] z-[1];
+                h1 {
+                    @apply text-[44px]/[70px] text-white font-medium;
                 }
                 p {
-                    @apply text-[12px]/[18px] font-medium text-neutral-900;
+                    @apply text-[16px]/[32px] text-white font-medium;
+                }
+                a {
+                    @apply bg-white text-[#71BBED] text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
+                }
+                .section-terdaftar {
+                    @apply flex gap-[30px] items-center;
+                    label  {
+                        @apply text-[16px]/[32px] text-white font-medium;
+                    }
+                    .terdaftar-list-logo {
+                        @apply flex gap-[14px];
+                        
+                    }
+                }
+            }
+            .section-device {
+                @apply flex-1 relative z-[1];
+                .device-macbook {
+                    @apply w-[556px]
+                }
+                .device-iphone {
+                    @apply w-[189px] absolute top-[100px];
+                }
+            }
+            &::after {
+                content: '';
+                @apply absolute right-0 bottom-0 w-[830px] h-[575px];
+                background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
+            }
+        }
+    }
+    
+    .home-index-crypto-section {
+        @apply py-[50px] px-[100px] w-full relative overflow-hidden;
+        .swiper {
+            @apply w-full ml-auto mr-auto;
+            .swiper-wrapper {
+                @apply flex w-full relative gap-[10px];
+                .swiper-slide {
+                    @apply !w-[210px];
+                    .index-cyrpto-content {
+                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-[210px];
+                        .crypto-title{
+                            @apply flex;
+                            label {
+                                @apply text-[12px]/[18px] font-medium text-neutral-500;
+                            }
+                        }
+                        .crypto-index{
+                            @apply flex;
+                            label {
+                                @apply text-[12px]/[18px] font-medium flex items-center;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-}
-
-.home-investasi-section {
-    @apply flex flex-col items-center px-[100px] py-[40px] relative;
-    .investasi-section-box {
-        @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] gap-[60px] relative;
-        h2 {
-            @apply text-[28px]/[42px] font-bold text-neutral-900;
-        }
-        .investasi-details {
-            @apply flex gap-[100px];
-            .investasi-detail {
-                @apply flex flex-col items-center gap-[30px];
-                .investasi-detail-description {
-                    @apply flex flex-col gap-[10px] items-center;
-                    h5 {
-                        @apply text-[16px]/[24px] font-semibold text-neutral-900;
-                    }
-                    p {
-                        @apply text-[12px]/[18px] font-medium text-neutral-900;
-                    }
-                }
-            }
-        }
-        &::after {
-            content: '';
-            @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-            background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-        }
-        &::before {
-            content: '';
-            @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-            background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-        }
-    }
-
-}
-
-.home-dividen-staking-section {
-    @apply flex items-center  px-[100px] py-[40px];
-    .dividen-staking-device {
-        @apply w-1/2 relative flex flex-col justify-center items-end;
-        img {
-            width: 505px;
-            height: 386px;
-        }
-    }
-    .dividen-staking-description {
-        @apply flex flex-1 flex-col gap-[40px] py-[40px] px-[40px];
-        .staking-description-title {
-            @apply flex flex-col gap-[20px];
+    
+    .home-assets-crypto-section {
+        @apply px-[100px] py-[50px] flex flex-col gap-[40px];
+        .crypto-section-title {
+            @apply flex justify-between items-center;
             h2 {
                 @apply text-[28px]/[42px] font-bold text-neutral-900;
             }
-            p {
-                @apply text-[18px]/[32px] font-medium text-neutral-700;
+            a {
+                @apply text-[14px]/[21px] font-medium text-neutral-900;
             }
         }
-        a {
-            @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-        }
-    }
-}
-
-.home-ewallet-section {
-    @apply flex items-center  px-[100px] py-[40px];
-    .ewallet-description {
-        @apply flex-1 flex flex-col gap-[26px] py-[20px];
-        h2 {
-            @apply text-[28px]/[42px] font-bold text-neutral-900;
-        }
-        h5 {
-            @apply text-[20px]/[30px] font-bold text-neutral-900;
-        }
-        p {
-            @apply text-[16px]/[32px] font-medium text-neutral-700;
-        }
-    }
-    .ewallet-image {
-        @apply w-[455px];
-        img {
-           @apply w-[455px] h-[435px];
-        }
-    }
-}
-
-.home-baru-crypto-section {
-    @apply flex gap-[80px] px-[100px] py-[40px] items-center relative bg-[#EEF7FD];
-    .baru-crypto-title {
-        @apply flex flex-col gap-[20px];
-        h5 {
-            @apply text-[28px]/[42px] font-bold text-black;
-        }
-        p {
-            @apply text-[16px]/[32px] font-medium text-black;
-        }
-        a {
-            @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
-        }
-    }
-    .baru-crypto-videos {
-        @apply flex-1 relative overflow-hidden;
-        .swiper {
-            .swiper-wrapper {
-                @apply flex relative w-full gap-[36px];
-                .swiper-slide {
-                    @apply !w-[300px];
-                    .crypto-thumb-video {
-                        @apply bg-white w-[300px] flex flex-col gap-[20px] rounded-[10px];
-                        .video-thumb {
+        .crypto-section-thumbs {
+            @apply flex gap-[20px] justify-between;
+            .asset-crypto-thumb {
+                @apply w-1/6;
+                .asset-crypto-thumb-container {
+                    @apply border rounded-[14px] border-neutral-200 flex flex-col justify-between px-[20px] py-[16px] h-[140px] w-full;
+                    .crypto-thumb-top {
+                        @apply flex gap-[14px] items-center;
+                        .icon-thumb-top {
+                            @apply w-[36px];
                             img {
-                                @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
+                                @apply w-[36px] w-[36px];
+    
                             }
                         }
-                       .video-title {
-                            @apply flex flex-col gap-[14px] p-[13px];
-                            h6 {
-                                @apply text-[16px]/[24px] text-black;
+                        label {
+                            @apply text-[14px]/[21px] font-bold text-neutral-900;
+                        }
+                    }
+                    .crypto-thumb-bottom {
+                        @apply flex flex-col gap-[5px];
+                        label {
+                            &.thumb-bottom-idr {
+                                @apply text-[14px]/[21px] font-medium text-neutral-900;
                             }
-                            a {
-                                @apply bg-[#EEF7FD] text-[#4DAAE9] text-[13px]/[20px] font-bold rounded-[31px] w-full h-[30px] flex flex-col justify-center items-center;
+                            &.thumb-bottom-index {
+                                @apply text-[12px]/[18px] font-medium text-primary;
+        
                             }
-                       }
+                        }
                     }
                 }
             }
         }
-        
     }
-}
-
-.home-buy-sell-assets-section {
-    @apply flex items-center  px-[100px] py-[40px] gap-[38px];
-    .home-buy-sell-device {
-        @apply w-[600px] h-[600px] flex flex-col justify-center items-end relative;
-        img {
-            @apply  w-[392px] h-[355px] ;
+    
+    .home-rancang-section {
+        @apply flex items-end px-[100px] py-[50px] relative;
+        .home-rancang-device {
+            @apply w-1/2 relative flex flex-col items-center;
+            img {
+                width: 492px;
+                height: 407px;
+            }
+            &::after {
+                content: '';
+                @apply absolute bottom-[-50px] w-[642px] h-[642px] z-[-1];
+                background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
+            }
         }
-        &::before {
-            content: '';
-            @apply absolute bottom-0 w-[642px] h-[642px] z-[-1];
-            background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
+        .home-rancang-description {
+            @apply flex flex-col gap-[60px] w-1/2 justify-center items-center text-center;
+            h2 {
+                @apply text-[28px]/[42px] font-bold text-neutral-900;
+            }
+            .rancang-description-details {
+                @apply flex flex-col gap-[40px];
+                .rancang-description-details-sub {
+                    @apply flex gap-[40px] items-start;
+                    .rancang-description-detail {
+                        @apply flex flex-col gap-[10px] w-1/2 justify-center text-center items-center;
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                        h5 {
+                            @apply text-[16px]/[24px] font-semibold text-neutral-900;
+                        }
+                        p {
+                            @apply text-[12px]/[18px] font-medium text-neutral-900;
+                        }
+                    }
+                }
+            }
         }
     }
-    .home-buy-sell-descriptions {
-        @apply flex flex-1 flex-col gap-[30px];
-        .home-buy-sell-description {
-            @apply flex-1 flex flex-col gap-[18px];
+    
+    .home-investasi-section {
+        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        .investasi-section-box {
+            @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] gap-[60px] relative;
+            h2 {
+                @apply text-[28px]/[42px] font-bold text-neutral-900;
+            }
+            .investasi-details {
+                @apply flex gap-[100px];
+                .investasi-detail {
+                    @apply flex flex-col items-center gap-[30px];
+                    .investasi-detail-description {
+                        @apply flex flex-col gap-[10px] items-center;
+                        h5 {
+                            @apply text-[16px]/[24px] font-semibold text-neutral-900;
+                        }
+                        p {
+                            @apply text-[12px]/[18px] font-medium text-neutral-900;
+                        }
+                    }
+                }
+            }
+            &::after {
+                content: '';
+                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
+            }
+            &::before {
+                content: '';
+                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
+            }
+        }
+    
+    }
+    
+    .home-dividen-staking-section {
+        @apply flex items-center  px-[100px] py-[40px];
+        .dividen-staking-device {
+            @apply w-1/2 relative flex flex-col justify-center items-end;
+            img {
+                width: 505px;
+                height: 386px;
+            }
+        }
+        .dividen-staking-description {
+            @apply flex flex-1 flex-col gap-[40px] py-[40px] px-[40px];
+            .staking-description-title {
+                @apply flex flex-col gap-[20px];
+                h2 {
+                    @apply text-[28px]/[42px] font-bold text-neutral-900;
+                }
+                p {
+                    @apply text-[18px]/[32px] font-medium text-neutral-700;
+                }
+            }
+            a {
+                @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+            }
+        }
+    }
+    
+    .home-ewallet-section {
+        @apply flex items-center  px-[100px] py-[40px];
+        .ewallet-description {
+            @apply flex-1 flex flex-col gap-[26px] py-[20px];
             h2 {
                 @apply text-[28px]/[42px] font-bold text-neutral-900;
             }
@@ -306,37 +260,447 @@
                 @apply text-[16px]/[32px] font-medium text-neutral-700;
             }
         }
-        a {
-            @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-        }
-        .home-buy-sell-store {
-            @apply flex gap-[14px] items-center;
+        .ewallet-image {
+            @apply w-[455px];
             img {
-                &.buy-sell-playtore {
-                    @apply w-[130px] h-[38px];
-                }
-                &.buy-sell-appstore {
-                    @apply w-[114px] h-[38px];
-
-                }
+               @apply w-[455px] h-[435px];
             }
         }
     }
-}
-
-.home-media-section {
-    @apply flex flex-col justify-center items-center  p-[100px] gap-[40px];
-    h2 {
-        @apply text-[28px]/[42px] font-bold text-neutral-900;
-    }
-    .media-list {
-        @apply flex gap-[80px] justify-center;
-        .media-thumb {
-            @apply w-1/6;
-            img {
-                @apply w-[130px] h-[36px]
+    
+    .home-baru-crypto-section {
+        @apply flex gap-[80px] px-[100px] py-[40px] items-center relative bg-[#EEF7FD];
+        .baru-crypto-title {
+            @apply flex flex-col gap-[20px];
+            h5 {
+                @apply text-[28px]/[42px] font-bold text-black;
+            }
+            p {
+                @apply text-[16px]/[32px] font-medium text-black;
+            }
+            a {
+                @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
             }
         }
+        .baru-crypto-videos {
+            @apply flex-1 relative overflow-hidden;
+            .swiper {
+                .swiper-wrapper {
+                    @apply flex relative w-full gap-[36px];
+                    .swiper-slide {
+                        @apply !w-[300px];
+                        .crypto-thumb-video {
+                            @apply bg-white w-[300px] flex flex-col gap-[20px] rounded-[10px];
+                            .video-thumb {
+                                img {
+                                    @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
+                                }
+                            }
+                           .video-title {
+                                @apply flex flex-col gap-[14px] p-[13px];
+                                h6 {
+                                    @apply text-[16px]/[24px] text-black;
+                                }
+                                a {
+                                    @apply bg-[#EEF7FD] text-[#4DAAE9] text-[13px]/[20px] font-bold rounded-[31px] w-full h-[30px] flex flex-col justify-center items-center;
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+            a {
+                @apply hidden;
+            }
+            
+        }
+    }
+    
+    .home-buy-sell-assets-section {
+        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        .image-container {
+            @apply w-[600px] flex flex-col justify-center items-end relative;
+            img {
+                @apply  w-[392px] h-[355px] ;
+            }
+            &::before {
+                content: '';
+                @apply absolute left-[-10px] w-[500px] h-[500px] z-[-1];
+                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+            }
+        }
+        .description-container {
+            @apply flex flex-1 flex-col gap-[30px];
+            .start-now-description {
+                @apply flex-1 flex flex-col gap-[18px];
+                h2 {
+                    @apply text-[28px]/[42px] font-bold text-neutral-900;
+                }
+                h5,p {
+                    @apply text-[16px]/[32px] font-bold text-neutral-700;
+                }
+                p {
+                   @apply font-medium
+                }
+            }
+           .start-button-logo {
+                @apply flex flex-col gap-[30px];
+                a {
+                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                }
+                .start-now-store {
+                    @apply flex gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[130.64px] h-[38.71px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[114.43px] h-[37.02px];
+    
+                        }
+                    }
+                }
+           }
+        }
+    }
+    
+    .home-media-section {
+        @apply flex flex-col justify-center items-center  p-[100px] gap-[40px];
+        h2 {
+            @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        .media-list {
+            @apply flex flex-wrap justify-center;
+            .media-thumb {
+                @apply w-1/6 flex flex-col justify-center items-center p-[20px];
+                img {
+                    @apply w-[130px] h-[36px]
+                }
+            }
+    
+        }
+    }
 
+    @layer components {
+        &.mobile-responsive {
+            .home-banner-section {
+                @apply pt-[75px] h-[569px];
+                .home-banner-section-area {
+                    @apply flex-col px-[20px];
+                    .section-text {
+                        @apply w-full gap-[14px] items-center;
+                        h1 {
+                            @apply text-[14px]/[21px] text-center;
+                        }
+                        p {
+                            @apply text-[10px]/[15px] text-center;
+                        }
+                        a {
+                            @apply w-[200px] text-[12px] h-[34px];
+                        }
+                        .section-terdaftar {
+                            @apply flex-col gap-[10px];
+                            label  {
+                                @apply text-[10px]/[15px] ;
+                            }
+                            .terdaftar-list-logo {
+                                .bappebti-logo {
+                                    img {
+                                        @apply w-[72.63px] h-[16.66px];
+                                    }
+                                }
+                                .kominfo-logo {
+                                    img {
+                                        @apply w-[59.12px] h-[18.53px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .section-device {
+                        @apply flex flex-col items-center;
+                        .device-macbook {
+                            @apply w-[245px]
+                        }
+                        .device-iphone {
+                            @apply w-[83px] left-[20px] top-[40px];
+                        }
+                    }
+                    &::after {
+                        @apply  w-[500px] h-[400px];
+                        background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
+
+                    }
+                }
+            }
+            .home-assets-crypto-section {
+                @apply px-[30px] py-[20px] gap-[20px];
+                .crypto-section-title {
+                    @apply flex justify-between items-center;
+                    h2 {
+                        @apply text-[12px]/[18px];
+                    }
+                    a {
+                        @apply text-[8px]/[12px] p-[6px] border border-neutral-200 rounded-[6px];
+                    }
+                }
+                .crypto-section-thumbs {
+                    @apply flex-wrap gap-[0px] justify-center;
+                   .asset-crypto-thumb {
+                        @apply p-[4px] w-1/3;
+                        .asset-crypto-thumb-container {
+                            @apply h-[72px] p-[8px];
+                            .crypto-thumb-top {
+                                @apply gap-[8px];
+                                .icon-thumb-top {
+                                    @apply w-[20px];
+                                    img {
+                                        @apply w-[20px] w-[20px];
+                                    }
+                                }
+                                label {
+                                    @apply text-[8px]/[12px];
+                                }
+                            }
+                            .crypto-thumb-bottom {
+                                label {
+                                    &.thumb-bottom-idr {
+                                        @apply text-[8px]/[12px];
+                                    }
+                                    &.thumb-bottom-index {
+                                        @apply text-[6px]/[9px];
+                                    }
+                                }
+                            }
+                        }
+                   }
+                }
+            }
+            .home-index-crypto-section {
+                @apply py-[20px] px-[0px];
+                .swiper {
+                    .swiper-wrapper {
+                        @apply gap-[6px];
+                        .swiper-slide {
+                            @apply !w-[147px];
+                            .index-cyrpto-content {
+                                @apply w-[147px] h-[24px] items-center ;
+                                .crypto-title{
+                                    label {
+                                        @apply text-[8px]/[12px];
+                                    }
+                                }
+                                .crypto-index{
+                                    label {
+                                        @apply text-[8px]/[12px];
+                                        svg {
+                                            @apply w-[12px] h-[12px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .home-rancang-section {
+                @apply flex-col px-[30px] py-[20px];
+                .home-rancang-device {
+                    @apply hidden;
+                }
+                .home-rancang-description {
+                    @apply w-full gap-[28px];
+                    h2 {
+                        @apply text-[12px]/[18px] font-bold text-neutral-900;
+                    }
+                    .rancang-description-details {
+                        @apply gap-[24px];
+                        .rancang-description-details-sub {
+                            @apply gap-[24px];
+                            .rancang-description-detail {
+                                @apply w-full;
+                                img {
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                                h5 {
+                                    @apply text-[10px]/[15px];
+                                }
+                                p {
+                                    @apply text-[8px]/[18px];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .home-investasi-section {
+                @apply px-[30px] py-[20px] ;
+                .investasi-section-box {
+                    @apply overflow-hidden;
+                    h2 {
+                        @apply text-[14px]/[21px];
+                    }
+                    .investasi-details {
+                        @apply flex-col gap-[30px];
+                        .investasi-detail {
+                            .investasi-detail-description {
+                                h5 {
+                                    @apply text-[10px]/[15px];
+                                }
+                                p {
+                                    @apply text-[8px]/[12px];
+                                }
+                            }
+                            img {
+                                @apply w-[109.67px] h-[162px];
+                            }
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
+                    }
+                    &::before {
+                        content: '';
+                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
+                    }
+                }
+            
+            }
+            .home-dividen-staking-section {
+                @apply flex-col-reverse px-[30px] py-[20px];
+                .dividen-staking-device {
+                    @apply w-full justify-center;
+                    img {
+                        @apply w-[302px] h-[242px];
+                    }
+                }
+                .dividen-staking-description {
+                    @apply gap-[20px] justify-center items-center text-center;
+                    .staking-description-title {
+                        @apply flex flex-col gap-[20px];
+                        h2 {
+                            @apply text-[14px]/[21px];
+                        }
+                        p {
+                            @apply text-[10px]/[15px];
+                        }
+                    }
+                    a {
+                        @apply h-[34px] w-[200px] text-[12px]/[18px];
+                    }
+                }
+            }
+            .home-ewallet-section {
+                @apply flex-col py-[30px] px-[20px];
+                .ewallet-description {
+                    @apply justify-center items-center w-full text-center p-0;
+                    h2 {
+                        @apply text-[14px]/[21px];
+                    }
+                    h5 {
+                        @apply text-[10px]/[15px];
+                    }
+                    p {
+                        @apply text-[10px]/[15px];
+                    }
+                }
+                .ewallet-image {
+                    @apply w-[246px] flex flex-col justify-center items-center;
+                    img {
+                        @apply w-[246px] h-[219px];
+                    }
+                }
+            }
+            .home-baru-crypto-section {
+                @apply flex-col px-[30px] py-[20px] gap-[30px] justify-center;
+                .baru-crypto-title {
+                    @apply flex flex-col gap-[20px] items-center;
+                    h5 {
+                        @apply text-[14px]/[21px] font-bold text-black;
+                    }
+                    p {
+                        @apply text-[12px]/[18px] font-medium text-black;
+                    }
+                    a {
+                        @apply hidden;
+                    }
+                }
+                .baru-crypto-videos {
+                    @apply relative overflow-hidden w-full flex flex-col gap-[30px] justify-center items-center;
+                    .swiper {
+                        @apply w-full;
+                        .swiper-wrapper {
+                            @apply flex relative w-full gap-[21px];
+                            .swiper-slide {
+                                @apply !w-[148px];
+                                .crypto-thumb-video {
+                                    @apply w-[148px] flex;
+                                    .video-thumb {
+                                        img {
+                                            @apply w-[148px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
+                                        }
+                                    }
+                                   .video-title {
+                                        @apply flex flex-col gap-[14px] p-[13px];
+                                        h6 {
+                                            @apply text-[8.15px]/[12.23px];
+                                        }
+                                        a {
+                                            @apply text-[6.79px]/[10.19px] h-[15.44px];
+                                        }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        @apply bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px] flex flex-col justify-center items-center;
+                    }
+                    
+                }
+            }
+            .home-buy-sell-assets-section  {
+                @apply py-[30px] px-[20px] gap-[20px] flex-col;
+                .image-container {
+                    @apply hidden;
+                }
+                .description-container {
+                    .start-now-description {
+                        @apply text-center gap-[10px];
+                        h2 {
+                            @apply text-[14px]/[21px];
+                        }
+                        h5,p {
+                            @apply text-[12px]/[18px];
+                        }
+                    }
+                }
+                .start-button-logo {
+                    @apply flex-col justify-center items-center gap-[30px];
+                    a {
+                        @apply w-[80%] text-[12px]/[18px] py-[8px];
+                    }
+                }
+            }
+            .home-media-section {
+                @apply p-[20px] gap-[20px];
+                h2 {
+                    @apply text-[14px]/[21px];
+                }
+                .media-list {
+                    .media-thumb {
+                        @apply w-1/3;
+                        img {
+                            @apply w-[81.72px] h-[22.63px]
+                        }
+                    }
+            
+                }
+            }
+        }
     }
 }

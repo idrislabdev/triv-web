@@ -30,6 +30,9 @@ const config: Config = {
         },
         red: {
           600: '#EB5757'
+        },
+        yellow: {
+          600: '#F2AF22'
         }
       },
       screens: {

@@ -222,6 +222,23 @@ const TimesIcon = (props :{ color: any }) => {
     )
 } 
 
+const ChevronIconDown = (props :{ color: any }) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg 
+            width="13" height="13"
+            fill="none" strokeLinecap="round" 
+            strokeLinejoin="round" 
+            strokeWidth="2" 
+            viewBox="0 0 24 24" 
+            stroke={currentColor}
+        >
+            <path d="M19 9l-7 7-7-7"></path>
+        </svg>
+    )
+} 
+
 
 
 export {
@@ -243,5 +260,6 @@ export {
     TiktokIcon,
     TelegramIcon,
     BurgerIcon,
-    TimesIcon
+    TimesIcon,
+    ChevronIconDown
 }

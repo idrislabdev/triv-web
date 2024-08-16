@@ -13,16 +13,18 @@ const HomeAssetCryptoSection = async (props : {liverates:ILiverateMini[]}) => {
             </div>
             <div className='crypto-section-thumbs'>
                 {liverates?.map((item:ILiverateMini, index:number) => (
-                    <div className='asset-crypto-thumb w-1/6' key={index}>
-                        <div className='crypto-thumb-top'>
-                            <div className='icon-thumb-top'>
-                                <Image src={`${item.icon_url}`} alt='bitcoin' width={36} height={36}/>
+                    <div className='asset-crypto-thumb' key={index}>
+                        <div className='asset-crypto-thumb-container'>
+                            <div className='crypto-thumb-top'>
+                                <div className='icon-thumb-top'>
+                                    <Image src={`${item.icon_url}`} alt='bitcoin' width={36} height={36}/>
+                                </div>
+                                <label>{item.currency}</label>
                             </div>
-                            <label>{item.currency}</label>
-                        </div>
-                        <div className='crypto-thumb-bottom'>
-                            <label className='thumb-bottom-idr'>IDR {item.rate}</label>
-                            <label className='thumb-bottom-index'>{item.change_24h * 100}%</label>
+                            <div className='crypto-thumb-bottom'>
+                                <label className='thumb-bottom-idr'>IDR {item.rate}</label>
+                                <label className='thumb-bottom-index'>{item.change_24h * 100}%</label>
+                            </div>
                         </div>
                     </div>
                 ))

@@ -9,21 +9,21 @@ import BaruCryptoSection from "@/@core/pages/home/baru-crypto-section";
 import HomeIndexCryptoSection from "@/@core/pages/home/index-crypto-section";
 import HomeBuySellAssetsSection from "@/@core/pages/home/buy-sell-assets-section";
 import MainHeader from "@/@core/components/main-header";
-import { getDictionaryHome } from "./dictionaries";
 import { getLiverateMini } from "@/@core/services/api";
+import { getDictionaryHome } from "../dictionaries";
 import "@/styles/home.css"
 
-export default async function  Home() {
+export default async function  HomeLang({ params }: any) {
   const resp =  await getLiverateMini();
   const liverates = resp.data.data
 
   const {
     header_section, 
-  } = await getDictionaryHome('id');
+  } = await getDictionaryHome(params.lang);
 
   return (
     <>
-      <MainHeader classText="" lang={'id'}/>
+      <MainHeader classText="" lang={params.lang}/>
       <main className='home-page sm:mobile-responsive light-theme'>
         <HomeBannerSection lang={header_section}/>
         <HomeIndexCryptoSection liverates={liverates}/>

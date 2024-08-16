@@ -9,9 +9,9 @@ const HomeIndexCryptoSection = (props : {liverates:ILiverateMini[]}) => {
     const {liverates} = props
     return (
         <section className='home-index-crypto-section'>
-            <Swiper>
+            <Swiper loop={true} slidesPerView={'auto'}>
                     {liverates.map((item:ILiverateMini, index:number) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} >
                             <div className='index-cyrpto-content'>
                                 <div className='crypto-title'>
                                     <label>BTC <span>Rp 10.000.000</span></label>

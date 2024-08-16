@@ -24,8 +24,6 @@ const HomeMediaSection = () => {
             <div className='media-thumb'>
                 <Image src='/images/medias/kumparan-logo.png' alt='kumparan logo' width={130} height={36}/>
             </div>
-        </div>
-        <div className='media-list'>
             <div className='media-thumb'>
                 <Image src='/images/medias/suara-logo.png' alt='suara logo' width={130} height={36}/>
             </div>

@@ -17,14 +17,14 @@ const HomeInvestasiSection = () => {
                 <div className='investasi-detail'>
                     <div className='investasi-detail-description'>
                         <h5>Deposit &amp; Mulai Investasi</h5>
-                        <p>Daftar dengan mudah dalam hitungan detik</p>
+                        <p>Deposit dan jelajahi setiap fitur yang dirancang khusus untuk kamu berinvestasi</p>
                     </div>
                     <Image src='/images/devices/iphone-15pro-b.png' alt='iphone 15 pro' width={193} height={286} />
                 </div>
                 <div className='investasi-detail'>
                     <div className='investasi-detail-description'>
                         <h5>Investasi &amp; Trading Crypto</h5>
-                        <p>Daftar dengan mudah dalam hitungan detik</p>
+                        <p>Pilih lebih dari 700+ Crypto yang tersedia</p>
                     </div>
                     <Image src='/images/devices/iphone-15pro-c.png' alt='iphone 15 pro' width={193} height={286} />
                 </div>
