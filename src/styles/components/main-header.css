@@ -1,7 +1,7 @@
 @tailwind components;
 
 .main-header {
-    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white h-[70px];
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white h-[60px];
 
     &.header-white {
         @apply bg-white text-black;
@@ -102,7 +102,7 @@
     }
     @layer components {
         &.mobile-responsive {
-            @apply px-[20px] py-[15px];
+            @apply px-[20px] py-[15px]  h-[60px];
             .triv-logo-header {
                 a {
                     svg {
@@ -130,7 +130,7 @@
 }
 
 .main-sidebar-menu {
-    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[10] justify-between transition-all duration-500;
+    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[10] justify-between transition-all duration-500 ;
     &.show {
         @apply mr-[0px];
     }
