@@ -87,8 +87,8 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                     </li>
                                 </ul>
                             </li>
-                            <li><button className='btn-login-header'>Login</button></li>
-                            <li><button className='btn-signup-header'>Sign Up</button></li>
+                            <li><Link href={`/${lang}/login`} className='btn-login-header'>Login</Link></li>
+                            <li><Link href={`/${lang}/register`} className='btn-signup-header'>Sign Up</Link></li>
                         </ul>
                     </div>
                 </div>

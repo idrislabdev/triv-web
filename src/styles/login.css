@@ -121,21 +121,41 @@
                 .logo-subcontainer {
                     @apply flex;
                 }
+                .title-subcontainer {
+                    h1 {
+                        @apply text-[24px]/[36px];
+                    }
+                    p {
+                        @apply text-[16px]/[24px] ;
+                    }
+                }
                 .form-subcontainer {
+                    .group-input {
+                        span {
+                            @apply top-[11px];
+                            svg {
+                                @apply w-[17px] h-[17px];
+                            }
+                        }
+                        input {
+                            @apply text-[17.02px]/[25.53px] h-[40px] rounded-[6px];
+                        }
+                    }
+                    
                     .keepme-login {
                         .checkbox-input {
-                            @apply text-[17px]/[25px];
+                            @apply text-[17.02px]/[25.53px];
                         }
                     }
                     .captcha-checkbox {
                         .checkbox-input {
-                            @apply text-[17px]/[25px];
+                            @apply text-[17.02px]/[25.53px];
                         }
                     }
                     .button-flex {
                         @apply flex flex-col gap-[10px];
                         button {
-                            @apply h-[45px];
+                            @apply h-[45px] rounded-[11.91px];
                         }
                         a {
                             @apply text-left text-[17px]/[25px];

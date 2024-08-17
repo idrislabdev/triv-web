@@ -90,8 +90,8 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                     </div>
                 </div>
                 <div className='sidebar-menu-bottom'>
-                    <button className='button-login'>Log In</button>
-                    <button className='button-register'>Register</button>
+                    <Link href={`/${lang}/login`} className='button-login'>Log In</Link>
+                    <Link href={`/${lang}/register`} className='button-register'>Register</Link>
                 </div>
             </div>
         </>

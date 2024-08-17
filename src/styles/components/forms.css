@@ -1,14 +1,20 @@
 input {
-    @apply border border-neutral-200 rounded-[10px] text-black text-[14px]/[21px] px-[20px] py-[10px] outline-none h-[41px];
+    @apply border border-neutral-200 rounded-[8px] !text-neutral-900 !font-medium text-[14px]/[21px] !px-[20px] !py-[10px] outline-none h-[41px];
+    &.color-1 {
+        background-color: #fafbfe;
+    }
 }
 
 select {
-    @apply border border-neutral-200 rounded-[10px] text-black text-[14px]/[21px] px-[20px] py-[10px] outline-none h-[41px];
+    @apply border border-neutral-200 rounded-[8px] !text-neutral-900 !font-medium text-[14px]/[21px] !px-[20px] outline-none h-[41px];
+    &.color-1 {
+        background-color: #fafbfe;
+    }
 }
 .group-input {
     @apply relative;
     span {
-        @apply absolute text-[14px]/[21px] text-neutral-500 top-[10px];
+        @apply absolute text-[14px]/[21px] text-neutral-500 top-[9px];
         &.prepend {
             @apply right-[10px];
         }
@@ -16,10 +22,21 @@ select {
             @apply left-[10px];
         }
     }
-    input {
-        @apply px-[35px];
+    &.prepend-append {
+        input {
+            @apply !px-[35px];
+        }
     }
-
+    &.prepend{
+        input {
+            @apply !pr-[35px];
+        }
+    }
+    &.append{
+        input {
+            @apply !pl-[35px];
+        }
+    }
 }
 
 .checkbox-input {

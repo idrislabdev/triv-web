@@ -1,0 +1,19 @@
+{
+    "greeting_text" : "Halo!",
+    "entry_text" : "Create your account in seconds",
+    "name_form_text" : "Full Name",
+    "name_form_input_first_text": "First Name",
+    "name_form_input_second_text": "Last Name",
+    "email_text" : "Email",
+    "password_text" : "Password",
+    "password_repead_text" : "Confirmation Password",
+    "job_text" : "Occupation according to ID card",
+    "register_first_text" : "Click Register, you agree with",
+    "register_second_text" : "our terms and conditions , KYC procedure",
+    "register_third_text" : "and",
+    "register_fourth_text" : "and privacy policy",
+    "welcome_text" : "Triv Used by Millions Since 2015",
+    "sub_welcome_text" : "Registered And Supervised By Bappebti",
+    "register_text" : "Register"
+
+}

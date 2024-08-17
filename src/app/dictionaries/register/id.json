@@ -1,0 +1,19 @@
+{
+    "greeting_text" : "Halo!",
+    "entry_text" : "Buat akun anda dalam hitungan detik",
+    "name_form_text" : "Nama Lengkap",
+    "name_form_input_first_text": "Nama Depan",
+    "name_form_input_second_text": "Nama Belakang",
+    "email_text" : "Email",
+    "password_text" : "Kata Sandi",
+    "password_repead_text" : "Ulang Kata Sandi",
+    "job_text" : "Pekerjaan Sesuai KTP",
+    "daftar_first_text" : "Klik Daftar, anda setuju dengan",
+    "daftar_second_text" : "dengan syarat dan ketentuan kami, prosedur KYC",
+    "daftar_third_text" : "dan",
+    "daftar_fourth_text" : "kebijakan privasi",
+    "welcome_text" : "Triv Digunakan Jutaan orag Sejak 2015",
+    "sub_welcome_text" : "Terdaftar Dan Diawasi Oleh Bappebti",
+    "register_text" : "Daftar"
+
+}

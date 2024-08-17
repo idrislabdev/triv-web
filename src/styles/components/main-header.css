@@ -168,7 +168,7 @@
     }
     .sidebar-menu-bottom {
         @apply flex justify-between gap-[20px];
-        button {
+        a {
             @apply w-1/2 flex justify-center items-center py-[8px] text-[12px]/[18px] font-medium rounded-[30px];
             &.button-login{
                 @apply  bg-primary text-white;

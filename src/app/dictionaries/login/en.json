@@ -1,0 +1,11 @@
+{
+    "greeting_text" : "Halo!",
+    "entry_text" : "Log in to your account",
+    "keepme_text" : "Keep me signed on this computer",
+    "not_robot_text" : "I`m not a robot",
+    "forgot_text" : "Forgot Password?",
+    "new_user_text" : "New User?",
+    "register_text" : "Register",
+    "welcome_text" : "Welcome back to Triv",
+    "sub_welcome_text" : "Trivers, let's build the largest financial ecosystem in Indonesia together."
+}
