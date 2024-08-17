@@ -21,7 +21,7 @@
             ul {
                 li {
                     .btn-signup-header{
-                        @apply  bg-primary text-white rounded-[8px] py-[8px] w-full;
+                        @apply  bg-primary text-white rounded-[8px] p-[8px] w-full;
                     }
                 }
             }
