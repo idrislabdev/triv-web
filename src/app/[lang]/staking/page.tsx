@@ -14,6 +14,7 @@ import { IStaking } from '@/@core/@types/interfaces'
 import StakingCalculatorSection from '@/@core/pages/staking/calculator-section'
 
 import { getDictionaryStaking } from "@/app/dictionaries";
+import Footer from '@/@core/components/footer'
 
  
 export default async function  Staking({ params }: any) {
@@ -44,6 +45,7 @@ export default async function  Staking({ params }: any) {
         <StakingStartNowSection lang={start_now_section}/>
         <StakingTestimonyCarouselSection />
       </main>
+      <Footer />
     </>
   )
 }

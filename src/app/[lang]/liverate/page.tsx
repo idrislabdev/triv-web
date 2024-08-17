@@ -10,6 +10,7 @@ import LiverateListSection from '@/@core/pages/liverate/list-liverate-section'
 import LiverateAskSection from '@/@core/pages/liverate/ask-section'
 import LiverateInvestasiNowSection from '@/@core/pages/liverate/invenstasi-now-section'
 import LiverateTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
+import Footer from '@/@core/components/footer'
 
 export default async function  Liverate({ params }: any) {
     const resp =  await getLiverateHighlights();
@@ -28,7 +29,7 @@ export default async function  Liverate({ params }: any) {
           <LiverateInvestasiNowSection />
           <LiverateTestimonyCarouselSection />
         </main>
-
+        <Footer />
     </>
   )
 }

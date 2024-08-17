@@ -29,7 +29,7 @@ const StakingCalculatorSection = (props: {lang:any}) => {
                                 <label>Amount Stake</label>
                                 <div className='group-input'>
                                     <input />
-                                    <span>ETH</span>
+                                    <span className='prepend'>ETH</span>
                                 </div>
                             </div>
                         </div>

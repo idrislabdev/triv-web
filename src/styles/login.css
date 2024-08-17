@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-page {
+    @apply p-0;
+    &.dark-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-slate-200;
+        }
+        p {
+            @apply text-slate-300;
+        }
+        a {
+            @apply text-[#737aff]
+        }
+    }
+    &.light-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-black;
+        }
+        p {
+            @apply text-neutral-700;
+        }
+    }
+    .login-container {
+        @apply flex w-full h-screen relative;
+        .left-subcontainer {
+            @apply flex flex-col gap-[40px] px-[179px] py-[120px]  w-1/2 relative justify-start items-start;
+            .logo-subcontainer {
+                @apply flex-col justify-center items-center hidden;
+                svg {
+                    @apply w-[101px] h-[28px];
+                }
+            }
+            .title-subcontainer {
+                @apply flex flex-col gap-[18px];
+                h1 {
+                    @apply text-[28px]/[42px] text-primary font-bold;
+                }
+                p {
+                    @apply text-[20px]/[30px] text-neutral-800 font-medium;
+                }
+            }
+            .form-subcontainer {
+                @apply flex flex-col gap-[40px] w-full;
+                input {
+                    @apply w-full;
+                }
+                .keepme-login {
+                    .checkbox-input {
+                        @apply h-[14px] text-[20px]/[30px] text-neutral-600 pl-[25px] font-medium;
+                        input {
+                            &:checked ~ .checkmark {
+                                &:after {
+                                    @apply left-[5px] top-[2px] w-[2px] h-[6px] border-t-[0px] border-r-[1px] border-b-[1px] border-l-[0px];
+                                }
+                            }
+                        }
+                        .checkmark {
+                            @apply w-[14px] h-[14px] border;
+                        }
+                    }
+                }
+                .captcha-checkbox {
+                    @apply flex justify-between items-center py-[16px] px-[20px] bg-[#FAFBFE];
+                    .checkbox-input {
+                        @apply font-bold text-neutral-800 text-[20px]/[30px];
+                    }
+                }
+                .button-flex {
+                    @apply flex flex-col gap-[10px];
+                    button {
+                        @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
+                    }
+                    a {
+                        @apply text-primary text-right text-[20px]/[30px] font-medium;
+                    }
+                }
+                label {
+                    &.new-user {
+                        @apply text-[20px]/[30px] text-neutral-600 w-full text-center font-bold;
+                        a {
+                            @apply text-primary;
+                        }
+                    }
+                }
+            }
+        }
+        .right-subcontainer {
+            @apply flex flex-col gap-[40px] px-[60px] py-[107px] justify-between  w-1/2 relative bg-[#FAFBFE];
+            .title-subcontainer {
+                @apply flex flex-col gap-[18px] text-center;
+                h1 {
+                    @apply text-[28px]/[42px] text-primary font-bold;
+                }
+                p {
+                    @apply text-[16px]/[24px] text-neutral-800 font-medium;
+                }
+            }
+            .image-subcontainer {
+                @apply flex flex-col justify-center items-center;
+                img {
+                    @apply w-[471px] h-[392px];
+                }
+            }
+            .logo-subcontainer {
+                @apply flex flex-col justify-center items-center;
+                svg {
+                    @apply w-[172px] h-[54px];
+                }
+            }
+        }
+    }
+
+    
+    @layer components {
+        &.mobile-responsive {
+            .left-subcontainer {
+                @apply w-full py-[26px] px-[20px] gap-[34px];
+                .logo-subcontainer {
+                    @apply flex;
+                }
+                .form-subcontainer {
+                    .keepme-login {
+                        .checkbox-input {
+                            @apply text-[17px]/[25px];
+                        }
+                    }
+                    .captcha-checkbox {
+                        .checkbox-input {
+                            @apply text-[17px]/[25px];
+                        }
+                    }
+                    .button-flex {
+                        @apply flex flex-col gap-[10px];
+                        button {
+                            @apply h-[45px];
+                        }
+                        a {
+                            @apply text-left text-[17px]/[25px];
+                        }
+                    }
+                    label {
+                        &.new-user {
+                            @apply text-left text-[17px]/[25px];
+                        }
+                    }
+                }
+            }
+            .right-subcontainer {
+                @apply hidden;
+            }
+        }
+    }
+}
