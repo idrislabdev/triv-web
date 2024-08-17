@@ -31,7 +31,7 @@ export default async function LoginPage({ params }: any) {
               </label>
             </div>
             <div className='captcha-checkbox'>
-              <label className="checkbox-input">I'm not robot
+              <label className="checkbox-input">I`m not robot
                 <input type="checkbox" />
                 <span className="checkmark"></span>
               </label>
