@@ -26,7 +26,7 @@
     .register-container {
         @apply flex w-full h-screen relative;
         .left-subcontainer {
-            @apply flex flex-col gap-[40px] pl-[179px] pr-[47px] py-[120px]  w-1/2 relative justify-start items-start;
+            @apply flex flex-col gap-[40px] pl-[179px] pr-[47px] py-[100px]  w-1/2 relative justify-start items-start;
             .logo-subcontainer {
                 @apply flex-col justify-center items-center hidden;
                 svg {
