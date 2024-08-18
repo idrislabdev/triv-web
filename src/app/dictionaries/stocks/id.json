@@ -1,4 +1,45 @@
 {
+    "register_section" : {
+        "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
+        "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
+        "description" : "Token saham diregulasi oleh BAPPEBTI berdasarkan surat nomor 11/2022. Triv terdaftar dan diawasi oleh BAPPEBTI",
+        "button_text" : "Daftar Sekarang"
+    },
+    "why_section" : {
+        "title" : "Kenapa Harus Trading Saham AS Di Triv?",
+        "description" : "Kami telah dipercaya oleh jutaan orang untuk berinvestasi dan bertransaksi.",
+        "founded" : {
+            "text" : "Berdiri Sejak",
+            "value" : "2015"
+        },
+        "user_registered" : {
+            "text" : "Pengguna Terdaftar",
+            "value" : "2M+"
+        },
+        "asset" : {
+            "text" : "Aset Kripto & Saham",
+            "value" : "700+"
+        }
+    },
+    "regulated_insured_section" : {
+        "title" : "Teregulasi dan Terasuransi",
+        "hour_insured" : {
+            "title" : "24/7, Tanpa downtime Tanpa maintenance.",
+            "description" : "Triv menggunakan teknologi terdepan dan memastikan anda dapat melakukan trading dengan latensi rendah. Tidak seperti pasar saham tradisional, pasar saham Triv buka 24 jam tanpa hari libur."
+        },
+        "spread_insured" : {
+            "title" : "Spread Rendah",
+            "description" : "Triv adalah broker dengan spread rendah, dengan likuiditas kami yang tinggi, kami telah membantu jutaan orang untuk mengeksekusi berbagai macam strategi trading pengguna kami dengan maksimal."
+        }
+    },
+    "calculator_section" : {
+        "title": "Lihat berapa banyak yang bisa Anda hasilkan🚀",
+        "description": "Triv terintegrasi ke 100 bank di Indonesia dan berbagai e-wallet seperti Gopay, Shopeepay, OVO dan Dana. Topup dan tarik dana secara real-time dan instant 24/7 tanpa hari libur!",
+        "payment_method" : "Metode Pembayaran",
+        "amount" : "Jumlah",
+        "button_text": "Deposit"
+
+    },
     "ewallet_section": {
         "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",

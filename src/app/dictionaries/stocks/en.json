@@ -1,4 +1,44 @@
 {
+    "register_section" : {
+        "title" : "Trade various US Stocks with Triv.",
+        "subtitle" : "Since 2015, low spread, 24/7 online",
+        "description" : "Tokenized stock is regulated by BAPPEBTI within letter no. 11 / 2022. Triv is supervised and regulated by BAPPEBTI",
+        "button_text" : "Sign Up"
+    },
+    "why_section" : {
+        "title" : "Why Trade US Stocks with Triv?",
+        "description" : "We Have Been Trusted By Millions Of Indonesia To Invest and Trade",
+        "founded" : {
+            "text" : "Trading since",
+            "value" : "2015"
+        },
+        "user_registered" : {
+            "text" : "Registered users",
+            "value" : "2M+"
+        },
+        "asset" : {
+            "text" : "Crypto Assets and Stocks",
+            "value" : "700+"
+        }
+    },
+    "regulated_insured_section" : {
+        "title" : "Regulated and Insured",
+        "hour_insured" : {
+            "title" : "24/7, No Downtime No Maintenance",
+            "description" : "With High Uptime And Low Latency Platform, Triv Provides Cutting-Edge Technology For Traders To Trade And Invest In Our Platform"
+        },
+        "spread_insured" : {
+            "title" : "Low Spread",
+            "description" : "Triv Is One Of The Lowest Spread Brokerage In The Market Right Now, Our Deep Liquidity Has Help Millions Of Investors And Traders In Indonesia To Execute Their Trading Strategy."
+        }
+    },
+    "calculator_section" : {
+        "title": "Triv with multiple payment methods",
+        "description": "Triv Is Integrated To 61 Banks In Indonesia And Various E-Wallet Such As Gopay, Shopee, OVO And DANA. Get Your Balance Topup And Withdrawal Instantly 24/7",
+        "payment_method" : "Payment Method",
+        "amount" : "Amount",
+        "button_text": "Deposit"
+    },
     "ewallet_section": {
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
         "subtitle" : "24/7 Real-time Deposits & Withdrawals",

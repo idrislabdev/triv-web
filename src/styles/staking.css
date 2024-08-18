@@ -142,7 +142,7 @@
                 .top-subcontainer {
                     @apply flex flex-col gap-[20px];
                     h2 {
-                        @apply text-[28px]/[42px] font-bold;
+                        @apply text-[20px]/[30px] font-bold;
                     }
                     .sub-subcontainer {
                         @apply flex gap-[20px];
@@ -408,7 +408,7 @@
             .staking-calculator-section {
                 @apply py-[30px] px-[20px] gap-[60px];
                 .card-staking-calculator {
-                    @apply flex-col;
+                    @apply flex-col gap-[30px];
                     .image-container {
                         @apply w-[240px];
                         img {

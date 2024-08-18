@@ -22,6 +22,117 @@
             @apply text-neutral-700;
         }
     }
+    .stocks-register-section {
+        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        .box-container {
+            @apply flex flex-col justify-center items-center text-center relative w-full gap-[20px];
+            h1 {
+                @apply text-[34px]/[51px] font-bold text-black;
+            }
+            h5 {
+                @apply text-[18px]/[27px] font-medium text-neutral-700;
+            }
+            p {
+                @apply text-[12px]/[18px] font-medium text-neutral-700;
+            }
+            a {
+                @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[9px] w-[260px] text-[14px]/[21px] font-bold;   
+            }
+        }
+    }
+    .stocks-device-section {
+        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        .box-container {
+            @apply flex flex-col justify-center items-center relative w-[90%];
+            img {
+                @apply w-[682px] h-[480px];
+            }
+            &::after {
+                content: '';
+                @apply absolute w-[135px] h-[293px] right-0 top-0;
+                background: url("/images/ornaments/startup2-ornament.png") no-repeat;
+                background-size: 135px 293px;
+            }
+            &::before {
+                content: '';
+                @apply absolute w-[135px] h-[325px] left-0 top-0;
+                background: url("/images/ornaments/startup1-ornament.png") no-repeat;
+                background-size: 135px 325px;
+
+            }
+        }
+    }
+    .stocks-why-section {
+        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        .container {
+            @apply flex flex-col gap-[70px] justify-center items-center;
+            .logo-container {
+                @apply flex flex-col w-full items-center;
+                svg {
+                        @apply w-[99px] h-[31px];
+                }
+            }
+            .title-container {
+                @apply flex flex-col justify-center items-center text-center;
+                h1 {
+                    @apply text-[40px]/[60px] text-black font-semibold;
+                }
+                p {
+                    @apply text-[18px]/[27px] font-medium;
+                }
+            }
+            .description-container {
+                @apply flex gap-[91px] justify-center items-center;
+                .detail-subcontainer {
+                    @apply flex flex-col justify-center items-center text-center;
+                    h5 {
+                        @apply text-[42px]/[63px] text-black font-semibold;
+                    }
+                    p {
+                        @apply text-[16px]/[32px] font-medium;
+                    }
+                }
+            }
+        }
+    }
+    .stocks-regulated-insured-section {
+        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        .box-container {
+            @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
+            h2 {
+                @apply text-[28px]/[42px] font-bold text-neutral-900;
+            }
+            .sub-container {
+                @apply flex gap-[100px];
+                .detail-subcontainer {
+                    @apply flex flex-col items-center gap-[30px] w-1/2;
+                    img {
+                        @apply w-[80px] h-[80px];
+                    }
+                    .detail-description-subcontainer {
+                        @apply flex flex-col gap-[10px] items-center text-center;
+                        h5 {
+                            @apply text-[16px]/[24px] font-bold text-neutral-900;
+                        }
+                        p {
+                            @apply text-[12px]/[18px] font-medium text-neutral-900;
+                        }
+                    }
+                }
+            }
+            &::after {
+                content: '';
+                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
+            }
+            &::before {
+                content: '';
+                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
+            }
+        }
+    
+    }
     .stocks-ewallet-section {
         @apply flex items-center  px-[100px] py-[40px];
         .ewallet-description {
@@ -40,6 +151,48 @@
             @apply w-[455px];
             img {
                @apply w-[455px] h-[435px];
+            }
+        }
+    }
+    .stocks-calculator-section {
+        @apply px-[100px] py-[50px] gap-[80px] flex flex-col justify-center items-center;
+        
+        .card-stocks-calculator{
+            @apply flex items-center gap-[73px] p-[40px] rounded-[20px];
+            box-shadow: 4px 14px 30px 0px #00000014;
+            .image-container {
+                @apply w-[372px];
+                img {
+                    @apply w-[372px] h-[233px];
+                }
+            }
+            .calculator-container {
+                @apply flex flex-col flex-1 gap-[24px];
+                .top-subcontainer {
+                    @apply flex flex-col gap-[30px];
+                    h2 {
+                        @apply text-[20px]/[30px] font-bold;
+                    }
+                    p {
+                        @apply text-[16px]/[32px] font-medium;
+                    }
+                    .sub-subcontainer {
+                        @apply flex gap-[20px];
+                        .form-input {
+                            @apply flex gap-[8px] items-center;
+                            label {
+                                @apply text-[12px]/[18px] font-medium text-neutral-700;
+                            }
+                            input, select {
+                                @apply w-[220px];
+                            }
+                        }
+                    }
+                    button {
+                        @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[9px] w-[260px] text-[14px]/[21px] font-bold;   
+                    }
+                }
+                
             }
         }
     }
@@ -144,6 +297,156 @@
     }
     @layer components {
         &.mobile-responsive {
+            @apply pt-[40px];
+            .stocks-register-section {
+                @apply px-[30px] py-[20px];
+                .box-container {
+                    h1 {
+                        @apply text-[14px]/[21px];
+                    }
+                    h5 {
+                        @apply text-[10px]/[15px];
+                    }
+                    p {
+                        @apply text-[10px]/[15px];
+                    }
+                    a {
+                        @apply  w-[200px] text-[12px]/[18px] ;   
+                    }
+                }
+            }
+            .stocks-device-section {
+                @apply px-[30px] py-[20px];
+                .box-container {
+                    @apply w-full;
+                    img {
+                        @apply w-[215px] h-[151px];
+                    }
+                    &::after {
+                        content: '';
+                        @apply w-[42px] h-[92px];
+                        background-size: 42px 92px;
+                    }
+                    &::before {
+                        @apply w-[42px] h-[102px];
+                        background-size: 42px 102px;
+        
+                    }
+                }
+            }
+            .stocks-why-section {
+                @apply px-[30px] py-[20px];
+                .container {
+                    @apply gap-[20px];
+                    .logo-container {
+                        svg {
+                            @apply w-[51px] h-[16px];
+                        }
+                    }
+                    .title-container {
+                        h1 {
+                            @apply text-[14px]/[21px] font-semibold;
+                        }
+                        p {
+                            @apply text-[10px]/[15px];
+                        }
+                    }
+                    .description-container {
+                        @apply flex-col gap-[20px];
+                        .detail-subcontainer {
+                            h5 {
+                                @apply text-[14px]/[21px] font-semibold;
+                            }
+                            p {
+                                @apply text-[10px]/[15px];
+                            }
+                        }
+                    }
+                }
+            }
+            .stocks-regulated-insured-section {
+                @apply px-[30px] py-[20px] ;
+                .box-container {
+                    @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] w-full;
+                    h2 {
+                        @apply text-[14px]/[21px];
+                    }
+                    .sub-container {
+                        @apply flex-col gap-[30px];
+                        .detail-subcontainer {
+                            @apply w-full gap-[20px];
+                            img {
+                                @apply w-[34px] h-[34px];
+                            }
+                            .detail-description-subcontainer {
+                                h5 {
+                                    @apply text-[10px]/[15px];
+                                }
+                                p {
+                                    @apply text-[8px]/[12px];
+                                }
+                            }
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
+                    }
+                    &::before {
+                        content: '';
+                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
+                    }
+                }
+            
+            }
+            .stocks-calculator-section {
+                @apply py-[30px] px-[20px] gap-[60px];
+                .card-stocks-calculator {
+                    @apply flex-col gap-[30px];
+                    .image-container {
+                        @apply w-[240px];
+                        img {
+                            @apply w-[240px] h-[142px];
+                        }
+                    }
+                    .calculator-container {
+                        @apply flex-col;
+                        .top-subcontainer {
+                            @apply text-center;
+                            h2 {
+                                @apply text-[16px]/[24px];
+                            }
+                            p {
+                                @apply text-[16px]/[24px];
+
+                            }
+                            .sub-subcontainer {
+                                @apply flex-col gap-[20px] w-full;
+                                .form-input {
+                                    @apply flex-col w-full gap-[8px] items-start;
+                                    label {
+                                        @apply text-[12px]/[18px] font-medium text-neutral-700;
+                                    }
+                                    .group-input {
+                                        @apply w-full;
+                                        input {
+                                            @apply w-full h-[41px];
+                                        }
+                                    }
+                                    select {
+                                        @apply w-full h-[41px];
+                                    }
+                                }
+                            }
+                            button {
+                                @apply w-full text-[12px]/[18px] rounded-[30px];
+                            }
+                        }
+                    }
+                }
+            }
             .stocks-ewallet-section {
                 @apply flex-col py-[30px] px-[20px];
                 .ewallet-description {
