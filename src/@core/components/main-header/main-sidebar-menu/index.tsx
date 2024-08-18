@@ -82,7 +82,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                 </ul>
                             </li>
                             <li><Link href={`/${lang}/staking`}>Staking</Link></li>
-                            <li>US Stock</li>
+                            <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
                             <li>Affliate</li>
                             <li>Blog</li>
                             <li>Contact US</li>

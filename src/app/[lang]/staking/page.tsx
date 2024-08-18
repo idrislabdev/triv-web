@@ -1,8 +1,6 @@
 import MainHeader from '@/@core/components/main-header'
 import StakingHeaderSection from '@/@core/pages/staking/header-section'
 import React from 'react'
-
-import '@/styles/staking.css'
 import StakingBenefitSection from '@/@core/pages/staking/benefit-section'
 import StakingGuideCryptoSection from '@/@core/pages/staking/guide-crypto-section'
 import StakingFaqSection from '@/@core/pages/staking/faq-section'
@@ -16,6 +14,7 @@ import StakingCalculatorSection from '@/@core/pages/staking/calculator-section'
 import { getDictionaryStaking } from "@/app/dictionaries";
 import Footer from '@/@core/components/footer'
 
+import '@/styles/staking.css'
  
 export default async function  Staking({ params }: any) {
   const respStaking =  await getStakings();

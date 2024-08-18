@@ -1,0 +1,37 @@
+{
+    "ewallet_section": {
+        "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "subtitle" : "24/7 Real-time Deposits & Withdrawals",
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+    },
+    "faq_section": {
+        "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
+        "questions" : [
+            {
+                "title" : "What is tokenized stock?",
+                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+            },
+            {
+                "title" : "Will i get dividend?",
+                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+            },
+            {
+                "title" : "Who can trade?",
+                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+            },
+            {
+                "title" : "Is there any additional cost?",
+                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+            },
+            {
+                "title" : "Is there limitation?",
+                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+            }
+        ]
+    },
+    "register_now_section": {
+        "title": "Trading Buying and Selling Various US Stocks on Triv Now",
+        "description": "Start as little as just 3$ and pay with various payment options",
+        "button_text" : "Start Now"
+    }
+}

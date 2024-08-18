@@ -1,7 +1,5 @@
 import MainHeader from '@/@core/components/main-header'
 import React from 'react'
-
-import '@/styles/liverate.css'
 import LiverateHeaderSection from '@/@core/pages/liverate/header-section'
 import LiverateTopMoverSection from '@/@core/pages/liverate/top-mover-section'
 import { getLiverateHighlights, getLiverates } from '@/@core/services/api'
@@ -11,6 +9,7 @@ import LiverateAskSection from '@/@core/pages/liverate/ask-section'
 import LiverateInvestasiNowSection from '@/@core/pages/liverate/invenstasi-now-section'
 import LiverateTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
 import Footer from '@/@core/components/footer'
+import '@/styles/liverate.css'
 
 export default async function  Liverate({ params }: any) {
     const resp =  await getLiverateHighlights();

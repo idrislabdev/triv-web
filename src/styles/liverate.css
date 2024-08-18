@@ -201,8 +201,8 @@
                 @apply w-[80%];
                 ul {
                     li {
-                        &:not(:last-child, :first-child) {
-                            @apply relative py-[20px];
+                        &:not(:last-child) {
+                            @apply relative pb-[20px];
                         }
                         button {
                             @apply w-full py-[8px] text-left;

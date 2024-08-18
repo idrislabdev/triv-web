@@ -1,9 +1,10 @@
 import { HideEyeIcon, LockIcon, MailIcon, TrivIcon } from '@/@core/components/custom-icons'
 import React from 'react'
-
-import '@/styles/register.css'
 import Image from 'next/image'
 import { getDictionaryRegister } from '@/app/dictionaries';
+
+import '@/styles/register.css'
+
 export default async function RegisterPage({ params }: any) {
     const {
         greeting_text, 
