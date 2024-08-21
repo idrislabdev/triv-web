@@ -21,7 +21,7 @@
             ul {
                 li {
                     .btn-signup-header{
-                        @apply  bg-primary text-white rounded-[8px] p-[8px] w-full;
+                        @apply  bg-primary text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
                     }
                 }
             }
@@ -53,7 +53,14 @@
         ul {
             @apply flex gap-[30px];
             li {
-                @apply text-[14px]/[21px] font-medium;
+                @apply text-[12px]/[18px] font-medium;
+            }
+        }
+    }
+    .triv-logo-header {
+        a {
+            svg {
+                @apply w-[99px] h-[31px];
             }
         }
     }

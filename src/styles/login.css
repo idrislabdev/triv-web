@@ -44,8 +44,13 @@
             }
             .form-subcontainer {
                 @apply flex flex-col gap-[40px] w-full;
-                input {
-                    @apply w-full;
+                .group-input {
+                    input {
+                        @apply w-full h-[54px] !px-[40px];
+                    }
+                    .append,.prepend {
+                        @apply top-[15px];
+                    }
                 }
                 .keepme-login {
                     .checkbox-input {
