@@ -1,7 +1,7 @@
 @tailwind components;
 
 .main-header {
-    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white h-[60px];
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white h-[80px];
 
     &.header-white {
         @apply bg-white text-black;
