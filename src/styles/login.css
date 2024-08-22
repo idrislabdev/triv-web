@@ -24,7 +24,7 @@
         }
     }
     .login-container {
-        @apply flex w-full h-screen relative;
+        @apply flex w-full h-full relative;
         .left-subcontainer {
             @apply flex flex-col gap-[30px] px-[130px] py-[120px]  w-1/2 relative justify-center items-start;
             .logo-subcontainer {

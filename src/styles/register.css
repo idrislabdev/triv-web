@@ -26,7 +26,7 @@
     .register-container {
         @apply flex w-full h-screen relative;
         .left-subcontainer {
-            @apply flex flex-col gap-[40px] pl-[179px] pr-[47px] py-[100px]  w-1/2 relative justify-start items-start;
+            @apply flex flex-col gap-[30px] px-[100px] py-[100px]  w-1/2 relative justify-start items-start;
             .logo-subcontainer {
                 @apply flex-col justify-center items-center hidden;
                 svg {
@@ -43,16 +43,16 @@
                 }
             }
             .form-subcontainer {
-                @apply flex flex-col gap-[40px] w-full;
+                @apply flex flex-col gap-[30px] w-full;
                 .form-name {
                     @apply flex flex-col gap-[10px];
                     label {
                         @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
                     }
                     .form-input {
-                        @apply flex gap-[40px];
+                        @apply flex gap-[20px];
                         input {
-                            @apply w-1/2;
+                            @apply w-1/2 h-[54px];
                         }
                     }
                 }
@@ -62,7 +62,7 @@
                         @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
                     }
                     input {
-                        @apply w-full;
+                        @apply w-full h-[54px]; 
                     }
                 }
                 .form-password {
@@ -75,7 +75,7 @@
                         .group-input {
                             @apply w-full;
                             input {
-                                @apply w-full;
+                                @apply w-full h-[54px];
                             }
                         }
                     }
@@ -137,7 +137,7 @@
             }
         }
         .right-subcontainer {
-            @apply flex flex-col gap-[40px] px-[60px] py-[107px] justify-between  w-1/2 relative bg-[#FAFBFE];
+            @apply flex flex-col gap-[30px] px-[60px] py-[107px] justify-between  w-1/2 relative bg-[#FAFBFE];
             .title-subcontainer {
                 @apply flex flex-col gap-[18px] text-center;
                 h1 {
