@@ -26,7 +26,7 @@
     .login-container {
         @apply flex w-full h-screen relative;
         .left-subcontainer {
-            @apply flex flex-col gap-[40px] px-[179px] py-[120px]  w-1/2 relative justify-start items-start;
+            @apply flex flex-col gap-[30px] px-[130px] py-[120px]  w-1/2 relative justify-start items-start;
             .logo-subcontainer {
                 @apply flex-col justify-center items-center hidden;
                 svg {
@@ -43,7 +43,7 @@
                 }
             }
             .form-subcontainer {
-                @apply flex flex-col gap-[40px] w-full;
+                @apply flex flex-col gap-[30px] w-full;
                 .group-input {
                     input {
                         @apply w-full h-[54px] !px-[40px];
@@ -93,7 +93,7 @@
             }
         }
         .right-subcontainer {
-            @apply flex flex-col gap-[40px] px-[60px] py-[107px] justify-between  w-1/2 relative bg-[#FAFBFE];
+            @apply flex flex-col gap-[30px] px-[60px] py-[107px] justify-between  w-1/2 relative bg-[#FAFBFE];
             .title-subcontainer {
                 @apply flex flex-col gap-[18px] text-center;
                 h1 {
