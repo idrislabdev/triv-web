@@ -12,6 +12,7 @@ import MainHeader from "@/@core/components/main-header";
 import { getDictionaryHome } from "./dictionaries";
 import { getLiverateMini } from "@/@core/services/api";
 import "@/styles/home.css"
+import Footer from "@/@core/components/footer";
 
 export default async function  Home() {
   const resp =  await getLiverateMini();
@@ -36,6 +37,7 @@ export default async function  Home() {
         <HomeBuySellAssetsSection />
         <HomeMediaSection />
       </main>
+      <Footer />
     </>
     
   );

@@ -23,7 +23,7 @@ const HomeAssetCryptoSection = async (props : {liverates:ILiverateMini[]}) => {
                             </div>
                             <div className='crypto-thumb-bottom'>
                                 <label className='thumb-bottom-idr'>IDR {item.rate}</label>
-                                <label className='thumb-bottom-index'>{item.change_24h * 100}%</label>
+                                <label className='thumb-bottom-index'>{(item.change_24h * 100).toFixed(2)}%</label>
                             </div>
                         </div>
                     </div>

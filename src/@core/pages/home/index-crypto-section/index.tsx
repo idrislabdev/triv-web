@@ -1,15 +1,17 @@
 "use client"
 import { CaretDownIcon, CaretUpIcon } from '@/@core/components/custom-icons';
 import React from 'react'
+import { Autoplay  } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/autoplay';
 import { ILiverateMini } from '@/@core/@types/interfaces';
 
 const HomeIndexCryptoSection = (props : {liverates:ILiverateMini[]}) => {
     const {liverates} = props
     return (
         <section className='home-index-crypto-section'>
-            <Swiper loop={true} slidesPerView={'auto'}>
+            <Swiper loop={true} slidesPerView={'auto'} modules={[Autoplay]} autoplay={{ delay: 1000 }}  >
                     {liverates.map((item:ILiverateMini, index:number) => (
                         <SwiperSlide key={index} >
                             <div className='index-cyrpto-content'>
