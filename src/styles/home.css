@@ -620,51 +620,54 @@
                 }
             }
             .home-baru-crypto-section {
-                @apply flex-col px-[30px] py-[20px] gap-[30px] justify-center;
-                .baru-crypto-title {
-                    @apply flex flex-col gap-[20px] items-center;
-                    h5 {
-                        @apply text-[14px]/[21px] font-bold text-black;
+                @apply py-[20px];
+                .home-baru-crypto-container {
+                    @apply flex-col px-[30px] py-[20px] gap-[30px] justify-center;
+                    .baru-crypto-title {
+                        @apply flex flex-col gap-[20px] items-center;
+                        h5 {
+                            @apply text-[14px]/[21px] font-bold text-black;
+                        }
+                        p {
+                            @apply text-[12px]/[18px] font-medium text-black;
+                        }
+                        a {
+                            @apply hidden;
+                        }
                     }
-                    p {
-                        @apply text-[12px]/[18px] font-medium text-black;
-                    }
-                    a {
-                        @apply hidden;
-                    }
-                }
-                .baru-crypto-videos {
-                    @apply relative overflow-hidden w-full flex flex-col gap-[30px] justify-center items-center;
-                    .swiper {
-                        @apply w-full;
-                        .swiper-wrapper {
-                            @apply flex relative w-full gap-[21px];
-                            .swiper-slide {
-                                @apply !w-[148px];
-                                .crypto-thumb-video {
-                                    @apply w-[148px] flex;
-                                    .video-thumb {
-                                        img {
-                                            @apply w-[148px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
+                    .baru-crypto-videos {
+                        @apply relative overflow-hidden w-full flex flex-col gap-[30px] justify-center items-center;
+                        .swiper {
+                            @apply w-full;
+                            .swiper-wrapper {
+                                @apply flex relative w-full gap-[21px];
+                                .swiper-slide {
+                                    @apply !w-[148px];
+                                    .crypto-thumb-video {
+                                        @apply w-[148px] flex;
+                                        .video-thumb {
+                                            img {
+                                                @apply w-[148px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
+                                            }
                                         }
+                                       .video-title {
+                                            @apply flex flex-col gap-[14px] p-[13px];
+                                            h6 {
+                                                @apply text-[8.15px]/[12.23px];
+                                            }
+                                            a {
+                                                @apply text-[6.79px]/[10.19px] h-[15.44px];
+                                            }
+                                       }
                                     }
-                                   .video-title {
-                                        @apply flex flex-col gap-[14px] p-[13px];
-                                        h6 {
-                                            @apply text-[8.15px]/[12.23px];
-                                        }
-                                        a {
-                                            @apply text-[6.79px]/[10.19px] h-[15.44px];
-                                        }
-                                   }
                                 }
                             }
                         }
+                        a {
+                            @apply bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px] flex flex-col justify-center items-center;
+                        }
+                        
                     }
-                    a {
-                        @apply bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px] flex flex-col justify-center items-center;
-                    }
-                    
                 }
             }
             .home-buy-sell-assets-section  {
@@ -673,6 +676,7 @@
                     @apply hidden;
                 }
                 .description-container {
+                    @apply w-full;
                     .start-now-description {
                         @apply text-center gap-[10px];
                         h2 {
