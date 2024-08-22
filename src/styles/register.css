@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .register-page {
-    @apply p-0;
+    @apply p-0 h-full flex flex-col justify-center;
     &.dark-theme {
         h1, h2, h3, h4, h5 {
             @apply text-slate-200;
@@ -26,7 +26,7 @@
     .register-container {
         @apply flex w-full h-screen relative;
         .left-subcontainer {
-            @apply flex flex-col gap-[30px] px-[100px] py-[100px]  w-1/2 relative justify-start items-start;
+            @apply flex flex-col gap-[30px] p-[100px]  w-1/2 relative justify-center items-start;
             .logo-subcontainer {
                 @apply flex-col justify-center items-center hidden;
                 svg {
@@ -86,7 +86,7 @@
                         @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
                     }
                     select {
-                        @apply w-full;
+                        @apply w-full h-[54px];
                     }
                 }
                 .form-note {
@@ -137,7 +137,7 @@
             }
         }
         .right-subcontainer {
-            @apply flex flex-col gap-[30px] px-[60px] py-[107px] justify-between  w-1/2 relative bg-[#FAFBFE];
+            @apply flex flex-col gap-[20px] px-[60px] py-[100px] justify-between  w-1/2 relative bg-[#FAFBFE];
             .title-subcontainer {
                 @apply flex flex-col gap-[18px] text-center;
                 h1 {

@@ -22,7 +22,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: white;
   font-family: 'Inter';
-  height: 100vh;
+  height: 100%;
 }
 
 main {
