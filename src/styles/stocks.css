@@ -23,7 +23,7 @@
         }
     }
     .stocks-register-section {
-        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        @apply flex flex-col items-center px-[100px] py-[50px] relative;
         .box-container {
             @apply flex flex-col justify-center items-center text-center relative w-full gap-[20px];
             h1 {
@@ -41,7 +41,7 @@
         }
     }
     .stocks-device-section {
-        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        @apply flex flex-col items-center px-[100px] py-[50px] relative;
         .box-container {
             @apply flex flex-col justify-center items-center relative w-[90%];
             img {
@@ -63,7 +63,7 @@
         }
     }
     .stocks-why-section {
-        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        @apply flex flex-col items-center px-[100px] pt-[50px] pb-[75px] relative;
         .container {
             @apply flex flex-col gap-[70px] justify-center items-center;
             .logo-container {
@@ -96,7 +96,7 @@
         }
     }
     .stocks-regulated-insured-section {
-        @apply flex flex-col items-center px-[100px] py-[40px] relative;
+        @apply flex flex-col items-center px-[100px] py-[75px] relative;
         .box-container {
             @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
             h2 {
@@ -134,7 +134,7 @@
     
     }
     .stocks-ewallet-section {
-        @apply flex items-center  px-[100px] py-[40px];
+        @apply flex items-center  px-[100px] pt-[75px] pb-[50px];
         .ewallet-description {
             @apply flex-1 flex flex-col gap-[26px] py-[20px];
             h2 {
