@@ -242,7 +242,7 @@
             }
             &::before {
                 content: '';
-                @apply absolute left-[-10px] w-[500px] h-[500px] z-[-1];
+                @apply absolute right-[50px] w-[500px] h-[500px] z-[-1];
                 background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
             }
         }
