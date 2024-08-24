@@ -1,0 +1,23 @@
+{
+    "blog_section": {
+        "title_main" : "Berita Crypto Terupdate Hari Ini",
+        "title_daily": "Daily News",
+        "title_category": "Categories",
+        "title_subscribe": "Subscribe",
+        "desc_subscribe": "Berlangganan untuk update  berita terkini 📩",
+        "palceholder_email_subscribe" : "Enter email",
+        "button_subscribe" : "Subscribe",
+        "title_sticky": "Sticky Posts"
+
+    },
+    "baru_crypto_section": {
+        "title" : "Baru di crypto?",
+        "description": "Ikuti panduan dan tutorial dari video TRIV",
+        "button": "Lihat Semua Video"
+    },
+    "start_now_section": {
+        "title" : "Mulai Investasi Sekarang",
+        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
+        "button": "Mulai Sekarang"
+    }
+}

@@ -497,6 +497,7 @@
                     @apply hidden;
                 }
                 .description-container {
+                    @apply w-full;
                     .start-now-description {
                         @apply text-center gap-[10px];
                         h2 {

@@ -1,0 +1,370 @@
+@tailwind components;
+
+.blog-page {
+    &.dark-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-slate-200;
+        }
+        p {
+            @apply text-slate-300;
+        }
+        a {
+            @apply text-[#737aff]
+        }
+    }
+    &.light-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-black;
+        }
+        p {
+            @apply text-neutral-700;
+        }
+    }
+    .blog-news-section {
+        @apply  py-[50px] px-[100px] flex gap-[64px];
+        .blog-main-container {
+            @apply flex flex-col gap-[60px] w-1/2;
+            .main-subcontainer {
+                @apply flex flex-col gap-[30px];
+                h1 {
+                    @apply text-[38px]/[57px] text-black font-bold;
+        
+                }
+            }
+            .daily-subcontainer {
+                @apply flex flex-col gap-[30px];
+                h2 {
+                    @apply text-[24px]/[36px] text-black font-bold;
+        
+                }
+            }
+        }
+        .blog-side-container {
+            @apply flex flex-col gap-[30px] w-1/2;
+            .blog-subscribe {
+                @apply flex flex-col gap-[28px];
+                h2 {
+                    @apply text-[24px]/[36px] text-black font-bold;
+                }
+                p {
+                    @apply text-[18px]/[27px] text-black font-bold;
+                }
+                .submit-subscribe {
+                    @apply flex gap-[20px];
+                    input {
+                        @apply h-[55px] text-[18px]/[27px];
+                    }
+                    button {
+                        @apply bg-primary text-white text-[14px]/[21px] h-[55px] w-[120px] rounded-[10px];
+                    }
+                }
+            }
+            .blog-sticky-post {
+                @apply flex flex-col gap-[30px];
+                h2 {
+                    @apply text-[24px]/[36px] text-black font-bold;
+                }
+                .sticky-subcontainer {
+                    @apply flex flex-col gap-[33px];
+                }
+            }
+            .blog-categories {
+                @apply flex flex-col gap-[30px];
+                h2 {
+                    @apply text-[24px]/[36px] text-black font-bold;
+                }
+                ul {
+                    @apply flex flex-col gap-[20px];
+                    li {
+                        @apply text-[18px]/[27px] font-medium text-black;
+                    }
+                }
+            }
+        }
+    }
+    .blog-baru-crypto-section {
+        @apply py-[50px];
+        .blog-baru-crypto-container {
+            @apply flex gap-[80px] px-[100px] py-[50px]  items-center relative bg-[#EEF7FD];
+            .baru-crypto-title {
+                @apply flex flex-col gap-[20px];
+                h5 {
+                    @apply text-[28px]/[42px] font-bold text-black;
+                }
+                p {
+                    @apply text-[16px]/[32px] font-medium text-black;
+                }
+                a {
+                    @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex  justify-center items-center gap-[10px];
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+            }
+            .baru-crypto-videos {
+                @apply flex-1 relative overflow-hidden;
+                .swiper {
+                    .swiper-wrapper {
+                        @apply flex relative w-full gap-[36px];
+                        .swiper-slide {
+                            @apply !w-[300px];
+                            .crypto-thumb-video {
+                                @apply bg-white w-[300px] flex flex-col gap-[20px] rounded-[10px];
+                                .video-thumb {
+                                    img {
+                                        @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
+                                    }
+                                }
+                               .video-title {
+                                    @apply flex flex-col gap-[14px] p-[13px];
+                                    h6 {
+                                        @apply text-[16px]/[24px] text-black;
+                                    }
+                                    a {
+                                        @apply bg-[#EEF7FD] text-[#4DAAE9] text-[13px]/[20px] font-bold rounded-[31px] w-full h-[30px] flex flex-col justify-center items-center;
+                                    }
+                               }
+                            }
+                        }
+                    }
+                }
+                a {
+                    @apply hidden;
+                }
+                
+            }
+        }
+    }
+    .blog-investasi-now-section {
+        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        .image-container {
+            @apply w-1/2 flex flex-col justify-center items-end relative;
+            img {
+                @apply  w-[392px] h-[355px] ;
+            }
+            &::before {
+                content: '';
+                @apply absolute right-[50px] w-[500px] h-[500px] z-[-1];
+                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+            }
+        }
+        .description-container {
+            @apply flex w-1/2 flex-col gap-[30px];
+            .start-now-description {
+                @apply flex-1 flex flex-col gap-[18px];
+                h2 {
+                    @apply text-[28px]/[42px] font-bold text-neutral-900;
+                }
+                p {
+                    @apply text-[16px]/[32px] font-medium text-neutral-700;
+                }
+            }
+           .start-button-logo {
+                @apply flex gap-[30px];
+                a {
+                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+                .start-now-store {
+                    @apply flex gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[31px] h-[37px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[30px] h-[32px];
+    
+                        }
+                    }
+                }
+                .start-now-store-mobile {
+                    @apply hidden gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[130.64px] h-[38.71px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[114.43px] h-[37.02px];
+    
+                        }
+                    }
+                }
+           }
+        }
+    }
+    @layer components {
+        &.mobile-responsive {
+            .blog-news-section {
+                @apply  pt-[0px] pb-[20px] px-[20px] flex-col gap-[30px];
+                .blog-main-container {
+                    @apply w-full gap-[30px];
+                    .main-subcontainer {
+                        @apply gap-[17px];
+                        h1 {
+                            @apply text-[16px]/[24px];
+                
+                        }
+                        .card-news-main {
+                            img {
+                                @apply h-[199px] w-full;
+                            }
+                            .card-content {
+                                @apply flex flex-col gap-[10px];
+                                h5 {
+                                    @apply text-[12px]/[18px];
+                                }
+                                p {
+                                    @apply text-[10px]/[15px];
+                                }
+                            }
+                        }
+                    }
+                    .daily-subcontainer {
+                        @apply gap-[18px];
+                        h2 {
+                            @apply text-[16px]/[24px];
+                        }
+                        .card-news-secondary {
+                            @apply flex gap-[10px];
+                            .card-content {
+                                @apply gap-[4px];
+                                h5 {
+                                    @apply text-[10px]/[15px];
+                                }
+                                p {
+                                    @apply text-[10px]/[15px];
+                                }
+                            }
+                            img {
+                                @apply h-[60px] w-[110px] rounded-[4px];
+                            }
+                        }
+                    }
+                }
+                .blog-side-container {
+                    @apply w-full;
+                    .blog-subscribe {
+                        @apply gap-[8px];
+                        h2 {
+                            @apply text-[14px]/[21px];
+                        }
+                        p {
+                            @apply text-[12px]/[18px];
+                        }
+                        .submit-subscribe {
+                            @apply flex gap-[20px];
+                            input {
+                                @apply h-[40px] w-[190px] text-[18px]/[27px];
+                            }
+                            button {
+                                @apply bg-primary text-white text-[14px]/[21px] h-[40px] w-[120px] rounded-[10px];
+                            }
+                        }
+                    }
+                    .blog-sticky-post {
+                        @apply hidden;
+                    }
+                    .blog-categories {
+                        @apply flex flex-col gap-[8px];
+                        h2 {
+                            @apply text-[14px]/[21px];
+                        }
+                        ul {
+                            @apply flex flex-col gap-[14px];
+                            li {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                    }
+                }
+            }
+            .blog-baru-crypto-section {
+                @apply py-[20px];
+                .blog-baru-crypto-container {
+                    @apply flex-col px-[30px] py-[20px] gap-[30px] justify-center;
+                    .baru-crypto-title {
+                        @apply flex flex-col gap-[20px] items-center;
+                        h5 {
+                            @apply text-[14px]/[21px] font-bold text-black;
+                        }
+                        p {
+                            @apply text-[12px]/[18px] font-medium text-black;
+                        }
+                        a {
+                            @apply hidden;
+                        }
+                    }
+                    .baru-crypto-videos {
+                        @apply relative overflow-hidden w-full flex flex-col gap-[30px] justify-center items-center;
+                        .swiper {
+                            @apply w-full;
+                            .swiper-wrapper {
+                                @apply flex relative w-full gap-[21px];
+                                .swiper-slide {
+                                    @apply !w-[148px];
+                                    .crypto-thumb-video {
+                                        @apply w-[148px] flex;
+                                        .video-thumb {
+                                            img {
+                                                @apply w-[148px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
+                                            }
+                                        }
+                                       .video-title {
+                                            @apply flex flex-col gap-[14px] p-[13px];
+                                            h6 {
+                                                @apply text-[8.15px]/[12.23px];
+                                            }
+                                            a {
+                                                @apply text-[6.79px]/[10.19px] h-[15.44px];
+                                            }
+                                       }
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            @apply bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px] flex justify-center items-center gap-[10px];
+                            svg {
+                               path {
+                                    @apply fill-white;
+                               }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .blog-investasi-now-section {
+                @apply py-[30px] px-[20px] gap-[20px] flex-col;
+                .image-container {
+                    @apply hidden;
+                }
+                .description-container {
+                    @apply w-full;
+                    .start-now-description {
+                        @apply text-center gap-[10px];
+                        h2 {
+                            @apply text-[14px]/[21px];
+                        }
+                        p {
+                            @apply text-[12px]/[18px];
+                        }
+                    }
+                }
+                .start-button-logo {
+                    @apply flex-col justify-center items-center gap-[30px];
+                    a {
+                        @apply w-[80%] text-[12px]/[18px] py-[8px];
+                    }
+                }
+            }
+        }
+    }
+
+}
