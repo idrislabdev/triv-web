@@ -61,7 +61,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                         <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
                         <li>Affliate</li>
                         <li>Blog</li>
-                        <li>Contact Us</li>
+                        <li><Link href={`/${lang}/home/contact-us`}>Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className='main-header-action'>

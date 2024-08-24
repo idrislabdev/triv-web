@@ -1,0 +1,41 @@
+{
+    "header_section": {
+        "title": "Kontak Kami",
+        "description": "Kami menyarankan semua customer Triv, menggunakan Support Desk Triv untuk menghubungi kami. Ini merupakan cara terbaik untuk melindungi data-data anda. Layanan customer service telpon hanya tersedia pada jam kerja senin-jumat Pk. 09.00-17.00 Untuk layanan berkaitan transaksi harap menghubungi livechat atau mengirimkan email",
+        "to" : "ke"
+    },
+    "info_section": {
+        "enquire" : {
+            "title": "Pertanyaan umum",
+            "content" : "Tim Customer Service Triv akan menjawab pertanyaan anda dengan segera, dengan mengirim email ke help@triv.co.id",
+            "link" : "Kirim email"
+        },
+        "live_chat" : {
+            "title": "Live Chat",
+            "content" : "Livechat Triv tersedia 24/7, untuk menjawab pertanyaan umum, panduan dan bantuan teknis Apabila berkaitan dengan akun, harap menggunakan Triv Support Desk.",
+            "link" : "Live chat"
+        },
+        "by_post" : {
+            "title": "Alamat Surat-menyurat",
+            "content" : "PT. Tiga Inti Utama Jl. Jendral Sudirman Kav. 52-53 SCBD – Jakarta Selatan - 12190 phone : 021 4020 0828",
+            "link" : "CoHubungi kontakntact"
+        }
+    },
+    "faq_section": {
+        "title" : "Frequently Asked Questions (F.A.Q)",
+        "questions" : [
+            {
+                "title" : "Apa keuntungan investasi crypto?",
+                "description": "Investasi cryptocurrency memiliki potensi keuntungan yang signifikan. Salah satu keuntungan utama adalah peluang pertumbuhan nilai aset yang cepat. Beberapa cryptocurrency telah mengalami kenaikan nilai yang luar biasa dalam beberapa tahun terakhir. Selain itu, akses pasar global investasi cryptocurrency terbuka 24/7, memungkinkan fleksibilitas dalam perdagangan. Teknologi blockchain yang mendasari cryptocurrency juga menawarkan transparansi dan keamanan tingkat tinggi. Dengan kemampuan untuk mendiversifikasi portofolio, investasi cryptocurrency dapat menjadi tambahan yang berpotensi menguntungkan, meskipun tetap penting untuk memahami risiko dan riset yang cermat."
+            },
+            {
+                "title" : "Bagaimana cara invest crypto untuk pemula?",
+                "description": "Investasi cryptocurrency memiliki potensi keuntungan yang signifikan. Salah satu keuntungan utama adalah peluang pertumbuhan nilai aset yang cepat. Beberapa cryptocurrency telah mengalami kenaikan nilai yang luar biasa dalam beberapa tahun terakhir. Selain itu, akses pasar global investasi cryptocurrency terbuka 24/7, memungkinkan fleksibilitas dalam perdagangan. Teknologi blockchain yang mendasari cryptocurrency juga menawarkan transparansi dan keamanan tingkat tinggi. Dengan kemampuan untuk mendiversifikasi portofolio, investasi cryptocurrency dapat menjadi tambahan yang berpotensi menguntungkan, meskipun tetap penting untuk memahami risiko dan riset yang cermat."
+            },
+            {
+                "title" : "Apakah investasi crypto aman?",
+                "description": "Investasi cryptocurrency memiliki potensi keuntungan yang signifikan. Salah satu keuntungan utama adalah peluang pertumbuhan nilai aset yang cepat. Beberapa cryptocurrency telah mengalami kenaikan nilai yang luar biasa dalam beberapa tahun terakhir. Selain itu, akses pasar global investasi cryptocurrency terbuka 24/7, memungkinkan fleksibilitas dalam perdagangan. Teknologi blockchain yang mendasari cryptocurrency juga menawarkan transparansi dan keamanan tingkat tinggi. Dengan kemampuan untuk mendiversifikasi portofolio, investasi cryptocurrency dapat menjadi tambahan yang berpotensi menguntungkan, meskipun tetap penting untuk memahami risiko dan riset yang cermat."
+            }
+        ]
+    }
+}

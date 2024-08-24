@@ -1,0 +1,41 @@
+{
+    "header_section": {
+        "title": "Contact Us",
+        "description": "We strongly recommend that you log into your account and use Triv Support Desk. This is the best way to protect your financial informations and datas while addressing your issue. Phone service support only available during business hours monday-friday Pk. 09.00-17.00 WIB. For any inquiries related with transactions or account status please refer to livechat support or sending email",
+        "to" : "to"
+    },
+    "info_section": {
+        "enquire" : {
+            "title": "General Enquiries",
+            "content" : "Our customer service team is dedicated to sending you a prompt response. Send a message to help@triv.co.id",
+            "link" : "Send email"
+        },
+        "live_chat" : {
+            "title": "Live Chat",
+            "content" : "Our livechat available 24/7, our customer services handles multiple inquiry at a time.Please be patient while waiting for our reply.Livechat only answers general questions.",
+            "link" : "Live chat"
+        },
+        "by_post" : {
+            "title": "By Post:",
+            "content" : "PT. Tiga Inti Utama Jl. Jendral Sudirman Kav. 52-53 SCBD – Jakarta Selatan - 12190 phone : 021 4020 0828",
+            "link" : "Contact"
+        }
+    },
+    "faq_section": {
+        "title" : "Frequently Asked Questions (F.A.Q)",
+        "questions" : [
+            {
+                "title" : "What are the benefits of crypto investment?",
+                "description": "Cryptocurrency investment has significant profit potential. One of the main advantages is the opportunity for rapid growth in the value of the asset. Several cryptocurrencies have experienced tremendous increases in value in recent years. Additionally, access to the global cryptocurrency investment market is open 24/7, making trading possible. The blockchain technology that powers cryptocurrencies also offers a high level of transparency and security. With the ability to diversify a portfolio, cryptocurrency investment can be a potentially profitable addition, although it is still important to understand the risks and conduct careful research."
+            },
+            {
+                "title" : "How to invest in crypto for beginners?",
+                "description": "Cryptocurrency investment has significant profit potential. One of the main advantages is the opportunity for rapid growth in the value of the asset. Several cryptocurrencies have experienced tremendous increases in value in recent years. Additionally, access to the global cryptocurrency investment market is open 24/7, making trading possible. The blockchain technology that powers cryptocurrencies also offers a high level of transparency and security. With the ability to diversify a portfolio, cryptocurrency investment can be a potentially profitable addition, although it is still important to understand the risks and conduct careful research."
+            },
+            {
+                "title" : "Is crypto investing safe?",
+                "description": "Cryptocurrency investment has significant profit potential. One of the main advantages is the opportunity for rapid growth in the value of the asset. Several cryptocurrencies have experienced tremendous increases in value in recent years. Additionally, access to the global cryptocurrency investment market is open 24/7, making trading possible. The blockchain technology that powers cryptocurrencies also offers a high level of transparency and security. With the ability to diversify a portfolio, cryptocurrency investment can be a potentially profitable addition, although it is still important to understand the risks and conduct careful research."
+            }
+        ]
+    }
+}
