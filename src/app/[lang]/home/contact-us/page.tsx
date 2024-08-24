@@ -12,16 +12,16 @@ export default async function  ContactUs({ params }: any) {
         info_section,
         faq_section,
     } = await getDictionariesContactUs(params.lang);
-  return (
-    <>
-        <MainHeader classText="header-white" lang={params.lang}/>
-            <main className='contact-us-page sm:mobile-responsive light-theme'>
-                <ContactUsHeaderSection objLang={header_section} />
-                <ContactUsInfoSection objLang={info_section} />
-                <ContactUsFaqSection objLang={faq_section} />
-            </main>
-        <Footer />
-    </>
+    return (
+        <>
+            <MainHeader classText="header-white" lang={params.lang}/>
+                <main className='contact-us-page sm:mobile-responsive light-theme'>
+                    <ContactUsHeaderSection objLang={header_section} />
+                    <ContactUsInfoSection objLang={info_section} />
+                    <ContactUsFaqSection objLang={faq_section} />
+                </main>
+            <Footer />
+        </>
   )
 }
 

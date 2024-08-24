@@ -315,6 +315,16 @@ const ArrowRightIcon = (props: {color: any}) => {
     )
 }
 
+const SearchIcon = (props: {color: any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3755 12.9769C16.0454 10.6337 15.8292 7.35958 13.727 5.25736C11.3839 2.91421 7.58488 2.91421 5.24173 5.25736C2.89859 7.6005 2.89859 11.3995 5.24173 13.7426C7.34396 15.8449 10.618 16.061 12.9612 14.3911L18.6768 20.1066L20.091 18.6924L14.3755 12.9769ZM12.3128 6.67157C13.8749 8.23367 13.8749 10.7663 12.3128 12.3284C10.7507 13.8905 8.21805 13.8905 6.65595 12.3284C5.09385 10.7663 5.09385 8.23367 6.65595 6.67157C8.21805 5.10948 10.7507 5.10948 12.3128 6.67157Z" fill="#A2A6B3"/>
+        </svg>
+    )
+}
+
 
 
 
@@ -345,5 +355,6 @@ export {
     BuildingIcon,
     MessageSquareIcon,
     FaqIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
+    SearchIcon
 }

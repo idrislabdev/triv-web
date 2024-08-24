@@ -3,6 +3,9 @@ input {
     &.color-1 {
         background-color: #fafbfe;
     }
+    &.color-2 {
+        @apply !border-[#fafbfe] bg-[#fafbfe];
+    }
 }
 
 select {
@@ -13,6 +16,12 @@ select {
 }
 .group-input {
     @apply relative;
+    input {
+        @apply w-full;
+        &::placeholder {
+            @apply font-medium text-neutral-400;
+        }
+    }
     span {
         @apply absolute text-[14px]/[21px] text-neutral-500 top-[9px];
         &.prepend {
