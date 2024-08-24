@@ -304,6 +304,18 @@ const FaqIcon = (props: {color: any}) => {
     )
 }
 
+const ArrowRightIcon = (props: {color: any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.33594 11.3333L13.4776 11.3333L10.4943 14.325L11.6693 15.5L16.6693 10.5L11.6693 5.5L10.4943 6.675L13.4776 9.66667L3.33594 9.66666L3.33594 11.3333Z" fill="#71BBED"/>
+        </svg>
+
+    )
+}
+
+
 
 
 export {
@@ -332,5 +344,6 @@ export {
     HideEyeIcon,
     BuildingIcon,
     MessageSquareIcon,
-    FaqIcon
+    FaqIcon,
+    ArrowRightIcon
 }

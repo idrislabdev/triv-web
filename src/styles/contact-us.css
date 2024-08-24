@@ -59,7 +59,12 @@
                         @apply text-[14px]/[21px] font-medium;
                     }
                     a {
-                        @apply text-[14px]/[21px] font-medium text-primary;
+                        @apply text-[14px]/[21px] font-medium text-primary flex items-center gap-[10px];
+                        svg {
+                            path {
+                                @apply fill-primary;
+                            }
+                        }
 
                     }
                 }
@@ -156,8 +161,10 @@
                                 @apply text-[10px]/[15px];
                             }
                             a {
-                                @apply text-[10px]/[15px];
-        
+                                @apply text-[10px]/[15px] gap-[5px];
+                                svg {
+                                    @apply w-[15px] h-[15px];
+                                }
                             }
                         }
                     }
