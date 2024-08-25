@@ -1,0 +1,33 @@
+{
+    "hero_section": {
+        "title_1" : "Work",
+        "title_2" : "Smart",
+        "title_3" : "Play",
+        "title_4" : "Hard",
+        "description": "Spread the Triv-link to your friends and relatives.Get commissions and free overseas holidays!",
+        "button": "Daftar Sekarang"
+    },
+    "comission_section": {
+        "title" : "Transparent and Uncomplicated Commision",
+        "transaction_text" : "For every downline sales transaction",
+        "downline_text" : "For every Purchase Transaction / Top Up Wallet Downline"
+    },
+    "downline_section" : {
+        "title" : "Monitor Your Downline in Real-Time",
+        "desc" : "Triv strives to make the management of your downline very transparent. You can find out the movement and commission earning instantly and in real-time."
+    },
+    "withdraw_section" : {
+        "title" : "Withdraw Affiliate Commission 24/7",
+        "desc" : "Disbursement of commission results can be done in real time and instant to 61 Banks and E-wallet"
+    },
+    "holiday_section" : {
+        "title" : "Get Free Overseas Holiday Gifts!",
+        "desc_1" : "Triv distributes free overseas gifts to Top Marketers every quarter. Enjoy free holidays to the best vacation destinations.",
+        "desc_2" : "* Prizes are given directly, without drawing and without any fees, Beware of fraud."
+    },
+    "extra_section": {
+        "title" : "Work Smart, Play Hard",
+        "desc" : "Earn extra income",
+        "button" : "Sign Up"
+    }
+}

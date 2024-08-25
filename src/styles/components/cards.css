@@ -61,3 +61,21 @@
         @apply h-[58px] w-[101px] object-contain rounded-[4px];
     }
 }
+
+.card-coupon {
+    @apply relative flex flex-col justify-start items-center text-center w-[616px] h-[352px] px-[100px] pt-[30px] pb-[90px];
+    background: url("/images/backgrounds/coupon.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .card-body {
+        @apply w-full flex flex-col;
+        h5 {
+            @apply text-[96px]/[144px] !text-white font-extrabold;
+        }
+        p {
+            @apply text-[22px]/[33px] !text-white font-medium;
+        }
+    }
+
+  
+}

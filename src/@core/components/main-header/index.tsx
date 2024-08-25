@@ -59,7 +59,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                         <li><Link href={`/${lang}/staking`}>Staking</Link></li>
                         <li>Market</li>
                         <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
-                        <li>Affliate</li>
+                        <li><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>
                         <li><Link href={`/${lang}/blog`}>Blog</Link></li>
                         <li><Link href={`/${lang}/home/contact-us`}>Contact Us</Link></li>
                     </ul>

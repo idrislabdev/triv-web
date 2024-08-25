@@ -1,0 +1,326 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.affliate-page {
+    @apply py-0;
+    &.dark-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-slate-200;
+        }
+        p {
+            @apply text-slate-300;
+        }
+        a {
+            @apply text-[#737aff]
+        }
+    }
+    &.light-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-black;
+        }
+        p {
+            @apply text-neutral-700;
+        }
+    }
+    .affliate-hero-section {
+        @apply  h-[700px] pt-[150px] relative flex flex-col justify-start items-center text-center;
+        background: url("/images/backgrounds/affliate-1.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    
+        .hero-container {
+            @apply flex flex-col px-[100px] gap-[40px] items-center w-[60%];
+            h1 {
+                @apply text-[50px]/[75px] text-white font-bold;
+                span {
+                    @apply text-primary italic;
+                }
+            }
+            p {
+                @apply text-[24px]/[36px] text-white font-medium;
+
+            }
+            a {
+                @apply bg-primary text-white w-[260px] h-[48px] font-bold rounded-[30px] flex gap-[10px] items-center justify-center cursor-pointer;
+                svg {
+                    @apply w-[20px] h-[20px];
+                    path {
+                        @apply fill-white;
+                    }
+                }
+            }
+        }
+    }
+    .affliate-comission-section {
+        @apply  h-[675px] relative flex flex-col justify-center items-center text-center;
+        background: url("/images/backgrounds/affliate-2.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        .comission-container {
+            @apply flex flex-col gap-[82px];
+            h2 {
+                @apply text-[38px]/[57px] text-white font-bold;
+            }
+            .coupon-subcontainer {
+                @apply flex gap-[80px];
+            }
+        }
+    }
+    .affliate-downline-section {
+        @apply flex flex-col justify-center items-center bg-[#202020];
+        .downline-container{
+            @apply flex px-[100px] pt-[120px] pb-[60px] gap-[200px] items-center;
+            .image-subcontainer {
+                @apply w-[331px];
+                img {
+                    @apply w-[331px] h-[281px] object-contain;
+                }
+            }
+            .content-subcontainer {
+                @apply flex flex-col flex-1 gap-[16px];
+                h2 {
+                    @apply text-[36px]/[54px] font-bold text-white;
+                }
+                p {
+                    @apply text-[20px]/[30px] font-medium text-neutral-400;
+                }
+            }
+        }
+    }
+    .affliate-withdraw-section {
+        @apply flex flex-col justify-center items-center bg-[#202020];
+        .withdraw-container{
+            @apply flex px-[100px] pt-[60px] pb-[120px] gap-[200px] items-center;
+            .image-subcontainer {
+                @apply w-[331px];
+                img {
+                    @apply w-[331px] h-[281px] object-contain;
+                }
+            }
+            .content-subcontainer {
+                @apply flex flex-col flex-1 gap-[16px];
+                h2 {
+                    @apply text-[36px]/[54px] font-bold text-white;
+                }
+                p {
+                    @apply text-[20px]/[30px] font-medium text-neutral-400;
+                }
+                img {
+                    @apply w-[547px] h-[66px];
+                }
+            }
+        }
+    }
+    .affliate-holiday-section {
+        @apply flex flex-col justify-center items-center bg-[#333333];
+        .holiday-container{
+            @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative;
+            .header-subcontainer {
+                @apply  w-full flex flex-col;
+                h2 {
+                    @apply text-[36px]/[54px] font-bold text-white;
+            
+                }
+                p {
+                    @apply text-[20px]/[30px] font-medium text-neutral-400;
+                    span {
+                        @apply text-white;
+                    }
+                }
+            }
+            .divide-subcontainer {
+                @apply  w-full h-[123px] relative flex flex-col justify-start items-center text-center;
+                background: url("/images/backgrounds/divide.png") no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .swiper-subcontainer {
+                @apply w-full h-[697px] relative;
+            }
+        }
+    }
+    .affliate-extra-section {
+        @apply h-[429px] relative flex flex-col justify-center px-[99px];
+        background: url("/images/backgrounds/extra.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        .extra-container {
+            @apply flex items-center justify-between;
+            .content-subcontainer {
+                @apply flex flex-col gap-[30px];
+                h2 {
+                    @apply text-[60px]/[90px] text-white font-bold;
+                }
+                p {
+                    @apply text-[32px]/[48px] text-white font-medium;
+                    
+                }
+            }
+            a {
+                @apply border border-white rounded-[10px] text-white text-[30px]/[45px] font-medium py-[10px] px-[20px];
+            }
+        }
+    }
+    @layer components {
+        &.mobile-responsive {
+            .affliate-hero-section {
+                @apply h-[391px] pt-[0px] pb-[20px] flex-col justify-center;
+                background-position: unset;
+                .hero-container {
+                    @apply gap-[20px] w-full px-[20px];
+                    h1 {
+                        @apply text-[30px]/[45px];
+                    }
+                    p {
+                        @apply text-[12px]/[18px];
+        
+                    }
+                    a {
+                        @apply w-[200px] h-[34px] font-bold rounded-[30px] text-[12px]/[18px];
+                        svg {
+                            @apply w-[20px] h-[20px];
+                            path {
+                                @apply fill-white;
+                            }
+                        }
+                    }
+                }
+            }
+            .affliate-comission-section {
+                @apply h-[600px] px-[20px];
+                .comission-container {
+                    @apply flex flex-col gap-[48px];
+                    h2 {
+                        @apply text-[22px]/[33px] text-white font-bold;
+                    }
+                    .coupon-subcontainer {
+                        @apply flex-col items-center gap-[0px];
+                        .card-coupon {
+                            @apply w-[332px] h-[189px] px-[30px] py-[10px];
+                            .card-body {
+                                h5 {
+                                    @apply text-[51px]/[77px];
+                                }
+                                p {
+                                    @apply text-[11px]/[17px];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .affliate-downline-section {
+                .downline-container{
+                    @apply flex-col-reverse px-[20px] pt-[80px] pb-[40px] items-center justify-center gap-[20px];
+                    .image-subcontainer {
+                        @apply w-full;
+                        img {
+                            @apply w-[331px] h-[281px] object-contain;
+                        }
+                    }
+                    .content-subcontainer {
+                        @apply w-full text-center;
+                        h2 {
+                            @apply text-[20px]/[30px];
+                        }
+                        p {
+                            @apply text-[14px]/[21px];
+                        }
+                    }
+                }
+            }
+            .affliate-withdraw-section {
+                .withdraw-container{
+                    @apply flex-col px-[20px] pt-[40px] pb-[80px] items-center justify-center gap-[20px];
+                    .image-subcontainer {
+                        @apply w-full;
+                        img {
+                            @apply w-[331px] h-[281px] object-contain;
+                        }
+                    }
+                    .content-subcontainer {
+                        @apply w-full text-center justify-center items-center;
+                        h2 {
+                            @apply text-[20px]/[30px];
+                        }
+                        p {
+                            @apply text-[14px]/[21px];
+                        }
+                        img {
+                            @apply w-[281px] h-[34px] object-cover;
+                        }
+                    }
+                }
+            }
+            .affliate-holiday-section {
+                .holiday-container{
+                    @apply py-[57px] px-[20px] gap-[24px];
+                    .header-subcontainer {
+                        @apply  w-full flex flex-col;
+                        h2 {
+                            @apply text-[20px]/[30px];
+                    
+                        }
+                        p {
+                            @apply text-[14px]/[21px];
+                            span {
+                                @apply text-white;
+                            }
+                        }
+                    }
+                    .divide-subcontainer {
+                        @apply  w-full h-[80px];
+                        background: url("/images/backgrounds/divide-small.png") no-repeat;
+                    }
+                    .swiper-subcontainer {
+                        @apply h-[180px];
+                        .swiper-background {
+                            .swiper {
+                                .swiper-slide {
+                                    @apply px-[10px];
+                                }
+                                .swiper-button-prev {
+                                    @apply absolute w-[20px] h-[20px];
+                                    &::before {
+                                        background-size: 6px 11px;
+                                        width: 6px;
+                                        height: 11px;
+                                    }
+                                }
+                                .swiper-button-next {
+                                    @apply absolute w-[20px] h-[20px];
+                                    &::before {
+                                        background-size: 6px 11px;
+                                        width: 6px;
+                                        height: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .affliate-extra-section {
+                @apply px-[20px];
+                .extra-container {
+                    @apply flex-col gap-[80px];
+                    .content-subcontainer {
+                        @apply flex flex-col gap-[20px] justify-center items-center text-center;
+                        h2 {
+                            @apply text-[38px]/[57px] text-white font-bold;
+                        }
+                        p {
+                            @apply text-[18px]/[27px] text-white font-medium;
+                            
+                        }
+                    }
+                    a {
+                        @apply text-[18px]/[27px] ;
+                    }
+                }
+            }
+        }
+    }
+    
+}
