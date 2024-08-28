@@ -19,7 +19,7 @@ export default async function  Blog({ params }: any) {
     <>
         <MainHeader classText="header-white" lang={params.lang}/>
             <main className='blog-page sm:mobile-responsive light-theme'>
-                <BlogNewsSection main={dataMain} news={dataNews} stickies={dataSticky} categories={dataCategories} objLang={blog_section} />
+                <BlogNewsSection lang={params.lang} main={dataMain} news={dataNews} stickies={dataSticky} categories={dataCategories} objLang={blog_section} />
                 <BlogBaruCryptoSection objLang={baru_crypto_section} />
                 <BlogInvestasiNowSection objLang={start_now_section} />
             </main>

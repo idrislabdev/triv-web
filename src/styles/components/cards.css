@@ -18,7 +18,14 @@
 }
 
 .card-news-main {
-    @apply flex flex-col gap-[20px];
+    @apply flex flex-col gap-[20px] cursor-pointer;
+    &:hover {
+        .card-content {
+            h5 {
+                @apply text-primary;
+            }
+        }
+    }
     img {
         @apply h-[410px] w-full object-cover rounded-[10px];
     }
@@ -34,7 +41,14 @@
 }
 
 .card-news-secondary {
-    @apply flex gap-[25px];
+    @apply flex gap-[25px] cursor-pointer;
+    &:hover {
+        .card-content {
+            h5 {
+                @apply text-primary;
+            }
+        }
+    }
     .card-content {
         @apply flex flex-col gap-[25px] flex-1;
         h5 {
