@@ -32,6 +32,10 @@
                 }
                 .news-detail-content {
                     @apply flex flex-col gap-[20px];
+                    h2 {
+                        @apply text-[28px]/[42px] text-black font-bold;
+            
+                    }
                     img {
                         @apply h-[410px] w-full object-cover rounded-[10px];
                     }
