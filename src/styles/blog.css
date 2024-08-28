@@ -37,6 +37,15 @@
                     }
                     .detail-content {
                         @apply flex flex-col ;
+                        .ringkasan-content {
+                            @apply bg-[#FAFBFE] px-[30px] py-[10px] mb-[10px];
+                            p {
+                                @apply text-[14px]/[21px] text-primary mb-0;
+                            }
+                            ul {
+                                @apply text-[14px]/[21px] font-medium text-primary list-disc pl-[20px];
+                            }
+                        }
                         h5 {
                             @apply text-[24px]/[36px] font-medium mb-[10px] text-neutral-700;
                         }

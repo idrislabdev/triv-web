@@ -7,6 +7,17 @@ const NewsDetailContent = (props: {content:any}) => {
     <div className='news-detail-content'>
       <Image src='/images/samples/sample-news.png' alt='sample' width={0} height={0} sizes='100%'/>
       <div className='detail-content'>
+        <div className='ringkasan-content'>
+          <p>Ringkasan</p>
+          <ul>
+            <li>Solana diprediksi akan mengalami kenaikan harga yang signifikan dengan persetujuan ETF spot.</li>
+            <li>Utilitas, kapitalisasi pasar, desentralisasi, dan fungsi staking Solana membuatnya menjadi kandidat utama untuk ETF.</li>
+            <li>Analisis GSR memperkirakan harga Solana dapat meningkat 1,4 hingga 8,9 kali dalam berbagai skenario.</li>
+          </ul>
+        </div>
+        <p>
+          Solana (SOL) diprediksi akan mengalami kenaikan harga yang signifikan setelah laporan mengenai ETF yang melacak aset SOL ETF spot ini dapat meningkatkan nilai SOL secara drastis dan mengubah pasar kripto.
+        </p>
         <h5>Dasar Kuat Solana</h5>
         <p>
           Laporan dari GSR Markets menunjukkan bahwa token ini memiliki utilitas dan kapitalisasi pasar yang besar, menjadikannya salah satu dari tujuh kripto terbesar. Dengan desentralisasi dan fungsi staking yang kuat, Solana menjadi kandidat utama untuk persetujuan produk ETF dari Komisi Sekuritas dan Bursa AS (SEC). 
