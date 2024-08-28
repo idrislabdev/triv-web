@@ -43,6 +43,10 @@ const dictionariesAffliate: any = {
   en: () => import("./dictionaries/affliate/en.json").then((module) => module.default),
 };
 
+const dictionariesFaqs: any = {
+  id: () => import("./dictionaries/faqs/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/faqs/en.json").then((module) => module.default),
+};
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
 export const getDictionaryRegister = async (locale: any) => dictionariesRegister[locale]();  
 export const getDictionaryHome = async (locale: any) => dictionariesHome[locale]();  
@@ -52,3 +56,4 @@ export const getDictionariesStocks = async (locale: any) => dictionariesStocks[l
 export const getDictionariesContactUs = async (locale: any) => dictionariesContactUs[locale]();
 export const getDictionariesBlog = async (locale: any) => dictionariesBlog[locale]();
 export const getDictionariesAffliate = async (locale: any) => dictionariesAffliate[locale]();
+export const getDictionariesFaqs = async (locale: any) => dictionariesFaqs[locale]();

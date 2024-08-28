@@ -1,0 +1,10 @@
+{
+    "detail_faq": {
+        "created_by" : "Dibuat Oleh",
+        "modified_at" : "Diupdate Pada",
+        "author_text" : "Triv adalah penulis artikel solusi ini.",
+        "helpful" : "Apakah menurut Anda ini bermanfaat?",
+        "yes" : "Ya",
+        "no" : "Tidak"
+    }
+}

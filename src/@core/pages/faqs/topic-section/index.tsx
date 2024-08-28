@@ -1,9 +1,10 @@
 "use client"
 import React, { useState } from 'react'
+import Link from 'next/link';
 
-const FaqsTopicSection = (props: { objLang:any }) => {
+const FaqsTopicSection = (props: {lang:string, objLang:any }) => {
     const [selected, setSelected] = useState(0)
-    const { objLang } = props
+    const { lang, objLang } = props
     const topics = [
         'General', 
         'Triv Point', 
@@ -21,7 +22,7 @@ const FaqsTopicSection = (props: { objLang:any }) => {
                 <div className='topic-subcontainer'>
                     {
                         topics.map((item:string, index:number) => (
-                            <a key={index} onClick={_ => setSelected(index+1)} className={`${selected - 1 == index ? 'active' : ''}`}>{item}</a>
+                            <Link key={index} href={`/${lang}/home/faqs/${item.replace(' ', '-').toLocaleLowerCase()}`} className={`${selected - 1 == index ? 'active' : ''}`}>{item}</Link>
                         ))
                     }
                 </div>

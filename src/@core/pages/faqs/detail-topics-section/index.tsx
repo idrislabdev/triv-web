@@ -10,7 +10,7 @@ const FaqsDetailTopicSection = (props: {objLang:any}) => {
 
     return (
         <section className='faq-popular-section'>
-            <h2>Pertanyaan Populer</h2>
+            <h2>General</h2>
             <div className='question-list-container'>
                 <div className="question-container">
                     <h5>FAQ</h5>

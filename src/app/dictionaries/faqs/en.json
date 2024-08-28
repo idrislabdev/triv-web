@@ -1,0 +1,10 @@
+{
+    "detail_faq": {
+        "created_by" : "Created By",
+        "modified_at" : "Modified On",
+        "author_text" : "Triv is the author of this solution article.",
+        "helpful" : "Did you find it helpful?",
+        "yes" : "Yes",
+        "no" : "No"
+    }
+}
