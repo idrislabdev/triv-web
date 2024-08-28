@@ -5,8 +5,10 @@ const NewsDetailContent = (props: {content:any}) => {
   const { content } = props
   return (
     <div className='news-detail-content'>
-      <h2>Masa Depan Cerah Solana dengan Persetujuan ETF Spot di Depan Mata</h2>
-      <Image src='/images/samples/sample-news.png' alt='sample' width={0} height={0} sizes='100%'/>
+      <div className='header-content'>
+        <h2>Masa Depan Cerah Solana dengan Persetujuan ETF Spot di Depan Mata</h2>
+        <Image src='/images/samples/sample-news.png' alt='sample' width={0} height={0} sizes='100%'/>
+      </div>
       <div className='detail-content'>
         <div className='ringkasan-content'>
           <p>Ringkasan</p>
