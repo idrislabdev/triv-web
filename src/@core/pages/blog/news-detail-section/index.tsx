@@ -2,22 +2,30 @@ import CardNewsMain from '@/@core/components/cards/card-news-main'
 import React from 'react'
 import CardNewsSecondary from '@/@core/components/cards/card-news-secondary';
 import CardNewsSticky from '@/@core/components/cards/card-news-sticky';
-const BlogNewsSection = (props: {main:any, news:any[], stickies:any[], categories:string[], objLang:any}) => {
+import NewsDetailContent from '../news-detail-content';
+import { FacebookIcon, GoogleIcon, InvisionIcon, LinkedinIcon, PeopleIcon, TwiterIcon } from '@/@core/components/custom-icons';
+const BlogNewsDetailSection = (props: {main:any, news:any[], stickies:any[], categories:string[], objLang:any}) => {
   const { main, news, stickies, categories, objLang } = props;
   return (
     <section className='blog-news-section'>
       <div className='blog-main-container'>
         <div className='main-subcontainer'>
-          <h1>{objLang.title_main}</h1>
-          <CardNewsMain item={main}/>
-        </div>
-        <div className='daily-subcontainer'>
-          <h2>{objLang.title_daily}</h2>
-          {
-            news.map((item:any, index:number) => (
-              <CardNewsSecondary item={item} key={index}/>
-            ))
-          }
+          <NewsDetailContent content={null}/>
+          <div className='news-detail-footer'>
+            <div className='user-info'>
+              <PeopleIcon color={'#fff'} />
+              <span>Jeremy</span>
+            </div>
+            <div className='socialmedia-list'>
+              <a><GoogleIcon color={'#fff'}/></a>
+              <a><FacebookIcon color={'#fff'}/></a>
+              <a><InvisionIcon color={'#fff'}/></a>
+              <a><TwiterIcon color={'#fff'}/></a>
+            </div>
+          </div>
+          <div className='news-comment-column disabled'>
+            <span>Coments are closed for this post.</span>
+          </div>
         </div>
       </div>
       <div className='blog-side-container'>
@@ -54,4 +62,4 @@ const BlogNewsSection = (props: {main:any, news:any[], stickies:any[], categorie
   )
 }
 
-export default BlogNewsSection
+export default BlogNewsDetailSection

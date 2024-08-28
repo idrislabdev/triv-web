@@ -7,6 +7,7 @@ import BlogNewsSection from '@/@core/pages/blog/news-section'
 import BlogInvestasiNowSection from '@/@core/pages/blog/investasi-now-section'
 import { getDictionariesBlog } from '@/app/dictionaries';
 import BlogBaruCryptoSection from '@/@core/pages/blog/baru-crypto-section'
+import '@/styles/blog.css'
 
 export default async function  Blog({ params }: any) {
     const {

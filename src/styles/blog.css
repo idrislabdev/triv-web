@@ -30,6 +30,55 @@
                     @apply text-[38px]/[57px] text-black font-bold;
         
                 }
+                .news-detail-content {
+                    @apply flex flex-col gap-[20px];
+                    img {
+                        @apply h-[410px] w-full object-cover rounded-[10px];
+                    }
+                    .detail-content {
+                        @apply flex flex-col ;
+                        h5 {
+                            @apply text-[24px]/[36px] font-medium mb-[10px] text-neutral-700;
+                        }
+                        p {
+                            @apply text-[14px]/[21px] text-neutral-700 font-medium mb-[30px];
+                        }
+                        img {
+                            @apply h-[259px];
+                        }
+                    }
+                }
+                .news-detail-footer {
+                    @apply flex justify-between;
+                    .user-info {
+                        @apply flex gap-[4px] items-center;
+                        svg {
+                            @apply w-[25px] h-[25px];
+                        }
+                        span {
+                            @apply text-[14px]/[21px] text-neutral-700 font-bold;
+                        }
+                    }
+                    .socialmedia-list {
+                        @apply flex items-center gap-[10px];
+                        a {
+                            svg {
+                                @apply w-[24px] h-[24px];
+                                path {
+                                    @apply fill-neutral-700;
+                                }
+                            }
+                        }
+                    }
+                }
+                .news-comment-column {
+                    &.disabled {
+                        @apply bg-[#F3F3F3] h-[37px] flex flex-col justify-center items-center;
+                        span {
+                            @apply text-[14px]/[21px] text-neutral-700 font-bold;
+                        }
+                    }
+                }
             }
             .daily-subcontainer {
                 @apply flex flex-col gap-[30px];
@@ -221,6 +270,21 @@
                                 }
                                 p {
                                     @apply text-[10px]/[15px];
+                                }
+                            }
+                        }
+                        .news-detail-content {
+                            @apply flex flex-col gap-[20px];
+                            img {
+                                @apply h-[199px] w-full object-cover rounded-[10px];
+                            }
+                            .detail-content {
+                                @apply flex flex-col;
+                                h5 {
+                                    @apply text-[12px]/[18px] font-medium mb-[10px] ;
+                                }
+                                p {
+                                    @apply text-[12px]/[18px] font-medium mb-[10px];
                                 }
                             }
                         }
