@@ -97,6 +97,44 @@
                 }
             }
         }
+
+       .question-list-container {
+        @apply flex flex-col gap-[100px];
+        .question-container {
+            @apply flex flex-col gap-[30px];
+            h5 {
+                @apply text-[28px]/[42px] font-bold text-black;
+            }
+            .question-accordion {
+                @apply flex-1;
+                ul {
+                    li {
+                        &:not(:last-child) {
+                            @apply relative pb-[20px];
+                        }
+                        button {
+                            @apply w-full py-[8px] text-left;
+                            .header-button {
+                                @apply flex items-center justify-between;
+                                label {
+                                    @apply text-[18px]/[27px] font-bold cursor-pointer text-neutral-800;
+                                }
+                            }
+                        }
+                        .accordion-content {
+                            @apply relative overflow-hidden transition-all duration-700;
+                            .content-area {
+                                @apply py-[8px];
+                                p {
+                                    @apply text-[14px]/[21px] font-normal text-neutral-700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       }
     }
     @layer components {
         &.mobile-responsive {
@@ -160,6 +198,36 @@
                                         @apply py-[8px];
                                         p {
                                             @apply text-[10px]/[15px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question-list-container {
+                    @apply gap-[59px];
+                    .question-container {
+                        .question-accordion {
+                            ul {
+                                li {
+                                    &:not(:last-child) {
+                                        @apply relative pb-[20px];
+                                    }
+                                    button {
+                                        .header-button {
+                                            label {
+                                                @apply text-[12px]/[18px];
+                                            }
+                                        }
+                                    }
+                                    .accordion-content {
+                                        @apply relative overflow-hidden transition-all duration-700;
+                                        .content-area {
+                                            @apply py-[8px];
+                                            p {
+                                                @apply text-[10px]/[15px];
+                                            }
                                         }
                                     }
                                 }

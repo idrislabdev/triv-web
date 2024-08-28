@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { useRef, useState } from 'react'
 import { questions } from './data';
-const FaqPopularSection = (props: {objLang:any}) => {
+const FaqsPopularSection = (props: {objLang:any}) => {
     const { objLang } = props
     const [selected, setSelected] = useState("1")
    
@@ -46,4 +46,4 @@ const FaqPopularSection = (props: {objLang:any}) => {
   )
 }
 
-export default FaqPopularSection
+export default FaqsPopularSection

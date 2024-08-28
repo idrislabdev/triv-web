@@ -5,7 +5,7 @@ import React from 'react'
 
 import '@/styles/faqs.css'
 import FaqsTopicSection from '@/@core/pages/faqs/topic-section'
-import FaqPopularSection from '@/@core/pages/faqs/popular-section'
+import FaqsPopularSection from '@/@core/pages/faqs/popular-section'
 export default async function Faqs({ params }: any) {
     return (
         <>
@@ -13,7 +13,7 @@ export default async function Faqs({ params }: any) {
                 <main className='faqs-page sm:mobile-responsive light-theme'>
                     <FaqsSearchSection objLang={null} />
                     <FaqsTopicSection objLang={null} />
-                    <FaqPopularSection objLang={null} />
+                    <FaqsPopularSection objLang={null} />
                 </main>
             <Footer />
         </>
