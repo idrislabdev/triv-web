@@ -13,7 +13,7 @@ import ProductsRegulasiDeviceSection from '@/@core/pages/products/regulasi-secti
 import ProductsLayananSection from '@/@core/pages/products/layanan-section'
 import ProductsAverageSection from '@/@core/pages/products/average-section'
 
-import { getDictionariesPerfectMoney } from '@/app/dictionaries'
+import { getDictionariesPaypal } from '@/app/dictionaries'
 
 export default async function ServicePaypal({ params }: any) {
     const {
@@ -23,7 +23,7 @@ export default async function ServicePaypal({ params }: any) {
         start_now_section,
         layanan_section,
         average_section,
-    } = await getDictionariesPerfectMoney(params.lang);
+    } = await getDictionariesPaypal(params.lang);
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
