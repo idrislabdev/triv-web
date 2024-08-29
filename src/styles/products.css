@@ -515,7 +515,7 @@
                 }
             }
             .products-regulasi-device-section {
-                @apply py-[30px] px-[20px] gap-[30px] flex-col;
+                @apply py-[30px] px-[20px] gap-[50px] flex-col;
                 .image-container {
                     @apply w-full;
                     img {

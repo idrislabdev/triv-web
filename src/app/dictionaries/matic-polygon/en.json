@@ -1,31 +1,31 @@
 {
     "header_section": {
-        "title" : "Jual Beli Matic Polygon Indonesia 24 jam",
-        "description" : "Jual beli Matic Polygon terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi BTC.",
-        "button_1" : "Beli Matic Polygon",
-        "button_2" : "Kunjungi Marketplace"
+        "title" : "Buy and sell Matic Polygon Indonesia 24 hours",
+        "description" : "The largest Matic Polygon trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact BTC.",
+        "button_1" : "Buy Matic Polygon",
+        "button_2" : "Visit Marketplace"
     },
     "regulasi_section": {
         "liquiditas" : {
-            "title" : "Likuiditas Tinggi",
-            "content" : "Spread atau selisih harga jual beli Matic Polygon Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
+            "title" : "High Liquidity",
+            "content" : "Triv's spread is one of the lowest in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
         },
         "regulator" : {
-            "title" : "Teregulasi dan Terasuransi",
-            "content" : "Sejak tahun 2015 Triv telah digunakan oleh jutaan orang, seluruh dana pelanggan di sistem kami diasuransikan oleh Bitgo dan Lloyd England sebesar 100 juta USD atau setara dengan 1,45 triliun rupiah. Triv merupakan broker resmi yang terdaftar dan diawasi oleh Bappebti."
+            "title" : "Regulated and Insured",
+            "content" : "Since 2015 Triv has been used by millions of people, all customer funds in our system are insured by Bitgo and Lloyd England for 100 million USD or the equivalent of 1.45 trillion rupiah. Triv is an authorized broker registered and supervised by Bappebti."
         }
     },
     "layanan_section": {
-        "title" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan Matic Polygon Indonesia",
-        "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli. Baik itu swap, staking ataupun lainnya dapat anda lakukan dalam satu aplikasi. Triv merupakan Aplikasi dengan fitur terlengkap untuk mengelola dan menumbuhkan portfolio anda.",
+        "title" : "What You Can Do With Triv Matic Polygon Service Indonesia",
+        "content" : "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
         "card" : {
             "jual_beli" : {
-                "title" : "Jual dan Beli Matic Polygon 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur."
+                "title" : "Buy and sell Matic Polygon 24 hours",
+                "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays You can buy and sell your Paypal balance in real-time with your bank or e-wallet in seconds even on holidays."
             },
             "kirim" : {
-                "title" : "Kirim Matic Polygon",
-                "content" : "Kirim Matic Polygon ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Matic Polygon ke sesama pengguna Triv dengan gratis tanpa biaya apapun!"
+                "title" : "Send Matic Polygon",
+                "content" : "Send Matic Polygon around the world instantly, Crypto is the money of the future. You can also send Matic Polygon to fellow Triv users for free without any fees!"
             },
             "terima" : {
                 "title" : "Terima Matic Polygon",
@@ -33,37 +33,46 @@
             },
             "hoddl" : {
                 "title" : "HODLL Matic Polygon",
-                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER BTC mendapatkan return lebih tinggi daripada trader BTC. Simpan BTCmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah"
+                "content" : "Did you know that it is historically proven that BTC HODLERS earn higher returns than BTC traders. Store your BTC in Triv with insurance from Bitgo & Lloyd's England up to 100m USD or 1.45 Trillion Rupiah equivalent"
             },
             "swap" : {
                 "title" : "Swap Paypal",
-                "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv"
+                "content" : "Triv supports over 700 cryptocurrencies on our platform and counting. Need another coin? Swap to a wide range of other digital assets in real-time 24/7 on Triv"
             },
             "isi_pulsa" : {
-                "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan koin BTCmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
+                "title" : "Recharge and Pay Bills",
+                "content" : "Exchange your BTC coins into Triv's rupiah wallet and use them for a variety of purposes such as topping up credit, paying bills and even buying electricity tokens."
             }
         }
     },
     "average_section": {
         "live_chat" : {
             "title" : "Average LiveChat Responds",
-            "content" : "Livechat dan Call center Triv siap untuk membantu anda"
+            "content" : "Triv's Livechat and Call center are ready to assist you."
         },
         "processing" : {
             "title" : "Average Processing Time",
-            "content" : "Seluruh transaksi Triv berjalan secara otomatis dan tanpa downtime. Sejak 2015 Triv tidak pernah mengalami downtime yang menggangu transaksi nasabah "
+            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions"
         },
         "updated_text" : "*Updated Real-Time"
     },
     "ewallet_section": {
-        "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
-        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+        "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "subtitle" : "24/7 Real-time Deposits & Withdrawals",
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "start_now_section": {
-        "title" : "Mulai Investasi Sekarang",
-        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
-        "button": "Mulai Sekarang"
+        "title" : "Start Investing Now",
+        "description": "Sign up in minutes and achieve your investment goals now🚀",
+        "button": "Register Now"
+    },
+    "triv_affliate" : {
+        "title_1" : "Triv Affiliate",
+        "content_1" : "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
+        "title_2" : "Invite friends and relatives",
+        "content_2" : "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
+        "follow_text" : "Invite friends and earn extra income",
+        "button_1" : "Affiliate Program",
+        "button_2" : "Invite Friends"
     }
 }
