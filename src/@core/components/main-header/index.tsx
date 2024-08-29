@@ -16,13 +16,24 @@ const MainHeader = (props: {classText:string, lang: string}) => {
 
     const onScroll = useCallback(() => {
         const { scrollY } = window;
-        if ( scrollY >= 60) {
-            document.getElementsByTagName("header")[0].classList.add('header-white');
-            setActive(true)
+        if (classText === '') {
+            if ( scrollY >= 60) {
+                document.getElementsByTagName("header")[0].classList.add('header-white', 'drop-shadow');
+                setActive(true)
+            } else {
+                document.getElementsByTagName("header")[0].classList.remove('header-white', 'drop-shadow');
+                setActive(false)
+            }
         } else {
-            document.getElementsByTagName("header")[0].classList.remove('header-white');
-            setActive(false)
+            if ( scrollY >= 60) {
+                document.getElementsByTagName("header")[0].classList.add('drop-shadow');
+                setActive(true)
+            } else {
+                document.getElementsByTagName("header")[0].classList.remove('drop-shadow');
+                setActive(false)
+            }
         }
+
     }, []);
 
     const showMobileSidebar = () => {
@@ -38,11 +49,9 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     }
 
     useEffect(() => {
-        if (classText === '') {
-            window.addEventListener("scroll", onScroll, { passive: true });
-            return () => {
-               window.removeEventListener("scroll", onScroll);
-            }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => {
+           window.removeEventListener("scroll", onScroll);
         }
     });
     
@@ -56,7 +65,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                     <ul>
                         <li><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
                         <li className='has-sub'>
-                            <a>Service</a>
+                            <a>Service <ChevronIconDown color={'#fff'} /></a>
                             <ul className='submenu'>
                                 <li>
                                     <a>E-Currency <ChevronIconDown color={'#000'} /></a>

@@ -1,10 +1,13 @@
 @tailwind components;
 
 .main-header {
-    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[24px] px-[100px] z-10 text-white h-[80px];
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[20px] px-[100px] z-10 text-white h-[70px];
 
     &.header-white {
         @apply bg-white text-black;
+        &.drop-shadow {
+            box-shadow: 0px 4px 16px 0px #0000001A;
+        }
         .main-header-action {
             a {
                 &.button-switch-theme {
@@ -48,6 +51,21 @@
                 }
             }
         }
+        .main-header-menu {
+            ul {
+                li {
+                    &.has-sub {
+                        a {
+                            svg {
+                                path {
+                                    @apply stroke-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .main-header-menu {
         ul {
@@ -61,6 +79,14 @@
                     @apply text-primary;
                 }
                 &.has-sub {
+                    a {
+                        @apply flex gap-[4px] items-center;
+                        svg {
+                            path {
+                                @apply stroke-white;
+                            }
+                        }
+                    }
                     .submenu {
                         @apply absolute left-0 m-0 list-none w-[150px] hidden bg-white  duration-300 transition-all z-10;
                         box-shadow: 0px 4px 16px 0px #0000001A;
