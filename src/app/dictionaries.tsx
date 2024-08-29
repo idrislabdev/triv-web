@@ -62,6 +62,11 @@ const dictionariesProductsTagihan: any = {
   id: () => import("./dictionaries/product-tagihan/id.json").then((module) => module.default),
   en: () => import("./dictionaries/product-tagihan/en.json").then((module) => module.default),
 };
+
+const dictionariesBitcoin: any = {
+  id: () => import("./dictionaries/bitcoin/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/bitcoin/en.json").then((module) => module.default),
+};
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
 export const getDictionaryRegister = async (locale: any) => dictionariesRegister[locale]();  
 export const getDictionaryHome = async (locale: any) => dictionariesHome[locale]();  
@@ -75,3 +80,4 @@ export const getDictionariesFaqs = async (locale: any) => dictionariesFaqs[local
 export const getDictionariesProductsPulsa = async (locale: any) => dictionariesProductsPulsa[locale]();
 export const getDictionariesProductsTokenListrik = async (locale: any) => dictionariesProductsTokenListrik[locale]();
 export const getDictionariesProductsTagihan = async (locale: any) => dictionariesProductsTagihan[locale]();
+export const getDictionariesBitcoin = async (locale: any) => dictionariesBitcoin[locale]();

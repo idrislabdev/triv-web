@@ -1,0 +1,22 @@
+{
+    "header_section": {
+        "title" : "Beli token listrik di TRIV",
+        "description" : "Hemat, 24 jam, dan real-time"
+    },
+    "topup_section": {
+        "title" : "Beli Token Listrik di Triv, Hemaat!",
+        "description" : "Pakai Triv untuk isi ulang token listrik dan hemat hingga 3%. Triv menjalin kerja sama dengan pihak distributor, memastikan harga kompetitif dan transaksi tanpa gangguan.",
+        "choose_text" : "Pilih Nominal",
+        "button_text" : "Beli Token"
+    },
+    "ewallet_section": {
+        "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
+        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+    },
+    "start_now_section": {
+        "title" : "Mulai Investasi Sekarang",
+        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
+        "button": "Mulai Sekarang"
+    }
+}
