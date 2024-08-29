@@ -1,0 +1,22 @@
+{
+    "header_section": {
+        "title" : "Triv untuk isi pulsa anda!",
+        "description" : "Hemat, 24 jam, kapanpun dan dimanapun..."
+    },
+    "topup_section": {
+        "title" : "Isi pulsa di Triv, hemaat!",
+        "description" : "Pakai Triv untuk isi ulang pulsa dan hemat hingga 5%. Triv menjalin kerja sama dengan pihak distributor, memastikan harga kompetitif dan transaksi tanpa gangguan.",
+        "choose_text" : "Pilih Pulsa",
+        "button_text" : "Beli Pulsa"
+    },
+    "ewallet_section": {
+        "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "subtitle" : "24/7 Real-time Deposits & Withdrawals",
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+    },
+    "start_now_section": {
+        "title" : "Start Investing Now",
+        "description": "Sign up in minutes and achieve your investment goals now🚀",
+        "button": "Register Now"
+    }
+}

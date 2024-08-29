@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
-const StocksEwalletSection = (props: {objLang:any}) => {
+const ProductsEwalletSection = (props: {objLang:any}) => {
   const { objLang } = props
   return (
-    <section className='stocks-ewallet-section'>
+    <section className='products-ewallet-section'>
         <div className='ewallet-description'>
             <h2>{objLang.title}</h2>
             <h5>{objLang.subtitle}</h5>
@@ -17,4 +17,4 @@ const StocksEwalletSection = (props: {objLang:any}) => {
   )
 }
 
-export default StocksEwalletSection
+export default ProductsEwalletSection

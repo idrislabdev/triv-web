@@ -1,0 +1,22 @@
+{
+    "header_section": {
+        "title" : "Bayar Tagihan apapun pake TRIV!",
+        "description" : "Triv mendukung 25 macam tagihan dan Real-time 24 jamBayar listrik air dan lain-lain!"
+    },
+    "topup_section": {
+        "title" : "Bayar tagihan di Triv, Hemaat!",
+        "description" : "Pakai Triv untuk bayar tagihan dan hemat hingga 5.000 IDR. Triv menjalin kerja sama dengan pihak distributor, memastikan harga kompetitif dan transaksi tanpa gangguan.",
+        "choose_text" : "Pilih Produk",
+        "button_text" : "Bayar"
+    },
+    "ewallet_section": {
+        "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
+        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+    },
+    "start_now_section": {
+        "title" : "Mulai Investasi Sekarang",
+        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
+        "button": "Mulai Sekarang"
+    }
+}

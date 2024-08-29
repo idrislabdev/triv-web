@@ -47,6 +47,21 @@ const dictionariesFaqs: any = {
   id: () => import("./dictionaries/faqs/id.json").then((module) => module.default),
   en: () => import("./dictionaries/faqs/en.json").then((module) => module.default),
 };
+
+const dictionariesProductsPulsa: any = {
+  id: () => import("./dictionaries/product-pulsa/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/product-pulsa/en.json").then((module) => module.default),
+};
+
+const dictionariesProductsTokenListrik: any = {
+  id: () => import("./dictionaries/product-token-listrik/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/product-token-listrik/en.json").then((module) => module.default),
+};
+
+const dictionariesProductsTagihan: any = {
+  id: () => import("./dictionaries/product-tagihan/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/product-tagihan/en.json").then((module) => module.default),
+};
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
 export const getDictionaryRegister = async (locale: any) => dictionariesRegister[locale]();  
 export const getDictionaryHome = async (locale: any) => dictionariesHome[locale]();  
@@ -57,3 +72,6 @@ export const getDictionariesContactUs = async (locale: any) => dictionariesConta
 export const getDictionariesBlog = async (locale: any) => dictionariesBlog[locale]();
 export const getDictionariesAffliate = async (locale: any) => dictionariesAffliate[locale]();
 export const getDictionariesFaqs = async (locale: any) => dictionariesFaqs[locale]();
+export const getDictionariesProductsPulsa = async (locale: any) => dictionariesProductsPulsa[locale]();
+export const getDictionariesProductsTokenListrik = async (locale: any) => dictionariesProductsTokenListrik[locale]();
+export const getDictionariesProductsTagihan = async (locale: any) => dictionariesProductsTagihan[locale]();

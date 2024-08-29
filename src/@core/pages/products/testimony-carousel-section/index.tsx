@@ -3,12 +3,12 @@
 import SwiperTestimony from '@/@core/components/swipers/swiper-testimony';
 import React from 'react'
 
-const ProductsTestimonyCarouselSection = () => {
+const LiverateTestimonyCarouselSection = () => {
   return (
-    <section className='products-testimony-carousel-section'>
+    <section className='liverate-testimony-carousel-section'>
         <SwiperTestimony />
     </section>
   )
 }
 
-export default ProductsTestimonyCarouselSection
+export default LiverateTestimonyCarouselSection

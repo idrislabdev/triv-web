@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
-const StocksRegisterNowSection = (props: {langObj:any}) => {
-    const { langObj } = props;
+const StocksRegisterNowSection = (props: {objLang:any}) => {
+    const { objLang } = props;
     return (
          <section className='stocks-register-now-section'>
          <div className='image-container'>
@@ -10,11 +10,11 @@ const StocksRegisterNowSection = (props: {langObj:any}) => {
          </div>
          <div className='description-container'>
              <div className='start-now-description'>
-                <h2>{langObj.title}</h2>
-                <p>{langObj.description}</p>
+                <h2>{objLang.title}</h2>
+                <p>{objLang.description}</p>
              </div>
              <div className='start-button-logo'>
-                <a>{langObj.button_text}</a>
+                <a>{objLang.button_text}</a>
                  <div className='start-now-store sm:!hidden'>
                      <Image src='/images/apps-store/apple.png' className='apple-logo' alt='apple logo' width={31} height={37}/>
                      <Image src='/images/apps-store/playstore.png' className='playstore-logo' alt='playstore logo' width={30} height={32}/>
