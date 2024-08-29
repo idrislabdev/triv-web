@@ -55,7 +55,38 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 <div className={`main-header-menu`}>
                     <ul>
                         <li><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
-                        <li>Service</li>
+                        <li className='has-sub'>
+                            <a>Service</a>
+                            <ul className='submenu'>
+                                <li>
+                                    <a>E-Currency <ChevronIconDown color={'#000'} /></a>
+                                    <ul className='submenu'>
+                                        <li><Link href={`/${lang}/home/bitcoin`}>Bitcoin</Link></li>
+                                        <li><Link href={`/${lang}/home/ethereum`}>Ethereum</Link></li>
+                                        <li><Link href={`/${lang}/home/stellar`}>Stellar</Link></li>
+                                        <li><Link href={`/${lang}/home/ripple`}>Ripple</Link></li>
+                                        <li><Link href={`/${lang}/home/eos`}>Eos</Link></li>
+                                        <li><Link href={`/${lang}/home/dash`}>Dash</Link></li>
+                                        <li><Link href={`/${lang}/home/tether`}>Tether</Link></li>
+                                        <li><Link href={`/${lang}/home/chainlink`}>Chainlink</Link></li>
+                                        <li><Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link></li>
+                                        <li><Link href={`/${lang}/home/matic-polygon`}>Matic-Polygon</Link></li>
+                                        <li><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
+                                        <li><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
+                                        <li><Link href={`/${lang}/home/solana`}>Solana</Link></li>
+                                        <li><Link href={`/${lang}/home/axielnifinity`}>Axielnifinity</Link></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Product <ChevronIconDown color={'#000'} /></a>
+                                    <ul className='submenu'>
+                                        <li><Link href={`/${lang}/home/product-pulsa`}>Pulsa</Link></li>
+                                        <li><Link href={`/${lang}/home/product-token-listrik`}>Token Listrik</Link></li>
+                                        <li><Link href={`/${lang}/home/product-tagihan`}>Tagihan</Link></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li><Link href={`/${lang}/staking`}>Staking</Link></li>
                         <li>Market</li>
                         <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>

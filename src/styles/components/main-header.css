@@ -51,9 +51,52 @@
     }
     .main-header-menu {
         ul {
-            @apply flex gap-[30px];
+            @apply flex gap-[30px] items-center;
             li {
-                @apply text-[12px]/[18px] font-medium;
+                @apply relative text-[12px]/[18px] font-medium cursor-pointer;
+                a {
+                    @apply block py-[10px];
+                }
+                &:hover {
+                    @apply text-primary;
+                }
+                &.has-sub {
+                    .submenu {
+                        @apply absolute left-0 m-0 list-none w-[150px] hidden bg-white  duration-300 transition-all z-10;
+                        box-shadow: 0px 4px 16px 0px #0000001A;
+
+                        .submenu {
+                            position: absolute;
+                            left: 150px;
+                            top: 0px;
+                        }
+                        li {
+                            @apply text-black;
+                            a {
+                                @apply flex justify-between px-[10px] py-[5px] items-center;
+                                svg {
+                                    @apply -rotate-90
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        @apply text-primary;
+                        > .submenu {
+                            @apply block;
+                            li {
+                                &:hover {
+                                    @apply text-primary;
+                                    > .submenu {
+                                        @apply block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
             }
         }
     }
