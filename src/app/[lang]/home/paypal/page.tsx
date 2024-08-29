@@ -23,6 +23,7 @@ export default async function ServicePaypal({ params }: any) {
         start_now_section,
         layanan_section,
         average_section,
+        triv_affliate
     } = await getDictionariesPaypal(params.lang);
     return (
         <>
@@ -32,7 +33,7 @@ export default async function ServicePaypal({ params }: any) {
                     <ProductsRegulasiDeviceSection objLang={regulasi_section} />
                     <ProductsLayananSection objLang={layanan_section} />
                     <ProductsAverageSection objLang={average_section} />
-                    <ProductsAffliateSection objLang={null} />
+                    <ProductsAffliateSection objLang={triv_affliate} />
                     <ProductsEwalletSection objLang={ewallet_section}/>
                     <ProductsInvestasiNowSection objLang={start_now_section} />
                     <ProductsTestimonyCarouselSection />

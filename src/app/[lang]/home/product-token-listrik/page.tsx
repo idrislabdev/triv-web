@@ -17,6 +17,7 @@ export default async function ProductsTokenListrik({ params }: any) {
         topup_section,
         ewallet_section,
         start_now_section,
+        triv_affliate
     } = await getDictionariesProductsTokenListrik(params.lang);
     return (
         <>
@@ -24,7 +25,7 @@ export default async function ProductsTokenListrik({ params }: any) {
                 <main className='products-page sm:mobile-responsive light-theme'>
                     <ProductHeaderSection objLang={header_section}/>
                     <ProductsTokenListrikSection objLang={topup_section} />
-                    <ProductsAffliateSection objLang={null} />
+                    <ProductsAffliateSection objLang={triv_affliate} />
                     <ProductsEwalletSection objLang={ewallet_section}/>
                     <ProductsInvestasiNowSection objLang={start_now_section} />
                     <ProductsTestimonyCarouselSection />

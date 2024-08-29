@@ -18,5 +18,14 @@
         "title" : "Mulai Investasi Sekarang",
         "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
         "button": "Mulai Sekarang"
+    },
+    "triv_affliate" : {
+        "title_1" : "Triv Affiliate",
+        "content_1" : "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
+        "title_2" : "Invite friends and relatives",
+        "content_2" : "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
+        "follow_text" : "Invite friends and earn extra income",
+        "button_1" : "Affiliate Program",
+        "button_2" : "Invite Friends"
     }
 }
