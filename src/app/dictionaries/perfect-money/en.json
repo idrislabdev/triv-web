@@ -1,22 +1,69 @@
 {
     "header_section": {
-        "title" : "Beli token listrik di TRIV",
-        "description" : "Hemat, 24 jam, dan real-time"
+        "title" : "Buy & Sell & Exchange Perfect Money Indonesia 24 Hours",
+        "description" : "The largest Buy Sell Perfect Money in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
+        "button_1" : "Buy Perfect Money",
+        "button_2" : "Visit Marketplace"
     },
-    "topup_section": {
-        "title" : "Beli Token Listrik di Triv, Hemaat!",
-        "description" : "Pakai Triv untuk isi ulang token listrik dan hemat hingga 3%. Triv menjalin kerja sama dengan pihak distributor, memastikan harga kompetitif dan transaksi tanpa gangguan.",
-        "choose_text" : "Pilih Nominal",
-        "button_text" : "Beli Token"
+    "regulasi_section": {
+        "liquiditas" : {
+            "title" : "High Liquidity",
+            "content" : "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7."
+        },
+        "regulator" : {
+            "title" : "Regulated and Trusted Broker",
+            "content" : "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7."
+        }
+    },
+    "layanan_section": {
+        "title" : "All You can do with Perfect Money in Triv",
+        "content" : "Triv supports all transactions, as well swap, exchange, etc. Triv is the most comprehensive and secure trading platform to manage and develop the value of your portfolio.",
+        "card" : {
+            "jual_beli" : {
+                "title" : "Perfect Money Exchange 24 Jam",
+                "content" : "Unlike trading stocks and commodities, the Perfect Money market is open 24/7. It allows you to buy, sell and exchange Perfect Money in real time through banking/ e-wallet instantly anytime and anywhere."
+            },
+            "kirim" : {
+                "title" : "Sending Perfect Money",
+                "content" : "You can exchange Perfect Money to Rupiah in Triv wallet, or sending it to fellow users instantly. This kind of service is charged for free."
+            },
+            "terima" : {
+                "title" : "International Online Shopping",
+                "content" : "Thousands of global merchants accept Perfect Money, so you shop online without a credit card. Enjoy your online shopping by filling Perfect Money balance in Triv."
+            },
+            "hoddl" : {
+                "title" : "Digital USD Wallet",
+                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Perfect Money? Easy! Just access swap menu in Triv app."
+            },
+            "swap" : {
+                "title" : "Pay All Bills",
+                "content" : "You can exchange Perfect Money for fiat in Triv platform, to pay bills such as: phone bills, credit, and even the electricity token."
+            },
+            "isi_pulsa" : {
+                "title" : "Isi Pulsa dan Bayar Tagihan",
+                "content" : "Tukarkan Perfect Money anda ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
+            }
+        }
+    },
+    "average_section": {
+        "live_chat" : {
+            "title" : "Average LiveChat Responds",
+            "content" : "Triv's Livechat and Call center are ready to assist you?"
+        },
+        "processing" : {
+            "title" : "Average Processing Time",
+            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions"
+        },
+        "updated_text" : "*Updated Real-Time"
     },
     "ewallet_section": {
-        "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day. Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "start_now_section": {
-        "title" : "Mulai Investasi Sekarang",
-        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
-        "button": "Mulai Sekarang"
+        "title" : "Start Investing Now",
+        "description": "Sign up in minutes and achieve your investment goals now🚀",
+        "button": "Register Now"
     }
 }

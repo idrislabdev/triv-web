@@ -15,7 +15,7 @@ import ProductsAverageSection from '@/@core/pages/products/average-section'
 
 import { getDictionariesPerfectMoney } from '@/app/dictionaries'
 
-export default async function ServicePerfectMoney({ params }: any) {
+export default async function ServicePaypal({ params }: any) {
     const {
         header_section,
         regulasi_section,

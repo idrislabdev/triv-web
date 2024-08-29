@@ -149,6 +149,12 @@ const dictionariesAxieinfinity: any = {
   en: () => import("./dictionaries/axieinfinity/en.json").then((module) => module.default),
 };
 
+const dictionariesPerfectMoney: any = {
+  id: () => import("./dictionaries/perfect-money/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/perfect-money/en.json").then((module) => module.default),
+};
+
+
 
 
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
@@ -181,3 +187,4 @@ export const getDictionariesPolkadot = async (locale: any) => dictionariesPolkad
 export const getDictionariesCardano = async (locale: any) => dictionariesCardano[locale]();
 export const getDictionariesSolana = async (locale: any) => dictionariesSolana[locale]();
 export const getDictionariesAxieinfinity = async (locale: any) => dictionariesAxieinfinity[locale]();
+export const getDictionariesPerfectMoney = async (locale: any) => dictionariesPerfectMoney[locale]();

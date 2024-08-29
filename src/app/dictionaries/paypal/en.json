@@ -1,0 +1,69 @@
+{
+    "header_section": {
+        "title" : "Transaction Paypal 24 hours",
+        "description" : "The largest Buy Sell Paypal in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
+        "button_1" : "Buy Paypal",
+        "button_2" : "Visit Marketplace"
+    },
+    "regulasi_section": {
+        "liquiditas" : {
+            "title" : "High Liquidity",
+            "content" : "No need to ask for stock or availability of Paypal balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7."
+        },
+        "regulator" : {
+            "title" : "Regulated and Trusted Broker",
+            "content" : "Since 2015 Triv has been used by millions of people, all customer funds in our system are insured by Bitgo and Lloyd England for 100 million USD or equivalent to 1.45 trillion rupiah.Triv is an official broker registered and supervised by Bappebti."
+        }
+    },
+    "layanan_section": {
+        "title" : "What You can do with Paypal in Triv",
+        "content" : "Triv supports various types of transactions and not just buying and selling paypal. You can swap, exchange or top up your Paypal balance in one application.",
+        "card" : {
+            "jual_beli" : {
+                "title" : "24/7 Buy & Sell Paypal Balance",
+                "content" : "Unlike trading stocks and commodities, Triv Exchange is open 24/7. It allows you to buy, sell and exchange Paypal balance in real time through banking/ e-wallet instantly anytime and anywhere."
+            },
+            "kirim" : {
+                "title" : "Instant overseas transfer",
+                "content" : "You can use Paypal balance to transfer money abroad instantly and free of charge. You may compare with traditional remittance agency needs 1 or 2 days for this transaction, meanwhile Triv works in seconds."
+            },
+            "terima" : {
+                "title" : "International Online Shopping",
+                "content" : "Paypal is accepted by millions of overseas merchants, so you can shop online without the need for a credit card. Just top up Paypal balance in Triv, and you can access international markets and shop in minutes."
+            },
+            "hoddl" : {
+                "title" : "Digital USD Wallet",
+                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Paypal? Easy! Just access swap menu in Triv app."
+            },
+            "swap" : {
+                "title" : "Swap Paypal Balance",
+                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Paypal? Easy! Just access swap menu in Triv app."
+            },
+            "isi_pulsa" : {
+                "title" : "Get Cash back & Protection",
+                "content" : "You can shop in the International online merchants with your Paypal balance. Paypal offers cash back and insurance protection for your online shopping. All Paypal transactions are safe and insured."
+            }
+        }
+    },
+    "average_section": {
+        "live_chat" : {
+            "title" : "Average LiveChat Responds",
+            "content" : "Triv's Livechat and Call center are ready to assist you?"
+        },
+        "processing" : {
+            "title" : "Average Processing Time",
+            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions"
+        },
+        "updated_text" : "*Updated Real-Time"
+    },
+    "ewallet_section": {
+        "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+    },
+    "start_now_section": {
+        "title" : "Start Investing Now",
+        "description": "Sign up in minutes and achieve your investment goals now🚀",
+        "button": "Register Now"
+    }
+}

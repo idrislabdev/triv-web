@@ -1,0 +1,69 @@
+{
+    "header_section": {
+        "title" : "Transaksi Paypal 24 jam",
+        "description" : "Jual beli saldo Paypal terbesar di Indonesia dengan mudah kapanpun dan dimanapun secara instan 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang",
+        "button_1" : "Beli Paypal",
+        "button_2" : "Kunjungi Marketplace"
+    },
+    "regulasi_section": {
+        "liquiditas" : {
+            "title" : "Likuiditas Tinggi",
+            "content" : "Tidak perlu menanyakan stok atau ketersediaan saldo Paypal. Triv menjamin bahwa berapapun besar pembelian atau penjualan anda, stok kami akan selalu tersedia. Dengan system kami anda tidak perlu menunggu atau melakukan transaksi secara manual. Seluruh transaksi jual beli dan exchange Paypal anda dapat dilakukan secara instant 24/7."
+        },
+        "regulator" : {
+            "title" : "Diregulasi dan Diasuransikan",
+            "content" : "Sejak tahun 2015 Triv telah digunakan oleh jutaan orang, seluruh dana pelanggan di sistem kami diasuransikan oleh Bitgo dan Lloyd England sebesar 100 juta USD atau setara dengan 1,45 triliun rupiah. Triv merupakan broker resmi yang terdaftar dan diawasi oleh Bappebti."
+        }
+    },
+    "layanan_section": {
+        "title" : "Yang Bisa Kamu Lakukan Dengan Paypal di Triv",
+        "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli paypal. Swap, exchange ataupun isi saldo Paypal dapat anda lakukan dalam satu aplikasi.",
+        "card" : {
+            "jual_beli" : {
+                "title" : "Jual dan Beli Saldo Paypal 24 jam",
+                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur."
+            },
+            "kirim" : {
+                "title" : "Transfer ke luar negeri instan",
+                "content" : "Saldo Paypal dapat anda gunakan untuk mengirimkan uang ke seluruh pengguna Paypal di dunia secara gratis dan instan. Berbeda dengan remiten tradisional yang membutuhkan 1-2 hari kerja. Pengiriman USD digital berlangsung secara instant dalam hitungan detik."
+            },
+            "terima" : {
+                "title" : "Belanja di situs Internasional",
+                "content" : "Paypal diterima oleh jutaan merchant luar negeri, sehingga anda dapat berbelanja secara online tanpa membutuhkan kartu kredit. Cukup isi saldo Paypal di Triv, dan anda dapat mengakses pasar internasional dan berbelaja dalam hitungan menit."
+            },
+            "hoddl" : {
+                "title" : "Dompet USD digital.",
+                "content" : "Selain digunakan untuk berbelanja, saldo Paypal Balance dapat digunakan sebagai dompet digital dengan mata uang USD. Sebagai alternatif anda untuk berinvestasi USD tanpa ribet dan dalam hitungan detik di Triv."
+            },
+            "swap" : {
+                "title" : "Swap Paypal",
+                "content" : "Triv mendukung lebih dari 700+ aset digital dalam platform kami dan terus bertambah. Butuh aset lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv dengan Paypal anda !"
+            },
+            "isi_pulsa" : {
+                "title" : "Dapatkan Cashback & Perlindungan",
+                "content" : "Belanja di berbagai situs internasional dan dapatkan cashback dengan Paypal Balance anda. Selain mendapatkan cashback, Paypal akan melindungi belanja online anda dengan asuransi. Sehingga seluruh transaksi Paypal anda akan aman dan bebas dari penipuan."
+            }
+        }
+    },
+    "average_section": {
+        "live_chat" : {
+            "title" : "Average LiveChat Responds",
+            "content" : "Livechat dan Call center Triv siap untuk membantu anda"
+        },
+        "processing" : {
+            "title" : "Average Processing Time",
+            "content" : "Seluruh transaksi Triv berjalan secara otomatis dan tanpa downtime. Sejak 2015 Triv tidak pernah mengalami downtime yang menggangu transaksi nasabah "
+        },
+        "updated_text" : "*Updated Real-Time"
+    },
+    "ewallet_section": {
+        "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
+        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+    },
+    "start_now_section": {
+        "title" : "Mulai Investasi Sekarang",
+        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
+        "button": "Mulai Sekarang"
+    }
+}

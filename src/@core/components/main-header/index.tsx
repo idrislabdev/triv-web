@@ -61,6 +61,8 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                 <li>
                                     <a>E-Currency <ChevronIconDown color={'#000'} /></a>
                                     <ul className='submenu'>
+                                        <li><Link href={`/${lang}/home/perfect-money`}>Perfect Money</Link></li>
+                                        <li><Link href={`/${lang}/home/paypal`}>Paypal</Link></li>
                                         <li><Link href={`/${lang}/home/bitcoin`}>Bitcoin</Link></li>
                                         <li><Link href={`/${lang}/home/ethereum`}>Ethereum</Link></li>
                                         <li><Link href={`/${lang}/home/stellar`}>Stellar</Link></li>
