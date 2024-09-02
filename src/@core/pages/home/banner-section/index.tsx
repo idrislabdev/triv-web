@@ -7,8 +7,10 @@ const HomeBannerSection = (props: {lang:any}) => {
     <section className='home-banner-section'>
       <div className='home-banner-section-area'>
         <div className="section-text">
-            <h1>{lang.title}</h1>
-            <p>{lang.description}</p>
+            <div className='text-title'>
+              <h1>{lang.title}</h1>
+              <p>{lang.description}</p>
+            </div>
             <a>{lang.button_text}</a>
             <div className='section-terdaftar'>
                 <label>{lang.sub_description}</label>

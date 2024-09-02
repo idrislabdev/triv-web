@@ -19,77 +19,33 @@ const BaruCryptoSection = () => {
                         <SwiperSlide>
                             <div className='crypto-thumb-video'>
                                 <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
+                                    <Image src='/images/video-thumbs/video-2.png' alt='video-tutorial' width={300} height={169}/>
                                 </div>
                                 <div className='video-title'>
                                     <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
+                                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>Tutorial</a>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className='crypto-thumb-video'>
                                 <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
+                                    <Image src='/images/video-thumbs/video-3.png' alt='video-tutorial' width={300} height={169}/>
                                 </div>
                                 <div className='video-title'>
                                     <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
+                                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>Tutorial</a>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className='crypto-thumb-video'>
                                 <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
+                                    <Image src='/images/video-thumbs/video-4.png' alt='video-tutorial' width={300} height={169}/>
                                 </div>
                                 <div className='video-title'>
                                     <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='crypto-thumb-video'>
-                                <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
-                                </div>
-                                <div className='video-title'>
-                                    <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='crypto-thumb-video'>
-                                <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
-                                </div>
-                                <div className='video-title'>
-                                    <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='crypto-thumb-video'>
-                                <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
-                                </div>
-                                <div className='video-title'>
-                                    <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='crypto-thumb-video'>
-                                <div className='video-thumb'>
-                                    <Image src='/images/video-thumbs/video-1.png' alt='video-tutorial' width={300} height={169}/>
-                                </div>
-                                <div className='video-title'>
-                                    <h6>Tutorial Deposit Rupiah</h6>
-                                    <a>Tutorial</a>
+                                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>Tutorial</a>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -98,18 +54,6 @@ const BaruCryptoSection = () => {
                 </div>
             </div>
         </section>
-        // <Swiper
-        //     spaceBetween={10}
-        //     slidesPerView={5}
-        //     onSlideChange={() => console.log('slide change')}
-        //     onSwiper={(swiper) => console.log(swiper)}
-        // >
-        //     <SwiperSlide><div className='text-black'>Slide 1</div></SwiperSlide>
-        //     <SwiperSlide><div className='text-black'>Slide 2</div></SwiperSlide>
-        //     <SwiperSlide><div className='text-black'>Slide 3</div></SwiperSlide>
-        //     <SwiperSlide><div className='text-black'>Slide 4</div></SwiperSlide>
-        //     ...
-        // </Swiper>
     )
 }
 

@@ -31,11 +31,14 @@
             @apply flex px-[100px] gap-[10px];
             .section-text {
                 @apply flex flex-col w-2/3 gap-[40px] z-[1];
-                h1 {
-                    @apply text-[44px]/[70px] text-white font-medium;
-                }
-                p {
-                    @apply text-[16px]/[32px] text-white font-medium;
+                .text-title {
+                    @apply flex flex-col gap-[20px];
+                    h1 {
+                        @apply text-[44px]/[70px] text-white font-medium;
+                    }
+                    p {
+                        @apply text-[16px]/[32px] text-white font-medium;
+                    }
                 }
                 a {
                     @apply bg-white text-[#71BBED] text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
@@ -250,7 +253,7 @@
     .home-ewallet-section {
         @apply flex items-center  px-[100px] py-[50px];
         .ewallet-description {
-            @apply flex-1 flex flex-col gap-[26px] py-[20px];
+            @apply flex-1 flex flex-col gap-[20px] py-[20px];
             h2 {
                 @apply text-[28px]/[42px] font-bold text-neutral-900;
             }
@@ -321,7 +324,7 @@
     }
     
     .home-buy-sell-assets-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        @apply flex items-center py-[50px]  px-[100px] gap-[102px];
         .image-container {
             @apply w-1/2 flex flex-col justify-center items-end relative;
             img {
@@ -393,11 +396,14 @@
                     @apply flex-col px-[20px];
                     .section-text {
                         @apply w-full gap-[14px] items-center;
-                        h1 {
-                            @apply text-[14px]/[21px] text-center;
-                        }
-                        p {
-                            @apply text-[10px]/[15px] text-center;
+                        .text-title {
+                            @apply flex flex-col gap-[14px];
+                            h1 {
+                                @apply text-[14px]/[21px] text-center;
+                            }
+                            p {
+                                @apply text-[10px]/[15px] text-center;
+                            }
                         }
                         a {
                             @apply w-[200px] text-[12px] h-[34px];
