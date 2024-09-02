@@ -243,7 +243,7 @@
         }
     }
     .staking-start-now-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        @apply flex items-center py-[50px]  px-[100px] gap-[100px];
         .image-container {
             @apply w-1/2 flex flex-col justify-center items-end relative;
             img {
