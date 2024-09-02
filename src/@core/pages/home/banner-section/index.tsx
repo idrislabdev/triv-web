@@ -23,12 +23,7 @@ const HomeBannerSection = (props: {lang:string, objLang:any}) => {
             </div>
         </div>
         <div className='section-device'>
-            <div className='device-iphone'>
-                <Image src='/images/devices/iphone-16.png' alt='iphone 16 devices' width={189} height={382} />
-            </div>
-            <div className='device-macbook'>
-                <Image src='/images/devices/macbook.png' alt='macbook devices' width={556} height={342} />
-            </div>
+          <Image src='/images/devices/macbook-iphone-hero.png' alt='macbook and iphone' width={0} height={0} sizes='100%' />
         </div>
       </div>
     </section>

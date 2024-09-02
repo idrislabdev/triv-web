@@ -13,12 +13,9 @@ const SwiperBackground = () => {
                     <div className='image-subcontainer'>
                         <Image src='/images/samples/parallax.png' alt='parallax' width={0} height={0} sizes='100%'/>
                     </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='background-container'>
-                    <div className='image-subcontainer'>
-                        <Image src='/images/samples/parallax.png' alt='parallax' width={0} height={0} sizes='100%'/>
+                    <div className='text-subcontainer'>
+                        <h5>SINGAPORE</h5>
+                        <p>Included in your Travel:Airport Tax, Food Beverages, Acommodation, Tour Guide, Uang saku dari Triv and more.</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -27,12 +24,31 @@ const SwiperBackground = () => {
                     <div className='image-subcontainer'>
                         <Image src='/images/samples/parallax.png' alt='parallax' width={0} height={0} sizes='100%'/>
                     </div>
+                    <div className='text-subcontainer'>
+                        <h5>SINGAPORE</h5>
+                        <p>Included in your Travel:Airport Tax, Food Beverages, Acommodation, Tour Guide, Uang saku dari Triv and more.</p>
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='background-container'>
                     <div className='image-subcontainer'>
                         <Image src='/images/samples/parallax.png' alt='parallax' width={0} height={0} sizes='100%'/>
+                    </div>
+                    <div className='text-subcontainer'>
+                        <h5>SINGAPORE</h5>
+                        <p>Included in your Travel:Airport Tax, Food Beverages, Acommodation, Tour Guide, Uang saku dari Triv and more.</p>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='background-container'>
+                    <div className='image-subcontainer'>
+                        <Image src='/images/samples/parallax.png' alt='parallax' width={0} height={0} sizes='100%'/>
+                    </div>
+                    <div className='text-subcontainer'>
+                        <h5>SINGAPORE</h5>
+                        <p>Included in your Travel:Airport Tax, Food Beverages, Acommodation, Tour Guide, Uang saku dari Triv and more.</p>
                     </div>
                 </div>
             </SwiperSlide>

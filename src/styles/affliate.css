@@ -117,7 +117,7 @@
         .holiday-container{
             @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative;
             .header-subcontainer {
-                @apply  w-full flex flex-col;
+                @apply  w-full flex flex-col gap-[16px];
                 h2 {
                     @apply text-[36px]/[54px] font-bold text-white;
             

@@ -6,31 +6,31 @@ const HomeRancangSection = (props: {objLang:any}) => {
     return (
         <section className='home-rancang-section'>
             <div className='home-rancang-device'>
-                <Image src='/images/devices/imac.png' alt='imac' width={492} height={407}/>
+                <Image src='/images/devices/imac.png' alt='imac' width={0} height={0} sizes='100%'/>
             </div>
             <div className='home-rancang-description'>
                 <h2>{objLang.title}</h2>
                 <div className='rancang-description-details'>
                     <div className='rancang-description-details-sub'>
                         <div className='rancang-description-detail'>
-                            <Image src='/images/3d-icons/3d-bitcoin.png' alt='3d bitcoin' width={70} height={70}/>
+                            <Image src='/images/3d-icons/3d-bitcoin.png' alt='3d bitcoin' width={0} height={0} sizes='100%'/>
                             <h5>{objLang.content_1.title}</h5>
                             <p>{objLang.content_1.description}</p>
                         </div>
                         <div className='rancang-description-detail'>
-                            <Image src='/images/3d-icons/3d-cloud-bitcoin.png' alt='3d cloud bitcoin' width={70} height={70}/>
+                            <Image src='/images/3d-icons/3d-cloud-bitcoin.png' alt='3d cloud bitcoin' width={0} height={0} sizes='100%'/>
                             <h5>{objLang.content_2.title}</h5>
                             <p>{objLang.content_2.description}</p>
                         </div>
                     </div>
                     <div className='rancang-description-details-sub'>
                         <div className='rancang-description-detail'>
-                            <Image src='/images/3d-icons/3d-blockchain.png' alt='3d blockchain' width={70} height={70}/>
+                            <Image src='/images/3d-icons/3d-blockchain.png' alt='3d blockchain' width={0} height={0} sizes='100%'/>
                             <h5>{objLang.content_3.title}</h5>
                             <p>{objLang.content_3.description}</p>
                         </div>
                         <div className='rancang-description-detail'>
-                            <Image src='/images/3d-icons/3d-clock.png' alt='3d clock' width={70} height={70}/>
+                            <Image src='/images/3d-icons/3d-clock.png' alt='3d clock' width={0} height={0} sizes='100%'/>
                             <h5>{objLang.content_4.title}</h5>
                             <p>{objLang.content_4.description}</p>
                         </div>

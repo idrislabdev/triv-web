@@ -11,7 +11,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                     <ul>
                         <li>
                             <div className='guide-icon'>
-                                <Image src='/images/others/step-koin.png' alt='step koin' width={60} height={60}/>
+                                <Image src='/images/others/step-koin.png' alt='step koin' width={0} height={0} sizes='100%'/>
                             </div>
                             <div className='guide-desc'>
                                 <h5>{objLang.guides[0].title}</h5>
@@ -20,7 +20,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                         </li>
                         <li>
                             <div className='guide-icon'>
-                                <Image src='/images/others/step-jumlah.png' alt='step koin' width={60} height={60}/>
+                                <Image src='/images/others/step-jumlah.png' alt='step koin' width={0} height={0} sizes='100%'/>
                             </div>
                             <div className='guide-desc'>
                                 <h5>{objLang.guides[1].title}</h5>
@@ -29,7 +29,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                         </li>
                         <li>
                             <div className='guide-icon'>
-                                <Image src='/images/others/step-bunga.png' alt='step koin' className='step-koin' width={65.5} height={74}/>
+                                <Image src='/images/others/step-bunga.png' alt='step koin' className='step-koin' width={0} height={0} sizes='100%'/>
                             </div>
                             <div className='guide-desc'>
                                 <h5>{objLang.guides[2].title}</h5>

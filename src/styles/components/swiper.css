@@ -103,11 +103,20 @@
             .swiper-slide {
                 @apply flex items-center flex-shrink-0 w-full h-full relative px-[30px];
                 .background-container {
-                    @apply w-full h-full;
+                    @apply w-full h-full relative;
                     .image-subcontainer {
                         @apply w-full h-full;
                         img {
                             @apply w-full h-full;
+                        }
+                    }
+                    .text-subcontainer {
+                        @apply absolute top-[20%] text-center px-[100px] py-[50px];
+                        h5 {
+                            @apply text-[96px]/[144px] font-bold text-white
+                        }
+                        p {
+                            @apply text-[22px]/[42px] font-medium text-white;
                         }
                     }
                 }
