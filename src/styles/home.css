@@ -46,11 +46,20 @@
                 .section-terdaftar {
                     @apply flex gap-[30px] items-center;
                     label  {
-                        @apply text-[14px]/[28px] text-white font-medium;
+                        @apply text-[12px]/[20px] text-white font-medium;
                     }
                     .terdaftar-list-logo {
                         @apply flex gap-[14px];
-                        
+                        .bappebti-logo {
+                            img {
+                                @apply w-full h-full;
+                            }
+                        }
+                        .kominfo-logo {
+                            img {
+                                @apply w-full h-full;
+                            }
+                        }
                     }
                 }
             }

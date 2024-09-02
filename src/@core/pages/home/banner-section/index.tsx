@@ -17,8 +17,8 @@ const HomeBannerSection = (props: {lang:string, objLang:any}) => {
             <div className='section-terdaftar'>
                 <label>{objLang.sub_description}</label>
                 <div className='terdaftar-list-logo'>
-                    <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti.png' alt='bappebti logo' width={105} height={24} /></div>
-                    <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo.png' alt='kominfo logo' width={85} height={26} /></div>
+                    <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
+                    <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo.png' alt='kominfo logo' width={0} height={0} sizes='100%'/></div>
                 </div>
             </div>
         </div>
