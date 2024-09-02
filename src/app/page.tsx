@@ -26,7 +26,7 @@ export default async function  Home() {
     <>
       <MainHeader classText="" lang={'id'}/>
       <main className='home-page sm:mobile-responsive light-theme'>
-        <HomeBannerSection lang={header_section}/>
+        <HomeBannerSection lang='id' objLang={header_section}/>
         <HomeIndexCryptoSection liverates={liverates}/>
         <HomeAssetCryptoSection liverates={liverates}/>
         <HomeRancangSection />

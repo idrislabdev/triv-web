@@ -3,11 +3,11 @@ import { CaretUpIcon, GraphIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import React from 'react'
 
-const LiverateTopMoverSection = (props : {hightlight:IHighlight}) => {
-    const { hightlight } = props
+const LiverateTopMoverSection = (props : {objLang:any, hightlight:IHighlight}) => {
+    const { objLang, hightlight } = props
     return (
         <div className='liverate-top-mover-section'>
-            <h2><span></span>Top Movers(24 Jam)</h2>
+            <h2><span></span>{objLang.title}</h2>
             <div className='top-mover-containers'>
                 <div className='top-mover-container'>
                     <div className='top-mover-container-left'>

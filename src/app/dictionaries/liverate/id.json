@@ -1,6 +1,14 @@
 {
-    "header": {
+    "header_section": {
         "title": "Dapatkan Penghasilan Tambahan Dengan Crypto Staking",
         "description": "Dapatkan penghasilan tambahan dengan melakukan staking crypto favorit anda. Cara kerja Crypto Staking adalah dengan mengamankan protokol koin terkait dan sebagai imbalan anda akan mendapatkan bunga dari coin anda. Tidak seperti deposito bank, bunga staking dapat diambil secara harian atau mingguan."
+    },
+    "topmovers_section" : {
+        "title" : "Top Movers(24 Jam) 🔥"
+    },
+    "invest_section" : {
+        "title" : "Mulai Investasi Sekarang",
+        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang 🚀",
+        "button": "Daftar Sekarang"
     }
 }

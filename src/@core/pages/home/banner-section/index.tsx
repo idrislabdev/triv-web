@@ -1,19 +1,21 @@
+import { ArrowRightIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const HomeBannerSection = (props: {lang:any}) => {
-  const { lang } = props
+const HomeBannerSection = (props: {lang:string, objLang:any}) => {
+  const { lang, objLang } = props
   return (
     <section className='home-banner-section'>
       <div className='home-banner-section-area'>
         <div className="section-text">
             <div className='text-title'>
-              <h1>{lang.title}</h1>
-              <p>{lang.description}</p>
+              <h1>{objLang.title}</h1>
+              <p>{objLang.description}</p>
             </div>
-            <a>{lang.button_text}</a>
+            <Link href={`/${lang}/register`}>{objLang.button_text} <ArrowRightIcon color={'#fff'} /></Link>
             <div className='section-terdaftar'>
-                <label>{lang.sub_description}</label>
+                <label>{objLang.sub_description}</label>
                 <div className='terdaftar-list-logo'>
                     <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti.png' alt='bappebti logo' width={105} height={24} /></div>
                     <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo.png' alt='kominfo logo' width={85} height={26} /></div>

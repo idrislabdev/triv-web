@@ -11,17 +11,15 @@ const SwiperTestimony = () => {
             <SwiperSlide>
                 <div className='testimony-card'>
                     <div className='testimony-thumb'>
-                        <Image src='/images/testimonies/testimony-1.png' alt='imac' width={250} height={215}/>
+                        <Image src='/images/testimonies/testimony-dwi.png' alt='tesimony dwi' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='testimony-content'>
                         <p>
-                            Amazing.. baru gabung aja sudah bisa merasakan untungnya, 
-                            buat kamu semua invetsasi yuk di Triv 
-                            tinggal download aplikasinya langsung bisa digunakan deh.
+                            Triv tercepat untuk transaksi di Triv gak perlu diragukan lagi dalam hitungan menit semua transaksi beres
                         </p>
                         <div className='testimony-name-tag'>
-                            <h5>Pandji</h5>
-                            <p>Entrepreneur</p>
+                            <h5>Dwi</h5>
+                            <p>Marketing</p>
                         </div>
                     </div>
                 </div>
@@ -29,17 +27,15 @@ const SwiperTestimony = () => {
             <SwiperSlide>
                 <div className='testimony-card'>
                     <div className='testimony-thumb'>
-                        <Image src='/images/testimonies/testimony-1.png' alt='imac' width={250} height={215}/>
+                        <Image src='/images/testimonies/testimony-rahman.png' alt='imac' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='testimony-content'>
                         <p>
-                            Amazing.. baru gabung aja sudah bisa merasakan untungnya, 
-                            buat kamu semua invetsasi yuk di Triv 
-                            tinggal download aplikasinya langsung bisa digunakan deh.
+                            Platform yang familiar dan mudah dipahami, untuk deposit dan withdraw cepet banget.real time, cs nya juga ramah. Triv juara deh pokoknya.
                         </p>
                         <div className='testimony-name-tag'>
-                            <h5>Pandji</h5>
-                            <p>Entrepreneur</p>
+                            <h5>Rahman</h5>
+                            <p>Videografer</p>
                         </div>
                     </div>
                 </div>
@@ -47,17 +43,15 @@ const SwiperTestimony = () => {
             <SwiperSlide>
                 <div className='testimony-card'>
                     <div className='testimony-thumb'>
-                        <Image src='/images/testimonies/testimony-1.png' alt='imac' width={250} height={215}/>
+                        <Image src='/images/testimonies/testimony-utami.png' alt='testimony utami' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='testimony-content'>
                         <p>
-                            Amazing.. baru gabung aja sudah bisa merasakan untungnya, 
-                            buat kamu semua invetsasi yuk di Triv 
-                            tinggal download aplikasinya langsung bisa digunakan deh.
+                            Selalu update sudah bagus aplikasinya, semoga update dan berekembang lebiih baik lagi
                         </p>
                         <div className='testimony-name-tag'>
-                            <h5>Pandji</h5>
-                            <p>Entrepreneur</p>
+                            <h5>Utami</h5>
+                            <p>Content Creator</p>
                         </div>
                     </div>
                 </div>
@@ -65,17 +59,15 @@ const SwiperTestimony = () => {
             <SwiperSlide>
                 <div className='testimony-card'>
                     <div className='testimony-thumb'>
-                        <Image src='/images/testimonies/testimony-1.png' alt='imac' width={250} height={215}/>
+                        <Image src='/images/testimonies/testimony-satria.png' alt='imac' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='testimony-content'>
                         <p>
-                            Amazing.. baru gabung aja sudah bisa merasakan untungnya, 
-                            buat kamu semua invetsasi yuk di Triv 
-                            tinggal download aplikasinya langsung bisa digunakan deh.
+                            Suka banget sama aplikasi ini, jujur ini bagus dan gak ribet, saran aja ya tolong crypto nya lebih banyak lagi dan lebih cepat bisa invest lebih banyak juga.. Terima kasih.
                         </p>
                         <div className='testimony-name-tag'>
-                            <h5>Pandji</h5>
-                            <p>Entrepreneur</p>
+                            <h5>Satria</h5>
+                            <p>Wartawan</p>
                         </div>
                     </div>
                 </div>

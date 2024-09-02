@@ -41,7 +41,7 @@
                     }
                 }
                 a {
-                    @apply bg-white text-[#71BBED] text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
+                    @apply bg-white text-[#71BBED] text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
                 }
                 .section-terdaftar {
                     @apply flex gap-[30px] items-center;
@@ -406,7 +406,10 @@
                             }
                         }
                         a {
-                            @apply w-[200px] text-[12px] h-[34px];
+                            @apply w-[200px] text-[12px]/[18px] h-[34px];
+                            svg {
+                                @apply w-[20px] h-[20px];
+                            }
                         }
                         .section-terdaftar {
                             @apply flex-col gap-[10px];

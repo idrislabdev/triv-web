@@ -21,16 +21,21 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 document.getElementsByTagName("header")[0].classList.add('header-white', 'drop-shadow');
                 setActive(true)
             } else {
-                document.getElementsByTagName("header")[0].classList.remove('header-white', 'drop-shadow');
-                setActive(false)
+                if (document.getElementsByTagName("header")[0]) {
+                    document.getElementsByTagName("header")[0].classList.remove('header-white', 'drop-shadow');
+                    setActive(false)
+                }
+
             }
         } else {
             if ( scrollY >= 60) {
                 document.getElementsByTagName("header")[0].classList.add('drop-shadow');
                 setActive(true)
             } else {
-                document.getElementsByTagName("header")[0].classList.remove('drop-shadow');
-                setActive(false)
+                if (document.getElementsByTagName("header")[0]) {
+                    document.getElementsByTagName("header")[0].classList.remove('drop-shadow');
+                    setActive(false)
+                }
             }
         }
 

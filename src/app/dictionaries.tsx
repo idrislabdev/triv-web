@@ -19,8 +19,8 @@ const dictionariesStaking: any = {
 };
 
 const dictionariesLiverate: any = {
-  id: () => import("./dictionaries/staking/id.json").then((module) => module.default),
-  en: () => import("./dictionaries/staking/en.json").then((module) => module.default),
+  id: () => import("./dictionaries/liverate/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/liverate/en.json").then((module) => module.default),
 };
 
 const dictionariesStocks: any = {

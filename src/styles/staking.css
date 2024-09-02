@@ -211,7 +211,7 @@
                 ul {
                     li {
                         &:not(:last-child) {
-                            @apply relative pb-[20px];
+                            @apply relative pb-[10px];
                         }
                         button {
                             @apply w-full py-[8px] text-left;
