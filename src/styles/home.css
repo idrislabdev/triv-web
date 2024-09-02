@@ -23,7 +23,7 @@
         }
     }
     .home-banner-section {
-        @apply  h-[750px] pt-[150px] relative;
+        @apply  h-[650px] pt-[150px] relative;
         background: linear-gradient(to bottom, transparent,#76DAC7) #5E9CB2;
     
     
@@ -402,7 +402,7 @@
     @layer components {
         &.mobile-responsive {
             .home-banner-section {
-                @apply pt-[75px] h-[569px];
+                @apply pt-[75px] h-[580px];
                 .home-banner-section-area {
                     @apply flex-col px-[20px] gap-[20px];
                     .section-text {
