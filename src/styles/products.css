@@ -46,9 +46,9 @@
     .products-service-header-section {
         @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px];
         .service-header-container {
-            @apply flex flex-col justify-center gap-[20px];
+            @apply flex flex-col justify-center gap-[20px] px-[20px];
             .title-container {
-                @apply flex flex-col items-center text-center justify-center gap-[20px];
+                @apply flex flex-col items-center text-center justify-center gap-[10px];
                 h2 {
                     @apply text-[28px]/[42px] text-black font-bold;
                 }
@@ -59,7 +59,7 @@
             .button-group {
                 @apply flex gap-[22px] items-center justify-center;
                 button {
-                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[379px] h-[40px] text-[14px]/[21px] font-bold;
+                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] h-[48px] text-[14px]/[21px] font-bold;
                     svg {
                         path {
                             @apply fill-white;
@@ -452,6 +452,7 @@
             .products-service-header-section {
                 @apply py-[30px] px-[20px] gap-[30px];
                 .service-header-container {
+                    @apply px-0;
                     .title-container {
                         h2 {
                             @apply text-[14px]/[21px] text-black font-bold;
