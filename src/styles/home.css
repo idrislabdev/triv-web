@@ -23,7 +23,7 @@
         }
     }
     .home-banner-section {
-        @apply  h-[650px] pt-[150px] relative;
+        @apply  h-[750px] pt-[150px] relative;
         background: linear-gradient(to bottom, transparent,#76DAC7) #5E9CB2;
     
     
@@ -64,10 +64,15 @@
                 }
             }
             .section-device {
-                @apply w-1/2 flex flex-col justify-center items-center;
+                @apply w-1/2 flex flex-col justify-center items-center z-[1];
                 img {
-                    @apply w-[532px] h-[419px];
+                    @apply w-[532px] h-[419px] z-[1];
                 }
+            }
+            &::after {
+                content: '';
+                @apply absolute right-0 bottom-0 w-[830px] h-[575px];
+                background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
             }
         }
     }
