@@ -9,7 +9,7 @@ import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-c
 
 import ProductsAffliateSection from '@/@core/pages/products/affliate-section'
 import ProductsServiceHeaderSection from '@/@core/pages/products/service-header-section'
-import ProductsRegulasiDeviceSection from '@/@core/pages/products/regulasi-section'
+import ProductsRegulasiDeviceSection from '@/@core/pages/products/regulasi-device-section'
 import ProductsLayananSection from '@/@core/pages/products/layanan-section'
 import ProductsAverageSection from '@/@core/pages/products/average-section'
 
