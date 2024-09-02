@@ -6,7 +6,7 @@ const ProductsRegulasiDeviceSection = (props: {objLang:any}) => {
   return (
     <section className='products-regulasi-device-section'>
       <div className='image-container'>
-        <Image src='/images/devices/iphone-chart.png' alt='3d paperclip' width={0} height={0} sizes='100%'/>
+        <Image src='/images/devices/iphone-service.png' alt='iphone service' width={0} height={0} sizes='100%'/>
       </div>
       <div className='regulasi-container'>
         <div className='box-subcontainer'>

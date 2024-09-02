@@ -5,7 +5,7 @@ const ProductsDeviceSection = () => {
   return (
     <section className='products-device-section'>
       <div className='box-container'>
-        <Image src='/images/devices/macbook-iphone.png' alt='macbook and iphone' width={0} height={0} sizes='100%'/>
+        <Image src='/images/devices/macbook-iphone-service.png' alt='macbook and iphone' width={0} height={0} sizes='100%'/>
       </div>
     </section>
   )

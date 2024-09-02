@@ -32,7 +32,7 @@ const ContactUsInfoSection = (props: { objLang: any}) => {
                 </div>
                 <div className='info-card'>
                     <div className='card-header'>
-                        <div className='header-icon bg-[#F0FAF0]'>
+                        <div className='header-icon bg-[#F8ECF5]'>
                             <BuildingIcon color={'#F8ECF5'} />
                         </div>
                     </div>
