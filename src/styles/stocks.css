@@ -45,25 +45,15 @@
         .box-container {
             @apply flex flex-col justify-center items-center relative w-[90%];
             img {
-                @apply w-[682px] h-[480px];
-            }
-            &::after {
-                content: '';
-                @apply absolute w-[135px] h-[293px] right-0 top-0;
-                background: url("/images/ornaments/startup2-ornament.png") no-repeat;
-                background-size: 135px 293px;
-            }
-            &::before {
-                content: '';
-                @apply absolute w-[135px] h-[325px] left-0 top-0;
-                background: url("/images/ornaments/startup1-ornament.png") no-repeat;
-                background-size: 135px 325px;
-
+                @apply w-full h-full object-contain;
             }
         }
     }
     .stocks-why-section {
         @apply flex flex-col items-center px-[100px] pt-[50px] pb-[75px] relative;
+        background: url("/images/backgrounds/world-map.png") no-repeat;
+        background-position: center;
+        background-size: cover;
         .container {
             @apply flex flex-col gap-[70px] justify-center items-center;
             .logo-container {
@@ -100,7 +90,7 @@
         .box-container {
             @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
             h2 {
-                @apply text-[28px]/[42px] font-bold text-neutral-900;
+                @apply text-[36px]/[54px] font-bold text-neutral-900;
             }
             .sub-container {
                 @apply flex gap-[100px];
@@ -325,17 +315,7 @@
                 .box-container {
                     @apply w-full;
                     img {
-                        @apply w-[215px] h-[151px];
-                    }
-                    &::after {
-                        content: '';
-                        @apply w-[42px] h-[92px];
-                        background-size: 42px 92px;
-                    }
-                    &::before {
-                        @apply w-[42px] h-[102px];
-                        background-size: 42px 102px;
-        
+                        @apply w-[100%] h-[100%];
                     }
                 }
             }
