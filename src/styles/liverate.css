@@ -518,7 +518,7 @@
                     a {
                         @apply w-[80%] text-[12px]/[18px] py-[8px];
                         svg {
-                            @apply w-[20px] h-[20px];
+                            @apply w-[18px] h-[18px];
                         }
                     }
                 }

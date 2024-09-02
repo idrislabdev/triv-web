@@ -726,6 +726,9 @@
                     @apply flex-col justify-center items-center gap-[30px];
                     a {
                         @apply w-[80%] text-[12px]/[18px] py-[8px];
+                        svg {
+                            @apply w-[18px] h-[18px];
+                        }
                     }
                 }
             }

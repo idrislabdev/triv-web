@@ -1,17 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 
-const HomeEwalletSection = () => {
+const HomeEwalletSection = (props: {objLang:any}) => {
+  const { objLang } = props
   return (
     <section className='home-ewallet-section'>
         <div className='ewallet-description'>
-            <h2>Triv Mendukung 100 Bank &amp; E-wallet di Indonesia untuk semua transaksi kami</h2>
-            <h5>24/7 Real Time Deposit &amp; Withdrawal</h5>
+            <h2>{objLang.title}</h2>
+            <h5>{objLang.subtitle}</h5>
             <p>
-                Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke 
-                berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya. 
-                Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, 
-                seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.
+                {objLang.description}
             </p>
         </div>
         <div className='ewallet-image'>

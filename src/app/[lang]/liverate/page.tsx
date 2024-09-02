@@ -35,7 +35,7 @@ export default async function  Liverate({ params }: any) {
           <LiverateTopMoverSection objLang={topmovers_section} hightlight={hightlight}/>
           <LiverateListSection liverates={liverates}/>
           <LiverateAskSection />
-          <LiverateInvestasiNowSection lang={[params.lang]} objLang={invest_section}/>
+          <LiverateInvestasiNowSection lang={params.lang} objLang={invest_section}/>
           <LiverateTestimonyCarouselSection />
         </main>
         <Footer />

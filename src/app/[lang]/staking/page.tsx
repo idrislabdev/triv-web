@@ -35,13 +35,13 @@ export default async function  Staking({ params }: any) {
     <>
       <MainHeader classText="header-white" lang={params.lang}/>
       <main className='staking-page sm:mobile-responsive light-theme'>
-        <StakingHeaderSection lang={header_section}/>
-        <StakingBenefitSection lang={benefit_section} />
-        <StakingGuideCryptoSection lang={guide_crypto_section}/>
-        <StakingCalculatorSection lang={calculator_section}/>
-        <StakingCoinsSection stakings={stakings} lang={coin_section}/>
-        <StakingFaqSection lang={faq_section}/>
-        <StakingStartNowSection lang={start_now_section}/>
+        <StakingHeaderSection objLang={header_section}/>
+        <StakingBenefitSection objLang={benefit_section} />
+        <StakingGuideCryptoSection objLang={guide_crypto_section}/>
+        <StakingCalculatorSection objLang={calculator_section}/>
+        <StakingCoinsSection stakings={stakings} objLang={coin_section}/>
+        <StakingFaqSection objLang={faq_section}/>
+        <StakingStartNowSection lang={params.lang} objLang={start_now_section}/>
         <StakingTestimonyCarouselSection />
       </main>
       <Footer />

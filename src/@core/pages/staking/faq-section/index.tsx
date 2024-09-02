@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import React, { useRef, useState } from 'react'
 
-const StakingFaqSection = (props: {lang:any}) => {
-    const { lang } = props
+const StakingFaqSection = (props: {objLang:any}) => {
+    const { objLang } = props
     const [selected, setSelected] = useState("1")
     const container1: any = useRef(null);
     const container2: any = useRef(null);
@@ -12,14 +12,14 @@ const StakingFaqSection = (props: {lang:any}) => {
 
     return (
         <section className='staking-faq-section'>
-            <h2>{lang.title}</h2>
+            <h2>{objLang.title}</h2>
             <div className="question-faq-staking">
                 <div className="question-faq-accordion">
                     <ul>
                         <li>
                             <button type="button" onClick={_ => setSelected(selected !== "1" ? "1" : "")}>
                                 <div className="header-button"> 
-                                    <label>{lang.questions[0].title} </label> 
+                                    <label>{objLang.questions[0].title} </label> 
                                     <svg className={`w-[14px] h-[14px] text-gray-500 ${selected === "1" ? 'transform rotate-180' : ''}`} 
                                         fill="none" strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -33,14 +33,14 @@ const StakingFaqSection = (props: {lang:any}) => {
                             </button>
                             <div className={`accordion-content ${selected === "1" ? `max-h-[400px]` : 'max-h-0'}`} ref={container1}>
                                 <div className="content-area">
-                                    <p>{lang.questions[0].description}</p>
+                                    <p>{objLang.questions[0].description}</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <button type="button" onClick={_ => setSelected(selected !== "2" ? "2" : "")}>
                                 <div className="header-button"> 
-                                    <label>{lang.questions[1].title}</label> 
+                                    <label>{objLang.questions[1].title}</label> 
                                     <svg className={`w-[14px] h-[14px] text-gray-500 ${selected === "2" ? 'transform rotate-180' : ''}`} 
                                         fill="none" strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -54,14 +54,14 @@ const StakingFaqSection = (props: {lang:any}) => {
                             </button>
                             <div className={`accordion-content ${selected === "2" ? `max-h-[400px]` : 'max-h-0'}`} ref={container2}>
                                 <div className="content-area">
-                                    <p>{lang.questions[1].description}</p>
+                                    <p>{objLang.questions[1].description}</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <button type="button" onClick={_ => setSelected(selected !== "3" ? "3" : "")}>
                                 <div className="header-button"> 
-                                    <label> {lang.questions[2].title}</label> 
+                                    <label> {objLang.questions[2].title}</label> 
                                     <svg className={`w-[14px] h-[14px] text-gray-500 ${selected === "3" ? 'transform rotate-180' : ''}`} 
                                         fill="none" strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -75,7 +75,7 @@ const StakingFaqSection = (props: {lang:any}) => {
                             </button>
                             <div className={`accordion-content ${selected === "3" ? `max-h-[400px]` : 'max-h-0'}`} ref={container2}>
                                 <div className="content-area">
-                                    <p>{lang.questions[2].description}</p>
+                                    <p>{objLang.questions[2].description}</p>
                                 </div>
                             </div>
                         </li>

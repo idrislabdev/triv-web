@@ -1,11 +1,11 @@
 import React from 'react'
 
-const StakingHeaderSection = (props: {lang:any}) => {
-  const { lang } = props
+const StakingHeaderSection = (props: {objLang:any}) => {
+  const { objLang } = props
   return (
     <section className='staking-header-section'>
-        <h1>{lang.title}</h1>
-        <p>{lang.description}</p>
+        <h1>{objLang.title}</h1>
+        <p>{objLang.description}</p>
     </section>
   )
 }

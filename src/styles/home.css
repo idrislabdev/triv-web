@@ -46,7 +46,7 @@
                 .section-terdaftar {
                     @apply flex gap-[30px] items-center;
                     label  {
-                        @apply text-[16px]/[32px] text-white font-medium;
+                        @apply text-[14px]/[28px] text-white font-medium;
                     }
                     .terdaftar-list-logo {
                         @apply flex gap-[14px];
@@ -245,7 +245,12 @@
                 }
             }
             a {
-                @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                @apply flex justify-center gap-[8px] items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                svg {
+                    path {
+                        @apply fill-white;
+                    }
+                }
             }
         }
     }
@@ -353,7 +358,12 @@
            .start-button-logo {
                 @apply flex flex-col gap-[30px];
                 a {
-                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
                 }
                 .start-now-store {
                     @apply flex gap-[14px] items-center;
@@ -604,6 +614,9 @@
                     }
                     a {
                         @apply h-[34px] w-[200px] text-[12px]/[18px];
+                        svg {
+                            @apply w-[18px] h-[18px];
+                        }
                     }
                 }
             }
@@ -700,6 +713,9 @@
                     @apply flex-col justify-center items-center gap-[30px];
                     a {
                         @apply w-[80%] text-[12px]/[18px] py-[8px];
+                        svg {
+                            @apply w-[18px] h-[18px];
+                        }
                     }
                 }
             }

@@ -1,7 +1,10 @@
+import { ArrowRightIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const HomeDividenStakingSection = () => {
+const HomeDividenStakingSection = (props: {lang:string, objLang:any }) => {
+  const { lang, objLang } = props
   return (
     <section className='home-dividen-staking-section'>
       <div className='dividen-staking-device'>
@@ -9,11 +12,11 @@ const HomeDividenStakingSection = () => {
       </div>
       <div className='dividen-staking-description'>
         <div className='staking-description-title'>
-            <h2>Dapatkan Dividen Staking Crypto Setiap Hari</h2>
-            <p>Mulai cukup dengan 50rb dan tumbuhkan cryptomu bersama dengan TRIV</p>
+            <h2>{objLang.title}</h2>
+            <p>{objLang.description}</p>
         </div>
-        <a>Daftar Sekarang</a>
-      </div>
+        <Link href={`/${lang}/register`}>{objLang.button} <ArrowRightIcon color={'#fff'}/></Link>
+        </div>
     </section>
   )
 }

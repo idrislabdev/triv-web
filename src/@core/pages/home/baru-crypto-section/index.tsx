@@ -5,14 +5,15 @@ import Image from 'next/image';
 import 'swiper/css';
 import { ILiverateMini } from '@/@core/@types/interfaces';
 
-const BaruCryptoSection = () => {
+const BaruCryptoSection = (props: {objLang:any}) => {
+    const { objLang } = props
     return (
         <section className='home-baru-crypto-section'>
             <div className='home-baru-crypto-container'>
                 <div className='baru-crypto-title'>
-                    <h5>Baru di crypto?</h5>
-                    <p>Ikuti panduan dan tutorial dari video TRIV</p>
-                    <a>Lihat Semua Video</a>
+                    <h5>{objLang.title}</h5>
+                    <p>{objLang.description}</p>
+                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>{objLang.button_text}</a>
                 </div>
                 <div className='baru-crypto-videos'>
                     <Swiper slidesPerView={'auto'}>

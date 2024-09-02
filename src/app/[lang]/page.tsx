@@ -20,7 +20,15 @@ export default async function  HomeLang({ params }: any) {
 
   const {
     header_section, 
+    special_section,
+    easy_invest_section,
+    dividen_section,
+    ewallet_section,
+    new_crypto_section,
+    invest_section,
+    media_section
   } = await getDictionaryHome(params.lang);
+  
 
   return (
     <>
@@ -29,13 +37,13 @@ export default async function  HomeLang({ params }: any) {
         <HomeBannerSection lang={params.lang} objLang={header_section}/>
         <HomeIndexCryptoSection liverates={liverates}/>
         <HomeAssetCryptoSection liverates={liverates}/>
-        <HomeRancangSection />
-        <HomeInvestasiSection />
-        <HomeDividenStakingSection />
-        <HomeEwalletSection />
-        <BaruCryptoSection />
-        <HomeBuySellAssetsSection />
-        <HomeMediaSection />
+        <HomeRancangSection objLang={special_section}/>
+        <HomeInvestasiSection objLang={easy_invest_section} />
+        <HomeDividenStakingSection lang={params.lang} objLang={dividen_section} />
+        <HomeEwalletSection objLang={ewallet_section} />
+        <BaruCryptoSection objLang={new_crypto_section} />
+        <HomeBuySellAssetsSection lang={params.lang} objLang={invest_section}/>
+        <HomeMediaSection objLang={media_section} />
       </main>
       <Footer />
     </>

@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-const StakingCalculatorSection = (props: {lang:any}) => {
-    const { lang } = props
+const StakingCalculatorSection = (props: {objLang:any}) => {
+    const { objLang } = props
     const [selectedAsset, setSelectedAsset] = useState('ETH')
 
     return (
@@ -15,7 +15,7 @@ const StakingCalculatorSection = (props: {lang:any}) => {
                 </div>
                 <div className='calculator-container'>
                     <div className='top-subcontainer'>
-                        <h2>{lang.title}</h2>
+                        <h2>{objLang.title}</h2>
                         <div className='sub-subcontainer'>
                             <div className='form-input'>
                                 <label>Stake Asset</label>
@@ -49,7 +49,7 @@ const StakingCalculatorSection = (props: {lang:any}) => {
                         </div>
                     </div>
                     <div className='bottom-subcontainer'>
-                        <p>{lang.description}</p>
+                        <p>{objLang.description}</p>
                     </div>
                 </div>
             </div>
