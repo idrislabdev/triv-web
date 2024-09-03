@@ -43,7 +43,7 @@
                 .top-mover-container-left {
                     @apply flex flex-col gap-[20px] justify-between items-start;
                     label {
-                        @apply text-[18px]/[27px] font-bold text-primary;
+                        @apply text-[15px]/[23px] font-bold text-primary;
                     }
                     .top-mover-text-icon {
                         @apply flex gap-[10px];

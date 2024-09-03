@@ -13,7 +13,8 @@
         "regulator" : {
             "title" : "Regulated and Trusted Broker",
             "content" : "Since 2015 Triv has been used by millions of people, all customer funds in our system are insured by Bitgo and Lloyd England for 100 million USD or equivalent to 1.45 trillion rupiah.Triv is an official broker registered and supervised by Bappebti."
-        }
+        },
+        "device_url" : "/images/devices/iphone-service.png"
     },
     "layanan_section": {
         "title" : "What You can do with Paypal in Triv",
