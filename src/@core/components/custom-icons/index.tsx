@@ -475,6 +475,57 @@ const TrendChartIcon = (props: {color: any}) => {
     )
 }
 
+const TrendChartIcon2 = (props: {color: any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.5 23.0638H3.25V18.7305H6.5V23.0638ZM15.1667 16.5638H11.9167V23.0638H15.1667V16.5638ZM23.8333 12.2305H20.5833V23.0638H23.8333V12.2305Z" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M21.6667 3.5625C17.3333 11.1458 7.58333 13.3125 3.25 13.3125M21.6667 3.5625L22.75 7.89583M21.6667 3.5625H17.3333" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+    )
+}
+
+const ChartPie = (props: {color: any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.75 13.3086C22.7477 15.8936 21.719 18.3719 19.89 20.1986L13 13.3086V3.55859C15.5859 3.55859 18.0658 4.58582 19.8943 6.4143C21.7228 8.24278 22.75 10.7227 22.75 13.3086Z" fill="#318AC6"/>
+            <path d="M13 13.3086L19.89 20.1986C21.719 18.3719 22.7477 15.8936 22.75 13.3086C22.75 10.7227 21.7228 8.24278 19.8943 6.4143C18.0658 4.58582 15.5859 3.55859 13 3.55859M13 13.3086V3.55859M13 13.3086L3.59667 15.8761M13 13.3086L19.8467 20.2094C18.6377 21.4042 17.1374 22.2622 15.4945 22.6983C13.8517 23.1343 12.1233 23.1333 10.481 22.6954C8.83862 22.2574 7.3393 21.3977 6.1317 20.2015C4.92411 19.0053 4.05021 17.5142 3.59667 15.8761M13 3.55859C10.4141 3.55859 7.93419 4.58582 6.10571 6.4143C4.27724 8.24278 3.25001 10.7227 3.25001 13.3086C3.249 14.1762 3.36561 15.0399 3.59667 15.8761" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+
+    )
+}
+
+const ChartPie2 = (props: {color: any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.8359 15.4753V3.55859C13.9912 3.57566 17.0123 4.83665 19.2434 7.06777C21.4746 9.29889 22.7355 12.32 22.7526 15.4753C22.7515 18.2674 21.7699 20.9704 19.9793 23.1128L10.8359 15.4753Z" fill="#318AC6"/>
+            <path d="M10.836 7.46943C9.54289 7.49909 8.2775 7.84984 7.15368 8.4901C6.02987 9.13036 5.08291 10.04 4.39805 11.1372C3.71319 12.2344 3.31192 13.4847 3.23037 14.7756C3.14881 16.0664 3.38953 17.3572 3.93086 18.5319C4.47219 19.7066 5.29713 20.7282 6.33143 21.5048C7.36573 22.2814 8.57691 22.7886 9.85596 22.9808C11.135 23.173 12.4418 23.0441 13.6586 22.6057C14.8754 22.1673 15.9642 21.4332 16.8268 20.4694M10.836 15.4753V3.55859C13.9912 3.57566 17.0123 4.83665 19.2434 7.06777C21.4746 9.29889 22.7355 12.32 22.7526 15.4753C22.7515 18.2674 21.7699 20.9704 19.9793 23.1128L10.836 15.4753Z" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+
+    )
+}
+
+const ChartPPT = (props: {color: any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7641 18.7285L9.16406 21.9785M15.2307 18.7285L17.8307 21.9785" stroke="#318AC6" stroke-width="2.16667" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.75 4.64453H23.25M13.5 14.3945V8.97786M17.8333 14.3945V11.1445M9.16667 14.3945V11.1445M21.0833 18.7279H5.91667C5.62935 18.7279 5.3538 18.6137 5.15063 18.4106C4.94747 18.2074 4.83333 17.9318 4.83333 17.6445V4.64453H22.1667V17.6445C22.1667 17.9318 22.0525 18.2074 21.8494 18.4106C21.6462 18.6137 21.3707 18.7279 21.0833 18.7279Z" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+
+    )
+}
+
+
+
+
+
 
 
 export {
@@ -518,5 +569,9 @@ export {
     IsiPulsaIcon,
     HeadsetIcon,
     CpuIcon,
-    TrendChartIcon
+    TrendChartIcon,
+    TrendChartIcon2,
+    ChartPie,
+    ChartPie2,
+    ChartPPT,
 }
