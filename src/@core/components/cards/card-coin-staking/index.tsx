@@ -11,7 +11,7 @@ const CardCoinStaking = (props: {item:IStaking}) => {
             </div>
             <div className='card-coin-desc'>
                 <label>{item.label}</label>
-                <span>Staking Ethereum dengan Bunga {item.apy}%/tahun sekarang.</span>
+                <span>Staking {item.label} dengan Bunga {item.apy}%/tahun sekarang.</span>
                 <a>Stake Now</a>
             </div>
         </div>
