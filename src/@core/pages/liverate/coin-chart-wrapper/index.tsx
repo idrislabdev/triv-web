@@ -7,7 +7,7 @@ import Script from "next/script";
 import {
   ChartingLibraryWidgetOptions,
   ResolutionString,
-} from "@/public/static/charting_library/charting_library";
+} from "../../../../../public/static/charting_library/charting_library";
 
 const defaultWidgetProps: Partial<ChartingLibraryWidgetOptions> = {
   symbol: "BTCIDR",
@@ -28,7 +28,7 @@ const TVChartContainer = dynamic(
   { ssr: false }
 );
 
-export default function LiverateBietcoinChartSection() {
+export default function LiverateCoinChartWrapper() {
   const [isScriptReady, setIsScriptReady] = useState(false);
   return (
     <>

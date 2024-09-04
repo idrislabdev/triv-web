@@ -31,7 +31,7 @@ export const TVChartContainer = (props: Partial<ChartingLibraryWidgetOptions>) =
 			user_id: props.user_id,
 			fullscreen: props.fullscreen,
 			autosize: props.autosize,
-			theme: 'dark'
+			theme: 'light'
 		};
 
 		const tvWidget = new widget(widgetOptions);
@@ -62,7 +62,7 @@ export const TVChartContainer = (props: Partial<ChartingLibraryWidgetOptions>) =
 
 	return (
 		<>
-			<div ref={chartContainerRef} className="h-[500px] w-[500px]" />
+			<div ref={chartContainerRef} className="h-[500px] w-full" />
 		</>
 	);
 };

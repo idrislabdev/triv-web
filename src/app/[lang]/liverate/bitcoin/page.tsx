@@ -8,7 +8,8 @@ import { IHighlight, ILiverate } from '@/@core/@types/interfaces'
 import { getDictionaryLierate } from '@/app/dictionaries'
 
 import '@/styles/liverate.css'
-import LiverateBietcoinChartSection from '@/@core/pages/liverate/bitcoin-chart-section/page'
+import LiverateBietcoinChartSection from '@/@core/pages/liverate/coin-chart-container/page'
+import LiverateCoinSection from '@/@core/pages/liverate/coin-section'
 
 export default async function  Liverate({ params }: any) {
     const resp =  await getLiverateHighlights();
@@ -27,7 +28,7 @@ export default async function  Liverate({ params }: any) {
     <>
         <MainHeader classText="header-white" lang={params.lang}/>
           <main className='liverate-page sm:mobile-responsive light-theme'>
-            <LiverateBietcoinChartSection />
+            <LiverateCoinSection objLang={null} />
           </main>
         <Footer />
     </>
