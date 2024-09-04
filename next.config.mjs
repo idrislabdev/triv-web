@@ -3,10 +3,16 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-            protocol: 'https',
-            hostname: 'cihuy.triv.id',
-            port: '',
-            pathname: '**',
+                protocol: 'https',
+                hostname: 'cihuy.triv.id',
+                port: '',
+                pathname: '**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'blog.triv.co.id',
+                port: '',
+                pathname: '**',
             },
         ],
     },

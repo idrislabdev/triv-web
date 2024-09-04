@@ -19,3 +19,8 @@ export const getStakings = async () => {
     const resp = await axiosInstance.get(`/v2/staking`)
     return resp
 }
+
+export const getBlogs = async () => {
+    const resp = await axiosInstance.get(`/v2/blog`)
+    return resp
+}

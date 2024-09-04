@@ -2,9 +2,11 @@ import { ArrowRightIcon, TrendChartIcon } from '@/@core/components/custom-icons'
 import React from 'react'
 import LiverateCoinChartWrapper from '../coin-chart-wrapper'
 import Image from 'next/image'
+import CardNewsBlog from '@/@core/components/cards/card-news-blog'
+import { IBlog } from '@/@core/@types/interfaces'
 
-const LiverateCoinSection = (props: {objLang:any}) => {
-  const { objLang } = props
+const LiverateCoinSection = (props: {lang:string, objLang:any, blogs:IBlog[]}) => {
+  const { lang, objLang, blogs } = props
   return (
     <section className='liverate-coin-section'>
         <div className='coin-main-container'>
@@ -61,7 +63,13 @@ const LiverateCoinSection = (props: {objLang:any}) => {
                 </div>
               </div>
             </div>
-            <div className='blog-subcontainer'></div>
+            <div className='blog-subcontainer'>
+              {
+                blogs.map((item:any, index:number) => (
+                  <CardNewsBlog lang={lang} item={item} key={index}/>
+                ))
+              }
+            </div>
         </div>
         <div className='bitcoin-side-container'>
             <div className='buy-subcontainer'></div>

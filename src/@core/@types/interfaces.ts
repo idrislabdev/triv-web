@@ -48,3 +48,13 @@ export interface IStaking {
     apy: number,
     icon_url: string,
 }
+
+
+export interface IBlog {
+    title: string,
+    description: string,
+    published_at: Date,
+    image_url: string,
+    link: string,
+    categories: string,
+}

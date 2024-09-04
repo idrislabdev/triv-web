@@ -394,6 +394,9 @@
                     }
                 }
             }
+            .blog-subcontainer {
+                @apply flex flex-col gap-[60px];
+            }
         }
         .coin-side-container {
             @apply flex flex-col gap-[70px] w-1/3;
