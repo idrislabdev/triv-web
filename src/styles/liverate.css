@@ -388,7 +388,7 @@
                         .key-statistic {
                             @apply flex flex-col gap-[10px] justify-center items-center w-1/5;
                             .key-statistic-label {
-                                @apply flex flex-col gap-[10px];
+                                @apply flex flex-col gap-[10px] justify-center items-center;
                                 label {
                                     @apply text-[14px]/[21px] font-medium text-[#4B5060];
                                 }
