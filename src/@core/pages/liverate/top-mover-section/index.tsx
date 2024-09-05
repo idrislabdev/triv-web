@@ -1,15 +1,16 @@
 import { IHighlight, ILiverateMini } from '@/@core/@types/interfaces'
 import { CaretUpIcon, GraphIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const LiverateTopMoverSection = (props : {objLang:any, hightlight:IHighlight}) => {
-    const { objLang, hightlight } = props
+const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:IHighlight}) => {
+    const { lang, objLang, hightlight } = props
     return (
         <div className='liverate-top-mover-section'>
             <h2><span></span>{objLang.title}</h2>
             <div className='top-mover-containers'>
-                <div className='top-mover-container'>
+                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.top_gainer.label.toLowerCase().replace(" ", "")}`}>
                     <div className='top-mover-container-left'>
                         <label>Top Gainer(24h)</label>
                         <div className='top-mover-text-icon'>
@@ -27,8 +28,8 @@ const LiverateTopMoverSection = (props : {objLang:any, hightlight:IHighlight}) =
                             <Image src='/images/others/graph-up.png' alt='graph' width={99} height={38}/>
                         </div>
                     </div>
-                </div>
-                <div className='top-mover-container'>
+                </Link>
+                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.highest_volume.label.toLowerCase().replace(" ", "")}`}>
                     <div className='top-mover-container-left'>
                         <label>Most Popular (24h)</label>
                         <div className='top-mover-text-icon'>
@@ -46,8 +47,8 @@ const LiverateTopMoverSection = (props : {objLang:any, hightlight:IHighlight}) =
                             <Image src='/images/others/graph-up.png' alt='graph' width={99} height={38}/>
                         </div>
                     </div>
-                </div>
-                <div className='top-mover-container'>
+                </Link>
+                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.most_popular.label.toLowerCase().replace(" ", "")}`}>
                     <div className='top-mover-container-left'>
                         <label>Highest Volume (24h)</label>
                         <div className='top-mover-text-icon'>
@@ -65,7 +66,7 @@ const LiverateTopMoverSection = (props : {objLang:any, hightlight:IHighlight}) =
                             <Image src='/images/others/graph-up.png' alt='graph' width={99} height={38}/>
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
   )

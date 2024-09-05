@@ -3,12 +3,15 @@ import React from 'react'
 
 import Footer from '@/@core/components/footer'
 import LiverateCoinSection from '@/@core/pages/liverate/coin-section'
-import { getBlogs, getLiverateHighlights, getLiverateMini, getLiverates } from '@/@core/services/api'
-import { IBlog, IHighlight, ILiverate, ILiverateMini } from '@/@core/@types/interfaces'
+import { getAsset, getBlogs, getLiverateHighlights, getLiverateMini, getLiverates } from '@/@core/services/api'
+import { IBlog, ICoin, IHighlight, ILiverate, ILiverateMini } from '@/@core/@types/interfaces'
 import { getDictionaryLierate } from '@/app/dictionaries'
+import { coins }from "../coins";
 import '@/styles/liverate.css'
 
 export default async function  LiverateCoin({ params }: any) {
+    const coin:ICoin = coins.find((x) => x.slug == params.slug)
+
     const resp =  await getLiverateHighlights();
     const hightlight:IHighlight = resp.data.data
 
@@ -21,6 +24,11 @@ export default async function  LiverateCoin({ params }: any) {
     const resBlogs =  await getBlogs();
     const blogs:IBlog[] = resBlogs.data.data.contents
 
+    const resAsset = await getAsset(coin.currency)
+    const asset:any = resAsset.data.data
+
+
+
     const {
       header_section,
       topmovers_section,
@@ -31,7 +39,13 @@ export default async function  LiverateCoin({ params }: any) {
     <>
         <MainHeader classText="header-white" lang={params.lang}/>
           <main className='liverate-page sm:mobile-responsive light-theme'>
-            <LiverateCoinSection lang={params.lang} objLang={null} blogs={blogs} liverateMinies={liverateMinies} />
+            <LiverateCoinSection 
+              lang={params.lang} 
+              objLang={null} blogs={blogs} 
+              liverateMinies={liverateMinies} 
+              coin={coin} 
+              asset={asset}
+            />
           </main>
         <Footer />
     </>

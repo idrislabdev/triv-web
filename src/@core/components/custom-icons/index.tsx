@@ -515,7 +515,7 @@ const ChartPPT = (props: {color: any}) => {
     let currentColor = color
     return (
         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.7641 18.7285L9.16406 21.9785M15.2307 18.7285L17.8307 21.9785" stroke="#318AC6" stroke-width="2.16667" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.7641 18.7285L9.16406 21.9785M15.2307 18.7285L17.8307 21.9785" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" stroke-linejoin="round"/>
             <path d="M3.75 4.64453H23.25M13.5 14.3945V8.97786M17.8333 14.3945V11.1445M9.16667 14.3945V11.1445M21.0833 18.7279H5.91667C5.62935 18.7279 5.3538 18.6137 5.15063 18.4106C4.94747 18.2074 4.83333 17.9318 4.83333 17.6445V4.64453H22.1667V17.6445C22.1667 17.9318 22.0525 18.2074 21.8494 18.4106C21.6462 18.6137 21.3707 18.7279 21.0833 18.7279Z" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
 

@@ -24,3 +24,8 @@ export const getBlogs = async () => {
     const resp = await axiosInstance.get(`/v2/blog`)
     return resp
 }
+
+export const getAsset = async (currency:string) => {
+    const resp = await axiosInstance.get(`/v2/asset/${currency}`)
+    return resp
+}

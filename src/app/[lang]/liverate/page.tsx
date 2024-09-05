@@ -32,7 +32,7 @@ export default async function  Liverate({ params }: any) {
         <MainHeader classText="header-white" lang={params.lang}/>
         <main className='liverate-page sm:mobile-responsive light-theme'>
           <LiverateHeaderSection objLang={header_section}/>
-          <LiverateTopMoverSection objLang={topmovers_section} hightlight={hightlight}/>
+          <LiverateTopMoverSection lang={params.lang} objLang={topmovers_section} hightlight={hightlight}/>
           <LiverateListSection liverates={liverates}/>
           <LiverateAskSection />
           <LiverateInvestasiNowSection lang={params.lang} objLang={invest_section}/>

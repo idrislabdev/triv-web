@@ -59,3 +59,9 @@ export interface IBlog {
     link: string,
     categories: string,
 }
+
+export interface ICoin {
+    slug: string,
+    symbol: string,
+    currency: string,
+}
