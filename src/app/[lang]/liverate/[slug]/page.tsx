@@ -10,7 +10,7 @@ import { coins }from "../coins";
 import '@/styles/liverate.css'
 
 export default async function  LiverateCoin({ params }: any) {
-    const coin:ICoin = coins.find((x) => x.slug == params.slug)
+    const coin:ICoin|any = coins.find((x) => x.slug == params.slug)
 
     const resp =  await getLiverateHighlights();
     const hightlight:IHighlight = resp.data.data
