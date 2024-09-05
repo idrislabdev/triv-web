@@ -37,8 +37,8 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
                 <li><a className={category === 'usd' ? '!text-[#71BBED]' : '!text-[rgb(131,136,153)]'} onClick={_ => changeCategory('usd')}>
                   <span><UsdIcon color={category === 'usd' ? '#71BBED' : '#838899'}  /></span>USD</a>
                 </li>
-                <li><a className={category === 'stock' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('stock')}>
-                  <span><TrendUpIcon color={category === 'stock' ? '#71BBED' : '#838899'} /></span>Stock</a>
+                <li><a className={category === 'stocks' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('stocks')}>
+                  <span><TrendUpIcon color={category === 'stocks' ? '#71BBED' : '#838899'} /></span>Stock</a>
                 </li>
                 <li><a className={category === 'gold' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('gold')}>
                   <span><GoldIcon color={category === 'gold' ? '#71BBED' : '#838899'} /></span>Gold</a>
