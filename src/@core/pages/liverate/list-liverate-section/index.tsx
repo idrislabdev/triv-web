@@ -11,9 +11,10 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
   const [dataLiverates, setDataLiverates] = useState(liverates)
   const [category, setCategory] = useState('')
   const [params, setParams] = useState<{page:number,per:number,category:string|null,keyword:string|null}>({page: 1, per: 10, category: null, keyword: null})
+  
   const fetchDataLiverate = useCallback(async () => {
     const resp = await axiosInstance.get(`/v2/liverate`, { params: { ...params } })
-    return resp
+    setDataLiverates(resp.data.data)
   },[params])
 
   const changeCategory = (value:string) => {
