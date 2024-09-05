@@ -494,9 +494,9 @@
                             }
                         }
                     }
-                    .blog-subcontainer {
-                        @apply hidden;
-                    }
+                }
+                .blog-subcontainer {
+                    @apply hidden;
                 }
             }
         }
