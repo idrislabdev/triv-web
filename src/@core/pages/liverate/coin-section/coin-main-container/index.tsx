@@ -19,7 +19,9 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
         const regexp = /\.0+$|(?<=\.[0-9]*[1-9])0+$/;
         const item = lookup.findLast(item => num >= item.value);
         return item ? (num / item.value).toFixed(digits).replace(regexp, "").concat(item.symbol) : "0";
-      }
+    }
+    const progressJual = `w-[${(asset.key_statistic.sell*100).toFixed(0)}%]`;
+    const progressBeli = `w-[${(asset.key_statistic.buy*100).toFixed(0)}%]`;
     return (
         <div className='coin-main-container'>
             <div className='chart-subcontainer'>
@@ -34,8 +36,8 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
                 <h5>Aktivitas Pengguna Triv</h5>
                 <div className='progress-cubcontainer'>
                     <div className='key-progress'>
-                        <span className={`w-[${(asset.key_statistic.buy*100).toFixed(0)}%] progress-beli`}></span>
-                        <span className={`w-[${(asset.key_statistic.sell*100).toFixed(0)}%] progress-jual`}></span>
+                        <span className={`${progressBeli} progress-beli`}></span>
+                        <span className={`${progressJual} progress-jual`}></span>
                     </div>
                     <div className='key-progress-label'>
                         <label className='progress-beli'><span className='progress-beli'></span>{(asset.key_statistic.buy * 100).toFixed(0)}% Beli</label>
@@ -48,28 +50,38 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
                 <h5>Key Statistic</h5>
                 <div className='key-statistic-subcontainer'>
                     <div className='key-statistic'>
-                        <TrendChartIcon2 color={'#fff'} />
-                        <label>Kapasitas Pasar</label>
+                        <div className='key-statistic-label'>
+                            <TrendChartIcon2 color={'#fff'} />
+                            <label>Kapasitas Pasar</label>
+                        </div>
                         <p>{nFormatter(asset.key_statistic.market_cap, 1)}</p>
                     </div>
                     <div className='key-statistic'>
-                        <TrendChartIcon color={'#fff'} />
-                        <label>Nilai Terdilusi Penuh</label>
+                        <div className='key-statistic-label'>
+                            <TrendChartIcon color={'#fff'} />
+                            <label>Nilai Terdilusi Penuh</label>
+                        </div>
                         <p>{nFormatter(asset.key_statistic.fully_diluted_valuation, 1)}</p>
                     </div>
                     <div className='key-statistic'>
-                        <ChartPie color={'#fff'} />
-                        <label>Suplai Yang Beredar</label>
-                    <p>{nFormatter(asset.key_statistic.circulating_supply, 1)}</p>
+                        <div className='key-statistic-label'>
+                            <ChartPie color={'#fff'} />
+                            <label>Suplai Yang Beredar</label>
+                        </div>
+                        <p>{nFormatter(asset.key_statistic.circulating_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
-                        <ChartPie2 color={'#fff'} />
-                        <label>Suplai Maksimum</label>
+                        <div className='key-statistic-label'>
+                            <ChartPie2 color={'#fff'} />
+                            <label>Suplai Maksimum</label>
+                        </div>
                         <p className='!text-[#71BBED]'>{nFormatter(asset.key_statistic.max_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
-                        <ChartPPT color={'#fff'} />
-                        <label>Volume Global</label>
+                        <div className='key-statistic-label'>
+                            <ChartPPT color={'#fff'} />
+                            <label>Volume Global</label>
+                        </div>
                         <p className='!text-[#EB5757]'>{nFormatter(asset.key_statistic.volume_24h, 1)}</p>
                     </div>
                 </div>

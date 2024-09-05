@@ -1,10 +1,11 @@
 "use client"
-import { ILiverateMini } from '@/@core/@types/interfaces';
+import { IBlog, ILiverateMini } from '@/@core/@types/interfaces';
+import CardNewsBlog from '@/@core/components/cards/card-news-blog';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
-const CoinSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[]}) => {
-    const { asset, liverateMinies } = props;
+const CoinSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[], blogs:IBlog[], lang:string}) => {
+    const { asset, liverateMinies, blogs, lang } = props;
     const [amount, setAmount] = useState("0")
     return (
         <div className='coin-side-container'>
@@ -59,6 +60,13 @@ const CoinSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[]}) =
                         ))
                     }
                 </div>
+            </div>
+            <div className='blog-subcontainer'>
+            {
+                blogs.map((item:any, index:number) => (
+                    <CardNewsBlog lang={lang} item={item} key={index}/>
+                ))
+            }
             </div>
         </div>
     )

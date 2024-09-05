@@ -387,8 +387,11 @@
                         @apply flex justify-between;
                         .key-statistic {
                             @apply flex flex-col gap-[10px] justify-center items-center w-1/5;
-                            label {
-                                @apply text-[14px]/[21px] font-medium text-[#4B5060];
+                            .key-statistic-label {
+                                @apply flex flex-col gap-[10px];
+                                label {
+                                    @apply text-[14px]/[21px] font-medium text-[#4B5060];
+                                }
                             }
                             p {
                                 @apply text-[16px]/[24px] font-bold text-neutral-700;
@@ -490,6 +493,9 @@
                                 }
                             }
                         }
+                    }
+                    .blog-subcontainer {
+                        @apply hidden;
                     }
                 }
             }
@@ -721,6 +727,150 @@
             }
             .liverate-testimony-carousel-section {
                 @apply py-[30px] px-[20px];
+            }
+            .liverate-coin-section {
+                @apply py-[30px] px-[20px];
+                h2 {
+                    @apply text-[14px]/[21px];
+                    span {
+                        img {
+                            @apply h-[30px] w-[30px];
+                        }
+                    }
+                }
+                .coin-container {
+                    @apply flex-col;
+                    .coin-main-container {
+                        @apply w-full gap-[40px];
+                        .chart-subcontainer {
+                            div {
+                                @apply !h-[360px];
+                            }
+                        }
+                        .about-subcontainer {
+                            @apply flex flex-col gap-[20px];
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            p {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                        .activity-subcontainer {
+                            @apply gap-[12px];
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            .progress-cubcontainer {
+                                @apply gap-[12px];
+                                .key-progress-label {
+                                    label {
+                                        @apply text-[12px]/[18px];
+                                    }
+                                }
+                            }
+                            p {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                        .key-subcontainer {
+                            @apply border border-neutral-200 rounded-[10px] p-[20px] gap-[24px];
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            .key-statistic-subcontainer {
+                                @apply flex-col gap-[14px];
+                                .key-statistic {
+                                    @apply w-full flex-row items-center justify-between;
+                                    .key-statistic-label {
+                                        @apply flex-row items-center;
+                                        svg {
+                                            @apply w-[20px];
+                                        }
+                                        label {
+                                            @apply text-[12px]/[18px];
+                                        }
+                                    }
+                                    p {
+                                        @apply text-[12px]/[18px];
+                                    }
+                                }
+                            }
+                        }
+                        .blog-subcontainer {
+                            @apply hidden;
+                        }
+                    }
+                    .coin-side-container {
+                        @apply w-full gap-[40px];
+                        .buy-subcontainer {
+                            @apply justify-center items-center text-center;
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            .input-subcontainer {
+                                label {
+                                    @apply text-[12px]/[18px];
+                                }
+                                .input-area {
+                                    .group-input {
+                                        @apply text-center;
+                                        input {
+                                            @apply text-center;
+                                        }
+                                    }
+                                    .list-button {
+                                        @apply justify-center;
+                                        a {
+                                            @apply text-[12px]/[18px] py-[6px] px-[8px];
+                                        }
+                                    }
+                                }
+                            }
+                            .value-subcontainer {
+                                @apply w-full;
+                                span {
+                                    @apply text-[12px]/[18px];
+                                    
+                                }
+                                label {
+                                    @apply justify-center text-[24px]/[36px];
+                                    span {
+                                        @apply text-[24px]/[36px];
+                                    }
+                                }
+                            }
+                            button {
+                                @apply rounded-[30px] text-[12px]/[18px] h-[34px];
+                            }
+                        }
+                        .other-coins-subcontainer{
+                            @apply border-0 p-0 gap-[18px];
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            p {
+                                @apply text-[12px]/[18px];
+                            }
+                            
+                        }
+                        .blog-subcontainer {
+                            @apply flex flex-col gap-[18px];
+                            .card-news-secondary-2 {
+                                @apply items-center;
+                                .card-content {
+                                    @apply gap-[4px];
+                                    h5,p {
+                                        @apply text-[10px]/[15px];
+                                    }
+                                }
+                                img {
+                                    @apply w-[110px] h-[60px] rounded-[4px];
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
