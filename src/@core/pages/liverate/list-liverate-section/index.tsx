@@ -1,20 +1,50 @@
+"use client"
+
 import { ILiverate } from '@/@core/@types/interfaces'
 import { CaretDownIcon, CaretUpIcon, CryptoIcon, EuroIcon, GoldIcon, TrendUpIcon, UsdIcon } from '@/@core/components/custom-icons'
+import axiosInstance from '@/@core/utils/axios'
 import Image from 'next/image'
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const LiverateListSection = (props: {liverates: ILiverate[]}) => {
   const { liverates } = props
+  const [dataLiverates, setDataLiverates] = useState(liverates)
+  const [category, setCategory] = useState('')
+  const [params, setParams] = useState<{page:number,per:number,category:string|null,keyword:string|null}>({page: 1, per: 10, category: null, keyword: null})
+  const fetchDataLiverate = useCallback(async () => {
+    const resp = await axiosInstance.get(`/v2/liverate`, { params: { ...params } })
+    return resp
+  },[params])
+
+  const changeCategory = (value:string) => {
+    setCategory(value)
+    setParams({...params, category:value})
+  }
+
+  useEffect(() => {
+    fetchDataLiverate()
+  }, [category, fetchDataLiverate])
+
   return (
     <section className='liverate-list-section'>
         <div className='list-header'>
             <div className='liverate-menu'>
               <ul>
-                <li><a className='!text-[#71BBED]'><span><CryptoIcon color='#71BBED' /></span>Crypto</a></li>
-                <li><a className='!text-[#838899]'><span><UsdIcon color='#838899' /></span>USD</a></li>
-                <li><a className='!text-[#838899]'><span><TrendUpIcon color='#838899' /></span>Stock</a></li>
-                <li><a className='!text-[#838899]'><span><GoldIcon color='#838899' /></span>Gold</a></li>
-                <li><a className='!text-[#838899]'><span><EuroIcon color='#838899' /></span>Euro</a></li>
+                <li><a className={category === 'crypto' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('crypto')}>
+                  <span><CryptoIcon color={category === 'crypto' ? '#71BBED' : '#838899'} /></span>Crypto</a>
+                </li>
+                <li><a className={category === 'usd' ? '!text-[#71BBED]' : '!text-[rgb(131,136,153)]'} onClick={_ => changeCategory('usd')}>
+                  <span><UsdIcon color={category === 'usd' ? '#71BBED' : '#838899'}  /></span>USD</a>
+                </li>
+                <li><a className={category === 'stock' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('stock')}>
+                  <span><TrendUpIcon color={category === 'stock' ? '#71BBED' : '#838899'} /></span>Stock</a>
+                </li>
+                <li><a className={category === 'gold' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('gold')}>
+                  <span><GoldIcon color={category === 'gold' ? '#71BBED' : '#838899'} /></span>Gold</a>
+                </li>
+                <li><a className={category === 'euro' ? '!text-[#71BBED]' : '!text-[#838899]'} onClick={_ => changeCategory('euro')}>
+                  <span><EuroIcon color={category === 'euro' ? '#71BBED' : '#838899'} /></span>Euro</a>
+                </li>
               </ul>
             </div>
             <input placeholder='Asset name' />
@@ -33,11 +63,11 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
            <div className='col-aksi'></div>
           </div>
           <div className='list-table-body'>
-            {liverates.map((item, index) => (
+            {dataLiverates.map((item, index) => (
               <div className='row-list' key={index}>
                 <div className='col-left'>
                   <div className='col-nama'>
-                    <Image className='icon-liverate' src={item.icon_url} alt={item.label} width={46} height={46}/>
+                    <Image className='icon-liverate' src={item.icon_url} alt={item.label} width={0} height={0} sizes='100%'/>
                     <div className='col-nama-desc'>
                       <p>{item.label} <span>({item.currency})</span></p>
                       <span>{item.currency}</span>
