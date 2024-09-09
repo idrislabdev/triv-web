@@ -1,0 +1,148 @@
+@tailwind components;
+
+.market-header {
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[13px] px-[20px] z-10 text-white h-[54px] bg-black;
+    .triv-logo-header {
+        a {
+            svg {
+                @apply w-[69px] h-[21px];
+            }
+        }
+    }
+    .market-header-action {
+        @apply flex items-center gap-[20px];
+        a {
+            &.button-switch-theme {
+                svg {
+                    path {
+                        @apply fill-yellow-600;
+                    }
+                    circle {
+                        @apply fill-yellow-600;
+                    }
+                }
+            }
+        }
+        .burger-menu {
+            @apply hidden;
+        }
+        .market-header-action-list {
+            @apply flex gap-[20px] items-center;
+            ul {
+                @apply flex items-center;
+                li {
+                    @apply text-[14px]/[21px] font-medium relative cursor-pointer select-none;
+                    &:first-child {
+                        @apply pr-[15px];
+                    } 
+                    &:last-child {
+                        &::before {
+                            content: '';
+                            @apply border-l border-l-neutral-300 mx-[20px]
+                        }
+                    } 
+                    .btn-signup-header {
+                        @apply  bg-primary text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
+                    } 
+                    a {
+                        &.flag-button {
+                            @apply flex items-center gap-[4px];
+                        }
+                    }
+                    ul {
+                        &.list-flags {
+                            @apply absolute top-[27px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
+                            &.show {
+                                transform: translateX(0%);
+                            }
+                            li {
+                                &::before {
+                                    @apply !content-none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    @layer components {
+        &.mobile-responsive {
+            @apply px-[20px] py-[15px]  h-[60px];
+            .triv-logo-header {
+                a {
+                    svg {
+                        @apply !w-[71px] !h-[20.11px];
+                    }
+                }
+            }
+            .market-header-menu {
+                @apply hidden;
+            }
+            .market-header-action {
+                .burger-menu {
+                    @apply block;
+                }
+                .market-header-action-list {
+                   @apply hidden;
+                }
+            }
+        }
+    }
+}
+
+.market-sidebar-overlay {
+    @apply bg-black opacity-50 h-full w-full fixed z-10;
+}
+
+.market-sidebar-menu {
+    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[10] justify-between transition-all duration-500 ;
+    &.show {
+        @apply mr-[0px];
+    }
+    .sidebar-menu-top {
+        @apply flex flex-col gap-[46px];
+        .sidebar-header {
+            @apply flex justify-between items-center;
+            .sidebar-header-logo {
+                svg {
+                    @apply w-[71px] h-[20.11px];
+                }
+            }
+            .sidebar-header-action {
+                @apply flex gap-[8px] items-center;
+            }
+        }
+        .sidebar-list {
+            @apply overflow-y-auto;
+            ul {
+                @apply text-black flex flex-col gap-[30px];
+                li {
+                    @apply text-[14px]/[21px] font-medium;
+                    ul {
+                        &.sidebar-submenu {
+                            @apply p-[5px] gap-[0px] transition-all duration-500;
+                            li {
+                                @apply text-[12px]/[18px] font-normal;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-menu-bottom {
+        @apply flex justify-between gap-[20px];
+        a {
+            @apply w-1/2 flex justify-center items-center py-[8px] text-[12px]/[18px] font-medium rounded-[30px];
+            &.button-login{
+                @apply  bg-primary text-white;
+            }
+            &.button-register {
+                @apply  bg-white text-primary border border-primary;
+            }
+        }
+    }
+}

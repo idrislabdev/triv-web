@@ -29,3 +29,8 @@ export const getAsset = async (currency:string) => {
     const resp = await axiosInstance.get(`/v2/asset/${currency}`)
     return resp
 }
+
+export const getMarket = async () => {
+    const resp = await axiosInstance.get(`/v2/market`)
+    return resp
+}

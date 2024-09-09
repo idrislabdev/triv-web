@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.markets-page {
+    @apply py-0;
+    &.dark-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-slate-200;
+        }
+        p {
+            @apply text-slate-300;
+        }
+        a {
+            @apply text-[#737aff]
+        }
+    }
+    &.light-theme {
+        h1, h2, h3, h4, h5 {
+            @apply text-black;
+        }
+        p {
+            @apply text-neutral-700;
+        }
+    }
+
+    .marque-text-section {
+        @apply flex flex-col justify-start items-center pt-[70px] px-[20px];
+        .rfm-marquee-container  {
+            @apply flex justify-start overflow-hidden;
+            .rfm-marquee {
+                @apply flex;
+                .rfm-child {
+                    @apply flex;
+                    label {
+                        @apply text-[14px]/[14px] text-[#4B5060] font-medium flex cursor-pointer gap-[4px];
+                        span {
+                            @apply text-[#67C48F];
+                        }
+                        &:hover {
+                            @apply font-semibold;
+                            span {
+                                @apply font-medium;
+                            }
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        @apply border-l border-l-neutral-300 mx-[20px];
+                    }
+                }
+            }
+
+        }
+        @keyframes marquee {
+            from {transform: translateX(0)}
+            to {transform: translateX(-100%)}
+        }
+    }
+   
+    @layer components {
+        &.mobile-responsive {
+     
+        }
+    }
+
+
+    
+}
