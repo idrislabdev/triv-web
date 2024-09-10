@@ -52,6 +52,44 @@
 
         }
     }
+    .market-section {
+        @apply flex flex-col justify-center items-center py-[20px];
+        .market-container {
+            @apply flex w-full;
+            .main-subcontainer {
+                @apply flex flex-col;
+                .market-info {
+                    @apply flex items-center gap-[20px] border-b border-b-neutral-200 border-r border-r-neutral-200 px-[20px] pb-[15px];
+                    a {
+                        @apply text-[16px]/[24px] font-semibold text-neutral-800 flex items-center gap-[8px];
+                        img {
+                            @apply w-[40px] h-[40px];
+                        }
+                    }
+                    .market-info-detail {
+                        @apply flex  justify-center gap-[25px];
+                        &::before {
+                            content: '';
+                            @apply border-l border-l-neutral-300 mx-[20px];
+                        }
+                        .info-detail {
+                            @apply flex flex-col items-center justify-center;
+                            label {
+                                @apply text-[10px]/[15px] text-neutral-500;
+                            }
+                            span {
+                                @apply text-[14px]/[21px] text-neutral-800 font-semibold;
+
+                            }
+                        }
+                    }
+                }
+                .market-tv-wrapper {
+                    @apply border-r border-b border-r-neutral-200 border-b-neutral-200;
+                }
+            }
+        }
+    }
    
     @layer components {
         &.mobile-responsive {
