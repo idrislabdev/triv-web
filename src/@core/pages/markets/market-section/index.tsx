@@ -46,7 +46,7 @@ const MarketSection = (props: {markets:any}) => {
                         </div>
                     </div>
                     <div className='market-tv-wrapper'>
-                        <MarketsTvWrapper symbol={market.symbol} />
+                        <MarketsTvWrapper symbol={market.symbol.replace("_", "")} />
                     </div>
                 </div>
                 <div className='order-book-subcontainer'></div>
