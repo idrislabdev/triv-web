@@ -51,11 +51,12 @@
                     }
                     ul {
                         &.list-flags {
-                            @apply absolute top-[27px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
+                            @apply absolute top-[27px] ml-[41px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
                             &.show {
                                 transform: translateX(0%);
                             }
                             li {
+                                @apply  h-[20px];
                                 &::before {
                                     @apply !content-none;
                                 }

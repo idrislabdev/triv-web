@@ -32,7 +32,7 @@ export default async function  Home() {
   return (
     <>
       <MainHeader classText="" lang={'id'}/>
-      <main className='home-page sm:mobile-responsive light-theme'>
+      <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
         <HomeBannerSection lang='id' objLang={header_section}/>
         <HomeIndexCryptoSection liverates={liverates}/>
         <HomeAssetCryptoSection liverates={liverates}/>

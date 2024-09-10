@@ -1,7 +1,7 @@
 "use client"
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
 
 import {
@@ -19,19 +19,24 @@ const TvChart = dynamic(
 export default function MarketsTvWrapper(props: {symbol:string}) {
   const { symbol } = props;
   const [isScriptReady, setIsScriptReady] = useState(false);
+  const [defaultWidget, setDefaultWidget] = useState<Partial<ChartingLibraryWidgetOptions>>({})
 
-  const defaultWidgetProps: Partial<ChartingLibraryWidgetOptions> = {
-    symbol: symbol,
-    interval: "15" as ResolutionString,
-    library_path: "/static/charting_library/",
-    locale: "en",
-    charts_storage_url: "https://saveload.tradingview.com",
-    charts_storage_api_version: "1.1",
-    client_id: "tradingview.com",
-    user_id: "public_user_id",
-    fullscreen: false,
-    autosize: true,
-  };
+
+  useEffect(() => {
+    setDefaultWidget({
+      symbol: symbol,
+      interval: "15" as ResolutionString,
+      library_path: "/static/charting_library/",
+      locale: "en",
+      charts_storage_url: "https://saveload.tradingview.com",
+      charts_storage_api_version: "1.1",
+      client_id: "tradingview.com",
+      user_id: "public_user_id",
+      fullscreen: false,
+      autosize: true,
+    })
+  }, [symbol, setDefaultWidget])
+  
   return (
     <>
       <Script
@@ -41,7 +46,7 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
           setIsScriptReady(true);
         }}
       />
-      {isScriptReady &&  <TvChart {...defaultWidgetProps} /> }
+      {isScriptReady &&  <TvChart defaultWidget={defaultWidget} /> }
     </>
   );
 }

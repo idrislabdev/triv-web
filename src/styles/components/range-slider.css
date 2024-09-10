@@ -1,0 +1,24 @@
+.range-slider {
+    @apply flex flex-col w-full relative;
+    input {
+        @apply !p-0 h-[20px];
+    }
+    .step-info {
+        @apply flex items-center justify-between;
+        span {
+            @apply text-[10px]/[15px] text-neutral-500 w-[20%] text-center font-medium;
+            &:last-child {
+                @apply text-right;
+            }
+            &:first-child {
+                @apply text-left;
+            }
+        }
+    }
+    .step-dot {
+        @apply flex items-center justify-between;
+        span {
+            @apply w-[7px] h-[7px] rounded-[50%] bg-[#D9D9D9];
+        }
+    }
+}

@@ -62,7 +62,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     
     return (
         <>
-            <header className={`main-header sm:mobile-responsive ${classText}`}>
+            <header className={`main-header sm:mobile-responsive md:mobile-responsive ${classText}`}>
                 <div className='triv-logo-header'>
                     <Link href="/"><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
                 </div>
@@ -104,7 +104,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                             </ul>
                         </li>
                         <li><Link href={`/${lang}/staking`}>Staking</Link></li>
-                        <li>Market</li>
+                        <li><Link href={`/${lang}/markets`}>Market</Link></li>
                         <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
                         <li><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>
                         <li><Link href={`/${lang}/blog`}>Blog</Link></li>

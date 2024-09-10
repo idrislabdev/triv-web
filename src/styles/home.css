@@ -303,7 +303,7 @@
                 @apply flex-1 relative overflow-hidden;
                 .swiper {
                     .swiper-wrapper {
-                        @apply flex relative w-full gap-[36px];
+                        @apply flex relative w-full gap-[36px] justify-center;
                         .swiper-slide {
                             @apply !w-[300px];
                             .crypto-thumb-video {
@@ -447,9 +447,9 @@
                         }
                     }
                     .section-device {
-                        @apply flex w-full flex-col items-center;
+                        @apply flex w-full h-[270px] flex-col items-center;
                         img {
-                            @apply w-[100%] h-[100%];
+                            @apply w-[100%] h-[100%] object-contain;
                         }
                     }
                     &::after {
@@ -597,9 +597,9 @@
             
             }
             .home-dividen-staking-section {
-                @apply flex-col-reverse px-[30px] py-[20px];
+                @apply flex-col-reverse px-[30px] py-[20px] justify-center;
                 .dividen-staking-device {
-                    @apply w-full justify-center;
+                    @apply w-full justify-center items-center;
                     img {
                         @apply w-[302px] h-[242px];
                     }

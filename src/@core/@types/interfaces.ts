@@ -65,3 +65,18 @@ export interface ICoin {
     symbol: string,
     currency: string,
 }
+
+export interface IBookOrder {
+    price: number,
+    qty: number,
+    total:number,
+    progress: number,
+}
+
+export interface ITrade {
+    id:number,
+    price: number,
+    quantity: number,
+    timestamp: number,
+}
+

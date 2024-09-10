@@ -32,7 +32,7 @@
                 .rfm-child {
                     @apply flex;
                     label {
-                        @apply text-[14px]/[14px] text-[#4B5060] font-medium flex cursor-pointer gap-[4px];
+                        @apply text-[14px]/[14px] text-[#4B5060] font-medium flex cursor-pointer;
                         span {
                             @apply text-[#67C48F];
                         }
@@ -53,39 +53,200 @@
         }
     }
     .market-section {
-        @apply flex flex-col justify-center items-center py-[20px];
+        @apply flex justify-center items-start  border-b border-b-neutral-200 border-t border-t-neutral-200;
         .market-container {
-            @apply flex w-full;
-            .main-subcontainer {
-                @apply flex flex-col;
-                .market-info {
-                    @apply flex items-center gap-[20px] border-b border-b-neutral-200 border-r border-r-neutral-200 px-[20px] pb-[15px];
-                    a {
-                        @apply text-[16px]/[24px] font-semibold text-neutral-800 flex items-center gap-[8px];
-                        img {
-                            @apply w-[40px] h-[40px];
+            @apply flex flex-col border-r border-r-neutral-200 flex-1;
+            .market-info {
+                @apply flex items-center gap-[10px] px-[20px];
+                a {
+                    @apply text-[16px]/[24px] font-semibold text-neutral-800 flex items-center gap-[4px] py-[15px];
+                    img {
+                        @apply w-[40px] h-[40px];
+                    }
+                }
+                .market-info-detail {
+                    @apply flex  justify-center gap-[15px];
+                    &::before {
+                        content: '';
+                        @apply border-l border-l-neutral-200 mx-[0px];
+                    }
+                    .info-detail {
+                        @apply flex flex-col items-center justify-center text-center py-[15px];
+                        label {
+                            @apply text-[10px]/[15px] text-neutral-500;
+                        }
+                        span {
+                            @apply text-[14px]/[21px] text-neutral-800 font-semibold;
+
                         }
                     }
-                    .market-info-detail {
-                        @apply flex  justify-center gap-[25px];
-                        &::before {
-                            content: '';
-                            @apply border-l border-l-neutral-300 mx-[20px];
+                }
+            }
+            .market-tv-wrapper {
+                @apply px-[20px] border-t border-t-neutral-200;
+            }
+        }
+        .order-book-container {
+            @apply flex flex-col w-[300px] border-r border-r-neutral-200;
+            .subcontainer-title {
+                @apply flex px-[20px] items-center py-[10px];
+                h5 {
+                    @apply text-[14px]/[21px] text-neutral-800 font-bold;
+                }
+            }
+            .order-book-table {
+                @apply flex flex-col gap-[8px] pb-[10px];
+                .table-header {
+                    @apply flex flex-col w-full;
+                    .header-row {
+                        @apply flex justify-between items-center;
+                        label {
+                            @apply w-1/3 text-[10px]/[15px] font-medium text-neutral-500 text-center;
                         }
-                        .info-detail {
-                            @apply flex flex-col items-center justify-center;
-                            label {
-                                @apply text-[10px]/[15px] text-neutral-500;
-                            }
-                            span {
-                                @apply text-[14px]/[21px] text-neutral-800 font-semibold;
+                    }
+                }
+                .table-body {
+                    @apply flex flex-col w-full gap-[3px] h-[150px] overflow-y-auto;
+                    .body-row {
+                        @apply flex justify-between items-center relative h-[20px];
+                        label {
+                            @apply w-1/3 text-[10px]/[15px] font-medium text-neutral-700 text-center z-[10];
+                        }
+                        span {
+                            @apply absolute h-full z-0 bg-[#FAD5D5] right-0;
 
+                        }
+                    }
+                }
+            }
+        }
+        .form-container {
+            @apply flex flex-col w-[300px] px-[20px] pt-[10px] gap-[18px];
+            .button-group {
+                @apply flex items-center relative;
+                button {
+                    @apply h-[34px] text-[10px]/[15px] font-semibold text-[#4B5060] w-1/2 bg-[#F5F7FA];
+                    &.active {
+                        @apply bg-primary text-white;
+                    }
+                }
+                &::after {
+                    content: '';
+                    @apply absolute left-[calc(50%-12px)] z-[1] h-full w-5 bg-primary skew-x-[-25deg];
+                }
+            }
+            .tab-form { 
+                ul {
+                    @apply flex items-center border-b border-b-neutral-200;
+                    li {
+                        @apply text-[14px]/[21px] text-neutral-500 font-semibold ;
+                        &:not(:last-child) {
+                            a {
+                                @apply mr-[18px];
+                            }
+                        }
+                        a {
+                            @apply block cursor-pointer pb-[10px];
+                           
+                        }
+                        &.active {
+                           a {
+                                @apply text-neutral-800 border-b border-b-neutral-600;
+                           }
+                        }
+                    }
+                }
+            }
+            .input-form {
+                @apply flex flex-col gap-[20px];
+                .form-group {
+                    @apply flex flex-col gap-[6px];
+                    label {
+                        @apply text-[12px]/[18px] text-neutral-500 font-medium;
+                    }
+                    .group-input {
+                        &.prepend {
+                            span {
+                                &.prepend {
+                                    @apply border-l border-l-neutral-400 pl-[10px] text-neutral-800 font-semibold;
+                                }
+                            }
+                            input {
+                                @apply bg-[#F5F7FA] text-neutral-800 !pr-[50px];
+                                &::placeholder {
+                                    @apply text-neutral-800;
+                                }
                             }
                         }
                     }
                 }
-                .market-tv-wrapper {
-                    @apply border-r border-b border-r-neutral-200 border-b-neutral-200;
+                a {
+                    @apply h-[40px] text-[14px]/[21px] rounded-[8px] font-semibold text-white w-full bg-primary flex flex-col justify-center items-center;
+                    
+                }
+            }
+            .info-market {
+                @apply flex flex-col gap-[10px];
+                .info-detail {
+                    @apply flex items-center text-[12px]/[18px] font-medium text-neutral-700 justify-between;
+                    label {
+                        @apply text-left;
+                    }
+                    span {
+                        @apply text-right;
+                    }
+                }
+            }
+        }
+    }
+    .market-table-section {
+        @apply flex flex-col justify-center pt-[10px];
+        .tab-table { 
+            ul {
+                @apply flex items-center border-b border-b-neutral-200 px-[20px];
+                li {
+                    @apply text-[14px]/[21px] text-neutral-500 font-semibold ;
+                    &:not(:last-child) {
+                        a {
+                            @apply mr-[18px];
+                        }
+                    }
+                    a {
+                        @apply block cursor-pointer pb-[10px];
+                       
+                    }
+                    &.active {
+                       a {
+                            @apply text-neutral-800 border-b border-b-neutral-600;
+                       }
+                    }
+                }
+            }
+        }
+        .main-table {
+            table {
+                @apply table-auto w-full text-[14px]/[21px] text-neutral-600 font-semibold;
+                thead {
+                    tr {
+                        @apply bg-[#F5F7FA] h-[60px];
+                        td {
+                            @apply px-[20px];
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        &.empty-state {
+                            @apply h-[120px] text-center;
+                            td {
+                                span {
+                                    a {
+                                        @apply text-primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
