@@ -11,6 +11,7 @@ const MarketFormContainer = (props: {
     }) => {
     const { lang, tabLimit, setTabLimit, tabInfo, setTabInfo } = props
     const [range, setRange] = useState(0)
+    const [buttonType, setButtonType] = useState('buy');
     const changeTablimit = (val:string) => {
         setTabLimit(val)
     }
@@ -28,9 +29,9 @@ const MarketFormContainer = (props: {
 
     return (
         <div className='form-container'>
-            <div className='button-group'>
-                <button className='rounded-tl-[4px] rounded-bl-[4px] active'>Beli</button>
-                <button className='rounded-tr-[4px] rounded-br-[4px]'>Jual</button>
+            <div className={`button-group ${buttonType}`}>
+                <button className={`rounded-tl-[4px] rounded-bl-[4px] ${buttonType === "buy" ? 'active' : ''}`} onClick={_ => setButtonType('buy')}>Beli</button>
+                <button className={`rounded-tr-[4px] rounded-br-[4px] ${buttonType === "sell" ? 'active' : ''}`} onClick={_ => setButtonType('sell')}>Jual</button>
             </div>
             <div className='tab-form'>
                 <ul>
@@ -40,21 +41,68 @@ const MarketFormContainer = (props: {
                 </ul>
             </div>
             <div className='input-form'>
-                <div className='form-group'>
-                    <label>Price</label>
-                    <div className='group-input prepend'>
-                        <input className='color-2' placeholder='0'/>
-                        <span className='prepend'>IDR</span>
-                    </div>
-                </div>
-                <div className='form-group'>
-                    <label>Amount</label>
-                    <div className='group-input prepend'>
-                        <input className='color-2' placeholder='0'/>
-                        <span className='prepend'>IDR</span>
-                    </div>
-                </div>
-                <div className='range-slider'>
+                {tabLimit === 'limits' &&
+                    <>
+                        <div className='form-group'>
+                            <label>Price</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                        <div className='form-group'>
+                            <label>Amount</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                    </>
+                }
+                {tabLimit === 'instant' &&
+                     <>
+                        <div className='form-group'>
+                            <label>Price</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                        <div className='form-group'>
+                            <label>Total</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                    </>
+                }
+                 {tabLimit === 'stop_limit' &&
+                     <>
+                        <div className='form-group'>
+                            <label>Stop</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                        <div className='form-group'>
+                            <label>Limit</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                        <div className='form-group'>
+                            <label>Amount</label>
+                            <div className='group-input prepend'>
+                                <input className='color-2' placeholder='0'/>
+                                <span className='prepend'>IDR</span>
+                            </div>
+                        </div>
+                    </>
+                }
+                <div className='px-[10px] mb-[10px]'>
                     <Slider
                         min={0}
                         marks={marks}
@@ -63,13 +111,15 @@ const MarketFormContainer = (props: {
                         defaultValue={range}
                     />
                 </div>
-                <div className='form-group'>
-                    <label>Total</label>
-                    <div className='group-input prepend'>
-                        <input className='color-2' placeholder='0'/>
-                        <span className='prepend'>IDR</span>
+                {tabLimit !== 'instant' &&
+                    <div className='form-group'>
+                        <label>Total</label>
+                        <div className='group-input prepend'>
+                            <input className='color-2' placeholder='0'/>
+                            <span className='prepend'>IDR</span>
+                        </div>
                     </div>
-                </div>
+                }
                 <Link href={`/${lang}/login`}>Login Untuk Trading </Link>
             </div>
             <div className='tab-form'>

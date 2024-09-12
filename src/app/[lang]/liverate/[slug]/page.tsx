@@ -38,7 +38,7 @@ export default async function  LiverateCoin({ params }: any) {
     return (
     <>
         <MainHeader classText="header-white" lang={params.lang}/>
-          <main className='liverate-page sm:mobile-responsive light-theme'>
+          <main className='liverate-page sm:mobile-responsive md:mobile-responsive light-theme'>
             <LiverateCoinSection 
               lang={params.lang} 
               objLang={null} blogs={blogs} 

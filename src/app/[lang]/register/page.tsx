@@ -25,7 +25,7 @@ export default async function RegisterPage({ params }: any) {
         register_text,
     } = await getDictionaryRegister(params.lang);
   return (
-    <main className='register-page sm:mobile-responsive light-theme'>
+    <main className='register-page sm:mobile-responsive md:mobile-responsive light-theme'>
       <div className='register-container'>
         <div className='left-subcontainer'>
           <div className='logo-subcontainer'>

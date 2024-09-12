@@ -10,7 +10,7 @@ export default async function Faqs({ params }: any) {
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='faqs-page sm:mobile-responsive light-theme'>
+                <main className='faqs-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <FaqsSearchSection objLang={null} />
                     <FaqsTopicSection lang={params.lang} objLang={null} />
                     <FaqsPopularSection objLang={null} />

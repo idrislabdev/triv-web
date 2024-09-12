@@ -22,7 +22,7 @@ export default async function ProductsTokenListrik({ params }: any) {
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='products-page sm:mobile-responsive light-theme'>
+                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ProductHeaderSection objLang={header_section}/>
                     <ProductsTokenListrikSection objLang={topup_section} />
                     <ProductsAffliateSection objLang={triv_affliate} />

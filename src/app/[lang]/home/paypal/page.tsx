@@ -28,7 +28,7 @@ export default async function ServicePaypal({ params }: any) {
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='products-page sm:mobile-responsive light-theme'>
+                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ProductsServiceHeaderSection objLang={header_section} />
                     <ProductsRegulasiDeviceSection objLang={regulasi_section} />
                     <ProductsLayananSection objLang={layanan_section} />

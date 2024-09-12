@@ -34,7 +34,7 @@ export default async function  Staking({ params }: any) {
   return (
     <>
       <MainHeader classText="header-white" lang={params.lang}/>
-      <main className='staking-page sm:mobile-responsive light-theme'>
+      <main className='staking-page sm:mobile-responsive md:mobile-responsive light-theme'>
         <StakingHeaderSection objLang={header_section}/>
         <StakingBenefitSection objLang={benefit_section} />
         <StakingGuideCryptoSection objLang={guide_crypto_section}/>

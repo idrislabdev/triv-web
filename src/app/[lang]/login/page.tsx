@@ -18,7 +18,7 @@ export default async function LoginPage({ params }: any) {
   } = await getDictionaryLogin(params.lang);
 
   return (
-    <main className='login-page sm:mobile-responsive light-theme'>
+    <main className='login-page sm:mobile-responsive md:mobile-responsive light-theme'>
       <div className='login-container'>
         <div className='left-subcontainer'>
           <div className='logo-subcontainer'>

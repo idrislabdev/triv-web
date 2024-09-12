@@ -26,7 +26,7 @@ export default async function Stocks({ params }: any) {
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='stocks-page sm:mobile-responsive light-theme'>
+                <main className='stocks-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <StockRegisterSection lang={params.lang} objLang={register_section} />
                     <StocksDeviceSection />
                     <StocksWhySection objLang={why_section}/>

@@ -6,15 +6,15 @@ import MarketMainContainer from './main-container'
 import MarketOrderBookContainer from './order-book-container'
 
 
-const MarketSection = (props: {markets:any, lang:string}) => {
-    const { markets, lang } = props
-    const [market, setMarket] = useState(markets[0]);
+const MarketSection = (props: {markets:any, objMarket:any, lang:string}) => {
+    const { markets, objMarket, lang } = props
+    const [market, setMarket] = useState(objMarket);
     const [tabLimit, setTabLimit] = useState('limits');
     const [tabinfo, setTabInfo] = useState('limit');
 
     return (
         <section className='market-section'>
-            <MarketMainContainer market={market} setMarket={setMarket} />
+            <MarketMainContainer markets={markets} market={market} setMarket={setMarket} />
             <MarketOrderBookContainer  market={market} setMarket={setMarket} />
             <MarketFormContainer lang={lang} tabLimit={tabLimit} setTabLimit={setTabLimit} tabInfo={tabinfo} setTabInfo={setTabInfo}/>
         </section>

@@ -15,7 +15,7 @@ export default async function  ContactUs({ params }: any) {
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='contact-us-page sm:mobile-responsive light-theme'>
+                <main className='contact-us-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ContactUsHeaderSection objLang={header_section} />
                     <ContactUsInfoSection objLang={info_section} />
                     <ContactUsFaqSection objLang={faq_section} />

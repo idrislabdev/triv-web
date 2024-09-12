@@ -22,7 +22,7 @@ export default async function Affliate({ params }: any) {
     return (
         <>
             <MainHeader classText={""} lang={params.lang}/>
-                <main className='affliate-page sm:mobile-responsive light-theme'>
+                <main className='affliate-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <AffliateHeroSection objLang={hero_section}/>
                     <AffliateComissionsection objLang={comission_section} />
                     <AffliateDownlineSection objLang={downline_section} />

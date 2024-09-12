@@ -11,7 +11,7 @@ const Footer = () => {
     const [listCompany, setListCompany] = useState("0")
 
     return (
-        <footer className='footer sm:mobile-responsive'>
+        <footer className='footer sm:mobile-responsive md:mobile-responsive'>
             <div className='footer-primary'>
                 <div className='footer-primary-left'>
                     <div className='container-menu'>

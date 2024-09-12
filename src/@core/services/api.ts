@@ -30,7 +30,12 @@ export const getAsset = async (currency:string) => {
     return resp
 }
 
-export const getMarket = async () => {
+export const getMarkets = async () => {
     const resp = await axiosInstance.get(`/v2/market`)
+    return resp
+}
+
+export const getMarket = async (symbol:string) => {
+    const resp = await axiosInstance.get(`/v2/market?symbol=${symbol}`)
     return resp
 }

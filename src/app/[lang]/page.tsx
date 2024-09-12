@@ -33,7 +33,7 @@ export default async function  HomeLang({ params }: any) {
   return (
     <>
       <MainHeader classText="" lang={params.lang}/>
-      <main className='home-page sm:mobile-responsive light-theme'>
+      <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
         <HomeBannerSection lang={params.lang} objLang={header_section}/>
         <HomeIndexCryptoSection liverates={liverates}/>
         <HomeAssetCryptoSection liverates={liverates}/>

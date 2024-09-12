@@ -27,7 +27,7 @@ export default async function ServiceStellarPage({ params }: any) {
     return (
         <>
             <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='products-page sm:mobile-responsive light-theme'>
+                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ProductsServiceHeaderSection objLang={header_section} />
                     <ProductsDeviceSection />
                     <ProductsRegulasiSection objLang={regulasi_section} />

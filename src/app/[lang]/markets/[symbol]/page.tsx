@@ -1,6 +1,6 @@
 import MarketHeader from '@/@core/components/market-header'
 import React from 'react'
-import { getMarket, getMarkets } from '@/@core/services/api'
+import { getMarkets,getMarket } from '@/@core/services/api'
 import MarqueTextSection from '@/@core/pages/markets/marque-text-section';
 
 import '@/styles/markets.css'
@@ -8,7 +8,7 @@ import MarketSection from '@/@core/pages/markets/market-section';
 import MarketTableSection from '@/@core/pages/markets/table-section';
 export default async function MarketsPage({ params }: any) {
     const respMarkets =  await getMarkets();
-    const respMarket =  await getMarket('BTC_IDR');
+    const respMarket =  await getMarket(params.symbol);
     const markets:any = respMarkets.data.data
     const market:any = respMarket.data.data
     return (
