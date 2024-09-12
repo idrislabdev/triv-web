@@ -32,7 +32,7 @@ const MarketHeader = (props: { lang: string}) => {
 
     return (
         <>
-            <header className={`market-header sm:mobile-responsive md:mobile-responsive`}>
+            <header className={`market-header sm:mobile-responsive`}>
                 <div className='triv-logo-header'>
                     <Link href="/"><TrivIcon color={'#318AC6'} /></Link>
                 </div>
