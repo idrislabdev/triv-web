@@ -23,6 +23,17 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
         document.body.classList.remove('overflow-hidden')
     }
 
+    const switchTheme = () => {
+        var check = document.body.classList.contains('dark-theme')
+        console.log(check)
+        if (check) {
+            document.body.classList.remove("dark-theme");
+        } else {
+            document.body.classList.add("dark-theme");
+        }
+
+    }
+
 
     return (
         <>
@@ -34,7 +45,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                             <Link href="/"><TrivIcon color={'#318AC6'} /></Link>
                         </div>
                         <div className='sidebar-header-action'>
-                            <a><MoonIcon color={'#F2AF22'} /></a>
+                            <a onClick={_ => switchTheme()}><MoonIcon color={'#F2AF22'} /></a>
                             <a onClick={_ => closeSidebar()}><TimesIcon color={'#838899'} /></a>
                         </div>
                     </div>
