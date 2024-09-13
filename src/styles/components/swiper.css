@@ -22,7 +22,7 @@
                         .testimony-thumb {
                             @apply w-[250px];
                             img {
-                                @apply w-[250px] h-[215px] select-none;
+                                @apply w-full h-full rounded-[20px] select-none;
                             }
                         }
                         .testimony-content {
@@ -47,7 +47,7 @@
                     .testimony-thumb {
                         @apply w-[170px];
                         img {
-                            @apply w-[170px] h-[160px];
+                            @apply w-full h-full rounded-[20px];
                         }
                     }
                     .testimony-content {
@@ -163,7 +163,7 @@
                                 .testimony-thumb {
                                     @apply w-[116.76px];
                                     img {
-                                        @apply w-[116.76px] h-[100.41px] select-none;
+                                        @apply w-full h-full rounded-[10px] select-none;
                                     }
                                 }
                                 .testimony-content {
@@ -188,7 +188,7 @@
                             .testimony-thumb {
                                 @apply w-[79px];
                                 img {
-                                    @apply w-[79px] h-[74px];
+                                    @apply w-full h-full rounded-[10px] select-none;
                                 }
                             }
                             .testimony-content {

@@ -1,7 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.dark-theme {
+    @apply bg-[#141414];
+    h1, h2, h3, h4, h5, h6 {
+      @apply !text-slate-200;
+    }
+    p,label,span {
+        @apply !text-slate-300;
+    }
+    .staking-page {
+        .staking-benefit-section {
+            button {
+                @apply !bg-[#3A80AF] !text-white;
+            }
+            .media-container{
+                .description-media {
+                    @apply !bg-[#13171a] ;
+                }
+            }
+        }
+        .staking-calculator-section {
+            .card-staking-calculator {
+                @apply bg-[#1b1f22];
+                
+            }
+        }
+        .staking-faq-section {
+            .question-faq-staking {
+                .question-faq-accordion {
+                    ul {
+                        li {
+                            button {
+                                .header-button {
+                                    svg {
+                                        path {
+                                            @apply stroke-slate-300;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .staking-start-now-section {
+            a {
+                @apply !bg-[#3A80AF] !text-white;
 
+            }
+        }
+    }
+}
 .staking-page {
     &.dark-theme {
         h1, h2, h3, h4, h5 {
@@ -42,7 +93,7 @@
                 }
             }
             .description-media {
-                @apply flex flex-col gap-[11px] bg-white rounded-[22px] p-[22px];
+                @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
                 box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
                 h5 {
                     @apply text-[17.68px]/[26.51px] font-bold;

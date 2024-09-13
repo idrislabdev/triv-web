@@ -1,5 +1,40 @@
 @tailwind components;
+.dark-theme {
+    @apply bg-[#141414];
+    h1, h2, h3, h4, h5, h6 {
+      @apply !text-slate-200;
+    }
+    p,label,span {
+        @apply !text-slate-300;
+    }
+    .products-page {
+        .products-service-header-section {
+            button {
+                @apply !bg-[#3A80AF] !text-white;
+                &.white {
+                    @apply !bg-white !text-[#3A80AF];
 
+                }
+            }
+        }
+        .products-average-section{
+            .box-container {
+                @apply bg-[#1b1f22];
+
+            }
+        }
+        .products-affliate-section {
+            button {
+                @apply !bg-[#3A80AF] !text-white;
+            }
+        }
+        .products-investasi-now-section {
+            a {
+                @apply !bg-[#3A80AF] !text-white;
+            }
+        }
+    }
+}
 .products-page {
     &.dark-theme {
         h1, h2, h3, h4, h5 {

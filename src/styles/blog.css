@@ -1,5 +1,46 @@
 @tailwind components;
+.dark-theme {
+    @apply bg-[#141414];
+    h1, h2, h3, h4, h5, h6 {
+      @apply !text-slate-200;
+    }
+    p,label {
+        @apply !text-slate-300;
+    }
+    .blog-page {
+        .blog-news-section {
+            .blog-side-container {
+                .blog-subscribe {
+                    .submit-subscribe {
+                        button {
+                            @apply !bg-[#3A80AF] !text-white;
+                        }
+                    }
 
+                }
+                .blog-categories{
+                    ul {
+                        a {
+                            @apply text-slate-300;
+                        }
+                    }
+                }
+            }
+        }
+        .blog-baru-crypto-section {
+            a {
+                @apply !bg-[#3A80AF] !text-white;
+            }
+            .blog-baru-crypto-container{
+                @apply !bg-[#1b1f22];
+                .crypto-thumb-video{
+                    @apply !bg-[#13171a] ;
+                }
+            }
+        }
+    }
+
+}
 .blog-page {
     &.dark-theme {
         h1, h2, h3, h4, h5 {

@@ -14,6 +14,17 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     const pathname = usePathname()
     const router = useRouter();
 
+    const switchTheme = () => {
+        var check = document.body.classList.contains('dark-theme')
+        console.log(check)
+        if (check) {
+            document.body.classList.remove("dark-theme");
+        } else {
+            document.body.classList.add("dark-theme");
+        }
+
+    }
+
     const onScroll = useCallback(() => {
         const { scrollY } = window;
         if (classText === '') {
@@ -114,7 +125,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 <div className='main-header-action'>
                     <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={classText === '' ? '#fff': '#000'} /></a>
                     <div className='main-header-action-list'>
-                        <a className='button-switch-theme'><MoonIcon color='#fff' /></a>
+                        <a className='button-switch-theme' onClick={_ => switchTheme()}><MoonIcon color='#fff' /></a>
                         <ul>
                             <li>
                                 <a className='flag-button' onClick={_ => setShowFlags(!showFlags)}>

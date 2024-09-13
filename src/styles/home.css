@@ -1,27 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.dark-theme {
+    @apply bg-[#141414];
+    h1, h2, h3, h4, h5, h6 {
+      @apply !text-slate-200;
+    }
+    p,label {
+        @apply !text-slate-300;
+    }
+    .home-page {
+        a {
+            @apply !bg-[#3A80AF] !text-white;
+        }
+        .home-banner-section {
+            background: linear-gradient(to bottom, transparent,#000) #141414;
+
+        }
+        .home-assets-crypto-section{
+            a {
+                @apply !bg-transparent !text-primary;
+            }
+        }
+        .home-investasi-section {
+            .investasi-section-box {
+                @apply bg-[#1b1f22]; 
+            }
+        }
+        .home-baru-crypto-section {
+            .home-baru-crypto-container{
+                @apply bg-[#1b1f22];
+                .crypto-thumb-video{
+                    @apply !bg-[#13171a] ;
+                }
+            }
+        }
+    }
+}
 .home-page {
     @apply pt-0;
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
+
+    h1, h2, h3, h4, h5 {
+        @apply text-black;
     }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
+    p {
+        @apply text-neutral-700;
     }
+
     .home-banner-section {
         @apply  h-[750px] pt-[150px] relative;
         background: linear-gradient(to bottom, transparent,#76DAC7) #5E9CB2;

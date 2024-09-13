@@ -1,5 +1,46 @@
 @tailwind components;
 
+.dark-theme {
+    .main-header {
+        &.header-white {
+            @apply !bg-[#1f1f1f] !text-slate-300;
+            .main-header-menu {
+                ul {
+                    li {
+                        &.has-sub {
+                            a {
+                                svg {
+                                    path {
+                                        @apply stroke-slate-300;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-header-action {
+                .main-header-action-list {
+                    ul {
+                        li {
+                            a {
+                                &.flag-button {
+                                    svg {
+                                        @apply stroke-slate-300;
+                                    }
+                                }
+                            }
+                            .btn-signup-header {
+                                @apply !bg-[#3A80AF] !text-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .main-header {
     @apply flex fixed top-0 inset-x-0 items-center justify-between py-[20px] px-[100px] z-10 text-white h-[70px];
 
@@ -11,6 +52,7 @@
         .main-header-action {
             a {
                 &.button-switch-theme {
+                    cursor: pointer;
                     svg {
                         path {
                             @apply fill-yellow-600;
