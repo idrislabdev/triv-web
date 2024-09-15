@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
-import { BurgerIcon, ChevronIconDown, MoonIcon, TrivIcon } from '../custom-icons';
+import { BurgerIcon, ChevronIconDown, MoonIcon, SunIcon, TrivIcon } from '../custom-icons';
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
@@ -13,10 +13,26 @@ const MarketHeader = (props: { lang: string}) => {
     const [active, setActive] = useState(false);
     const [showFlags, setShowFlags] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false);
+    const [mode, setMode] = useState('light-theme');
     const pathname = usePathname()
     const router = useRouter();
 
+    const switchTheme = () => {
+        var check = document.body.classList.contains('dark-theme')
+        if (check) {
+            // document.body.classList.remove("dark-theme");
+            localStorage.removeItem('mode');
+            // setMode('light-theme')
 
+        } else {
+            // document.body.classList.add("dark-theme");
+            localStorage.setItem('mode', 'dark-theme');
+            // setMode('dark-theme')
+        }
+        // let paths = pathname.split("/")
+        // router.refresh();
+        window.location.reload();
+    }
 
     const showMobileSidebar = () => {
         setShowSidebar(true)
@@ -27,8 +43,14 @@ const MarketHeader = (props: { lang: string}) => {
         let paths = pathname.split("/")
         paths[1] = langText
         router.push(paths.join("/"))
-
     }
+
+    // useEffect(() => {
+    //     if (localStorage.getItem('mode') === 'dark-theme') {
+    //         document.body.classList.add("dark-theme");
+    //         setMode('dark-theme')
+    //     }
+    // }, [setMode])
 
     return (
         <>
@@ -61,7 +83,10 @@ const MarketHeader = (props: { lang: string}) => {
                                 </ul>
                             </li>
                         </ul>
-                        <a className='button-switch-theme'><MoonIcon color='#fff' /></a>
+                        <a className='button-switch-theme' onClick={_ => switchTheme()}>
+                            {mode === 'light-theme' && <MoonIcon color='#fff' /> }
+                            {mode === 'dark-theme' && <SunIcon color='#fff' /> }
+                        </a>
 
                     </div>
                 </div>

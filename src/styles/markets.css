@@ -1,27 +1,225 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.dark-theme {
+    @apply bg-[#000000];
+    h1, h2, h3, h4, h5, h6 {
+      @apply !text-slate-200;
+    }
+    p,label {
+        @apply !text-slate-300;
+    }
+    .markets-page {
+        .market-section {
+            @apply !border-b-[#2E3339] !border-t-[#2E3339];
+            .market-container {
+                @apply border-r-[#2E3339];
+                .market-info {
+                    a {
+                        @apply text-white;
+                        svg {
+                            path {
+                                @apply stroke-white;
+                            }
+                        }
+                    }
+                    .market-info-detail {
+                        span {
+                            @apply !text-white;
+                        }
+                        &::before {
+                            @apply border-l-[#2E3339];
+                        }
+                    }
+                    .dropdown-market {
+                        @apply bg-[#000] border border-neutral-800;
+                        .header-area {
+                            @apply p-[20px];
+                            .group-input {
+                                span {
+                                    &.append {
+                                        @apply !top-[12px];
+                                    }
+                                }
+                                input {
+                                    @apply !bg-[#101214] text-white !border-[#101214];
+                                    &::placeholder {
+                                        @apply text-white;
+                                    }
+                                }
+                            }
+                        }
+                        .body-area {
+                            @apply flex flex-col gap-[10px] flex-1;
+                            .table-header {
+                                @apply flex flex-col;
+                                .table-header-row {
+                                    @apply flex flex-col;
+                                   .wrapper-row {
+                                        @apply flex items-center justify-between px-[20px];
+                                        label {
+                                            @apply text-[14px]/[21px] text-neutral-600 font-medium w-[25%] select-none;
+                                        }
+                                   }
+                                }
+                            }
+                            .table-body {
+                                @apply overflow-auto h-[370px];
+                                .table-body-row {
+                                    @apply flex flex-col h-[40px] justify-center w-full cursor-pointer;
+                                    &:hover {
+                                        @apply bg-neutral-200;
+                                    }
+                                   .wrapper-row {
+                                        @apply flex items-center justify-between px-[20px] w-full h-full;
+                                        label {
+                                            @apply text-[14px]/[21px] text-neutral-700 font-medium w-[25%] cursor-pointer select-none;
+                                        }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                }
+                .market-tv-wrapper {
+                    @apply border-t-[#2E3339];
+                }
+            }
+            .order-book-container {
+                @apply  border-r-neutral-800;
+                .order-book-table {
+                    @apply flex flex-col gap-[8px] pb-[10px];
+                    /* .table-header {
+                        .header-row {
+                            label {
+                            }
+                        }
+                    } */
+                    .table-body {
+                        .body-row {
+                            label {
+                                @apply text-white
+                            }
+                            span {
+                                @apply bg-[#300E0E];
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .form-container {
+                .button-group {
+                    button {
+                        @apply bg-[#101214];
+                        &.active {
+                            @apply bg-[#3A80AF] text-white;
+                        }
+                    }
+                    &.buy {
+                        &::after {
+                            content: '';
+                            @apply bg-[#3A80AF];
+                        }
+                    }
+                    &.sell {
+                        &::after {
+                            content: '';
+                            @apply bg-[#3A80AF];
+                        }
+                    }
+                }
+                .tab-form { 
+                    ul {
+                        @apply border-b-neutral-800;
+                        li {
+                            @apply text-neutral-200 ;
+
+                            &.active {
+                               a {
+                                    @apply text-neutral-100 border-b-neutral-100;
+                               }
+                            }
+                        }
+                    }
+                }
+                .input-form {
+                    @apply flex flex-col gap-[15px];
+                    .form-group {
+                        @apply flex flex-col gap-[6px];
+                        label {
+                            @apply text-[12px]/[18px] text-neutral-500 font-medium;
+                        }
+                        .group-input {
+                            &.prepend {
+                                span {
+                                    &.prepend {
+                                        @apply  border-l-neutral-400 text-white;
+                                    }
+                                }
+                                input {
+                                    @apply bg-[#101214] text-white !border-[#101214];
+                                    &::placeholder {
+                                        @apply text-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        @apply bg-[#3A80AF];
+                        
+                    }
+                }
+                .info-market {
+                    @apply flex flex-col gap-[10px];
+                    .info-detail {
+                        @apply flex items-center text-[12px]/[18px] font-medium text-neutral-700 justify-between;
+                        label {
+                            @apply text-left;
+                        }
+                        span {
+                            @apply text-right;
+                        }
+                    }
+                }
+                .rc-slider {
+                    .rc-slider-step {
+                        @apply bg-[#101214];
+                    }
+                }
+            }
+        }
+        .market-table-section {
+            .tab-table {
+                ul {
+                    @apply border-b-neutral-800;
+                    li {
+                        @apply text-neutral-200;
+                        &.active {
+                           a {
+                                @apply text-neutral-100 border-b-neutral-100;
+                           }
+                        }
+                    }
+                }
+            }
+            .main-table {
+                table {
+                    @apply  text-neutral-400;
+                    thead {
+                        tr {
+                            @apply bg-[#101214];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
 .markets-page {
     @apply pb-[0px] pt-[50px];
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
 
     .marque-text-section {
         @apply flex flex-col justify-start items-center pt-[10px] pb-[10px] px-[20px];
@@ -133,7 +331,7 @@
                 }
             }
             .market-tv-wrapper {
-                @apply px-[20px] border-t border-t-neutral-200;
+                @apply border-t border-t-neutral-200;
             }
         }
         .order-book-container {
@@ -315,7 +513,5 @@
      
         }
     }
-
-
-    
 }
+

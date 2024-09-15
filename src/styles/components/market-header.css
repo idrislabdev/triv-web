@@ -13,6 +13,7 @@
         @apply flex items-center gap-[20px];
         a {
             &.button-switch-theme {
+                @apply cursor-pointer;
                 svg {
                     path {
                         @apply fill-yellow-600;

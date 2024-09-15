@@ -27,6 +27,9 @@
     .stocks-calculator-section {
         button {
             @apply !bg-[#3A80AF] !text-white;
+        }
+        .card-stocks-calculator {
+            @apply bg-[#1b1f22]; 
 
         }
     }
@@ -51,25 +54,6 @@
     }
 }
 .stocks-page {
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
     .stocks-register-section {
         @apply flex flex-col items-center px-[100px] py-[50px] relative;
         .box-container {
@@ -398,7 +382,7 @@
                 }
             }
             .stocks-regulated-insured-section {
-                @apply px-[30px] py-[20px] ;
+                @apply p-[20px] ;
                 .box-container {
                     @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] w-full;
                     h2 {

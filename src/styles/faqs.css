@@ -22,6 +22,15 @@
             }
         }
     }
+    .faqs-topic-section {
+        .topic-container {
+            .topic-subcontainer {
+                a {
+                    @apply !bg-[#3A80AF] !text-white;
+                }
+            }
+        }
+    }
 
 }
 .faqs-page {

@@ -632,7 +632,7 @@
                 }
             }
             .products-average-section  {
-                @apply px-[30px] py-[20px] ;
+                @apply p-[20px] ;
                 .box-container {
                     @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] w-full;
                     .sub-container {

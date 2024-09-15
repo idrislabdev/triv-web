@@ -8,7 +8,7 @@ export const TvChart = (props: {defaultWidget:Partial<ChartingLibraryWidgetOptio
 	const chartContainerRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
 
 	useEffect(() => {
-		const widgetOptions: ChartingLibraryWidgetOptions = {
+		let widgetOptions: ChartingLibraryWidgetOptions = {
 			symbol: defaultWidget.symbol,
 			// BEWARE: no trailing slash is expected in feed URL
 			datafeed: new (window as any).Datafeeds.UDFCompatibleDatafeed(
@@ -31,8 +31,17 @@ export const TvChart = (props: {defaultWidget:Partial<ChartingLibraryWidgetOptio
 			user_id: defaultWidget.user_id,
 			fullscreen: defaultWidget.fullscreen,
 			autosize: defaultWidget.autosize,
-			theme: 'light'
+			theme: defaultWidget.theme,
+			custom_css_url: defaultWidget.custom_css_url,
+			overrides: {},
 		};
+
+		if (defaultWidget.theme === 'dark') {
+			widgetOptions.overrides = {
+				"paneProperties.background": "#000000",
+				"paneProperties.backgroundType": "solid"
+			}
+		}
 
 		const tvWidget = new widget(widgetOptions);
 

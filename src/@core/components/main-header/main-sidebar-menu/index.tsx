@@ -2,9 +2,12 @@
 import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import { MoonIcon, TimesIcon, TrivIcon } from '../../custom-icons'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 
 const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<SetStateAction<boolean>> }) => {
     const { lang, show, setShow } = props
+    const router = useRouter();
+
     const toggleSubMenu = (id:string) => {
         const element = document.getElementById(id)
         const elementChevron = document.getElementById(id+'--chevron')
@@ -18,22 +21,26 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
         }
     }
 
-    const closeSidebar = () => {
-        setShow(false)
+    const goToLink = (path:string) => {
         document.body.classList.remove('overflow-hidden')
+        router.push(`/${lang}/${path}`)
+    }
+
+    const closeSidebar = () => {
+        document.body.classList.remove('overflow-hidden')
+        setShow(false)
     }
 
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
-        console.log(check)
         if (check) {
-            document.body.classList.remove("dark-theme");
+            localStorage.removeItem('mode');
         } else {
-            document.body.classList.add("dark-theme");
+            localStorage.setItem('mode', 'dark-theme');
         }
-
+        router.refresh();
+        window.location.reload();
     }
-
 
     return (
         <>
@@ -42,7 +49,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                 <div className='sidebar-menu-top'>
                     <div className='sidebar-header'>
                         <div className='sidebar-header-logo'>
-                            <Link href="/"><TrivIcon color={'#318AC6'} /></Link>
+                            <a onClick={_ => goToLink('')}><TrivIcon color={'#318AC6'} /></a>
                         </div>
                         <div className='sidebar-header-action'>
                             <a onClick={_ => switchTheme()}><MoonIcon color={'#F2AF22'} /></a>
@@ -92,17 +99,17 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     <li>Electricty Token</li>
                                 </ul>
                             </li>
-                            <li><Link href={`/${lang}/staking`}>Staking</Link></li>
-                            <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
-                            <li><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>
-                            <li><Link href={`/${lang}/blog`}>Blog</Link></li>
-                            <li><Link href={`/${lang}/home/contact-us`}>Contact Us</Link></li>
+                                <li><a onClick={_ => goToLink('staking')}>Staking</a></li>
+                                <li><a onClick={_ => goToLink('stocks')}>Us Stock</a></li>
+                                <li><a onClick={_ => goToLink('home/affliate')}>Us Stock</a></li>
+                                <li><a onClick={_ => goToLink('blog')}>Affliate</a></li>
+                                <li><a onClick={_ => goToLink('home/contact-us')}>Blog</a></li>
                             </ul>
                     </div>
                 </div>
                 <div className='sidebar-menu-bottom'>
-                    <Link href={`/${lang}/login`} className='button-login'>Log In</Link>
-                    <Link href={`/${lang}/register`} className='button-register'>Register</Link>
+                    <a onClick={_ => goToLink('login')} className='button-login'>Log In</a>
+                    <a onClick={_ => goToLink('register')} className='button-register'>Register</a>
                 </div>
             </div>
         </>

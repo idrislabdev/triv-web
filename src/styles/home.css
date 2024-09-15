@@ -586,9 +586,9 @@
                 }
             }
             .home-investasi-section {
-                @apply px-[30px] py-[20px] ;
+                @apply p-[20px] ;
                 .investasi-section-box {
-                    @apply overflow-hidden;
+                    @apply overflow-hidden w-full;
                     h2 {
                         @apply text-[14px]/[21px];
                     }

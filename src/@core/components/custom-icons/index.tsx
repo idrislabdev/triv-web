@@ -23,6 +23,31 @@ const MoonIcon = (props :{ color: any }) => {
     )
 }
 
+const SunIcon = (props: {color:any}) => {
+    const { color } = props
+    let currentColor = color
+    return (
+        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clipPath="url(#clip0_1612_32861)">
+        <path d="M11.0005 5.57617C7.72816 5.57617 5.07617 8.22816 5.07617 11.5005C5.07617 14.7728 7.72816 17.4248 11.0005 17.4248C14.2728 17.4248 16.9248 14.7728 16.9248 11.5005C16.9248 8.22816 14.2728 5.57617 11.0005 5.57617Z" fill="white"/>
+        <path d="M11.8622 0.5H10.1367V3.82136H11.8622V0.5Z" fill="white"/>
+        <path d="M11.8622 19.1777H10.1367V22.4991H11.8622V19.1777Z" fill="white"/>
+        <path d="M6.18053 5.45983L3.83203 3.11133L2.61215 4.33121L4.96065 6.67971L6.18053 5.45983Z" fill="white"/>
+        <path d="M15.8184 17.5383L18.1675 19.8875L19.3875 18.6669L17.039 16.3184L15.8184 17.5383Z" fill="white"/>
+        <path d="M3.32067 10.6367H0V12.3622H3.32067V10.6367Z" fill="white"/>
+        <path d="M18.6777 10.6374V12.3629L21.9997 12.3622V10.6367L18.6777 10.6374Z" fill="white"/>
+        <path d="M2.61133 18.6669L3.83057 19.8875L6.17911 17.5383L4.95987 16.3184L2.61133 18.6669Z" fill="white"/>
+        <path d="M19.3875 4.33057L18.1669 3.11133L15.8184 5.45987L17.039 6.68044L19.3875 4.33057Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1612_32861">
+        <rect width="22" height="22" fill="white" transform="translate(0 0.5)"/>
+        </clipPath>
+        </defs>
+        </svg>
+    )
+}
+
 const CaretUpIcon = (props :{ color: any }) => {
     const { color } = props
     let currentColor = color
@@ -515,7 +540,7 @@ const ChartPPT = (props: {color: any}) => {
     let currentColor = color
     return (
         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.7641 18.7285L9.16406 21.9785M15.2307 18.7285L17.8307 21.9785" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" stroke-linejoin="round"/>
+            <path d="M11.7641 18.7285L9.16406 21.9785M15.2307 18.7285L17.8307 21.9785" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
             <path d="M3.75 4.64453H23.25M13.5 14.3945V8.97786M17.8333 14.3945V11.1445M9.16667 14.3945V11.1445M21.0833 18.7279H5.91667C5.62935 18.7279 5.3538 18.6137 5.15063 18.4106C4.94747 18.2074 4.83333 17.9318 4.83333 17.6445V4.64453H22.1667V17.6445C22.1667 17.9318 22.0525 18.2074 21.8494 18.4106C21.6462 18.6137 21.3707 18.7279 21.0833 18.7279Z" stroke="#318AC6" strokeWidth="2.16667" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
 
@@ -531,6 +556,7 @@ const ChartPPT = (props: {color: any}) => {
 export {
     TrivIcon,
     MoonIcon,
+    SunIcon,
     CaretUpIcon,
     CaretDownIcon,
     GraphIcon,

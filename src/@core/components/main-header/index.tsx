@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
-import { BurgerIcon, ChevronIconDown, MoonIcon, TrivIcon } from '../custom-icons';
+import { BurgerIcon, ChevronIconDown, MoonIcon, SunIcon, TrivIcon } from '../custom-icons';
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
@@ -11,18 +11,24 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     const [active, setActive] = useState(false);
     const [showFlags, setShowFlags] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false);
+    const [mode, setMode] = useState('light-theme')
     const pathname = usePathname()
     const router = useRouter();
 
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
-        console.log(check)
         if (check) {
-            document.body.classList.remove("dark-theme");
-        } else {
-            document.body.classList.add("dark-theme");
-        }
+            // document.body.classList.remove("dark-theme");
+            localStorage.removeItem('mode');
+            // setMode('light-theme')
 
+        } else {
+            // document.body.classList.add("dark-theme");
+            localStorage.setItem('mode', 'dark-theme');
+            // setMode('dark-theme')
+        }
+        // let paths = pathname.split("/")
+        window.location.reload();
     }
 
     const onScroll = useCallback(() => {
@@ -50,7 +56,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
             }
         }
 
-    }, []);
+    },[]);
 
     const showMobileSidebar = () => {
         setShowSidebar(true)
@@ -70,6 +76,13 @@ const MainHeader = (props: {classText:string, lang: string}) => {
            window.removeEventListener("scroll", onScroll);
         }
     });
+
+    useEffect(() => {
+        if (localStorage.getItem('mode') === 'dark-theme') {
+            document.body.classList.add("dark-theme");
+            setMode('dark-theme')
+        }
+    }, [setMode])
     
     return (
         <>
@@ -125,7 +138,10 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 <div className='main-header-action'>
                     <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={classText === '' ? '#fff': '#000'} /></a>
                     <div className='main-header-action-list'>
-                        <a className='button-switch-theme' onClick={_ => switchTheme()}><MoonIcon color='#fff' /></a>
+                        <a className='button-switch-theme' onClick={_ => switchTheme()}>
+                            {mode === 'light-theme' && <MoonIcon color='#fff' /> }
+                            {mode === 'dark-theme' && <SunIcon color='#fff' /> }
+                        </a>
                         <ul>
                             <li>
                                 <a className='flag-button' onClick={_ => setShowFlags(!showFlags)}>

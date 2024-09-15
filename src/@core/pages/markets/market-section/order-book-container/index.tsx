@@ -3,56 +3,40 @@ import axiosInstance from '@/@core/utils/axios'
 import { IBookOrder, ITrade } from '@/@core/@types/interfaces'
 import moment from 'moment';
 
-const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStateAction<any>>}) => {
-    const {market, setMarket} = props
-    
-    const [dataAsks, setDataAsks] = useState<Array<IBookOrder>>([]);
-    const [dataBids, setDataBids] = useState<Array<IBookOrder>>([]);
-    const [dataTrades, setDataTrades] = useState<Array<ITrade>>([]);
-    
-    const getAsset = useCallback(async () => {
-        const resp = await axiosInstance.get(`/v2/market/order-book?symbol=${market.symbol}`)
-        const { asks } = resp.data.data;
-        const { bids } = resp.data.data;
+const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStateAction<any>>, orderBook:any, trades:any}) => {
+    const {market, setMarket, orderBook, trades} = props
+    const asks  = orderBook.asks;
+    const bids = orderBook.bids;
 
-        let arrAsks:IBookOrder[] = [] as IBookOrder[];
-        let arrBids:IBookOrder[] = [] as IBookOrder[];
+    let arrAsks:IBookOrder[] = [] as IBookOrder[];
+    let arrBids:IBookOrder[] = [] as IBookOrder[];
 
-        asks.forEach((item:any) => {
-            let obj:IBookOrder = {} as IBookOrder;
-            obj.qty = item[0]
-            obj.price = item[1]
-            obj.total = item[0]*item[1]
-            obj.progress = Math.floor(Math.random() * 100)
-            arrAsks.push(obj)
-        });
-        setDataAsks(arrAsks)
+    let increment = 0;
+    increment=1;
+    asks.forEach((item:any) => {
+        increment++;
+        let obj:IBookOrder = {} as IBookOrder;
+        obj.qty = item[0]
+        obj.price = item[1]
+        obj.total = item[0]*item[1]
+        obj.progress = (increment / asks.length) * 100;
+        arrAsks.push(obj)
+    });
 
-        bids.forEach((item:any) => {
-            let obj:IBookOrder = {} as IBookOrder;
-            obj.qty = item[0]
-            obj.price = item[1]
-            obj.total = item[0]*item[1]
-            obj.progress = Math.floor(Math.random() * 100)
-            arrBids.push(obj)
-        });
-        setDataBids(arrBids)
+    increment=1;
+    bids.forEach((item:any) => {
+        increment++;
+        let obj:IBookOrder = {} as IBookOrder;
+        obj.qty = item[0]
+        obj.price = item[1]
+        obj.total = item[0]*item[1]
+        obj.progress = (increment / asks.length) * 100;
+        arrBids.push(obj)
+    });    
+    const dataAsks = arrBids;
+    const dataBids = arrAsks;
+    const dataTrades = trades;
 
-    }, [market])
-
-    const getTrades = useCallback(async () => {
-        const resp = await axiosInstance.get(`/v2/market/trades?symbol=${market.symbol}`)
-        const temp:ITrade[] = resp.data.data;
-        setDataTrades(temp)
-    }, [market])
-
-    useEffect(() => {
-        getAsset();
-    }, [getAsset])
-
-    useEffect(() => {
-        getTrades();
-    }, [getTrades])
   return (
     <div className='order-book-container'>
         <div className='subcontainer-title'>

@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import Script from "next/script";
-
 import {
   ChartingLibraryWidgetOptions,
   ResolutionString,
@@ -23,10 +22,12 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
 
 
   useEffect(() => {
+    const theme = localStorage.getItem('mode')
     setDefaultWidget({
       symbol: symbol,
       interval: "15" as ResolutionString,
       library_path: "/static/charting_library/",
+      custom_css_url: "/static/trading-view.css",
       locale: "en",
       charts_storage_url: "https://saveload.tradingview.com",
       charts_storage_api_version: "1.1",
@@ -34,6 +35,7 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
       user_id: "public_user_id",
       fullscreen: false,
       autosize: true,
+      theme: theme === 'dark-theme' ? 'dark' : 'light'
     })
   }, [symbol, setDefaultWidget])
   

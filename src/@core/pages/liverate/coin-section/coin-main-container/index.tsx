@@ -20,8 +20,8 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
         const item = lookup.findLast(item => num >= item.value);
         return item ? (num / item.value).toFixed(digits).replace(regexp, "").concat(item.symbol) : "0";
     }
-    const progressJual = `w-[${(asset.key_statistic.sell*100).toFixed(0)}%]`;
-    const progressBeli = `w-[${(asset.key_statistic.buy*100).toFixed(0)}%]`;
+    const progressJual = (asset.key_statistic.sell*100).toFixed(0);
+    const progressBeli = (asset.key_statistic.buy*100).toFixed(0);
     return (
         <div className='coin-main-container'>
             <div className='chart-subcontainer'>
@@ -36,8 +36,8 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
                 <h5>Aktivitas Pengguna Triv</h5>
                 <div className='progress-cubcontainer'>
                     <div className='key-progress'>
-                        <span className={`${progressBeli} progress-beli`}></span>
-                        <span className={`${progressJual} progress-jual`}></span>
+                        <span className={`${progressBeli} progress-beli`} style={{width: `${progressBeli}%`}}></span>
+                        <span className={`${progressJual} progress-jual`} style={{width: `${progressJual}%`}}></span>
                     </div>
                     <div className='key-progress-label'>
                         <label className='progress-beli'><span className='progress-beli'></span>{(asset.key_statistic.buy * 100).toFixed(0)}% Beli</label>

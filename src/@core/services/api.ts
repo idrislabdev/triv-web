@@ -39,3 +39,14 @@ export const getMarket = async (symbol:string) => {
     const resp = await axiosInstance.get(`/v2/market?symbol=${symbol}`)
     return resp
 }
+
+export const getOrderBook = async (symbol:string) => {
+    const resp = await axiosInstance.get(`/v2/market/order-book?symbol=${symbol}`)
+    return resp
+}
+
+
+export const getOrderTrade = async (symbol:string) => {
+    const resp = await axiosInstance.get(`/v2/market/trades?symbol=${symbol}`)
+    return resp
+}

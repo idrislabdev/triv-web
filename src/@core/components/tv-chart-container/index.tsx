@@ -31,8 +31,16 @@ export const TVChartContainer = (props: Partial<ChartingLibraryWidgetOptions>) =
 			user_id: props.user_id,
 			fullscreen: props.fullscreen,
 			autosize: props.autosize,
-			theme: 'light'
+			custom_css_url: props.custom_css_url,
+			theme: props.theme
 		};
+
+		if (props.theme === 'dark') {
+			widgetOptions.overrides = {
+				"paneProperties.background": "#000000",
+				"paneProperties.backgroundType": "solid"
+			}
+		}
 
 		const tvWidget = new widget(widgetOptions);
 
