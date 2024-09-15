@@ -18,17 +18,16 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
         if (check) {
-            // document.body.classList.remove("dark-theme");
+            document.body.classList.remove("dark-theme");
             localStorage.removeItem('mode');
-            // setMode('light-theme')
+            setMode('light-theme')
 
         } else {
-            // document.body.classList.add("dark-theme");
+            document.body.classList.add("dark-theme");
             localStorage.setItem('mode', 'dark-theme');
-            // setMode('dark-theme')
+            setMode('dark-theme')
+
         }
-        // let paths = pathname.split("/")
-        window.location.reload();
     }
 
     const onScroll = useCallback(() => {
@@ -80,9 +79,8 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {
             document.body.classList.add("dark-theme");
-            setMode('dark-theme')
         }
-    }, [setMode])
+    })
     
     return (
         <>

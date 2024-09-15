@@ -15,6 +15,9 @@ const MarketFormContainer = (props: {
     const changeTablimit = (val:string) => {
         setTabLimit(val)
     }
+    const changeTabInfo = (val:string) => {
+        setTabInfo(val)
+    }
     const handleChange = async (e: React.MouseEvent<HTMLDivElement, MouseEvent> | any) => {
         setRange(parseInt(e))
         
@@ -124,9 +127,9 @@ const MarketFormContainer = (props: {
             </div>
             <div className='tab-form'>
                 <ul>
-                    <li className={`${tabInfo === "limit" ? 'active' : ''}`}><a onClick={_ => changeTablimit('limit')}>Limit</a></li>
-                    <li className={`${tabInfo === "biaya" ? 'active' : ''}`}><a onClick={_ => changeTablimit('instant')}>Biaya</a></li>
-                    <li className={`${tabInfo === "info" ? 'active' : ''}`}><a onClick={_ => changeTablimit('stop_limit')}>Info</a></li>
+                    <li className={`${tabInfo === "limit" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('limit')}>Limit</a></li>
+                    <li className={`${tabInfo === "biaya" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('biaya')}>Biaya</a></li>
+                    <li className={`${tabInfo === "info" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('info')}>Info</a></li>
                 </ul>
             </div>
             <div className='info-market'>

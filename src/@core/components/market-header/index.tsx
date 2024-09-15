@@ -45,12 +45,11 @@ const MarketHeader = (props: { lang: string}) => {
         router.push(paths.join("/"))
     }
 
-    // useEffect(() => {
-    //     if (localStorage.getItem('mode') === 'dark-theme') {
-    //         document.body.classList.add("dark-theme");
-    //         setMode('dark-theme')
-    //     }
-    // }, [setMode])
+    useEffect(() => {
+        if (localStorage.getItem('mode') === 'dark-theme') {
+            document.body.classList.add("dark-theme");
+        }
+    })
 
     return (
         <>
