@@ -53,7 +53,7 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                 <div className='market-symbol' ref={searchDropdown}>
                     <a onClick={_ => setShowMarket(!showMarket)}>
                         <Image src={market.icon_url} alt={'market logo'}width={0} height={0} sizes='100%'/>
-                        <span>{market.symbol}</span>
+                        <span className='truncate'>{market.symbol}</span>
                         <span className={`transition-all duration-300 ${showMarket ? 'rotate-180': ''}`}><ChevronIconDown color={'#000'} /></span>
                     </a>
                     <div className={`dropdown-market ${showMarket ? 'show' : ''}`}>
