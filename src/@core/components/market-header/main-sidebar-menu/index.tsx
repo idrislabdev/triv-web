@@ -26,7 +26,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
 
     return (
         <>
-            <div className={`main-sidebar-overlay ${!show ? '!hidden' : ''}`}></div>
+            <div className={`main-sidebar-overlay ${!show ? '!hidden' : ''}`} onClick={_ => setShow(false)}></div>
             <div className={`main-sidebar-menu ${show ? 'show' : ''}`}>
                 <div className='sidebar-menu-top'>
                     <div className='sidebar-header'>

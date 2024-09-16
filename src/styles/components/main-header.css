@@ -202,12 +202,16 @@
                     }
                     ul {
                         &.list-flags {
-                            @apply absolute top-[27px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top;
+                            @apply absolute top-[27px] flex flex-col gap-[5px] transition-all duration-300 scale-0 origin-top bg-white border;
+                            box-shadow: 0px 4px 10px 0px #0000004D;
                             &.show {
                                 transform: translateX(0%);
                             }
                             li {
-                                @apply p-0;
+                                @apply p-[6px];
+                                &:hover {
+                                    @apply bg-primary;
+                                }
                                 &::before {
                                     @apply !content-none;
                                 }

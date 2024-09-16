@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { BurgerIcon, ChevronIconDown, MoonIcon, SunIcon, TrivIcon } from '../custom-icons';
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
@@ -12,6 +12,8 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     const [showFlags, setShowFlags] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false);
     const [mode, setMode] = useState('light-theme')
+    const dropdownFlags: any = useRef(null);
+
     const pathname = usePathname()
     const router = useRouter();
 
@@ -79,8 +81,21 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {
             document.body.classList.add("dark-theme");
+            setMode('dark-theme')
         }
-    })
+    },[setMode])
+
+    useEffect(() => {
+        if (!showFlags) return;
+        function handleClick(event : MouseEvent) {
+            if (dropdownFlags.current && !dropdownFlags.current.contains(event.target)) {
+                setShowFlags(false);
+            }
+        }
+        window.addEventListener("click", handleClick);
+        return () => window.removeEventListener("click", handleClick);
+    }, [showFlags]);
+
     
     return (
         <>
@@ -142,9 +157,9 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                         </a>
                         <ul>
                             <li>
-                                <a className='flag-button' onClick={_ => setShowFlags(!showFlags)}>
+                                <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
                                     <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
-                                    <ChevronIconDown color={'#fff'}/>
+                                    <span className={`transition-all duration-300 ${showFlags ? 'rotate-180': ''}`}><ChevronIconDown color={'#fff'}/></span>
                                 </a>
                                 <ul className={`list-flags ${showFlags ? 'show': ''}`}>
                                     <li>

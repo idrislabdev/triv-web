@@ -36,8 +36,9 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
     }
 
     useEffect(() => {
-        if (!showMarket) return;
+        // if (!showMarket) return;
         function handleClick(event : MouseEvent) {
+            console.log(searchDropdown.current.contains(event.target))
             if (searchDropdown.current && !searchDropdown.current.contains(event.target)) {
                 setShowMarket(false);
             }
@@ -49,11 +50,47 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
     return (
         <div className='market-container'>
             <div className='market-info'>
-                <a onClick={_ => setShowMarket(!showMarket)} ref={searchDropdown}>
-                    <Image src={market.icon_url} alt={'market logo'}width={0} height={0} sizes='100%'/>
-                    <span>{market.symbol}</span>
-                    <span className={`transition-all duration-300 ${showMarket ? 'rotate-180': ''}`}><ChevronIconDown color={'#000'} /></span>
-                </a>
+                <div className='market-symbol' ref={searchDropdown}>
+                    <a onClick={_ => setShowMarket(!showMarket)}>
+                        <Image src={market.icon_url} alt={'market logo'}width={0} height={0} sizes='100%'/>
+                        <span>{market.symbol}</span>
+                        <span className={`transition-all duration-300 ${showMarket ? 'rotate-180': ''}`}><ChevronIconDown color={'#000'} /></span>
+                    </a>
+                    <div className={`dropdown-market ${showMarket ? 'show' : ''}`}>
+                        <div className='header-area'>
+                            <div className='group-input append'>
+                                <span className='append'><SearchIcon color={'#fff'} /></span>
+                                <input className='color-2' placeholder='Cari market'/>
+                            </div>
+                        </div>
+                        <div className='body-area'>
+                            <div className='table-header'>
+                                <div className='table-header-row'>
+                                    <div className='wrapper-row'>
+                                        <label>Market</label>
+                                        <label className='text-right'>Harga (IDR)</label>
+                                        <label className='text-right'>24H Chg</label>
+                                        <label className='text-right'>Vol 24H (IDR)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='table-body'>
+                            {
+                                markets.map((item:any, index:number)=> (
+                                    <div className='table-body-row' onClick={_ => selectMarket(item.symbol)} key={index}>
+                                        <div className='wrapper-row'>
+                                            <label>{item.base_asset.code}<span className='text-neutral-400'>/{item.quote_asset.code}</span></label>
+                                            <label className='text-right'>{item.price}</label>
+                                            <label className='text-right !text-[#EB5757]'>{item.price_changes.today}%</label>
+                                            <label className='text-right'>{nFormatter(item.statistic.base_volume, 1)}</label>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className='market-info-detail'>
                     <div className='info-detail'>
                         <span>{market.price}</span>
@@ -77,40 +114,6 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                     <div className='info-detail'>
                         <label>Vol 24JAM ({market.base_asset.code})</label>
                         <span>{nFormatter(market.statistic.base_volume.toFixed(market.base_asset.precision), 1)}</span>
-                    </div>
-                </div>
-                <div className={`dropdown-market ${showMarket ? 'show' : ''}`}>
-                    <div className='header-area'>
-                        <div className='group-input append'>
-                            <span className='append'><SearchIcon color={'#fff'} /></span>
-                            <input className='color-2' placeholder='Cari market'/>
-                        </div>
-                    </div>
-                    <div className='body-area'>
-                        <div className='table-header'>
-                            <div className='table-header-row'>
-                                <div className='wrapper-row'>
-                                    <label>Market</label>
-                                    <label className='text-right'>Harga (IDR)</label>
-                                    <label className='text-right'>24H Chg</label>
-                                    <label className='text-right'>Vol 24H (IDR)</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='table-body'>
-                        {
-                            markets.map((item:any, index:number)=> (
-                                <div className='table-body-row' onClick={_ => selectMarket(item.symbol)} key={index}>
-                                    <div className='wrapper-row'>
-                                        <label>{item.base_asset.code}<span className='text-neutral-400'>/{item.quote_asset.code}</span></label>
-                                        <label className='text-right'>{item.price}</label>
-                                        <label className='text-right !text-[#EB5757]'>{item.price_changes.today}%</label>
-                                        <label className='text-right'>{nFormatter(item.statistic.base_volume, 1)}</label>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                        </div>
                     </div>
                 </div>
             </div>

@@ -12,6 +12,18 @@ const MarketFormContainer = (props: {
     const { lang, tabLimit, setTabLimit, tabInfo, setTabInfo } = props
     const [range, setRange] = useState(0)
     const [buttonType, setButtonType] = useState('buy');
+    const [priceLimit, setPriceLimit] = useState("0");
+    const [amountLimit, setAmountLimit] = useState("0");
+    const [totalLimit, setTotalLimit] = useState("0");
+
+    const [priceInstant, setPriceInstant] = useState("0");
+    const [totalInstant, setTotalInstant] = useState("0");
+
+    const [stopStop, setStopStop] = useState("0");
+    const [limitStop, setLimitStop] = useState("0");
+    const [amountStop, setAmountStop] = useState("0");
+    const [totalStop, setTotalStop] = useState("0");
+
     const changeTablimit = (val:string) => {
         setTabLimit(val)
     }
@@ -49,14 +61,22 @@ const MarketFormContainer = (props: {
                         <div className='form-group'>
                             <label>Price</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={priceLimit}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPriceLimit(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
                         <div className='form-group'>
                             <label>Amount</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={amountLimit}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setAmountLimit(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
@@ -67,14 +87,22 @@ const MarketFormContainer = (props: {
                         <div className='form-group'>
                             <label>Price</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={priceInstant}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPriceInstant(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
                         <div className='form-group'>
                             <label>Total</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={totalInstant}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setTotalInstant(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
@@ -85,21 +113,33 @@ const MarketFormContainer = (props: {
                         <div className='form-group'>
                             <label>Stop</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={stopStop}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setStopStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
                         <div className='form-group'>
                             <label>Limit</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={limitStop}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setLimitStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
                         <div className='form-group'>
                             <label>Amount</label>
                             <div className='group-input prepend'>
-                                <input className='color-2' placeholder='0'/>
+                                <input 
+                                    value={amountStop}
+                                    className='color-2' placeholder='0' 
+                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setAmountStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                                />
                                 <span className='prepend'>IDR</span>
                             </div>
                         </div>
@@ -114,11 +154,28 @@ const MarketFormContainer = (props: {
                         defaultValue={range}
                     />
                 </div>
-                {tabLimit !== 'instant' &&
+                {tabLimit === 'stop_limits' &&
                     <div className='form-group'>
                         <label>Total</label>
                         <div className='group-input prepend'>
-                            <input className='color-2' placeholder='0'/>
+                            <input 
+                                value={totalStop}
+                                className='color-2' placeholder='0' 
+                                onInput={(e: React.ChangeEvent<HTMLInputElement>) => setTotalStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                            />
+                            <span className='prepend'>IDR</span>
+                        </div>
+                    </div>
+                }
+                 {tabLimit === 'limits' &&
+                    <div className='form-group'>
+                        <label>Total</label>
+                        <div className='group-input prepend'>
+                            <input 
+                                value={totalLimit}
+                                className='color-2' placeholder='0' 
+                                onInput={(e: React.ChangeEvent<HTMLInputElement>) => setTotalLimit(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
+                            />
                             <span className='prepend'>IDR</span>
                         </div>
                     </div>
