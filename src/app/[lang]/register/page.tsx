@@ -24,6 +24,16 @@ export default async function RegisterPage({ params }: any) {
         sub_welcome_text,
         register_text,
     } = await getDictionaryRegister(params.lang);
+    const pekerjaans = [
+      'Pelajar/Mahasiswa',
+      'Karyawan Swasta',
+      'Profesional',
+      'Wiraswasta',
+      'TNI/Polri',
+      'Pensiunan',
+      'Tidak Bekerja',
+      'Lainnya',
+    ]
   return (
     <main className='register-page sm:mobile-responsive md:mobile-responsive light-theme'>
       <div className='register-container'>
@@ -63,9 +73,11 @@ export default async function RegisterPage({ params }: any) {
             <div className='form-jobs'>
                 <label>{job_text}</label>
                 <select className='color-1'>
-                    <option value="Programmer">Programmer</option>
-                    <option value="Dokter">Dokter</option>
-                    <option value="Wirausaha">Wirausaha</option>
+                    {
+                      pekerjaans.map((item:string, index:number) => (
+                        <option value={item} key={index}>{item}</option>
+                      ))
+                    }
                 </select>
             </div>
             <div className='form-note'>
