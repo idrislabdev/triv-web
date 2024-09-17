@@ -64,61 +64,64 @@
             }
             .form-subcontainer {
                 @apply flex flex-col gap-[20px] w-full;
-                .form-name {
-                    @apply flex flex-col gap-[10px];
-                    label {
-                        @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
-                    }
-                    .form-input {
-                        @apply flex gap-[20px];
-                        input {
-                            @apply w-1/2 h-[54px];
+                form {
+                    @apply flex flex-col gap-[20px] w-full;
+                    .form-name {
+                        @apply flex flex-col gap-[10px];
+                        label {
+                            @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
                         }
-                    }
-                }
-                .form-email {
-                    @apply flex flex-col gap-[10px];
-                    label {
-                        @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
-                    }
-                    input {
-                        @apply w-full h-[54px]; 
-                    }
-                }
-                .form-password {
-                    @apply flex flex-col gap-[10px];
-                    label {
-                        @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
-                    }
-                    .form-input {
-                        @apply flex flex-col gap-[10px] w-full;
-                        .group-input {
-                            @apply w-full;
+                        .form-input {
+                            @apply flex gap-[20px];
                             input {
-                                @apply w-full h-[54px];
+                                @apply w-1/2 h-[54px];
                             }
                         }
                     }
-                }
-                .form-jobs {
-                    @apply flex flex-col gap-[10px];
-                    label {
-                        @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
-                    }
-                    select {
-                        @apply w-full h-[54px];
-                    }
-                }
-                .form-note {
-                    p {
-                        @apply text-[18px]/[27px] text-neutral-800;
-                        span {
-                            @apply text-primary;
+                    .form-email {
+                        @apply flex flex-col gap-[10px];
+                        label {
+                            @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
+                        }
+                        input {
+                            @apply w-full h-[54px]; 
                         }
                     }
-                }
-                button {
-                    @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
+                    .form-password {
+                        @apply flex flex-col gap-[10px];
+                        label {
+                            @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
+                        }
+                        .form-input {
+                            @apply flex flex-col gap-[10px] w-full;
+                            .group-input {
+                                @apply w-full;
+                                input {
+                                    @apply w-full h-[54px];
+                                }
+                            }
+                        }
+                    }
+                    .form-jobs {
+                        @apply flex flex-col gap-[10px];
+                        label {
+                            @apply text-[20px]/[30px] text-neutral-800 font-medium w-full;
+                        }
+                        select {
+                            @apply w-full h-[54px];
+                        }
+                    }
+                    .form-note {
+                        p {
+                            @apply text-[18px]/[27px] text-neutral-800;
+                            span {
+                                @apply text-primary;
+                            }
+                        }
+                    }
+                    button {
+                        @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
+                    }
                 }
                 .sub-title-subcontainer {
                     @apply hidden flex-col gap-[18px] items-center text-center;
