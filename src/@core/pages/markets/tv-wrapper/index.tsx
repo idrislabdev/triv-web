@@ -24,7 +24,6 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
 
 
   useEffect(() => {
-    const theme = localStorage.getItem('mode')
     setDefaultWidget({
       symbol: symbol,
       interval: "15" as ResolutionString,
@@ -37,7 +36,7 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
       user_id: "public_user_id",
       fullscreen: false,
       autosize: true,
-      theme: globals.theme
+      theme: globals.theme === 'dark' ? 'dark' : 'light'    
     })
   }, [symbol, setDefaultWidget, globals])
   
