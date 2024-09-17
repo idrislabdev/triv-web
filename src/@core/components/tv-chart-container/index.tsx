@@ -3,13 +3,15 @@
 import { useEffect, useRef } from "react";
 import { ChartingLibraryWidgetOptions, LanguageCode, ResolutionString, widget } from "../../../../public/static/charting_library";
 
-export const TVChartContainer = (props: Partial<ChartingLibraryWidgetOptions>) => {
+export const TVChartContainer = (props: {defaultWidget:Partial<ChartingLibraryWidgetOptions>}) => {
+	const { defaultWidget } = props
+
 	const chartContainerRef =
 		useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
 
 	useEffect(() => {
 		const widgetOptions: ChartingLibraryWidgetOptions = {
-			symbol: props.symbol,
+			symbol: defaultWidget.symbol,
 			// BEWARE: no trailing slash is expected in feed URL
 			datafeed: new (window as any).Datafeeds.UDFCompatibleDatafeed(
 				"https://cihuy.triv.id/api/v2/udf-datafeed",
@@ -19,23 +21,23 @@ export const TVChartContainer = (props: Partial<ChartingLibraryWidgetOptions>) =
 					expectedOrder: "latestFirst",
 				}
 			),
-			interval: props.interval as ResolutionString,
+			interval: defaultWidget.interval as ResolutionString,
 			container: chartContainerRef.current,
-			library_path: props.library_path,
-			locale: props.locale as LanguageCode,
+			library_path: defaultWidget.library_path,
+			locale: defaultWidget.locale as LanguageCode,
 			disabled_features: ["use_localstorage_for_settings"],
 			enabled_features: ["study_templates"],
-			charts_storage_url: props.charts_storage_url,
-			charts_storage_api_version: props.charts_storage_api_version,
-			client_id: props.client_id,
-			user_id: props.user_id,
-			fullscreen: props.fullscreen,
-			autosize: props.autosize,
-			custom_css_url: props.custom_css_url,
-			theme: props.theme
+			charts_storage_url: defaultWidget.charts_storage_url,
+			charts_storage_api_version: defaultWidget.charts_storage_api_version,
+			client_id: defaultWidget.client_id,
+			user_id: defaultWidget.user_id,
+			fullscreen: defaultWidget.fullscreen,
+			autosize: defaultWidget.autosize,
+			custom_css_url: defaultWidget.custom_css_url,
+			theme: defaultWidget.theme
 		};
 
-		if (props.theme === 'dark') {
+		if (defaultWidget.theme === 'dark') {
 			widgetOptions.overrides = {
 				"paneProperties.background": "#000000",
 				"paneProperties.backgroundType": "solid"

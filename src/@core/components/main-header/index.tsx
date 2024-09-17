@@ -5,6 +5,7 @@ import { BurgerIcon, ChevronIconDown, MoonIcon, SunIcon, TrivIcon } from '../cus
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
+import { useGlobals } from '@/@core/hooks/useGlobals';
 
 const MainHeader = (props: {classText:string, lang: string}) => {
     const { classText, lang } = props
@@ -16,6 +17,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
 
     const pathname = usePathname()
     const router = useRouter();
+    const { globals, saveGlobals } = useGlobals()
 
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
@@ -23,12 +25,13 @@ const MainHeader = (props: {classText:string, lang: string}) => {
             document.body.classList.remove("dark-theme");
             localStorage.removeItem('mode');
             setMode('light-theme')
+            saveGlobals({...globals, theme: 'dark'})
 
         } else {
             document.body.classList.add("dark-theme");
             localStorage.setItem('mode', 'dark-theme');
             setMode('dark-theme')
-
+            saveGlobals({...globals, theme: 'dark'})
         }
     }
 
@@ -70,6 +73,12 @@ const MainHeader = (props: {classText:string, lang: string}) => {
         router.push(paths.join("/"))
 
     }
+
+    useEffect(() => {
+        if (localStorage.getItem('mode') === 'dark-theme') {
+            saveGlobals({...globals, theme: 'dark'})
+        }
+    }, [globals.theme])
 
     useEffect(() => {
         window.addEventListener("scroll", onScroll, { passive: true });
