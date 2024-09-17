@@ -96,9 +96,9 @@ export default async function ServiceDogeCoinPage({ params }: any) {
                         <meta name="csrf-token" content="B3gVOIGdKpWSEHzZ6tRPjb8W8WiE518XtFf9FJY1/tCPnt8RJJC43GzqQhQ4znQn4chXiPV6+mUBqq5LRNFjMw==" />
                         <link href="https://triv.co.id/en/home/dogecoin" rel="canonical" />
                         <link href="https://triv.co.id/id" rel="home" />
-                        <link href="https://triv.co.id/id/home/dogecoin" hreflang="id" rel="alternate" />
-                        <link href="https://triv.co.id/en/home/dogecoin" hreflang="en" rel="alternate" />
-                        <link href="https://triv.co.id/en/home/dogecoin" hreflang="x-default" rel="alternate" />
+                        <link href="https://triv.co.id/id/home/dogecoin" hrefLang="id" rel="alternate" />
+                        <link href="https://triv.co.id/en/home/dogecoin" hrefLang="en" rel="alternate" />
+                        <link href="https://triv.co.id/en/home/dogecoin" hrefLang="x-default" rel="alternate" />
                         <title>Buy and Sell Doge Coin Indonesia 24 Hours Easy &amp; Fast - TRIV</title>
 
                     </>
