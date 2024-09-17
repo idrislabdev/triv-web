@@ -32,7 +32,6 @@ export const GlobalsProvider = ({ children, pageGlobals }: GlobalsProviderProps)
     const [globals, setGlobals] = useState<Globals>({...initialGlobals})
 
     const saveGlobals = (updatedGlobals: Globals) => {
-        console.log(updatedGlobals)
         setGlobals(updatedGlobals)
     }
 

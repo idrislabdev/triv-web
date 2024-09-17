@@ -28,7 +28,7 @@ const MarketHeader = (props: { lang: string}) => {
             localStorage.removeItem('mode');
             saveGlobals({...globals, theme: 'light'})
         } else {
-            localStorage.setItem('mode', 'dark');
+            localStorage.setItem('mode', 'dark-theme');
             saveGlobals({...globals, theme: 'dark'})
         }
     }
@@ -47,13 +47,12 @@ const MarketHeader = (props: { lang: string}) => {
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {
             document.body.classList.add("dark-theme");
+            saveGlobals({...globals, theme: 'dark'})
         }
-    })
+    }, [globals.theme])
 
     useEffect(() => {
-        if (globals.theme === 'dark') {
-            document.body.classList.add("dark-theme");
-        } else {
+        if (globals.theme !== 'dark') {
             document.body.classList.remove("dark-theme");
         }
     },[globals.theme])
