@@ -127,7 +127,12 @@
                     &.sell {
                         &::after {
                             content: '';
-                            @apply bg-[#3A80AF];
+                            @apply bg-red-700;
+                        }
+                        button {
+                            &.active {
+                                @apply bg-red-700;
+                            }
                         }
                     }
                 }
@@ -169,8 +174,12 @@
                         }
                     }
                     a {
-                        @apply bg-[#3A80AF];
-                        
+                        &.buy {
+                            @apply bg-[#3A80AF];
+                        }
+                        &.sell {
+                            @apply bg-red-700;
+                        }
                     }
                 }
                 .info-market {
@@ -391,7 +400,12 @@
                 &.sell {
                     &::after {
                         content: '';
-                        @apply absolute right-[calc(50%-12px)] z-[1] h-full w-5 bg-primary skew-x-[-25deg];
+                        @apply absolute right-[calc(50%-12px)] z-[1] h-full w-5 bg-red-600 skew-x-[-25deg];
+                    }
+                    button {
+                        &.active {
+                            @apply bg-red-600;
+                        }
                     }
                 }
             }
@@ -441,8 +455,13 @@
                     }
                 }
                 a {
-                    @apply h-[40px] text-[14px]/[21px] rounded-[8px] font-semibold text-white w-full bg-primary flex flex-col justify-center items-center;
-                    
+                    @apply h-[40px] text-[14px]/[21px] rounded-[8px] font-semibold text-white w-full flex flex-col justify-center items-center;
+                    &.buy {
+                        @apply bg-primary;
+                    }
+                    &.sell {
+                        @apply bg-red-600;
+                    }
                 }
             }
             .info-market {
@@ -454,6 +473,24 @@
                     }
                     span {
                         @apply text-right;
+                    }
+                }
+                .info {
+                    @apply flex flex-col;
+                    h6 {
+                        @apply text-[14px]/[21px] font-bold text-neutral-700;
+                    }
+                    p{
+                        @apply text-[12px]/[18px] font-medium text-neutral-700 line-clamp-[7];
+                    }
+                    a{
+                        @apply text-[12px]/[18px] font-bold text-neutral-700 flex items-center gap-[4px];
+                        svg {
+                            @apply w-[17px] h-[17px];
+                            path {
+                                @apply fill-neutral-700;
+                            }
+                        }
                     }
                 }
             }

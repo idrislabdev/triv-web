@@ -2,14 +2,16 @@ import React, { Dispatch, SetStateAction, useState } from 'react'
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Link from 'next/link';
+import { ArrowRightIcon } from '@/@core/components/custom-icons';
 
 
 const MarketFormContainer = (props: {
         lang:string,
         tabLimit:string, setTabLimit:Dispatch<SetStateAction<string>>,
         tabInfo:string, setTabInfo:Dispatch<SetStateAction<string>>,
+        market:any
     }) => {
-    const { lang, tabLimit, setTabLimit, tabInfo, setTabInfo } = props
+    const { lang, tabLimit, setTabLimit, tabInfo, setTabInfo, market } = props
     const [range, setRange] = useState(0)
     const [buttonType, setButtonType] = useState('buy');
     const [priceLimit, setPriceLimit] = useState("0");
@@ -66,7 +68,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPriceLimit(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                         <div className='form-group'>
@@ -77,7 +79,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setAmountLimit(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                     </>
@@ -92,7 +94,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPriceInstant(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                         <div className='form-group'>
@@ -103,7 +105,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setTotalInstant(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                     </>
@@ -118,7 +120,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setStopStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                         <div className='form-group'>
@@ -129,7 +131,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setLimitStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                         <div className='form-group'>
@@ -140,7 +142,7 @@ const MarketFormContainer = (props: {
                                     className='color-2' placeholder='0' 
                                     onInput={(e: React.ChangeEvent<HTMLInputElement>) => setAmountStop(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
                                 />
-                                <span className='prepend'>IDR</span>
+                                <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
                     </>
@@ -180,40 +182,57 @@ const MarketFormContainer = (props: {
                         </div>
                     </div>
                 }
-                <Link href={`/${lang}/login`}>Login Untuk Trading </Link>
+                <Link href={`/${lang}/login`} className={`${buttonType}`}>Login Untuk Trading </Link>
             </div>
             <div className='tab-form'>
                 <ul>
                     <li className={`${tabInfo === "limit" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('limit')}>Limit</a></li>
-                    <li className={`${tabInfo === "biaya" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('biaya')}>Biaya</a></li>
+                    {/* <li className={`${tabInfo === "biaya" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('biaya')}>Biaya</a></li> */}
                     <li className={`${tabInfo === "info" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('info')}>Info</a></li>
                 </ul>
             </div>
             <div className='info-market'>
-                <div className='info-detail'>
-                    <label>Jumlah Maks. Order</label>
-                    <span>BTC 0,5</span>
-                </div>
-                <div className='info-detail'>
-                    <label>Jumlah Min. Order</label>
-                    <span>BTC 0,000005</span>
-                </div>
-                <div className='info-detail'>
-                    <label>Maks. Order Nasional</label>
-                    <span>IDR 500.000.000</span>
-                </div>
-                <div className='info-detail'>
-                    <label>Min. Order Nasional</label>
-                    <span>IDR 10.000</span>
-                </div>
-                <div className='info-detail'>
-                    <label>Min. Tick Jumlah</label>
-                    <span>BTC 0,00001</span>
-                </div>
-                <div className='info-detail'>
-                    <label>Min. Tick Harga</label>
-                    <span>IDR 1.000</span>
-                </div>
+                {tabInfo === 'limit' &&
+                    <>
+                        <div className='info-detail'>
+                            <label>Jumlah Maks. Order</label>
+                            <span>BTC 0,5</span>
+                        </div>
+                        <div className='info-detail'>
+                            <label>Jumlah Min. Order</label>
+                            <span>BTC 0,000005</span>
+                        </div>
+                        <div className='info-detail'>
+                            <label>Maks. Order Nasional</label>
+                            <span>IDR 500.000.000</span>
+                        </div>
+                        <div className='info-detail'>
+                            <label>Min. Order Nasional</label>
+                            <span>IDR 10.000</span>
+                        </div>
+                        <div className='info-detail'>
+                            <label>Min. Tick Jumlah</label>
+                            <span>BTC 0,00001</span>
+                        </div>
+                        <div className='info-detail'>
+                            <label>Min. Tick Harga</label>
+                            <span>IDR 1.000</span>
+                        </div>
+                    </>
+                }
+                {tabInfo === 'info' &&
+                    <>
+                        <div className='info'>
+                            <h6>Tentang Bitcoin</h6>
+                            <p className=''>
+                                Bitcoin (BTC) adalah mata uang kripto pertama di dunia. Diciptakan pada tahun 2009, BTC disimpan dan diperdagangkan melalui 
+                                jaringan internet menggunakan Bitcoin Blockchain, suatu buku besar digital yang terdistribusi. BTC dapat dibagi 
+                                menjadi satuan yang lebih kecil— bernama Satoshi—di mana 1 BTC = 100 juta Satoshi.
+                            </p>
+                            <a>Website Resmi <ArrowRightIcon color={'#fff'} /></a>
+                        </div>
+                    </>
+                }
             </div>
         </div>
   )
