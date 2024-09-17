@@ -19,7 +19,6 @@ export default async function MarketsPage({ params }: any) {
     return (
       <>
         <main className='markets-page sm:mobile-responsive md:mobile-responsive light-theme'>
-            <MarketHeader lang={params.lang} />
             <MarqueTextSection markets={markets}/>
             <MarketSection markets={markets} objMarket={market} lang={params.lang} objOrderBook={orderBook} trades={trades}/>
             <MarketTableSection lang={params.lang}/>

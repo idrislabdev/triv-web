@@ -7,6 +7,7 @@ import {
   ChartingLibraryWidgetOptions,
   ResolutionString,
 } from "../../../../../public/static/charting_library/charting_library";
+import { useGlobals } from "@/@core/hooks/useGlobals";
 
 
 const TvChart = dynamic(
@@ -19,10 +20,12 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
   const { symbol } = props;
   const [isScriptReady, setIsScriptReady] = useState(false);
   const [defaultWidget, setDefaultWidget] = useState<Partial<ChartingLibraryWidgetOptions>>({})
+  const { globals } = useGlobals()
 
 
   useEffect(() => {
     const theme = localStorage.getItem('mode')
+    console.log(globals)
     setDefaultWidget({
       symbol: symbol,
       interval: "15" as ResolutionString,
@@ -35,9 +38,9 @@ export default function MarketsTvWrapper(props: {symbol:string}) {
       user_id: "public_user_id",
       fullscreen: false,
       autosize: true,
-      theme: theme === 'dark-theme' ? 'dark' : 'light'
+      theme: globals.theme
     })
-  }, [symbol, setDefaultWidget])
+  }, [symbol, setDefaultWidget, globals])
   
   return (
     <>

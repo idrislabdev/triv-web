@@ -6,6 +6,8 @@ import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
 import "@/styles/components/market-header.css";
+import { useGlobals } from '@/@core/hooks/useGlobals';
+import { GlobalsProvider } from '@/@core/context/globalContext';
 
 const MarketHeader = (props: { lang: string}) => {
     const { lang } = props
@@ -15,6 +17,7 @@ const MarketHeader = (props: { lang: string}) => {
     const [showSidebar, setShowSidebar] = useState(false);
     const [mode, setMode] = useState('light-theme');
     const dropdownFlags: any = useRef(null);
+    const { globals, saveGlobals } = useGlobals()
 
     const pathname = usePathname()
     const router = useRouter();
@@ -22,18 +25,12 @@ const MarketHeader = (props: { lang: string}) => {
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
         if (check) {
-            // document.body.classList.remove("dark-theme");
             localStorage.removeItem('mode');
-            // setMode('light-theme')
-
+            saveGlobals({...globals, theme: 'light'})
         } else {
-            // document.body.classList.add("dark-theme");
-            localStorage.setItem('mode', 'dark-theme');
-            // setMode('dark-theme')
+            localStorage.setItem('mode', 'dark');
+            saveGlobals({...globals, theme: 'dark'})
         }
-        // let paths = pathname.split("/")
-        // router.refresh();
-        window.location.reload();
     }
 
     const showMobileSidebar = () => {
@@ -52,6 +49,14 @@ const MarketHeader = (props: { lang: string}) => {
             document.body.classList.add("dark-theme");
         }
     })
+
+    useEffect(() => {
+        if (globals.theme === 'dark') {
+            document.body.classList.add("dark-theme");
+        } else {
+            document.body.classList.remove("dark-theme");
+        }
+    },[globals.theme])
 
     useEffect(() => {
         if (!showFlags) return;
@@ -96,8 +101,8 @@ const MarketHeader = (props: { lang: string}) => {
                             </li>
                         </ul>
                         <a className='button-switch-theme' onClick={_ => switchTheme()}>
-                            {mode === 'light-theme' && <MoonIcon color='#fff' /> }
-                            {mode === 'dark-theme' && <SunIcon color='#fff' /> }
+                            {globals.theme === 'light' && <MoonIcon color='#fff' /> }
+                            {globals.theme === 'dark' && <SunIcon color='#fff' /> }
                         </a>
 
                     </div>

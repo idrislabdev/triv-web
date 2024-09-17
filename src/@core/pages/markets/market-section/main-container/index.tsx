@@ -38,7 +38,6 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
     useEffect(() => {
         // if (!showMarket) return;
         function handleClick(event : MouseEvent) {
-            console.log(searchDropdown.current.contains(event.target))
             if (searchDropdown.current && !searchDropdown.current.contains(event.target)) {
                 setShowMarket(false);
             }
