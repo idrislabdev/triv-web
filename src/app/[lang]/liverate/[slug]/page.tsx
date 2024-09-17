@@ -26,15 +26,20 @@ export default async function  LiverateCoin({ params }: any) {
 
 
     return (
-    <>
-      <LiverateDetailPage 
-        lang={params.lang} 
-        objLang={null} 
-        blogs={blogs} 
-        liverateMinies={liverateMinies} 
-        coin={coin} 
-        asset={asset}
-      />
-    </>
+    <html>
+      <head>
+        
+      </head>
+      <body>
+        <LiverateDetailPage 
+          lang={params.lang} 
+          objLang={null} 
+          blogs={blogs} 
+          liverateMinies={liverateMinies} 
+          coin={coin} 
+          asset={asset}
+        />
+      </body>
+    </html>
   )
 }

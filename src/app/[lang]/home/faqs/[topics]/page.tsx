@@ -6,13 +6,16 @@ import React from 'react'
 import '@/styles/faqs.css'
 export default async function FaqsTopics({ params }: any) {
     return (
-        <>
-            <MainHeader classText="header-white" lang={params.lang}/>
+        <html>
+            <head></head>
+            <body>
+                <MainHeader classText="header-white" lang={params.lang}/>
                 <main className='faqs-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <FaqsDetailTopicSection objLang={null} />
                 </main>
-            <Footer />
-        </>
+                <Footer />
+            </body>
+        </html>
   )
 }
 

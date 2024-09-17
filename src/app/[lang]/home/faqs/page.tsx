@@ -8,15 +8,18 @@ import FaqsTopicSection from '@/@core/pages/faqs/topic-section'
 import FaqsPopularSection from '@/@core/pages/faqs/popular-section'
 export default async function Faqs({ params }: any) {
     return (
-        <>
-            <MainHeader classText="header-white" lang={params.lang}/>
+        <html>
+            <head></head>
+            <body>
+                <MainHeader classText="header-white" lang={params.lang}/>
                 <main className='faqs-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <FaqsSearchSection objLang={null} />
                     <FaqsTopicSection lang={params.lang} objLang={null} />
                     <FaqsPopularSection objLang={null} />
                 </main>
-            <Footer />
-        </>
+                <Footer />
+            </body>
+        </html>
   )
 }
 

@@ -619,7 +619,7 @@
                         .row-list {
                             @apply gap-[12px] items-center;
                             .col-left {
-                                @apply w-[40%];
+                                @apply w-[50%];
                                 .col-nama {
                                     @apply gap-[14px];
                                     img {
@@ -642,7 +642,7 @@
                                 }
                             }
                             .col-right {
-                                @apply w-[40%] flex-col text-right;
+                                @apply w-[30%] flex-col text-right;
                                 .col-beli {
                                     @apply w-full;
                                 }

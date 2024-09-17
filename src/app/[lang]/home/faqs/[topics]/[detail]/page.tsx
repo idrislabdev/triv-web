@@ -11,13 +11,16 @@ export default async function FaqsTopicsDetail({ params }: any) {
         detail_faq,
     } = await getDictionariesFaqs(params.lang);
     return (
-        <>
-            <MainHeader classText="header-white" lang={params.lang}/>
+        <html>
+            <head></head>
+            <body>
+                <MainHeader classText="header-white" lang={params.lang}/>
                 <main className='faqs-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <FaqsDetailSection objLang={detail_faq} />
                 </main>
-            <Footer />
-        </>
+                <Footer />
+            </body>
+        </html>
   )
 }
 
