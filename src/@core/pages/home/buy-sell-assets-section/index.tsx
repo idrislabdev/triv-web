@@ -19,8 +19,8 @@ const HomeBuySellAssetsSection = (props: {lang:string, objLang:any}) => {
              <div className='start-button-logo'>
                 <Link href={`/${lang}/register`}>{objLang.button} <ArrowRightIcon color={'#fff'}/></Link>
                  <div className='start-now-store'>
-                     <Image src='/images/apps-store/appstore-logo.png' className='apple-logo' alt='apple logo' width={0} height={0} sizes='100%'/>
                      <Image src='/images/apps-store/playstore-logo.png' className='playstore-logo' alt='playstore logo' width={0} height={0} sizes='100%'/>
+                     <Image src='/images/apps-store/appstore-logo.png' className='apple-logo' alt='apple logo' width={0} height={0} sizes='100%'/>
                  </div>
              </div>
          </div>

@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { BurgerIcon, ChevronIconDown, MoonIcon, SunIcon, TrivIcon } from '../custom-icons';
+import { BurgerIcon, CheckCircleIcon, ChevronIconDown, MoonIcon, SunIcon, TrivIcon } from '../custom-icons';
 import Link from 'next/link';
 import MainSidebarMenu from './main-sidebar-menu';
 import { usePathname, useRouter } from 'next/navigation';
@@ -165,21 +165,30 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                             {mode === 'dark-theme' && <SunIcon color='#fff' /> }
                         </a>
                         <ul>
-                            <li>
-                                <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
-                                    <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
-                                    <span className={`transition-all duration-300 ${showFlags ? 'rotate-180': ''}`}><ChevronIconDown color={'#fff'}/></span>
-                                </a>
+                            <li className={`flags ${showFlags ? 'show': ''}`}>
                                 <ul className={`list-flags ${showFlags ? 'show': ''}`}>
                                     <li>
-                                        <a onClick={_ => switchLang('id')}>
-                                            <Image src={`/images/flags/id.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                        <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
+                                            <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
+                                            {!showFlags &&
+                                                <span className={`transition-all duration-300 `}><ChevronIconDown color={'#fff'}/></span>
+                                            }
+                                            {showFlags &&
+                                                <span className={`transition-all duration-300`}><CheckCircleIcon /></span>
+                                            }
                                         </a>
                                     </li>
-                                    <li>
-                                        <a onClick={_ => switchLang('en')}>
-                                            <Image src={`/images/flags/en.png`} alt='english flags' width={'28'} height={'20'} />
-                                        </a>
+                                    <li className={`${showFlags ? 'block': 'hidden'}`}>
+                                        {lang === 'en' &&
+                                            <a onClick={_ => switchLang('id')}>
+                                                <Image src={`/images/flags/id.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                            </a>
+                                        }
+                                         {lang === 'id' &&
+                                            <a onClick={_ => switchLang('en')}>
+                                                <Image src={`/images/flags/en.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                            </a>
+                                        }
                                     </li>
                                 </ul>
                             </li>

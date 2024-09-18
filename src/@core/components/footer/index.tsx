@@ -101,26 +101,28 @@ const Footer = () => {
                     <div className='footer-triv-logo'>
                         <Image src='/images/logos/triv-logo-dark.png' alt='triv logo dark logo' width={226} height={101}/>
                     </div>
-                    <div className='footer-socialmedia-list sm:!block'>
-                        <ul>
-                            <li><a><FacebookIcon color='white'/></a></li>
-                            <li><a><YoutubeIcon color='white'/></a></li>
-                            <li><a><LinkedinIcon color='white'/></a></li>
-                            <li><a><TwiterIcon color='white'/></a></li>
-                            <li><a><TiktokIcon color='white'/></a></li>
-                            <li><a><TelegramIcon color='white'/></a></li>
-                        </ul>
-                    </div>
-                    <div className='footer-address'>
-                        <h6>PT. Tiga Inti Utama</h6>
-                        <p>Jl. Jendral Sudirman Kav. 52-53 SCBD - Jakarta Selatan - 12190</p>
-                        <p>phone : 021 4020 0828</p>
+                    <div className='footer-triv-address-logo'>
+                        <div className='footer-socialmedia-list'>
+                            <ul>
+                                <li><a><FacebookIcon color='white'/></a></li>
+                                <li><a><YoutubeIcon color='white'/></a></li>
+                                <li><a><LinkedinIcon color='white'/></a></li>
+                                <li><a><TwiterIcon color='white'/></a></li>
+                                <li><a><TiktokIcon color='white'/></a></li>
+                                <li><a><TelegramIcon color='white'/></a></li>
+                            </ul>
+                        </div>
+                        <div className='footer-address'>
+                            <h6>PT. Tiga Inti Utama</h6>
+                            <p>Jl. Jendral Sudirman Kav. 52-53 SCBD - Jakarta Selatan - 12190</p>
+                            <p>phone : 021 4020 0828</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className='footer-secondary'>
                 <div className='footer-secondary-left'>
-                    <div className='copyright-text'><label>© 2015 - 2024 Triv All Rights Reserved.</label></div>
+                    <div className='copyright-text'><label>© 2024 PT Tiga Inti Utama. All Rights Reserved.</label></div>
                     <div className='footer-appstore'>
                         <Image src='/images/apps-store/playstore-dark-logo.png' className='logo-playstore' alt='playstore logo' width={130} height={38}/>
                         <Image src='/images/apps-store/appstore-dark-logo.png' className='logo-appstore' alt='appstore logo' width={114} height={38}/>

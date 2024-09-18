@@ -30,16 +30,19 @@
                     @apply w-[226px] h-[101px];
                 }
             }
-            .footer-socialmedia-list {
-                @apply hidden;
-                ul {
-                    @apply flex gap-[20px] list-none;
+            .footer-triv-address-logo {
+                @apply flex flex-col gap-[30px];
+                .footer-socialmedia-list {
+                    @apply flex justify-end;
+                    ul {
+                        @apply flex gap-[20px] list-none;
+                    }
                 }
-            }
-            .footer-address {
-                @apply text-right;
-                h6, p {
-                    @apply text-[16px]/[28.8px] font-medium;
+                .footer-address {
+                    @apply text-right;
+                    h6, p {
+                        @apply text-[16px]/[28.8px] font-medium;
+                    }
                 }
             }
         }
