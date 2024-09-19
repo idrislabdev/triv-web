@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { FacebookIcon, LinkedinIcon, TelegramIcon, TiktokIcon, TwiterIcon, YoutubeIcon } from '../custom-icons'
+import { FacebookIcon, InstagramIcon, LinkedinIcon, TelegramIcon, TiktokIcon, TwiterIcon, YoutubeIcon } from '../custom-icons'
 
 const Footer = () => {
     const [listMarketPlace, setListMarketplace] = useState("1")
@@ -104,9 +104,10 @@ const Footer = () => {
                     <div className='footer-triv-address-logo'>
                         <div className='footer-socialmedia-list'>
                             <ul>
-                                <li><a><FacebookIcon color='white'/></a></li>
+                                <li><a><InstagramIcon color='white'/></a></li>
                                 <li><a><YoutubeIcon color='white'/></a></li>
                                 <li><a><LinkedinIcon color='white'/></a></li>
+                                <li><a><FacebookIcon color='white'/></a></li>
                                 <li><a><TwiterIcon color='white'/></a></li>
                                 <li><a><TiktokIcon color='white'/></a></li>
                                 <li><a><TelegramIcon color='white'/></a></li>
