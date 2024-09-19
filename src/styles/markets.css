@@ -9,6 +9,15 @@
     p,label {
         @apply !text-slate-300;
     }
+    span {
+        &.badge-status {
+            background-color: unset !important;
+            
+        }
+        &.action {
+           
+        }
+    }
     .markets-page {
         .market-section {
             @apply !border-b-[#2E3339] !border-t-[#2E3339];
@@ -231,7 +240,37 @@
 }
 .markets-page {
     @apply pb-[0px] pt-[50px];
+    span {
+        &.badge-status {
+            @apply text-[14px]/[21px] font-medium border rounded-[8px] py-[4px] px-[7px] capitalize;
+            &.completed {
+                @apply text-[#4DAAE9] border-[#4DAAE9] bg-[#EEF7FD];
+            }
+            &.active {
+                @apply text-[#67C48F] border-[#67C48F] bg-[#F0FAF0];
+            }
+            &.canceled {
+                @apply text-[#FF7F17] border-[#FF7F17] bg-[#FFF3E8];
+            }
+            &.failed {
+                @apply text-[#EB5757] border-[#EB5757] bg-[#FFF8F8];
+            }
+            &.buy {
+                @apply text-[#67C48F] border-[#67C48F] bg-[#F0FAF0];
+            }
 
+            &.sell {
+                @apply text-[#EB5757] border-[#EB5757] bg-[#FFF8F8];
+            }
+            
+        }
+        &.action {
+            @apply text-[14px]/[21px] font-medium py-[4px] px-[7px];
+            &.cancel {
+                @apply text-[#EB5757];
+            }
+        }
+    }
     .marque-text-section {
         @apply flex flex-col justify-start items-center pt-[10px] pb-[10px] px-[20px];
         .rfm-marquee-container  {
@@ -542,6 +581,10 @@
                                     }
                                 }
                             }
+                        }
+                        td {
+                            @apply px-[20px] py-[10px];
+
                         }
                     }
                 }
