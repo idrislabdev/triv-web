@@ -119,6 +119,12 @@
                             @apply text-[10px]/[15px];
                         }
                     }
+                    .footer-triv-address-logo {
+                        .footer-socialmedia-list {
+                            @apply justify-center;
+                        }
+                    }
+
                 }
             }
             .footer-secondary {
