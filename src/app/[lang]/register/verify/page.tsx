@@ -100,6 +100,7 @@ export default async function RegisterVerifyPage({ params }: any) {
                 <a>Kirim Ulang</a>
               </div>
               <div className='terdaftar-subcontainer'>
+                <h5>{dictRegister.welcome_text}</h5>
                 <p>{dictRegister.sub_welcome_text}</p>
                 <div className='terdaftar-diawasi'>
                     <div className='img-wrapper'>
