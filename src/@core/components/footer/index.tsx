@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='footer-primary'>
                 <div className='footer-primary-left'>
                     <div className='container-menu'>
-                        <label className='sm:hidden'>Market Place</label>
+                        <label className='sm:hidden'>Market Price</label>
                         <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListMarketplace(listMarketPlace !== "1" ? "1" : "")}> Market Place
                             <svg className={`w-3 h-3 ${listMarketPlace === "1" ? 'transform rotate-180' : ''}`} 
                                 fill="none" strokeLinecap="round" 
@@ -79,7 +79,7 @@ const Footer = () => {
                     </div>
                     <div className='container-menu'>
                         <label className='sm:hidden'>Company</label>
-                        <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListCompany(listCompany !== "1" ? "1" : "")}> Market Place
+                        <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListCompany(listCompany !== "1" ? "1" : "")}> Market Price
                             <svg className={`w-3 h-3 ${listCompany === "1" ? 'transform rotate-180' : ''}`} 
                                 fill="none" strokeLinecap="round" 
                                 strokeLinejoin="round" 
