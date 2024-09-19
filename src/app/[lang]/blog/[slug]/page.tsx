@@ -19,7 +19,7 @@ export default async function  BlogSlug({ params }: any) {
                 <meta charSet="utf-8" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-                <meta http-equiv='content-language' content='id-id' />
+                <meta httpEquiv='content-language' content='id-id' />
                 <meta name="googlebot" content="index,follow" />
                 <meta name="msnbot" content="index,follow" />
                 <meta name="robots" content="index,follow" />

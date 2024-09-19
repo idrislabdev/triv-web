@@ -440,6 +440,66 @@
                     }
                 }
            }
+
+            .start-button-logo {
+                @apply flex gap-[30px];
+                a {
+                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+                .start-now-store {
+                    @apply flex gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[31px] h-[37px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[30px] h-[32px];
+    
+                        }
+                    }
+                }
+                .start-now-store-mobile {
+                    @apply hidden gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[130.64px] h-[38.71px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[114.43px] h-[37.02px];
+    
+                        }
+                    }
+                }
+            }
+
+            .start-button-logo-product {
+                @apply flex flex-col gap-[30px];
+                a {
+                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+                .start-now-store {
+                    @apply flex gap-[14px] items-center;
+                    img {
+                        &.apple-logo {
+                            @apply w-[130.64px] h-[38.71px];
+                        }
+                        &.playstore-logo {
+                            @apply w-[114.43px] h-[37.02px];
+    
+                        }
+                    }
+                }
+            }
         }
     }
     .products-ewallet-section {
@@ -785,6 +845,17 @@
                         }
                     }
                 }
+
+                .start-button-logo-product {
+                    @apply flex-col justify-center items-center gap-[30px];
+                    a {
+                        @apply w-[80%] text-[12px]/[18px] py-[8px];
+                        svg {
+                            @apply w-[18px] h-[18px];
+                        }
+                    }
+                }
+                
             }
             .products-ewallet-section {
                 @apply flex-col py-[30px] px-[20px];

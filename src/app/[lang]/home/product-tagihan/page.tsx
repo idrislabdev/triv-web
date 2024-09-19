@@ -4,7 +4,7 @@ import MainHeader from '@/@core/components/main-header'
 
 import '@/styles/products.css'
 import ProductsEwalletSection from '@/@core/pages/products/ewallet-section'
-import ProductsInvestasiNowSection from '@/@core/pages/products/investasi-now-section'
+import ProductsInvestasiNowSection2 from '@/@core/pages/products/investasi-now-section-2'
 import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
 import ProductHeaderSection from '@/@core/pages/products/header-section'
 import ProductsAffliateSection from '@/@core/pages/products/affliate-section'
@@ -97,16 +97,18 @@ export default async function ProductsPulsa({ params }: any) {
                     </>
                 }
             </head>
-            <MainHeader classText="header-white" lang={params.lang}/>
+            <body>
+                <MainHeader classText="header-white" lang={params.lang}/>
                 <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ProductHeaderSection objLang={header_section}/>
                     <ProductsTagihanSection objLang={topup_section} />
                     <ProductsAffliateSection objLang={triv_affliate} />
                     <ProductsEwalletSection objLang={ewallet_section}/>
-                    <ProductsInvestasiNowSection objLang={start_now_section} />
+                    <ProductsInvestasiNowSection2 objLang={start_now_section} />
                     <ProductsTestimonyCarouselSection />
                 </main>
-            <Footer />
+                <Footer />
+            </body>
         </html>
   )
 }

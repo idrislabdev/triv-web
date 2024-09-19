@@ -8,7 +8,7 @@ const ProductsTokenListrikSection = (props: {objLang:any}) => {
     return (
         <section className='products-topup-section'>
             <div className='image-container'>
-                <Image src='/images/devices/iphone-product.png' alt='iphone' width={0} height={0} sizes='100%'/>
+                <Image src='/images/devices/iphone-token-listrik.png' alt='iphone' width={0} height={0} sizes='100%'/>
             </div>
             <div className='description-container'>
                 <div className='start-now-description'>

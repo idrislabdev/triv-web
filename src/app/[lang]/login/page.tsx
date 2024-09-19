@@ -26,7 +26,7 @@ export default async function LoginPage({ params }: any) {
             <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
             <meta name="csrf-param" content="authenticity_token" />
             <meta name="csrf-token" content="c+0ddbAcSs2LJr0GS/CW/5FuKK1gqqPFR57AIUxHOxn7C9dcFRHYhHXcg8uZ6q1Vz7COTRE3BrfyY5N+nqOm+g==" />
-            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+            <meta content="text/html; charset=UTF-8" httpEquiv="Content-Type" />
             <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
             <meta content="Triv - Jual Beli eMoney dan Aset Digital Terbesar di Indonesia" name="title" />
             <meta  content="Triv memudahkan Anda dalam jual - beli berbagai eMoney dan aset digital secara cepat dan aman hanya dalam hitungan Detik 24 jam tanpa hari libur." name="description" />
@@ -55,7 +55,7 @@ export default async function LoginPage({ params }: any) {
             <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
             <meta name="csrf-param" content="authenticity_token" />
             <meta name="csrf-token" content="c+0ddbAcSs2LJr0GS/CW/5FuKK1gqqPFR57AIUxHOxn7C9dcFRHYhHXcg8uZ6q1Vz7COTRE3BrfyY5N+nqOm+g==" />
-            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+            <meta content="text/html; charset=UTF-8" httpEquiv="Content-Type" />
             <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
             <meta content="Triv - Jual Beli eMoney dan Aset Digital Terbesar di Indonesia" name="title" />
             <meta content="Triv memudahkan Anda dalam jual - beli berbagai eMoney dan aset digital secara cepat dan aman hanya dalam hitungan Detik 24 jam tanpa hari libur." name="description" />

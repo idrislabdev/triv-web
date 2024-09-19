@@ -4,7 +4,7 @@ import MainHeader from '@/@core/components/main-header'
 
 import '@/styles/products.css'
 import ProductsEwalletSection from '@/@core/pages/products/ewallet-section'
-import ProductsInvestasiNowSection from '@/@core/pages/products/investasi-now-section'
+import ProductsInvestasiNowSection2 from '@/@core/pages/products/investasi-now-section-2'
 import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
 import ProductHeaderSection from '@/@core/pages/products/header-section'
 import ProductsAffliateSection from '@/@core/pages/products/affliate-section'
@@ -25,7 +25,7 @@ export default async function ProductsTokenListrik({ params }: any) {
                 {params.lang === 'id' &&
                     <>
                         <meta name="csrf-token" content="ZyuP3gA8SI0ljYMGyfbVvvKYLF+H+M9d7kxBO2R10j7vzUX3pTHaxNt3vcsb7O4UrEaKv/Zlai9bsRJktpFP3Q==" />
-                        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+                        <meta content="text/html; charset=UTF-8" httpEquiv="Content-Type" />
                         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
                         <meta content="Triv - Jual Beli eMoney dan Aset Digital Terbesar di Indonesia" name="title" />
                         <meta content="" name="description" />
@@ -97,16 +97,18 @@ export default async function ProductsTokenListrik({ params }: any) {
                     </>
                 }
             </head>
-            <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-                    <ProductHeaderSection objLang={header_section}/>
-                    <ProductsTokenListrikSection objLang={topup_section} />
-                    <ProductsAffliateSection objLang={triv_affliate} />
-                    <ProductsEwalletSection objLang={ewallet_section}/>
-                    <ProductsInvestasiNowSection objLang={start_now_section} />
-                    <ProductsTestimonyCarouselSection />
-                </main>
-            <Footer />
+            <body>
+                <MainHeader classText="header-white" lang={params.lang}/>
+                    <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
+                        <ProductHeaderSection objLang={header_section}/>
+                        <ProductsTokenListrikSection objLang={topup_section} />
+                        <ProductsAffliateSection objLang={triv_affliate} />
+                        <ProductsEwalletSection objLang={ewallet_section}/>
+                        <ProductsInvestasiNowSection2 objLang={start_now_section} />
+                        <ProductsTestimonyCarouselSection />
+                    </main>
+                <Footer />
+            </body>
         </html>
   )
 }

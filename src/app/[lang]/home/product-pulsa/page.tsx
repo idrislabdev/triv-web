@@ -4,12 +4,12 @@ import MainHeader from '@/@core/components/main-header'
 
 import '@/styles/products.css'
 import ProductsEwalletSection from '@/@core/pages/products/ewallet-section'
-import ProductsInvestasiNowSection from '@/@core/pages/products/investasi-now-section'
 import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
 import { getDictionariesProductsPulsa } from '@/app/dictionaries'
 import ProductHeaderSection from '@/@core/pages/products/header-section'
 import ProductsTopupPulsaSection from '@/@core/pages/products/topup-pulsa-section'
 import ProductsAffliateSection from '@/@core/pages/products/affliate-section'
+import ProductsInvestasiNowSection2 from '@/@core/pages/products/investasi-now-section-2'
 
 export default async function ProductsPulsa({ params }: any) {
     const {
@@ -25,7 +25,7 @@ export default async function ProductsPulsa({ params }: any) {
                 {params.lang === 'id' && 
                     <>
                         <meta name="csrf-token" content="RaV9fNtdJOQByybvlONHB2HckTxgMS++KVbDAU1qqQzNQ7dVflC2rf8xGCJG+XytPwI33BGsisycq5Ben4407w==" />
-                        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+                        <meta content="text/html; charset=UTF-8" httpEquiv="Content-Type" />
                         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
                         <meta content="Triv - Jual Beli eMoney dan Aset Digital Terbesar di Indonesia" name="title" />
                         <meta content="" name="description" />
@@ -98,16 +98,18 @@ export default async function ProductsPulsa({ params }: any) {
                     </>
                 }
             </head>
-            <MainHeader classText="header-white" lang={params.lang}/>
-            <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-                <ProductHeaderSection objLang={header_section}/>
-                <ProductsTopupPulsaSection objLang={topup_section} />
-                <ProductsAffliateSection objLang={triv_affliate} />
-                <ProductsEwalletSection objLang={ewallet_section}/>
-                <ProductsInvestasiNowSection objLang={start_now_section} />
-                <ProductsTestimonyCarouselSection />
-            </main>
-            <Footer />
+            <body>
+                <MainHeader classText="header-white" lang={params.lang}/>
+                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
+                    <ProductHeaderSection objLang={header_section}/>
+                    <ProductsTopupPulsaSection objLang={topup_section} />
+                    <ProductsAffliateSection objLang={triv_affliate} />
+                    <ProductsEwalletSection objLang={ewallet_section}/>
+                    <ProductsInvestasiNowSection2 objLang={start_now_section} />
+                    <ProductsTestimonyCarouselSection />
+                </main>
+                <Footer />
+            </body>
         </html>
   )
 }
