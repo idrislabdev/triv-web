@@ -47,6 +47,15 @@
                         }
                     }
                 }
+                a {
+                    &.burger-menu {
+                        svg {
+                            path {
+                                @apply fill-white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

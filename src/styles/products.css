@@ -264,9 +264,15 @@
                 @apply flex gap-[100px];
                 .detail-subcontainer {
                     @apply flex flex-col items-center gap-[30px] w-1/2;
-                    label {
-                        @apply flex items-center gap-[4px] text-[38px]/[57px] font-bold text-neutral-900;
-                        
+                    .detail-info {
+                        @apply flex items-center gap-[4px];
+                        label {
+                            @apply text-[38px]/[57px] font-medium text-neutral-900;
+                            span {
+                                @apply text-[30px]/[45px];
+                            }
+                            
+                        }
                     }
                     .detail-description-subcontainer {
                         @apply flex flex-col gap-[10px] items-center text-center;
@@ -643,6 +649,18 @@
                                 @apply gap-[4px] text-[16px]/[24px];
                                 svg {
                                     @apply w-[16px] h-[16px];
+                                }
+                            }
+                            .detail-info {
+                                svg {
+                                    @apply w-[16px] h-[16px];
+                                }
+                                label {
+                                    @apply text-[16px]/[24px] font-semibold;
+                                    span {
+                                        @apply text-[12px]/[18px];
+                                    }
+                                    
                                 }
                             }
                             .detail-description-subcontainer {

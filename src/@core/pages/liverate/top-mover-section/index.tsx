@@ -21,7 +21,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             </div>
                         </div>
                     </div>
-                    <p className='top-mover-text-mobile'>IDR {hightlight.top_gainer.rate}</p>
+                    <p className='top-mover-text-mobile truncate'>IDR {hightlight.top_gainer.rate}</p>
                     <div className='top-mover-container-right'>
                         <span><span><CaretUpIcon color={'#71BBED'} /></span>14.93%</span>
                         <div className='top-mover-graph'>
@@ -40,7 +40,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             </div>
                         </div>
                     </div>
-                    <p className='top-mover-text-mobile'>IDR {hightlight.highest_volume.rate}</p>
+                    <p className='top-mover-text-mobile truncate'>IDR {hightlight.highest_volume.rate}</p>
                     <div className='top-mover-container-right'>
                         <span><span><CaretUpIcon color={'#71BBED'} /></span>14.93%</span>
                         <div className='top-mover-graph'>
@@ -48,7 +48,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                         </div>
                     </div>
                 </Link>
-                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.most_popular.label.toLowerCase().replace(" ", "")}`}>
+                <Link className='top-mover-container truncate' href={`/${lang}/liverate/${hightlight.most_popular.label.toLowerCase().replace(" ", "")}`}>
                     <div className='top-mover-container-left'>
                         <label>Highest Volume (24h)</label>
                         <div className='top-mover-text-icon'>

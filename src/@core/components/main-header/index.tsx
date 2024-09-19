@@ -25,7 +25,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
             document.body.classList.remove("dark-theme");
             localStorage.removeItem('mode');
             setMode('light-theme')
-            saveGlobals({...globals, theme: 'dark'})
+            saveGlobals({...globals, theme: 'light'})
 
         } else {
             document.body.classList.add("dark-theme");

@@ -41,6 +41,7 @@ export default function LiverateCoinChartWrapper(props: {symbol:string}) {
   // };
 
   useEffect(() => {
+    console.log(globals.theme)
     setDefaultWidget({
       symbol: symbol,
       interval: "15" as ResolutionString,

@@ -30,7 +30,7 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
             <div className='about-subcontainer'>
                 <h5>Tentang {asset.label}</h5>
                 <p>{asset.about}</p>
-                <a>Website Resmi <ArrowRightIcon color={'#fff'} /></a>
+                <a className='navigation-link'>Website Resmi <ArrowRightIcon color={'#fff'} /></a>
             </div>
             <div className='activity-subcontainer'>
                 <h5>Aktivitas Pengguna Triv</h5>

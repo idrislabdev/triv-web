@@ -1,7 +1,7 @@
 "use client"
 
 import { ILiverate } from '@/@core/@types/interfaces'
-import { CaretDownIcon, CaretUpIcon, CryptoIcon, EuroIcon, GoldIcon, TrendUpIcon, UsdIcon } from '@/@core/components/custom-icons'
+import { CaretDownIcon, CaretUpIcon, CryptoIcon, EuroIcon, GoldIcon, SearchIcon, TrendUpIcon, UsdIcon } from '@/@core/components/custom-icons'
 import axiosInstance from '@/@core/utils/axios'
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
@@ -48,7 +48,10 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
                 </li>
               </ul>
             </div>
-            <input placeholder='Asset name' />
+            <div className='group-input append'>
+                <span className='append'><SearchIcon color={'#fff'} /></span>
+                <input placeholder='Asset name'/>
+            </div>
         </div>
         <div className='list-liverate-content'>
           <div className='list-table-header'>
