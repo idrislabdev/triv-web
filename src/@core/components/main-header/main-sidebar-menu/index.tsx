@@ -1,12 +1,16 @@
 "use client"
-import React, { Dispatch, SetStateAction, useEffect } from 'react'
-import { MoonIcon, TimesIcon, TrivIcon } from '../../custom-icons'
+import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { CheckCircleIcon, ChevronIconDown, MoonIcon, TimesIcon, TrivIcon } from '../../custom-icons'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<SetStateAction<boolean>> }) => {
     const { lang, show, setShow } = props
     const router = useRouter();
+    const [showFlags, setShowFlags] = useState(false);
+    const dropdownFlags2: any = useRef(null);
+    const pathname = usePathname()
 
     const toggleSubMenu = (id:string) => {
         const element = document.getElementById(id)
@@ -31,6 +35,13 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
         setShow(false)
     }
 
+    const switchLang = (langText:string) => {
+        let paths = pathname.split("/")
+        paths[1] = langText
+        router.push(paths.join("/"))
+
+    }
+
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
         if (check) {
@@ -42,6 +53,17 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
         window.location.reload();
     }
 
+    useEffect(() => {
+        if (!showFlags) return;
+        function handleClick(event : MouseEvent) {
+            if (dropdownFlags2.current && !dropdownFlags2.current.contains(event.target)) {
+                setShowFlags(false);
+            }
+        }
+        window.addEventListener("click", handleClick);
+        return () => window.removeEventListener("click", handleClick);
+    }, [showFlags]);
+
     return (
         <>
             <div className={`main-sidebar-overlay ${!show ? '!hidden' : ''}`} onClick={_ => setShow(false)}></div>
@@ -52,6 +74,31 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                             <a onClick={_ => goToLink('')}><TrivIcon color={'#318AC6'} /></a>
                         </div>
                         <div className='sidebar-header-action'>
+                            <ul className={`list-flags ${showFlags ? 'show': ''}`}>
+                                <li>
+                                    <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags2}>
+                                        <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
+                                        {!showFlags &&
+                                            <span className={`chevron-icon`}><ChevronIconDown color={'#fff'}/></span>
+                                        }
+                                        {showFlags &&
+                                            <span className={`check-icon`}><CheckCircleIcon /></span>
+                                        }
+                                    </a>
+                                </li>
+                                <li className={`${showFlags ? 'block': 'hidden'}`}>
+                                    {lang === 'en' &&
+                                        <a onClick={_ => switchLang('id')}>
+                                            <Image src={`/images/flags/id.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                        </a>
+                                    }
+                                        {lang === 'id' &&
+                                        <a onClick={_ => switchLang('en')}>
+                                            <Image src={`/images/flags/en.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                        </a>
+                                    }
+                                </li>
+                            </ul>
                             <a onClick={_ => switchTheme()}><MoonIcon color={'#F2AF22'} /></a>
                             <a onClick={_ => closeSidebar()}><TimesIcon color={'#838899'} /></a>
                         </div>
@@ -101,9 +148,9 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                             </li>
                                 <li><a onClick={_ => goToLink('staking')}>Staking</a></li>
                                 <li><a onClick={_ => goToLink('stocks')}>Us Stock</a></li>
-                                <li><a onClick={_ => goToLink('home/affliate')}>Us Stock</a></li>
-                                <li><a onClick={_ => goToLink('blog')}>Affliate</a></li>
-                                <li><a onClick={_ => goToLink('home/contact-us')}>Blog</a></li>
+                                <li><a onClick={_ => goToLink('home/affliate')}>Affliate</a></li>
+                                <li><a onClick={_ => goToLink('blog')}>Blog</a></li>
+                                <li><a onClick={_ => goToLink('home/contact-us')}>Contact Us</a></li>
                             </ul>
                     </div>
                 </div>
