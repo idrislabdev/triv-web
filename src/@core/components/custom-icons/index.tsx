@@ -549,8 +549,15 @@ const ChartPPT = (props: {color: any}) => {
 
 const CheckCircleIcon = () => {
     return (<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fillRule="evenodd" clipRule="evenodd" d="M0 6.99967C0 3.31967 2.98667 0.333008 6.66667 0.333008C10.3467 0.333008 13.3333 3.31967 13.3333 6.99967C13.3333 10.6797 10.3467 13.6663 6.66667 13.6663C2.98667 13.6663 0 10.6797 0 6.99967ZM5.33333 8.44635L9.72667 4.05302L10.6667 4.99969L5.33333 10.333L2.66667 7.66635L3.60667 6.72635L5.33333 8.44635Z" fill="white"/>
+        <path fillRule="evenodd" clip-rule="evenodd" d="M0 6.99967C0 3.31967 2.98667 0.333008 6.66667 0.333008C10.3467 0.333008 13.3333 3.31967 13.3333 6.99967C13.3333 10.6797 10.3467 13.6663 6.66667 13.6663C2.98667 13.6663 0 10.6797 0 6.99967ZM5.33333 8.44635L9.72667 4.05302L10.6667 4.99969L5.33333 10.333L2.66667 7.66635L3.60667 6.72635L5.33333 8.44635Z" fill="url(#paint0_linear_1059_8757)"/>
+        <defs>
+        <linearGradient id="paint0_linear_1059_8757" x1="6.66667" y1="0.333008" x2="6.66667" y2="13.6663" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#94CCF2"/>
+        <stop offset="1" stop-color="#71BBED"/>
+        </linearGradient>
+        </defs>
         </svg>
+        
     )
 }
 

@@ -20,7 +20,17 @@
         .products-average-section{
             .box-container {
                 @apply bg-[#1b1f22];
-
+                .sub-container {
+                    .detail-subcontainer {
+                        .detail-description-subcontainer {
+                            p {
+                                span {
+                                    @apply !text-[#FF7F17];   
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         .products-affliate-section {

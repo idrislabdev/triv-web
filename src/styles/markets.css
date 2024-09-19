@@ -18,6 +18,13 @@
            
         }
     }
+    svg {
+        &.CircularProgressbar  {
+            .CircularProgressbar-trail {
+                stroke: #191b20 !important;
+            }
+        }
+    }
     .markets-page {
         .market-section {
             @apply !border-b-[#2E3339] !border-t-[#2E3339];
@@ -584,7 +591,21 @@
                         }
                         td {
                             @apply px-[20px] py-[10px];
-
+                            svg {
+                                &.CircularProgressbar  {
+                                    @apply w-[42px] h-[42px];
+                                    .CircularProgressbar-path {
+                                        stroke: #67c48f;
+                                        stroke-linecap: unset;
+                                    }
+                                    .CircularProgressbar-trail {
+                                        stroke: #D9D9D9;
+                                    }
+                                    .CircularProgressbar-text {
+                                        @apply text-[#67c48f] fill-[#67c48f];
+                                    }
+                                }
+                            }
                         }
                     }
                 }

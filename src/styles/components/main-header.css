@@ -11,7 +11,7 @@
                             a {
                                 svg {
                                     path {
-                                        @apply stroke-slate-300;
+                                        /* @apply stroke-slate-300; */
                                     }
                                 }
                             }
@@ -25,8 +25,14 @@
                         li {
                             a {
                                 &.flag-button {
-                                    svg {
-                                        @apply stroke-slate-300;
+                                    span {
+                                        &.chevron-icon {
+                                            svg {
+                                                path {
+                                                     @apply !stroke-white;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -93,6 +99,26 @@
             .main-header-action-list {
                 ul {
                     li {
+                        a {
+                            &.flag-button {
+                                span {
+                                    &.chevron-icon {
+                                        svg {
+                                            path {
+                                                 @apply stroke-black;
+                                            }
+                                        }
+                                    }
+                                    &.check-icon {
+                                        svg {
+                                            path {
+                                                 @apply fill-primary stroke-white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         &.flags {
                             @apply pr-[50px];
                             ul {
@@ -219,6 +245,19 @@
                     .btn-signup-header {
                         @apply  bg-white text-primary rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
                     } 
+                    a {
+                        &.flag-button {
+                            span {
+                                &.check-icon {
+                                    svg {
+                                        path {
+                                             @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     &.flags {
                         @apply pr-[50px];
                         ul {

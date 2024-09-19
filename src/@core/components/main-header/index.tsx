@@ -171,10 +171,10 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                         <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
                                             <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
                                             {!showFlags &&
-                                                <span className={`transition-all duration-300 `}><ChevronIconDown color={'#fff'}/></span>
+                                                <span className={`chevron-icon`}><ChevronIconDown color={'#fff'}/></span>
                                             }
                                             {showFlags &&
-                                                <span className={`transition-all duration-300`}><CheckCircleIcon /></span>
+                                                <span className={`check-icon`}><CheckCircleIcon /></span>
                                             }
                                         </a>
                                     </li>

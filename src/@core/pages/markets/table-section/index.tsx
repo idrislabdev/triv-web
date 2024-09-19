@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const MarketTableSection = (props: {lang:string}) => {
     const { lang } = props
@@ -9,9 +11,9 @@ const MarketTableSection = (props: {lang:string}) => {
     const [emptyState, setEmptyState] = useState(false);
     const openOrders = [
         {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 80, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'completed', action:''},
-        {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 80, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'active', action:''},
-        {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 80, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'canceled', action:''},
-        {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 80, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'failed', action:''}
+        {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 50, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'active', action:''},
+        {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 30, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'canceled', action:''},
+        {date: '2024-08-12 09:04:48', pair: 'BTC/IDR', filled: 100, type: 'Limit', side: 'Buy', price: '890.000.000', amount: '0.04', total : '16.000.000', trigger: '-', status: 'failed', action:''}
     ]
 
     const riwayatOrders = [
@@ -66,7 +68,10 @@ const MarketTableSection = (props: {lang:string}) => {
                                     <tr key={index}>
                                         <td>{item.date}</td>
                                         <td>{item.pair}</td>
-                                        <td></td>
+                                        <td>
+                                        <CircularProgressbar value={item.filled} text={`${item.filled}%`} />
+
+                                        </td>
                                         <td>{item.type}</td>
                                         <td>{item.side}</td>
                                         <td>{item.price}</td>

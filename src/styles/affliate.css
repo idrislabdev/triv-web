@@ -310,7 +310,7 @@
                             .swiper {
                                 .swiper-slide {
                                     @apply px-[10px];
-                                    &.swiper-slide-active {
+                                    &.swiper-slide {
                                         .background-container {
                                             .text-subcontainer {
                                                 @apply top-0;

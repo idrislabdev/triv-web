@@ -1,7 +1,7 @@
 @tailwind components;
 
 .market-header {
-    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[13px] px-[20px] z-10 text-white h-[54px] bg-black;
+    @apply flex fixed top-0 inset-x-0 items-center justify-between py-[13px] px-[20px] z-[20] text-white h-[54px] bg-black;
     .triv-logo-header {
         a {
             svg {

@@ -54,6 +54,12 @@
     }
 }
 .stocks-page {
+    h1, h2, h3, h4, h5 {
+        @apply text-black;
+    }
+    p {
+        @apply text-neutral-700;
+    }
     .stocks-register-section {
         @apply flex flex-col items-center px-[100px] py-[50px] relative;
         .box-container {
