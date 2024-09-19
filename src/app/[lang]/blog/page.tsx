@@ -46,13 +46,15 @@ export default async function  Blog({ params }: any) {
             <meta name="twitter:site" content="@TrivExchange" />
             <meta name="google-site-verification" content="googlea4f0aee7ccf7b3db" />
         </head>
-        <MainHeader classText="header-white" lang={params.lang}/>
+        <body>
+            <MainHeader classText="header-white" lang={params.lang}/>
             <main className='blog-page sm:mobile-responsive md:mobile-responsive light-theme'>
                 <BlogNewsSection lang={params.lang} main={dataMain} news={dataNews} stickies={dataSticky} categories={dataCategories} objLang={blog_section} />
                 <BlogBaruCryptoSection objLang={baru_crypto_section} />
                 <BlogInvestasiNowSection objLang={start_now_section} />
             </main>
-        <Footer />
+            <Footer />
+        </body>
     </html>
   )
 }

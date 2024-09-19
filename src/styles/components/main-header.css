@@ -51,7 +51,7 @@
                     &.burger-menu {
                         svg {
                             path {
-                                @apply fill-white;
+                                @apply !fill-primary;
                             }
                         }
                     }

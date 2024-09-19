@@ -4,8 +4,13 @@
     h1, h2, h3, h4, h5, h6 {
       @apply !text-slate-200;
     }
-    p,label {
+    p,label,span {
         @apply !text-slate-300;
+    }
+    svg {
+        path {
+            @apply !fill-white;
+        }
     }
     .blog-page {
         .blog-news-section {
@@ -101,7 +106,7 @@
                             @apply text-[14px]/[21px] text-neutral-700 font-medium mb-[30px];
                         }
                         img {
-                            @apply h-[259px];
+                            @apply h-[259px] w-full object-contain;
                         }
                     }
                 }
@@ -405,9 +410,9 @@
                             @apply text-[14px]/[21px];
                         }
                         ul {
-                            @apply flex flex-col gap-[14px];
+                            @apply flex flex-row flex-wrap gap-0;
                             li {
-                                @apply text-[12px]/[18px];
+                                @apply text-[12px]/[18px] w-1/2 mb-[14px];
                             }
                         }
                     }
