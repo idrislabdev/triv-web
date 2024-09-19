@@ -46,7 +46,10 @@
     .register-container {
         @apply flex w-full relative;
         .left-subcontainer {
-            @apply flex flex-col gap-[30px] px-[100px] py-[70px]  w-1/2 relative justify-center items-start h-screen;
+            @apply flex flex-col gap-[30px] px-[100px] py-[70px]  w-1/2 relative justify-center items-start ;
+            &.fit-screen {
+                @apply h-screen;
+            }
             .logo-subcontainer {
                 @apply flex-col justify-center items-center hidden;
                 svg {
@@ -163,10 +166,39 @@
             }
             .information-subcontainer{
                 @apply flex flex-col gap-[30px] border-b border-b-neutral-200 pb-[60px];
+                &.success {
+                    @apply border-none gap-[70px];
+                }
                 p {
                     @apply text-[20px]/[30px] font-medium text-neutral-800;
                     span {
                         @apply text-primary;
+                    }
+                    &.small {
+                        @apply text-[16px]/[24px];
+                    }
+                }
+                button {
+                    &.success {
+                        @apply bg-primary px-[20px] py-[11px] flex justify-between rounded-[14px] items-center;
+                        span {
+                            @apply text-[18px]/[27px] text-white;
+                        }
+                        svg {
+                            &.CircularProgressbar  {
+                                @apply w-[46px] h-[46px];
+                                .CircularProgressbar-path {
+                                    stroke: white;
+                                    stroke-linecap: unset;
+                                }
+                                .CircularProgressbar-trail {
+                                    @apply stroke-neutral-100;
+                                }
+                                .CircularProgressbar-text {
+                                    @apply text-white fill-white;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -264,8 +296,16 @@
         &.mobile-responsive {
             .left-subcontainer {
                 @apply w-full py-[26px] px-[20px] gap-[34px];
+                &.fit-screen {
+                    .logo-subcontainer {
+                        @apply absolute top-[26px];
+                    }
+                }
                 .logo-subcontainer {
                     @apply flex;
+                    &.position-absolute {
+                        @apply  absolute top-[26px];
+                    }
                 }
                 .title-subcontainer {
                     @apply flex flex-col gap-[18px];
@@ -343,8 +383,27 @@
                 }
                 .information-subcontainer{
                     @apply pb-[40px];
+                    &.success {
+                        @apply gap-[60px];
+                    }
                     p {
                         @apply text-[16px]/[24px];
+                        &.small {
+                            @apply text-[12px]/[18px];
+                        }
+                    }
+                    button {
+                        &.success {
+                            @apply py-[7px] rounded-[9px];
+                            span {
+                                @apply text-[12px]/[18px];
+                            }
+                            svg {
+                                &.CircularProgressbar  {
+                                    @apply w-[31px] h-[31px];
+                                }
+                            }
+                        }
                     }
                 }
                 .notice-subcontainer {
