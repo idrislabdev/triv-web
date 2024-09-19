@@ -80,7 +80,7 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                                         <div className='wrapper-row'>
                                             <label>{item.base_asset.code}<span className='text-neutral-400'>/{item.quote_asset.code}</span></label>
                                             <label className='text-right'>{item.price}</label>
-                                            <label className='text-right !text-[#EB5757]'>{item.price_changes.today}%</label>
+                                            <label className='text-right !text-[#EB5757]'>{item.price_changes !== null ? item.price_changes.today : ''}%</label>
                                             <label className='text-right'>{nFormatter(item.statistic.base_volume, 1)}</label>
                                         </div>
                                     </div>

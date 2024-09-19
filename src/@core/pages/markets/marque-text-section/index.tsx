@@ -8,7 +8,7 @@ const MarqueTextSection = (props: {markets:any}) => {
         <Marquee pauseOnHover={true}>
             {
                 markets.map((item:any, index:number) => (
-                    <label key={index}>{item.base_asset.code} / {item.quote_asset.code} <span>{item.price_changes.today}%</span></label>
+                    <label key={index}>{item.base_asset.code} / {item.quote_asset.code} <span>{item.price_changes !== null ? item.price_changes.today : ''}%</span></label>
                 ))
             }
         </Marquee>
