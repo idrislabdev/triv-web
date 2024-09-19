@@ -1,6 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.main-header {
+    .triv-logo-header {
+        a {
+            path {
+                @apply fill-primary;
+            }
+        }
+    }
+    .main-header-action {
+        .main-header-action-list {
+            ul {
+                li {
+                    a {
+                        &.btn-signup-header {
+                            @apply bg-primary text-white;
+                        }
+                    }
+                }
+            }
+        }
+        a {
+            &.burger-menu {
+                svg {
+                    path {
+                        @apply !fill-primary;
+                    }
+                }
+            }
+        }
+    }
+}
 .affliate-page {
     @apply py-0;
     &.dark-theme {
@@ -158,7 +189,7 @@
                 }
             }
             a {
-                @apply border border-white rounded-[10px] text-white text-[30px]/[45px] font-medium py-[10px] px-[20px];
+                @apply border border-white rounded-[10px] text-white text-[30px]/[45px] font-medium py-[10px] px-[20px] flex items-center;
             }
         }
     }
@@ -279,6 +310,19 @@
                             .swiper {
                                 .swiper-slide {
                                     @apply px-[10px];
+                                    &.swiper-slide-active {
+                                        .background-container {
+                                            .text-subcontainer {
+                                                @apply top-0;
+                                                h5 {
+                                                    @apply text-[24px]/[37px];
+                                                }
+                                                p {
+                                                    @apply text-[7px]/[10px];
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                                 .swiper-button-prev {
                                     @apply absolute w-[20px] h-[20px];

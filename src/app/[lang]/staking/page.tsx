@@ -32,7 +32,7 @@ export default async function  Staking({ params }: any) {
 
 
   return (
-    <>
+    <html lang={params.lang}>
       <head>
         {params.lang === 'id' && 
           <>
@@ -125,7 +125,7 @@ export default async function  Staking({ params }: any) {
         <Footer />
       </body>
       
-    </>
+    </html>
   )
 }
 

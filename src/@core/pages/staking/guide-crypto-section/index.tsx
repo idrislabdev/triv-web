@@ -40,7 +40,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                 </div>
             </div>
             <div className='image-container'>
-                <Image src='/images/devices/iphone-with-description-2.png' alt='iphone with description' width={620} height={519} />
+                <Image src='/images/devices/iphone-with-description-2.png' alt='iphone with description' width={0} height={0} sizes='100%'/>
             </div>
         </section>
     )

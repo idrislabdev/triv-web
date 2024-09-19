@@ -1,5 +1,5 @@
 import CardCoupon from '@/@core/components/cards/card-coupon'
-import { ArrowRightIcon } from '@/@core/components/custom-icons'
+import { ArrowRightIcon, ChevronRightIcon } from '@/@core/components/custom-icons'
 import React from 'react'
 
 const AffliateExtraSection = (props: {objLang:any}) => {
@@ -11,7 +11,7 @@ const AffliateExtraSection = (props: {objLang:any}) => {
             <h2>{objLang.title}</h2>
             <p>{objLang.desc}</p>
           </div>   
-          <a>{objLang.button}</a>   
+          <a>{objLang.button} <ChevronRightIcon /></a>   
         </div>
     </section>
   )

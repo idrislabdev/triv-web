@@ -554,6 +554,14 @@ const CheckCircleIcon = () => {
     )
 }
 
+const ChevronRightIcon = () => {
+    return (
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.1695 30.0181L26.1869 20.0007L16.1695 9.9834L13.8125 12.3404L21.4728 20.0007L13.8125 27.6611L16.1695 30.0181Z" fill="white"/>
+        </svg>
+
+    )
+}
 
 
 
@@ -605,5 +613,6 @@ export {
     ChartPie,
     ChartPie2,
     ChartPPT,
-    CheckCircleIcon
+    CheckCircleIcon,
+    ChevronRightIcon
 }
