@@ -100,7 +100,7 @@ export default async function Affliate({ params }: any) {
                 }
             </head>
             <body>
-                <MainHeader classText={""} lang={params.lang}/>
+                <MainHeader classText={"header-affliate"} lang={params.lang}/>
                 <main className='affliate-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <AffliateHeroSection objLang={hero_section}/>
                     <AffliateComissionsection objLang={comission_section} />

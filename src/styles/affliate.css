@@ -1,37 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.main-header {
-    .triv-logo-header {
-        a {
-            path {
-                @apply fill-primary;
-            }
-        }
-    }
-    .main-header-action {
-        .main-header-action-list {
-            ul {
-                li {
-                    a {
-                        &.btn-signup-header {
-                            @apply bg-primary text-white;
-                        }
-                    }
-                }
-            }
-        }
-        a {
-            &.burger-menu {
-                svg {
-                    path {
-                        @apply !fill-primary;
-                    }
-                }
-            }
-        }
-    }
-}
 .affliate-page {
     @apply py-0;
     &.dark-theme {

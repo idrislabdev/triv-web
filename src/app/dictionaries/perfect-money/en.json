@@ -49,11 +49,13 @@
     "average_section": {
         "live_chat" : {
             "title" : "Average LiveChat Responds",
-            "content" : "Triv's Livechat and Call center are ready to assist you?"
+            "content" : "Triv's Livechat and Call center are ready to assist you?",
+            "time" : "12"
         },
         "processing" : {
             "title" : "Average Processing Time",
-            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions"
+            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions",
+            "time" : "77"
         },
         "updated_text" : "*Updated Real-Time"
     },

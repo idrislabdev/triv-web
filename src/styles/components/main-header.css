@@ -57,7 +57,7 @@
                     &.burger-menu {
                         svg {
                             path {
-                                @apply !fill-primary;
+                                @apply fill-primary;
                             }
                         }
                     }
@@ -69,7 +69,6 @@
 
 .main-header {
     @apply flex fixed top-0 inset-x-0 items-center justify-between py-[20px] px-[100px] z-10 text-white h-[70px];
-
     &.header-white {
         @apply bg-white text-black;
         &.drop-shadow {
@@ -137,7 +136,7 @@
                 &.burger-menu {
                     svg {
                         path {
-                            @apply fill-black;
+                            @apply fill-primary;
                         }
                     }
                 }
@@ -153,6 +152,37 @@
                                     @apply stroke-black;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.header-affliate {
+        .triv-logo-header {
+            a {
+                path {
+                    @apply fill-primary;
+                }
+            }
+        }
+        .main-header-action {
+            .main-header-action-list {
+                ul {
+                    li {
+                        a {
+                            &.btn-signup-header {
+                                @apply bg-primary text-white;
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                &.burger-menu {
+                    svg {
+                        path {
+                            @apply !fill-primary;
                         }
                     }
                 }
@@ -221,7 +251,7 @@
     .triv-logo-header {
         a {
             svg {
-                @apply w-[99px] h-[31px];
+                @apply w-[99px] h-[31px] fill-white;
             }
         }
     }
@@ -229,6 +259,7 @@
         @apply flex items-center gap-[20px];
         .burger-menu {
             @apply hidden;
+            
         }
         .main-header-action-list {
             @apply flex gap-[20px] items-center;

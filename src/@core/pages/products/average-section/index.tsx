@@ -11,7 +11,7 @@ const ProductsAverageSection = (props: {objLang:any}) => {
                     <div className='detail-subcontainer'>
                         <div className='detail-info'>
                             <HeadsetIcon color={'#fff'} />
-                            <label>51<span>S</span></label>
+                            <label>{objLang.live_chat.time ? objLang.live_chat.time : '51'}<span>S</span></label>
                         </div>
                         <div className='detail-description-subcontainer'>
                             <h5>{objLang.live_chat.title}</h5>
@@ -21,7 +21,7 @@ const ProductsAverageSection = (props: {objLang:any}) => {
                     <div className='detail-subcontainer'>
                         <div className='detail-info'>
                             <CpuIcon color={'#fff'} />
-                            <label>102<span>S</span></label>
+                            <label>{objLang.processing.time ? objLang.processing.time : '102'}<span>S</span></label>
                         </div>
                         <div className='detail-description-subcontainer'>
                             <h5>{objLang.processing.title}</h5>
