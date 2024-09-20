@@ -13,7 +13,7 @@ const StakingCoinsSection = (props: {stakings:IStaking[], objLang:any}) => {
             <div className='list-coins-staking'>
             {stakings?.map((item:IStaking, index:number) => (
                 <div className='coin-staking-container' key={index}>
-                    <CardCoinStaking item={item} key={index}/>
+                    <CardCoinStaking item={item} key={index} objLang={objLang}/>
                 </div>
             ))}
             </div>

@@ -50,7 +50,10 @@
     },
     "coin_section": {
         "title": "What Coins Can Be Staked at TRIV?",
-        "description": "Start from now. Choose your favorite asset and grow your crypto with TRIV, the best Crypto Staking in Indonesia"
+        "description": "Start from now. Choose your favorite asset and grow your crypto with TRIV, the best Crypto Staking in Indonesia",
+        "text_card_1" : "Staking",
+        "text_card_2" : "with Interest",
+        "text_card_3" : "year now."
     },
     "faq_section": {
         "title" : "FAQ (Crypto Staking Related Questions)",

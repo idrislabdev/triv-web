@@ -50,7 +50,10 @@
     },
     "coin_section": {
         "title": "Coin Apa Saja Yang Bisa di Staking di TRIV?",
-        "description": "Mulailah dari sekarang. Pilih aset favorit dan tumbuhkan kriptomu bersama TRIV, Crypto Staking terbaik di Indonesia"
+        "description": "Mulailah dari sekarang. Pilih aset favorit dan tumbuhkan kriptomu bersama TRIV, Crypto Staking terbaik di Indonesia",
+        "text_card_1" : "Staking",
+        "text_card_2" : "dengan Bunga",
+        "text_card_3" : "tahun sekarang."
     },
     "faq_section": {
         "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
