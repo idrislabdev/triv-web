@@ -7,6 +7,11 @@ import React, { useState } from 'react'
 const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}) => {
     const { dictRegister, pekerjaans } = props
     const [dataPekerjaan, setDataPekerjaans] = useState(pekerjaans)
+    const [pekerjaan, setPekerjaan] = useState('');
+
+    const changePekerjaan = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        console.log(event.target.value)
+    }
     return (
         <div className='form-subcontainer'>
             <form>
@@ -40,7 +45,8 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
             </div>
             <div className='form-jobs'>
                 <label>{dictRegister.job_text}</label>
-                <select className='color-1'>
+                <select className='color-1' defaultValue={pekerjaan} onChange={changePekerjaan}>
+                    <option value="" disabled>Pekerjaan Sesuai KTP</option>
                     {
                         dataPekerjaan.map((item:string, index:number) => (
                             <option value={item} key={index}>{item}</option>

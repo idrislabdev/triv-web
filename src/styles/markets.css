@@ -53,7 +53,7 @@
                                     input {
                                         @apply !bg-[#101214] !text-white !border-[#101214] caret-white;
                                         &::placeholder {
-                                            @apply text-white;
+                                            @apply text-slate-400;
                                         }
                                     }
                                 }
@@ -183,7 +183,7 @@
                                 input {
                                     @apply bg-[#101214] !text-white !border-[#101214] caret-white;
                                     &::placeholder {
-                                        @apply text-white;
+                                        @apply text-slate-400;
                                     }
                                 }
                             }

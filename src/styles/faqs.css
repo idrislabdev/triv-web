@@ -18,7 +18,7 @@
             input {
                 @apply bg-slate-800 !text-white !border-slate-800 caret-white;
                 &::placeholder {
-                    @apply text-white;
+                    @apply text-slate-400;
                 }
             }
         }

@@ -9,10 +9,15 @@
     p,label,span {
         @apply !text-slate-300;
     }
-    input {
+    input,select {
         @apply bg-slate-800 !text-white border-slate-800 caret-white;
         &::placeholder {
-            @apply text-white;
+            @apply text-slate-400;
+        }
+    }
+    select {
+        option:disabled {
+            @apply text-slate-400;
         }
     }
     .register-page {
@@ -108,6 +113,9 @@
                             @apply flex flex-col gap-[10px] w-full;
                             .group-input {
                                 @apply w-full;
+                                .prepend {
+                                    @apply top-[15px];
+                                }
                                 input {
                                     @apply w-full h-[54px];
                                 }
@@ -213,8 +221,11 @@
 
                 .otp-input {
                     @apply w-full;
+                    div {
+                        @apply gap-[5px];
+                    }
                     input {
-                        @apply w-full h-[70px] border-none text-center text-[54px]/[35px] !text-neutral-500 !font-bold !p-0;
+                        @apply w-full h-[70px] border-none text-center text-[54px]/[35px] !text-neutral-500 !font-bold ;
                         &::placeholder {
                             @apply text-neutral-300 text-[35px]/[35px];
                         }
@@ -346,61 +357,64 @@
                 }
                 .form-subcontainer {
                     @apply gap-[25.91px];
-                    .form-name {
-                        label {
-                            @apply text-[12.96px]/[19.43px];
-                        }
-                        .form-input {
-                            @apply flex gap-[25.91px];
-                            input {
-                               @apply text-[12.96px]/[19.43px] h-[34px]  rounded-[5px];
+                    form {
+                        @apply gap-[15px];
+                        .form-name {
+                            label {
+                                @apply text-[12.96px]/[19.43px];
+                            }
+                            .form-input {
+                                @apply flex gap-[25.91px];
+                                input {
+                                   @apply text-[12.96px]/[19.43px] !h-[34px]  rounded-[5px];
+                                }
                             }
                         }
-                    }
-                    .form-email {
-                        @apply flex flex-col gap-[10px];
-                        label {
-                            @apply text-[12.96px]/[19.43px];
+                        .form-email {
+                            @apply flex flex-col gap-[10px];
+                            label {
+                                @apply text-[12.96px]/[19.43px];
+                            }
+                            input {
+                                @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                            }
                         }
-                        input {
-                            @apply text-[12.96px]/[19.43px] h-[34px] rounded-[5px];
-                        }
-                    }
-                    .form-password {
-                        @apply flex flex-col gap-[10px];
-                        label {
-                            @apply text-[12.96px]/[19.43px];
-                        }
-                        .form-input {
-                            .group-input {
-                                span {
-                                    @apply top-[10px];
-                                    svg {
-                                        @apply w-[15px] h-[15px];
+                        .form-password {
+                            @apply flex flex-col gap-[10px];
+                            label {
+                                @apply text-[12.96px]/[19.43px];
+                            }
+                            .form-input {
+                                .group-input {
+                                    .prepend {
+                                        @apply !top-[10px];
+                                        svg {
+                                            @apply w-[15px] h-[15px];
+                                        }
+                                    }
+                                    input {
+                                        @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
                                     }
                                 }
-                                input {
-                                    @apply text-[12.96px]/[19.43px] h-[34px] rounded-[5px];
-                                }
                             }
                         }
-                    }
-                    .form-jobs {
-                        @apply flex flex-col gap-[10px];
-                        label {
-                          @apply text-[12.96px]/[19.43px];
+                        .form-jobs {
+                            @apply flex flex-col gap-[10px];
+                            label {
+                              @apply text-[12.96px]/[19.43px];
+                            }
+                            select {
+                                @apply w-full text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                            }
                         }
-                        select {
-                            @apply w-full text-[12.96px]/[19.43px] h-[34px] rounded-[5px];
+                        .form-note {
+                            p {
+                                @apply !text-[11.66px]/[17.49px];
+                            }
                         }
-                    }
-                    .form-note {
-                        p {
-                            @apply text-[11.66px]/[17.49px];
+                        button {
+                            @apply !rounded-[9px] !h-[34.49px] text-[11.66px]/[17.49px];
                         }
-                    }
-                    button {
-                        @apply rounded-[9px] h-[34.49px] text-[11.66px]/[17.49px];
                     }
                     .sub-title-subcontainer {
                         @apply flex;
@@ -432,6 +446,9 @@
                     }
                     .otp-input {
                         @apply w-full;
+                        div {
+                            @apply gap-[3px];
+                        }
                         input {
                             @apply h-[50px] text-[30px]/[20px];
                             &::placeholder {
