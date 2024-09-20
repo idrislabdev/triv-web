@@ -71,6 +71,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
         if (!showFlags) return;
         function handleClick(event : MouseEvent) {
             if (dropdownFlags2.current && !dropdownFlags2.current.contains(event.target)) {
+                document.body.classList.remove('overflow-hidden')
                 setShowFlags(false);
             }
         }
