@@ -14,6 +14,22 @@
     "register_fourth_text" : "and privacy policy",
     "welcome_text" : "Triv Used by Millions Since 2015",
     "sub_welcome_text" : "Registered And Supervised By Bappebti",
-    "register_text" : "Register"
-
+    "register_text" : "Register",
+    "placeholder_job" : "Occupation according to ID card",
+    
+    "welcome_register": "Welcome to Triv",
+    "verify_1" : "We have sent a “Welcome to Triv” email to",
+    "verify_2" : "Please confirm your account via the link in the email we have sent. Click the link to activate your account",
+    "verify_3" : "please check your spam folder if you do not receive our email within",
+    "verify_4" : "Didn't receive an email from us?",
+    "verify_5" : "Resend",
+    "otp_1" : "Phone Number Verification",
+    "otp_2" : "We have sent a 6 digit verification code to number",
+    "otp_3" : "You can send the code request back within",
+    "otp_4" : "Continue",
+    "success_1": "Verification Successful",
+    "success_2" : "We have sent a 6 digit verification code to number",
+    "success_3" : "Continue",
+    "minute" : "minutes",
+    "second" : "seconds"
 }

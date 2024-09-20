@@ -46,7 +46,7 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
             <div className='form-jobs'>
                 <label>{dictRegister.job_text}</label>
                 <select className='color-1' defaultValue={pekerjaan} onChange={changePekerjaan}>
-                    <option value="" disabled>Pekerjaan Sesuai KTP</option>
+                    <option value="" disabled>{dictRegister.placeholder_job}</option>
                     {
                         dataPekerjaan.map((item:string, index:number) => (
                             <option value={item} key={index}>{item}</option>

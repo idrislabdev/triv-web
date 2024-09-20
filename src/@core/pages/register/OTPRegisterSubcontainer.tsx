@@ -4,16 +4,17 @@ import React, { useState } from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import OTPInput from 'react-otp-input';
-const OTPRegisterSubcontainer = () => {
+const OTPRegisterSubcontainer = (props: {dicRegister:any}) => {
+  const { dicRegister } = props
   const [otp, setOtp] = useState('');
-
+  
   return (
     <>
         <div className='title-subcontainer'>
-            <h2>Verifikasi Nomor Telepon</h2>
+            <h2>{dicRegister.otp_1}</h2>
         </div>
         <div className='information-subcontainer verify-otp'>
-            <p>Kami telah mengirimkan kode verifikasi 6 digit ke nomor <span>0874662739987</span></p>
+            <p>{dicRegister.otp_2} <span>0874662739987</span></p>
             <div className='otp-input'>
               <OTPInput
                 value={otp}
@@ -26,10 +27,10 @@ const OTPRegisterSubcontainer = () => {
                 placeholder='******'
               />
             </div>
-            <button className='verify'>Continue</button>
+            <button className='verify'>{dicRegister.otp_4}</button>
         </div>
         <div className='notice-subcontainer'>
-          <p>Kamu dapat mengirimkan permintaan kode kembali dalam <span>28 sec</span></p>
+          <p>{dicRegister.otp_3} <span>28 {dicRegister.second}</span></p>
         </div>
     </>
   )

@@ -26,6 +26,17 @@
                 button {
                     @apply !bg-[#3A80AF] !text-white;
                 }
+                .form-subcontainer {
+                    form {
+                        .form-note {
+                            p {
+                                span {
+                                    @apply !text-white;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .right-subcontainer {
                 @apply bg-[#1b1f22];

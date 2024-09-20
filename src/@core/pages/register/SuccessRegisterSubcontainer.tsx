@@ -3,16 +3,17 @@
 import React from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-const SuccessRegisterSubcontainer = () => {
+const SuccessRegisterSubcontainer = (props: {dicRegister:any}) => {
+  const { dicRegister } = props
   return (
     <>
         <div className='title-subcontainer'>
-            <h2>Verifikasi Berhasil</h2>
+            <h2>{dicRegister.success_1}</h2>
         </div>
         <div className='information-subcontainer success'>
-            <p>Kami telah mengirimkan kode verifikasi 6 digit ke nomor <span>0874662739987</span></p>
+            <p>{dicRegister.success_2} <span>0874662739987</span></p>
             <button className='success'>
-                <span>Continue</span>
+                <span>{dicRegister.success_3}</span>
                 <CircularProgressbar value={70} text={`${70}%`} />
             </button>
         </div>

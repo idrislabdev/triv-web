@@ -14,6 +14,23 @@
     "register_fourth_text" : "kebijakan privasi",
     "welcome_text" : "Triv Digunakan Jutaan orang Sejak 2015",
     "sub_welcome_text" : "Terdaftar Dan Diawasi Oleh Bappebti",
-    "register_text" : "Daftar"
+    "register_text" : "Daftar",
+    "placeholder_job" : "Pekerjaan Sesuai KTP",
 
+    "welcome_register": "Selamat Datang di Triv",
+    "verify_1" : "Kami telah mengirimkan email “Selamat Datang di Triv” ke",
+    "verify_2" : "Silahkan konfirmasi akun Anda melalui link di email yang telah kami kirimkan. Klik tautan untuk mengaktifkan akun Anda",
+    "verify_3" : "harap memeriksa folder spam Anda jika tidak menerima email kami dalam",
+    "verify_4" : "Tidak menerima email dari kami?",
+    "verify_5" : "Kirim Ulang",
+
+    "otp_1" : "Verifikasi Nomor Telepon",
+    "otp_2" : "Kami telah mengirimkan kode verifikasi 6 digit ke nomor",
+    "otp_3" : "Kamu dapat mengirimkan permintaan kode kembali dalam",
+    "otp_4" : "Lanjut",
+    "success_1": "Verifikasi Berhasil",
+    "success_2" : "Kami telah mengirimkan kode verifikasi 6 digit ke nomor ",
+    "success_3" : "Lanjut",
+    "minute" : "menit",
+    "second" : "detik"
 }

@@ -28,7 +28,7 @@ const RegisterOTP = (props: {dictRegister:any}) => {
               <div className='logo-subcontainer'>
                 <TrivIcon color={'#318AC6'}/>
               </div>
-              <OTPRegisterSubcontainer />
+              <OTPRegisterSubcontainer dicRegister={dictRegister} />
             
               <div className='terdaftar-subcontainer'>
                 <h5>{dictRegister.welcome_text}</h5>
