@@ -1,9 +1,9 @@
 import { HideEyeIcon, LockIcon, MailIcon, TrivIcon } from '@/@core/components/custom-icons'
 import React from 'react'
 import Image from 'next/image'
+import SuccessRegisterSubcontainer from '@/@core/pages/register/SuccessRegisterSubcontainer';
 import { getDictionaryRegister } from '@/app/dictionaries';
 import '@/styles/register.css'
-import SuccessRegisterSubcontainer from '@/@core/pages/register/SuccessRegisterSubcontainer';
 
 export default async function RegisterSuccessPage({ params }: any) {
     const dictRegister = await getDictionaryRegister(params.lang);
@@ -122,7 +122,7 @@ export default async function RegisterSuccessPage({ params }: any) {
                 </div>
               </div>
               <div className='image-subcontainer'>
-                <Image src='/images/others/register-screen.png' alt='captcha' width={574} height={400}/>
+                <Image src='/images/others/security-password.png' alt='security password' width={574} height={400}/>
               </div>
               <div className='logo-subcontainer'>
                 <TrivIcon color={'#318AC6'}/>

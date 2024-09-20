@@ -169,6 +169,9 @@
                 &.success {
                     @apply border-none gap-[70px];
                 }
+                &.verify-otp {
+                    @apply gap-[70px];
+                }
                 p {
                     @apply text-[20px]/[30px] font-medium text-neutral-800;
                     span {
@@ -199,6 +202,22 @@
                                 }
                             }
                         }
+                    }
+                }
+
+                .otp-input {
+                    @apply w-full;
+                    input {
+                        @apply w-full h-[70px] border-none text-center text-[54px]/[35px] !text-neutral-500 !font-bold;
+                        &::placeholder {
+                            @apply text-neutral-300 text-[35px]/[35px];
+                        }
+                    }
+                }
+
+                button {
+                    &.verify {
+                        @apply bg-primary px-[20px] py-[11px] rounded-[14px] items-center text-[18px]/[27px] text-white    ;
                     }
                 }
             }

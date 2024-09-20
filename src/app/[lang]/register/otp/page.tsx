@@ -4,8 +4,9 @@ import Image from 'next/image'
 import { getDictionaryRegister } from '@/app/dictionaries';
 
 import '@/styles/register.css'
+import OTPRegisterSubcontainer from '@/@core/pages/register/OTPRegisterSubcontainer';
 
-export default async function RegisterVerifyPage({ params }: any) {
+export default async function RegisterOTPPage({ params }: any) {
     const dictRegister = await getDictionaryRegister(params.lang);
     const pekerjaans = [
       'Pelajar/Mahasiswa',
@@ -86,18 +87,8 @@ export default async function RegisterVerifyPage({ params }: any) {
               <div className='logo-subcontainer'>
                 <TrivIcon color={'#318AC6'}/>
               </div>
-              <div className='title-subcontainer'>
-                <h2>Selamat Datang di Triv</h2>
-              </div>
-              <div className='information-subcontainer'>
-                <p>Kami telah mengirimkan email “Selamat Datang di Triv” ke : <span>aditya@gmail.com</span></p>
-                <p>Silahkan konfirmasi akun Anda melalui link di email yang telah kamri kirimkan. Klik tautan untuk mengaktifkan akun Anda</p>
-                <p className='small'>* harap memeriksa folder spam Anda jika tidak menerima email kami dalam 2 menit</p>
-              </div>
-              <div className='notice-subcontainer'>
-                <p>Tidak menerima email dari kami?</p>
-                <a>Kirim Ulang</a>
-              </div>
+              <OTPRegisterSubcontainer />
+            
               <div className='terdaftar-subcontainer'>
                 <h5>{dictRegister.welcome_text}</h5>
                 <p>{dictRegister.sub_welcome_text}</p>
@@ -133,7 +124,7 @@ export default async function RegisterVerifyPage({ params }: any) {
                 </div>
               </div>
               <div className='image-subcontainer'>
-                <Image src='/images/others/register-screen.png' alt='captcha' width={574} height={400}/>
+                <Image src='/images/others/security-password.png' alt='security password' width={574} height={400}/>
               </div>
               <div className='logo-subcontainer'>
                 <TrivIcon color={'#318AC6'}/>
