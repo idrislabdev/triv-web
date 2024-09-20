@@ -55,7 +55,14 @@ export default async function  BlogSlug({ params }: any) {
         <body>
             <MainHeader classText="header-white" lang={params.lang}/>
             <main className='blog-page detail sm:mobile-responsive md:mobile-responsive light-theme'>
-                <BlogNewsDetailSection main={dataMain} news={dataNews} stickies={dataSticky} categories={dataCategories} objLang={blog_section} />
+                <BlogNewsDetailSection 
+                    main={dataMain} 
+                    news={dataNews} 
+                    stickies={dataSticky} 
+                    categories={dataCategories} 
+                    objLang={blog_section} 
+                    lang={params.lang} 
+                />
                 <BlogBaruCryptoSection objLang={baru_crypto_section} />
                 <BlogInvestasiNowSection objLang={start_now_section} />
             </main>

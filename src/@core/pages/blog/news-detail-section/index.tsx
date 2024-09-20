@@ -5,8 +5,8 @@ import CardNewsSticky from '@/@core/components/cards/card-news-sticky';
 import NewsDetailContent from '../news-detail-content';
 import { FacebookIcon, GoogleIcon, InvisionIcon, LinkedinIcon, PeopleIcon, TwiterIcon } from '@/@core/components/custom-icons';
 import Link from 'next/link';
-const BlogNewsDetailSection = (props: {main:any, news:any[], stickies:any[], categories:string[], objLang:any}) => {
-  const { main, news, stickies, categories, objLang } = props;
+const BlogNewsDetailSection = (props: {main:any, news:any[], stickies:any[], categories:string[], objLang:any, lang:string}) => {
+  const { main, news, stickies, categories, objLang, lang } = props;
   return (
     <section className='blog-news-section'>
       <div className='blog-main-container'>
@@ -34,7 +34,7 @@ const BlogNewsDetailSection = (props: {main:any, news:any[], stickies:any[], cat
           <h2>{objLang.title_register}</h2>
           <p>{objLang.desc_register}</p>
           <div className='submit-register'>
-            <Link href='/register'>{objLang.button_register}</Link>
+            <Link href={`/${lang}/register`}>{objLang.button_register}</Link>
           </div>
         </div>
         <div className='blog-subscribe'>
