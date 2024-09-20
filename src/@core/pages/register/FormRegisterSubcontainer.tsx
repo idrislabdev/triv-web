@@ -55,7 +55,7 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
                 </select>
             </div>
             <div className='form-note'>
-                <p>{dictRegister.register_first_text} <span>{dictRegister.register_second_text}</span>{dictRegister.register_third_text} <span>{dictRegister.register_fourth_text}</span></p>
+                <p>{dictRegister.register_first_text} <span>{dictRegister.register_second_text} </span>{dictRegister.register_third_text} <span> {dictRegister.register_fourth_text}</span></p>
             </div>
             <button type='submit'>{dictRegister.register_text}</button>
             </form>
