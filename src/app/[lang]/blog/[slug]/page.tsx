@@ -6,6 +6,8 @@ import { dataMain, dataNews, dataSticky, dataCategories } from '../samples'
 import { getDictionariesBlog } from '@/app/dictionaries';
 import BlogNewsDetailSection from '@/@core/pages/blog/news-detail-section'
 import '@/styles/blog.css'
+import BlogBaruCryptoSection from '@/@core/pages/blog/baru-crypto-section';
+import BlogInvestasiNowSection from '@/@core/pages/blog/investasi-now-section';
 
 export default async function  BlogSlug({ params }: any) {
     const {
@@ -52,8 +54,10 @@ export default async function  BlogSlug({ params }: any) {
         </head>
         <body>
             <MainHeader classText="header-white" lang={params.lang}/>
-            <main className='blog-page sm:mobile-responsive md:mobile-responsive light-theme'>
+            <main className='blog-page detail sm:mobile-responsive md:mobile-responsive light-theme'>
                 <BlogNewsDetailSection main={dataMain} news={dataNews} stickies={dataSticky} categories={dataCategories} objLang={blog_section} />
+                <BlogBaruCryptoSection objLang={baru_crypto_section} />
+                <BlogInvestasiNowSection objLang={start_now_section} />
             </main>
             <Footer />
         </body>

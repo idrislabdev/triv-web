@@ -192,6 +192,9 @@
         }
     }
     &.header-affliate {
+        &.drop-shadow {
+            @apply bg-[#1f1f1f];
+        }
         .triv-logo-header {
             a {
                 path {

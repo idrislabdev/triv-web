@@ -4,9 +4,12 @@
         "title_daily": "Daily News",
         "title_category": "Categories",
         "title_subscribe": "Subscribe",
+        "title_register" : "Using Triv is an addict.",
+        "desc_register" : "You cant put down Triv once you use it.Learn why we become favourite for millions.",
         "desc_subscribe": "Berlangganan untuk update  berita terkini 📩",
         "palceholder_email_subscribe" : "Enter email",
         "button_subscribe" : "Subscribe",
+        "button_register" : "Register",
         "title_sticky": "Sticky Posts"
 
     },
