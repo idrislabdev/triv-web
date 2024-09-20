@@ -9,6 +9,12 @@
     p,label,span {
         @apply !text-slate-300;
     }
+    input {
+        @apply bg-slate-800 !text-white border-slate-800 caret-white;
+        &::placeholder {
+            @apply text-white;
+        }
+    }
     .register-page {
         .register-container {
             .left-subcontainer {
@@ -208,7 +214,7 @@
                 .otp-input {
                     @apply w-full;
                     input {
-                        @apply w-full h-[70px] border-none text-center text-[54px]/[35px] !text-neutral-500 !font-bold;
+                        @apply w-full h-[70px] border-none text-center text-[54px]/[35px] !text-neutral-500 !font-bold !p-0;
                         &::placeholder {
                             @apply text-neutral-300 text-[35px]/[35px];
                         }
@@ -424,6 +430,16 @@
                             }
                         }
                     }
+                    .otp-input {
+                        @apply w-full;
+                        input {
+                            @apply h-[50px] text-[30px]/[20px];
+                            &::placeholder {
+                                @apply text-[23px]/[23px];
+                            }
+                        }
+                    }
+    
                 }
                 .notice-subcontainer {
                     @apply pt-[16px];
