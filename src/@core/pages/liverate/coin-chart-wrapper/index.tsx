@@ -21,24 +21,8 @@ const TVChartContainer = dynamic(
 export default function LiverateCoinChartWrapper(props: {symbol:string}) {
   const { symbol } = props;
   const [isScriptReady, setIsScriptReady] = useState(false);
-  const theme = localStorage.getItem('mode')
   const [defaultWidget, setDefaultWidget] = useState<Partial<ChartingLibraryWidgetOptions>>({})
   const { globals } = useGlobals()
-
-  // const defaultWidgetProps: Partial<ChartingLibraryWidgetOptions> = {
-  //   symbol: symbol,
-  //   interval: "15" as ResolutionString,
-  //   library_path: "/static/charting_library/",
-  //   custom_css_url: "/static/trading-view.css",
-  //   locale: "en",
-  //   charts_storage_url: "https://saveload.tradingview.com",
-  //   charts_storage_api_version: "1.1",
-  //   client_id: "tradingview.com",
-  //   user_id: "public_user_id",
-  //   fullscreen: false,
-  //   autosize: true,
-  //   theme: globals.theme === 'dark' ? 'dark' : 'light'    
-  // };
 
   useEffect(() => {
     console.log(globals.theme)

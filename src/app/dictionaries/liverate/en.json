@@ -10,5 +10,17 @@
         "title" : "Start Investing Now",
         "description": "Sign up in minutes and achieve your investment goals now 🚀",
         "button": "Regsiter Now"
+    },
+    "liverate_coin_section" : {
+        "about" : "About",
+        "activity" : "Triv User Activity",
+        "acitivty_text_1" : " buying and selling activity of all Triv users in the last 24 hours. This shows that Trivusers are interested in the asset, but not an invitation to buy or sell the asset.",
+        "market_activity" : "Kapitalisasi Pasar",
+        "full_value" : "Nilai Terdilusi Penuh",
+        "supply_circulate" : "Suplai Yang Beredar",
+        "supply_maksimum" : "Suplai Maksimum",
+        "volume_global" : "Volume Global",
+        "buy" : "Buy",
+        "sell" : "Sell"
     }
 }

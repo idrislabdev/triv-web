@@ -15,7 +15,8 @@ const LiverateDetailPage = (props: {lang:string, objLang:any, blogs:IBlog[], liv
         <main className='liverate-page sm:mobile-responsive md:mobile-responsive light-theme'>
             <LiverateCoinSection 
                 lang={lang} 
-                objLang={null} blogs={blogs} 
+                objLang={objLang} 
+                blogs={blogs} 
                 liverateMinies={liverateMinies} 
                 coin={coin} 
                 asset={asset}

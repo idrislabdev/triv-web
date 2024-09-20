@@ -10,5 +10,18 @@
         "title" : "Mulai Investasi Sekarang",
         "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang 🚀",
         "button": "Daftar Sekarang"
+    },
+    "liverate_coin_section" : {
+        "about" : "Tentang",
+        "activity" : "Aktivitas Pengguna Triv",
+        "acitivty_text_1" : "Aktivitas beli dan jual",
+        "activity_text_2" : "seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset",
+        "market_activity" : "Kapitalisasi Pasar",
+        "full_value" : "Nilai Terdilusi Penuh",
+        "supply_circulate" : "Suplai Yang Beredar",
+        "supply_maksimum" : "Suplai Maksimum",
+        "volume_global" : "Volume Global",
+        "buy" : "Beli",
+        "sell" : "Jual"
     }
 }

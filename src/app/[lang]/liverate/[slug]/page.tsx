@@ -5,6 +5,7 @@ import { IBlog, ICoin, IHighlight, ILiverate, ILiverateMini } from '@/@core/@typ
 import { coins }from "../coins";
 import '@/styles/liverate.css'
 import LiverateDetailPage from '@/@core/pages/liverate/detail-page'
+import { getDictionaryLierate } from '@/app/dictionaries';
 
 export default async function  LiverateCoin({ params }: any) {
     const coin:ICoin|any = coins.find((x) => x.slug == params.slug)
@@ -24,6 +25,9 @@ export default async function  LiverateCoin({ params }: any) {
     const resAsset = await getAsset(coin.currency)
     const asset:any = resAsset.data.data
 
+    const {
+      liverate_coin_section
+    } = await getDictionaryLierate(params.lang);
 
     return (
     <html>
@@ -33,7 +37,7 @@ export default async function  LiverateCoin({ params }: any) {
       <body>
         <LiverateDetailPage 
           lang={params.lang} 
-          objLang={null} 
+          objLang={liverate_coin_section} 
           blogs={blogs} 
           liverateMinies={liverateMinies} 
           coin={coin} 

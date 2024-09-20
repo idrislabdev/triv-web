@@ -28,23 +28,32 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
                 <LiverateCoinChartWrapper symbol={coin.symbol} />
             </div>
             <div className='about-subcontainer'>
-                <h5>Tentang {asset.label}</h5>
+                <h5>{objLang.about} {asset.label}</h5>
                 <p>{asset.about}</p>
                 <a className='navigation-link'>Website Resmi <ArrowRightIcon color={'#fff'} /></a>
             </div>
             <div className='activity-subcontainer'>
-                <h5>Aktivitas Pengguna Triv</h5>
+                <h5>{objLang.activity}</h5>
                 <div className='progress-cubcontainer'>
                     <div className='key-progress'>
                         <span className={`${progressBeli} progress-beli`} style={{width: `${progressBeli}%`}}></span>
                         <span className={`${progressJual} progress-jual`} style={{width: `${progressJual}%`}}></span>
                     </div>
                     <div className='key-progress-label'>
-                        <label className='progress-beli'><span className='progress-beli'></span>{(asset.key_statistic.buy * 100).toFixed(0)}% Beli</label>
-                        <label className='progress-jual'><span className='progress-jual'></span>{(asset.key_statistic.sell * 100).toFixed(0)}% Jual</label>
+                        <label className='progress-beli'><span className='progress-beli'></span>{(asset.key_statistic.buy * 100).toFixed(0)}% {objLang.buy}</label>
+                        <label className='progress-jual'><span className='progress-jual'></span>{(asset.key_statistic.sell * 100).toFixed(0)}% {objLang.sell}</label>
                     </div>
                 </div>
-                <p>Aktivitas beli dan jual {asset.code} seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset</p>
+                {lang === 'id' && 
+                    <p>
+                        {objLang.acitivty_text_1} {asset.code} {objLang.activity_text_2}
+                    </p>
+                }
+                 {lang === 'en' && 
+                    <p>
+                        {asset.code} {objLang.acitivty_text_1}
+                    </p>
+                }
             </div>
             <div className='key-subcontainer'>
                 <h5>Key Statistic</h5>
@@ -52,35 +61,35 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <TrendChartIcon2 color={'#fff'} />
-                            <label>Kapasitas Pasar</label>
+                            <label>{objLang.market_activity}</label>
                         </div>
                         <p>{nFormatter(asset.key_statistic.market_cap, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <TrendChartIcon color={'#fff'} />
-                            <label>Nilai Terdilusi Penuh</label>
+                            <label>{objLang.full_value}</label>
                         </div>
                         <p>{nFormatter(asset.key_statistic.fully_diluted_valuation, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPie color={'#fff'} />
-                            <label>Suplai Yang Beredar</label>
+                            <label>{objLang.supply_circulate}</label>
                         </div>
                         <p>{nFormatter(asset.key_statistic.circulating_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPie2 color={'#fff'} />
-                            <label>Suplai Maksimum</label>
+                            <label>{objLang.supply_maksimum}</label>
                         </div>
                         <p className='!text-[#71BBED]'>{nFormatter(asset.key_statistic.max_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPPT color={'#fff'} />
-                            <label>Volume Global</label>
+                            <label>{objLang.volume_global}</label>
                         </div>
                         <p className='!text-[#EB5757]'>{nFormatter(asset.key_statistic.volume_24h, 1)}</p>
                     </div>
