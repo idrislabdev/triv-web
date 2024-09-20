@@ -407,7 +407,7 @@
                 @apply flex gap-[8px] items-center relative;
                 ul {
                     &.list-flags {
-                        @apply top-0 right-[50px] flex flex-col absolute;
+                        @apply top-[-2px] right-[50px] flex flex-col absolute;
                         /* @apply absolute flex flex-col transition-all duration-300  scale-0 origin-top left-0; */
                         &.show {
                             @apply bg-white rounded-[4px];

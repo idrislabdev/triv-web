@@ -71,7 +71,6 @@ const MainHeader = (props: {classText:string, lang: string}) => {
         let paths = pathname.split("/")
         paths[1] = langText
         router.push(paths.join("/"))
-
     }
 
     useEffect(() => {

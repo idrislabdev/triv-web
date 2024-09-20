@@ -1,9 +1,10 @@
 "use client"
 import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
-import { CheckCircleIcon, ChevronIconDown, MoonIcon, TimesIcon, TrivIcon } from '../../custom-icons'
+import { CheckCircleIcon, ChevronIconDown, MoonIcon, SunIcon, TimesIcon, TrivIcon } from '../../custom-icons'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { useGlobals } from '@/@core/hooks/useGlobals';
 
 const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<SetStateAction<boolean>> }) => {
     const { lang, show, setShow } = props
@@ -11,6 +12,8 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
     const [showFlags, setShowFlags] = useState(false);
     const dropdownFlags2: any = useRef(null);
     const pathname = usePathname()
+    const [mode, setMode] = useState('light-theme')
+    const { globals, saveGlobals } = useGlobals()
 
     const toggleSubMenu = (id:string) => {
         const element = document.getElementById(id)
@@ -45,13 +48,24 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
         if (check) {
+            document.body.classList.remove("dark-theme");
             localStorage.removeItem('mode');
+            setMode('light-theme')
+            saveGlobals({...globals, theme: 'light'})
+
         } else {
+            document.body.classList.add("dark-theme");
             localStorage.setItem('mode', 'dark-theme');
+            setMode('dark-theme')
+            saveGlobals({...globals, theme: 'dark'})
         }
-        router.refresh();
-        window.location.reload();
     }
+
+    useEffect(() => {
+        if (localStorage.getItem('mode') === 'dark-theme') {
+            setMode('dark-theme')
+        }
+    },[setMode])
 
     useEffect(() => {
         if (!showFlags) return;
@@ -99,7 +113,10 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     }
                                 </li>
                             </ul>
-                            <a onClick={_ => switchTheme()}><MoonIcon color={'#F2AF22'} /></a>
+                            <a onClick={_ => switchTheme()}>
+                            {mode === 'light-theme' && <MoonIcon color='#F2AF22' /> }
+                            {mode === 'dark-theme' && <SunIcon color='#F2AF22' /> }
+                            </a>
                             <a onClick={_ => closeSidebar()}><TimesIcon color={'#838899'} /></a>
                         </div>
                     </div>
