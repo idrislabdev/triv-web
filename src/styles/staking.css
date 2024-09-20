@@ -9,6 +9,12 @@
     p,label,span {
         @apply !text-slate-300;
     }
+    input,select {
+        @apply bg-slate-800 !text-white border-slate-800 caret-white;
+        &::placeholder {
+            @apply text-slate-400;
+        }
+    }
     .staking-page {
         .staking-benefit-section {
             button {
