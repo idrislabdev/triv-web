@@ -20,6 +20,22 @@
     }
     .blog-page {
         .blog-news-section {
+            .blog-main-container {
+                .main-subcontainer {
+                    .news-detail-content {
+                        .detail-content {
+                            .ringkasan-content {
+                                @apply bg-slate-800;
+                            }
+                        }
+                    }
+                    .news-comment-column {
+                        &.disabled {
+                            @apply bg-slate-800
+                        }
+                    }
+                }
+            }
             .blog-side-container {
                 .blog-subscribe {
                     .submit-subscribe {
