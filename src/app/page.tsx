@@ -1,4 +1,4 @@
-import HomeBannerSection from "@/@core/pages/home/banner-section";
+import HomeHeroSection from "@/@core/pages/home/hero-section";
 import HomeAssetCryptoSection from "@/@core/pages/home/assets-crypto-section";
 import HomeRancangSection from "@/@core/pages/home/rancang-section";
 import HomeInvestasiSection from "@/@core/pages/home/investasi-section";
@@ -67,9 +67,9 @@ export default async function  Home() {
        <title>TRIV: Marketplace Cryptocurrency &amp; Digital Asset Indonesia</title>
       </head>
       <body>
-        <MainHeader classText="" lang={'id'}/>
+        <MainHeader classText="header-white" lang={'id'}/>
         <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <HomeBannerSection lang={'id'} objLang={header_section}/>
+          <HomeHeroSection lang={'id'} objLang={header_section}/>
           <HomeIndexCryptoSection liverates={liverates}/>
           <HomeAssetCryptoSection liverates={liverates}/>
           <HomeRancangSection objLang={special_section}/>

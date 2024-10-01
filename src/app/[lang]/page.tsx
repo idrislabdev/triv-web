@@ -1,4 +1,4 @@
-import HomeBannerSection from "@/@core/pages/home/banner-section";
+import HomeHeroSection from "@/@core/pages/home/hero-section";
 import HomeAssetCryptoSection from "@/@core/pages/home/assets-crypto-section";
 import HomeRancangSection from "@/@core/pages/home/rancang-section";
 import HomeInvestasiSection from "@/@core/pages/home/investasi-section";
@@ -109,9 +109,9 @@ export default async function  HomeLang({ params }: any) {
         }
       </head>
       <body>
-        <MainHeader classText="" lang={params.lang}/>
+        <MainHeader classText="header-white" lang={params.lang}/>
         <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <HomeBannerSection lang={params.lang} objLang={header_section}/>
+          <HomeHeroSection lang={params.lang} objLang={header_section}/>
           <HomeIndexCryptoSection liverates={liverates}/>
           <HomeAssetCryptoSection liverates={liverates}/>
           <HomeRancangSection objLang={special_section}/>

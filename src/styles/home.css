@@ -101,6 +101,72 @@
             }
         }
     }
+
+    .home-hero-section {
+        @apply h-[750px] py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
+        .home-hero-section-area {
+            @apply flex px-[100px] gap-[20px];
+            .section-text {
+                @apply flex flex-col w-[75%] gap-[40px] z-[1];
+                .text-title {
+                    @apply flex flex-col gap-[28px];
+                    .title {
+                        @apply flex flex-col;
+                        h1,h2 {
+                            @apply text-[60px]/[72px] text-[#323232] font-[900] w-[90%];
+                        }
+                    }
+                    ul {
+                        @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[14px]/[14px];
+                        li {
+                            @apply flex items-center gap-[8px];
+                        }
+                    }
+                    p {
+                        @apply text-[16px]/[32px] text-[#646464] font-medium w-[70%];
+                    }
+                }
+                a {
+                    @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+                .section-terdaftar {
+                    @apply flex gap-[30px] items-center;
+                    label  {
+                        @apply text-[16px]/[32px] text-[#646464] font-medium;
+                    }
+                    .terdaftar-list-logo {
+                        @apply flex gap-[14px] items-center;
+                        .bappebti-logo {
+                            img {
+                                @apply w-[105px] h-[24px];
+                            }
+                        }
+                        .kominfo-logo {
+                            img {
+                                @apply w-[105px] h-[36px];
+                            }
+                        }
+                    }
+                }
+            }
+            .section-device {
+                @apply flex-1 flex flex-col justify-center items-center;
+                img {
+                    @apply w-[990px] h-[725px] absolute right-0 bottom-0;
+                }
+            }
+            /* &::after {
+                content: '';
+                @apply absolute right-0 bottom-0 w-[830px] h-[575px];
+                background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
+            } */
+        }
+    }
     
     .home-index-crypto-section {
         @apply pt-[50px] pb-[30px] px-[100px] w-full relative overflow-hidden;
