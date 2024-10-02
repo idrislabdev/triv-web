@@ -230,7 +230,13 @@
         ul {
             @apply flex gap-[30px] items-center;
             li {
-                @apply relative text-[12px]/[18px] font-medium cursor-pointer;
+                @apply relative text-[14px]/[21px] font-medium cursor-pointer;
+                @media (max-width: 1350px) {
+                    @apply text-[12px]/[18px];
+                }
+                @media (max-width: 1250px) {
+                    @apply text-[10px]/[15px];
+                }
                 a {
                     @apply block py-[10px];
                 }

@@ -81,6 +81,26 @@ const MainHeader = (props: {classText:string, lang: string}) => {
 
     useEffect(() => {
         window.addEventListener("scroll", onScroll, { passive: true });
+        const { scrollY } = window;
+        if (classText === '') {
+            if ( scrollY >= 60) {
+                document.getElementsByTagName("header")[0].classList.add('header-white', 'drop-shadow');
+            } else {
+                if (document.getElementsByTagName("header")[0]) {
+                    document.getElementsByTagName("header")[0].classList.remove('header-white', 'drop-shadow');
+                }
+
+            }
+        } else {
+            if ( scrollY >= 60) {
+                document.getElementsByTagName("header")[0].classList.add('drop-shadow');
+            } else {
+                if (document.getElementsByTagName("header")[0]) {
+                    document.getElementsByTagName("header")[0].classList.remove('drop-shadow');
+                }
+            }
+        }
+
         return () => {
            window.removeEventListener("scroll", onScroll);
         }
@@ -107,7 +127,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     
     return (
         <>
-            <header className={`main-header sm:mobile-responsive md:mobile-responsive ${classText}`}>
+            <header className={`main-header sm:mobile-responsive md:mobile-responsive drop-shadow ${classText}`}>
                 <div className='triv-logo-header'>
                     <Link href="/"><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
                 </div>

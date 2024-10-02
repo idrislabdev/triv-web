@@ -8,7 +8,8 @@
         "sub_description": "Registered and proud of by"
     },
     "special_section" : {
-        "title" : "Specially designed for crypto analysis, trading and investment",
+        "title_1" : "Specially designed for crypto",
+        "title_2" : "analysis",
         "content_1" : {
             "title" : "700+ Cryptocurrencies",
             "description": "Choose and trade a variety of digital assets on TRIV"
@@ -27,7 +28,8 @@
         }
     },
     "easy_invest_section": {
-        "title" : "Easy and Fast Investment",
+        "title_1" : "Easy and Fast",
+        "title_2" : "Investment",
         "content_1" : {
             "title" : "Open an Account Free & Fast",
             "description": "Daftar dengan mudah dalam hitungan detik"
@@ -41,13 +43,25 @@
             "description": "Choose from over 700+ Crypto available"
         }
     },
+    "transaksi_section" : {
+        "title_1" : "Triv Menghadirkan Kemudahan Transaksi Aset Digital Melalui",
+        "title_2" : "Website",
+        "title_3" : "dan",
+        "title_4" : "Aplikasi",
+        "subtitle": "Fitur layanan transaksi aset digital yang lengkap dan modern dalam satu aplikasi",
+        "button": "Daftar Sekarang"
+    },
     "dividen_section" : {
-        "title" : "Earn Crypto Staking Dividends Every Day",
+        "title_1" : "Earn Crypto",
+        "title_2" : "Staking Dividends",
+        "title_3" : "Every Day",
         "description" : "Start with just 50k and grow your crypto together with TRIV",
         "button" : "Register Now"
     },
     "ewallet_section": {
-        "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "title_1" : "Triv Supports",
+        "title_2" : "100 banks & E-wallets",
+        "title_3" : "in Indonesia for all our transactions",
         "subtitle" : "24/7 Real-time Deposits & Withdrawals",
         "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
@@ -57,7 +71,11 @@
         "button_text" : "Lihat Semua Video"
     },
     "invest_section" : {
-        "title" : "Buy and sell Digital Assets on the go with Triv mobile",
+        "title_1" : "Buy and sell Digital Assets",
+        "title_2" : "on",
+        "title_3" : "the",
+        "title_4" : "go",
+        "title_5" : "with Triv mobile",
         "description_1": "Manage all of your portfolio and transaction in 1 device",
         "description_2": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
         "button": "Regsiter Now"

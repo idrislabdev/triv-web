@@ -6,14 +6,14 @@ const HomeEwalletSection = (props: {objLang:any}) => {
   return (
     <section className='home-ewallet-section'>
         <div className='ewallet-description'>
-            <h2>{objLang.title}</h2>
+            <h2>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
             <h5>{objLang.subtitle}</h5>
             <p>
                 {objLang.description}
             </p>
         </div>
         <div className='ewallet-image'>
-            <Image src='/images/others/woman-and-iphone.png' alt='woman and iphone' width={455} height={435} />
+            <Image src='/images/others/wallets.png' alt='wallets' width={0} height={0} sizes='100%' />
         </div>
     </section>
   )

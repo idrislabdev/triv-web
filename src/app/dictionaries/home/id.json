@@ -8,7 +8,8 @@
         "sub_description": "Terdaftar dan diawasi oleh"
     },
     "special_section" : {
-        "title" : "Dirancang khusus untuk analisis, trade dan investasi crypto",
+        "title_1" : "Dirancang khusus untuk analisis",
+        "title_2" : "analisis",
         "content_1" : {
             "title" : "700+ Cryptocurrencies",
             "description": "Pilih dan trading beragam aset digital di TRIV"
@@ -27,7 +28,8 @@
         }
     },
     "easy_invest_section": {
-        "title" : "Investasi mudah dan cepat",
+        "title_1" : "Investasi",
+        "title_2" : "mudah dan cepat",
         "content_1" : {
             "title" : "Buka Akun Gratis & Cepat",
             "description": "Daftar dengan mudah dalam hitungan detik"
@@ -41,13 +43,25 @@
             "description": "Pilih lebih dari 700+ Crypto yang tersedia"
         }
     },
+    "transaksi_section" : {
+        "title_1" : "Triv Menghadirkan Kemudahan Transaksi Aset Digital Melalui",
+        "title_2" : "Website",
+        "title_3" : "dan",
+        "title_4" : "Aplikasi",
+        "subtitle": "Fitur layanan transaksi aset digital yang lengkap dan modern dalam satu aplikasi",
+        "button": "Daftar Sekarang"
+    },
     "dividen_section" : {
-        "title" : "Dapatkan Dividen Staking Crypto Setiap Hari",
+        "title_1" : "Dapatkan",
+        "title_2" : "Dividen Staking",
+        "title_3" : "Crypto Setiap Hari",
         "description" : "Mulai cukup dengan 50rb dan tumbuhkan cryptomu bersama dengan TRIV",
         "button" : "Daftar Sekarang"
     },
     "ewallet_section": {
-        "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "title_1" : "Triv Mendukung",
+        "title_2" : "100 bank & E-wallet",
+        "title_3" : "di Indonesia untuk semua transaksi kami",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
         "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
     },
@@ -57,7 +71,11 @@
         "button_text" : "Lihat Semua Video"
     },
     "invest_section" : {
-        "title" : "Beli dan Jual Aset Digital dimanapun dan kapanpun dengan Aplikasi Triv.",
+        "title_1" : "Beli dan Jual Aset Digital",
+        "title_2" : "dimanapun",
+        "title_3" : "dan",
+        "title_4" : "kapanpun",
+        "title_5" : "dengan Aplikasi Triv.",
         "subtitle": "Manage all of your portfolio and transaction in 1 device",
         "description": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
         "button": "Daftar Sekarang"

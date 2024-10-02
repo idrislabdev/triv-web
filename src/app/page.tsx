@@ -73,7 +73,7 @@ export default async function  Home() {
           <HomeIndexCryptoSection liverates={liverates}/>
           <HomeAssetCryptoSection liverates={liverates}/>
           <HomeRancangSection objLang={special_section}/>
-          <HomeInvestasiSection objLang={easy_invest_section} />
+          <HomeInvestasiSection lang={'id'} objLang={easy_invest_section} />
           <HomeDividenStakingSection lang={'id'} objLang={dividen_section} />
           <HomeEwalletSection objLang={ewallet_section} />
           <BaruCryptoSection objLang={new_crypto_section} />

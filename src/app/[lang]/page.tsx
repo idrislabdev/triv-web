@@ -2,6 +2,7 @@ import HomeHeroSection from "@/@core/pages/home/hero-section";
 import HomeAssetCryptoSection from "@/@core/pages/home/assets-crypto-section";
 import HomeRancangSection from "@/@core/pages/home/rancang-section";
 import HomeInvestasiSection from "@/@core/pages/home/investasi-section";
+import HomeTransaksiSection from "@/@core/pages/home/transaksi-section";
 import HomeDividenStakingSection from "@/@core/pages/home/dividen-staking-section";
 import HomeEwalletSection from "@/@core/pages/home/ewallet-section";
 import HomeMediaSection from "@/@core/pages/home/medias-section";
@@ -22,6 +23,7 @@ export default async function  HomeLang({ params }: any) {
     header_section, 
     special_section,
     easy_invest_section,
+    transaksi_section,
     dividen_section,
     ewallet_section,
     new_crypto_section,
@@ -113,9 +115,10 @@ export default async function  HomeLang({ params }: any) {
         <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
           <HomeHeroSection lang={params.lang} objLang={header_section}/>
           <HomeIndexCryptoSection liverates={liverates}/>
-          <HomeAssetCryptoSection liverates={liverates}/>
+          {/* <HomeAssetCryptoSection liverates={liverates}/> */}
           <HomeRancangSection objLang={special_section}/>
-          <HomeInvestasiSection objLang={easy_invest_section} />
+          <HomeInvestasiSection lang={params.lang} objLang={easy_invest_section}/>
+          <HomeTransaksiSection lang={params.lang} objLang={transaksi_section}/>
           <HomeDividenStakingSection lang={params.lang} objLang={dividen_section} />
           <HomeEwalletSection objLang={ewallet_section} />
           <BaruCryptoSection objLang={new_crypto_section} />
