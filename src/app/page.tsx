@@ -71,7 +71,7 @@ export default async function  Home() {
         <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
           <HomeHeroSection lang={'id'} objLang={header_section}/>
           <HomeIndexCryptoSection liverates={liverates}/>
-          <HomeAssetCryptoSection liverates={liverates}/>
+          {/* <HomeAssetCryptoSection liverates={liverates}/> */}
           <HomeRancangSection objLang={special_section}/>
           <HomeInvestasiSection lang={'id'} objLang={easy_invest_section} />
           <HomeDividenStakingSection lang={'id'} objLang={dividen_section} />
