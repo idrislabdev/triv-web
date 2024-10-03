@@ -6,12 +6,12 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
     return (
         <section className='staking-guide-crypto-section'>
             <div className='guide-container'>
-                <h2>{objLang.title}</h2>
+                <h2>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
                 <div className='guide-steps'>
                     <ul>
                         <li>
                             <div className='guide-icon'>
-                                <Image src='/images/others/step-koin.png' alt='step koin' width={0} height={0} sizes='100%'/>
+                                <Image src='/images/others/step-1.png' alt='step 1' width={0} height={0} sizes='100%'/>
                             </div>
                             <div className='guide-desc'>
                                 <h5>{objLang.guides[0].title}</h5>
@@ -20,7 +20,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                         </li>
                         <li>
                             <div className='guide-icon'>
-                                <Image src='/images/others/step-jumlah.png' alt='step koin' width={0} height={0} sizes='100%'/>
+                                <Image src='/images/others/step-2.png' alt='step 2' width={0} height={0} sizes='100%'/>
                             </div>
                             <div className='guide-desc'>
                                 <h5>{objLang.guides[1].title}</h5>
@@ -29,7 +29,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                         </li>
                         <li>
                             <div className='guide-icon'>
-                                <Image src='/images/others/step-bunga.png' alt='step koin' className='step-koin' width={0} height={0} sizes='100%'/>
+                                <Image src='/images/others/step-3.png' alt='step 3' width={0} height={0} sizes='100%'/>
                             </div>
                             <div className='guide-desc'>
                                 <h5>{objLang.guides[2].title}</h5>
@@ -40,7 +40,7 @@ const StakingGuideCryptoSection = (props: {objLang:any}) => {
                 </div>
             </div>
             <div className='image-container'>
-                <Image src='/images/devices/iphone-with-description-2.png' alt='iphone with description' width={0} height={0} sizes='100%'/>
+                <Image src='/images/devices/iphone-with-background.png' alt='iphone with background' width={0} height={0} sizes='100%'/>
             </div>
         </section>
     )

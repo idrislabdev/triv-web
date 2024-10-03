@@ -1,6 +1,7 @@
 {
     "header_section": {
-        "title": "Earn Additional Income With Crypto Staking",
+        "title_1": "Earn Additional Income With",
+        "title_2": "Crypto Staking",
         "description": "Earn extra income by staking your favorite crypto. The way Crypto Staking works is by securing the associated coin protocol and in return you will earn interest on your coins. Unlike bank deposits, staking interest can be taken daily or weekly."
     },
     "benefit_section": {
@@ -9,7 +10,9 @@
             "description": "By using Triv staking, you will earn additional income while HODLing your coin, it is suitable for long term investor that believe the growth of your coin ecosystem. No fee, No risk and Insured for your all Triv staking transactions."
         },
         "benefit": {
-            "title": "Benefits of staking crypto on Triv",
+            "title_1": "Benefits",
+            "title_2": "staking crypto",
+            "title_3": "on Triv",
             "benefits": [
                 {
                     "title": "100% Insured",
@@ -28,7 +31,9 @@
         }
     },
     "guide_crypto_section": {
-        "title": "Guide on how to easily stake crypto on TRIV",
+        "title_1": "Guide on how to easily",
+        "title_2": "stake crypto",
+        "title_3": "on TRIV",
         "guides": [
             {
                 "title": "Pick your favorite coin",
@@ -49,14 +54,17 @@
         "description": "*The calculation above is only an indicative calculation, staking interest can change at any time according to supply and demand on the related on-chain."
     },
     "coin_section": {
-        "title": "What Coins Can Be Staked at TRIV?",
+        "title_1": "What Coins Can Be",
+        "title_2": "Staked",
+        "title_3": "at TRIV?",
         "description": "Start from now. Choose your favorite asset and grow your crypto with TRIV, the best Crypto Staking in Indonesia",
         "text_card_1" : "Staking",
         "text_card_2" : "with Interest",
         "text_card_3" : "year now."
     },
     "faq_section": {
-        "title" : "FAQ (Crypto Staking Related Questions)",
+        "title_1" : "FAQ",
+        "title_2" : "(Crypto Staking Related Questions)",
         "questions" : [
             {
                 "title" : "What is Crypto Staking?",

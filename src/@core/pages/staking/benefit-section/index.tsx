@@ -16,10 +16,10 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                 </div>
             </div>
             <div className='benefit-container'>
-                <h2>{objLang.benefit.title}</h2>
+                <h2>{objLang.benefit.title_1} <span>{objLang.benefit.title_2}</span> {objLang.benefit.title_3}</h2>
                 <div className='benefit-type-container'>
                     <div className='benefit-icon'>
-                        <Image src='/images/others/insured.png' alt='insured icon' width={0} height={0} sizes='100%'/>
+                        <Image src='/images/others/insured-new.png' alt='insured icon' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='benefit-desc'>
                         <h4>{objLang.benefit.benefits[0].title}</h4>
@@ -28,7 +28,7 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                 </div>
                 <div className='benefit-type-container'>
                     <div className='benefit-icon'>
-                        <Image src='/images/others/fee.png' alt='fee icon' width={0} height={0} sizes='100%'/>
+                        <Image src='/images/others/fee-new.png' alt='fee icon' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='benefit-desc'>
                         <h4>{objLang.benefit.benefits[1].title}</h4>
@@ -37,14 +37,13 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                 </div>
                 <div className='benefit-type-container'>
                     <div className='benefit-icon'>
-                        <Image src='/images/others/dividen.png' alt='dividen icon' width={0} height={0} sizes='100%'/>
+                        <Image src='/images/others/dividen-new.png' alt='dividen icon' width={0} height={0} sizes='100%'/>
                     </div>
                     <div className='benefit-desc'>
                         <h4>{objLang.benefit.benefits[2].title}</h4>
                         <p>{objLang.benefit.benefits[2].description}</p>
                     </div>
                 </div>
-                <button>{objLang.benefit.button}</button>
             </div>
         </section>
     )

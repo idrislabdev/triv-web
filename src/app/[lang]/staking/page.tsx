@@ -1,20 +1,19 @@
 import MainHeader from '@/@core/components/main-header'
-import StakingHeaderSection from '@/@core/pages/staking/header-section'
+import StakingHeroSection from '@/@core/pages/staking/hero-section'
 import React from 'react'
 import StakingBenefitSection from '@/@core/pages/staking/benefit-section'
 import StakingGuideCryptoSection from '@/@core/pages/staking/guide-crypto-section'
 import StakingFaqSection from '@/@core/pages/staking/faq-section'
-import StakingStartNowSection from '@/@core/pages/staking/start-now-section'
-import StakingTestimonyCarouselSection from '@/@core/pages/staking/testimony-carousel-section'
+import StakingCalculatorSection from '@/@core/pages/staking/calculator-section'
 import StakingCoinsSection from '@/@core/pages/staking/coins-section'
 import { getStakings } from '@/@core/services/api'
 import { IStaking } from '@/@core/@types/interfaces'
-import StakingCalculatorSection from '@/@core/pages/staking/calculator-section'
 
 import { getDictionaryStaking } from "@/app/dictionaries";
 import Footer from '@/@core/components/footer'
 
 import '@/styles/staking.css'
+import StakingBannerSection from '@/@core/pages/staking/banner-section'
  
 export default async function  Staking({ params }: any) {
   const respStaking =  await getStakings();
@@ -111,16 +110,15 @@ export default async function  Staking({ params }: any) {
 
       </head>
       <body>
-        <MainHeader classText="header-white" lang={params.lang}/>
+        <MainHeader classText="header-transparent" lang={params.lang}/>
         <main className='staking-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <StakingHeaderSection objLang={header_section}/>
+          <StakingHeroSection objLang={header_section}/>
           <StakingBenefitSection objLang={benefit_section} />
           <StakingGuideCryptoSection objLang={guide_crypto_section}/>
           <StakingCalculatorSection objLang={calculator_section}/>
           <StakingCoinsSection stakings={stakings} objLang={coin_section}/>
           <StakingFaqSection objLang={faq_section}/>
-          <StakingStartNowSection lang={params.lang} objLang={start_now_section}/>
-          <StakingTestimonyCarouselSection />
+          <StakingBannerSection />
         </main>
         <Footer />
       </body>

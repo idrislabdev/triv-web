@@ -7,7 +7,7 @@ const StakingCoinsSection = (props: {stakings:IStaking[], objLang:any}) => {
     return (
         <section className='staking-coins-section'>
             <div className='header-coins-staking'>
-                <h2>{objLang.title}</h2>
+                <h2>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
                 <p>{objLang.description}</p>
             </div>
             <div className='list-coins-staking'>

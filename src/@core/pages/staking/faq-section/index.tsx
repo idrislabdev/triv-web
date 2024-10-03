@@ -12,7 +12,7 @@ const StakingFaqSection = (props: {objLang:any}) => {
 
     return (
         <section className='staking-faq-section'>
-            <h2>{objLang.title}</h2>
+            <h2><span>{objLang.title_1}</span> {objLang.title_2}</h2>
             <div className="question-faq-staking">
                 <div className="question-faq-accordion">
                     <ul>

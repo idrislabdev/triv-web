@@ -226,6 +226,101 @@
             }
         }
     }
+    &.header-transparent {
+        &.drop-shadow {
+            @apply bg-white text-black;
+        }
+        .triv-logo-header {
+            a {
+                path {
+                    @apply fill-primary;
+                }
+            }
+        }
+        .main-header-action {
+            a {
+                &.button-switch-theme {
+                    @apply cursor-pointer;
+                    svg {
+                        path {
+                            @apply fill-yellow-600;
+                        }
+                        circle {
+                            @apply fill-yellow-600;
+                        }
+                    }
+                }
+            }
+            ul {
+                li {
+                    .btn-signup-header {
+                        @apply  !bg-primary !text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
+                    }
+                }
+            }
+            .main-header-action-list {
+                ul {
+                    li {
+                        a {
+                            &.flag-button {
+                                span {
+                                    &.chevron-icon {
+                                        svg {
+                                            path {
+                                                 @apply stroke-black;
+                                            }
+                                        }
+                                    }
+                                    &.check-icon {
+                                        svg {
+                                            path {
+                                                 @apply fill-primary stroke-white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.flags {
+                            @apply pr-[50px];
+                            ul {
+                                &.list-flags {
+                                    &.show {
+                                        @apply bg-white bg-opacity-100;
+                                        box-shadow: 0px 4px 4px 0px #00000014;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                &.burger-menu {
+                    svg {
+                        path {
+                            @apply fill-primary;
+                        }
+                    }
+                }
+            }
+        }
+        .main-header-menu {
+            ul {
+                li {
+                    &.has-sub {
+                        a {
+                            svg {
+                                path {
+                                    @apply stroke-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .main-header-menu {
         ul {
             @apply flex gap-[30px] items-center;

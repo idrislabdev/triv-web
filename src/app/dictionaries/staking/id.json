@@ -1,6 +1,7 @@
 {
     "header_section": {
-        "title": "Dapatkan Penghasilan Tambahan Dengan Crypto Staking",
+        "title_1": "Dapatkan Penghasilan Tambahan Dengan",
+        "title_2": "Crypto Staking",
         "description": "Dapatkan penghasilan tambahan dengan melakukan staking crypto favorit anda. Cara kerja Crypto Staking adalah dengan mengamankan protokol koin terkait dan sebagai imbalan anda akan mendapatkan bunga dari coin anda. Tidak seperti deposito bank, bunga staking dapat diambil secara harian atau mingguan."
     },
     "benefit_section": {
@@ -9,7 +10,9 @@
             "description": "Dengan menggunakan staking Triv, Anda akan memperoleh penghasilan tambahan sambil HODLing koin Anda, sangat cocok untuk investor jangka panjang yang percaya pada pertumbuhan ekosistem koin Anda. Tanpa biaya, Tanpa risiko, dan Diasuransikan untuk semua transaksi staking Triv Anda."
         },
         "benefit": {
-            "title": "Keuntungan staking kripto di Triv",
+            "title_1": "Keuntungan",
+            "title_2": "staking kripto",
+            "title_3": "di Triv",
             "benefits": [
                 {
                     "title": "100% Insured",
@@ -28,7 +31,9 @@
         }
     },
     "guide_crypto_section": {
-        "title": "Panduan tentang cara staking kripto",
+        "title_1": "Panduan tentang cara",
+        "title_2": "staking kripto",
+        "title_3": "dengan mudah di TRIV",
         "guides": [
             {
                 "title": "Pilih koin favorit Anda",
@@ -49,14 +54,17 @@
         "description": "*Perhitungan diatas hanya merupakan perhitungan indikatif , bunga staking dapat berubah sewaktu-waktu sesuai dengan supply dan demand pada on-chain terkait."
     },
     "coin_section": {
-        "title": "Coin Apa Saja Yang Bisa di Staking di TRIV?",
+        "title_1": "Coin Apa Saja Yang Bisa di",
+        "title_2": "Staking",
+        "title_3": "di TRIV?",
         "description": "Mulailah dari sekarang. Pilih aset favorit dan tumbuhkan kriptomu bersama TRIV, Crypto Staking terbaik di Indonesia",
         "text_card_1" : "Staking",
         "text_card_2" : "dengan Bunga",
         "text_card_3" : "tahun sekarang."
     },
     "faq_section": {
-        "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
+        "title_1" : "FAQ",
+        "title_2" : "(Pertanyaan Terkait Crypto Staking)",
         "questions" : [
             {
                 "title" : "Apa Itu Crypto Staking?",

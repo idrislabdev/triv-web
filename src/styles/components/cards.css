@@ -17,6 +17,31 @@
     }
 }
 
+.card-coin-staking-new {
+    @apply bg-[#F4F8FB] h-[250px] rounded-[20px] pt-[20px] px-[10px] flex flex-col gap-[20px] items-center justify-between text-center;
+    .card-coin-desc {
+        @apply flex flex-col gap-[6px];
+        label {
+            @apply text-[20px]/[30px] font-black text-black;
+        }
+        span {
+            @apply text-[14px]/[21px] font-medium text-black;
+            span {
+                @apply font-bold;
+                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    .card-coin-logo {
+        @apply relative flex-1 w-full overflow-hidden flex flex-col items-center;
+        img {
+            @apply  w-[168px] h-[168px];
+        }
+    }
+}
+
 .card-news-main {
     @apply flex flex-col gap-[20px] cursor-pointer;
     &:hover {

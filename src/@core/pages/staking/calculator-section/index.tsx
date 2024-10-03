@@ -10,12 +10,11 @@ const StakingCalculatorSection = (props: {objLang:any}) => {
     return (
         <section className='staking-calculator-section'>
             <div className='card-staking-calculator'>
-                <div className='image-container'>
-                    <Image src='/images/devices/iphone-social-media.png' alt='fee icon' width={372} height={233}/>
+                <div className='title-container'>
+                    <h2>{objLang.title}</h2>
                 </div>
                 <div className='calculator-container'>
                     <div className='top-subcontainer'>
-                        <h2>{objLang.title}</h2>
                         <div className='sub-subcontainer'>
                             <div className='form-input'>
                                 <label>Stake Asset</label>
@@ -42,6 +41,10 @@ const StakingCalculatorSection = (props: {objLang:any}) => {
                         <div className='sub-subcontainer'>
                             <label>0.0291992<span>ETH</span></label>
                             <span>Daily Reward (Est.)</span>
+                        </div>
+                        <div className='sub-subcontainer'>
+                            <label>0.389029<span>ETH</span></label>
+                            <span>Monthly Reward (Est.)</span>
                         </div>
                         <div className='sub-subcontainer'>
                             <label>0.389029<span>ETH</span></label>
