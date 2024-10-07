@@ -29,7 +29,7 @@ const StakingCoinsSection = (props: {stakings:IStaking[], objLang:any}) => {
             </div>
             <div className='list-coins-staking'>
                 {stakings?.map((item:IStaking, index:number) => (
-                    <div className={`coin-staking-container fade-in`} style={{animationDelay: `${0.5*(index+1)}s`}} key={index}>
+                    <div className={`coin-staking-container fade-in`} style={{animationDelay: `${1+(0.2*(index+1))}s`}} key={index}>
                         <CardCoinStaking item={item} key={index} objLang={objLang}/>
                     </div>
                 ))}
