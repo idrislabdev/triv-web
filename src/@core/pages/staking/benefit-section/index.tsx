@@ -1,11 +1,28 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const StakingBenefitSection = (props: {objLang:any}) => {
     const { objLang } = props
+    const inViewport = () => {
+        const elements = document.getElementsByClassName("staking-benefit-section");
+        var element = elements[0];
+    
+        const { top, bottom } = element.getBoundingClientRect();
+    
+        if(window.innerHeight > top && bottom > 0) {
+          document.getElementsByClassName("staking-benefit-section")[0].classList.add('animate')
+        } else {
+          document.getElementsByClassName("staking-benefit-section")[0].classList.remove('animate')
+        }
+      }
+    
+    useEffect(() => {
+        window.addEventListener("scroll", inViewport, { passive: true });
+        document.getElementsByClassName("staking-benefit-section")[0].classList.add('animate')
+    });
     return (
         <section className='staking-benefit-section'>
-            <div className='media-container'>
+            <div className='media-container fade-in entry-1'>
                 <div className='frame-media'>
                     <iframe allow="autoplay; encrypted-media" id="player" src="https://www.youtube.com/embed/YHxGlMC9aak" frameBorder="0" allowFullScreen>
                     </iframe>
@@ -15,9 +32,9 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                     <p>{objLang.media.description}</p>
                 </div>
             </div>
-            <div className='benefit-container'>
-                <h2>{objLang.benefit.title_1} <span>{objLang.benefit.title_2}</span> {objLang.benefit.title_3}</h2>
-                <div className='benefit-type-container'>
+            <div className='benefit-container '>
+                <h2 className='fade-in entry-2'>{objLang.benefit.title_1} <span>{objLang.benefit.title_2}</span> {objLang.benefit.title_3}</h2>
+                <div className='benefit-type-container fade-in entry-3'>
                     <div className='benefit-icon'>
                         <Image src='/images/others/insured-new.png' alt='insured icon' width={0} height={0} sizes='100%'/>
                     </div>
@@ -26,7 +43,7 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                         <p>{objLang.benefit.benefits[0].description}</p>
                     </div>
                 </div>
-                <div className='benefit-type-container'>
+                <div className='benefit-type-container fade-in entry-4'>
                     <div className='benefit-icon'>
                         <Image src='/images/others/fee-new.png' alt='fee icon' width={0} height={0} sizes='100%'/>
                     </div>
@@ -35,7 +52,7 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                         <p>{objLang.benefit.benefits[1].description}</p>
                     </div>
                 </div>
-                <div className='benefit-type-container'>
+                <div className='benefit-type-container fade-in entry-5'>
                     <div className='benefit-icon'>
                         <Image src='/images/others/dividen-new.png' alt='dividen icon' width={0} height={0} sizes='100%'/>
                     </div>

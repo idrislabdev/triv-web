@@ -1,34 +1,13 @@
-import MainHeader from '@/@core/components/main-header'
-import StakingHeroSection from '@/@core/pages/staking/hero-section'
-import React from 'react'
-import StakingBenefitSection from '@/@core/pages/staking/benefit-section'
-import StakingGuideCryptoSection from '@/@core/pages/staking/guide-crypto-section'
-import StakingFaqSection from '@/@core/pages/staking/faq-section'
-import StakingCalculatorSection from '@/@core/pages/staking/calculator-section'
-import StakingCoinsSection from '@/@core/pages/staking/coins-section'
+
+import StakingPage from '@/@core/pages/staking/page'
 import { getStakings } from '@/@core/services/api'
 import { IStaking } from '@/@core/@types/interfaces'
-
 import { getDictionaryStaking } from "@/app/dictionaries";
-import Footer from '@/@core/components/footer'
-
-import '@/styles/staking.css'
-import StakingBannerSection from '@/@core/pages/staking/banner-section'
  
 export default async function  Staking({ params }: any) {
   const respStaking =  await getStakings();
   const stakings:IStaking[] = respStaking.data.data
-
-  const {
-    header_section, 
-    benefit_section, 
-    guide_crypto_section, 
-    calculator_section, 
-    coin_section, 
-    faq_section, 
-    start_now_section
-  } = await getDictionaryStaking(params.lang);
-
+  const objLang = await getDictionaryStaking(params.lang);
 
   return (
     <html lang={params.lang}>
@@ -110,17 +89,7 @@ export default async function  Staking({ params }: any) {
 
       </head>
       <body>
-        <MainHeader classText="header-transparent" lang={params.lang}/>
-        <main className='staking-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <StakingHeroSection objLang={header_section}/>
-          <StakingBenefitSection objLang={benefit_section} />
-          <StakingGuideCryptoSection objLang={guide_crypto_section}/>
-          <StakingCalculatorSection objLang={calculator_section}/>
-          <StakingCoinsSection stakings={stakings} objLang={coin_section}/>
-          <StakingFaqSection objLang={faq_section}/>
-          <StakingBannerSection />
-        </main>
-        <Footer />
+        <StakingPage lang={params.lang} objLang={objLang} stakings={stakings} />
       </body>
       
     </html>

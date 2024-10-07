@@ -32,7 +32,7 @@ const HomePage = (props: {lang: string, objLang:any, liverates:any}) => {
         // const { scrollY } = window;
     });
     return (
-        <div>
+        <>
             <MainHeader classText="header-white" lang={lang}/>
             <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
                 <HomeHeroSection lang={lang} objLang={objLang.header_section}/>
@@ -47,7 +47,7 @@ const HomePage = (props: {lang: string, objLang:any, liverates:any}) => {
                 <HomeMediaSection objLang={objLang.media_section} />
             </main>
             <Footer />
-        </div>
+        </>
   )
 }
 
