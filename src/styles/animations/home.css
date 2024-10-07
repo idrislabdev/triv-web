@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.home-page {
+    .home-hero-section {
+        &.animate {
+            .fadeIn {
+                opacity:0;  /* make things invisible upon start */
+                animation:fadeIn ease-in 1;
+                animation-fill-mode:forwards;
+                animation-duration:0.5s;
+            }
+            .entry-1 {
+                animation-delay: 0s;
+            }
+            .entry-2 {
+                animation-delay: 0.5s;
+                
+            }
+            .entry-3 {
+                animation-delay: 1s;
+            }
+            .entry-4 {
+                animation-delay: 1.5s;
+            }
+            .entry-5 {
+                animation-delay: 2s;
+            }
+            .entry-6 {
+                animation-delay: 2.5s;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

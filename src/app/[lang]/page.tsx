@@ -1,35 +1,12 @@
-import HomeHeroSection from "@/@core/pages/home/hero-section";
-import HomeAssetCryptoSection from "@/@core/pages/home/assets-crypto-section";
-import HomeRancangSection from "@/@core/pages/home/rancang-section";
-import HomeInvestasiSection from "@/@core/pages/home/investasi-section";
-import HomeTransaksiSection from "@/@core/pages/home/transaksi-section";
-import HomeDividenStakingSection from "@/@core/pages/home/dividen-staking-section";
-import HomeEwalletSection from "@/@core/pages/home/ewallet-section";
-import HomeMediaSection from "@/@core/pages/home/medias-section";
-import BaruCryptoSection from "@/@core/pages/home/baru-crypto-section";
-import HomeIndexCryptoSection from "@/@core/pages/home/index-crypto-section";
-import HomeBuySellAssetsSection from "@/@core/pages/home/buy-sell-assets-section";
-import MainHeader from "@/@core/components/main-header";
+import HomePage from "@/@core/pages/home/page";
 import { getLiverateMini } from "@/@core/services/api";
 import { getDictionaryHome } from "../dictionaries";
-import "@/styles/home.css"
-import Footer from "@/@core/components/footer";
 
 export default async function  HomeLang({ params }: any) {
   const resp =  await getLiverateMini();
   const liverates = resp.data.data
 
-  const {
-    header_section, 
-    special_section,
-    easy_invest_section,
-    transaksi_section,
-    dividen_section,
-    ewallet_section,
-    new_crypto_section,
-    invest_section,
-    media_section
-  } = await getDictionaryHome(params.lang);
+  const objHome = await getDictionaryHome(params.lang);
   
 
   return (
@@ -111,21 +88,7 @@ export default async function  HomeLang({ params }: any) {
         }
       </head>
       <body>
-        <MainHeader classText="header-white" lang={params.lang}/>
-        <main className='home-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <HomeHeroSection lang={params.lang} objLang={header_section}/>
-          <HomeIndexCryptoSection liverates={liverates}/>
-          {/* <HomeAssetCryptoSection liverates={liverates}/> */}
-          <HomeRancangSection objLang={special_section}/>
-          <HomeInvestasiSection lang={params.lang} objLang={easy_invest_section}/>
-          <HomeTransaksiSection lang={params.lang} objLang={transaksi_section}/>
-          <HomeDividenStakingSection lang={params.lang} objLang={dividen_section} />
-          <HomeEwalletSection objLang={ewallet_section} />
-          <BaruCryptoSection objLang={new_crypto_section} />
-          <HomeBuySellAssetsSection lang={params.lang} objLang={invest_section}/>
-          <HomeMediaSection objLang={media_section} />
-        </main>
-        <Footer />
+        <HomePage lang={params.lang} objLang={objHome} liverates={liverates}/>
       </body>
     </html>
   );
