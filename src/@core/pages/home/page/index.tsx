@@ -28,8 +28,8 @@ const HomePage = (props: {lang: string, objLang:any, liverates:any}) => {
     },[]);
 
     useEffect(() => {
-        window.addEventListener("scroll", onScroll, { passive: true });
-        const { scrollY } = window;
+        // window.addEventListener("scroll", onScroll, { passive: true });
+        // const { scrollY } = window;
     });
     return (
         <div>

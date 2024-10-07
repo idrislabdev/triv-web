@@ -4,33 +4,147 @@
 .home-page {
     .home-hero-section {
         &.animate {
-            .fadeIn {
-                opacity:0;  /* make things invisible upon start */
-                animation:fadeIn ease-in 1;
-                animation-fill-mode:forwards;
-                animation-duration:0.5s;
+            .fade-in {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeIn;
             }
             .entry-1 {
-                animation-delay: 0s;
+                animation-delay: 0.5s;
             }
             .entry-2 {
-                animation-delay: 0.5s;
-                
+                animation-delay: 1s;      
             }
             .entry-3 {
-                animation-delay: 1s;
-            }
-            .entry-4 {
                 animation-delay: 1.5s;
             }
-            .entry-5 {
+            .entry-4 {
                 animation-delay: 2s;
             }
-            .entry-6 {
+            .entry-5 {
                 animation-delay: 2.5s;
+            }
+            .entry-6 {
+                animation-delay: 3s;
+            }
+        }
+    }
+    .home-rancang-new-section {
+        &.animate {
+            .fade-in {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeIn;
+            }
+            .entry-1 {
+                animation-delay: 0.5s;
+            }
+            .entry-2 {
+                animation-delay: 1s;      
+            }
+            .entry-3 {
+                animation-delay: 1.5s;
+            }
+            .entry-4 {
+                animation-delay: 2s;
+            }
+            .entry-5 {
+                animation-delay: 2.5s;
+            }
+            .entry-6 {
+                animation-delay: 3s;
+            }
+        }
+    }
+    .home-transaksi-section {
+        &.animate {
+            .fade-in {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeIn;
+            }
+            .entry-1 {
+                animation-delay: 0.5s;
+            }
+            .entry-2 {
+                animation-delay: 1s;      
+            }
+            .entry-3 {
+                animation-delay: 1.5s;
+            }
+            .entry-4 {
+                animation-delay: 2s;
+            }
+        }
+    }
+    .home-dividen-staking-section {
+        &.animate {
+            .fade-in {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeIn;
+            }
+            .entry-1 {
+                animation-delay: 0.5s;
+            }
+            .entry-2 {
+                animation-delay: 1s;      
+            }
+            .entry-3 {
+                animation-delay: 1.5s;
+            }
+            .entry-4 {
+                animation-delay: 2s;
+            }
+        }
+    }
+
+    .home-ewallet-section {
+        &.animate {
+            .fade-in {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeIn;
+            }
+            .entry-1 {
+                animation-delay: 0.5s;
+            }
+            .entry-2 {
+                animation-delay: 1s;      
+            }
+            .entry-3 {
+                animation-delay: 1.5s;
+            }
+            .entry-4 {
+                animation-delay: 2s;
             }
         }
     }
 }
 
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { 
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* @keyframes fadeInBasic { from { opacity:0; } to { opacity:1; } } */
+
