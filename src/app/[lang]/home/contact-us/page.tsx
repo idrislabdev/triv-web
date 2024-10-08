@@ -6,7 +6,7 @@ import ContactUsInfoSection from '@/@core/pages/contact-us/info-section';
 import { getDictionariesContactUs } from '@/app/dictionaries';
 import '@/styles/contact-us.css'
 
-export default async function  ContactUs({ params }: any) {
+export default async function  ContactUsPage({ params }: any) {
     const {
         header_section, 
         info_section,

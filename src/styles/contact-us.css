@@ -51,7 +51,7 @@
     }
 
     .contact-us-header-section {
-        @apply  py-[50px] px-[100px] flex flex-col gap-[20px] items-center justify-center text-center;
+        @apply  py-[50px] px-[100px] flex flex-col gap-[20px] items-center justify-center text-center overflow-hidden;
         .header-container {
             @apply flex flex-col justify-center gap-[20px] w-[80%];
             h2 {
