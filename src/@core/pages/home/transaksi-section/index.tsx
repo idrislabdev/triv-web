@@ -8,13 +8,13 @@ const HomeTransaksiSection = (props: {lang:string, objLang:any}) => {
     const inViewport = () => {
         const elements = document.getElementsByClassName("home-transaksi-section");
         var element = elements[0];
-
-        const { top, bottom } = element.getBoundingClientRect();
-
-        if(window.innerHeight > top && bottom > 0) {
-        document.getElementsByClassName("home-transaksi-section")[0].classList.add('animate')
-        } else {
-        document.getElementsByClassName("home-transaksi-section")[0].classList.remove('animate')
+        if (element) {
+            const { top, bottom } = element.getBoundingClientRect();
+            if(window.innerHeight > top && bottom > 0) {
+                document.getElementsByClassName("home-transaksi-section")[0].classList.add('animate')
+            } else {
+                document.getElementsByClassName("home-transaksi-section")[0].classList.remove('animate')
+            }
         }
     }
 

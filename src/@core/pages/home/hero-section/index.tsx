@@ -9,13 +9,13 @@ const HomeHeroSection = (props: {lang:string, objLang:any}) => {
   const inViewport = () => {
     const elements = document.getElementsByClassName("home-hero-section");
     var element = elements[0];
-
-    const { top, bottom } = element.getBoundingClientRect();
-
-    if(window.innerHeight > top && bottom > 0) {
-      document.getElementsByClassName("home-hero-section")[0].classList.add('animate')
-    } else {
-      document.getElementsByClassName("home-hero-section")[0].classList.remove('animate')
+    if (element) {
+      const { top, bottom } = element.getBoundingClientRect();
+      if(window.innerHeight > top && bottom > 0) {
+        document.getElementsByClassName("home-hero-section")[0].classList.add('animate')
+      } else {
+        document.getElementsByClassName("home-hero-section")[0].classList.remove('animate')
+      }
     }
   }
 
@@ -49,7 +49,7 @@ const HomeHeroSection = (props: {lang:string, objLang:any}) => {
             </div>
         </div>
         <div className='section-device'>
-          <Image src='/images/devices/phone-double.png' className='fade-in entry-6' alt='iphone double' width={0} height={0} sizes='100%' />
+          <Image src='/images/devices/phone-double-2.png' className='fade-in entry-6' alt='iphone double' width={0} height={0} sizes='100%' />
         </div>
       </div>
     </section>

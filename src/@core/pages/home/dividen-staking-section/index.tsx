@@ -9,12 +9,14 @@ const HomeDividenStakingSection = (props: {lang:string, objLang:any }) => {
     const elements = document.getElementsByClassName("home-dividen-staking-section");
     var element = elements[0];
 
-    const { top, bottom } = element.getBoundingClientRect();
+    if (element) {
+      const { top, bottom } = element.getBoundingClientRect();
 
-    if(window.innerHeight > top && bottom > 0) {
-    document.getElementsByClassName("home-dividen-staking-section")[0].classList.add('animate')
-    } else {
-    document.getElementsByClassName("home-dividen-staking-section")[0].classList.remove('animate')
+      if(window.innerHeight > top && bottom > 0) {
+        document.getElementsByClassName("home-dividen-staking-section")[0].classList.add('animate')
+      } else {
+        document.getElementsByClassName("home-dividen-staking-section")[0].classList.remove('animate')
+      }
     }
   }
 

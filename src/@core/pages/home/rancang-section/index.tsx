@@ -7,14 +7,15 @@ const HomeRancangSection = (props: {objLang:any}) => {
     const inViewport = () => {
         const elements = document.getElementsByClassName("home-rancang-new-section");
         var element = elements[0];
-
-        const { top, bottom } = element.getBoundingClientRect();
-
-        if(window.innerHeight > top && bottom > 0) {
-        document.getElementsByClassName("home-rancang-new-section")[0].classList.add('animate')
-        } else {
-        document.getElementsByClassName("home-rancang-new-section")[0].classList.remove('animate')
+        if (element) {
+            const { top, bottom } = element.getBoundingClientRect();
+            if(window.innerHeight > top && bottom > 0) {
+                document.getElementsByClassName("home-rancang-new-section")[0].classList.add('animate')
+            } else {
+                document.getElementsByClassName("home-rancang-new-section")[0].classList.remove('animate')
+            }
         }
+       
     }
 
     useEffect(() => {
@@ -62,7 +63,7 @@ const HomeRancangSection = (props: {objLang:any}) => {
                 </div>
             </div>
             <div className='home-rancang-device fade-in entry-6'>
-                <Image src='/images/devices/multiple-phones.png' alt='phones' width={0} height={0} sizes='100%'/>
+                <Image src='/images/devices/multiple-phones-2.png' alt='phones' width={0} height={0} sizes='100%'/>
             </div>
         </section>
     )

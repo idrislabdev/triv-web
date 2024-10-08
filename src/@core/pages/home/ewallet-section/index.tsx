@@ -5,15 +5,15 @@ const HomeEwalletSection = (props: {objLang:any}) => {
   const { objLang } = props
   const inViewport = () => {
     const elements = document.getElementsByClassName("home-ewallet-section");
-    var element = elements[0];
-
-    const { top, bottom } = element.getBoundingClientRect();
-
-    if(window.innerHeight > top && bottom > 0) {
-    document.getElementsByClassName("home-ewallet-section")[0].classList.add('animate')
-    } else {
-    document.getElementsByClassName("home-ewallet-section")[0].classList.remove('animate')
-    }
+      var element = elements[0];
+      if (element) {
+        const { top, bottom } = element.getBoundingClientRect();
+        if(window.innerHeight > top && bottom > 0) {
+          document.getElementsByClassName("home-ewallet-section")[0].classList.add('animate')
+        } else {
+          document.getElementsByClassName("home-ewallet-section")[0].classList.remove('animate')
+        }
+      }
   }
 
   useEffect(() => {

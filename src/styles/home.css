@@ -13,6 +13,9 @@
         a {
             @apply !bg-[#3A80AF] !text-white;
         }
+        .home-hero-section { 
+            @apply bg-[#1b1f22];
+        }
         .home-banner-section {
             background: linear-gradient(to bottom, transparent,#000) #141414;
 
@@ -112,7 +115,7 @@
                     @apply flex flex-col gap-[28px];
                     .title {
                         @apply flex flex-col;
-                        h1,h2 {
+                        h1 {
                             @apply text-[60px]/[72px] text-[#323232] font-black w-[90%];
                         }
                     }
@@ -157,7 +160,7 @@
             .section-device {
                 @apply flex-1 flex flex-col justify-center items-center;
                 img {
-                    @apply w-[990px] h-[700px] object-cover absolute right-0 bottom-0;
+                    @apply w-[990px] h-[700px] object-cover absolute right-[-130px] bottom-0;
                 }
             }
             /* &::after {
@@ -382,7 +385,7 @@
             }
         }
         .description-container {
-            @apply flex flex-1 flex-col gap-[30px];
+            @apply flex flex-1 flex-col gap-0;
             .start-now-description {
                 @apply flex flex-col gap-[18px];
                 h2 {
@@ -407,18 +410,6 @@
                     svg {
                         path {
                             @apply fill-white;
-                        }
-                    }
-                }
-                .start-now-store {
-                    @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
                         }
                     }
                 }
@@ -669,6 +660,103 @@
 
     @layer components {
         &.mobile-responsive {
+            .home-hero-section {
+                @apply h-[624px] pt-[65px] pb-0 justify-start;
+                .home-hero-section-area {
+                    @apply px-[20px] flex-col text-center;
+                    .section-text {
+                        @apply flex flex-col w-[100%] gap-[14px] items-center;
+                        .text-title {
+                            @apply flex flex-col justify-center gap-[14px] items-center;
+                            .title {
+                                @apply flex flex-col;
+                                h1 {
+                                    @apply text-[14px]/[21px] w-[100%];
+                                }
+                            }
+                            ul {
+                                @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[7.24px]/[7.24px];
+                                li {
+                                    @apply flex items-center gap-[3px];
+                                    svg {
+                                        @apply w-[15px] h-[15px];
+                                    }
+                                }
+                            }
+                            p {
+                                @apply text-[10px]/[15px] w-[100%];
+                            }
+                        }
+                        a {
+                            @apply text-[12px]/[18px] w-[200px] h-[34px];
+                        }
+                        .section-terdaftar {
+                            @apply flex flex-col;
+                            label  {
+                                @apply text-[10px]/[15px] ;
+                            }
+                            .terdaftar-list-logo {
+                                @apply flex gap-[14px] items-center;
+                                .bappebti-logo {
+                                    img {
+                                        @apply w-[72px] h-[16px];
+                                    }
+                                }
+                                .kominfo-logo {
+                                    img {
+                                        @apply w-[72px] h-[24px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .section-device {
+                        @apply flex-1 flex flex-col justify-center items-center;
+                        img {
+                            @apply w-[408px] h-[272px] right-0 bottom-0;
+                        }
+                    }
+                }
+            }
+            .home-rancang-new-section {
+                @apply flex flex-col gap-[64px] py-[20px];
+                height: unset;
+                .home-rancang-device {
+                    @apply w-full flex flex-col items-center relative px-[20px] h-[235px];
+                    img {
+                        @apply object-contain w-full h-full;
+                    }
+                }
+                .home-rancang-description {
+                    @apply gap-[13px] items-center px-[20px] py-0;
+                    height: unset;
+                    flex: unset;
+                    h2 {
+                        @apply text-[14px]/[21px];
+                    }
+                    .rancang-description-details {
+                        @apply flex flex-col gap-[21px];
+                        .rancang-description-details-sub {
+                            @apply  items-start flex-row;
+                            .rancang-description-detail {
+                                @apply flex gap-[10px] w-1/2 items-center flex-col justify-center;
+                                img {
+                                    @apply w-[37px] h-[37px] object-contain;
+                                }
+                                .description-detail {
+                                    @apply flex flex-col justify-start text-center;
+                                    h5 {
+                                        @apply text-[10px]/[15px];
+                                    }
+                                    p {
+                                        @apply text-[8px]/[12px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .home-banner-section {
                 @apply pt-[75px] h-[580px];
                 .home-banner-section-area {
@@ -824,7 +912,7 @@
                 }
             }
             .home-investasi-section {
-                @apply p-[20px] ;
+                @apply px-[20px] py-[40px] ;
                 .investasi-section-box {
                     @apply overflow-hidden w-full;
                     h2 {
@@ -833,12 +921,13 @@
                     .investasi-details {
                         @apply flex-col gap-[30px];
                         .investasi-detail {
+                            @apply w-full gap-[30px];
                             .investasi-detail-description {
                                 h5 {
-                                    @apply text-[10px]/[15px];
+                                    @apply text-[10px]/[15px] font-semibold;
                                 }
                                 p {
-                                    @apply text-[8px]/[12px];
+                                    @apply text-[8px]/[12px] font-medium;
                                 }
                             }
                             img {
@@ -859,6 +948,41 @@
                 }
             
             }
+            .home-transaksi-section {
+                @apply flex-col px-[20px] py-[40px];
+                .image-container {
+                    @apply w-full h-full  flex flex-col justify-center items-end;
+                    img {
+                        @apply  w-full h-full right-0 object-contain relative;
+                    }
+                    &::before {
+                        content: none;
+                    }
+                }
+                .description-container {
+                    @apply flex w-full h-full flex-col gap-[30px] text-center;
+                    /* flex: unset; */
+                    .start-now-description {
+                        @apply flex flex-col gap-[18px];
+                        h2 {
+                            @apply text-[14px]/[21px];
+                        }
+                        h5,p {
+                            @apply text-[16px]/[32px];
+                        }
+                        p {
+                           @apply font-medium
+                        }
+                    }
+                   .start-button-logo {
+                        @apply flex flex-col gap-[30px];
+                        a {
+                           @apply hidden;
+                        }
+                   }
+                }
+            }
+            
             .home-dividen-staking-section {
                 @apply flex-col-reverse px-[30px] py-[20px] justify-center;
                 .dividen-staking-device {
@@ -901,9 +1025,9 @@
                     }
                 }
                 .ewallet-image {
-                    @apply w-[246px] flex flex-col justify-center items-center;
+                    @apply w-[246px] h-full flex flex-col justify-center items-center;
                     img {
-                        @apply w-[246px] h-[219px];
+                        @apply w-[246px] h-[219px] relative;
                     }
                 }
             }
