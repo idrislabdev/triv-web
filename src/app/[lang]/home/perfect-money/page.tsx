@@ -2,7 +2,6 @@ import React from 'react'
 import Footer from '@/@core/components/footer'
 import MainHeader from '@/@core/components/main-header'
 
-import '@/styles/products.css'
 import ProductsEwalletSection from '@/@core/pages/products/ewallet-section'
 import ProductsInvestasiNowSection from '@/@core/pages/products/investasi-now-section'
 import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
@@ -14,6 +13,7 @@ import ProductsLayananSection from '@/@core/pages/products/layanan-section'
 import ProductsAverageSection from '@/@core/pages/products/average-section'
 
 import { getDictionariesPerfectMoney } from '@/app/dictionaries'
+import '@/styles/products.css'
 
 export default async function ServicePerfectMoney({ params }: any) {
     const {
