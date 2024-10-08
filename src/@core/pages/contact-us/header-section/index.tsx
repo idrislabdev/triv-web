@@ -1,5 +1,3 @@
-import React from 'react'
-import '@/styles/contact-us.css'
 const ContactUsHeaderSection = (props: { objLang: any}) => {
     const { objLang } = props
     return (

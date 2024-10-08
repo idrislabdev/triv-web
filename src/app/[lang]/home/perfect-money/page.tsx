@@ -27,7 +27,7 @@ export default async function ServicePerfectMoney({ params }: any) {
     } = await getDictionariesPerfectMoney(params.lang);
     return (
         <html lang={params.lang}>
-         <head>
+            <head>
                 {params.lang === 'id' &&
                     <>
                         <meta name="csrf-token" content="+weP7pY3ybhxk8tLlddZYjmM0Xtn7fzz0MM6o3X5RAFz4UXHMzpb8Y9p9YZHzWLIZ1J3mxZwWYFlPmn8px3Z4g==" />

@@ -4,7 +4,7 @@ import ContactUsFaqSection from '@/@core/pages/contact-us/faq-section';
 import ContactUsHeaderSection from '@/@core/pages/contact-us/header-section'
 import ContactUsInfoSection from '@/@core/pages/contact-us/info-section';
 import { getDictionariesContactUs } from '@/app/dictionaries';
-import React from 'react'
+import '@/styles/contact-us.css'
 
 export default async function  ContactUs({ params }: any) {
     const {
