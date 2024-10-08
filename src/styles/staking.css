@@ -100,10 +100,10 @@
                     @apply flex flex-col gap-[28px];
                     .title {
                         @apply flex flex-col;
-                        h1,h2 {
+                        h1 {
                             @apply text-[60px]/[72px] text-white font-black w-[90%];
                         }
-                        h2 {
+                        span {
                             background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
                             background-clip: text;
                             -webkit-text-fill-color: transparent;
@@ -126,21 +126,22 @@
                     }
                 }
             }
-            img {
-                &.img-device {
-                    @apply w-[990px] h-full object-cover absolute right-0 bottom-0;
-                }
-                &.img-coin-1 {
-                    @apply  w-[174px] h-[167px] absolute right-[435px] top-[45%];
-                }
-                &.img-coin-2 {
-                    @apply  w-[162px] h-[154px] absolute right-[20px] top-[20%];
-                }
-                &.img-coin-3 {
-                    @apply  w-[174px] h-[186px] absolute right-[20px] top-[70%];
-                }
+            .section-image {
+                img {
+                    &.img-device {
+                        @apply w-[990px] h-full object-cover absolute right-0 bottom-0;
+                    }
+                    &.img-coin-1 {
+                        @apply  w-[174px] h-[167px] absolute right-[435px] top-[45%];
+                    }
+                    &.img-coin-2 {
+                        @apply  w-[162px] h-[154px] absolute right-[20px] top-[20%];
+                    }
+                    &.img-coin-3 {
+                        @apply  w-[174px] h-[186px] absolute right-[20px] top-[70%];
+                    }
+                }    
             }
-
            
         }
     }
@@ -248,7 +249,7 @@
         @apply px-[100px] py-[50px] gap-[80px] flex flex-col justify-center items-center;
         
         .card-staking-calculator{
-            @apply flex items-center gap-[40px] p-[60px] rounded-[20px] bg-[#F4F8FB] relative;
+            @apply flex items-center p-[60px] rounded-[20px] bg-[#F4F8FB] relative w-full;
             .title-container {
                 @apply w-[372px] z-[1];
                 h2 {
@@ -511,6 +512,58 @@
                     @apply text-[10px]/[15px];
                 }
             }
+            .staking-hero-section {
+                @apply h-full pt-[50px] pb-0;
+                .staking-hero-section-area {
+                    @apply flex-col px-[20px];
+                    .section-text {
+                        @apply w-full;
+                        .text-title {
+                            @apply flex flex-col gap-[28px] text-center;
+                            .title {
+                                @apply flex flex-col;
+                                h1 {
+                                    @apply text-[14px]/[21px] w-full;
+                                }
+                            }
+                            p {
+                                @apply text-[10px]/[15px] w-full;
+                            }
+                        }
+                        .text-info {
+                            @apply flex gap-[60px];
+                            .text-detail-info {
+                                @apply flex flex-col;
+                                label {
+                                    @apply text-[18px]/[28px];
+                                }
+                                span {
+                                    @apply text-[7px]/[11px];
+                                }
+                            }
+                        }
+                    }
+                    .section-image {
+                        @apply relative w-full;
+                        img {
+                            &.img-device {
+                                @apply w-full h-full object-cover relative right-0 bottom-0;
+                            }
+                            &.img-coin-1 {
+                                @apply  w-[60px] h-[56px] absolute right-[150px] top-[45%];
+                            }
+                            &.img-coin-2 {
+                                @apply  w-[60px] h-[56px] absolute right-[20px] top-[20%];
+                            }
+                            &.img-coin-3 {
+                                @apply  w-[60px] h-[56px] absolute right-[20px] top-[70%];
+                            }
+                        }
+                    }
+        
+                   
+                }
+            }
             .staking-benefit-section {
                 @apply  py-[30px] px-[20px] gap-[60px] flex-col-reverse;
                 .benefit-container {
@@ -598,18 +651,28 @@
                 .image-container {
                     @apply w-full justify-center items-center;
                     img {
-                        @apply w-[286px] h-[240px];
+                        @apply w-full h-full object-cover;
                     }
                 }
             }
             .staking-calculator-section {
                 @apply py-[30px] px-[20px] gap-[60px];
                 .card-staking-calculator {
-                    @apply flex-col gap-[30px];
+                    @apply flex-col gap-[30px] p-[40px];
+                    &::before,&::after {
+                        content: none;
+                    }
+
                     .image-container {
                         @apply w-[240px];
                         img {
                             @apply w-[240px] h-[142px];
+                        }
+                    }
+                    .title-container {
+                        @apply w-full;
+                        h2 {
+                            @apply text-[16px]/[24px];
                         }
                     }
                     .calculator-container {
@@ -670,25 +733,21 @@
                 }
                 .list-coins-staking {
                     .coin-staking-container {
-                        @apply w-1/2 p-[10px];
-                        .card-coin-staking {
-                            @apply flex-col justify-center gap-[6px] h-[125px];
+                        @apply w-1/3 p-[10px] ;
+                        .card-coin-staking-new {
+                            @apply h-[87px] gap-[4px] rounded-[7px];
                             .card-coin-logo {
-                                @apply flex flex-col justify-center items-center;
                                 img {
-                                    @apply w-[30px] h-[30px];
+                                    @apply w-[57px] h-[57px];
                                 }
                             }
                             .card-coin-desc {
                                 @apply text-center;
                                 label {
-                                    @apply text-[12px]/[18px];
+                                    @apply text-[7px]/[10px];
                                 }
                                 span {
-                                    @apply text-[8px]/[12px];
-                                }
-                                a {
-                                    @apply text-[10px]/[15px];
+                                    @apply text-[5px]/[7px];
                                 }
                             }
                         }
@@ -762,6 +821,51 @@
             }
             .staking-testimony-carousel-section {
                 @apply py-[30px] px-[20px];
+            }
+            .staking-banner-section {
+                @apply px-[20px] py-[50px];
+                .main-container {
+                    .sub-container {
+                        @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
+                        .text-area {
+                            @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
+                            .text-header {
+                                @apply flex flex-col gap-[2px];
+                                h2 {
+                                    @apply text-[10px]/[15px] text-white font-black;
+                                }
+                                p {
+                                    @apply text-[4px]/[8px] text-white font-medium w-[80%];
+                                }
+                            }
+                            .button-area {
+                                @apply gap-[7px];
+                                a {
+                                    @apply  w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];   
+                                     
+                                }
+                                .app-store-list {
+                                    @apply gap-[3px];
+                                    img {
+                                        &.playstore-logo {
+                                            @apply w-[33px] h-[10px];
+                                        }
+                                        &.apple-logo {
+                                            @apply w-[30px] h-[10px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .image-area {
+                            @apply flex-1 overflow-hidden;
+                            img {
+                                @apply absolute bottom-0 right-0 w-[150px];
+                            }
+                        }
+                    }
+                }
+        
             }
         }
     }

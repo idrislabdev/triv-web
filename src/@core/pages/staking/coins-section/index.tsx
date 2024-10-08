@@ -7,13 +7,13 @@ const StakingCoinsSection = (props: {stakings:IStaking[], objLang:any}) => {
     const inViewport = () => {
         const elements = document.getElementsByClassName("staking-coins-section");
         var element = elements[0];
-    
-        const { top, bottom } = element.getBoundingClientRect();
-    
-        if(window.innerHeight > top && bottom > 0) {
-          document.getElementsByClassName("staking-coins-section")[0].classList.add('animate')
-        } else {
-          document.getElementsByClassName("staking-coins-section")[0].classList.remove('animate')
+        if (element) {
+            const { top, bottom } = element.getBoundingClientRect();
+            if(window.innerHeight > top && bottom > 0) {
+                document.getElementsByClassName("staking-coins-section")[0].classList.add('animate')
+            } else {
+                document.getElementsByClassName("staking-coins-section")[0].classList.remove('animate')
+            }
         }
       }
     
