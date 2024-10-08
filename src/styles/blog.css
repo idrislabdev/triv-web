@@ -77,25 +77,7 @@
 
 }
 .blog-page {
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
+
     .blog-news-section {
         @apply  py-[50px] px-[100px] flex gap-[64px];
         .blog-main-container {

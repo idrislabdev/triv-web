@@ -2,8 +2,6 @@ import Footer from '@/@core/components/footer'
 import MainHeader from '@/@core/components/main-header'
 import React from 'react'
 import StocksRegisterNowSection from '@/@core/pages/stocks/register-now-section'
-import '@/styles/stocks.css'
-import { getDictionariesStocks } from '@/app/dictionaries'
 import StocksFaqSection from '@/@core/pages/stocks/faq-section'
 import StocksEwalletSection from '@/@core/pages/stocks/ewallet-section'
 import StocksCalculatorSection from '@/@core/pages/stocks/calculator-section'
@@ -11,6 +9,9 @@ import StockRegulatedInsuredSection from '@/@core/pages/stocks/regulated-insured
 import StocksWhySection from '@/@core/pages/stocks/why-section/page'
 import StocksDeviceSection from '@/@core/pages/stocks/device-section'
 import StockRegisterSection from '@/@core/pages/stocks/register-section'
+import { getDictionariesStocks } from '@/app/dictionaries'
+
+import '@/styles/stocks.css'
 
 export default async function Stocks({ params }: any) {
 
