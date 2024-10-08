@@ -46,7 +46,7 @@ const MarketHeader = (props: { lang: string}) => {
 
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {
-            document.body.classList.add("dark-theme");
+            document.body.classList.add("dark-theme", "market")
             saveGlobals({...globals, theme: 'dark'})
         }
     }, [globals.theme])

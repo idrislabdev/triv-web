@@ -6,6 +6,7 @@ import MarqueTextSection from '@/@core/pages/markets/marque-text-section';
 import '@/styles/markets.css'
 import MarketSection from '@/@core/pages/markets/market-section';
 import MarketTableSection from '@/@core/pages/markets/table-section';
+import MarketDesktopPage from '@/@core/pages/markets/desktop-page';
 export default async function MarketsPage({ params }: any) {
     const respMarkets =  await getMarkets();
     const respMarket =  await getMarket('BTC_IDR');
@@ -83,11 +84,7 @@ export default async function MarketsPage({ params }: any) {
           }
         </head>
         <body>
-          <main className='markets-page sm:mobile-responsive md:mobile-responsive light-theme'>
-            <MarqueTextSection markets={markets}/>
-            <MarketSection markets={markets} objMarket={market} lang={params.lang} objOrderBook={orderBook} trades={trades}/>
-            <MarketTableSection lang={params.lang}/>
-          </main>
+          <MarketDesktopPage market={market} markets={markets} lang={params.lang} orderBook={orderBook} trades={trades} />
         </body>
       </html>
     )

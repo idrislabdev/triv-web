@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 .dark-theme {
-    @apply bg-[#000000];
+    &.market {
+        @apply !bg-[#000000];
+    }
     h1, h2, h3, h4, h5, h6 {
       @apply !text-slate-200;
     }
@@ -615,7 +617,18 @@
    
     @layer components {
         &.mobile-responsive {
-     
+            .market-section {
+                @apply flex-col;
+                .market-container {
+                    @apply w-full;  
+                }
+                .order-book-container {
+                    @apply w-full;  
+                }
+                .form-container {
+                    @apply w-full;
+                }
+            }
         }
     }
 }

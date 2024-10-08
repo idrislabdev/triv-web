@@ -18,15 +18,11 @@ const MarketSection = (props: {markets:any, objMarket:any, lang:string, objOrder
 
     
     return (
-        <GlobalsProvider>
-            <MarketHeader lang={lang} />
-            <section className='market-section'>
-                    <MarketMainContainer markets={markets} market={market} setMarket={setMarket} />
-                    <MarketOrderBookContainer  market={market} setMarket={setMarket} orderBook={orderBook} trades={trades}/>
-                    <MarketFormContainer lang={lang} tabLimit={tabLimit} setTabLimit={setTabLimit} tabInfo={tabinfo} setTabInfo={setTabInfo} market={market}/>
-            </section>
-        </GlobalsProvider>
-
+        <section className='market-section'>
+            <MarketMainContainer markets={markets} market={market} setMarket={setMarket} />
+            <MarketOrderBookContainer  market={market} setMarket={setMarket} orderBook={orderBook} trades={trades}/>
+            <MarketFormContainer lang={lang} tabLimit={tabLimit} setTabLimit={setTabLimit} tabInfo={tabinfo} setTabInfo={setTabInfo} market={market}/>
+        </section>
     )
 }
 
