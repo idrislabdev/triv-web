@@ -57,6 +57,16 @@
 
             }
         }
+        .staking-coins-section {
+            .list-coins-staking {
+                .coin-staking-container {
+                    .card-coin-staking-new {
+                        @apply bg-[#1b1f22];
+
+                    }
+                }
+            }
+        }
     }
 }
 .staking-page {
@@ -81,7 +91,7 @@
         }
     }
     .staking-header-section {
-        @apply  py-[50px] px-[100px] flex flex-col gap-[20px] text-center;
+        @apply  py-[100px] px-[100px] flex flex-col gap-[20px] text-center;
         h1 {
             @apply text-[28px]/[42px] font-bold;
         }
@@ -460,9 +470,9 @@
                 @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
                 background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
                 .text-area {
-                    @apply flex flex-col w-[60%] gap-[30px] justify-center pl-[50px];
+                    @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
                     .text-header {
-                        @apply flex flex-col gap-[10px];
+                        @apply flex flex-col gap-[10px] w-[98%];
                         h2 {
                             @apply text-[40px]/[60px] text-white font-black;
                         }
@@ -492,7 +502,7 @@
                 .image-area {
                     @apply flex-1 overflow-hidden;
                     img {
-                        @apply absolute bottom-0 right-0 w-[512px];
+                        @apply absolute bottom-0 right-0 w-[510px];
                     }
                 }
             }
@@ -502,9 +512,9 @@
 
     @layer components {
         &.mobile-responsive {
-            @apply pt-[40px];
+            /* @apply pt-[40px]; */
             .staking-header-section {
-                @apply  py-[30px] px-[20px] gap-[10px];
+                @apply  pb-[30px] px-[20px] gap-[10px];
                 h1 {
                     @apply text-[16px]/[24px];
                 }
@@ -513,7 +523,7 @@
                 }
             }
             .staking-hero-section {
-                @apply h-full pt-[50px] pb-0;
+                @apply h-full pt-[65px] pb-0;
                 .staking-hero-section-area {
                     @apply flex-col px-[20px];
                     .section-text {
