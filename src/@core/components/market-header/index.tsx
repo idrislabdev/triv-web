@@ -12,10 +12,8 @@ import { GlobalsProvider } from '@/@core/context/globalContext';
 const MarketHeader = (props: { lang: string}) => {
     const { lang } = props
 
-    const [active, setActive] = useState(false);
     const [showFlags, setShowFlags] = useState(false);
     const [showSidebar, setShowSidebar] = useState(false);
-    const [mode, setMode] = useState('light-theme');
     const dropdownFlags: any = useRef(null);
     const { globals, saveGlobals } = useGlobals()
 
