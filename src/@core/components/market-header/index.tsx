@@ -22,10 +22,15 @@ const MarketHeader = (props: { lang: string}) => {
     const pathname = usePathname()
     const router = useRouter();
 
+    if (localStorage.getItem('mode') === 'dark-theme') {
+        document.body.classList.add("dark-theme", "market")
+    }
+
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
         if (check) {
             localStorage.removeItem('mode');
+            document.body.classList.remove("dark-theme");
             saveGlobals({...globals, theme: 'light'})
         } else {
             localStorage.setItem('mode', 'dark-theme');
@@ -50,12 +55,6 @@ const MarketHeader = (props: { lang: string}) => {
             saveGlobals({...globals, theme: 'dark'})
         }
     }, [globals.theme])
-
-    useEffect(() => {
-        if (globals.theme !== 'dark') {
-            document.body.classList.remove("dark-theme");
-        }
-    },[globals.theme])
 
     useEffect(() => {
         if (!showFlags) return;
