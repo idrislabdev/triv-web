@@ -157,6 +157,309 @@
             }
         }
     }
+    .products-layanan-section {
+        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
+        .title-container {
+            @apply flex flex-col items-center text-center justify-center gap-[20px];
+            h2 {
+                @apply text-[48px]/[72px] text-black font-black;
+                span {
+                    background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            p {
+                @apply text-[18px]/[27px] font-medium text-neutral-700;
+            }
+        }
+        .layanan-container {
+            @apply flex flex-col gap-[20px];
+           .card-subcontainer {
+                @apply w-full rounded-[30px] flex items-start justify-between h-[400px] transition-transform duration-200 ease-linear origin-top sticky overflow-hidden ;
+                padding-top: calc(var(--index) * var(--card-top-offset));
+                &.swap {
+                    @apply bg-[#F0FAF0];
+                    .box-layanan {
+                        span {
+                            @apply  bg-[#67C48F];
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.hoddl {
+                    @apply bg-[#FFF3E8];
+                    .box-layanan {
+                        span {
+                            @apply  bg-[#FF7F17];
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.kirim {
+                    @apply bg-[#EBFBF9];
+                    .box-layanan {
+                        span {
+                            @apply  bg-[#289C8C];
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.jual-beli {
+                    @apply bg-[#F4F8FB];
+                    .box-layanan {
+                        span {
+                            @apply  bg-[#85C8FA];
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.terima {
+                    @apply bg-[#FFF9E6];
+                    .box-layanan {
+                        span {
+                            @apply  !bg-[#F2AF22];
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.pulsa {
+                    @apply bg-[#F8ECF5];
+                    .box-layanan {
+                        span {
+                            @apply  bg-[#B63F9B];
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .box-layanan {
+                    @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+                    span {
+                        @apply bg-[#B63F9B] w-[80px] h-[80px] rounded-[50%] flex flex-col justify-center items-center;
+                    }
+                    .content {
+                        @apply flex flex-col gap-[10px];
+                        h5 {
+                            @apply text-[32px]/[48px] font-bold text-neutral-800;
+                        }
+                        p {
+                            @apply text-[16px]/[32px] font-medium text-neutral-700;
+                        }
+                    }
+                }
+                .box-img {
+                    @apply flex flex-col items-center relative w-1/2 h-full;
+                    &.macbook {
+                        @apply justify-center;
+                        img {
+                            @apply w-[488px] h-[314px];
+
+                        }
+                    }
+                    &.iphone {
+                        @apply justify-end;
+                        img {
+                            @apply w-[271px];
+                        }
+                    }
+                }
+           }
+        }
+    }
+    .products-affliate-section {
+        @apply relative flex flex-col justify-center py-[50px];
+        .affliate-container {
+            @apply flex justify-between items-center h-[490px] px-[100px] gap-[20px];
+            background: url("/images/backgrounds/affliate.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            .image-subcontainer {
+                @apply w-[400px] h-full flex flex-col justify-end;
+                img {
+                    @apply w-[400px];
+                }
+            }
+            .text-subcontainer {
+                @apply flex items-center gap-[30px] flex-1;
+                .left-subcontainer {
+                    @apply flex flex-col gap-[44px] w-1/2;
+                    .sub-subcontainer {
+                        @apply flex flex-col gap-[10px];
+                        h5 {
+                            @apply text-[30px]/[45px] font-black text-primary;
+                        }
+                        p {
+                            @apply text-[16px]/[32px] font-medium text-neutral-200;
+                        }
+                    }
+                }
+                .right-subcontainer {
+                    @apply flex flex-col gap-[40px] w-1/2;
+                    h5 {
+                        @apply text-[40px]/[60px] font-bold text-white;
+                    }
+                    .button-group {
+                        @apply flex flex-col gap-[22px];
+                        button {
+                            @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[13px] w-full h-[54px] text-[16px]/[24px] font-bold;
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+    .products-average-section {
+        @apply flex flex-col items-center px-[100px] py-[75px] relative;
+        .box-container {
+            @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
+            .sub-container {
+                @apply flex z-[1];
+                .detail-subcontainer {
+                    @apply flex items-start w-1/2 gap-[10px];
+                    .detail-img {
+                        @apply flex items-center gap-[4px] w-[208px];
+                        img {
+                            @apply w-[208px] h-[208px];
+                        }
+                    }
+                    .detail-description-subcontainer {
+                        @apply flex flex-col items-start flex-1;
+                        h5 {
+                            @apply text-[96px]/[96px] font-black;
+                            background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            span {
+                                @apply text-[48px]/[72px];
+                            }
+                        }
+                        p {
+                            @apply text-[36px]/[46px] font-black text-neutral-800 mb-[10px];
+                        }
+                        span {
+                            @apply text-[14px]/[21px] font-medium text-neutral-700;
+                            span {
+                                @apply text-[#FF7F17];
+                            }
+                        }
+                    }
+                }
+            }
+            &::after {
+                content: '';
+                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
+            }
+            &::before {
+                content: '';
+                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
+            }
+        }
+    
+    }
+        
+    .products-ewallet-section {
+        @apply flex items-center  px-[100px] py-[50px] relative;
+        .ewallet-description {
+            @apply flex-1 flex flex-col gap-[20px];
+            h2 {
+                @apply text-[48px]/[67px] font-black text-neutral-900;
+                span {
+                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            h5 {
+                @apply text-[20px]/[30px] font-bold;
+                background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p {
+                @apply text-[16px]/[32px] font-medium text-neutral-700;
+            }
+        }
+        .ewallet-image {
+            @apply w-[455px] h-[435px];
+            img {
+               @apply w-[455px] h-[435px] absolute top-0 right-0;
+            }
+        }
+    }
+
+    .products-banner-section {
+        @apply px-[100px] py-[50px];
+        .main-container {
+            .sub-container {
+                @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
+                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                .text-area {
+                    @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
+                    .text-header {
+                        @apply flex flex-col gap-[10px] w-[98%];
+                        h2 {
+                            @apply text-[40px]/[60px] text-white font-black;
+                        }
+                        p {
+                            @apply text-[16px]/[32px] text-white font-medium w-[80%];
+                        }
+                    }
+                    .button-area {
+                        @apply flex items-center gap-[39px];
+                        a {
+                            @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;   
+                             
+                        }
+                        .app-store-list {
+                            @apply flex items-center gap-[14px];
+                            img {
+                                &.playstore-logo {
+                                    @apply w-[130px] h-[38px];
+                                }
+                                &.apple-logo {
+                                    @apply w-[114px] h-[37px];
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-area {
+                    @apply flex-1 overflow-hidden;
+                    img {
+                        @apply absolute bottom-0 left-0 w-[510px];
+                    }
+                }
+            }
+        }
+
+    }
     @layer components {
         &.mobile-responsive {
             

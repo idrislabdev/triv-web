@@ -8,6 +8,11 @@ import { getDictionariesBitcoin } from '@/app/dictionaries'
 import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
 import ProductsRegulasiNewSection from '@/@core/pages/products/sections/regulasi-new-section'
+import ProductsLayananNewSection from '@/@core/pages/products/sections/layanan-new-section'
+import ProductsAffliateNewSection from '@/@core/pages/products/sections/affliate-new-section'
+import ProductsAverageNewSection from '@/@core/pages/products/sections/average-new-section'
+import ProductsEwalletNewSection from '@/@core/pages/products/sections/ewallet-new-section'
+import ProductsBannerSection from '@/@core/pages/products/sections/banner-section'
 
 export default async function ServiceBitcoinPage({ params }: any) {
     const {
@@ -103,6 +108,11 @@ export default async function ServiceBitcoinPage({ params }: any) {
                 <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ProductsServiceHeaderNewSection objLang={header_section} />
                     <ProductsRegulasiNewSection objLang={regulasi_section} />
+                    <ProductsLayananNewSection objLang={layanan_section} />
+                    <ProductsAffliateNewSection objLang={triv_affliate} />
+                    <ProductsAverageNewSection objLang={average_section} />
+                    <ProductsEwalletNewSection objLang={ewallet_section} />
+                    <ProductsBannerSection />
                 </main>
                 <Footer />
             </body>

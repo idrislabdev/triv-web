@@ -23,11 +23,14 @@
     },
     "layanan_section": {
         "title" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan Bitcoin Indonesia",
+        "title_1" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan",
+        "title_2" : "Bitcoin",
+        "title_3" : "Indonesia",
         "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli. Baik itu swap, staking ataupun lainnya dapat anda lakukan dalam satu aplikasi. Triv merupakan Aplikasi dengan fitur terlengkap untuk mengelola dan menumbuhkan portfolio anda.",
         "card" : {
             "jual_beli" : {
                 "title" : "Jual dan Beli Bitcoin 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur."
+                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Bitcoin anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur."
             },
             "kirim" : {
                 "title" : "Kirim Bitcoin",
@@ -42,7 +45,7 @@
                 "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER BTC mendapatkan return lebih tinggi daripada trader BTC. Simpan BTCmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah"
             },
             "swap" : {
-                "title" : "Swap Paypal",
+                "title" : "Swap Bitcoin",
                 "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv"
             },
             "isi_pulsa" : {
@@ -64,6 +67,9 @@
     },
     "ewallet_section": {
         "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "title_1" : "Triv Mendukung",
+        "title_2" : "100 bank & E-wallet",
+        "title_3" : "di Indonesia untuk semua transaksi kami",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
         "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
     },

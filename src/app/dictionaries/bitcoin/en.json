@@ -23,11 +23,14 @@
     },
     "layanan_section": {
         "title" : "What You Can Do With Triv Bitcoin Service Indonesia",
+        "title_1" : "What You Can Do With Triv",
+        "title_2" : "Bitcoin",
+        "title_3" : "Service Indonesia",
         "content" : "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
         "card" : {
             "jual_beli" : {
                 "title" : "Buy and sell Bitcoin 24 hours",
-                "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays You can buy and sell your Paypal balance in real-time with your bank or e-wallet in seconds even on holidays."
+                "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays You can buy and sell your Bitcoin balance in real-time with your bank or e-wallet in seconds even on holidays."
             },
             "kirim" : {
                 "title" : "Send Bitcoin",
@@ -42,7 +45,7 @@
                 "content" : "Did you know that it is historically proven that BTC HODLERS earn higher returns than BTC traders. Store your BTC in Triv with insurance from Bitgo & Lloyd's England up to 100m USD or 1.45 Trillion Rupiah equivalent"
             },
             "swap" : {
-                "title" : "Swap Paypal",
+                "title" : "Swap Bitcoin",
                 "content" : "Triv supports over 700 cryptocurrencies on our platform and counting. Need another coin? Swap to a wide range of other digital assets in real-time 24/7 on Triv"
             },
             "isi_pulsa" : {
@@ -64,6 +67,9 @@
     },
     "ewallet_section": {
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "title_1" : "Triv Supports",
+        "title_2" : "100 banks & E-wallets",
+        "title_3" : "in Indonesia for all our transactions",
         "subtitle" : "24/7 Real-time Deposits & Withdrawals",
         "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
