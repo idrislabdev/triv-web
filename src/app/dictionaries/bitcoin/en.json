@@ -1,6 +1,9 @@
 {
     "header_section": {
         "title" : "Buy and sell Bitcoin Indonesia 24 hours",
+        "title_1" : "Buy and sell",
+        "title_2" : "Bitcoin",
+        "title_3" : "Indonesia 24 hours",
         "description" : "The largest Bitcoin trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact BTC.",
         "button_1" : "Buy Bitcoin",
         "button_2" : "Visit Marketplace"
@@ -8,7 +11,10 @@
     "regulasi_section": {
         "liquiditas" : {
             "title" : "High Liquidity",
-            "content" : "Triv's spread is one of the lowest in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
+            "content" : "Triv's spread is one of the lowest in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting.",
+            "content_1" : "Triv's spread",
+            "content_2" : "one of the lowest",
+            "content_3" : "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
         },
         "regulator" : {
             "title" : "Regulated and Insured",

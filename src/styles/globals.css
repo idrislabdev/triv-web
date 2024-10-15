@@ -34,3 +34,24 @@ main {
     text-wrap: balance;
   }
 }
+
+
+button {
+  @apply flex items-center text-center justify-center gap-[10px];
+  &.btn-primary {
+    @apply bg-primary text-white border border-primary;
+    svg {
+      path {
+        @apply fill-white;
+      }
+    }
+  }
+  &.btn-outline-primary {
+    @apply bg-white text-primary border border-primary;
+    svg {
+      path {
+        @apply fill-primary;
+      }
+    }
+  }
+}

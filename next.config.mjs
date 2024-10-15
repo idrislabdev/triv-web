@@ -10,6 +10,12 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'triv.id',
+                port: '',
+                pathname: '**',
+            },
+            {
+                protocol: 'https',
                 hostname: 'blog.triv.co.id',
                 port: '',
                 pathname: '**',

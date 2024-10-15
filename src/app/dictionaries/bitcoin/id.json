@@ -1,6 +1,9 @@
 {
     "header_section": {
         "title" : "Jual Beli Bitcoin Indonesia 24 jam",
+        "title_1" : "Jual Beli",
+        "title_2" : "Bitcoin",
+        "title_3" : "Indonesia 24 jam",
         "description" : "Jual beli Bitcoin terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi BTC.",
         "button_1" : "Beli Bitcoin",
         "button_2" : "Kunjungi Marketplace"
@@ -8,7 +11,10 @@
     "regulasi_section": {
         "liquiditas" : {
             "title" : "Likuiditas Tinggi",
-            "content" : "Spread atau selisih harga jual beli Bitcoin Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
+            "content" : "Spread atau selisih harga jual beli Bitcoin Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu.",
+            "content_1" : "Spread atau selisih",
+            "content_2" : "harga jual beli Bitcoin",
+            "content_3" : "Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
         },
         "regulator" : {
             "title" : "Teregulasi dan Terasuransi",

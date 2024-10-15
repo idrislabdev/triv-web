@@ -22,6 +22,7 @@ const config: Config = {
       colors: {
         primary: '#71BBED',
         neutral: {
+          100: '#F0F1F3',
           200: '#EBEEF4',
           300: '#C1C3CC',
           500: '#838899',
