@@ -2,53 +2,60 @@
 
 import { IsiPulsaIcon, JualBeliIcon, PlaneIcon, SwapIcon, TerimaIcon, WalletIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const ProductsLayananNewSection = (props: {objLang:any}) => {
   const { objLang } = props
+  const [elSwap, setElSwap] = useState('');
+  const [elHoddl, setElHoddl] = useState('');
+  const [elKirim, setElKirim] = useState('');
+  const [elJualBeli, setElJualBeli] = useState('');
+  const [elTerima, seElTerima] = useState('');
+  const [elPulsa, setElPulsa] = useState('');
+ 
   const onScroll = useCallback(() => {
       const { scrollY } = window;
-      const elements = document.getElementsByClassName("products-layanan-new-section");
+      const elements = document.getElementsByClassName("products-layanan-section");
       var element = elements[0];
       if (element) {
         console.log(scrollY)
         if (scrollY > 3760) {
-          document.getElementsByClassName("swap")[0].style.scale = 0.80;
-          document.getElementsByClassName("hoddl")[0].style.scale = 0.84;
-          document.getElementsByClassName("kirim")[0].style.scale = 0.88;
-          document.getElementsByClassName("jual-beli")[0].style.scale = 0.92;
-          document.getElementsByClassName("terima")[0].style.scale = 0.96;
-          document.getElementsByClassName("pulsa")[0].style.scale = 1;
+          setElSwap('0.80')
+          setElHoddl('0.84')
+          setElKirim('0.88')
+          setElJualBeli('0.92')
+          seElTerima('0.96')
+          setElPulsa('1')
         }
 
         if (scrollY > 3403 && scrollY < 3760) {
-          document.getElementsByClassName("swap")[0].style.scale = 0.84;
-          document.getElementsByClassName("hoddl")[0].style.scale = 0.88;
-          document.getElementsByClassName("kirim")[0].style.scale = 0.92;
-          document.getElementsByClassName("jual-beli")[0].style.scale = 0.96;
-          document.getElementsByClassName("terima")[0].style.scale = 1;
+          setElSwap('0.84')
+          setElHoddl('0.88')
+          setElKirim('0.92')
+          setElJualBeli('0.96')
+          seElTerima('1')
         }
 
         if (scrollY > 3103 && scrollY < 3403) {
-          document.getElementsByClassName("swap")[0].style.scale = 0.88;
-          document.getElementsByClassName("hoddl")[0].style.scale = 0.92;
-          document.getElementsByClassName("kirim")[0].style.scale = 0.96;
-          document.getElementsByClassName("jual-beli")[0].style.scale = 1;
+          setElSwap('0.88')
+          setElHoddl('0.92')
+          setElKirim('0.96')
+          setElJualBeli('1')
         }
 
         if (scrollY > 2803 && scrollY < 3103) {
-          document.getElementsByClassName("swap")[0].style.scale = 0.92;
-          document.getElementsByClassName("hoddl")[0].style.scale = 0.96;
-          document.getElementsByClassName("kirim")[0].style.scale = 1;
+          setElSwap('0.92')
+          setElHoddl('0.96')
+          setElKirim('1')
         }
 
         if (scrollY > 1503 && scrollY < 2803) {
-          document.getElementsByClassName("swap")[0].style.scale = 0.96;
-          document.getElementsByClassName("hoddl")[0].style.scale = 1;
+          setElSwap('0.96')
+          setElHoddl('1')
         }
 
         if (scrollY < 2100) {
-          document.getElementsByClassName("swap")[0].style.scale = 1;
+          setElSwap('1')
         }
   
       }
@@ -66,7 +73,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
         <p>{objLang.content}</p>
       </div>
       <div className='layanan-container'>
-        <div className='card-subcontainer swap sticky top-[150px] translate-y-[0px]'>
+        <div className='card-subcontainer swap sticky top-[150px] translate-y-[0px]' style={{scale:elSwap}}>
           <div className='box-layanan'>
             <span><SwapIcon color={'#fff'} /></span>
             <div className='content'>
@@ -78,7 +85,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
             <Image src='/images/devices/iphone-bitcoin-2.png' alt='iphone' width={0} height={0} sizes='100%'/>
           </div>
         </div>
-        <div className='card-subcontainer hoddl sticky top-[170px] translate-y-[0px]'>
+        <div className='card-subcontainer hoddl sticky top-[170px] translate-y-[0px]' style={{scale:elHoddl}}>
           <div className='box-layanan'>
             <span><WalletIcon color={'#fff'} /></span>
             <div className='content'>
@@ -90,7 +97,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
             <Image src='/images/devices/macbook-bitcoin.png' alt='macbook' width={0} height={0} sizes='100%'/>
           </div>
         </div>
-        <div className='card-subcontainer kirim sticky top-[190px] translate-y-[0px]'>
+        <div className='card-subcontainer kirim sticky top-[190px] translate-y-[0px]' style={{scale:elKirim}}>
           <div className='box-layanan'>
             <span><PlaneIcon color={'#fff'} /></span>
             <div className='content'>
@@ -102,7 +109,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
             <Image src='/images/devices/iphone-bitcoin-2.png' alt='iphone' width={0} height={0} sizes='100%'/>
           </div>
         </div>
-        <div className='card-subcontainer jual-beli sticky top-[210px] translate-y-[0px]'>
+        <div className='card-subcontainer jual-beli sticky top-[210px] translate-y-[0px]' style={{scale:elJualBeli}}>
           <div className='box-layanan'>
             <span><JualBeliIcon color={'#fff'} /></span>
             <div className='content'>
@@ -114,7 +121,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
             <Image src='/images/devices/macbook-buy-bitcoin.png' alt='macbook' width={0} height={0} sizes='100%'/>
           </div>
         </div>
-        <div className='card-subcontainer terima sticky top-[230px] translate-y-[0px]'>
+        <div className='card-subcontainer terima sticky top-[230px] translate-y-[0px]' style={{scale:elTerima}}>
           <div className='box-layanan'>
             <span><TerimaIcon color={'#fff'} /></span>
             <div className='content'>
@@ -126,7 +133,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
             <Image src='/images/devices/iphone-receive-bitcoin.png' alt='iphone' width={0} height={0} sizes='100%'/>
           </div>
         </div>
-        <div className='card-subcontainer pulsa sticky top-[250px] translate-y-[0px]'>
+        <div className='card-subcontainer pulsa sticky top-[250px] translate-y-[0px]' style={{scale:elPulsa}}>
           <div className='box-layanan'>
             <span><IsiPulsaIcon color={'#fff'} /></span>
             <div className='content'>
