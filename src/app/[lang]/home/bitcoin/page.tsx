@@ -1,29 +1,13 @@
 import React from 'react'
-import Footer from '@/@core/components/footer'
-import MainHeader from '@/@core/components/main-header'
-import ProductsServiceHeaderNewSection from '@/@core/pages/products/sections/service-header-new-section'
-
+import BitcoinPageWrap from '@/@core/pages/products/bitcoin'
 import { getDictionariesBitcoin } from '@/app/dictionaries'
 
 import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
-import ProductsRegulasiNewSection from '@/@core/pages/products/sections/regulasi-new-section'
-import ProductsLayananNewSection from '@/@core/pages/products/sections/layanan-new-section'
-import ProductsAffliateNewSection from '@/@core/pages/products/sections/affliate-new-section'
-import ProductsAverageNewSection from '@/@core/pages/products/sections/average-new-section'
-import ProductsEwalletNewSection from '@/@core/pages/products/sections/ewallet-new-section'
-import ProductsBannerSection from '@/@core/pages/products/sections/banner-section'
+
 
 export default async function ServiceBitcoinPage({ params }: any) {
-    const {
-        header_section,
-        regulasi_section,
-        ewallet_section,
-        start_now_section,
-        layanan_section,
-        average_section,
-        triv_affliate
-    } = await getDictionariesBitcoin(params.lang);
+    const objLang = await getDictionariesBitcoin(params.lang);
     return (
         <html lang={params.lang}>
             <head>
@@ -104,17 +88,7 @@ export default async function ServiceBitcoinPage({ params }: any) {
                 }
             </head>
             <body>
-                <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-                    <ProductsServiceHeaderNewSection objLang={header_section} />
-                    <ProductsRegulasiNewSection objLang={regulasi_section} />
-                    <ProductsLayananNewSection objLang={layanan_section} />
-                    <ProductsAffliateNewSection objLang={triv_affliate} />
-                    <ProductsAverageNewSection objLang={average_section} />
-                    <ProductsEwalletNewSection objLang={ewallet_section} />
-                    <ProductsBannerSection />
-                </main>
-                <Footer />
+                <BitcoinPageWrap lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

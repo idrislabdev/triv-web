@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react'
 
-const FormService = () => {
+const FormService = (props: {objProduct:any}) => {
+    const {objProduct} = props
     const [buttonType, setButtonType] = useState('buy')
     return (
         <div className='form-service'>
@@ -10,7 +11,7 @@ const FormService = () => {
                 <button className={`!rounded-tl-[4px] !rounded-bl-[4px] ${buttonType === "buy" ? 'active' : ''}`} onClick={_ => setButtonType('buy')}>Beli</button>
                 <button className={`!rounded-tr-[4px] !rounded-br-[4px] ${buttonType === "sell" ? 'active' : ''}`} onClick={_ => setButtonType('sell')}>Jual</button>
             </div>
-            <h5 className='title'>Buy Bitcoin Starting from IDR 50,000!</h5>
+            <h5 className='title'>Buy {objProduct.name} Starting from IDR 50,000!</h5>
             <p className='description'>Enter the purchase amount:</p>
             <label className='nominal'>Rp 0</label>
             <div className='button-group'>
@@ -22,10 +23,10 @@ const FormService = () => {
             <div className='get-input'>
                 <label>You will get:</label>
                 <div className='label-value'>
-                    <span>BTC 0</span>
+                    <span>{objProduct.code} 0</span>
                 </div>
             </div>
-            <button className='btn-primary'>Buy Bitcoin Now</button>
+            <button className='btn-primary'>Buy {objProduct.name} Now</button>
         </div>
   )
 }

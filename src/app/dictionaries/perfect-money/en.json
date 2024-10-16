@@ -1,6 +1,9 @@
 {
     "header_section": {
         "title" : "Buy & Sell & Exchange Perfect Money Indonesia 24 Hours",
+        "title_1" : "Buy and sell",
+        "title_2" : "Perfect Money",
+        "title_3" : "Indonesia 24 hours",
         "description" : "The largest Buy Sell Perfect Money in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
         "button_1" : "Buy Perfect Money",
         "button_2" : "Visit Marketplace"
@@ -8,7 +11,10 @@
     "regulasi_section": {
         "liquiditas" : {
             "title" : "High Liquidity",
-            "content" : "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7."
+            "content" : "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7.",
+            "content_1" : "Triv's spread",
+            "content_2" : "one of the lowest",
+            "content_3" : "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
         },
         "regulator" : {
             "title" : "Regulated and Trusted Broker",
@@ -18,31 +24,46 @@
     },
     "layanan_section": {
         "title" : "All You can do with Perfect Money in Triv",
+        "title_1" : "What You Can Do With Triv",
+        "title_2" : "Perfect Money",
+        "title_3" : "Service Indonesia",
         "content" : "Triv supports all transactions, as well swap, exchange, etc. Triv is the most comprehensive and secure trading platform to manage and develop the value of your portfolio.",
         "card" : {
             "jual_beli" : {
                 "title" : "Perfect Money Exchange 24 Jam",
-                "content" : "Unlike trading stocks and commodities, the Perfect Money market is open 24/7. It allows you to buy, sell and exchange Perfect Money in real time through banking/ e-wallet instantly anytime and anywhere."
+                "content" : "Unlike trading stocks and commodities, the Perfect Money market is open 24/7. It allows you to buy, sell and exchange Perfect Money in real time through banking/ e-wallet instantly anytime and anywhere.",
+                "image_url" : "/images/services/iphone-perfect-money.png",
+                "image_class" : "iphone"
             },
             "kirim" : {
                 "title" : "Sending Perfect Money",
-                "content" : "You can exchange Perfect Money to Rupiah in Triv wallet, or sending it to fellow users instantly. This kind of service is charged for free."
+                "content" : "You can exchange Perfect Money to Rupiah in Triv wallet, or sending it to fellow users instantly. This kind of service is charged for free.",
+                "image_url" : "/images/services/device-transfer.png",
+                "image_class" : "device-transfer"
             },
             "terima" : {
                 "title" : "International Online Shopping",
-                "content" : "Thousands of global merchants accept Perfect Money, so you shop online without a credit card. Enjoy your online shopping by filling Perfect Money balance in Triv."
+                "content" : "Thousands of global merchants accept Perfect Money, so you shop online without a credit card. Enjoy your online shopping by filling Perfect Money balance in Triv.",
+                "image_url" : "/images/services/device-pay.png",
+                "image_class" : "device-pay"
             },
             "hoddl" : {
                 "title" : "Digital USD Wallet",
-                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Perfect Money? Easy! Just access swap menu in Triv app."
+                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Perfect Money? Easy! Just access swap menu in Triv app.",
+                "image_url" : "/images/services/wallet-debit.png",
+                "image_class" : "wallet-debit"
             },
             "swap" : {
                 "title" : "Pay All Bills",
-                "content" : "You can exchange Perfect Money for fiat in Triv platform, to pay bills such as: phone bills, credit, and even the electricity token."
+                "content" : "You can exchange Perfect Money for fiat in Triv platform, to pay bills such as: phone bills, credit, and even the electricity token.",
+                "image_url" : "/images/services/swap-asset.png",
+                "image_class" : "swap-paypal"
             },
             "isi_pulsa" : {
                 "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan Perfect Money anda ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
+                "content" : "Tukarkan Perfect Money anda ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
+                "image_url" : "/images/services/iphone-topup.png",
+                "image_class" : "iphone"
             }
         }
     },
@@ -61,6 +82,9 @@
     },
     "ewallet_section": {
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "title_1" : "Triv Supports",
+        "title_2" : "100 banks & E-wallets",
+        "title_3" : "in Indonesia for all our transactions",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
         "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },

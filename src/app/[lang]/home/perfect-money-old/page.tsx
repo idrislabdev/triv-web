@@ -1,10 +1,30 @@
 import React from 'react'
-import { getDictionariesPerfectMoney } from '@/app/dictionaries'
-import PerfectMoneyPageWrap from '@/@core/pages/products/perfect-money'
+import Footer from '@/@core/components/footer'
+import MainHeader from '@/@core/components/main-header'
 
+import ProductsEwalletSection from '@/@core/pages/products/ewallet-section'
+import ProductsInvestasiNowSection from '@/@core/pages/products/investasi-now-section'
+import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
+
+import ProductsAffliateSection from '@/@core/pages/products/affliate-section'
+import ProductsServiceHeaderSection from '@/@core/pages/products/service-header-section'
+import ProductsRegulasiDeviceSection from '@/@core/pages/products/regulasi-device-section'
+import ProductsLayananSection from '@/@core/pages/products/layanan-section'
+import ProductsAverageSection from '@/@core/pages/products/average-section'
+
+import { getDictionariesPerfectMoney } from '@/app/dictionaries'
+import '@/styles/products.css'
 
 export default async function ServicePerfectMoney({ params }: any) {
-    const objlang = await getDictionariesPerfectMoney(params.lang);
+    const {
+        header_section,
+        regulasi_section,
+        ewallet_section,
+        start_now_section,
+        layanan_section,
+        average_section,
+        triv_affliate
+    } = await getDictionariesPerfectMoney(params.lang);
     return (
         <html lang={params.lang}>
             <head>
@@ -85,7 +105,18 @@ export default async function ServicePerfectMoney({ params }: any) {
                 }
             </head>
             <body>
-                <PerfectMoneyPageWrap lang={params.lang} objLang={objlang} />
+                <MainHeader classText="header-white" lang={params.lang}/>
+                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
+                    <ProductsServiceHeaderSection objLang={header_section} />
+                    <ProductsRegulasiDeviceSection objLang={regulasi_section} />
+                    <ProductsLayananSection objLang={layanan_section} />
+                    <ProductsAverageSection objLang={average_section} />
+                    <ProductsAffliateSection objLang={triv_affliate} />
+                    <ProductsEwalletSection objLang={ewallet_section}/>
+                    <ProductsInvestasiNowSection objLang={start_now_section} />
+                    <ProductsTestimonyCarouselSection />
+                </main>
+                <Footer />
             </body>
         </html>
   )

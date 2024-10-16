@@ -286,6 +286,39 @@
                             @apply w-[271px];
                         }
                     }
+                    &.device-transfer {
+                        @apply justify-center;
+                        img {
+                            @apply w-[365px] h-[444px];
+
+                        }
+                    }
+                    &.device-pay {
+                        @apply justify-center;
+                        img {
+                            @apply w-[371px] h-[418px];
+
+                        }
+                    }
+                    &.wallet-debit {
+                        @apply justify-center;
+                        img {
+                            @apply w-[380px] h-[402px];
+
+                        }
+                    }
+                    &.swap-paypal {
+                        @apply justify-end;
+                        img {
+                            @apply w-[271px];
+                        }
+                    }
+                    &.cashback {
+                        @apply justify-center;
+                        img {
+                            @apply w-[406px];
+                        }
+                    }
                 }
            }
         }

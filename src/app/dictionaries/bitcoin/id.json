@@ -30,27 +30,39 @@
         "card" : {
             "jual_beli" : {
                 "title" : "Jual dan Beli Bitcoin 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Bitcoin anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur."
+                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Bitcoin anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
+                "image_url" : "/images/services/macbook-buy-bitcoin.png",
+                "image_class" : "macbook"
             },
             "kirim" : {
                 "title" : "Kirim Bitcoin",
-                "content" : "Kirim Bitcoin ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Bitcoin ke sesama pengguna Triv dengan gratis tanpa biaya apapun!"
+                "content" : "Kirim Bitcoin ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Bitcoin ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
+                "image_url" : "/images/services/iphone-bitcoin.png",
+                "image_class" : "iphone"
             },
             "terima" : {
                 "title" : "Terima Bitcoin",
-                "content" : "Terima Bitcoin dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan."
+                "content" : "Terima Bitcoin dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
+                "image_url" : "/images/services/iphone-receive-bitcoin.png",
+                "image_class" : "iphone"
             },
             "hoddl" : {
                 "title" : "HODLL Bitcoin",
-                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER BTC mendapatkan return lebih tinggi daripada trader BTC. Simpan BTCmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah"
+                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER BTC mendapatkan return lebih tinggi daripada trader BTC. Simpan BTCmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
+                "image_url" : "/images/services/macbook-bitcoin.png",
+                "image_class" : "macbook"
             },
             "swap" : {
                 "title" : "Swap Bitcoin",
-                "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv"
+                "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
+                "image_url" : "/images/services/iphone-bitcoin.png",
+                "image_class" : "iphone"
             },
             "isi_pulsa" : {
                 "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan koin BTCmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
+                "content" : "Tukarkan koin BTCmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
+                "image_url" : "/images/services/macbook-buy-bitcoin.png",
+                "image_class" : "macbook"
             }
         }
     },
