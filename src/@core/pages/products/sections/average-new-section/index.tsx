@@ -11,9 +11,9 @@ const ProductsAverageNewSection = (props: {objLang:any}) => {
                     <div className='detail-subcontainer'>
                         <div className='detail-img'>
                             <Image src='/images/others/male-customer-service.png' alt='male customer service' width={0} height={0} sizes='100%'/>
+                            <h5>{objLang.live_chat.time ? objLang.live_chat.time : '51'}<span>S</span></h5>
                         </div>
                         <div className='detail-description-subcontainer'>
-                            <h5>{objLang.live_chat.time ? objLang.live_chat.time : '51'}<span>S</span></h5>
                             <p>{objLang.live_chat.title}</p>
                             <span>{objLang.live_chat.content} <span>{objLang.updated_text}</span></span>
                         </div>
@@ -21,9 +21,9 @@ const ProductsAverageNewSection = (props: {objLang:any}) => {
                     <div className='detail-subcontainer'>
                         <div className='detail-img'>
                             <Image src='/images/others/robot-customer-service.png' alt='robot customer service' width={0} height={0} sizes='100%'/>
+                            <h5>{objLang.processing.time ? objLang.processing.time : '102'}<span>S</span></h5>
                         </div>
                         <div className='detail-description-subcontainer'>
-                            <h5>{objLang.processing.time ? objLang.processing.time : '102'}<span>S</span></h5>
                             <p>{objLang.processing.title}</p>
                             <span>{objLang.processing.content} <span>{objLang.updated_text} </span></span>
                         </div>

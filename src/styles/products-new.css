@@ -71,7 +71,7 @@
         background-position: center;
         background-size: cover;
         .service-hero-container {
-            @apply flex gap-[124px]; 
+            @apply flex gap-[124px] w-full; 
             .left-subcontainer {
                 @apply flex flex-col gap-[90px] w-1/2;
                 .text-area {
@@ -336,19 +336,16 @@
     .products-average-section {
         @apply flex flex-col items-center px-[100px] py-[75px] relative;
         .box-container {
-            @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
+            @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[40px] py-[40px] gap-[60px] relative w-[100%] overflow-hidden;
             .sub-container {
                 @apply flex z-[1];
                 .detail-subcontainer {
                     @apply flex items-start w-1/2 gap-[10px];
                     .detail-img {
-                        @apply flex items-center gap-[4px] w-[208px];
+                        @apply flex items-start gap-[4px] w-[180px];
                         img {
-                            @apply w-[208px] h-[208px];
+                            @apply w-[188px] h-[188px];
                         }
-                    }
-                    .detail-description-subcontainer {
-                        @apply flex flex-col items-start flex-1;
                         h5 {
                             @apply text-[96px]/[96px] font-black;
                             background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
@@ -358,6 +355,9 @@
                                 @apply text-[48px]/[72px];
                             }
                         }
+                    }
+                    .detail-description-subcontainer {
+                        @apply flex flex-col items-start flex-1 mt-[80px];
                         p {
                             @apply text-[36px]/[46px] font-black text-neutral-800 mb-[10px];
                         }
@@ -382,8 +382,7 @@
             }
         }
     
-    }
-        
+    }   
     .products-ewallet-section {
         @apply flex items-center  px-[100px] py-[50px] relative;
         .ewallet-description {
@@ -413,7 +412,6 @@
             }
         }
     }
-
     .products-banner-section {
         @apply px-[100px] py-[50px];
         .main-container {
@@ -462,7 +460,426 @@
     }
     @layer components {
         &.mobile-responsive {
+            padding-top: 50px;
+            .products-service-hero-section {
+                @apply p-[20px];
+                .service-hero-container {
+                    @apply flex-col gap-[40px]; 
+                    .left-subcontainer {
+                        @apply flex flex-col gap-[20px] w-full;
+                        .text-area {
+                            @apply flex flex-col gap-[30px] text-center;
+                            h2 {
+                                @apply text-[14px]/[21px] font-bold;
+                            }
+                            p {
+                                @apply text-[10px]/[15px];
+                            }
+                            .button-group {
+                                @apply flex flex-col gap-[10px];
+                                button {
+                                    @apply w-[200px] h-[34px] rounded-[30px] text-[12px]/[18px];
+                                }
+                            }
+                        }
+                        .logo-area {
+                            @apply gap-[5px] justify-center;
+                            .bappebti-logo {
+                                img {
+                                    @apply w-[60px] h-[13px];
+                                }
+                            }
+                            .kominfo-logo {
+                                img {
+                                    @apply w-[60px] h-[20px];
+                                }
+                            }
+                            .bsi-logo {
+                                img {
+                                    @apply w-[37px] h-[20px];
+                                }
+                            }
+                            .cisa-logo {
+                                img {
+                                    @apply w-[51px] h-[22px];
+                                }
+                            }
+                        }
+                    }
+                    .right-subcontainer {
+                        @apply w-full px-[20px];
+                        .form-service {
+                            @apply rounded-[23px] p-[23px] gap-[17px];    
+                            box-shadow: 0px 4px 40px 0px #00000033;
+                            .button-tab {
+                                @apply flex items-center relative;
+                                button {
+                                    @apply h-[34px] text-[12px]/[17px] rounded-none;
+                                }
+                                &.buy {
+                                    &::after {
+                                        content: '';
+                                        @apply absolute left-[calc(50%-22px)] z-[1] h-full w-[30px] bg-primary skew-x-[-25deg];
+                                    }
+                                }
+                                &.sell {
+                                    &::after {
+                                        content: '';
+                                        @apply absolute right-[calc(50%-22px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
+                                    }
+                                    button {
+                                        &.active {
+                                            @apply bg-red-600;
+                                        }
+                                    }
+                                }
+                            }
+                            .title {
+                                @apply text-[12px]/[19px];
+                            }
+                            .description {
+                                @apply text-[9px]/[14px] text-neutral-700 font-medium;
+                            }
+                            .nominal {
+                                @apply text-[14px]/[21px] font-bold text-neutral-800;
+                            }
+                            .button-group {
+                                @apply flex items-center gap-[10px];
+                                button {
+                                    @apply rounded-[6px] text-[8px]/[12px] px-[8px] py-[6px] h-[18px];
+                                }
+                            }
+                            .get-input {
+                                @apply flex flex-col gap-[18px];
+                                label {
+                                    @apply text-[9px]/[14px];
+                                }
+                                .label-value {
+                                    @apply h-[30px];
+                                    span {
+                                        @apply text-[14px]/[21px];
+                                    }
+                                }
+                            }
+                            button {
+                                @apply rounded-[8px] text-[9px]/[14px] h-[31px];
+                            }
+                        }
+                    }
+                }
+                /* &::after {
+                    content: '';
+                    @apply absolute w-[500px] h-[500px] right-[50%];
+                    background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+                } */
+            }
+            .products-regulasi-section {
+                @apply p-[20px];
+                .regulasi-container {
+                    @apply flex-col justify-center items-center;
+                    .box-subcontainer {
+                        @apply w-full text-center justify-center items-center;
+                        .img-box {
+                            @apply w-full h-full relative flex flex-col justify-center items-center;
+                            img {
+                                @apply w-[212px]  h-[212px]  object-cover;
+                            }
+                            &::after {
+                                content: '';
+                                @apply absolute right-[63px] top-0 w-[63%] z-[-1];
+                                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                        h5 {
+                            @apply text-[14px]/[21px];
+                        }
+                        p {
+                            @apply text-[12px]/[18px];
+                        }
+                    }
+                }
+            }
+            .products-layanan-section {
+                @apply p-[20px];
+                .title-container {
+                    h2 {
+                        @apply text-[14px]/[21px] font-bold;
+                    }
+                    p {
+                        @apply text-[10px]/[15px] ;
+                    }
+                }
+                .layanan-container {
+                    @apply flex flex-col gap-[20px];
+                   .card-subcontainer {
+                        @apply flex-col h-[574px]  rounded-[22px];
+                        padding-top: calc(var(--index) * var(--card-top-offset));
+                        &.swap {
+                            @apply bg-[#F0FAF0];
+                            .box-layanan {
+                                span {
+                                    @apply  bg-[#67C48F];
+                                    svg {
+                                        path {
+                                            @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.hoddl {
+                            @apply bg-[#FFF3E8];
+                            .box-layanan {
+                                span {
+                                    @apply  bg-[#FF7F17];
+                                    svg {
+                                        path {
+                                            @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.kirim {
+                            @apply bg-[#EBFBF9];
+                            .box-layanan {
+                                span {
+                                    @apply  bg-[#289C8C];
+                                    svg {
+                                        path {
+                                            @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.jual-beli {
+                            @apply bg-[#F4F8FB];
+                            .box-layanan {
+                                span {
+                                    @apply  bg-[#85C8FA];
+                                    svg {
+                                        path {
+                                            @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.terima {
+                            @apply bg-[#FFF9E6];
+                            .box-layanan {
+                                span {
+                                    @apply  !bg-[#F2AF22];
+                                    svg {
+                                        path {
+                                            @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.pulsa {
+                            @apply bg-[#F8ECF5];
+                            .box-layanan {
+                                span {
+                                    @apply  bg-[#B63F9B];
+                                    svg {
+                                        path {
+                                            @apply fill-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .box-layanan {
+                            @apply w-full justify-center items-center text-center;
+                            span {
+                                @apply w-[60px] h-[60px];
+                                svg {
+                                    @apply w-[50%];
+                                }
+                            }
+                            .content {
+                                @apply flex flex-col gap-[10px];
+                                h5 {
+                                    @apply text-[24px]/[36px];
+                                }
+                                p {
+                                    @apply text-[12px]/[24px];
+                                }
+                            }
+                        }
+                        .box-img {
+                            @apply w-full;
+                            &.macbook {
+                                @apply justify-center;
+                                img {
+                                    @apply w-[80%] h-[80%];
+        
+                                }
+                            }
+                            &.iphone {
+                                @apply justify-end;
+                                img {
+                                    @apply w-[50%];
+                                }
+                            }
+                        }
+                   }
+                }
+            }
+            .products-affliate-section {
+                @apply py-[50px];
+                .affliate-container {
+                    @apply flex-col h-full px-[20px] py-[37px];
+                    .image-subcontainer {
+                        @apply w-full flex flex-col justify-center items-center;
+                        img {
+                            @apply w-[258px];
+                        }
+                    }
+                    .text-subcontainer {
+                        @apply w-full flex-col justify-center items-center text-center;
+                        .left-subcontainer {
+                            @apply flex flex-col gap-[30px] w-full;
+                            .sub-subcontainer {
+                                @apply flex flex-col gap-[10px];
+                                h5 {
+                                    @apply text-[18px]/[27px];
+                                }
+                                p {
+                                    @apply text-[12px]/[18px];
+                                }
+                            }
+                        }
+                        .right-subcontainer {
+                            @apply flex flex-col gap-[30px] w-full;
+                            h5 {
+                                @apply text-[16px]/[24px];
+                            }
+                            .button-group {
+                                @apply flex flex-col justify-center items-center gap-[20px];
+                                button {
+                                    @apply w-[200px] rounded-[30px] text-[12px]/[18px] h-[34px];
+                                }
+                
+                            }
+                        }
+                    }
+                }
+            }
+            .products-average-section {
+                @apply p-[20px];
+                .box-container {
+                    @apply rounded-br-none rounded-bl-none;
+                    .sub-container {
+                        @apply flex-col gap-[30px];
+                        .detail-subcontainer {
+                            @apply w-full flex-col justify-center items-center;
+                            .detail-img {
+                                @apply items-center w-full justify-center;
+                                img {
+                                    @apply w-[61px] h-[61px];
+                                }
+                                h5 {
+                                    @apply text-[22px]/[33px];
+                                    span {
+                                        @apply text-[16px]/[25px];
+                                    }
+                                }
+                            }
+                            .detail-description-subcontainer {
+                                @apply w-full mt-0 justify-center items-center text-center;
+                                p {
+                                    @apply text-[10px]/[15px];
+                                }
+                                span {
+                                    @apply text-[10px]/[15px];
+                                }
+                            }
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
+                    }
+                    &::before {
+                        content: '';
+                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
+                    }
+                }
             
+            }   
+            .products-ewallet-section {
+                @apply flex-col py-[30px] px-[20px];
+                .ewallet-description {
+                    @apply justify-center items-center w-full text-center p-0;
+                    h2 {
+                        @apply text-[14px]/[21px];
+                    }
+                    h5 {
+                        @apply text-[10px]/[15px];
+                    }
+                    p {
+                        @apply text-[10px]/[15px];
+                    }
+                }
+                .ewallet-image {
+                    @apply w-[246px] h-full flex flex-col justify-center items-center;
+                    img {
+                        @apply w-[246px] h-[219px] relative;
+                    }
+                }
+            }
+            .products-banner-section {
+                @apply p-[20px];
+                .main-container {
+                    .sub-container {
+                        @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
+                        .text-area {
+                            @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
+                            .text-header {
+                                @apply flex flex-col gap-[2px];
+                                h2 {
+                                    @apply text-[10px]/[15px] text-white font-black;
+                                }
+                                p {
+                                    @apply text-[4px]/[8px] text-white font-medium w-[80%];
+                                }
+                            }
+                            .button-area {
+                                @apply gap-[7px];
+                                a {
+                                    @apply  w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];   
+                                     
+                                }
+                                .app-store-list {
+                                    @apply gap-[3px];
+                                    img {
+                                        &.playstore-logo {
+                                            @apply w-[33px] h-[10px];
+                                        }
+                                        &.apple-logo {
+                                            @apply w-[30px] h-[10px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .image-area {
+                            @apply flex-1 overflow-hidden;
+                            img {
+                                @apply absolute bottom-0 right-0 w-[150px];
+                            }
+                        }
+                    }
+                }
+        
+            }
         }
     }
 }
