@@ -8,12 +8,53 @@
         @apply !text-slate-300;
     }
     .products-page {
-        .products-service-header-section {
-            button {
-                @apply !bg-[#3A80AF] !text-white;
-                &.white {
-                    @apply !bg-white !text-[#3A80AF];
-
+        .products-service-hero-section {
+            .left-subcontainer {
+                button {
+                    &.btn-primary {
+                        @apply bg-[#3A80AF] border-[#3A80AF];
+                    }
+                    &.btn-outline-primary {
+                        @apply text-[#3A80AF] border-[#3A80AF];
+                        svg {
+                            path {
+                                @apply fill-[#3A80AF];
+                            }
+                        }
+                    }
+                }
+            }
+            .right-subcontainer {
+                .form-service {
+                    @apply !bg-[#1b1f22];
+                    .button-tab {
+                        button {
+                            &.active {
+                                @apply bg-[#3A80AF] text-white;
+                            }
+                        }
+                        &.buy {
+                            &::after {
+                                @apply bg-[#3A80AF];
+                            }
+                        }
+                        &.sell {
+                            &::after {
+                                content: '';
+                                @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
+                            }
+                            button {
+                                &.active {
+                                    @apply bg-red-600;
+                                }
+                            }
+                        }
+                    }
+                    button {
+                        &.btn-primary {
+                            @apply bg-[#3A80AF] border-[#3A80AF];
+                        }
+                    }
                 }
             }
         }
@@ -41,6 +82,14 @@
         .products-investasi-now-section {
             a {
                 @apply !bg-[#3A80AF] !text-white;
+            }
+        }
+        .products-layanan-section {
+            @apply p-[20px];
+            .layanan-container {
+                .card-subcontainer {
+                    @apply !bg-[#1b1f22];
+                }
             }
         }
     }
@@ -337,9 +386,9 @@
                 }
             }
             .text-subcontainer {
-                @apply flex items-center gap-[30px] flex-1;
+                @apply flex items-center gap-[20px] flex-1;
                 .left-subcontainer {
-                    @apply flex flex-col gap-[44px] w-1/2;
+                    @apply flex flex-col gap-[40px] w-1/2;
                     .sub-subcontainer {
                         @apply flex flex-col gap-[10px];
                         h5 {
@@ -347,6 +396,16 @@
                         }
                         p {
                             @apply text-[16px]/[32px] font-medium text-neutral-200;
+                        }
+                    }
+                    @media (max-width: 1380px) {
+                        .sub-subcontainer {
+                            h5 {
+                                @apply text-[25px]/[40px];
+                            }
+                            p {
+                                @apply text-[15px]/[25px];
+                            }
                         }
                     }
                 }
@@ -361,6 +420,17 @@
                             @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[13px] w-full h-[54px] text-[16px]/[24px] font-bold;
                         }
         
+                    }
+
+                    @media (max-width: 1380px) {
+                        h5 {
+                            @apply text-[30px]/[45px];
+                        }
+                        .button-group {
+                           button {
+                            @apply h-[45px];
+                           }
+                        }
                     }
                 }
             }
