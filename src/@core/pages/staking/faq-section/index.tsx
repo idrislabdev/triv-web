@@ -14,6 +14,9 @@ const StakingFaqSection = (props: {objLang:any}) => {
         <section className='staking-faq-section'>
             <h2><span>{objLang.title_1}</span> {objLang.title_2}</h2>
             <div className="question-faq-staking">
+                <div className='question-faq-image'>
+                    <Image src='/images/others/3d-faq.png' alt='3d-faq' width={237} height={303}/>
+                </div>
                 <div className="question-faq-accordion">
                     <ul>
                         <li>
@@ -80,9 +83,6 @@ const StakingFaqSection = (props: {objLang:any}) => {
                             </div>
                         </li>
                     </ul>
-                </div>
-                <div className='question-faq-image'>
-                    <Image src='/images/others/3d-faq.png' alt='3d-faq' width={237} height={303}/>
                 </div>
             </div>
         </section>

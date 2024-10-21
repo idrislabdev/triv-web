@@ -37,9 +37,8 @@ main {
 
 
 button {
-  @apply flex items-center text-center justify-center gap-[10px];
   &.btn-primary {
-    @apply bg-primary text-white border border-primary;
+    @apply flex items-center text-center justify-center gap-[10px] bg-primary text-white border border-primary;
     svg {
       path {
         @apply fill-white;
@@ -47,7 +46,7 @@ button {
     }
   }
   &.btn-outline-primary {
-    @apply bg-white text-primary border border-primary;
+    @apply flex items-center text-center justify-center gap-[10px] bg-white text-primary border border-primary;
     svg {
       path {
         @apply fill-primary;

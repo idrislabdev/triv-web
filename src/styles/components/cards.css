@@ -18,7 +18,7 @@
 }
 
 .card-coin-staking-new {
-    @apply bg-[#F4F8FB] h-[250px] rounded-[20px] pt-[20px] px-[10px] flex flex-col gap-[20px] items-center justify-between text-center;
+    @apply bg-[#F4F8FB] h-[250px] rounded-[20px] pt-[20px] px-[10px] flex flex-col gap-[20px] items-center justify-between text-center cursor-pointer relative;
     .card-coin-desc {
         @apply flex flex-col gap-[6px];
         label {
@@ -32,12 +32,46 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+            &.span-label {
+                @apply opacity-0 invisible;
+            }
         }
     }
     .card-coin-logo {
         @apply relative flex-1 w-full overflow-hidden flex flex-col items-center;
         img {
             @apply  w-[168px] h-[168px];
+            transition: all .2s ease-in;
+
+        }
+    }
+    .card-button {
+        @apply  opacity-0 invisible absolute bottom-[30px]; 
+        transition: .2s ease-in;
+        a {
+            @apply bg-primary rounded-[8px] text-white text-[14px]/[21px] font-bold px-[23px] py-[9px];
+        }
+    }
+    &:hover {
+        .card-coin-desc {
+            span {
+                &.span-text {
+                    @apply hidden;
+                }
+                &.span-label {
+                    @apply opacity-100 visible;
+                }
+            }
+        }
+        .card-coin-logo {
+            img {
+                @apply w-[50px] h-[50px];
+            }
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+        }
+        .card-button {
+            @apply opacity-100 visible;
         }
     }
 }

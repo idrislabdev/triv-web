@@ -107,6 +107,9 @@
 
     .home-hero-section {
         @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
+        background: url("/images/ornaments/home-ornament.png") no-repeat;
+        background-position: center;
+        background-size: cover;
         .home-hero-section-area {
             @apply flex px-[100px] gap-[20px];
             .section-text {
