@@ -72,12 +72,11 @@ const MarketHeader = (props: { lang: string}) => {
                     <Link href="/"><TrivIcon color={'#318AC6'} /></Link>
                 </div>
                 <div className='market-header-action'>
-                    <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={'#000'} /></a>
                     <div className='market-header-action-list'>
                         <ul>
                             <li><Link href={`/${lang}/register`} className='btn-signup-header'>Sign Up</Link></li>
                             <li><Link href={`/${lang}/login`} className='btn-login-header'>Login</Link></li>
-                            <li className='flex'>
+                            <li className='flex flag-button'>
                                 <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
                                     <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
                                     <span className={`transition-all duration-300 ${showFlags ? 'rotate-180': ''}`}><ChevronIconDown color={'#fff'}/></span>
@@ -100,8 +99,8 @@ const MarketHeader = (props: { lang: string}) => {
                             {globals.theme === 'light' && <MoonIcon color='#fff' /> }
                             {globals.theme === 'dark' && <SunIcon color='#fff' /> }
                         </a>
-
                     </div>
+                    <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={'#000'} /></a>
                 </div>
             </header>
             <MainSidebarMenu lang={lang} show={showSidebar} setShow={setShowSidebar}/>

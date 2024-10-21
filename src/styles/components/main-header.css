@@ -500,7 +500,7 @@
 }
 
 .main-sidebar-menu {
-    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[10] justify-between transition-all duration-500 ;
+    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[20] justify-between transition-all duration-500 ;
     &.show {
         @apply mr-[0px];
     }

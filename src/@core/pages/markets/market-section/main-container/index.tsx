@@ -55,6 +55,9 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                         <span className='truncate'>{market.symbol}</span>
                         <span className={`transition-all duration-300 ${showMarket ? 'rotate-180': ''}`}><ChevronIconDown color={'#000'} /></span>
                     </a>
+                    <div className='info-detail'>
+                        <span>{market.price}</span>
+                    </div>
                     <div className={`dropdown-market ${showMarket ? 'show' : ''}`}>
                         <div className='header-area'>
                             <div className='group-input append'>
@@ -91,9 +94,6 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                     </div>
                 </div>
                 <div className='market-info-detail'>
-                    <div className='info-detail'>
-                        <span>{market.price}</span>
-                    </div>
                     <div className='info-detail'>
                         <label>24H Change</label>
                         <span>{market.price_changes.today}%</span>

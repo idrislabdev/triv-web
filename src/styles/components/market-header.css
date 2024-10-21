@@ -89,9 +89,27 @@
             .market-header-action {
                 .burger-menu {
                     @apply block;
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+                .flag-button {
+                    @apply hidden;
+                }
+                .button-switch-theme {
+                    @apply hidden;
                 }
                 .market-header-action-list {
-                   @apply hidden;
+                    ul {
+                        @apply flex-row-reverse;
+                        li {
+                            &:first-child {
+                                @apply pl-[15px] pr-0;
+                            } 
+                        }
+                    }
                 }
             }
         }

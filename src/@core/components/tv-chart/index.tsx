@@ -71,7 +71,7 @@ export const TvChart = (props: {defaultWidget:Partial<ChartingLibraryWidgetOptio
 
 	return (
 		<>
-			<div ref={chartContainerRef} className="h-[600px] w-full" />
+			<div ref={chartContainerRef} className="chart-container h-[600px] w-full" />
 		</>
 	);
 };
