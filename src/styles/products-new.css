@@ -166,9 +166,69 @@
                         }
                     }
                 }
+               
             }
             .right-subcontainer {
 
+            }
+            @media (max-width: 1380px) {
+                @apply gap-[75px] justify-between;
+                .left-subcontainer {
+                    @media (max-width: 1380px) {
+                        .text-area {
+                            h2 {
+                                @apply text-[45px]/[65px];
+                            }
+                            p {
+                                @apply text-[14px]/[21px];
+                            }
+                        }
+                    }
+                }
+                .right-subcontainer {
+                    .form-service {
+                        @apply rounded-[34px] flex flex-col p-[40px] gap-[30px] bg-white;    
+                        box-shadow: 0px 4px 40px 0px #00000033;
+                        .button-tab {
+                            @apply flex items-center relative;
+                            button {
+                                @apply h-[55px] text-[17px]/[24px] rounded-none ;
+                            }
+                            
+
+                        }
+                        .title {
+                            @apply text-[19px]/[30px];
+                        }
+                        .description {
+                            @apply text-[15px]/[23px];
+                        }
+                        .nominal {
+                            @apply text-[22px]/[34px];
+                        }
+                        .button-group {
+                            @apply flex items-center gap-[10px];
+                            button {
+                                @apply rounded-[10px] text-[12px]/[18px] px-[12px] py-[4px] h-[28px];
+                            }
+                        }
+                        .get-input {
+                            @apply flex flex-col gap-[18px];
+                            label {
+                                @apply text-[14px]/[21px] font-medium text-neutral-700;
+                            }
+                            .label-value {
+                                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
+                                span {
+                                    @apply text-[21px]/[34px];
+                                }
+                            }
+                        }
+                        button {
+                            @apply rounded-[10px] text-[16px]/[24px] h-[54px];
+                        }
+                    }
+                }
             }
         }
         /* &::after {
@@ -555,6 +615,32 @@
                     @apply flex-1 overflow-hidden;
                     img {
                         @apply absolute bottom-0 left-0 w-[510px];
+                    }
+                }
+            }
+        }
+        @media (max-width: 1380px) {
+            .main-container {
+                .sub-container {
+                    @apply gap-[30px];
+                    .text-area {
+                        @apply pl-[100px];
+                        .text-header {
+                            @apply flex flex-col gap-[10px] w-[90%];
+                            h2 {
+                                @apply text-[34px]/[42px] ;
+                            }
+                            p {
+                                @apply text-[15px]/[30px];
+                            }
+                        }
+                        .button-area {
+                            @apply flex items-center gap-[20px];
+                            a {
+                                @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px] ;   
+                                 
+                            }
+                        }
                     }
                 }
             }

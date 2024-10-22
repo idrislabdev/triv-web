@@ -512,7 +512,32 @@
                 }
             }
         }
-
+        @media (max-width: 1380px) {
+            .main-container {
+                .sub-container {
+                    @apply gap-[30px];
+                    .text-area {
+                        @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
+                        .text-header {
+                            @apply flex flex-col gap-[10px] w-[90%];
+                            h2 {
+                                @apply text-[34px]/[42px] ;
+                            }
+                            p {
+                                @apply text-[15px]/[30px];
+                            }
+                        }
+                        .button-area {
+                            @apply flex items-center gap-[39px];
+                            a {
+                                @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px] ;   
+                                 
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @layer components {

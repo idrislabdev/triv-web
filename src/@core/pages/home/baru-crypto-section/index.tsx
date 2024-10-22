@@ -16,7 +16,7 @@ const BaruCryptoSection = (props: {objLang:any}) => {
                     <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>{objLang.button_text}</a>
                 </div>
                 <div className='baru-crypto-videos'>
-                    <Swiper slidesPerView={'auto'}>
+                    <Swiper slidesPerView={'auto'} loop={true}>
                         <SwiperSlide>
                             <div className='crypto-thumb-video'>
                                 <div className='video-thumb'>
