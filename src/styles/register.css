@@ -66,7 +66,7 @@
         }
     }
     .register-container {
-        @apply flex w-full relative;
+        @apply flex w-full h-screen relative;
         .left-subcontainer {
             @apply flex flex-col gap-[30px] px-[100px] py-[70px]  w-1/2 relative justify-center items-start ;
             &.fit-screen {
@@ -293,7 +293,7 @@
             }
         }
         .right-subcontainer {
-            @apply flex flex-col gap-[30px] px-[100px] py-[70px] justify-center w-1/2 relative bg-[#FAFBFE]  h-screen;
+            @apply flex flex-col gap-[30px] px-[100px] py-[70px] justify-center w-1/2 relative bg-[#FAFBFE] ;
             .title-subcontainer {
                 @apply flex flex-col gap-[18px] text-center;
                 h1 {
@@ -340,6 +340,187 @@
 
     
     @layer components {
+        &.medium-responsive {
+            .left-subcontainer {
+                @apply py-[26px] px-[50px] gap-[34px];
+                &.fit-screen {
+                    .logo-subcontainer {
+                        @apply absolute top-[26px];
+                    }
+                }
+                .logo-subcontainer {
+                    @apply flex;
+                    &.position-absolute {
+                        @apply  absolute top-[26px];
+                    }
+                }
+                .title-subcontainer {
+                    @apply flex flex-col gap-[18px];
+                    h1 {
+                        @apply text-[18px]/[27px];
+                    }
+                    h1 {
+                        @apply text-[20px]/[30px];
+                    }
+                    p {
+                        @apply text-[12.96px]/[19.43px];
+                    }
+                }
+                .form-subcontainer {
+                    @apply gap-[25.91px];
+                    form {
+                        @apply gap-[15px];
+                        .form-name {
+                            label {
+                                @apply text-[12.96px]/[19.43px];
+                            }
+                            .form-input {
+                                @apply flex gap-[25.91px];
+                                input {
+                                   @apply text-[12.96px]/[19.43px] !h-[34px]  rounded-[5px];
+                                }
+                            }
+                        }
+                        .form-email {
+                            @apply flex flex-col gap-[10px];
+                            label {
+                                @apply text-[12.96px]/[19.43px];
+                            }
+                            input {
+                                @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                            }
+                        }
+                        .form-password {
+                            @apply flex flex-col gap-[10px];
+                            label {
+                                @apply text-[12.96px]/[19.43px];
+                            }
+                            .form-input {
+                                .group-input {
+                                    .prepend {
+                                        @apply !top-[10px];
+                                        svg {
+                                            @apply w-[15px] h-[15px];
+                                        }
+                                    }
+                                    input {
+                                        @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                                    }
+                                }
+                            }
+                        }
+                        .form-jobs {
+                            @apply flex flex-col gap-[10px];
+                            label {
+                              @apply text-[12.96px]/[19.43px];
+                            }
+                            select {
+                                @apply w-full text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                            }
+                        }
+                        .form-note {
+                            p {
+                                @apply !text-[11.66px]/[17.49px];
+                            }
+                        }
+                        button {
+                            @apply !rounded-[9px] !h-[34.49px] text-[11.66px]/[17.49px];
+                        }
+                    }
+                }
+                .information-subcontainer{
+                    @apply pb-[40px];
+                    &.success {
+                        @apply gap-[60px];
+                    }
+                    p {
+                        @apply text-[16px]/[24px];
+                        &.small {
+                            @apply text-[12px]/[18px];
+                        }
+                    }
+                    button {
+                        &.success {
+                            @apply py-[7px] rounded-[9px];
+                            span {
+                                @apply text-[12px]/[18px];
+                            }
+                            svg {
+                                &.CircularProgressbar  {
+                                    @apply w-[31px] h-[31px];
+                                }
+                            }
+                        }
+                    }
+                    .otp-input {
+                        @apply w-full;
+                        div {
+                            @apply gap-[3px];
+                        }
+                        input {
+                            @apply h-[50px] text-[30px]/[20px];
+                            &::placeholder {
+                                @apply text-[23px]/[23px];
+                            }
+                        }
+                    }
+    
+                }
+                .notice-subcontainer {
+                    @apply pt-[16px];
+                    p,a {
+                        @apply text-[16px]/[24px];
+                    }
+                }
+                .terdaftar-subcontainer {
+                    @apply flex;
+                }
+            }
+            .right-subcontainer {
+                @apply flex flex-col gap-[30px] px-[50px] py-[70px] justify-center w-1/2 relative bg-[#FAFBFE] ;
+                .title-subcontainer {
+                    @apply flex flex-col gap-[18px] text-center;
+                    h1 {
+                        @apply text-[24px]/[32px];
+                    }
+                    p {
+                        @apply text-[14px]/[21px];
+                    }
+                    .terdaftar-diawasi {
+                        @apply flex gap-[17.75px] items-center justify-center;
+                        img {
+                            .bsi-logo {
+                                @apply w-[24.88] h-[13.61];
+                            }
+                            .cisa-logo {
+                                @apply w-[19.83] h-[18.27];
+                            }
+                            .cism-logo {
+                                @apply w-[24.88] h-[16.72];
+                            }
+                            .pci-logo {
+                                @apply w-[19.83] h-[15.94];
+                            }
+                            .cissp-logo {
+                                @apply w-[58.57] h-[17.16];
+                            }
+                        }
+                    }
+                }
+                .image-subcontainer {
+                    @apply flex flex-col justify-center items-center;
+                    img {
+                        @apply w-[574px] h-[300px];
+                    }
+                }
+                .logo-subcontainer {
+                    @apply flex flex-col justify-center items-center;
+                    svg {
+                        @apply w-[130px] h-[40px];
+                    }
+                }
+            }
+        }
         &.mobile-responsive {
             .left-subcontainer {
                 @apply w-full py-[26px] px-[20px] gap-[34px];
@@ -480,7 +661,7 @@
                 }
             }
             .right-subcontainer {
-                @apply hidden;
+                @apply !hidden;
             }
         }
     }

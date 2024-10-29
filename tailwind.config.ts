@@ -40,7 +40,7 @@ const config: Config = {
       screens: {
         "2xl": { max: "1535px" },  
         xl: { max: "1279px" },  
-        lg: { max: "1023px" },  
+        lg: { max: "1180px" },  
         md: { max: "850px" },  
         sm: { max: "639px" },
       },
