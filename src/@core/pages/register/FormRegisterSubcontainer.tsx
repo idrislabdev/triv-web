@@ -10,7 +10,7 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
     const [pekerjaan, setPekerjaan] = useState('');
 
     const changePekerjaan = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        console.log(event.target.value)
+        setPekerjaan(event.target.value)
     }
     return (
         <div className='form-subcontainer'>
@@ -45,11 +45,11 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
             </div>
             <div className='form-jobs'>
                 <label>{dictRegister.job_text}</label>
-                <select className='color-1' defaultValue={pekerjaan} onChange={changePekerjaan}>
+                <select className={pekerjaan == '' ? `!text-neutral-500` : `color-1`} defaultValue={pekerjaan} onChange={changePekerjaan}>
                     <option value="" disabled>{dictRegister.placeholder_job}</option>
                     {
                         dataPekerjaan.map((item:string, index:number) => (
-                            <option value={item} key={index}>{item}</option>
+                            <option value={item} className='text-neutral-800' key={index}>{item}</option>
                         ))
                     }
                 </select>
