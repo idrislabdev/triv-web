@@ -16,6 +16,9 @@
         "button_text" : "Daftar Sekarang"
     },
     "why_section" : {
+        "title_1" : "Kenapa Harus",
+        "title_2" : "Trading",
+        "title_3" : "Saham AS Di Triv?",
         "title" : "Kenapa Harus Trading Saham AS Di Triv?",
         "description" : "Kami telah dipercaya oleh jutaan orang untuk berinvestasi dan bertransaksi.",
         "founded" : {
@@ -32,11 +35,11 @@
         }
     },
     "dividen_section" : {
-        "title_1" : "Earn",
-        "title_2" : "Dividends",
-        "title_3" : " from US Stock Investments",
-        "subtitle": "US stock dividends can be an effective strategy for building your portfolio and achieving long-term financial goals. At TRIV, you can get information about dividends and dividend distribution dates.",
-        "button": "Regsiter Now"
+        "title_1" : "Dapatkan",
+        "title_2" : "Dividend",
+        "title_3" : " dari Investasi Saham AS",
+        "subtitle": "Dividen saham AS bisa menjadi strategi yang efektif untuk membangun portfolio-mu dan mencapai tujuan keuangan jangka panjang. Di TRIV, kamu bisa mendapatkan informasi seputar dividen dan tanggal distribusi dividen.",
+        "button": "Daftar Sekarang"
     },
     "buy_section" : {
         "title_1" : "Beli Saham Amerika (AS) Mulai Dari",

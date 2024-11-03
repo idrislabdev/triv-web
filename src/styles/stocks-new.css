@@ -151,8 +151,49 @@
             }
         }
     }
+    .stocks-why-section {
+        @apply flex flex-col items-center h-[850px] relative;
+        .container {
+            @apply flex flex-col justify-center items-center;
+            .title-container {
+                @apply px-[100px] flex flex-col justify-center items-center text-center;
+                h1 {
+                    @apply text-[48px]/[72px] text-black font-black w-[711px];
+                    span {
+                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                p {
+                    @apply text-[18px]/[27px] font-medium;
+                }
+            }
+            .description-container {
+                @apply flex-col flex items-center w-full h-[749px] justify-end absolute top-0;
+                img {
+                    @apply w-full h-full absolute top-[100px];
+                }
+                .details-subcontainer {
+                    @apply flex items-center gap-[100px];
+                    .detail-subcontainer {
+                        @apply flex flex-col justify-center z-[2];
+                        h5 {
+                            @apply text-[96px]/[114px] font-black;
+                            background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        p {
+                            @apply text-[24px]/[31px] font-semibold;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .stocks-dividen-section {
-        @apply flex items-center px-[100px] py-[40px] relative overflow-hidden gap-[30px];
+        @apply flex items-center px-[100px] pt-[120px] pb-[40px] relative overflow-hidden gap-[30px];
         .image-container {
             @apply w-[500px] flex flex-col justify-center items-end relative;
             img {

@@ -13,6 +13,7 @@ import StocksDividenSection from '../dividen-section'
 import Footer from '@/@core/components/footer'
 import "@/styles/stocks-new.css"
 import "@/styles/animations/stocks.css"
+import StocksWhySection from '../why-section/page'
 
 const StocksPageWrapper = (props: {lang: string, objLang:any, liverates:any}) => {
     const {lang, objLang, liverates} = props
@@ -28,6 +29,7 @@ const StocksPageWrapper = (props: {lang: string, objLang:any, liverates:any}) =>
             <main className='stocks-page sm:mobile-responsive md:mobile-responsive light-theme'>
                 <StocksHeroSection lang={lang} objLang={objLang.hero_section}/>
                 <StocksIndexCryptoSection liverates={liverates}/>
+                <StocksWhySection objLang={objLang.why_section} />
                 <StocksDividenSection lang={lang} objLang={objLang.dividen_section} />
                 <StocksBuySection lang={lang} objLang={objLang.buy_section} />
                 <StockRegulatedInsuredSection objLang={objLang.regulated_insured_section} />
