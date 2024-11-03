@@ -31,6 +31,13 @@
             "value" : "700+"
         }
     },
+    "buy_section" : {
+        "title_1" : "Beli Saham Amerika (AS) Mulai Dari",
+        "title_2" : "50 Ribu",
+        "title_3" : "Saja!",
+        "subtitle": "Di TRIV, kamu bisa beli Saham Amerika (AS) dalam bentuk fraksional, tidak harus 1 lot.  Hanya dengan IDR 50.000, dapatkan akses ke saham-saham perusahaan AS terbesar dan paling berpengaruh di dunia. Ubah cara kamu berinvestasi—mulai hari ini.",
+        "button": "Daftar Sekarang"
+    },
     "regulated_insured_section" : {
         "title" : "Teregulasi dan Terasuransi",
         "hour_insured" : {
@@ -51,11 +58,16 @@
 
     },
     "ewallet_section": {
+        "title_1" : "Triv Mendukung",
+        "title_2" : "100 Bank & E-wallet",
+        "title_3" : "di Indonesia untuk Semua Transaksi Kami",
         "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
         "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
     },
     "faq_section": {
+        "title_1" : "FAQ",
+        "title_2" : "(Pertanyaan Terkait Crypto Staking)",
         "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
         "questions" : [
             {
@@ -64,19 +76,19 @@
             },
             {
                 "title" : "Apakah Token Saham AS memiliki dividen?",
-                "description": "Token saham adalah saham yang ditoken-kan diatas blockchain, harga 1 token mengikuti harga 1 lembar saham, sesuai dengan underlying assetnya. Berbeda dengan pasar saham tradisional yang memiliki hari libur. Token saham dapat diperdagangkan secara 24/7 tanpa libur."
+                "description": "Ya, sama seperti saham tradisional, pemegang token saham juga akan mendapatkan dividen. Tidak seperti pasar saham tradisional, dividen dari token saham dapat ditarik 24/7 tanpa hari libur ke seluruh bank dan dompet digital secara Instan."
             },
             {
                 "title" : "Siapa yang diperbolehkan trading?",
-                "description": "Token saham adalah saham yang ditoken-kan diatas blockchain, harga 1 token mengikuti harga 1 lembar saham, sesuai dengan underlying assetnya. Berbeda dengan pasar saham tradisional yang memiliki hari libur. Token saham dapat diperdagangkan secara 24/7 tanpa libur."
+                "description": "Semua penduduk Indonesia berusia diatas 17 tahun dan memiliki KTP untuk verifikasi."
             },
             {
                 "title" : "Apakah ada biaya tambahan?",
-                "description": "Token saham adalah saham yang ditoken-kan diatas blockchain, harga 1 token mengikuti harga 1 lembar saham, sesuai dengan underlying assetnya. Berbeda dengan pasar saham tradisional yang memiliki hari libur. Token saham dapat diperdagangkan secara 24/7 tanpa libur."
+                "description": "Triv tidak membebankan biaya bulanan ataupun biaya berlangganan, Biaya yang dibebankan kepada pengguna hanyalah biaya trading. Sehingga anda bebas untuk memilih berinvestasi dalam jangka panjang atau berspekulasi dalam jangka pendek."
             },
             {
                 "title" : "Apakah ada limitasi?",
-                "description": "Token saham adalah saham yang ditoken-kan diatas blockchain, harga 1 token mengikuti harga 1 lembar saham, sesuai dengan underlying assetnya. Berbeda dengan pasar saham tradisional yang memiliki hari libur. Token saham dapat diperdagangkan secara 24/7 tanpa libur."
+                "description": "Tidak ada batasan apapun dalam keputusan perdagangan anda, Triv memiliki lebih dari 80 indikator yang bisa anda gunakan dalam mengambil keputusan perdagangan anda."
             }
         ]
     },
@@ -84,5 +96,10 @@
         "title": "Trading Jual Beli Berbagai Saham Amerika di Triv Sekarang",
         "description": "Mulai hanya dengan 50rb rupiah.",
         "button_text" : "Daftar Sekarang"
+    },
+    "banner_section": {
+        "title": "Trading Jual Beli Berbagai Saham Amerika di Triv Sekarang",
+        "subtitle" : "Mulai hanya dengan 50rb rupiah.",
+        "button_text": "Mulai Sekarang"
     }
 }

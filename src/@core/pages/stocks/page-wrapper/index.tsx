@@ -8,6 +8,10 @@ import StocksEwalletSection from '../ewallet-section'
 import Footer from '@/@core/components/footer'
 import "@/styles/stocks-new.css"
 import "@/styles/animations/stocks.css"
+import StocksBannerSection from '../banner-section'
+import StocksFaqSection from '../faq-section'
+import StockRegulatedInsuredSection from '../regulated-insured-section'
+import StocksBuySection from '../buy-section'
 
 const StocksPageWrapper = (props: {lang: string, objLang:any, liverates:any}) => {
     const {lang, objLang, liverates} = props
@@ -23,7 +27,11 @@ const StocksPageWrapper = (props: {lang: string, objLang:any, liverates:any}) =>
             <main className='stocks-page sm:mobile-responsive md:mobile-responsive light-theme'>
                 <StocksHeroSection lang={lang} objLang={objLang.hero_section}/>
                 <StocksIndexCryptoSection liverates={liverates}/>
-                {/* <StocksEwalletSection objLang={objLang.ewallet_section} /> */}
+                <StocksBuySection lang={lang} objLang={objLang.buy_section} />
+                <StockRegulatedInsuredSection objLang={objLang.regulated_insured_section} />
+                <StocksEwalletSection objLang={objLang.ewallet_section} />
+                <StocksFaqSection objLang={objLang.faq_section} />
+                <StocksBannerSection objLang={objLang.banner_section}/>
             </main>
             <Footer />
         </>

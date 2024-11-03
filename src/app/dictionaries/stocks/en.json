@@ -31,6 +31,13 @@
             "value" : "700+"
         }
     },
+    "buy_section" : {
+        "title_1" : "Buy American (US) Stocks Starting From Just",
+        "title_2" : "IDR 50k",
+        "title_3" : "!",
+        "subtitle": "At TRIV, you can buy American (US) Stocks in fractional amounts, not necessarily 1 lot. With only IDR 50,000, get access to the stocks of the largest and most influential US companies in the world. Change the way you invest—starting today.",
+        "button": "Regsiter Now"
+    },
     "regulated_insured_section" : {
         "title" : "Regulated and Insured",
         "hour_insured" : {
@@ -50,32 +57,37 @@
         "button_text": "Deposit"
     },
     "ewallet_section": {
+        "title_1" : "Triv Supports",
+        "title_2" : "100 Banks & E-wallets",
+        "title_3" : "in Indonesia for All Our Transactions",
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
         "subtitle" : "24/7 Real-time Deposits & Withdrawals",
         "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "faq_section": {
+        "title_1" : "FAQ",
+        "title_2" : "(US US Stock Trading Questions)",
         "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
         "questions" : [
             {
                 "title" : "What is tokenized stock?",
-                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+                "description": "Stock tokens are shares that are tokenized on the blockchain, the price of 1 token follows the price of 1 share, according to its underlying asset. Unlike the traditional stock market which has holidays. Stock tokens can be traded 24/7 without holidays."
             },
             {
                 "title" : "Will i get dividend?",
-                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+                "description": "Yes, just like traditional stocks, stock token holders will also get dividends. Unlike traditional stock markets, dividends from stock tokens can be withdrawn 24/7 without holidays to all banks and digital wallets Instantly."
             },
             {
                 "title" : "Who can trade?",
-                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+                "description": "All Indonesian residents aged 17 years and over and have an ID card for verification."
             },
             {
-                "title" : "Is there any additional cost?",
-                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+                "title" : "Are there any additional costs?",
+                "description": "Triv does not charge monthly fees or subscription fees, the only fees charged to users are trading fees. So you are free to choose to invest in the long term or speculate in the short term."
             },
             {
-                "title" : "Is there limitation?",
-                "description": "Tokenized stock is a traditional stocks on blockchain, 1 token represent 1 share of stock as its underlying asset. Unlike traditional market, stock trading on Triv opens 24/7."
+                "title" : "Are there any limitations?",
+                "description": "There are no limitations in your trading decisions, Triv has more than 80 indicators that you can use in making your trading decisions."
             }
         ]
     },
@@ -83,5 +95,10 @@
         "title": "Trading Buying and Selling Various US Stocks on Triv Now",
         "description": "Start as little as just 3$ and pay with various payment options",
         "button_text" : "Start Now"
+    },
+    "banner_section": {
+        "title": "Trading Buy Sell Various American Stocks on Triv Now",
+        "subtitle" : "Starting from only 50 thousand rupiah.",
+        "button_text": "Start Now"
     }
 }
