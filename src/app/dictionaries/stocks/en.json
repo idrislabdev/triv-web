@@ -1,4 +1,14 @@
 {
+    "hero_section" : {
+        "title_1" : "Trade Various",
+        "title_2" : "United States (US) Stocks",
+        "title_3" : "on Triv",
+        "title" : "Trade various US Stocks with Triv.",
+        "subtitle" : "Since 2015, low spread, 24/7 online",
+        "description" : "Tokenized stock is regulated by BAPPEBTI within letter no. 11 / 2022. Triv is supervised and regulated by BAPPEBTI",
+        "sub_description": "Registered and supervised by",
+        "button_text" : "Sign Up"
+    },
     "register_section" : {
         "title" : "Trade various US Stocks with Triv.",
         "subtitle" : "Since 2015, low spread, 24/7 online",

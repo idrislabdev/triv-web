@@ -1,4 +1,4 @@
-import HomePage from "@/@core/pages/home/page";
+import HomePage from "@/@core/pages/home/page-wrapper";
 import { getDictionaryHome } from "./dictionaries";
 import { getLiverateMini } from "@/@core/services/api";
 

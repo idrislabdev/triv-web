@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.dark-theme {
+    @apply !bg-[#141414];
+    h1, h2, h3, h4, h5, h6 {
+      @apply !text-slate-200;
+    }
+    p,label {
+        @apply !text-slate-300;
+    }
+    .stocks-page {
+        a {
+            @apply !bg-[#3A80AF] !text-white;
+        }
+        .stocks-hero-section { 
+            @apply bg-[#1b1f22];
+        }
+        .stocks-banner-section {
+            background: linear-gradient(to bottom, transparent,#000) #141414;
+
+        }
+        .stocks-assets-crypto-section{
+            a {
+                @apply !bg-transparent !text-primary;
+            }
+        }
+        .stocks-investasi-section {
+            .investasi-section-box {
+                @apply bg-[#1b1f22]; 
+            }
+        }
+        .stocks-baru-crypto-section {
+            .stocks-baru-crypto-container{
+                @apply bg-[#1b1f22];
+                .crypto-thumb-video{
+                    @apply !bg-[#13171a] ;
+                }
+            }
+        }
+    }
+}
+.stocks-page {
+    @apply pt-0;
+
+    h1, h2, h3, h4, h5 {
+        @apply text-black;
+    }
+    p {
+        @apply text-neutral-700;
+    }
+
+    .stocks-hero-section {
+        @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
+        background: url("/images/ornaments/home-ornament.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        .stocks-hero-section-area {
+            @apply flex px-[100px] gap-[20px];
+            .section-text {
+                @apply flex flex-col w-[52%] gap-[40px] z-[1];
+                .text-title {
+                    @apply flex flex-col gap-[28px];
+                    .title {
+                        @apply flex flex-col;
+                        h1 {
+                            @apply text-[60px]/[72px] text-[#323232] font-black w-full;
+                            span {
+                                background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
+                                background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                        }
+                    }
+                    ul {
+                        @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[14px]/[14px];
+                        li {
+                            @apply flex items-center gap-[8px];
+                        }
+                    }
+                    p {
+                        @apply text-[16px]/[32px] text-[#646464] font-medium w-full;
+                    }
+                }
+                a {
+                    @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+                .section-terdaftar {
+                    @apply flex gap-[30px] items-center;
+                    label  {
+                        @apply text-[16px]/[32px] text-[#646464] font-medium;
+                    }
+                    .terdaftar-list-logo {
+                        @apply flex gap-[14px] items-center;
+                        .bappebti-logo {
+                            img {
+                                @apply w-[105px] h-[24px];
+                            }
+                        }
+                        .kominfo-logo {
+                            img {
+                                @apply w-[105px] h-[36px];
+                            }
+                        }
+                    }
+                }
+            }
+            .section-device {
+                @apply flex-1 flex flex-col justify-center items-center;
+                img {
+                    @apply w-[990px] h-[700px] object-cover absolute right-[-400px];
+                }
+            }
+            /* &::after {
+                content: '';
+                @apply absolute right-0 bottom-0 w-[830px] h-[575px];
+                background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
+            } */
+        }
+    }
+    
+    .stocks-index-crypto-section {
+        @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden;
+        .swiper {
+            @apply w-full ml-auto mr-auto;
+            .swiper-wrapper {
+                @apply flex w-full relative gap-[10px];
+                .swiper-slide {
+                    @apply !w-[210px];
+                    .index-cyrpto-content {
+                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-[210px];
+                        .crypto-title{
+                            @apply flex;
+                            label {
+                                @apply text-[12px]/[18px] font-medium text-neutral-500;
+                            }
+                        }
+                        .crypto-index{
+                            @apply flex;
+                            label {
+                                @apply text-[12px]/[18px] font-medium flex items-center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .stocks-ewallet-section {
+        @apply flex items-center  px-[100px] relative;
+        .ewallet-description {
+            @apply flex-1 flex flex-col gap-[20px];
+            h2 {
+                @apply text-[48px]/[67px] font-black text-neutral-900;
+                span {
+                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            h5 {
+                @apply text-[20px]/[30px] font-bold;
+                background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p {
+                @apply text-[16px]/[32px] font-medium text-neutral-700;
+            }
+        }
+        .ewallet-image {
+            @apply w-[455px] h-[435px];
+            img {
+               @apply w-[455px] h-[435px] absolute top-0 right-0;
+            }
+        }
+    }
+    
+    @layer components {
+        &.mobile-responsive {
+            .stocks-hero-section {
+                @apply h-[624px] pt-[65px] pb-0 justify-start;
+                .stocks-hero-section-area {
+                    @apply px-[20px] flex-col text-center;
+                    .section-text {
+                        @apply flex flex-col w-[100%] gap-[14px] items-center;
+                        .text-title {
+                            @apply flex flex-col justify-center gap-[14px] items-center;
+                            .title {
+                                @apply flex flex-col;
+                                h1 {
+                                    @apply text-[14px]/[21px] w-[100%];
+                                }
+                            }
+                            ul {
+                                @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[7.24px]/[7.24px];
+                                li {
+                                    @apply flex items-center gap-[3px];
+                                    svg {
+                                        @apply w-[15px] h-[15px];
+                                    }
+                                }
+                            }
+                            p {
+                                @apply text-[10px]/[15px] w-[100%];
+                            }
+                        }
+                        a {
+                            @apply text-[12px]/[18px] w-[200px] h-[34px];
+                        }
+                        .section-terdaftar {
+                            @apply flex flex-col;
+                            label  {
+                                @apply text-[10px]/[15px] ;
+                            }
+                            .terdaftar-list-logo {
+                                @apply flex gap-[14px] items-center;
+                                .bappebti-logo {
+                                    img {
+                                        @apply w-[72px] h-[16px];
+                                    }
+                                }
+                                .kominfo-logo {
+                                    img {
+                                        @apply w-[72px] h-[24px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .section-device {
+                        @apply flex-1 flex flex-col justify-center items-center;
+                        img {
+                            @apply w-[408px] h-[272px] right-0 bottom-0;
+                        }
+                    }
+                }
+            }
+            .stocks-index-crypto-section {
+                @apply py-[20px] px-[0px];
+                .swiper {
+                    .swiper-wrapper {
+                        @apply gap-[6px];
+                        .swiper-slide {
+                            @apply !w-[147px];
+                            .index-cyrpto-content {
+                                @apply w-[147px] h-[24px] items-center ;
+                                .crypto-title{
+                                    label {
+                                        @apply text-[8px]/[12px];
+                                    }
+                                }
+                                .crypto-index{
+                                    label {
+                                        @apply text-[8px]/[12px];
+                                        svg {
+                                            @apply w-[12px] h-[12px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .stocks-ewallet-section {
+                @apply flex-col py-[30px] px-[20px];
+                .ewallet-description {
+                    @apply justify-center items-center w-full text-center p-0;
+                    h2 {
+                        @apply text-[14px]/[21px];
+                    }
+                    h5 {
+                        @apply text-[10px]/[15px];
+                    }
+                    p {
+                        @apply text-[10px]/[15px];
+                    }
+                }
+                .ewallet-image {
+                    @apply w-[246px] h-full flex flex-col justify-center items-center;
+                    img {
+                        @apply w-[246px] h-[219px] relative;
+                    }
+                }
+            }
+        }
+    }
+}

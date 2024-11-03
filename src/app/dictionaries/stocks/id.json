@@ -1,4 +1,14 @@
 {
+    "hero_section" : {
+        "title_1" : "Trading Berbagai",
+        "title_2" : "Saham Amerika Serikat",
+        "title_3" : "(AS) di Triv",
+        "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
+        "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
+        "description" : "Token saham diregulasi oleh BAPPEBTI berdasarkan surat nomor 11/2022. Triv terdaftar dan diawasi oleh BAPPEBTI",
+        "sub_description": "Terdaftar dan diawasi oleh",
+        "button_text" : "Daftar Sekarang"
+    },
     "register_section" : {
         "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
         "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
