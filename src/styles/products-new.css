@@ -1044,7 +1044,9 @@
                                 @apply gap-[7px];
                                 a {
                                     @apply  w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];   
-                                     
+                                    svg {
+                                        @apply w-[4px] h-[4px];
+                                    }
                                 }
                                 .app-store-list {
                                     @apply gap-[3px];
