@@ -151,8 +151,54 @@
             }
         }
     }
+    .stocks-dividen-section {
+        @apply flex items-center px-[100px] py-[40px] relative overflow-hidden gap-[30px];
+        .image-container {
+            @apply w-[500px] flex flex-col justify-center items-end relative;
+            img {
+                @apply  w-full object-contain absolute;
+            }
+        }
+        .description-container {
+            @apply flex flex-1 flex-col gap-[30px];
+            .start-now-description {
+                @apply flex flex-col gap-[15px];
+                h2 {
+                    @apply text-[48px]/[67px] font-black text-neutral-900;
+                    span {
+                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                h5,p {
+                    @apply text-[16px]/[32px] font-bold text-neutral-700;
+                }
+                p {
+                   @apply font-medium
+                }
+            }
+            .logo-list {
+                @apply flex gap-[29px] items-center;
+                img {
+                    @apply w-[46px] h-[46px];
+                }
+            }
+           .start-button-logo {
+                @apply flex flex-col gap-[30px];
+                a {
+                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
+                }
+           }
+        }
+    }
     .stocks-buy-section {
-        @apply flex items-center px-[100px] gap-[20px] relative overflow-hidden;
+        @apply flex items-center px-[100px] py-[40px] gap-[20px] relative overflow-hidden;
         .image-container {
             @apply w-[550px] h-[600px] flex flex-col justify-center items-end relative;
             img {
@@ -160,7 +206,7 @@
             }
             img {
                 &.coin {
-                    @apply w-[100px] h-[100px] z-10;
+                    @apply w-[100px] h-[100px] z-[3];
                     &.coin-tesla {
                         @apply top-[150px] left-[50px];
                     }

@@ -31,6 +31,13 @@
             "value" : "700+"
         }
     },
+    "dividen_section" : {
+        "title_1" : "Earn",
+        "title_2" : "Dividends",
+        "title_3" : " from US Stock Investments",
+        "subtitle": "US stock dividends can be an effective strategy for building your portfolio and achieving long-term financial goals. At TRIV, you can get information about dividends and dividend distribution dates.",
+        "button": "Regsiter Now"
+    },
     "buy_section" : {
         "title_1" : "Buy American (US) Stocks Starting From Just",
         "title_2" : "IDR 50k",
