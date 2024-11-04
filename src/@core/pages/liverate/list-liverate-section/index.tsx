@@ -79,8 +79,8 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
                   </div>
                 </div>
                 <div className='col-right'>
-                  <div className='col-beli'><label>IDR {item.buy_rate.toLocaleString()}</label></div>
-                  <div className='col-jual'><label>IDR {item.sell_rate.toLocaleString()}</label></div>
+                  <div className='col-beli'><label>IDR {item.buy_rate ? item.buy_rate.toLocaleString() : "0"}</label></div>
+                  <div className='col-jual'><label>IDR {item.sell_rate ? item.sell_rate.toLocaleString() : "0"}</label></div>
                   <div className='col-change'>
                     <label>
                     {item.change_24h < 0 && <span><CaretDownIcon color={'#EB5757'} /></span>}

@@ -22,5 +22,23 @@
         "volume_global" : "Volume Global",
         "buy" : "Buy",
         "sell" : "Sell"
+    },
+    "faq_section": {
+        "title_1" : "What are cryptos?",
+        "title_2" : "Crypto is taken from the word cryptography. Cryptography is the science that deals with techniques for encoding (encrypting) and encrypting (decrypting) messages to protect information from unauthorized access or alteration during transmission. In a more general context",
+        "questions" : [
+            {
+                "title" : "What are the benefits of crypto investment?",
+                "description": "Cryptocurrency investment has significant profit potential. One of the main advantages is the opportunity for rapid asset growth. Several cryptocurrencies have experienced tremendous increases in value in recent years. Additionally, access to the global cryptocurrency investment market is open 24/7, allowing for flexibility in trading. The blockchain technology underlying cryptocurrencies also offers a high level of transparency and security. With the ability to diversify a portfolio, cryptocurrency investment can be a potentially profitable addition, although it is still important to understand the risks and do thorough research."
+            },
+            {
+                "title" : "How to invest in crypto for beginners?",
+                "description": "For beginners who want to invest in cryptocurrency, the first step is to do in-depth research. Learn about the different types of cryptocurrencies available, create an investment plan that suits your goals and risk tolerance, and start buying the cryptocurrencies you are interested in. It is important to understand market volatility and diversify your portfolio by investing in several cryptocurrencies. Also consider consulting a financial professional if needed. The triv platform makes it easy for you to learn about various types of crypto, you can also contact our service contact or join our community. Install the Triv application (Indonesian Cryptocurrency Marketplace) now"
+            },
+            {
+                "title": "Is crypto investing safe?",
+                "description": "Crypto investments on Triv are safe because the platform prioritizes security and compliance. Triv implements the highest security standards, including data encryption and protection from cyberattacks. In addition, they comply with industry regulations to keep user funds safe. With a solid reputation and operational transparency, Triv provides additional protection to investors in a volatile world like the cryptocurrency market. However, it is important to remember that any investment carries risks, and a good understanding of the crypto market and portfolio diversification remain key factors in managing investments."
+            }
+        ]
     }
 }

@@ -72,11 +72,14 @@
             },
             {
                 "title" : "Apa Keuntungan Staking Crypto?",
-                "description": "Crypto Staking is the process of locking your coins in a proof of stake blockchain to secure the coin network for dividend yield. The interest is the interest of the associated blockchain protocol and not of Triv."
+                "description": "Crypto Staking is a very suitable investment for investors who have a long-term view, because as long as you HODL the coin you will continue to get interest. So during the investment process, your coins can also grow in nominal coins."
             },
             {
                 "title" : "Apakah Staking Crypto aman?",
-                "description": "Crypto Staking is the process of locking your coins in a proof of stake blockchain to secure the coin network for dividend yield. The interest is the interest of the associated blockchain protocol and not of Triv."
+                "description_1": "Crypto Staking requires large capital and high IT expertise, for example for ETH if you want to do your own crypto staking, the minimum ETH staking is 32 ETH or equivalent to 1.5 billion rupiah when this article was written. ",
+                "description_2": "In addition, there are various risks of crypto staking from the IT side which can cause capital loss or known as slashing if the staking process is not carried out properly such as the validator server being offline and so on, causing your staking funds to be subject to a penalty. ",
+                "description_3": "By staking at Triv, you can start staking with only 100,000 IDR and Triv guarantees your capital from risk with our various technical expertise, Since 2015, Triv has never experienced significant downtime or security incidents. ",
+                "description_4" : "Triv is ISO27001, CISA & PCI DSS 6.6 Certified"
             }
         ]
     },

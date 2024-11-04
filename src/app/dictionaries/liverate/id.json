@@ -23,5 +23,23 @@
         "volume_global" : "Volume Global",
         "buy" : "Beli",
         "sell" : "Jual"
+    },
+    "faq_section": {
+        "title_1" : "What are cryptos?",
+        "title_2" : "Crypto is taken from the word cryptography. Cryptography is the science that deals with techniques for encoding (encrypting) and encrypting (decrypting) messages to protect information from unauthorized access or alteration during transmission. In a more general context",
+        "questions" : [
+            {
+                "title" : "Apa keuntungan investasi crypto?",
+                "description": "Investasi cryptocurrency memiliki potensi keuntungan yang signifikan. Salah satu keuntungan utama adalah peluang pertumbuhan nilai aset yang cepat. Beberapa cryptocurrency telah mengalami kenaikan nilai yang luar biasa dalam beberapa tahun terakhir. Selain itu, akses pasar global investasi cryptocurrency terbuka 24/7, memungkinkan fleksibilitas dalam perdagangan. Teknologi blockchain yang mendasari cryptocurrency juga menawarkan transparansi dan keamanan tingkat tinggi. Dengan kemampuan untuk mendiversifikasi portofolio, investasi cryptocurrency dapat menjadi tambahan yang berpotensi menguntungkan, meskipun tetap penting untuk memahami risiko dan riset yang cermat."
+            },
+            {
+                "title" : "Bagaimana cara invest crypto untuk pemula?",
+                "description": "Untuk pemula yang ingin berinvestasi dalam cryptocurrency, langkah awal adalah melakukan penelitian mendalam. Pelajari tentang berbagai jenis cryptocurrency yang ada, buat rencana investasi yang sesuai dengan tujuan dan toleransi risiko Anda, dan mulai beli cryptocurrency yang Anda minati. Penting untuk memahami volatilitas pasar dan melakukan diversifikasi portofolio Anda dengan berinvestasi dalam beberapa cryptocurrency. Pertimbangkan juga untuk berkonsultasi dengan profesional keuangan jika diperlukan. Platform triv memudahkan anda dalam mempelajari berbagai jenis crypto, anda juga bisa menghubungi kontak layanan kami atau gabung dengan komunitas kami. Install aplikasi Triv (Marketplace Cryptocurrency Indonesia) sekarang"
+            },
+            {
+                "title": "Apakah investasi crypto aman?",
+                "description": "Investasi kripto di Triv aman karena platform ini mengutamakan keamanan dan kepatuhan. Triv menerapkan standar keamanan tertinggi, termasuk enkripsi data dan perlindungan dari serangan siber. Selain itu, mereka mematuhi peraturan yang berlaku dalam industri ini untuk menjaga keamanan dana pengguna. Dengan reputasi yang solid dan transparansi operasional, Triv memberikan perlindungan tambahan kepada investor dalam dunia yang berfluktuasi seperti pasar cryptocurrency. Namun, penting untuk diingat bahwa investasi apa pun memiliki risiko, dan pemahaman yang baik tentang pasar kripto serta diversifikasi portofolio tetap menjadi faktor kunci dalam mengelola investasi."
+            }
+        ]
     }
 }

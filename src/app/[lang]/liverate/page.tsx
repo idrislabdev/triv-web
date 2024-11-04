@@ -25,6 +25,7 @@ export default async function  Liverate({ params }: any) {
       header_section,
       topmovers_section,
       invest_section,
+      faq_section
     } = await getDictionaryLierate(params.lang);
 
     return (
@@ -106,7 +107,7 @@ export default async function  Liverate({ params }: any) {
             <LiverateHeaderSection objLang={header_section}/>
             <LiverateTopMoverSection lang={params.lang} objLang={topmovers_section} hightlight={hightlight}/>
             <LiverateListSection liverates={liverates}/>
-            <LiverateAskSection />
+            <LiverateAskSection objLang={faq_section} />
             <LiverateInvestasiNowSection lang={params.lang} objLang={invest_section}/>
             <LiverateTestimonyCarouselSection />
           </main>

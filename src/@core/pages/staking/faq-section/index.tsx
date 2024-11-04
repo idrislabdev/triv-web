@@ -77,8 +77,11 @@ const StakingFaqSection = (props: {objLang:any}) => {
                                 </div>
                             </button>
                             <div className={`accordion-content ${selected === "3" ? `max-h-[400px]` : 'max-h-0'}`} ref={container2}>
-                                <div className="content-area">
-                                    <p>{objLang.questions[2].description}</p>
+                                <div className="content-area flex flex-col gap-[20px]">
+                                    <p>{objLang.questions[2].description_1}</p>
+                                    <p>{objLang.questions[2].description_2}</p>
+                                    <p>{objLang.questions[2].description_3}</p>
+                                    <p>{objLang.questions[2].description_4}</p>
                                 </div>
                             </div>
                         </li>
