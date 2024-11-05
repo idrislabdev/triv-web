@@ -31,10 +31,10 @@
             }
         }
     }
-    .stocks-rancang-new-section {
+    .stocks-why-section {
         &.animate {
             .fade-in {
-                -webkit-animation-duration: 0.1s;
+                -webkit-animation-duration: 1s;
                 animation-duration: 1s;
                 -webkit-animation-fill-mode: backwards;
                 animation-fill-mode: backwards;
@@ -55,78 +55,52 @@
             .entry-5 {
                 animation-delay: 2.5s;
             }
+        }
+    }
+    .stocks-dividen-section {
+        &.animate {
+            .fade-in {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: backwards;
+                animation-fill-mode: backwards;
+                animation-name: fadeIn;
+            }
+            .entry-1 {
+                animation-delay: 0.5s;
+            }
+            .entry-2 {
+                animation-delay: 1s;      
+            }
+            .entry-3 {
+                animation-delay: 1.5s;
+            }
+            .entry-4 {
+                animation-delay: 2s;
+            }
+            .entry-5 {
+                animation-delay: 2.1s;
+            }
             .entry-6 {
+                animation-delay: 2.2s;
+            }
+            .entry-7 {
+                animation-delay: 2.3s;
+            }
+            .entry-8 {
+                animation-delay: 2.4s;
+            }
+            .entry-9 {
+                animation-delay: 2.5s;
+            }
+            .entry-10 {
+                animation-delay: 2.6s;
+            }
+            .entry-11 {
+                animation-delay: 2.7s;
+            }
+            .entry-12 {
                 animation-delay: 3s;
-            }
-        }
-    }
-    .stocks-transaksi-section {
-        &.animate {
-            .fade-in {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: backwards;
-                animation-fill-mode: backwards;
-                animation-name: fadeIn;
-            }
-            .entry-1 {
-                animation-delay: 0.5s;
-            }
-            .entry-2 {
-                animation-delay: 1s;      
-            }
-            .entry-3 {
-                animation-delay: 1.5s;
-            }
-            .entry-4 {
-                animation-delay: 2s;
-            }
-        }
-    }
-    .stocks-dividen-staking-section {
-        &.animate {
-            .fade-in {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: backwards;
-                animation-fill-mode: backwards;
-                animation-name: fadeIn;
-            }
-            .entry-1 {
-                animation-delay: 0.5s;
-            }
-            .entry-2 {
-                animation-delay: 1s;      
-            }
-            .entry-3 {
-                animation-delay: 1.5s;
-            }
-            .entry-4 {
-                animation-delay: 2s;
-            }
-        }
-    }
-
-    .stocks-ewallet-section {
-        &.animate {
-            .fade-in {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: backwards;
-                animation-fill-mode: backwards;
-                animation-name: fadeIn;
-            }
-            .entry-1 {
-                animation-delay: 0.5s;
-            }
-            .entry-2 {
-                animation-delay: 1s;      
-            }
-            .entry-3 {
-                animation-delay: 1.5s;
-            }
-            .entry-4 {
-                animation-delay: 2s;
             }
         }
     }

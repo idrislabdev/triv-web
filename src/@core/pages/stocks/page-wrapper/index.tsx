@@ -10,10 +10,10 @@ import StocksFaqSection from '../faq-section'
 import StockRegulatedInsuredSection from '../regulated-insured-section'
 import StocksBuySection from '../buy-section'
 import StocksDividenSection from '../dividen-section'
+import StocksWhySection from '../why-section'
 import Footer from '@/@core/components/footer'
 import "@/styles/stocks-new.css"
 import "@/styles/animations/stocks.css"
-import StocksWhySection from '../why-section/page'
 
 const StocksPageWrapper = (props: {lang: string, objLang:any, liverates:any}) => {
     const {lang, objLang, liverates} = props
