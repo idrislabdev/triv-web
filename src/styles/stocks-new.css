@@ -573,7 +573,7 @@
                 }
             }
             .stocks-why-section {
-                @apply flex flex-col items-center h-[500px] relative;
+                @apply flex flex-col items-center h-[450px] relative;
                 .container {
                     @apply px-[20px];
                     .title-container {
@@ -640,10 +640,13 @@
                         }
                     }
                     .start-button-logo {
-                            @apply flex flex-col gap-[30px];
-                            a {
-                            @apply hidden;
+                        @apply flex flex-col justify-center items-center gap-[30px];
+                        a {
+                            @apply h-[34px] text-[12px]/[18px];
+                            svg {
+                                @apply h-[12px] w-[12px];
                             }
+                        }
                     }
                 }
             }

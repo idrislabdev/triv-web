@@ -33,14 +33,14 @@ const StocksDividenSection = (props: {lang:string, objLang:any}) => {
                     <p className='fade-in entry-3'>{objLang.subtitle}</p>
                 </div>
                 <div className='logo-list'>
-                    <Image src='/images/logos/tesla.png' className="fade-in entry-4" alt='tesla' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/amazon.png' className="fade-in entry-5" alt='amazon' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/apple.png' className="fade-in entry-6" alt='apple' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/nvidia.png' className="fade-in entry-7" alt='nvidia' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/zoom.png' className="fade-in entry-8" alt='zoom' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/walmart.png' className="fade-in entry-9" alt='walmart' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/airbnb.png' className="fade-in entry-10" alt='airbnb' width={0} height={0} sizes='100%' />
-                    <Image src='/images/logos/unilever.png' className="fade-in entry-11" alt='unilever' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/tesla.png' className="fade-in-left entry-4" alt='tesla' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/amazon.png' className="fade-in-left entry-5" alt='amazon' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/apple.png' className="fade-in-left entry-6" alt='apple' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/nvidia.png' className="fade-in-left entry-7" alt='nvidia' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/zoom.png' className="fade-in-left entry-8" alt='zoom' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/walmart.png' className="fade-in-left entry-9" alt='walmart' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/airbnb.png' className="fade-in-left entry-10" alt='airbnb' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/unilever.png' className="fade-in-left entry-11" alt='unilever' width={0} height={0} sizes='100%' />
 
                 </div>
                 <div className='start-button-logo fade-in entry-12'>
