@@ -194,15 +194,15 @@
     .stocks-dividen-section {
         @apply flex items-center px-[100px] pt-[120px] pb-[40px] relative overflow-hidden gap-[30px];
         .image-container {
-            @apply w-[500px] flex flex-col justify-center items-end relative;
+            @apply w-1/2 flex flex-col justify-center items-end relative;
             img {
                 @apply  w-full object-contain absolute;
             }
         }
         .description-container {
-            @apply flex flex-1 flex-col gap-[30px];
+            @apply flex w-1/2 flex-col gap-[30px];
             .start-now-description {
-                @apply flex flex-col gap-[15px];
+                @apply flex flex-col gap-[15px] w-full;
                 h2 {
                     @apply text-[48px]/[67px] font-black text-neutral-900;
                     span {
@@ -218,11 +218,21 @@
                    @apply font-medium
                 }
             }
-            .logo-list {
-                @apply flex gap-[29px] items-center;
-                img {
-                    @apply w-[46px] h-[46px];
+            .rfm-marquee-container  {
+                /* @apply w-full flex justify-start overflow-hidden; */
+                .rfm-marquee {
+                    /* @apply flex; */
+                    .rfm-initial-child-container {
+                        /* @apply gap-[20px]; */
+                        .rfm-child {
+                            @apply mx-[30px];
+                            img {
+                                @apply w-[46px] h-[46px];
+                            }
+                        }
+                    }
                 }
+    
             }
            .start-button-logo {
                 @apply flex flex-col gap-[30px];
@@ -633,11 +643,18 @@
                            @apply font-medium
                         }
                     }
-                    .logo-list {
-                        @apply gap-[15px] justify-center;
-                        img {
-                            @apply w-[28px] h-[28px];
+                    .rfm-marquee-container  {
+                        .rfm-marquee {
+                            .rfm-initial-child-container {
+                                .rfm-child {
+                                    @apply mx-[15px];
+                                    img {
+                                        @apply w-[28px] h-[28px];
+                                    }
+                                }
+                            }
                         }
+            
                     }
                     .start-button-logo {
                         @apply flex flex-col justify-center items-center gap-[30px];
