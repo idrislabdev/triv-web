@@ -388,11 +388,11 @@
             }
         }
         .description-container {
-            @apply flex flex-1 flex-col gap-0;
+            @apply flex flex-1 flex-col gap-[20px];
             .start-now-description {
                 @apply flex flex-col gap-[18px];
                 h2 {
-                    @apply text-[48px]/[67px] font-black text-neutral-900;
+                    @apply text-[47px]/[65px] font-black text-neutral-900;
                     span {
                         background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
                         background-clip: text;
