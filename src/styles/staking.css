@@ -276,16 +276,20 @@
                 .top-subcontainer {
                     @apply flex flex-col gap-[20px];
                     .sub-subcontainer {
-                        @apply flex gap-[20px];
+                        @apply flex gap-[30px];
                         .form-input {
-                            @apply flex gap-[8px] items-center;
+                            @apply flex gap-[8px] items-center w-1/2;
                             label {
-                                @apply text-[13px]/[19px] font-medium text-neutral-700;
+                                @apply text-[13px]/[19px] font-medium text-neutral-700 w-auto;
                             }
-                            input, select {
-                                @apply w-[220px];
+                            input {
+                                @apply w-full;
+                            }
+                            select {
+                                @apply flex-1;
                             }
                             .group-input {
+                                @apply flex-1;
                                 span {
                                     @apply top-[12px];
                                 }
@@ -294,11 +298,11 @@
                     }
                 }
                 .middle-subcontainer {
-                    @apply flex flex-wrap;
+                    @apply flex gap-[30px];
                     .sub-subcontainer {
-                        @apply flex flex-col w-1/2;
+                        @apply flex flex-col w-[47%];
                         label {
-                            @apply text-[48px]/[72px] font-black text-primary;
+                            @apply text-[48px]/[72px] font-bold text-primary;
                             background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
                             background-clip: text;
                             -webkit-text-fill-color: transparent;
@@ -515,16 +519,16 @@
         @media (max-width: 1380px) {
             .main-container {
                 .sub-container {
-                    @apply gap-[30px];
+                    @apply gap-[30px] h-[360px];
                     .text-area {
                         @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
                         .text-header {
                             @apply flex flex-col gap-[10px] w-[90%];
                             h2 {
-                                @apply text-[34px]/[42px] ;
+                                @apply text-[32px]/[40px];
                             }
                             p {
-                                @apply text-[15px]/[30px];
+                                @apply text-[15px]/[30px] w-full;
                             }
                         }
                         .button-area {
@@ -533,6 +537,11 @@
                                 @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px] ;   
                                  
                             }
+                        }
+                    }
+                    .image-area {
+                        img {
+                            @apply w-[480px];
                         }
                     }
                 }
@@ -792,6 +801,11 @@
                                 }
                                 span {
                                     @apply text-[5px]/[7px];
+                                }
+                            }
+                            .card-button {
+                                a {
+                                    @apply text-[8px]/[13px] px-[10px] py-[5px] rounded-[4px];
                                 }
                             }
                         }

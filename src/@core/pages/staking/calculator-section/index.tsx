@@ -42,6 +42,8 @@ const StakingCalculatorSection = (props: {objLang:any}) => {
                             <label>0.0291992<span>ETH</span></label>
                             <span>Daily Reward (Est.)</span>
                         </div>
+                    </div>
+                    <div className='middle-subcontainer'>
                         <div className='sub-subcontainer'>
                             <label>0.389029<span>ETH</span></label>
                             <span>Monthly Reward (Est.)</span>

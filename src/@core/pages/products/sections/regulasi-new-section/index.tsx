@@ -29,7 +29,7 @@ const ProductsRegulasiNewSection = (props: {objLang:any}) => {
             <Image src='/images/others/financial-management.png' alt='financial management' width={0} height={0} sizes='100%'/>
           </div>
           <h5 className='fade-in entry-2'>{objLang.liquiditas.title}</h5>
-          <p className='fade-in entry-3'>{objLang.liquiditas.content_1} <span>{objLang.liquiditas.content_2}</span> {objLang.liquiditas.content_3}</p>
+          <p className='fade-in entry-3'>{objLang.liquiditas.content}</p>
         </div>
         <div className='box-subcontainer'>
           <div className='img-box fade-in entry-4'>
