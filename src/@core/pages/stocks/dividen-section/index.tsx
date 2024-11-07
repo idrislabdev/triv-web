@@ -43,6 +43,9 @@ const StocksDividenSection = (props: {lang:string, objLang:any}) => {
                     <Image src='/images/logos/walmart.png' alt='walmart' width={0} height={0} sizes='100%' />
                     <Image src='/images/logos/airbnb.png' alt='airbnb' width={0} height={0} sizes='100%' />
                     <Image src='/images/logos/unilever.png' alt='unilever' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/master-card.png' className='master-card' alt='master card' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/ibm.png' className='ibm' alt='ibm' width={0} height={0} sizes='100%' />
+                    <Image src='/images/logos/mcd.png' className='mcd' alt='mc donald' width={0} height={0} sizes='100%' />
                   </Marquee>
                 </div>
                 <div className='start-button-logo fade-in entry-12'>

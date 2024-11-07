@@ -219,15 +219,21 @@
                 }
             }
             .rfm-marquee-container  {
-                /* @apply w-full flex justify-start overflow-hidden; */
+                @apply flex justify-start overflow-hidden;
                 .rfm-marquee {
-                    /* @apply flex; */
-                    .rfm-initial-child-container {
-                        /* @apply gap-[20px]; */
-                        .rfm-child {
-                            @apply mx-[30px];
-                            img {
-                                @apply w-[46px] h-[46px];
+                    @apply flex;
+                    .rfm-child {
+                        @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mr-[40px];
+                        img {
+                            @apply w-[46px] h-[46px];
+                            &.master-card {
+                                @apply w-[73px] h-[46px];
+                            }
+                            &.ibm {
+                                @apply w-[80px] h-[38px];
+                            }
+                            &.mcd {
+                                @apply w-[48px] h-[42px];
                             }
                         }
                     }
