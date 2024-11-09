@@ -15,12 +15,12 @@
             "description": "Choose and trade a variety of digital assets on TRIV"
         },
         "content_2" : {
-            "title" : "Spot and market features",
-            "description": "Buy quickly with 2 clicks or trade with limit and stop loss orders"
-        },
-        "content_3" : {
             "title" : "Triv buy-sell price difference spread  ",
             "description": "One of the lowest in the Indonesian Cryptocurrency market, our system monitors the market and makes real-time price adjustments."
+        },
+        "content_3" : {
+            "title" : "Spot and market features",
+            "description": "Buy quickly with 2 clicks or trade with limit and stop loss orders"
         },
         "content_4" : {
             "title" : "24-hour Deposit & Withdrawal",
@@ -71,13 +71,13 @@
         "button_text" : "Lihat Semua Video"
     },
     "invest_section" : {
-        "title_1" : "Buy and sell Digital Assets",
-        "title_2" : "on",
-        "title_3" : "the",
-        "title_4" : "go",
-        "title_5" : "with Triv mobile",
-        "description_1": "Manage all of your portfolio and transaction in 1 device",
-        "description_2": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
+        "title_1" : "Buy and Sell Digital Assets",
+        "title_2" : "anywhere",
+        "title_3" : "and",
+        "title_4" : "anytime",
+        "title_5" : "with the Triv App",
+        "subtitle": "Manage all of your portfolio and transaction in 1 device",
+        "description": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
         "button": "Regsiter Now"
     },
     "media_section" : {

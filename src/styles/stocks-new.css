@@ -125,12 +125,15 @@
     }
     .stocks-index-crypto-section {
         @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden;
-        .swiper {
-            @apply w-full ml-auto mr-auto;
-            .swiper-wrapper {
-                @apply flex w-full relative gap-[10px];
-                .swiper-slide {
-                    @apply !w-[210px];
+        .rfm-marquee-container  {
+            @apply flex justify-start overflow-hidden;
+            .rfm-marquee {
+                @apply flex justify-center;
+                .rfm-initial-child-container {
+                    @apply flex justify-between w-full;
+                }
+                .rfm-child {
+                    @apply mx-auto;
                     .index-cyrpto-content {
                         @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-[210px];
                         .crypto-title{
@@ -147,7 +150,9 @@
                         }
                     }
                 }
+                
             }
+
         }
     }
     .stocks-why-section {
@@ -221,9 +226,12 @@
             .rfm-marquee-container  {
                 @apply flex justify-start overflow-hidden;
                 .rfm-marquee {
-                    @apply flex;
+                    @apply flex justify-center;
+                    .rfm-initial-child-container {
+                        @apply flex justify-between w-full;
+                    }
                     .rfm-child {
-                        @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mr-[40px];
+                        @apply h-[56px] flex flex-col justify-center items-center rounded-[8px] mx-[20px];
                         img {
                             @apply w-[46px] h-[46px];
                             &.master-card {
@@ -563,11 +571,15 @@
             }
             .stocks-index-crypto-section {
                 @apply py-[35px] px-[0px];
-                .swiper {
-                    .swiper-wrapper {
-                        @apply gap-[6px];
-                        .swiper-slide {
-                            @apply !w-[147px];
+                .rfm-marquee-container  {
+                    @apply flex justify-start overflow-hidden;
+                    .rfm-marquee {
+                        @apply flex justify-center;
+                        .rfm-initial-child-container {
+                            @apply flex justify-between w-full;
+                        }
+                        .rfm-child {
+                            @apply mx-[10px];
                             .index-cyrpto-content {
                                 @apply w-[147px] h-[24px] items-center ;
                                 .crypto-title{
@@ -585,6 +597,7 @@
                                 }
                             }
                         }
+                        
                     }
                 }
             }
@@ -654,7 +667,7 @@
                         .rfm-marquee {
                             @apply flex;
                             .rfm-child {
-                                @apply h-[30px] flex flex-col justify-center items-center p-[10px] rounded-[8px] mr-[10px];
+                                @apply h-[30px] flex flex-col justify-center items-center rounded-[8px] mx-[10px];
                                 img {
                                     @apply w-[28px] h-[28px];
                                     &.master-card {

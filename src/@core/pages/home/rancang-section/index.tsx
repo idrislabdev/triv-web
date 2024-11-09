@@ -37,7 +37,7 @@ const HomeRancangSection = (props: {objLang:any}) => {
                             </div>
                         </div>
                         <div className='rancang-description-detail fade-in entry-3'>
-                            <Image src='/images/3d-icons/3d-kit-spot.png' alt='3d kit spot' width={0} height={0} sizes='100%'/>
+                            <Image src='/images/3d-icons/3d-kit-buy-sell.png' alt='3d buy sell' width={0} height={0} sizes='100%'/>
                             <div className='description-detail'>
                                 <h5>{objLang.content_2.title}</h5>
                                 <p>{objLang.content_2.description}</p>
@@ -46,7 +46,7 @@ const HomeRancangSection = (props: {objLang:any}) => {
                     </div>
                     <div className='rancang-description-details-sub fade-in entry-4'>
                         <div className='rancang-description-detail'>
-                            <Image src='/images/3d-icons/3d-kit-buy-sell.png' alt='3d buy sell' width={0} height={0} sizes='100%'/>
+                            <Image src='/images/3d-icons/3d-kit-spot.png' alt='3d kit spot' width={0} height={0} sizes='100%'/>
                             <div className='description-detail'>
                                 <h5>{objLang.content_3.title}</h5>
                                 <p>{objLang.content_3.description}</p>

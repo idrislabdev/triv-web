@@ -176,12 +176,15 @@
     
     .home-index-crypto-section {
         @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden;
-        .swiper {
-            @apply w-full ml-auto mr-auto;
-            .swiper-wrapper {
-                @apply flex w-full relative gap-[10px];
-                .swiper-slide {
-                    @apply !w-[210px];
+        .rfm-marquee-container  {
+            @apply flex justify-start overflow-hidden;
+            .rfm-marquee {
+                @apply flex justify-center;
+                .rfm-initial-child-container {
+                    @apply flex justify-between w-full;
+                }
+                .rfm-child {
+                    @apply mx-[10px];
                     .index-cyrpto-content {
                         @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-[210px];
                         .crypto-title{
@@ -198,7 +201,9 @@
                         }
                     }
                 }
+                
             }
+
         }
     }
     
@@ -605,9 +610,12 @@
         .rfm-marquee-container  {
             @apply flex justify-start overflow-hidden;
             .rfm-marquee {
-                @apply flex;
+                @apply flex justify-center;
+                .rfm-initial-child-container {
+                    @apply flex justify-between w-full;
+                }
                 .rfm-child {
-                    @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mr-[40px];
+                    @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mx-[20px];
                     box-shadow: 4px 14px 30px 0px #00000014;
                     img {
                         &.tempo-logo {
@@ -738,11 +746,11 @@
                         @apply text-[14px]/[21px];
                     }
                     .rancang-description-details {
-                        @apply flex flex-col gap-[21px];
+                        @apply flex flex-row gap-[21px];
                         .rancang-description-details-sub {
-                            @apply  items-start flex-row;
+                            @apply w-1/2 items-start flex-col;
                             .rancang-description-detail {
-                                @apply flex gap-[10px] w-1/2 items-center flex-col justify-center;
+                                @apply flex gap-[10px] w-full items-center flex-col justify-center;
                                 img {
                                     @apply w-[37px] h-[37px] object-contain;
                                 }
@@ -858,11 +866,15 @@
             }
             .home-index-crypto-section {
                 @apply py-[20px] px-[0px];
-                .swiper {
-                    .swiper-wrapper {
-                        @apply gap-[6px];
-                        .swiper-slide {
-                            @apply !w-[147px];
+                .rfm-marquee-container  {
+                    @apply flex justify-start overflow-hidden;
+                    .rfm-marquee {
+                        @apply flex justify-center;
+                        .rfm-initial-child-container {
+                            @apply flex justify-between w-full;
+                        }
+                        .rfm-child {
+                            @apply mx-[10px];
                             .index-cyrpto-content {
                                 @apply w-[147px] h-[24px] items-center ;
                                 .crypto-title{
@@ -880,6 +892,7 @@
                                 }
                             }
                         }
+                        
                     }
                 }
             }
