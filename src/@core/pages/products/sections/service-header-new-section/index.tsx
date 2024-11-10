@@ -30,10 +30,10 @@ const ProductsServiceHeaderNewSection = (props: {objLang:any, objProduct:any}) =
                     <div className='text-area'>
                         <h2 className='fade-in entry-1'>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
                         <p className='fade-in entry-2'>{objLang.description}</p> 
-                        <div className='button-group fade-in entry-3'>
-                            <button className='btn-primary'>{objLang.button_1} <ArrowRightIcon color={'#fff'}/></button>
-                            <button className='btn-outline-primary'>{objLang.button_2} <ArrowRightIcon color={'#fff'}/></button>
-                        </div>
+                    </div>
+                    <div className='button-group fade-in entry-3'>
+                        <button className='btn-primary'>{objLang.button_1} <ArrowRightIcon color={'#fff'}/></button>
+                        <button className='btn-outline-primary'>{objLang.button_2} <ArrowRightIcon color={'#fff'}/></button>
                     </div>
                     <div className='logo-area fade-in entry-4'>
                         <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-color-big.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
