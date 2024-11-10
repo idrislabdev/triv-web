@@ -122,7 +122,7 @@
         .service-hero-container {
             @apply flex gap-[124px] w-full; 
             .left-subcontainer {
-                @apply flex flex-col gap-[90px] flex-1;
+                @apply flex flex-col gap-[40px] flex-1;
                 .text-area {
                     @apply flex flex-col gap-[30px];
                     h2 {
@@ -137,32 +137,38 @@
                         @apply text-[16px]/[32px] text-neutral-700;
                     }
                 }
-                .button-group {
-                    @apply flex items-center gap-[20px];
-                    button {
-                        @apply w-[260px] h-[48px] rounded-[30px] text-[14px]/[21px];
-                    }
-                }
-                .logo-area {
-                    @apply flex items-center gap-[30px];
-                    .bappebti-logo {
-                        img {
-                            @apply w-[147px] h-[34px];
+                .button-logo-area {
+                    @apply flex flex-col gap-[90px];
+                    .button-group {
+                        @apply flex items-center gap-[20px];
+                        button {
+                            @apply w-[260px] h-[48px] rounded-[30px] text-[14px]/[21px];
                         }
                     }
-                    .kominfo-logo {
-                        img {
-                            @apply w-[118px] h-[37px];
-                        }
+                    h5 {
+                        @apply hidden;
                     }
-                    .bsi-logo {
-                        img {
-                            @apply w-[83px] h-[44px];
+                    .logo-area {
+                        @apply flex items-center gap-[30px];
+                        .bappebti-logo {
+                            img {
+                                @apply w-[147px] h-[34px];
+                            }
                         }
-                    }
-                    .cisa-logo {
-                        img {
-                            @apply w-[110px] h-[44px];
+                        .kominfo-logo {
+                            img {
+                                @apply w-[118px] h-[37px];
+                            }
+                        }
+                        .bsi-logo {
+                            img {
+                                @apply w-[83px] h-[44px];
+                            }
+                        }
+                        .cisa-logo {
+                            img {
+                                @apply w-[110px] h-[44px];
+                            }
                         }
                     }
                 }
@@ -373,7 +379,7 @@
                     .content {
                         @apply flex flex-col gap-[10px];
                         h5 {
-                            @apply text-[32px]/[48px] font-bold text-neutral-800;
+                            @apply text-[31px]/[48px] font-bold text-neutral-800;
                         }
                         p {
                             @apply text-[16px]/[32px] font-medium text-neutral-700;
@@ -595,7 +601,7 @@
                     .button-area {
                         @apply flex items-center gap-[39px];
                         a {
-                            @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;   
+                            @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold gap-[4px];   
                              
                         }
                         .app-store-list {
@@ -665,32 +671,38 @@
                                 @apply text-[10px]/[15px];
                             }
                         }
-                        .button-group {
-                            @apply flex flex-col gap-[10px];
-                            button {
-                                @apply w-[200px] h-[34px] rounded-[30px] text-[12px]/[18px];
-                            }
-                        }
-                        .logo-area {
-                            @apply gap-[5px] justify-center;
-                            .bappebti-logo {
-                                img {
-                                    @apply w-[60px] h-[13px];
+                        .button-logo-area {
+                            @apply gap-[20px];
+                            .button-group {
+                                @apply flex flex-col gap-[10px];
+                                button {
+                                    @apply w-[200px] h-[34px] rounded-[30px] text-[12px]/[18px];
                                 }
                             }
-                            .kominfo-logo {
-                                img {
-                                    @apply w-[60px] h-[20px];
-                                }
+                            h5 {
+                                @apply block text-[10px]/[15px] text-center text-neutral-700;
                             }
-                            .bsi-logo {
-                                img {
-                                    @apply w-[37px] h-[20px];
+                            .logo-area {
+                                @apply gap-[5px] justify-center;
+                                .bappebti-logo {
+                                    img {
+                                        @apply w-[60px] h-[13px];
+                                    }
                                 }
-                            }
-                            .cisa-logo {
-                                img {
-                                    @apply w-[51px] h-[22px];
+                                .kominfo-logo {
+                                    img {
+                                        @apply w-[60px] h-[20px];
+                                    }
+                                }
+                                .bsi-logo {
+                                    img {
+                                        @apply w-[37px] h-[20px];
+                                    }
+                                }
+                                .cisa-logo {
+                                    img {
+                                        @apply w-[51px] h-[22px];
+                                    }
                                 }
                             }
                         }

@@ -1,7 +1,7 @@
 {
     "header_section": {
         "title" : "Buy & Sell & Exchange Perfect Money Indonesia 24 Hours",
-        "title_1" : "Buy and sell",
+        "title_1" : "Exchange",
         "title_2" : "Perfect Money",
         "title_3" : "Indonesia 24 hours",
         "description" : "The largest Buy Sell Perfect Money in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
@@ -24,44 +24,44 @@
     },
     "layanan_section": {
         "title" : "All You can do with Perfect Money in Triv",
-        "title_1" : "What You Can Do With Triv",
+        "title_1" : "All You can do with",
         "title_2" : "Perfect Money",
-        "title_3" : "Service Indonesia",
+        "title_3" : "in Triv",
         "content" : "Triv supports all transactions, as well swap, exchange, etc. Triv is the most comprehensive and secure trading platform to manage and develop the value of your portfolio.",
         "card" : {
             "jual_beli" : {
-                "title" : "Perfect Money Exchange 24 Jam",
-                "content" : "Unlike trading stocks and commodities, the Perfect Money market is open 24/7. It allows you to buy, sell and exchange Perfect Money in real time through banking/ e-wallet instantly anytime and anywhere.",
+                "title" : "Perfect Money Exchange 24 hours",
+                "content" : "Unlike traditional investment instruments, the Perfect Money market has no holidays. You can sell and exchange your Perfect Money in real-time to banks or e-wallets in seconds even on holidays.",
                 "image_url" : "/images/services/iphone-perfect-money.png",
                 "image_class" : "iphone"
             },
             "kirim" : {
-                "title" : "Sending Perfect Money",
-                "content" : "You can exchange Perfect Money to Rupiah in Triv wallet, or sending it to fellow users instantly. This kind of service is charged for free.",
+                "title" : "Send Perfect Money",
+                "content" : "Exchange Perfect Money anda ke dompet rupiah Triv dan Kirim ke seluruh pengguna Triv secara instan dan gratis.",
                 "image_url" : "/images/services/device-transfer.png",
                 "image_class" : "device-transfer"
             },
             "terima" : {
-                "title" : "International Online Shopping",
-                "content" : "Thousands of global merchants accept Perfect Money, so you shop online without a credit card. Enjoy your online shopping by filling Perfect Money balance in Triv.",
+                "title" : "Shopping on International Sites",
+                "content" : "Perfect Money is accepted by thousands of overseas merchants, so you can shop online without needing a credit card. By topping up your Perfect Money balance at Triv, you can access international markets and shop in minutes.",
                 "image_url" : "/images/services/device-pay.png",
                 "image_class" : "device-pay"
             },
             "hoddl" : {
-                "title" : "Digital USD Wallet",
-                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Perfect Money? Easy! Just access swap menu in Triv app.",
+                "title" : "USD Digital Wallet",
+                "content" : "In addition to being used for shopping, the Paypal Balance can be used as a digital wallet with USD currency. As an alternative for you to invest USD without hassle and in seconds at Triv.",
                 "image_url" : "/images/services/wallet-debit.png",
                 "image_class" : "wallet-debit"
             },
             "swap" : {
-                "title" : "Pay All Bills",
-                "content" : "You can exchange Perfect Money for fiat in Triv platform, to pay bills such as: phone bills, credit, and even the electricity token.",
+                "title" : "Swap Saldo Perfect Money",
+                "content" : "Triv supports over 65+ digital assets on our platform and growing. Need to exchange to paypal/other e-money? Easy! Just access the swap menu from the Triv app.",
                 "image_url" : "/images/services/swap-asset.png",
                 "image_class" : "swap-paypal"
             },
             "isi_pulsa" : {
-                "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan Perfect Money anda ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
+                "title" : "Top Up Credit and Pay Bills",
+                "content" : "Exchange your BTC coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
                 "image_url" : "/images/services/iphone-topup.png",
                 "image_class" : "iphone"
             }

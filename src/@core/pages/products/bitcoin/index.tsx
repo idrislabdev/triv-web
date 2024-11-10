@@ -29,7 +29,7 @@ const BitcoinPageWrap = (props: {lang:string, objLang:any}) => {
             <ProductsAffliateNewSection objLang={objLang.triv_affliate} />
             <ProductsAverageNewSection objLang={objLang.average_section} />
             <ProductsEwalletNewSection objLang={objLang.ewallet_section} />
-            <ProductsBannerSection />
+            <ProductsBannerSection objLang={objLang.start_now_section} />
         </main>
         <Footer />
     </>

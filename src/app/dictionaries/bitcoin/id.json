@@ -6,7 +6,8 @@
         "title_3" : "Indonesia 24 jam",
         "description" : "Jual beli Bitcoin terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi BTC.",
         "button_1" : "Beli Bitcoin",
-        "button_2" : "Kunjungi Marketplace"
+        "button_2" : "Kunjungi Marketplace",
+        "registered_text" : "Terdaftar dan diawasi oleh"
     },
     "regulasi_section": {
         "liquiditas" : {
@@ -30,7 +31,7 @@
         "card" : {
             "jual_beli" : {
                 "title" : "Jual dan Beli Bitcoin 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Bitcoin anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
+                "content" : "Tidak seperti instrumen investasi tradisional, Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
                 "image_url" : "/images/services/macbook-buy-bitcoin.png",
                 "image_class" : "macbook"
             },

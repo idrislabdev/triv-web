@@ -1,12 +1,13 @@
 {
     "header_section": {
         "title" : "Transaction Paypal 24 hours",
-        "title_1" : "Buy and sell",
+        "title_1" : "24-hour",
         "title_2" : "Paypal",
-        "title_3" : "Indonesia 24 hours",
-        "description" : "The largest Buy Sell Paypal in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
+        "title_3" : "transactions",
+        "description" : "The largest Bitcoin trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact BTC.",
         "button_1" : "Buy Paypal",
-        "button_2" : "Visit Marketplace"
+        "button_2" : "Visit Marketplace",
+        "registered_text" : "Terdaftar dan diawasi oleh"
     },
     "regulasi_section": {
         "liquiditas" : {
@@ -26,42 +27,42 @@
         "title" : "What You can do with Paypal in Triv",
         "title_1" : "What You Can Do With Triv",
         "title_2" : "Paypal",
-        "title_3" : "Service Indonesia",
-        "content" : "Triv supports various types of transactions and not just buying and selling paypal. You can swap, exchange or top up your Paypal balance in one application.",
+        "title_3" : "in Triv",
+        "content" : "Triv supports various types of transactions and not just paypal buying and selling. Swap, exchange or top up Paypal balance can be done in one application.",
         "card" : {
             "jual_beli" : {
-                "title" : "24/7 Buy & Sell Paypal Balance",
-                "content" : "Unlike trading stocks and commodities, Triv Exchange is open 24/7. It allows you to buy, sell and exchange Paypal balance in real time through banking/ e-wallet instantly anytime and anywhere.",
+                "title" : "Buy and Sell Paypal Balance 24 hours",
+                "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays. You can buy and sell your Paypal balance in real-time with banks or e-wallets in seconds even on holidays.",
                 "image_url" : "/images/services/iphone-paypal.png",
                 "image_class" : "iphone"
             },
             "kirim" : {
                 "title" : "Instant overseas transfer",
-                "content" : "You can use Paypal balance to transfer money abroad instantly and free of charge. You may compare with traditional remittance agency needs 1 or 2 days for this transaction, meanwhile Triv works in seconds.",
+                "content" : "You can use your Paypal balance to send money to all Paypal users in the world for free and instantly. Unlike traditional remittances that require 1-2 business days. Digital USD delivery takes place instantly in seconds.",
                 "image_url" : "/images/services/device-transfer.png",
                 "image_class" : "device-transfer"
             },
             "terima" : {
-                "title" : "International Online Shopping",
-                "content" : "Paypal is accepted by millions of overseas merchants, so you can shop online without the need for a credit card. Just top up Paypal balance in Triv, and you can access international markets and shop in minutes.",
+                "title" : "Shopping on International Sites",
+                "content" : "Paypal is accepted by millions of international merchants, so you can shop online without needing a credit card. Simply top up your Paypal balance in Triv, and you can access international markets and shop in minutes.",
                 "image_url" : "/images/services/device-pay.png",
                 "image_class" : "device-pay"
             },
             "hoddl" : {
-                "title" : "Digital USD Wallet",
-                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Paypal? Easy! Just access swap menu in Triv app.",
+                "title" : "USD Digital Wallet",
+                "content" : "In addition to being used for shopping, the Paypal Balance can be used as a digital wallet with USD currency. As an alternative for you to invest USD without hassle and in seconds at Triv.",
                 "image_url" : "/images/services/wallet-debit.png",
                 "image_class" : "wallet-debit"
             },
             "swap" : {
-                "title" : "Swap Paypal Balance",
-                "content" : "There are 65+ supported digital assets in Triv platform and counting. Need exchange to Paypal? Easy! Just access swap menu in Triv app.",
+                "title" : "Swap Paypal",
+                "content" : "Triv supports over 700+ digital assets on our platform and growing. Need more assets? Swap to a wide range of other digital assets in real-time 24/7 on Triv with your Paypal!",
                 "image_url" : "/images/services/swap-paypal.png",
                 "image_class" : "swap-paypal"
             },
             "isi_pulsa" : {
                 "title" : "Get Cash back & Protection",
-                "content" : "You can shop in the International online merchants with your Paypal balance. Paypal offers cash back and insurance protection for your online shopping. All Paypal transactions are safe and insured.",
+                "content" : "Shop at various international sites and get cashback with your Paypal Balance. In addition to getting cashback, Paypal will protect your online shopping with insurance. So that all your Paypal transactions will be safe and free from fraud.",
                 "image_url" : "/images/services/cashback.png",
                 "image_class" : "cashback"
             }
@@ -71,12 +72,12 @@
         "live_chat" : {
             "title" : "Average LiveChat Responds",
             "content" : "Triv's Livechat and Call center are ready to assist you?",
-            "time" : "45"
+            "time" : "51"
         },
         "processing" : {
             "title" : "Average Processing Time",
             "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions",
-            "time" : "82"
+            "time" : "102"
         },
         "updated_text" : "*Updated Real-Time"
     },
