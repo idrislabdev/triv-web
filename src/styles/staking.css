@@ -111,7 +111,7 @@
                     .title {
                         @apply flex flex-col;
                         h1 {
-                            @apply text-[60px]/[72px] text-white font-black w-[90%];
+                            @apply text-[60px]/[72px] text-white font-black w-full;
                         }
                         span {
                             background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
@@ -144,7 +144,7 @@
                 }
                 img {
                     &.img-device {
-                        @apply w-[625px] h-[700px] object-contain absolute right-0 bottom-[-50px];
+                        @apply w-[625px] h-[700px] object-contain absolute right-[-20px] bottom-[-50px];
                     }
                     &.img-coin-1 {
                         @apply  w-[174px] h-[167px] absolute right-[435px] top-[45%];
@@ -254,9 +254,9 @@
             }
         }
         .image-container {
-            @apply flex flex-col justify-center w-[609px] relative;
+            @apply flex flex-col justify-center w-[500px] relative;
             img {
-                @apply w-[609px];
+                @apply w-full;
             }
         }
     }
@@ -266,7 +266,7 @@
         .card-staking-calculator{
             @apply flex items-center p-[60px] rounded-[20px] bg-[#F4F8FB] relative w-full;
             .title-container {
-                @apply w-[372px] z-[1];
+                @apply w-[284px] z-[1];
                 h2 {
                     @apply text-[48px]/[72px] font-black;
                 }

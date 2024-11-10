@@ -30,7 +30,7 @@ const StakingHeroSection = (props: {objLang:any}) => {
         <div className="section-text">
           <div className='text-title'>
             <div className='title fade-in entry-1'>
-              <h1>{objLang.title_1} <br /> <span>{objLang.title_2}</span></h1>
+              <h1>{objLang.title_1} <span>{objLang.title_2}</span></h1>
             </div>
             <p className='fade-in entry-2'>{objLang.description}</p>
           </div>

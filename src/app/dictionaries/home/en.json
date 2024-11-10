@@ -5,7 +5,7 @@
         "title_2": "Asset & Cryptocurrency Marketplace",
         "description": "Since 2015, Triv is used by millions of people to invest and transact digital assets. Start with only Rp50.000. Triv is registered and supervised by Bappebti.",
         "button_text" : "Start Now",
-        "sub_description": "Registered and proud of by"
+        "sub_description": "Registered and supervised by"
     },
     "special_section" : {
         "title_1" : "Specially designed for crypto",
@@ -32,7 +32,7 @@
         "title_2" : "Investment",
         "content_1" : {
             "title" : "Open an Account Free & Fast",
-            "description": "Daftar dengan mudah dalam hitungan detik"
+            "description": "Sign up easily in seconds"
         },
         "content_2" : {
             "title" : "Deposit & Start Investing",
@@ -44,12 +44,12 @@
         }
     },
     "transaksi_section" : {
-        "title_1" : "Triv Menghadirkan Kemudahan Transaksi Aset Digital Melalui",
+        "title_1" : "Triv Provides Ease of Digital Asset Transactions Through",
         "title_2" : "Website",
-        "title_3" : "dan",
-        "title_4" : "Aplikasi",
-        "subtitle": "Fitur layanan transaksi aset digital yang lengkap dan modern dalam satu aplikasi",
-        "button": "Daftar Sekarang"
+        "title_3" : "and",
+        "title_4" : "App",
+        "subtitle": "Complete and modern digital asset transaction service features in one application",
+        "button": "Register Now"
     },
     "dividen_section" : {
         "title_1" : "Earn Crypto",
@@ -66,9 +66,9 @@
         "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "new_crypto_section" : {
-        "title" : "Baru di crypto?",
-        "description" : "Ikuti panduan dan tutorial dari video TRIV",
-        "button_text" : "Lihat Semua Video"
+        "title" : "New in crypto?",
+        "description" : "Follow the guidelines and tutorials from the TRIV video",
+        "button_text" : "See All Video"
     },
     "invest_section" : {
         "title_1" : "Buy and Sell Digital Assets",
@@ -81,6 +81,6 @@
         "button": "Regsiter Now"
     },
     "media_section" : {
-        "title" : "Reported by"
+        "title" : "Covered By"
     }
 }
