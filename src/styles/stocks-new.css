@@ -38,6 +38,12 @@
                 }
             }
         }
+        .stocks-regulated-insured-section {
+            .box-container {
+                @apply bg-[#1b1f22];
+            }
+        
+        }
     }
 }
 .stocks-page {
