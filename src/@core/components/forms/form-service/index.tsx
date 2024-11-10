@@ -16,7 +16,7 @@ const FormService = (props: {objProduct:any, imgObj:string}) => {
             {imgObj != '' &&  
                 <div className='form-title'>
                     <h5>Buy</h5> <Image src={imgObj} alt={objProduct.name} width={0} height={0} sizes='100%'/>
-                    <h5>Starting from</h5>
+                    <h5 className='sm:mr-[4px] md:mr-[4px]'>Starting from</h5>
                     <h5>IDR 50,000!</h5>
                 </div>
                 // <h5 className='title'>Buy <span><Image src={imgObj} alt={objProduct.name} width={0} height={0} sizes='100%'/></span> Starting from IDR 50,000!</h5>
