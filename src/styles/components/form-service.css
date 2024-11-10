@@ -33,6 +33,21 @@
     }
     .title {
         @apply text-[22px]/[33px] font-black text-black;
+        span {
+            @apply inline-block;
+            img {
+                @apply w-[105px] object-cover;
+            }
+        }
+    }
+    .form-title {
+        @apply flex items-center flex-wrap;
+        h5 {
+            @apply text-[22px]/[33px] font-black text-black inline-block;
+        }
+        img {
+            @apply w-[105px] object-cover px-[8px];
+        }
     }
     .description {
         @apply text-[16px]/[24px] text-neutral-700 font-medium;

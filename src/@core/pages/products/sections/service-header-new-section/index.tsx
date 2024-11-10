@@ -46,7 +46,7 @@ const ProductsServiceHeaderNewSection = (props: {objLang:any, objProduct:any}) =
                     </div>
                 </div>
                 <div className='right-subcontainer fade-in entry-5'>
-                    <FormService objProduct={objProduct}/>
+                    <FormService objProduct={objProduct} imgObj={objLang.image_url ? objLang.image_url : ''}/>
                 </div>
             </div>
         </section>

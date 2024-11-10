@@ -1,9 +1,10 @@
 "use client"
 
+import Image from 'next/image'
 import React, { useState } from 'react'
 
-const FormService = (props: {objProduct:any}) => {
-    const {objProduct} = props
+const FormService = (props: {objProduct:any, imgObj:string}) => {
+    const {objProduct, imgObj} = props
     const [buttonType, setButtonType] = useState('buy')
     return (
         <div className='form-service'>
@@ -11,7 +12,15 @@ const FormService = (props: {objProduct:any}) => {
                 <button className={`!rounded-tl-[4px] !rounded-bl-[4px] ${buttonType === "buy" ? 'active' : ''}`} onClick={_ => setButtonType('buy')}>Beli</button>
                 <button className={`!rounded-tr-[4px] !rounded-br-[4px] ${buttonType === "sell" ? 'active' : ''}`} onClick={_ => setButtonType('sell')}>Jual</button>
             </div>
-            <h5 className='title'>Buy {objProduct.name} Starting from IDR 50,000!</h5>
+            {imgObj == '' && <h5 className='title'>Buy {objProduct.name} Starting from IDR 50,000!</h5> }
+            {imgObj != '' &&  
+                <div className='form-title'>
+                    <h5>Buy</h5> <Image src={imgObj} alt={objProduct.name} width={0} height={0} sizes='100%'/>
+                    <h5>Starting from</h5>
+                    <h5>IDR 50,000!</h5>
+                </div>
+                // <h5 className='title'>Buy <span><Image src={imgObj} alt={objProduct.name} width={0} height={0} sizes='100%'/></span> Starting from IDR 50,000!</h5>
+            }
             <p className='description'>Enter the purchase amount:</p>
             <label className='nominal'>Rp 0</label>
             <div className='button-group'>
