@@ -493,9 +493,9 @@
     .home-baru-crypto-section {
         @apply py-[100px];
         .home-baru-crypto-container {
-            @apply flex gap-[80px] px-[100px] py-[50px]  items-center relative bg-[#EEF7FD];
+            @apply flex gap-[80px] py-[50px]  items-center relative bg-[#EEF7FD];
             .baru-crypto-title {
-                @apply flex flex-col gap-[20px];
+                @apply flex flex-col gap-[20px] pl-[100px];
                 h5 {
                     @apply text-[28px]/[42px] font-bold text-black;
                 }
@@ -510,7 +510,7 @@
                 @apply flex-1 relative overflow-hidden;
                 .swiper {
                     .swiper-wrapper {
-                        @apply flex relative w-full gap-[36px] justify-center;
+                        @apply flex relative w-full gap-[20px] justify-start;
                         .swiper-slide {
                             @apply !w-[300px];
                             .crypto-thumb-video {
@@ -1052,7 +1052,7 @@
                 .home-baru-crypto-container {
                     @apply flex-col px-[30px] py-[20px] gap-[30px] justify-center;
                     .baru-crypto-title {
-                        @apply flex flex-col gap-[20px] items-center;
+                        @apply flex flex-col gap-[20px] items-center p-0;
                         h5 {
                             @apply text-[14px]/[21px] font-bold text-black;
                         }
@@ -1068,14 +1068,14 @@
                         .swiper {
                             @apply w-full;
                             .swiper-wrapper {
-                                @apply flex relative w-full gap-[21px];
+                                @apply flex relative w-full gap-[20px];
                                 .swiper-slide {
-                                    @apply !w-[148px];
+                                    @apply !w-[165px];
                                     .crypto-thumb-video {
-                                        @apply w-[148px] flex;
+                                        @apply w-[165px] flex;
                                         .video-thumb {
                                             img {
-                                                @apply w-[148px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
+                                                @apply w-[165px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
                                             }
                                         }
                                        .video-title {
