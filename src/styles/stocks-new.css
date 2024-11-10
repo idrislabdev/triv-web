@@ -363,11 +363,11 @@
     
     }
     .stocks-ewallet-section {
-        @apply flex items-center  px-[100px] relative;
+        @apply flex items-center py-[50px] relative;
         .ewallet-description {
-            @apply flex-1 flex flex-col gap-[20px];
+            @apply flex-1 flex flex-col gap-[20px] pl-[100px];
             h2 {
-                @apply text-[48px]/[67px] font-black text-neutral-900;
+                @apply text-[45px]/[65px] font-black text-neutral-900;
                 span {
                     background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
                     background-clip: text;
@@ -385,9 +385,9 @@
             }
         }
         .ewallet-image {
-            @apply w-[455px] h-[435px];
+            @apply w-[550px] h-[400px] relative;
             img {
-               @apply w-[455px] h-[435px] absolute top-0 right-0;
+               @apply w-full;
             }
         }
     }
@@ -440,7 +440,7 @@
         }
     }
     .stocks-banner-section {
-        @apply px-[100px] py-[50px];
+        @apply p-[100px];
         .main-container {
             .sub-container {
                 @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
@@ -787,7 +787,7 @@
             
             }
             .stocks-ewallet-section {
-                @apply flex-col py-[30px] px-[20px];
+                @apply flex-col py-[30px] px-[20px] gap-[20px];
                 .ewallet-description {
                     @apply justify-center items-center w-full text-center p-0;
                     h2 {

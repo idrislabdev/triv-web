@@ -109,7 +109,7 @@
                 .text-title {
                     @apply flex flex-col gap-[28px];
                     .title {
-                        @apply flex flex-col;
+                        @apply flex flex-col w-[90%];
                         h1 {
                             @apply text-[60px]/[72px] text-white font-black w-full;
                         }
@@ -266,7 +266,7 @@
         .card-staking-calculator{
             @apply flex items-center p-[60px] rounded-[20px] bg-[#F4F8FB] relative w-full;
             .title-container {
-                @apply w-[284px] z-[1];
+                @apply w-[330px] z-[1];
                 h2 {
                     @apply text-[48px]/[72px] font-black;
                 }
@@ -473,7 +473,7 @@
         @apply px-[100px] py-[50px] gap-[60px] flex justify-center items-center;
     }
     .staking-banner-section {
-        @apply px-[100px] py-[50px];
+        @apply p-[100px];
         .main-container {
             .sub-container {
                 @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
