@@ -12,6 +12,8 @@ export interface ITopGainer {
     rate: number,
     change_24h: number,
     icon_url: string,
+    slug: string,
+
 }
 
 export interface IHighestVolume {
@@ -19,6 +21,8 @@ export interface IHighestVolume {
     rate: number,
     change_24h: number,
     icon_url: string,
+    slug: string,
+
 }
 
 export interface IMostPopular {
@@ -26,6 +30,7 @@ export interface IMostPopular {
     rate: number,
     change_24h: number,
     icon_url: string,
+    slug: string,
 }
 
 export interface IHighlight {
@@ -41,6 +46,8 @@ export interface ILiverate {
     sell_rate: number,
     change_24h: number,
     icon_url: string,
+    slug: string,
+    symbol: string
 }
 
 export interface IStaking {

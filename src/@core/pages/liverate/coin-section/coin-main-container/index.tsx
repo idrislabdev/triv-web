@@ -25,7 +25,7 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
     return (
         <div className='coin-main-container'>
             <div className='chart-subcontainer'>
-                <LiverateCoinChartWrapper symbol={coin.symbol} />
+                <LiverateCoinChartWrapper symbol={coin.currency.toUpperCase()+'IDR'} />
             </div>
             <div className='about-subcontainer'>
                 <h5>{objLang.about} {asset.label}</h5>

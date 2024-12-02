@@ -163,7 +163,7 @@
             .section-device {
                 @apply flex-1 flex flex-col justify-center items-center;
                 img {
-                    @apply w-[990px] h-[700px] object-cover absolute right-[-130px] bottom-0;
+                    @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-0 bottom-0;
                 }
             }
             /* &::after {

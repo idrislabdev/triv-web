@@ -10,6 +10,11 @@ export const getLiverateHighlights = async () => {
     return resp
 }
 
+export const getLiverateHighlightsBySlug = async (slug:string) => {
+    const resp = await axiosInstance.get(`/v2/liverate?slug=${slug}`)
+    return resp
+}
+
 export const getLiverates = async () => {
     const resp = await axiosInstance.get(`/v2/liverate`)
     return resp

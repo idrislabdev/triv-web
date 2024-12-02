@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { getAsset, getBlogs, getLiverateHighlights, getLiverateMini, getLiverates } from '@/@core/services/api'
+import { getAsset, getBlogs, getLiverateHighlights, getLiverateHighlightsBySlug, getLiverateMini, getLiverates } from '@/@core/services/api'
 import { IBlog, ICoin, IHighlight, ILiverate, ILiverateMini } from '@/@core/@types/interfaces'
 import { coins }from "../coins";
 import '@/styles/liverate.css'
@@ -8,7 +8,9 @@ import LiverateDetailPage from '@/@core/pages/liverate/detail-page'
 import { getDictionaryLierate } from '@/app/dictionaries';
 
 export default async function  LiverateCoin({ params }: any) {
-    const coin:ICoin|any = coins.find((x) => x.slug == params.slug)
+    const respCoin =  await getLiverateHighlightsBySlug(params.slug);
+    const coins:ILiverate[] = respCoin.data.data
+    const coin:ILiverate|any = coins[0]
 
     const resp =  await getLiverateHighlights();
     const hightlight:IHighlight = resp.data.data

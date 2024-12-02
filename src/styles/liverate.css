@@ -266,7 +266,7 @@
                             @apply w-[51px] h-[28px];
                         }
                     } 
-                    button {
+                    button, a {
                         @apply flex justify-center items-center bg-primary text-white rounded-[20px] py-[8px] w-[96px] text-[14px]/[21px] font-medium;
                     
                     }
@@ -736,7 +736,7 @@
                             }
                             .col-aksi {
                                 @apply w-[20%];
-                                button {
+                                button,a {
                                     @apply w-[60px] text-[10px]/[12px];
                                 }
                             }

@@ -10,7 +10,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
         <div className='liverate-top-mover-section'>
             <h2><span></span>{objLang.title}</h2>
             <div className='top-mover-containers'>
-                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.top_gainer.label.toLowerCase().replace(" ", "")}`}>
+                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.top_gainer.slug}`}>
                     <div className='top-mover-container-left'>
                         <label>Top Gainer(24h)</label>
                         <div className='top-mover-text-icon'>
@@ -29,7 +29,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                         </div>
                     </div>
                 </Link>
-                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.highest_volume.label.toLowerCase().replace(" ", "")}`}>
+                <Link className='top-mover-container' href={`/${lang}/liverate/${hightlight.highest_volume.slug}`}>
                     <div className='top-mover-container-left'>
                         <label>Most Popular (24h)</label>
                         <div className='top-mover-text-icon'>
@@ -48,7 +48,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                         </div>
                     </div>
                 </Link>
-                <Link className='top-mover-container truncate' href={`/${lang}/liverate/${hightlight.most_popular.label.toLowerCase().replace(" ", "")}`}>
+                <Link className='top-mover-container truncate' href={`/${lang}/liverate/${hightlight.most_popular.slug}`}>
                     <div className='top-mover-container-left'>
                         <label>Highest Volume (24h)</label>
                         <div className='top-mover-text-icon'>

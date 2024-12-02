@@ -4,10 +4,11 @@ import { ILiverate } from '@/@core/@types/interfaces'
 import { CaretDownIcon, CaretUpIcon, CryptoIcon, EuroIcon, GoldIcon, SearchIcon, TrendUpIcon, UsdIcon } from '@/@core/components/custom-icons'
 import axiosInstance from '@/@core/utils/axios'
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useCallback, useEffect, useState } from 'react'
 
-const LiverateListSection = (props: {liverates: ILiverate[]}) => {
-  const { liverates } = props
+const LiverateListSection = (props: {liverates: ILiverate[], lang:string}) => {
+  const { liverates, lang } = props
   const [dataLiverates, setDataLiverates] = useState(liverates)
   const [category, setCategory] = useState('')
   const [params, setParams] = useState<{page:number,per:number,category:string|null,keyword:string|null}>({page: 1, per: 10, category: null, keyword: null})
@@ -95,7 +96,7 @@ const LiverateListSection = (props: {liverates: ILiverate[]}) => {
                   </div>
                 </div>
                 <div className='col-aksi'>
-                  <button>Trade</button>
+                  <Link href={`/${lang}/liverate/${item.slug}`}>Trade</Link>
                 </div>
               </div>
             ))
