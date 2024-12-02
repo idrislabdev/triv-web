@@ -5,7 +5,7 @@ import React from 'react'
 const ProductsAverageNewSection = (props: {objLang:any}) => {
     const { objLang } = props
     return (
-        <section className='products-average-section'>
+        <section className='products-average-new-section'>
             <div className='box-container'>
                 <div className='sub-container'>
                     <div className='detail-subcontainer'>

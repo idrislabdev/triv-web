@@ -6,7 +6,7 @@ import React from 'react'
 const ProductsAffliateNewSection = (props: {objLang:any}) => {
   const { objLang } = props
   return (
-    <section className='products-affliate-section'>
+    <section className='products-affliate-new-section'>
         <div className='affliate-container'>
             <div className='image-subcontainer'>
                 <Image src='/images/others/digital-marketing-2.png' alt='digital marketing' width={0} height={0} sizes='100%'/>

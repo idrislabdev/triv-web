@@ -5,7 +5,7 @@ import React from 'react'
 const ProductsBannerSection = (props: {objLang:any}) => {
     const { objLang } = props
     return (
-        <section className='products-banner-section'>
+        <section className='products-banner-new-section'>
             <div className='main-container'>
                 <div className='sub-container'>
                     <div className='image-area'>

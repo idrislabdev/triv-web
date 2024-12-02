@@ -12,7 +12,6 @@ import ProductsBannerSection from '../sections/banner-section'
 import Footer from '@/@core/components/footer'
 
 import '@/styles/products-new.css'
-import '@/styles/animations/products.css'
 import '@/styles/components/form-service.css'
 
 const BitcoinPageWrap = (props: {lang:string, objLang:any}) => {

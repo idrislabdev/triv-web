@@ -8,7 +8,7 @@
         @apply !text-slate-300;
     }
     .products-page {
-        .products-service-hero-section {
+        .products-service-hero-new-section {
             .left-subcontainer {
                 button {
                     &.btn-primary {
@@ -58,7 +58,7 @@
                 }
             }
         }
-        .products-average-section{
+        .products-average-new-section{
             .box-container {
                 @apply bg-[#1b1f22];
                 .sub-container {
@@ -74,17 +74,17 @@
                 }
             }
         }
-        .products-affliate-section {
+        .products-affliate-new-section {
             button {
                 @apply !bg-[#3A80AF] !text-white;
             }
         }
-        .products-investasi-now-section {
+        .products-investasi-now-new-section {
             a {
                 @apply !bg-[#3A80AF] !text-white;
             }
         }
-        .products-layanan-section {
+        .products-layanan-new-section {
             @apply p-[20px];
             .layanan-container {
                 .card-subcontainer {
@@ -115,7 +115,7 @@
             @apply text-neutral-700;
         }
     }
-    .products-service-hero-section {
+    .products-service-hero-new-section {
         @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px] bg-[#F6F9FB] relative;
         background: url("/images/ornaments/service-ornament.png") no-repeat;
         background-position: center;
@@ -244,7 +244,7 @@
             background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
         } */
     }
-    .products-regulasi-section {
+    .products-regulasi-new-section {
         @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
         .regulasi-container {
             @apply flex gap-[50px];
@@ -273,7 +273,7 @@
             }
         }
     }
-    .products-layanan-section {
+    .products-layanan-new-section {
         @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
         .title-container {
             @apply flex flex-col items-center text-center justify-center gap-[20px];
@@ -439,7 +439,7 @@
            }
         }
     }
-    .products-affliate-section {
+    .products-affliate-new-section {
         @apply relative flex flex-col justify-center py-[50px];
         .affliate-container {
             @apply flex justify-between items-center h-[490px] px-[100px] gap-[20px];
@@ -465,16 +465,7 @@
                             @apply text-[16px]/[32px] font-medium text-neutral-200;
                         }
                     }
-                    @media (max-width: 1380px) {
-                        .sub-subcontainer {
-                            h5 {
-                                @apply text-[25px]/[40px];
-                            }
-                            p {
-                                @apply text-[15px]/[25px];
-                            }
-                        }
-                    }
+
                 }
                 .right-subcontainer {
                     @apply flex flex-col gap-[40px] w-1/2;
@@ -488,22 +479,83 @@
                         }
         
                     }
-
-                    @media (max-width: 1380px) {
+                }
+            }
+        }
+        @media (max-width: 1380px) {
+            .affliate-container {
+                @apply h-[400px];
+                .image-subcontainer {
+                    @apply w-[300px];
+                    img {
+                        @apply w-[300px];
+                    }
+                }
+            }
+            .text-subcontainer {
+                @apply flex items-center gap-[20px] flex-1;
+                .left-subcontainer {
+                    .sub-subcontainer {
                         h5 {
-                            @apply text-[30px]/[45px];
+                            @apply !text-[25px]/[35px];
                         }
-                        .button-group {
-                           button {
-                            @apply h-[45px];
-                           }
+                        p {
+                            @apply !text-[17px]/[25px];
                         }
+                    }
+                }
+                .right-subcontainer {
+                    h5 {
+                        @apply !text-[30px]/[45px];
+                    }
+                    .button-group {
+                        @apply !gap-[16px];
+                        button {
+                            @apply !h-[45px];
+                        }
+        
+                    }
+                }
+            }
+        }
+        @media (max-width: 1240px) {
+            .affliate-container {
+                @apply h-[400px];
+                .image-subcontainer {
+                    @apply w-[300px];
+                    img {
+                        @apply w-[300px];
+                    }
+                }
+            }
+            .text-subcontainer {
+                @apply flex items-center gap-[20px] flex-1;
+                .left-subcontainer {
+                    .sub-subcontainer {
+                        h5 {
+                            @apply !text-[20px]/[30px];
+                        }
+                        p {
+                            @apply !text-[14px]/[20px];
+                        }
+                    }
+                }
+                .right-subcontainer {
+                    h5 {
+                        @apply !text-[25px]/[40px];
+                    }
+                    .button-group {
+                        @apply !gap-[14px];
+                        button {
+                            @apply !h-[40px];
+                        }
+        
                     }
                 }
             }
         }
     }
-    .products-average-section {
+    .products-average-new-section {
         @apply flex flex-col items-center px-[100px] py-[75px] relative;
         .box-container {
             @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[40px] py-[40px] gap-[60px] relative w-[100%] overflow-hidden;
@@ -553,7 +605,7 @@
         }
     
     }   
-    .products-ewallet-section {
+    .products-ewallet-new-section {
         @apply flex items-center relative py-[50px];
         .ewallet-description {
             @apply flex-1 flex flex-col gap-[20px] pl-[100px];
@@ -582,7 +634,7 @@
             }
         }
     }
-    .products-banner-section {
+    .products-banner-new-section {
         @apply p-[100px];
         .main-container {
             .sub-container {
@@ -657,7 +709,7 @@
     @layer components {
         &.mobile-responsive {
             padding-top: 50px;
-            .products-service-hero-section {
+            .products-service-hero-new-section {
                 @apply p-[20px];
                 .service-hero-container {
                     @apply flex-col gap-[40px]; 
@@ -775,7 +827,7 @@
                     background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
                 } */
             }
-            .products-regulasi-section {
+            .products-regulasi-new-section {
                 @apply p-[20px];
                 .regulasi-container {
                     @apply flex-col justify-center items-center;
@@ -802,7 +854,7 @@
                     }
                 }
             }
-            .products-layanan-section {
+            .products-layanan-new-section {
                 @apply p-[20px];
                 .title-container {
                     h2 {
@@ -932,7 +984,7 @@
                    }
                 }
             }
-            .products-affliate-section {
+            .products-affliate-new-section {
                 @apply py-[50px];
                 .affliate-container {
                     @apply flex-col h-full px-[20px] py-[37px];
@@ -972,7 +1024,7 @@
                     }
                 }
             }
-            .products-average-section {
+            .products-average-new-section {
                 @apply p-[20px];
                 .box-container {
                     @apply rounded-br-none rounded-bl-none;
@@ -1016,7 +1068,7 @@
                 }
             
             }   
-            .products-ewallet-section {
+            .products-ewallet-new-section {
                 @apply flex-col py-[30px] px-[20px] gap-[20px];
                 .ewallet-description {
                     @apply justify-center items-center w-full text-center p-0;
@@ -1037,7 +1089,7 @@
                     }
                 }
             }
-            .products-banner-section {
+            .products-banner-new-section {
                 @apply p-[20px];
                 .main-container {
                     .sub-container {

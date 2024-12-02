@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 const ProductsEwalletNewSection = (props: {objLang:any}) => {
   const { objLang } = props
   return (
-    <section className='products-ewallet-section'>
+    <section className='products-ewallet-new-section'>
         <div className='ewallet-description'>
             <h2 className='fade-in entry-1'>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
             <h5 className='fade-in entry-2'>{objLang.subtitle}</h5>

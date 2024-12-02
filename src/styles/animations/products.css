@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .products-page {
-    .products-service-hero-section {
+    .products-service-hero-new-section {
         &.animate {
             .fade-in {
                 -webkit-animation-duration: 1s;
@@ -37,7 +37,7 @@
             }
         }
     }
-    .products-regulasi-section {
+    .products-regulasi-new-section {
         &.animate {
             .fade-in {
                 -webkit-animation-duration: 1s;

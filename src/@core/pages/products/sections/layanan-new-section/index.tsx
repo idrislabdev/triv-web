@@ -15,7 +15,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
  
   const onScroll = useCallback(() => {
       const { scrollY } = window;
-      const elements = document.getElementsByClassName("products-layanan-section");
+      const elements = document.getElementsByClassName("products-layanan-new-section");
       var element = elements[0];
       if (element) {
         console.log(scrollY)
@@ -67,7 +67,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
   })
 
   return (
-    <section className='products-layanan-section'>
+    <section className='products-layanan-new-section'>
       <div className='title-container'>
         <h2>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
         <p>{objLang.content}</p>
