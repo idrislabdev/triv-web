@@ -59,7 +59,7 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
                 </div>
                 <button type='submit'>{dictRegister.register_text}</button>
             </form>
-            <label className='has-user'>Sudah Punya akun? <a>Masuk</a></label>
+            <label className='has-user'>{dictRegister.has_account_1} <a>{dictRegister.has_account_2}</a></label>
             <div className='sub-title-subcontainer'>
                 <h5>{dictRegister.welcome_text}</h5>
                 <p>{dictRegister.sub_welcome_text}</p>

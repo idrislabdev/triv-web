@@ -30,5 +30,7 @@
     "success_2" : "We have sent a 6 digit verification code to number",
     "success_3" : "Continue",
     "minute" : "minutes",
-    "second" : "seconds"
+    "second" : "seconds",
+    "has_account_1" : "Already have an account?",
+    "has_account_2" : "Sign In"
 }

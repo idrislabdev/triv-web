@@ -32,5 +32,7 @@
     "success_2" : "Kami telah mengirimkan kode verifikasi 6 digit ke nomor ",
     "success_3" : "Lanjut",
     "minute" : "menit",
-    "second" : "detik"
+    "second" : "detik",
+    "has_account_1" : "Sudah Punya akun?",
+    "has_account_2" : "Masuk"
 }
