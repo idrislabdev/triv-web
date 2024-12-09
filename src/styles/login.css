@@ -34,12 +34,12 @@
     }
 }
 .login-page {
-    @apply p-0 h-screen;
+    @apply p-0 min-h-screen flex justify-center;
 
     .login-container {
-        @apply flex w-full h-full relative;
+        @apply flex w-full relative;
         .left-subcontainer {
-            @apply flex flex-col gap-[30px] px-[60px] py-[110px]  w-1/2 relative justify-center items-start;
+            @apply flex flex-col gap-[30px] px-[60px]  w-1/2 relative justify-center items-start py-[20px];
             .logo-subcontainer {
                 @apply flex-col justify-center items-center hidden;
                 svg {
@@ -85,6 +85,11 @@
                     .checkbox-input {
                         @apply font-bold text-neutral-800 text-[20px]/[30px];
                     }
+                    .captcha-image {
+                        img {
+                            @apply w-[80px] h-[80px];
+                        }
+                    }
                 }
                 .button-flex {
                     @apply flex flex-col gap-[10px];
@@ -106,7 +111,7 @@
             }
         }
         .right-subcontainer {
-            @apply flex flex-col gap-[30px] px-[60px] py-[110px] justify-center  w-1/2 relative bg-[#FAFBFE];
+            @apply flex flex-col gap-[15px] px-[60px] justify-center  w-1/2 relative py-[20px] bg-[#FAFBFE];
             .title-subcontainer {
                 @apply flex flex-col gap-[18px] text-center;
                 h1 {
@@ -133,11 +138,102 @@
 
     
     @layer components {
+        &.medium-responsive {
+            .left-subcontainer {
+                @apply gap-[20px];
+                .logo-subcontainer {
+                    @apply flex;
+                }
+                .title-subcontainer {
+                    h1 {
+                        @apply text-[24px]/[36px];
+                    }
+                    p {
+                        @apply text-[16px]/[24px] ;
+                    }
+                }
+                .form-subcontainer {
+                    @apply gap-[20px];
+                    .group-input {
+                        span {
+                            @apply !top-[9px];
+                            svg {
+                                @apply w-[17px] h-[17px];
+                            }
+                        }
+                        input {
+                            @apply text-[12.96px]/[19.43px] !h-[34px]  rounded-[5px];
+                        }
+                    }
+                    
+                    .keepme-login {
+                        .checkbox-input {
+                            @apply text-[12.96px]/[19.43px];
+                        }
+                    }
+                    .captcha-checkbox {
+                        @apply py-[8px];
+                        .checkbox-input {
+                            @apply text-[12.96px]/[19.43px];
+                            .checkmark {
+                                @apply w-[20px] h-[20px] top-[4px];
+                                &::after {
+                                    @apply left-[6px] top-[2px];
+                                }
+                            }
+
+                        }
+                        .captcha-image {
+                            img {
+                                @apply w-[60px] h-[60px];
+                            }
+                        }
+                    }
+                    .button-flex {
+                        @apply flex flex-col gap-[10px];
+                        button {
+                            @apply !h-[34.49px] text-[11.66px]/[17.49px] rounded-[8px];
+                        }
+                        a {
+                            @apply text-[12.96px]/[19.43px];
+                        }
+                    }
+                    label {
+                        &.new-user {
+                            @apply text-[12.96px]/[19.43px];
+                        }
+                    }
+                }
+            }
+            .right-subcontainer {
+                .title-subcontainer {
+                    @apply flex flex-col gap-[18px] text-center;
+                    h1 {
+                        @apply text-[24px]/[36px];
+                    }
+                    p {
+                        @apply text-[16px]/[24px] ;
+                    }
+                }
+                .image-subcontainer {
+                    @apply flex flex-col justify-center items-center;
+                    img {
+                        @apply w-[400px] h-[300px] object-contain;
+                    }
+                }
+                .logo-subcontainer {
+                    @apply flex flex-col justify-center items-center;
+                    svg {
+                        @apply w-[140px] h-[42px];
+                    }
+                }
+            }
+        }
         &.mobile-responsive {
             .left-subcontainer {
                 @apply w-full py-[26px] px-[20px] gap-[34px];
                 .logo-subcontainer {
-                    @apply flex;
+                    @apply  absolute block top-[25px];
                 }
                 .title-subcontainer {
                     h1 {
@@ -168,6 +264,11 @@
                     .captcha-checkbox {
                         .checkbox-input {
                             @apply text-[17.02px]/[25.53px];
+                        }
+                        .captcha-image {
+                            img {
+                                @apply w-[60px] h-[60px];
+                            }
                         }
                     }
                     .button-flex {

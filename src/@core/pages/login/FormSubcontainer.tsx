@@ -30,7 +30,7 @@ const FormSubcontainer = (props: {keepmeText:string, notRobotText:string, forgot
                     <span className="checkmark"></span>
                 </label>
                 <div className='captcha-image'>
-                    <Image src='/images/others/captcha.png' alt='captcha' width={80} height={88}/>
+                    <Image src='/images/others/captcha.png' alt='captcha' width={0} height={0} sizes='100%'/>
                 </div>
             </div>
             <div className='button-flex'>

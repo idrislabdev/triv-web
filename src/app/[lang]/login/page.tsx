@@ -72,7 +72,7 @@ export default async function LoginPage({ params }: any) {
         }
       </head>
       <body>
-        <main className='login-page sm:mobile-responsive md:mobile-responsive light-theme'>
+        <main className='login-page sm:mobile-responsive lg:medium-responsive light-theme'>
           <Login dictLogin={dictLogin}/>
         </main>
       </body>
