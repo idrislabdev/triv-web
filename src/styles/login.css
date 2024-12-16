@@ -231,9 +231,9 @@
         }
         &.mobile-responsive {
             .left-subcontainer {
-                @apply w-full py-[26px] px-[20px] gap-[34px];
+                @apply w-full py-[26px] px-[20px] gap-[34px] justify-start;
                 .logo-subcontainer {
-                    @apply  absolute block top-[25px];
+                    @apply block pb-[20px];
                 }
                 .title-subcontainer {
                     h1 {

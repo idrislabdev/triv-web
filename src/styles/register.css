@@ -526,14 +526,14 @@
         }
         &.mobile-responsive {
             .left-subcontainer {
-                @apply w-full !py-[26px] !px-[20px];
+                @apply w-full !py-[26px] !px-[20px] justify-start;
                 &.fit-screen {
                     .logo-subcontainer {
                         @apply absolute top-[26px];
                     }
                 }
                 .logo-subcontainer {
-                    @apply  absolute block top-[25px];
+                    @apply block pb-[20px];
                 }
                 .title-subcontainer {
                     @apply flex flex-col !gap-[10px];
