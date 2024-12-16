@@ -161,7 +161,7 @@
                 }
             }
             .section-device {
-                @apply flex-1 flex flex-col justify-center items-center relative;
+                @apply flex-1 flex flex-col justify-center items-center;
                 img {
                     @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-0 bottom-0;
                 }
@@ -722,7 +722,7 @@
                         }
                     }
                     .section-device {
-                        @apply flex-1 flex flex-col justify-center items-center;
+                        @apply flex-1 flex flex-col justify-center items-center relative;
                         img {
                             @apply w-[408px] h-[272px] right-0 bottom-0;
                         }
