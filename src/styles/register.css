@@ -352,7 +352,7 @@
             .left-subcontainer {
                 @apply py-[26px] px-[50px] !gap-[10px];
                 .title-subcontainer {
-                    @apply flex flex-col gap-[18px];
+                    @apply !gap-[12px];
                     h1 {
                         @apply !text-[18px]/[27px];
                     }
@@ -364,11 +364,11 @@
                     }
                 }
                 .form-subcontainer {
-                    @apply gap-[25.91px];
+                    @apply !gap-[10px];
                     form {
-                        @apply gap-[10px];
+                        @apply !gap-[10px];
                         .form-name {
-                            @apply gap-[5px];
+                            @apply !gap-[5px];
                             label {
                                 @apply !text-[12.96px]/[19.43px];
                             }
@@ -380,7 +380,7 @@
                             }
                         }
                         .form-email {
-                            @apply flex flex-col gap-[5px];
+                            @apply flex flex-col !gap-[5px];
                             label {
                                 @apply !text-[12.96px]/[19.43px];
                             }
@@ -389,7 +389,7 @@
                             }
                         }
                         .form-password {
-                            @apply flex flex-col gap-[5px];
+                            @apply flex flex-col !gap-[5px];
                             label {
                                 @apply !text-[12.96px]/[19.43px];
                             }
@@ -408,7 +408,7 @@
                             }
                         }
                         .form-jobs {
-                            @apply flex flex-col gap-[10px];
+                            @apply flex flex-col !gap-[5px];
                             label {
                               @apply !text-[12.96px]/[19.43px];
                             }
