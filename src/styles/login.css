@@ -140,20 +140,20 @@
     @layer components {
         &.medium-responsive {
             .left-subcontainer {
-                @apply gap-[20px];
+                @apply !gap-[20px];
                 .logo-subcontainer {
                     @apply flex;
                 }
                 .title-subcontainer {
                     h1 {
-                        @apply text-[24px]/[36px];
+                        @apply !text-[24px]/[36px];
                     }
                     p {
-                        @apply text-[16px]/[24px] ;
+                        @apply !text-[16px]/[24px] ;
                     }
                 }
                 .form-subcontainer {
-                    @apply gap-[20px];
+                    @apply !gap-[20px];
                     .group-input {
                         span {
                             @apply !top-[9px];
@@ -168,39 +168,39 @@
                     
                     .keepme-login {
                         .checkbox-input {
-                            @apply text-[12.96px]/[19.43px];
+                            @apply !text-[12.96px]/[19.43px];
                         }
                     }
                     .captcha-checkbox {
-                        @apply py-[8px];
+                        @apply !py-[8px];
                         .checkbox-input {
-                            @apply text-[12.96px]/[19.43px];
+                            @apply !text-[12.96px]/[19.43px];
                             .checkmark {
-                                @apply w-[20px] h-[20px] top-[4px];
+                                @apply !w-[20px] !h-[20px] !top-[4px];
                                 &::after {
-                                    @apply left-[6px] top-[2px];
+                                    @apply !left-[6px] !top-[2px];
                                 }
                             }
 
                         }
                         .captcha-image {
                             img {
-                                @apply w-[60px] h-[60px];
+                                @apply !w-[60px] !h-[60px];
                             }
                         }
                     }
                     .button-flex {
                         @apply flex flex-col gap-[10px];
                         button {
-                            @apply !h-[34.49px] text-[11.66px]/[17.49px] rounded-[8px];
+                            @apply !h-[34.49px] !text-[14px]/[21px] !rounded-[8px];
                         }
                         a {
-                            @apply text-[12.96px]/[19.43px];
+                            @apply !text-[12.96px]/[19.43px];
                         }
                     }
                     label {
                         &.new-user {
-                            @apply text-[12.96px]/[19.43px];
+                            @apply !text-[12.96px]/[19.43px];
                         }
                     }
                 }
@@ -209,10 +209,10 @@
                 .title-subcontainer {
                     @apply flex flex-col gap-[18px] text-center;
                     h1 {
-                        @apply text-[24px]/[36px];
+                        @apply !text-[24px]/[36px];
                     }
                     p {
-                        @apply text-[16px]/[24px] ;
+                        @apply !text-[16px]/[24px] ;
                     }
                 }
                 .image-subcontainer {

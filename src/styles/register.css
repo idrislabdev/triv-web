@@ -354,13 +354,13 @@
                 .title-subcontainer {
                     @apply flex flex-col gap-[18px];
                     h1 {
-                        @apply text-[18px]/[27px];
+                        @apply !text-[18px]/[27px];
                     }
                     h1 {
-                        @apply text-[20px]/[30px];
+                        @apply !text-[20px]/[30px];
                     }
                     p {
-                        @apply text-[12.96px]/[19.43px];
+                        @apply !text-[12.96px]/[19.43px];
                     }
                 }
                 .form-subcontainer {
@@ -370,7 +370,7 @@
                         .form-name {
                             @apply gap-[5px];
                             label {
-                                @apply text-[12.96px]/[19.43px];
+                                @apply !text-[12.96px]/[19.43px];
                             }
                             .form-input {
                                 @apply flex gap-[25.91px];
@@ -382,7 +382,7 @@
                         .form-email {
                             @apply flex flex-col gap-[5px];
                             label {
-                                @apply text-[12.96px]/[19.43px];
+                                @apply !text-[12.96px]/[19.43px];
                             }
                             input {
                                 @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
@@ -391,7 +391,7 @@
                         .form-password {
                             @apply flex flex-col gap-[5px];
                             label {
-                                @apply text-[12.96px]/[19.43px];
+                                @apply !text-[12.96px]/[19.43px];
                             }
                             .form-input {
                                 .group-input {
@@ -410,7 +410,7 @@
                         .form-jobs {
                             @apply flex flex-col gap-[10px];
                             label {
-                              @apply text-[12.96px]/[19.43px];
+                              @apply !text-[12.96px]/[19.43px];
                             }
                             select {
                                 @apply w-full text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
@@ -427,7 +427,7 @@
                     }
                     label {
                         &.has-user {
-                            @apply text-[12.96px]/[19.43px];
+                            @apply !text-[12.96px]/[19.43px];
                         }
                     }
                 }
@@ -484,10 +484,10 @@
                 .title-subcontainer {
                     @apply flex flex-col gap-[18px] text-center;
                     h1 {
-                        @apply text-[24px]/[32px];
+                        @apply !text-[24px]/[32px];
                     }
                     p {
-                        @apply text-[14px]/[21px];
+                        @apply !text-[14px]/[21px];
                     }
                     .terdaftar-diawasi {
                         @apply flex gap-[17.75px] items-center justify-center;
