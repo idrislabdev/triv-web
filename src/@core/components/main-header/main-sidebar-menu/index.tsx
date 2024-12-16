@@ -140,8 +140,21 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     </svg>
                                 </a>
                                 <ul id="submenu--emoney" className='sidebar-submenu !hidden'>
-                                    <li>Perfect Money</li>
-                                    <li>Paypal</li>
+                                    <li><Link href={`/${lang}/home/paypal`}>Paypal</Link></li>
+                                    <li><Link href={`/${lang}/home/bitcoin`}>Bitcoin</Link></li>
+                                    <li><Link href={`/${lang}/home/ethereum`}>Ethereum</Link></li>
+                                    <li><Link href={`/${lang}/home/stellar`}>Stellar</Link></li>
+                                    <li><Link href={`/${lang}/home/ripple`}>Ripple</Link></li>
+                                    <li><Link href={`/${lang}/home/eos`}>Eos</Link></li>
+                                    <li><Link href={`/${lang}/home/dash`}>Dash</Link></li>
+                                    <li><Link href={`/${lang}/home/tether`}>Tether</Link></li>
+                                    <li><Link href={`/${lang}/home/chainlink`}>Chainlink</Link></li>
+                                    <li><Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link></li>
+                                    <li><Link href={`/${lang}/home/matic-polygon`}>Matic-Polygon</Link></li>
+                                    <li><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
+                                    <li><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
+                                    <li><Link href={`/${lang}/home/solana`}>Solana</Link></li>
+                                    <li><Link href={`/${lang}/home/axielnifinity`}>Axielnifinity</Link></li>
                                 </ul>
                             </li>
                             <li>
@@ -160,8 +173,9 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     </svg>
                                 </a>
                                 <ul id="submenu--product" className='sidebar-submenu !hidden'>
-                                    <li>Mobile Top Up</li>
-                                    <li>Electricty Token</li>
+                                    <li><Link href={`/${lang}/home/product-pulsa`}>Pulsa</Link></li>
+                                    <li><Link href={`/${lang}/home/product-token-listrik`}>Token Listrik</Link></li>
+                                    <li><Link href={`/${lang}/home/product-tagihan`}>Tagihan</Link></li>
                                 </ul>
                             </li>
                                 <li><a onClick={_ => goToLink('staking')}>Staking</a></li>

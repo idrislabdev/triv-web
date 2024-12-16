@@ -532,7 +532,7 @@
         @apply mr-[0px];
     }
     .sidebar-menu-top {
-        @apply flex flex-col gap-[46px];
+        @apply flex flex-col gap-[46px] overflow-y-auto;
         .sidebar-header {
             @apply flex justify-between items-center;
             .sidebar-header-logo {
@@ -580,14 +580,14 @@
         .sidebar-list {
             @apply overflow-y-auto;
             ul {
-                @apply text-black flex flex-col gap-[30px];
+                @apply text-black flex flex-col gap-[25px];
                 li {
                     @apply text-[14px]/[21px] font-medium;
                     ul {
                         &.sidebar-submenu {
-                            @apply p-[5px] gap-[0px] transition-all duration-500;
+                            @apply p-[5px] transition-all duration-500 gap-[5px];
                             li {
-                                @apply text-[12px]/[18px] font-normal;
+                                @apply text-[13px]/[18px] font-normal;
 
                             }
                         }
