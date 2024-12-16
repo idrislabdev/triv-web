@@ -513,13 +513,13 @@
                 .image-subcontainer {
                     @apply flex flex-col justify-center items-center;
                     img {
-                        @apply w-[474px] h-[250px];
+                        @apply !w-[474px] !h-[250px];
                     }
                 }
                 .logo-subcontainer {
                     @apply flex flex-col justify-center items-center;
                     svg {
-                        @apply w-[130px] h-[40px];
+                        @apply !w-[130px] !h-[40px];
                     }
                 }
             }

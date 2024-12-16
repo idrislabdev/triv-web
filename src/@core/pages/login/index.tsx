@@ -7,7 +7,24 @@ import Image from 'next/image'
 
 const Login = (props: {dictLogin:any}) => {
     const { dictLogin } = props
+    const heightResponsive = () => {
+        const elements = document.getElementsByClassName("login-page");
+        var element = elements[0];
+        if (element) {
+            if(window.innerHeight < 850) {
+                document.getElementsByClassName("login-page")[0].classList.add('medium-responsive')
+            } else {
+                document.getElementsByClassName("login-page")[0].classList.remove('medium-responsive')
+            }
+        }
+    }
+    useEffect(()=> {
+        window.addEventListener('resize', ()=> {
+            heightResponsive();
+        })
+    }, [])
     useEffect(() => {
+        heightResponsive();
         if (localStorage.getItem('mode') === 'dark-theme') {
             document.body.classList.add("dark-theme");
         }

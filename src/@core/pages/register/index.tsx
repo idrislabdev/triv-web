@@ -7,16 +7,33 @@ import FormRegisterSubcontainer from './FormRegisterSubcontainer'
 const Register = (props: {dictRegister:any}) => {
     const { dictRegister } = props
     const pekerjaans = [
-        'Pelajar/Mahasiswa',
-        'Karyawan Swasta',
-        'Profesional',
-        'Wiraswasta',
-        'TNI/Polri',
-        'Pensiunan',
-        'Tidak Bekerja',
-        'Lainnya',
-      ]
+      'Pelajar/Mahasiswa',
+      'Karyawan Swasta',
+      'Profesional',
+      'Wiraswasta',
+      'TNI/Polri',
+      'Pensiunan',
+      'Tidak Bekerja',
+      'Lainnya',
+    ]
+    const heightResponsive = () => {
+      const elements = document.getElementsByClassName("register-page");
+      var element = elements[0];
+      if (element) {
+        if(window.innerHeight < 850) {
+            document.getElementsByClassName("register-page")[0].classList.add('medium-responsive')
+        } else {
+            document.getElementsByClassName("register-page")[0].classList.remove('medium-responsive')
+        }
+        }
+    }
+    useEffect(()=> {
+      window.addEventListener('resize', ()=> {
+        heightResponsive();
+      })
+    }, [])
     useEffect(() => {
+        heightResponsive();
         if (localStorage.getItem('mode') === 'dark-theme') {
             document.body.classList.add("dark-theme");
         }

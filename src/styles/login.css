@@ -218,13 +218,13 @@
                 .image-subcontainer {
                     @apply flex flex-col justify-center items-center;
                     img {
-                        @apply w-[400px] h-[300px] object-contain;
+                        @apply !w-[400px] !h-[300px] object-contain;
                     }
                 }
                 .logo-subcontainer {
                     @apply flex flex-col justify-center items-center;
                     svg {
-                        @apply w-[140px] h-[42px];
+                        @apply !w-[140px] !h-[42px];
                     }
                 }
             }
