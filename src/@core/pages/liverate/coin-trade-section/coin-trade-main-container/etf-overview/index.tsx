@@ -1,4 +1,4 @@
-import { ChartColumnGrowIcon, ChartDoughnut, ChartDoughnutIcon, ChartPie3Icon, ChartStatsIcon, InflowIcon, OutflowIcon } from '@/@core/components/custom-icons'
+import { ChartColumnGrowIcon, ChartDoughnutIcon, ChartPie3Icon, ChartStatsIcon, InflowIcon, OutflowIcon } from '@/@core/components/custom-icons'
 import React from 'react'
 import EtfCard from './etf-card'
 
