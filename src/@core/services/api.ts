@@ -1,7 +1,10 @@
 import axiosInstance from "../utils/axios"
 
-export const getLiverateMini = async () => {
-    const resp = await axiosInstance.get(`/v2/liverate/mini`)
+export const getLiverateMini = async (limit?:number) => {
+    let strLimit = ""
+    if (limit) 
+        strLimit = `?limit=${limit}`
+    const resp = await axiosInstance.get(`/v2/liverate/mini${strLimit}`)
     return resp
 }
 

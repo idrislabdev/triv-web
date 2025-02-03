@@ -6,6 +6,8 @@ import CoinTradeOverview from './overview'
 import CoinTradeNews from './news'
 import CoinTradeInsight from './insight'
 import CoinTradeSocialMedia from './social-media'
+import CoinAbout from './about'
+import EtfOverview from './etf-overview'
 
 const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asset:any, coin:ICoin}) => {
     const { lang, objLang, blogs, asset, coin } = props
@@ -30,13 +32,19 @@ const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[],
                     <li className={tabActive == 'news' ? 'active' : ''}>
                         <a onClick={() => setTabActive('news')}>News</a>
                     </li>
-                    <li><a>Bitcoin ETF</a></li>
-                    <li><a>About</a></li>
+                    <li className={tabActive == 'etf_overview' ? 'active' : ''}>
+                        <a onClick={() => setTabActive('etf_overview')}>Bitcoin ETF</a>
+                    </li>
+                    <li className={tabActive == 'about' ? 'active' : ''}>
+                        <a onClick={() => setTabActive('about')}>About</a>
+                    </li>
                 </ul>
                 {tabActive == 'overview' &&  <CoinTradeOverview lang={lang} objLang={objLang} asset={asset} /> }
                 {tabActive == 'insight' &&  <CoinTradeInsight lang={lang}  /> }
                 {tabActive == 'news' &&  <CoinTradeNews lang={lang} blogs={blogs} /> }
                 {tabActive == 'social_media' &&  <CoinTradeSocialMedia lang={lang} /> }
+                {tabActive == 'about' &&  <CoinAbout /> }
+                {tabActive == 'etf_overview' &&  <EtfOverview /> }
             </div>    
         </div>
     )

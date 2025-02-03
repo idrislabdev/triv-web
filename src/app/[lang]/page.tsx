@@ -3,7 +3,7 @@ import { getLiverateMini } from "@/@core/services/api";
 import { getDictionaryHome } from "../dictionaries";
 
 export default async function  HomeLang({ params }: any) {
-  const resp =  await getLiverateMini();
+  const resp =  await getLiverateMini(50);
   const liverates = resp.data.data
 
   const objHome = await getDictionaryHome(params.lang);
