@@ -403,8 +403,227 @@
             @apply flex gap-[26px];
             .coin-main-container {
                 @apply flex flex-col gap-[70px] w-2/3;
+                &.trade {
+                    @apply gap-[38px];
+                }
                 .chart-subcontainer {
                     @apply border border-neutral-200 rounded-[10px] p-[10px];
+                }
+                .main-subcontainer {
+                    ul {
+                        &.tab-main {
+                            @apply flex gap-[20px] text-[#838899] text-[20px]/[30px] font-medium pb-[30px];
+                            li {
+                                @apply cursor-pointer;
+                                &.active {
+                                    @apply text-[#71BBED] border-b-2 border-b-[#71BBED];
+                                }
+                            }
+                        }
+                    }
+                    .overview-area {
+                        @apply flex flex-col gap-[63px];
+                        .trade-stake-subcontainer {
+                            @apply flex items-center gap-[36px];
+                            .card-trade-stake {
+                                @apply border border-[#F0F1F3] rounded-[10px] flex items-center py-[16px] px-[20px];
+                                .description {
+                                    @apply flex flex-col gap-[16px];
+                                    .title {
+                                        @apply flex flex-col;
+                                        h5 {
+                                            @apply text-[12px]/[18px] font-bold text-[#4B5060];
+                                        }
+                                        p {
+                                            @apply text-[10px]/[20px] font-medium text-[#4B5060];
+                                        }
+                                    }
+                                    button {
+                                        @apply bg-[#71BBED] rounded-[20px] text-white text-[12px]/[18px] font-semibold w-[82px] h-[26px];
+                                    }
+                                }
+                                img {
+                                    &.brankas {
+                                        @apply w-[82px] h-[52px];
+                                    }
+                                    &.iphone-vector {
+                                        @apply w-[65px] h-[70px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .insight-area {
+                        @apply flex flex-col gap-[30px];
+                        .card {
+                            @apply border border-[#EBEEF4] rounded-[8px] p-[10px];
+                            .card-header {
+                                @apply flex flex-col gap-[10px];
+                                .card-title {
+                                    @apply flex items-center justify-between;
+                                    h5 {
+                                        @apply text-[#19202A] text-[12px]/[18px] font-bold;
+                                    }
+                                }
+                                .card-subtitle {
+                                    @apply flex items-center;
+                                    p {
+                                        @apply text-[12px]/[18px] text-[#4B5060] font-medium;
+                                        span {
+                                            @apply text-[#4DAAE9];
+                                        }
+                                    }
+                                }
+                                ul {
+                                    &.tab-time {
+                                        @apply flex items-center gap-[20px] text-[12px]/[18px] font-medium text-[#838899];
+                                        li {
+                                            &.active {
+                                                @apply text-[#4DAAE9] bg-[#F5F7FA] rounded-[8px] font-semibold p-[4px];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.card-money-flow {
+                                .card-footer {
+                                    @apply bg-[#FAFAFAFA] rounded-[8px] px-[10px] py-[14px];
+                                    .info {
+                                        @apply flex flex-col gap-[12px];
+                                        .info-header {
+                                            @apply flex items-center text-[10px]/[15px] text-[#19202A] font-medium;
+                                            label {
+                                                @apply w-1/4;
+                                            }
+                                        }
+                                        .info-body {
+                                            @apply flex items-center text-[10px]/[15px] text-[#4B5060] font-medium;
+                                            label {
+                                                @apply w-1/4;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .row-1 {
+                            @apply flex items-center gap-[30px] w-full;
+                            .card {
+                                @apply w-1/2;
+                            }
+                        }
+                        .row-2 {
+                            @apply w-full;
+                            .card {
+                                @apply w-full h-[272px] justify-between flex flex-col;
+                            }
+                        }
+                    }
+                    .social-media-area {
+                        @apply flex flex-col gap-[30px];
+                        .card {
+                            @apply border border-[#EBEEF4] rounded-[8px] p-[10px];
+                            .card-header {
+                                @apply flex flex-col gap-[10px];
+                                .card-title {
+                                    @apply flex items-center justify-between;
+                                    h5 {
+                                        @apply text-[#19202A] text-[12px]/[18px] font-bold;
+                                    }
+                                }
+                                .card-subtitle {
+                                    @apply flex items-center;
+                                    p {
+                                        @apply text-[12px]/[18px] text-[#4B5060] font-medium;
+                                        span {
+                                            @apply text-[#4DAAE9];
+                                        }
+                                    }
+                                }
+                                ul {
+                                    &.tab-time {
+                                        @apply flex items-center gap-[20px] text-[12px]/[18px] font-medium text-[#838899];
+                                        li {
+                                            &.active {
+                                                @apply text-[#4DAAE9] bg-[#F5F7FA] rounded-[8px] font-semibold p-[4px];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.card-metrics {
+                                .card-body {
+                                    @apply flex flex-col;
+                                    .metric {
+                                        @apply flex items-center gap-[23px];
+                                        img {
+                                            @apply w-[17px] h-[17px];
+                                        }
+                                    }
+                                }
+                               
+                                .card-footer {
+                                    @apply flex flex-col gap-[10px];
+                                    label {
+                                        &.note {
+                                            @apply text-[8px]/[12px] text-[#838899] font-medium;
+                                        }
+                                    }
+                                    .info {
+                                        @apply flex items-center bg-[#FAFAFAFA] rounded-[8px] px-[10px] py-[4px] gap-[8px];
+                                        img {
+                                            @apply w-[24px] h-[24px]
+                                        }
+                                        p {
+                                            @apply text-[10px]/[15px] font-medium text-[#4B5060];
+                                            span {
+                                                @apply text-[#4DAAE9];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.card-analysis {
+                                .card-header {
+                                    p {
+                                        @apply text-[10px]/[15px] font-medium text-[#646A80];
+                                    }
+                                }
+                            }
+                            &.card-performance {
+                                .card-body {
+                                    @apply flex flex-col gap-[20px];
+                                    .row {
+                                        @apply flex flex-col gap-[4px];
+                                        .row-content {
+                                            @apply flex items-center justify-between;
+                                            label,p {
+                                                @apply text-[12px]/[18px] font-semibold text-[#19202A];
+                                            }
+                                            &.child {
+                                                label,p {
+                                                    @apply text-[10px]/[15px] font-medium text-[#838899];
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .row-1 {
+                            @apply flex items-center gap-[30px] w-full;
+                            .card {
+                                @apply w-1/2;
+                            }
+                        }
+                        .row-2 {
+                            @apply w-full;
+                            .card {
+                                @apply w-full h-[272px] gap-[20px] flex flex-col;
+                            }
+                        }
+                    }
                 }
                 .about-subcontainer {
                     @apply flex flex-col gap-[20px];
@@ -423,6 +642,7 @@
                         }
                     }
                 }
+                
                 .activity-subcontainer {
                     @apply flex flex-col gap-[18px];
                     h5 {

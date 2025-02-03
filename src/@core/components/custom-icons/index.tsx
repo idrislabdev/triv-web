@@ -571,6 +571,14 @@ const ChevronRightIcon = () => {
     )
 }
 
+const ChevronUpIcon = () => {
+    return (
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.7134 7.29888L11.6562 6.35607L5.9994 0.699219L0.34254 6.35607L1.28535 7.29888L5.99939 2.58484L10.7134 7.29888Z" fill="#2E3A59"/>
+        </svg>
+    )
+}
+
 const CheckCircleGradientIcon = () => {
     return (
         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -637,5 +645,6 @@ export {
     ChartPPT,
     CheckCircleIcon,
     ChevronRightIcon,
-    CheckCircleGradientIcon
+    CheckCircleGradientIcon,
+    ChevronUpIcon
 }

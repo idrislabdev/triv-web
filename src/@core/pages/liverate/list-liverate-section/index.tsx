@@ -96,7 +96,7 @@ const LiverateListSection = (props: {liverates: ILiverate[], lang:string}) => {
                   </div>
                 </div>
                 <div className='col-aksi'>
-                  <Link href={`/${lang}/liverate/${item.slug}`}>Trade</Link>
+                  <Link href={`/${lang}/liverate/${item.slug}/trade`}>Trade</Link>
                 </div>
               </div>
             ))

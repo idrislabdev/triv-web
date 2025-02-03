@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    /* width: 80%; */
+    height: 6px;
+    background: #F5F5F5;
+    border-radius: 4px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    .slider-progress {
+        position: absolute;
+        height: 100%;
+        background: #4DAAE9;
+        border-radius: 4px;
+        width: 50%; /* Default fill */
+    }
+    
+    .slider-thumb {
+        position: absolute;
+        width: 37px;
+        height: 17px;
+        background: #4DAAE9;
+        color: white;
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: bold;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        top: -6px;
+        transform: translateX(-50%);
+    }
+}
+
+.slider-container-lite {
+    position: relative;
+    width: 100%;
+    /* width: 80%; */
+    height: 6px;
+    background: #F5F5F5;
+    border-radius: 4px;
+    margin: 0;
+    cursor: pointer;
+
+    .slider-thumb {
+        position: absolute;
+        width: 3px;
+        height: 17px;
+        background: #C1C3CC;
+        top: -6px;
+        transform: translateX(-50%);
+    }
+}
