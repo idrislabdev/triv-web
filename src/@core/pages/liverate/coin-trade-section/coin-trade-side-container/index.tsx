@@ -61,13 +61,6 @@ const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[
                     }
                 </div>
             </div>
-            <div className='blog-subcontainer'>
-            {
-                blogs.map((item:any, index:number) => (
-                    <CardNewsBlog lang={lang} item={item} key={index}/>
-                ))
-            }
-            </div>
         </div>
     )
 }

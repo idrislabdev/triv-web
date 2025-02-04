@@ -15,10 +15,10 @@ const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[],
     const [tabActive, setTabActive] = useState('overview')
     return (
         <div className='coin-main-container trade'>
-            <div className='chart-subcontainer'>
-                <LiverateCoinChartWrapper symbol={coin.currency.toUpperCase()+'IDR'} />
-            </div>
-            <div className='main-subcontainer'>
+            <div className='header-subcontainer'>
+                <div className='chart-area'>
+                    <LiverateCoinChartWrapper symbol={coin.currency.toUpperCase()+'IDR'} />
+                </div>
                 <ul className='tab-main'>
                     <li className={tabActive == 'overview' ? 'active' : ''}>
                         <a onClick={() => setTabActive('overview')}>Overview</a>
@@ -39,6 +39,8 @@ const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[],
                         <a onClick={() => setTabActive('about')}>About</a>
                     </li>
                 </ul>
+            </div>
+            <div className='main-subcontainer'>
                 {tabActive == 'overview' &&  <CoinTradeOverview lang={lang} objLang={objLang} asset={asset} /> }
                 {tabActive == 'insight' &&  <CoinTradeInsight lang={lang}  /> }
                 {tabActive == 'news' &&  <CoinTradeNews lang={lang} blogs={blogs} /> }

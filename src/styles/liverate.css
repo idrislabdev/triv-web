@@ -404,23 +404,30 @@
             .coin-main-container {
                 @apply flex flex-col gap-[70px] w-2/3;
                 &.trade {
-                    @apply gap-[38px];
+                    @apply gap-[30px];
+
+                    .header-subcontainer {
+                        @apply flex flex-col gap-[38px];
+                        .chart-area {
+                            @apply border border-neutral-200 rounded-[10px] p-[10px];
+                        }
+                        ul {
+                            &.tab-main {
+                                @apply flex gap-[20px] text-[#838899] text-[20px]/[30px] font-medium;
+                                li {
+                                    @apply cursor-pointer;
+                                    &.active {
+                                        @apply text-[#71BBED] border-b-2 border-b-[#71BBED];
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .chart-subcontainer {
                     @apply border border-neutral-200 rounded-[10px] p-[10px];
                 }
                 .main-subcontainer {
-                    ul {
-                        &.tab-main {
-                            @apply flex gap-[20px] text-[#838899] text-[20px]/[30px] font-medium pb-[30px];
-                            li {
-                                @apply cursor-pointer;
-                                &.active {
-                                    @apply text-[#71BBED] border-b-2 border-b-[#71BBED];
-                                }
-                            }
-                        }
-                    }
                     .overview-area {
                         @apply flex flex-col gap-[63px];
                         .trade-stake-subcontainer {
@@ -731,8 +738,7 @@
                             }
                         }
                     }
-                }
-                
+                }         
                 .activity-subcontainer {
                     @apply flex flex-col gap-[18px];
                     h5 {
@@ -1129,7 +1135,7 @@
                 @apply py-[30px] px-[20px];
             }
             .liverate-coin-section {
-                @apply py-[30px] px-[20px];
+                @apply py-[30px] px-[20px] gap-[20px];
                 h2 {
                     @apply text-[14px]/[21px];
                     span {
@@ -1142,6 +1148,25 @@
                     @apply flex-col;
                     .coin-main-container {
                         @apply w-full gap-[40px];
+                        &.trade {
+                            @apply gap-[30px];
+        
+                            .header-subcontainer {
+                                @apply flex-col-reverse gap-[20px];
+                                
+                                ul {
+                                    &.tab-main {
+                                        @apply gap-[14px] text-[14px]/[21px] overflow-x-auto w-full;
+                                        li {
+                                            @apply cursor-pointer w-full flex;
+                                            a {
+                                                @apply block w-max;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         .chart-subcontainer {
                             div {
                                 @apply !h-[360px];
@@ -1198,7 +1223,108 @@
                             }
                         }
                         .blog-subcontainer {
-                            @apply hidden;
+                            /* @apply hidden; */
+                        }
+                        .main-subcontainer {
+                            .overview-area {
+                                @apply gap-[20px];
+                                .trade-stake-subcontainer {
+                                    @apply flex flex-col gap-[20px];
+                                }
+                            }
+                            .insight-area {
+                                @apply flex flex-col gap-[20px];
+                                .row-1 {
+                                    @apply flex-col;
+                                    .card {
+                                        @apply w-full;
+                                    }
+                                }
+                                .row-2 {
+                                    @apply w-full;
+                                    .card {
+                                        @apply w-full h-[272px] justify-between flex flex-col;
+                                    }
+                                }
+                            }
+                            .social-media-area {
+                                @apply flex flex-col gap-[20px];
+                                .row-1 {
+                                    @apply flex-col;
+                                    .card {
+                                        @apply w-full;
+                                    }
+                                }
+                                .row-2 {
+                                    @apply w-full;
+                                    .card {
+                                        @apply w-full h-[272px] gap-[20px] flex flex-col;
+                                    }
+                                }
+                            }
+                            .about-area {
+                                @apply flex flex-col gap-[18px] border border-[#EBEEF4] rounded-[8px] py-[16px] px-[10px];
+                                .content {
+                                    @apply flex flex-col gap-[12px];
+                                    h5 {
+                                        @apply text-[14px]/[21px] font-bold text-[#19202A];
+                                    }
+                                    p {
+                                        @apply text-[12px]/[18px] font-medium text-[#646A80];
+                                    }
+                                }
+                                .badges {
+                                    @apply flex items-center gap-[8px];
+                                    label {
+                                        &.badge {
+                                            @apply flex items-center gap-[4px] bg-[#F0F1F3] rounded-[8px] text-[#2E3339] text-[10px]/[15px] font-medium px-[8px] py-[4px];
+                                        }
+                                    }
+                                }
+                            }
+                            .etf-overview-area {
+                                @apply flex flex-col gap-[20px];
+                                .header {
+                                    @apply flex justify-between items-center;
+                                    h5 {
+                                        @apply text-[16px]/[24px];
+                                    }
+                                    p {
+                                        @apply text-[8px]/[12px];
+                                    }
+                                }
+                                .sub-header {
+                                    @apply flex justify-between items-center;
+                                    h6 {
+                                        @apply text-[14px]/[21px] ;
+                                    }
+                                    
+                                }
+                                .card-overview {
+                                    @apply flex-col gap-[14px];
+                                    .sub-overview{
+                                        @apply w-full;
+                                        .row {
+                                            @apply flex justify-between items-center;
+                                            label {
+                                                @apply flex items-center gap-[10px] text-[12px]/[18px] font-medium text-[#4B5060];
+                                            }
+                                            p {
+                                                @apply text-[12px] font-bold text-[#19202A];
+                                            }
+                                        }
+                                    }
+                                }
+                                .sub-cards {
+                                    @apply flex flex-col gap-[16px];
+                                    .row {
+                                        @apply flex-col gap-[20px];
+                                        .card {
+                                            @apply w-full;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     .coin-side-container {
