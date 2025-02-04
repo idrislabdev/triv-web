@@ -15,7 +15,43 @@
             }
         }
     }
+    .card-trade-stake,
+    .other-coins-subcontainer,
+    .card,
+    .chart-area,
+    .buy-subcontainer,
+    .about-area,
+    .card-overview {
+        @apply !border-[#2E3339];
+    }
+    .card {
+        .card-footer {
+            @apply !bg-[#19202A];
+        }
+    }
+    .badges {
+        label {
+            &.badge {
+                @apply !bg-[#111111] !text-white;
+                span {
+                    svg {
+                       path {
+                            @apply fill-white;
+                       }
+                    }
+                }
+            }
+        }
+    }
 
+    .card-metrics {
+        .card-footer {
+            @apply !bg-[#141414];
+        }
+        .info {
+            @apply !bg-[#19202A];
+        }
+    }
     .liverate-page {
         .liverate-list-section {
             .list-header {

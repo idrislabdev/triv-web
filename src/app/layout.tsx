@@ -6,8 +6,8 @@ import "@/styles/components/swiper.css";
 import "@/styles/components/cards.css";
 import "@/styles/components/forms.css";
 import "@/styles/components/slider-progress.css";
-import MainHeader from "@/@core/components/main-header";
-import Footer from "@/@core/components/footer";
+// import "@/styles/components/highcharts.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 

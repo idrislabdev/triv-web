@@ -2,6 +2,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import { useGlobals } from '@/@core/hooks/useGlobals';
 // import HC_rounded from "highcharts-rounded-corners";
 
 const options = {
@@ -52,8 +53,15 @@ const options = {
 }
 const InflowChart = () => {
     const [ data, setData ] = useState({})
+    const { globals } = useGlobals()
+    
     const fetchData = useCallback(() => {
         const temp = JSON.parse(JSON.stringify(options));
+        if (globals.theme == 'dark') {
+            temp.chart.backgroundColor = '#141414'
+        } else {
+            temp.chart.backgroundColor = '#fff'
+        }
         // temp.plotOptions = {
         //     series: {
         //         marker: false,
@@ -81,14 +89,12 @@ const InflowChart = () => {
         //     },
         // ]
         setData(temp)
-    }, [setData])
+    }, [setData, globals])
 
     useEffect(() => {
         fetchData();
     }, [fetchData])
-    useEffect(() => {
-        // HC_rounded(Highcharts)
-    })
+
   return (
     <HighchartsReact
         highcharts={Highcharts}

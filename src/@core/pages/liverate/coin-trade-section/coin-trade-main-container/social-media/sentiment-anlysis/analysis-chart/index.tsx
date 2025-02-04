@@ -2,6 +2,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import { useGlobals } from '@/@core/hooks/useGlobals';
 // import HC_rounded from "highcharts-rounded-corners";
 
 const options = {
@@ -57,7 +58,7 @@ const options = {
         symbolRadius: 6,
         itemStyle: {
             fontSize: '8px',
-            lineHeight: '12px'
+            lineHeight: '12px',
         }
 
     },
@@ -67,36 +68,17 @@ const options = {
 }
 const AnalysisChart = () => {
     const [ data, setData ] = useState({})
+    const { globals } = useGlobals()
     const fetchData = useCallback(() => {
         const temp = JSON.parse(JSON.stringify(options));
-        // temp.plotOptions = {
-        //     series: {
-        //         marker: false,
-        //         fillColor: {
-        //             linearGradient: [0, 0, 0, 300],
-        //             stops: [
-        //                 [0, Highcharts.color('#39BFB6').setOpacity(1).get('rgba')],
-        //                 [1, Highcharts.color('#B1F8B900').setOpacity(0.3).get('rgba')],
-        //             ]
-        //         }
-        //     }
-        // }
-        // temp.series  = [
-        //     {
-        //         name: 'A',
-        //         data: [3000, 4000, 3500, 4500, 4600, 1500, 2900],
-        //         color: '#04FF00',
-        //         fillColor: {
-        //             linearGradient: [0, 0, 0, 200],
-        //             stops: [
-        //                 [0, Highcharts.color('#39BFB6').setOpacity(1).get('rgba')],
-        //                 [1, Highcharts.color('#B1F8B900').setOpacity(0.3).get('rgba')],
-        //             ]
-        //         }
-        //     },
-        // ]
+        if (globals.theme == 'dark') {
+            temp.chart.backgroundColor = '#141414'
+            temp.legend.itemStyle.color = '#fff'
+        } else {
+            temp.chart.backgroundColor = '#fff'
+        }
         setData(temp)
-    }, [setData])
+    }, [setData, globals])
 
     useEffect(() => {
         fetchData();
