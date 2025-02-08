@@ -22,7 +22,15 @@
         "supply_maksimum" : "Suplai Maksimum",
         "volume_global" : "Volume Global",
         "buy" : "Beli",
-        "sell" : "Jual"
+        "sell" : "Jual",
+        "trade_overview": {
+            "header" : "Aktivitas beli dan jual __code__ seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset",
+            "stake" : "Dapatkan penghasilan tambahan dengan Staking __label__ di Triv, tanpa biaya!", 
+            "market" : "Trading __label__ di Triv Market dengan Limit Order dan Stop Loss"
+        },
+        "trade_about": {
+            "content" : "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan __label__ dilakukan secara kolektif oleh jaringan. __label__ merupakan sumber-terbuka; rancangannya bersifat umum."
+        }
     },
     "faq_section": {
         "title_1" : "What are cryptos?",

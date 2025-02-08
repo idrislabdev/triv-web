@@ -469,7 +469,7 @@
                         .trade-stake-subcontainer {
                             @apply flex items-center gap-[36px];
                             .card-trade-stake {
-                                @apply border border-[#F0F1F3] rounded-[10px] flex items-center py-[16px] px-[20px];
+                                @apply border border-[#F0F1F3] rounded-[10px] flex items-center py-[16px] px-[20px] w-1/2;
                                 .description {
                                     @apply flex flex-col gap-[16px];
                                     .title {

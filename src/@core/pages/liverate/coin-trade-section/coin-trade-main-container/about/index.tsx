@@ -1,15 +1,14 @@
 import { GlobeIcon, WhitepaperIcon } from '@/@core/components/custom-icons'
 import React from 'react'
 
-const CoinAbout = () => {
+const CoinAbout = (props: {objLang:any, asset:any}) => {
+    const { objLang, asset } = props
   return (
     <div className='about-area'>
         <div className='content'>
-            <h5>Tentang Bitcoin</h5>
+            <h5>Tentang {asset.label}</h5>
             <p>
-                Bitcoin menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; 
-                pengelolaan transaksi dan penerbitan bitcoin dilakukan secara kolektif oleh jaringan.
-                Bitcoin merupakan sumber-terbuka; rancangannya bersifat umum.
+             {objLang.trade_about.content.replaceAll("__label__", asset.label)}
             </p>
         </div>
         <div className='badges'>

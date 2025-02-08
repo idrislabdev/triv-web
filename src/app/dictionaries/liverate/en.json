@@ -21,7 +21,15 @@
         "supply_maksimum" : "Suplai Maksimum",
         "volume_global" : "Volume Global",
         "buy" : "Buy",
-        "sell" : "Sell"
+        "sell" : "Sell",
+        "trade_overview": {
+            "header" : "The __code__ buying and selling activity of all Triv users in the last 24 hours shows that Triv users are interested in the asset. However, this is not an invitation to buy or sell the asset.",
+            "stake" : "Earn extra income by Staking __label__ on Triv, no fees!",
+            "market" : "Trading __label__ on Triv Market with Limit Orders and Stop Loss" 
+        },
+        "trade_about": {
+            "content" : "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan bitcoin dilakukan secara kolektif oleh jaringan. Bitcoin merupakan sumber-terbuka; rancangannya bersifat umum."
+        }
     },
     "faq_section": {
         "title_1" : "What are cryptos?",

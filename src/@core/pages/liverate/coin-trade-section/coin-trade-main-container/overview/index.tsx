@@ -34,23 +34,16 @@ const CoinTradeOverview = (props: {lang:string, objLang:any, asset:any}) => {
                         <label className='progress-jual'><span className='progress-jual'></span>{(asset.key_statistic.sell * 100).toFixed(0)}% {objLang.sell}</label>
                     </div>
                 </div>
-                {lang === 'id' && 
-                    <p>
-                        {objLang.acitivty_text_1} {asset.code} {objLang.activity_text_2}
-                    </p>
-                }
-                    {lang === 'en' && 
-                    <p>
-                        {asset.code} {objLang.acitivty_text_1}
-                    </p>
-                }
+                <p>
+                    {objLang.trade_overview.header.replaceAll("__code__", asset.code)}
+                </p>
             </div>
             <div className='trade-stake-subcontainer'>
                 <div className='card-trade-stake'>
                     <div className='description'>
                         <div className='title'>
-                            <h5>Bitcoin Stake</h5>
-                            <p>Dapatkan penghasilan tambahan dengan Staking Bitcoin di Triv, tanpa biaya!</p>
+                            <h5>{asset.label} Stake</h5>
+                            <p>{objLang.trade_overview.stake.replaceAll("__label__", asset.label)}</p>
                         </div>
                         <button>Stake</button>
                     </div>
@@ -59,10 +52,10 @@ const CoinTradeOverview = (props: {lang:string, objLang:any, asset:any}) => {
                 <div className='card-trade-stake'>
                     <div className='description'>
                         <div className='title'>
-                            <h5>Bitcoin Market</h5>
-                            <p>Trading Bitcoin di Triv Market dengan Limit Order dan Stop Loss</p>
+                            <h5>{asset.label} Market</h5>
+                            <p>{objLang.trade_overview.market.replaceAll("__label__", asset.label)}</p>
                         </div>
-                        <button>Stake</button>
+                        <button>Trade</button>
                     </div>
                     <Image src='/images/3d-icons/iphone-vector.png' className='iphone-vector' alt='iphone vector' width={0} height={0} sizes='100%'/>
                 </div>
