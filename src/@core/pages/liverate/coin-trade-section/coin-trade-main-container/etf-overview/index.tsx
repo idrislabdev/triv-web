@@ -46,16 +46,16 @@ const EtfOverview = () => {
                 <div className='row'>
                     <label>
                         <span><InflowIcon /></span>
-                        Total Volume
+                        Total Inflow
                     </label>
                     <p className='!text-[#318AC6]'>$3.30B</p>
                 </div>
                 <div className='row'>
                     <label>
                         <span><OutflowIcon /></span>
-                        Total Marketcap
+                        Total Outflow
                     </label>
-                    <p className='!!text-[#EB5757]'>$71.72B</p>
+                    <p className='!text-[#EB5757]'>$71.72B</p>
                 </div>
                 <div className='row'>
                     <label>
