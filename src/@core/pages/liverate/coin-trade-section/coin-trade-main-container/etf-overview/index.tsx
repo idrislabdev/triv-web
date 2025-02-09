@@ -60,7 +60,7 @@ const EtfOverview = () => {
                 <div className='row'>
                     <label>
                         <span><ChartDoughnutIcon /></span>
-                        Total AUM
+                        Net Inflow
                     </label>
                     <p className='!text-[#318AC6]'>$52.17B</p>
                 </div>
