@@ -4,12 +4,16 @@ import React from 'react'
 
 import { dataMain, dataNews, dataSticky, dataCategories } from '../samples'
 import { getDictionariesBlog } from '@/app/dictionaries';
-import BlogNewsNewDetailSection from '@/@core/pages/blog/news-new-detail-section'
+import BlogNewsDetailSection from '@/@core/pages/blog/news-detail-section'
 import '@/styles/blog.css'
+import BlogBaruCryptoSection from '@/@core/pages/blog/baru-crypto-section';
+import BlogInvestasiNowSection from '@/@core/pages/blog/investasi-now-section';
 
 export default async function  BlogSlug({ params }: any) {
     const {
         blog_section,
+        baru_crypto_section,
+        start_now_section,
     } = await getDictionariesBlog(params.lang);
     return (
     <html lang={params.lang}>
@@ -51,7 +55,7 @@ export default async function  BlogSlug({ params }: any) {
         <body>
             <MainHeader classText="header-white" lang={params.lang}/>
             <main className='blog-page detail sm:mobile-responsive md:mobile-responsive light-theme'>
-                <BlogNewsNewDetailSection 
+                <BlogNewsDetailSection 
                     main={dataMain} 
                     news={dataNews} 
                     stickies={dataSticky} 
@@ -59,6 +63,8 @@ export default async function  BlogSlug({ params }: any) {
                     objLang={blog_section} 
                     lang={params.lang} 
                 />
+                <BlogBaruCryptoSection objLang={baru_crypto_section} />
+                <BlogInvestasiNowSection objLang={start_now_section} />
             </main>
             <Footer />
         </body>

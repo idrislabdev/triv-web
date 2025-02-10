@@ -2,7 +2,7 @@ import CardNewsMain from '@/@core/components/cards/card-news-main'
 import React from 'react'
 import CardNewsSecondary from '@/@core/components/cards/card-news-secondary';
 import CardNewsSticky from '@/@core/components/cards/card-news-sticky';
-const BlogNewsSection = (props: {lang: string, main:any, news:any[], stickies:any[], categories:string[], objLang:any}) => {
+const BlogNewsNewSection = (props: {lang: string, main:any, news:any[], stickies:any[], categories:string[], objLang:any}) => {
   const { lang, main, news, stickies, categories, objLang } = props;
   return (
     <section className='blog-news-section'>
@@ -54,4 +54,4 @@ const BlogNewsSection = (props: {lang: string, main:any, news:any[], stickies:an
   )
 }
 
-export default BlogNewsSection
+export default BlogNewsNewSection

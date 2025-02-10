@@ -19,6 +19,42 @@
         }
     }
     .blog-page {
+        .blog-news-new-section {
+            .blog-main-container {
+                .main-subcontainer {
+                    .news-detail-content {
+                        .detail-content {
+                            .ringkasan-content {
+                                @apply bg-slate-800;
+                            }
+                        }
+                    }
+                    .news-comment-column {
+                        &.disabled {
+                            @apply bg-slate-800
+                        }
+                    }
+                }
+            }
+            .blog-side-container {
+                .blog-invest-login {
+                    @apply bg-[#111111] border border-[#EBEEF4];
+                    img {
+                        &.crypto {
+                            @apply w-[154px] h-[130px];
+                        }
+                    }
+                    .barcode-appstore {
+                        @apply gap-[15px];
+                        img {
+                            &.barcode {
+                                @apply bg-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .blog-news-section {
             .blog-main-container {
                 .main-subcontainer {
@@ -214,6 +250,134 @@
                     @apply flex flex-col gap-[20px];
                     li {
                         @apply text-[18px]/[27px] font-medium text-black;
+                    }
+                }
+            }
+        }
+    }
+    .blog-news-new-section {
+        @apply  py-[50px] px-[100px] flex gap-[64px];
+        .blog-main-container {
+            @apply flex flex-col gap-[60px] flex-1;
+            .main-subcontainer {
+                @apply flex flex-col gap-[30px];
+                h1 {
+                    @apply text-[38px]/[57px] text-black font-bold;
+        
+                }
+                .news-detail-content {
+                    @apply flex flex-col gap-[20px];
+                    .header-content {
+                        @apply flex flex-col gap-[40px];
+                        h2 {
+                            @apply text-[28px]/[42px] text-black font-bold;
+                
+                        }
+                        img {
+                            @apply h-[410px] w-full object-cover rounded-[10px];
+                        }
+                    }
+                    .detail-content {
+                        @apply flex flex-col ;
+                        .ringkasan-content {
+                            @apply bg-[#FAFBFE] px-[30px] py-[10px] mb-[10px];
+                            p {
+                                @apply text-[14px]/[21px] text-primary mb-0;
+                            }
+                            ul {
+                                @apply text-[14px]/[21px] font-medium text-primary list-disc pl-[20px];
+                            }
+                        }
+                        h5 {
+                            @apply text-[24px]/[36px] font-medium mb-[10px] text-neutral-700;
+                        }
+                        p {
+                            @apply text-[14px]/[21px] text-neutral-700 font-medium mb-[30px];
+                        }
+                        img {
+                            @apply h-[259px] w-full object-contain;
+                        }
+                    }
+                }
+                .news-detail-footer {
+                    @apply flex justify-between;
+                    .user-info {
+                        @apply flex gap-[4px] items-center;
+                        svg {
+                            @apply w-[25px] h-[25px];
+                        }
+                        span {
+                            @apply text-[14px]/[21px] text-neutral-700 font-bold;
+                        }
+                    }
+                    .socialmedia-list {
+                        @apply flex items-center gap-[10px];
+                        a {
+                            svg {
+                                @apply w-[24px] h-[24px];
+                                path {
+                                    @apply fill-neutral-700;
+                                }
+                            }
+                        }
+                    }
+                }
+                .news-comment-column {
+                    &.disabled {
+                        @apply bg-[#F3F3F3] h-[37px] flex flex-col justify-center items-center;
+                        span {
+                            @apply text-[14px]/[21px] text-neutral-700 font-bold;
+                        }
+                    }
+                }
+            }
+            .daily-subcontainer {
+                @apply flex flex-col gap-[30px];
+                h2 {
+                    @apply text-[24px]/[36px] text-black font-bold;
+        
+                }
+            }
+        }
+        .blog-side-container {
+            @apply flex flex-col gap-[30px] w-[412px];
+            .blog-invest-login {
+                @apply mt-[120px] flex flex-col gap-[38.5px] bg-[#F0F1F3] border border-[#EBEEF4] p-[30px] justify-center items-center text-center rounded-[10px];
+                img {
+                    &.crypto {
+                        @apply w-[197px] h-[167px];
+                    }
+                }
+                h5 {
+                    @apply text-[20px]/[30px] font-semibold text-black;
+                }
+                .button-group {
+                    @apply flex items-center gap-[30px] w-full;
+                    a {
+                        @apply w-1/2 h-[54px] text-[18px]/[27px] font-bold rounded-[14px] flex items-center justify-center cursor-pointer;
+                        &.btn-login {
+                            @apply border border-[#71BBED] text-[#71BBED];
+                        }
+                        &.btn-daftar {
+                            @apply bg-[#71BBED] text-white;
+                        }
+                    }
+                }
+                p {
+                    @apply text-[16px]/[24px] font-medium text-black;
+                }
+                .barcode-appstore {
+                    @apply flex items-center gap-[20px];
+                    img {
+                        &.barcode {
+                            @apply w-[117px] h-[117px];
+                        }
+                    }
+                    .appstore-list {
+                        @apply flex flex-col justify-between h-[117px];
+                        img {
+                            @apply w-[164px] h-[47px];
+                        }
                     }
                 }
             }
@@ -457,6 +621,114 @@
                             @apply flex flex-row flex-wrap gap-0;
                             li {
                                 @apply text-[12px]/[18px] w-1/2 mb-[14px];
+                            }
+                        }
+                    }
+                }
+            }
+            .blog-news-new-section {
+                @apply  pt-[0px] pb-[20px] px-[20px] flex-col gap-[30px];
+                .blog-main-container {
+                    @apply w-full gap-[30px];
+                    .main-subcontainer {
+                        @apply gap-[17px];
+                        h1 {
+                            @apply text-[16px]/[24px];
+                
+                        }
+                        .card-news-main {
+                            img {
+                                @apply h-[199px] w-full;
+                            }
+                            .card-content {
+                                @apply flex flex-col gap-[10px];
+                                h5 {
+                                    @apply text-[12px]/[18px];
+                                }
+                                p {
+                                    @apply text-[10px]/[15px];
+                                }
+                            }
+                        }
+                        .news-detail-content {
+                            @apply flex flex-col gap-[20px];
+                            .header-content {
+                                @apply flex-col-reverse gap-[20px];
+                                h2 {
+                                    @apply text-[12px]/[18px] text-black font-bold;
+                        
+                                }
+                                img {
+                                    @apply h-[199px] w-full object-cover rounded-[10px];
+                                }
+                            }
+
+                            .detail-content {
+                                @apply flex flex-col;
+                                h5 {
+                                    @apply text-[12px]/[18px] font-medium mb-[10px] ;
+                                }
+                                p {
+                                    @apply text-[12px]/[18px] font-medium mb-[10px];
+                                }
+                            }
+                        }
+                    }
+                    .daily-subcontainer {
+                        @apply gap-[18px];
+                        h2 {
+                            @apply text-[16px]/[24px];
+                        }
+                        .card-news-secondary {
+                            @apply flex gap-[10px];
+                            .card-content {
+                                @apply gap-[4px];
+                                h5 {
+                                    @apply text-[10px]/[15px];
+                                }
+                                p {
+                                    @apply text-[10px]/[15px];
+                                }
+                            }
+                            img {
+                                @apply h-[60px] w-[110px] rounded-[4px];
+                            }
+                        }
+                    }
+                }
+                .blog-side-container {
+                    @apply w-full;
+                    .blog-invest-login {
+                        @apply p-[23.5px] gap-[30px] mt-0;
+                        img {
+                            &.crypto {
+                                @apply w-[154px] h-[130px];
+                            }
+                        }
+                        h5 {
+                            @apply text-[15.63px]/[23.45px];
+                        }
+                        .button-group {
+                            @apply gap-[23px];
+                            a {
+                                @apply h-[42px];
+                            }
+                        }
+                        p {
+                            @apply text-[12.5px]/[18.76px];
+                        }
+                        .barcode-appstore {
+                            @apply gap-[15px];
+                            img {
+                                &.barcode {
+                                    @apply w-[91px] h-[91px];
+                                }
+                            }
+                            .appstore-list {
+                                @apply flex flex-col justify-between h-[91px];
+                                img {
+                                    @apply w-[130px] h-[39px];
+                                }
                             }
                         }
                     }
