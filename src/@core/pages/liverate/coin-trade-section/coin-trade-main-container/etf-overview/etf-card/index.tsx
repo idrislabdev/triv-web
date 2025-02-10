@@ -15,7 +15,7 @@ const EtfCard = (props: {title:string, subTitle: string, price:string, priceChan
         </div>
         <div className='card-row'>
             <label>Price Change</label>
-            <p className='!text-[#EB5757]'>{priceChange}</p>
+            <p className='text-minus'>{priceChange}</p>
         </div>
         <div className='card-row'>
             <label>Volume</label>

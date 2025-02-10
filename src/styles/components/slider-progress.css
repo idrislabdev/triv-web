@@ -58,3 +58,9 @@
         transform: translateX(-50%);
     }
 }
+
+.dark-theme { 
+    .slider-container-lite {
+        background: #646A80;
+    }
+}

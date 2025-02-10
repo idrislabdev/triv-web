@@ -25,8 +25,56 @@
         @apply !border-[#2E3339];
     }
     .card {
+        .card-row {
+            &.header {
+                label {
+                    @apply !text-white;
+                }
+                p {
+                    @apply !text-[#4DAAE9];
+                }
+            }
+            label {
+                @apply !text-[#A2A6B3]
+            }
+            p {
+                @apply !text-[#EBEEF4];
+
+            }
+        }
+        hr {
+            @apply border-[#4B5060];       
+        }
         .card-footer {
             @apply !bg-[#19202A];
+        }
+        &.card-analysis {
+            .card-header {
+                .card-title {
+                    .action-list {
+                        .dropdown-menu {
+                            a {
+                                @apply !bg-[#19202A] text-[#C1C3CC];
+                              
+                            }
+                            ul {
+                                @apply !border-slate-800;
+                                li {
+                                    &:not(&:last-child) {
+                                        @apply !border-slate-800;
+                                    }
+                                    a {
+                                        @apply text-[#C1C3CC];
+                                        &:hover {
+                                            @apply !bg-slate-700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .badges {
@@ -40,6 +88,14 @@
                        }
                     }
                 }
+            }
+        }
+    }
+    .tab-time {
+        @apply text-[#EBEEF4];
+        li {
+            &.active {
+                @apply border border-[#4DAAE9] !bg-[#111111];
             }
         }
     }
@@ -85,17 +141,24 @@
                                         }
                                     }
                                     input {
-                                        @apply bg-slate-800 !text-white border-slate-800 caret-white;
+                                        @apply bg-[#111111] border-[#19202A] !text-[#C1C3CC]  caret-white;
                                         &::placeholder {
                                             @apply text-slate-400;
                                         }
                                     }
                                 }
                             }
+                            .input-area {
+                                .list-button{
+                                    a {
+                                        @apply bg-[#111111] border border-[#19202A] text-[#C1C3CC];
+                                    }
+                                }
+                            }
                         }
                         .value-subcontainer {
                             label {
-                                @apply bg-slate-800 text-white
+                                @apply bg-[#111111] border border-[#19202A] text-[#838899]
                             }
                         }
                         button {
@@ -456,6 +519,12 @@
                                         @apply text-[#71BBED] border-b-2 border-b-[#71BBED];
                                     }
                                 }
+                                @media (max-width: 1380px) {
+                                    @apply text-[18px]/[27px];
+                                }
+                                @media (max-width: 1380px) {
+                                    @apply text-[16px]/[24px];
+                                }
                             }
                         }
                     }
@@ -629,6 +698,39 @@
                             }
                             &.card-analysis {
                                 .card-header {
+                                    .card-title {
+                                        .action-list {
+                                            @apply flex items-center gap-[6px];
+                                            .dropdown-menu {
+                                                @apply relative ;
+                                                a {
+                                                    @apply rounded-[2px] bg-[#F0F1F3] text-[#838899] text-[12px]/[18px] font-bold py-[3px] px-[6px] cursor-pointer select-none block text-center w-[85px];
+                                                }
+                                                ul {
+                                                    @apply absolute top-[30px] flex-col z-[10] border border-[#EBEEF4] rounded-[2px] w-[85px] hidden;
+                                                    &.show {
+                                                        @apply flex;
+                                                    }
+                                                    li {
+                                                        @apply text-center w-full;
+                                                        a {
+                                                            @apply bg-[#F0F1F3] w-full block text-[12px]/[18px] text-[#646A80] p-[2px];
+                                                            &:hover {
+                                                                @apply bg-[#c1c3cc];
+                                                            }
+                                                            &.active {
+                                                                @apply bg-[#c1c3cc];
+                                                            }
+                                                        }
+            
+                                                        &:not(:last-child) {
+                                                            @apply border-b border-b-[#EBEEF4];
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                     p {
                                         @apply text-[10px]/[15px] font-medium text-[#646A80];
                                     }
@@ -725,6 +827,12 @@
                                     }
                                     p {
                                         @apply text-[12px] font-bold text-[#19202A];
+                                        &.text-plus {
+                                            @apply !text-[#318AC6];
+                                        }
+                                        &.text-minus {
+                                            @apply !text-[#EB5757];
+                                        }
                                     }
                                 }
                             }
@@ -742,6 +850,9 @@
                                         }
                                         p {
                                             @apply text-[10px]/[15px] text-[#2E3339] font-semibold;
+                                            &.text-minus {
+                                                @apply !text-[#EB5757];
+                                            }
                                         }
                                         &.header {
                                             label {
@@ -881,7 +992,7 @@
                             @apply text-[16px]/[24px] font-medium text-neutral-700;
                         }
                         label {
-                            @apply text-[16px]/[24px] h-[52px] bg-neutral-100 font-bold text-neutral-800 flex gap-[4px] items-center px-[20px] py-[8px];
+                            @apply rounded-[8px] text-[16px]/[24px] h-[52px] bg-neutral-100 font-bold text-neutral-800 flex gap-[4px] items-center px-[20px] py-[8px];
                             span {
                                 @apply text-neutral-800;
                             }
