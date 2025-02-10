@@ -46,9 +46,9 @@
                     }
                     .barcode-appstore {
                         @apply gap-[15px];
-                        img {
-                            &.barcode {
-                                @apply bg-white;
+                        svg {
+                            path {
+                                @apply fill-[#EBEEF4];
                             }
                         }
                     }

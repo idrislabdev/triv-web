@@ -1,7 +1,7 @@
 import React from 'react'
 import CardNewsSticky from '@/@core/components/cards/card-news-sticky';
 import NewsDetailContent from '../news-detail-content';
-import { FacebookIcon, GoogleIcon, InvisionIcon, PeopleIcon, TwiterIcon } from '@/@core/components/custom-icons';
+import { BarcodeIcon, FacebookIcon, GoogleIcon, InvisionIcon, PeopleIcon, TwiterIcon } from '@/@core/components/custom-icons';
 import Link from 'next/link';
 import Image from 'next/image';
 const BlogNewsNewDetailSection = (props: {main:any, news:any[], stickies:any[], categories:string[], objLang:any, lang:string}) => {
@@ -38,7 +38,7 @@ const BlogNewsNewDetailSection = (props: {main:any, news:any[], stickies:any[], 
           </div>  
           <p>Kamu juga bisa download aplikasi Triv sekarang!</p>
           <div className='barcode-appstore'>
-            <Image src='/images/others/barcode-login.png' className='barcode' alt='barcode login' width={0} height={0} sizes='100%'/>     
+            <BarcodeIcon />
             <div className='appstore-list'>
               <Image src='/images/apps-store/playstore-logo-new.png' alt='barcode login' width={0} height={0} sizes='100%'/>     
               <Image src='/images/apps-store/appstore-logo-new.png' alt='barcode login' width={0} height={0} sizes='100%'/>     
