@@ -7,11 +7,6 @@
     p,label,span {
         @apply !text-slate-300;
     }
-    svg {
-        path {
-            @apply !fill-white;
-        }
-    }
     input,select {
         @apply bg-slate-800 !text-white border-slate-800 caret-white;
         &::placeholder {
@@ -26,6 +21,13 @@
                         .detail-content {
                             .ringkasan-content {
                                 @apply bg-slate-800;
+                            }
+                        }
+                    }
+                    .news-detail-footer {
+                        svg {
+                            path {
+                                @apply !fill-white;
                             }
                         }
                     }
