@@ -36,7 +36,7 @@ const PricePerformance = () => {
                 </div>
                 <div className='row-content child'>
                     <label>oct 09,2024(8 days ago)</label>
-                    <p className='!text-[#EB5757]'>-24,89%</p>
+                    <p className='text-minus'>-24,89%</p>
                 </div>
             </div>
             <div className='row'>
@@ -46,7 +46,7 @@ const PricePerformance = () => {
                 </div>
                 <div className='row-content child'>
                     <label>oct 09,2024(8 days ago)</label>
-                    <p className='!text-[#4DAAE9]'>+12,84%</p>
+                    <p className='text-plus'>+12,84%</p>
                 </div>
             </div>
         </div>

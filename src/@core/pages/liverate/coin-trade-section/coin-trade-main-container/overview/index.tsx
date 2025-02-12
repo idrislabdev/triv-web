@@ -89,14 +89,14 @@ const CoinTradeOverview = (props: {lang:string, objLang:any, asset:any}) => {
                             <ChartPie2 color={'#fff'} />
                             <label>{objLang.supply_maksimum}</label>
                         </div>
-                        <p className='!text-[#71BBED]'>{nFormatter(asset.key_statistic.max_supply, 1)}</p>
+                        <p className='text-plus'>{nFormatter(asset.key_statistic.max_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPPT color={'#fff'} />
                             <label>{objLang.volume_global}</label>
                         </div>
-                        <p className='!text-[#EB5757]'>{nFormatter(asset.key_statistic.volume_24h, 1)}</p>
+                        <p className='text-minus'>{nFormatter(asset.key_statistic.volume_24h, 1)}</p>
                     </div>
                 </div>
             </div>
