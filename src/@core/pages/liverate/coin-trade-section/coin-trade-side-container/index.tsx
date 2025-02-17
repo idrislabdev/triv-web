@@ -2,6 +2,7 @@
 import { IBlog, ILiverateMini } from '@/@core/@types/interfaces';
 import CardNewsBlog from '@/@core/components/cards/card-news-blog';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[], blogs:IBlog[], lang:string}) => {
@@ -60,6 +61,7 @@ const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[
                         ))
                     }
                 </div>
+                <Link href={`/${lang}/liverate`}>Lihat Semua</Link>
             </div>
         </div>
     )

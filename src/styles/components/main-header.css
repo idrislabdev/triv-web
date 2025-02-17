@@ -354,6 +354,9 @@
                 a {
                     @apply block py-[10px];
                 }
+                &.active {
+                    @apply !text-primary;
+                }
                 &:hover {
                     @apply text-primary;
                 }

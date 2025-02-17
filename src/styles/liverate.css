@@ -1080,6 +1080,9 @@
                             }
                         }
                     }
+                    a {
+                        @apply text-center text-primary text-[12px]/[18px];
+                    }
                 }
                 .blog-subcontainer {
                     @apply hidden;
