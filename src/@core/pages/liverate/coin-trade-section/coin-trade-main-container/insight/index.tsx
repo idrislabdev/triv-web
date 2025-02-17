@@ -31,22 +31,22 @@ const CoinTradeInsight = (props: {lang:string}) => {
                     <div className='card-footer'>
                         <div className='info'>
                             <div className='info-header'>
-                                <label>Orders</label>
-                                <label>Buy(USD)</label>
-                                <label>Sell(USD)</label>
-                                <label>Inflow(USD)</label>
+                                <label><span></span>Orders</label>
+                                <label><span></span>Buy(USD)</label>
+                                <label><span></span>Sell(USD)</label>
+                                <label><span></span>Inflow(USD)</label>
                             </div>
                             <div className='info-body'>
-                                <label>Type</label>
-                                <label>20.993.5051</label>
-                                <label>20.645,3689</label>
-                                <label>348,1362</label>
+                                <label><span></span>Type</label>
+                                <label><span className='dot-plus'></span>20.993.5051</label>
+                                <label><span className='dot-minus'></span>20.645,3689</label>
+                                <label><span></span>348,1362</label>
                             </div>
                             <div className='info-body'>
-                                <label>total</label>
-                                <label>20.993.5051</label>
-                                <label>20.645,3689</label>
-                                <label>348,1362</label>
+                                <label><span></span>total</label>
+                                <label><span></span>20.993.5051</label>
+                                <label><span></span>20.645,3689</label>
+                                <label><span></span>348,1362</label>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const CoinTradeInsight = (props: {lang:string}) => {
                             <ChevronUpIcon />
                         </div>
                         <div className='card-subtitle'>
-                            <p>5 Days Large Inflow : <span>1.837.9387</span></p>
+                            <p>5 Days Large Inflow : <span className='text-plus'>1.837.9387</span></p>
                         </div>
                         <ul className='tab-time'>
                             <li><a>15m</a></li>
