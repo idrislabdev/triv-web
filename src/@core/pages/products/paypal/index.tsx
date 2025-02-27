@@ -2,7 +2,6 @@
 
 import MainHeader from '@/@core/components/main-header'
 import React from 'react'
-import ProductsServiceHeaderNewSection from '../sections/service-header-new-section'
 import ProductsRegulasiNewSection from '../sections/regulasi-new-section'
 import ProductsLayananNewSection from '../sections/layanan-new-section'
 import ProductsAffliateNewSection from '../sections/affliate-new-section'
@@ -13,6 +12,7 @@ import Footer from '@/@core/components/footer'
 
 import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
+import ProductsServiceHeaderPaypalNewSection from '../sections/service-header-paypal-new-section'
 
 const PaypalPageWrap = (props: {lang:string, objLang:any}) => {
   const {lang, objLang,} = props
@@ -21,7 +21,7 @@ const PaypalPageWrap = (props: {lang:string, objLang:any}) => {
     <>
         <MainHeader classText="header-white" lang={lang}/>
         <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-            <ProductsServiceHeaderNewSection objLang={objLang.header_section} objProduct={objProduct}/>
+            <ProductsServiceHeaderPaypalNewSection objLang={objLang.header_section} objProduct={objProduct}/>
             <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
             <ProductsLayananNewSection objLang={objLang.layanan_section} />
             <ProductsAffliateNewSection objLang={objLang.triv_affliate} />

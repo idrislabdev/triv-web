@@ -3,8 +3,8 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import AnalysisChart from './analysis-chart'
 
-const SentimenAnalysis = (props: {data:any}) => {
-    const { data } = props
+const SentimenAnalysis = (props: {data:any, objLang:any}) => {
+    const { data, objLang } = props
 
     const dropdownSentiment: any = useRef(null);
     const [show, setShow] = useState(false)
@@ -52,7 +52,7 @@ const SentimenAnalysis = (props: {data:any}) => {
                             <ChevronUpIcon />
                         </div>
                     </div>
-                    <p>Use TRIV AI-powered social media data analysis to understand market sentiments and decide your trading plans.</p>
+                    <p>{objLang.chart.sentiment_anlysis}</p>
                 </div>
                 <div className='card-body'>
                     <AnalysisChart dataSentiment={donutData} />

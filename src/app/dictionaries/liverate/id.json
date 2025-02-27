@@ -40,6 +40,13 @@
             "also_see" : "Lihat Juga",
             "also_details" : "Harga crypto lain yang tersedia di Triv dalam 24 jam terakhir",
             "see_more" : "Lihat Semua"
+        },
+        "chart" : {
+            "sentiment_anlysis" : "Gunakan analisis data media sosial yang didukung TRIV AI untuk memahami sentimen pasar dan memutuskan rencana perdagangan Anda.",
+            "social_metric_note" : "Catatan: presentase mungkin tidak bertambah hingga 100% karena pembulatan",
+            "social_metric_note_1" : "Jumlah penyebutan berita MSFT hari ini lebih",
+            "social_metric_note_2" : "tinggi",
+            "social_metric_note_3" : "dibandingkan rata-rata 14 hari terakhir"
         }
     },
     "faq_section": {

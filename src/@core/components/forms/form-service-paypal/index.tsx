@@ -3,19 +3,19 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-const FormService = (props: {objProduct:any, imgObj:string, objLang:any}) => {
+const FormServicePaypal = (props: {objProduct:any, imgObj:string, objLang: any}) => {
     const {objProduct, imgObj, objLang} = props
     const [buttonType, setButtonType] = useState('buy')
     return (
         <div className='form-service'>
-            <div className={`button-tab ${buttonType}`}>
+            {/* <div className={`button-tab ${buttonType}`}>
                 <button className={`!rounded-tl-[4px] !rounded-bl-[4px] ${buttonType === "buy" ? 'active' : ''}`} onClick={_ => setButtonType('buy')}>Beli</button>
                 <button className={`!rounded-tr-[4px] !rounded-br-[4px] ${buttonType === "sell" ? 'active' : ''}`} onClick={_ => setButtonType('sell')}>Jual</button>
-            </div>
-            {imgObj == '' && <h5 className='title'><span className='capitalize'>{buttonType}</span> {objProduct.name} Starting from IDR 50,000!</h5> }
+            </div> */}
+            {imgObj == '' && <h5 className='title'>Buy {objProduct.name} Starting from IDR 50,000!</h5> }
             {imgObj != '' &&  
                 <div className='form-title'>
-                    <h5><span className='capitalize'>{buttonType}</span></h5> <Image src={imgObj} alt={objProduct.name} width={0} height={0} sizes='100%'/>
+                    <h5>Buy</h5> <Image src={imgObj} alt={objProduct.name} width={0} height={0} sizes='100%'/>
                     <h5 className='sm:mr-[4px] md:mr-[4px]'>Starting from</h5>
                     <h5>IDR 50,000!</h5>
                 </div>
@@ -35,9 +35,9 @@ const FormService = (props: {objProduct:any, imgObj:string, objLang:any}) => {
                     <span>{objProduct.code} 0</span>
                 </div>
             </div>
-            <button className='btn-primary !gap-0'><span className='capitalize'>{buttonType}</span> {objProduct.name} Now</button>
+            <button className='btn-primary'>Buy {objProduct.name} Now</button>
         </div>
   )
 }
 
-export default FormService
+export default FormServicePaypal

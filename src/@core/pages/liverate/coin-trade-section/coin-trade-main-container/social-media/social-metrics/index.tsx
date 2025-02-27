@@ -2,8 +2,8 @@ import { ChevronUpIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import React from 'react'
 
-const SocialMediaMetric = (props: {data:any}) => {
-    const { data } = props
+const SocialMediaMetric = (props: {data:any, objLang:any}) => {
+    const { data, objLang } = props
     return (
             <div className='card card-metrics'>
                 <div className='card-header'>
@@ -50,10 +50,10 @@ const SocialMediaMetric = (props: {data:any}) => {
                     </div>
                 </div>
                 <div className='card-footer'>
-                    <label className='note'>Note percentages might not add up to 100% due to rounidng</label>
+                    <label className='note'>{objLang.chart.social_metric_note}</label>
                     <div className='info'>
                         <Image src={`/images/others/bulb.png`} alt='bulb' width={0} height={0} sizes='100%' />
-                        <p>The number of news mentions for MSFT today is <span>higher</span> compared to the average last 14 days</p>
+                        <p>{objLang.chart.social_metric_note_1} <span>{objLang.chart.social_metric_note_2}</span> {objLang.chart.social_metric_note_3}</p>
                     </div>
                 </div>
             </div>

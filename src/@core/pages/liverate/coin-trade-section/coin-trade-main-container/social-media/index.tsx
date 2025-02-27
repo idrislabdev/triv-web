@@ -6,8 +6,8 @@ import SentimenAnalysis from './sentiment-anlysis';
 import PricePerformance from './price-performance';
 // import socmed_data from '../../sample-data/socmed'
 import axios from 'axios';
-const CoinTradeSocialMedia = (props: {lang:string}) => {
-    const { lang } = props
+const CoinTradeSocialMedia = (props: {lang:string, objLang:any}) => {
+    const { lang, objLang } = props
     const [ socmedData, setSocmedData] = useState({} as any)
     const fetchData = useCallback(async () => {
         const resp = await axios.get(`https://ins.triv.id/api/v1/asset-insights?currency=BTC&session=socmed`)
@@ -22,8 +22,8 @@ const CoinTradeSocialMedia = (props: {lang:string}) => {
     return (
         <div className='social-media-area'>
             <div className='row-1'>
-                {socmedData.social_metrics && <SocialMediaMetric data={socmedData.social_metrics} />}
-                {socmedData.sentiment_analytics && <SentimenAnalysis data={socmedData.sentiment_analytics} />}
+                {socmedData.social_metrics && <SocialMediaMetric data={socmedData.social_metrics} objLang={objLang} />}
+                {socmedData.sentiment_analytics && <SentimenAnalysis data={socmedData.sentiment_analytics} objLang={objLang} />}
             </div>
             <div className='row-2'>
                 {socmedData.price_performance  && <PricePerformance data={socmedData.price_performance } />}

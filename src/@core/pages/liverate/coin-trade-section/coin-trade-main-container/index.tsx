@@ -44,7 +44,7 @@ const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[],
                 {tabActive == 'overview' &&  <CoinTradeOverview lang={lang} objLang={objLang} asset={asset} /> }
                 {tabActive == 'insight' &&  <CoinTradeInsight lang={lang}  /> }
                 {tabActive == 'news' &&  <CoinTradeNews lang={lang} blogs={blogs} /> }
-                {tabActive == 'social_media' &&  <CoinTradeSocialMedia lang={lang} /> }
+                {tabActive == 'social_media' &&  <CoinTradeSocialMedia lang={lang} objLang={objLang}/> }
                 {tabActive == 'about' &&  <CoinAbout objLang={objLang} asset={asset}/> }
                 {tabActive == 'etf_overview' &&  <EtfOverview /> }
             </div>    

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { ArrowRightIcon } from '@/@core/components/custom-icons'
-import FormService from '@/@core/components/forms/form-service'
+import FormServicePaypal from '@/@core/components/forms/form-service-paypal'
 
-const ProductsServiceHeaderNewSection = (props: {objLang:any, objProduct:any}) => {
+const ProductsServiceHeaderPaypalNewSection = (props: {objLang:any, objProduct:any}) => {
     const { objLang, objProduct } = props
     const inViewport = () => {
         const elements = document.getElementsByClassName("products-service-hero-new-section");
@@ -46,11 +46,11 @@ const ProductsServiceHeaderNewSection = (props: {objLang:any, objProduct:any}) =
                     </div>
                 </div>
                 <div className='right-subcontainer fade-in entry-5'>
-                    <FormService objProduct={objProduct} objLang={objLang} imgObj={objLang.image_url ? objLang.image_url : ''}/>
+                    <FormServicePaypal objProduct={objProduct} objLang={objLang} imgObj={objLang.image_url ? objLang.image_url : ''}/>
                 </div>
             </div>
         </section>
       )
 }
 
-export default ProductsServiceHeaderNewSection
+export default ProductsServiceHeaderPaypalNewSection

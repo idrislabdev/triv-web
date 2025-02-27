@@ -39,6 +39,13 @@
             "also_see" : "Other Coins",
             "also_details" : "Other crypto prices available on Triv in the last 24 hours",
             "see_more" : "See All"
+        },
+        "chart" : {
+            "sentiment_anlysis" : "Use TRIV AI-powered social media data analysis to understand market sentiments and decide your trading plans.",
+            "social_metric_note" : "Note: percentages might not add up to 100% due to rounidng",
+            "social_metric_note_1" : "The number of news mentions for MSFT today is",
+            "social_metric_note_2" : "higher",
+            "social_metric_note_3" : "compared to the average last 14 days"
         }
     },
     "faq_section": {
