@@ -10,7 +10,16 @@ const options = {
         type: 'pie',
     },
     title: {
+        verticalAlign: 'middle',
+        floating: true,
         text: '',
+        style: {
+            color: '#646A80',
+            fontWeight: '500',
+            fontSize: '10px',
+            lineHeight: '15px',
+        },
+        y: 30
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
@@ -21,32 +30,23 @@ const options = {
             cursor: 'pointer',
             dataLabels: [{
                 enabled: true,
-                distance: 30,
+                distance: 10,
                 format: '{point.y}%',
                 style: {
                     fontSize: '10px'
                 }
             }],
             showInLegend: true
+        },
+        pie: {
+            size: 150
         }
     },
     series: [{
-        name: 'Registrations',
+        name: 'Sentimen Analytic',
         colorByPoint: true,
         innerSize: '75%',
-        data: [{
-            name: 'Buy',
-            y: 60,
-            color: '#4DAAE9'
-        }, {
-            name: 'Hold',
-            y: 25,
-            color: '#EB5757'
-        }, {
-            name: 'Sell',
-            y: 15,
-            color: '#FF7F17'
-        }]
+        data: []
     }],
     legend: {
         enabled: true,
@@ -66,11 +66,42 @@ const options = {
         enabled: false
     }
 }
-const AnalysisChart = () => {
+const AnalysisChart = (props: {dataSentiment:any}) => {
+    const { dataSentiment } = props
+
     const [ data, setData ] = useState({})
     const { globals } = useGlobals()
     const fetchData = useCallback(() => {
         const temp = JSON.parse(JSON.stringify(options));
+        const positive = dataSentiment.positive
+        const negative = dataSentiment.negative
+        const neutral = dataSentiment.neutral
+        const total = positive + negative + neutral
+        let text = ''
+        temp.series[0].data = [
+            {
+                name: 'Positive',
+                y: Math.round(positive / total * 100),
+                color: '#4DAAE9'
+            }, {
+                name: 'Netral',
+                y: Math.round(neutral / total * 100),
+                color: '#EB5757'
+            }, {
+                name: 'Negative',
+                y: Math.round(negative / total * 100),
+                color: '#FF7F17'
+            }
+        ]
+        if ((positive > negative ) && (positive > neutral)) {
+            text = 'Positive'
+        } else if ((negative > positive ) && (negative > neutral)) {
+            text = 'Negative'
+        } else {
+            text = 'Neutral'
+        }
+        temp.title.text = text
+
         if (globals.theme == 'dark') {
             temp.chart.backgroundColor = '#141414'
             temp.legend.itemStyle.color = '#fff'
@@ -78,7 +109,7 @@ const AnalysisChart = () => {
             temp.chart.backgroundColor = '#fff'
         }
         setData(temp)
-    }, [setData, globals])
+    }, [setData, globals, dataSentiment])
 
     useEffect(() => {
         fetchData();

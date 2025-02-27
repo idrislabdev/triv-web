@@ -3,13 +3,23 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import AnalysisChart from './analysis-chart'
 
-const SentimenAnalysis = () => {
+const SentimenAnalysis = (props: {data:any}) => {
+    const { data } = props
+
     const dropdownSentiment: any = useRef(null);
     const [show, setShow] = useState(false)
-    const [selected, setSelected] = useState("You Tube")
-
+    const [selected, setSelected] = useState("tweet")
+    const [donutData, setDonutData] = useState(data.data['tweet'])
+    const medias = [
+        {val: 'tweet', name: 'X'},
+        {val: 'tiktok-video', name: 'Tiktok'},
+        {val: 'reddit-post', name: 'Reddit'},
+        {val: 'youtube-video', name: 'You Tube'},
+        {val: 'news', name: 'News'},
+    ]
     const chooseSelected = (val:string) => {
         setSelected(val)
+        setDonutData(data.data[val])
         setShow(false)
     }
 
@@ -22,6 +32,7 @@ const SentimenAnalysis = () => {
         window.addEventListener("click", handleClick);
         return () => window.removeEventListener("click", handleClick);
     }, [setShow]);
+
     return (
             <div className='card card-analysis'>
                 <div className='card-header'>
@@ -29,13 +40,13 @@ const SentimenAnalysis = () => {
                         <h5>Sentiment Analysis</h5>
                         <div className='action-list'>
                             <div className='dropdown-menu' ref={dropdownSentiment}>
-                                <a onClick={_ => setShow(!show)}>{selected} ▼</a>
+                                <a onClick={_ => setShow(!show)}>{medias.find((x) => x.val == selected)?.name} ▼</a>
                                 <ul className={show ? `show` : ``}>
-                                    <li><a onClick={() => chooseSelected("X")} className={selected == 'X' ? 'active' : ''}>X</a></li>
-                                    <li><a onClick={() => chooseSelected("Tiktok")} className={selected == 'Tiktok' ? 'active' : ''}>Tiktok</a></li>
-                                    <li><a onClick={() => chooseSelected("Reddit")} className={selected == 'Reddit' ? 'active' : ''}>Reddit</a></li>
-                                    <li><a onClick={() => chooseSelected("You Tube")} className={selected == 'You Tube' ? 'active' : ''}>You Tube</a></li>
-                                    <li><a onClick={() => chooseSelected("News")} className={selected == 'News' ? 'active' : ''}>News</a></li>
+                                    <li><a onClick={() => chooseSelected("tweet")} className={selected == 'tweet' ? 'active' : ''}>X</a></li>
+                                    <li><a onClick={() => chooseSelected("tiktok-video")} className={selected == 'tiktok-video' ? 'active' : ''}>Tiktok</a></li>
+                                    <li><a onClick={() => chooseSelected("reddit-post")} className={selected == 'reddit-post' ? 'active' : ''}>Reddit</a></li>
+                                    <li><a onClick={() => chooseSelected("youtube-video")} className={selected == 'youtube-video' ? 'active' : ''}>You Tube</a></li>
+                                    <li><a onClick={() => chooseSelected("news")} className={selected == 'news' ? 'active' : ''}>News</a></li>
                                 </ul>
                             </div>
                             <ChevronUpIcon />
@@ -44,7 +55,7 @@ const SentimenAnalysis = () => {
                     <p>Use TRIV AI-powered social media data analysis to understand market sentiments and decide your trading plans.</p>
                 </div>
                 <div className='card-body'>
-                    <AnalysisChart />
+                    <AnalysisChart dataSentiment={donutData} />
                 </div>
             </div>
     )

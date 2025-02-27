@@ -601,6 +601,9 @@
                                             &.active {
                                                 @apply text-[#4DAAE9] bg-[#F5F7FA] rounded-[8px] font-semibold p-[4px];
                                             }
+                                            a {
+                                                @apply cursor-pointer;
+                                            }
                                         }
                                     }
                                 }
@@ -641,7 +644,7 @@
                         .row-1 {
                             @apply flex items-center gap-[30px] w-full;
                             .card {
-                                @apply w-1/2;
+                                @apply w-full;
                             }
                         }
                         .row-2 {
@@ -678,6 +681,9 @@
                                         li {
                                             &.active {
                                                 @apply text-[#4DAAE9] bg-[#F5F7FA] rounded-[8px] font-semibold p-[4px];
+                                            }
+                                            a {
+                                                @apply cursor-pointer;
                                             }
                                         }
                                     }
@@ -838,6 +844,9 @@
                                     li {
                                         &.active {
                                             @apply text-[#4DAAE9] bg-[#F5F7FA] rounded-[8px] font-semibold p-[4px];
+                                        }
+                                        a {
+                                            @apply cursor-pointer;
                                         }
                                     }
                                 }

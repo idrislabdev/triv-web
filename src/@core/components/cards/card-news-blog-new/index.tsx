@@ -3,16 +3,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const CardNewsBlogNew = (props: {lang:string, item:IBlog}) => {
+const CardNewsBlogNew = (props: {lang:string, item:any}) => {
   const { lang, item } = props
   return (
-    <Link href={`/${lang}/blog/${item.link.replace("https://blog.triv.co.id/", "")}`} className='card-news-secondary-2'>
+    <a href={`${item.link}`} className='card-news-secondary-2' target='_blank'>
       <div className='card-content'>
         <h5>{item.title}</h5>
-        <p>{item.description.replace(/(<([^>]+)>)/ig, '')}</p>
+        <p>{item.description}</p>
       </div>
-      <Image src={item.image_url} alt={item.title} width={0} height={0} sizes='100%'/>
-    </Link>
+      {item.source_icon != null && <Image src={item.source_icon} alt={item.title} width={0} height={0} sizes='100%' unoptimized={true} />}
+      
+    </a>
   )
 }
 

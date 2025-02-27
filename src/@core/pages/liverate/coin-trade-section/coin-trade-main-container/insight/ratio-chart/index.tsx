@@ -3,6 +3,8 @@ import React, { useCallback, useEffect, useState } from 'react'
 import Highcharts, { color, Legend } from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import { useGlobals } from '@/@core/hooks/useGlobals';
+import { ChevronUpIcon } from '@/@core/components/custom-icons';
+import moment from 'moment';
 // import HC_rounded from "highcharts-rounded-corners";
 
 const options = {
@@ -16,10 +18,7 @@ const options = {
         text: ''
     },
     xAxis: [{
-        categories: ['10, 11:00', '10, 19:00', '11, 03:00', '11, 11:00', 
-            '11, 19:00', '12, 03:00','12, 11:00', '12, 19:00', '13, 03:00', 
-            '13, 11:00', '13, 19:00', '14, 03:00', '14, 11:00', '14, 19:00'
-        ],
+        categories: [],
         labels: {
             style: {
                 fontSize: '8px',
@@ -43,7 +42,8 @@ const options = {
             style: {
                 // color: Highcharts.getOptions().colors[1]
             }
-        }
+        },
+        gridLineWidth : 0
     },
     { // Secondary yAxis
         title: {
@@ -58,8 +58,10 @@ const options = {
                 // color: Highcharts.getOptions().colors[0]
             }
         },
-        max: 100,
-        opposite: true
+        max: 3,
+        tickInterval: 0.1,
+        opposite: true,
+        gridLineDashStyle: 'longdash'
     }],
     tooltip: {
         shared: true
@@ -74,31 +76,31 @@ const options = {
         }
     },
     series: [{
-        name: 'ratio1',
+        name: 'shortAccount',
         type: 'column',
         stack: 1,
         yAxis: 0,
-        data: [50,50,50,50,50,50,50,50,50,50,50,50,50,50],
+        data: [],
         color: '#EB5757',
         tooltip: {
             valueSuffix: '%'
         }
     },
     {
-        name: 'ratio2',
+        name: 'longAccount',
         type: 'column',
         stack: 1,
         yAxis: 0,
-        data: [50,50,50,50,50,50,50,50,50,50,50,50,50,50],
+        data: [],
         color: '#4DAAE9',
         tooltip: {
             valueSuffix: '%'
         }
     }
     ,{
-        name: 'btc',
-        type: 'spline',
-        data: [40,30,60,40,10,60,30,50,40,10,70,30,20,60],
+        name: 'longShortRatio',
+        type: 'line',
+        data: [],
         color: '#C1C3CC',
         tooltip: {
             valueSuffix: ''
@@ -116,9 +118,12 @@ const options = {
         enabled: false
     }
 }
-const RatioChart = () => {
+const RatioChart = (props: {rawChart: any}) => {
+    const { rawChart } = props
+
     const [ data, setData ] = useState({})
     const { globals } = useGlobals();
+    const [ tabActive, setTabActive] = useState("30m")
     const fetchData = useCallback(() => {
         const temp = JSON.parse(JSON.stringify(options));
         if (globals.theme == 'dark') {
@@ -126,8 +131,28 @@ const RatioChart = () => {
         } else {
             temp.chart.backgroundColor = '#fff'
         }
+        const rawData = rawChart.long_short_ratio_chart[tabActive];
+        const categories = [] as any[];
+        const longAccount = [] as any[];
+        const shortAccount = [] as any[];
+        const longShortRatio = [] as any[];
+
+        rawData.forEach((item:any) => {
+            categories.push(moment.unix(item.time).format('DD, HH:mm'))
+            longAccount.push(item.longAccount)
+            shortAccount.push(item.shortAccount)
+            longShortRatio.push(item.longShortRatio)
+        });
+        const minVal = Math.min(...longShortRatio);
+        const maxVal = Math.max(...longShortRatio);
+        temp.xAxis[0].categories = categories;
+        temp.series[0].data = shortAccount;
+        temp.series[1].data = longAccount;
+        temp.series[2].data = longShortRatio;
+        temp.yAxis[1].min = minVal;
+        temp.yAxis[1].max = maxVal;
         setData(temp)
-    }, [setData, globals])
+    }, [setData, globals, tabActive, rawChart])
 
     useEffect(() => {
         fetchData();
@@ -136,11 +161,37 @@ const RatioChart = () => {
         // HC_rounded(Highcharts)
     })
   return (
-    <HighchartsReact
-        highcharts={Highcharts}
-        options={data}
-        containerProps = {{ className: 'w-full h-[176px]' }}
-    />
+    <div className='card'>
+        <div className='card-header'>
+            <div className='card-title'>
+                <h5>BTC Long/Short Ratio Chart</h5>
+                <ChevronUpIcon />
+            </div>
+            <ul className='tab-time'>
+                <li className={`${tabActive == '30m' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('30m')}>30m</a>
+                </li>
+                <li className={`${tabActive == '1h' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('1h')}>1h</a>
+                </li>
+                <li className={`${tabActive == '4h' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('4h')}>4h</a>
+                </li>
+                <li className={`${tabActive == '12h' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('12h')}>12h</a>
+                </li>
+                <li className={`${tabActive == '1d' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('1d')}>1d</a>
+                </li>
+            </ul>
+        </div>
+        <HighchartsReact
+            highcharts={Highcharts}
+            options={data}
+            containerProps = {{ className: 'w-full h-[176px]' }}
+        />
+    </div>
+    
   )
 }
 

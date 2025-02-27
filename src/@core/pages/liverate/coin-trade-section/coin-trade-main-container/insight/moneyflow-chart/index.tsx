@@ -3,6 +3,8 @@ import React, { useCallback, useEffect, useState } from 'react'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import { useGlobals } from '@/@core/hooks/useGlobals';
+import { ChevronUpIcon } from '@/@core/components/custom-icons';
+import { formatterNumber } from '@/@core/utils/general';
 // import HC_rounded from "highcharts-rounded-corners";
 
 const options = {
@@ -36,11 +38,11 @@ const options = {
         innerSize: '75%',
         data: [{
             name: 'Buy',
-            y: 60,
+            y: 0,
             color: '#4DAAE9'
         }, {
             name: 'Sell',
-            y: 40,
+            y: 0,
             color: '#EB5757'
         }]
     }],
@@ -51,10 +53,12 @@ const options = {
         enabled: false
     }
 }
-const InflowChart = () => {
+const InflowChart = (props: {rawChart: any}) => {
+    const { rawChart } = props
     const [ data, setData ] = useState({})
+    const [ dataChart, setDataChart] = useState({} as any)
+    const [ tabActive, setTabActive] = useState("15m")
     const { globals } = useGlobals()
-    
     const fetchData = useCallback(() => {
         const temp = JSON.parse(JSON.stringify(options));
         if (globals.theme == 'dark') {
@@ -62,45 +66,72 @@ const InflowChart = () => {
         } else {
             temp.chart.backgroundColor = '#fff'
         }
-        // temp.plotOptions = {
-        //     series: {
-        //         marker: false,
-        //         fillColor: {
-        //             linearGradient: [0, 0, 0, 300],
-        //             stops: [
-        //                 [0, Highcharts.color('#39BFB6').setOpacity(1).get('rgba')],
-        //                 [1, Highcharts.color('#B1F8B900').setOpacity(0.3).get('rgba')],
-        //             ]
-        //         }
-        //     }
-        // }
-        // temp.series  = [
-        //     {
-        //         name: 'A',
-        //         data: [3000, 4000, 3500, 4500, 4600, 1500, 2900],
-        //         color: '#04FF00',
-        //         fillColor: {
-        //             linearGradient: [0, 0, 0, 200],
-        //             stops: [
-        //                 [0, Highcharts.color('#39BFB6').setOpacity(1).get('rgba')],
-        //                 [1, Highcharts.color('#B1F8B900').setOpacity(0.3).get('rgba')],
-        //             ]
-        //         }
-        //     },
-        // ]
+
+        const total = rawChart.money_inflow[tabActive].total_buy + rawChart.money_inflow[tabActive].total_sell;
+        const buy = rawChart.money_inflow[tabActive].total_buy / total * 100
+        const sell = rawChart.money_inflow[tabActive].total_sell / total * 100
+
+        temp.series[0].data[0].y = Math.round(buy);
+        temp.series[0].data[1].y = Math.round(sell);
+        setDataChart(rawChart.money_inflow[tabActive])
         setData(temp)
-    }, [setData, globals])
+    }, [setData, globals, tabActive, rawChart])
 
     useEffect(() => {
         fetchData();
     }, [fetchData])
 
   return (
-    <HighchartsReact
-        highcharts={Highcharts}
-        options={data}
-        containerProps = {{ className: 'w-full h-[185px]' }}
-    />
+    
+    <div className='card card-money-flow'>
+        <div className='card-header'>
+            <div className='card-title'>
+                <h5>Money Flow Analysis</h5>
+                <ChevronUpIcon />
+            </div>
+            <ul className='tab-time'>
+                <li className={`${tabActive == '15m' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('15m')}>15m</a>
+                </li>
+                <li className={`${tabActive == '30m' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('30m')}>30m</a>
+                </li>
+                <li className={`${tabActive == '1h' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('1h')}>1h</a>
+                </li>
+                <li className={`${tabActive == '2h' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('2h')}>2h</a>
+                </li>
+                <li className={`${tabActive == '4h' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('4h')}>4h</a>
+                </li>
+                <li className={`${tabActive == '1d' ? 'active' : ''}`}>
+                    <a onClick={() => setTabActive('1d')}>1d</a>
+                </li>
+            </ul>
+        </div>
+        <HighchartsReact
+            highcharts={Highcharts}
+            options={data}
+            containerProps = {{ className: 'w-full h-[185px]' }}
+        />
+        <div className='card-footer'>
+            <div className='info'>
+                <div className='info-header'>
+                    <label><span></span>Orders</label>
+                    <label><span></span>Buy(USD)</label>
+                    <label><span></span>Sell(USD)</label>
+                    <label><span></span>Inflow(USD)</label>
+                </div>
+                <div className='info-body'>
+                    <label><span></span>Type</label>
+                    <label><span className='dot-plus'></span>{formatterNumber(Math.round(dataChart.total_buy))}</label>
+                    <label><span className='dot-minus'></span>{formatterNumber(Math.round(dataChart.total_sell))}</label>
+                    <label><span></span>{formatterNumber(Math.round(dataChart.net_inflow))}</label>
+                </div>
+            </div>
+        </div>
+    </div>
   )
 }
 
