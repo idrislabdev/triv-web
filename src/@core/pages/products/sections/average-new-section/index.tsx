@@ -15,7 +15,10 @@ const ProductsAverageNewSection = (props: {objLang:any}) => {
                         </div>
                         <div className='detail-description-subcontainer'>
                             <p>{objLang.live_chat.title}</p>
-                            <span>{objLang.live_chat.content} <span>{objLang.updated_text}</span></span>
+                            <div className='flex flex-col gap-[4px]'>
+                                <span>{objLang.live_chat.content} </span>
+                                <span><span>{objLang.updated_text}</span></span>
+                            </div>
                         </div>
                     </div>
                     <div className='detail-subcontainer'>
@@ -25,7 +28,10 @@ const ProductsAverageNewSection = (props: {objLang:any}) => {
                         </div>
                         <div className='detail-description-subcontainer'>
                             <p>{objLang.processing.title}</p>
-                            <span>{objLang.processing.content} <span>{objLang.updated_text} </span></span>
+                            <div className='flex flex-col gap-[4px'>
+                                <span>{objLang.processing.content} </span>
+                                <span><span>{objLang.updated_text} </span></span>
+                            </div>
                         </div>
                     </div>
                 </div>

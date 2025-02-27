@@ -13,7 +13,7 @@
     "regulasi_section": {
         "liquiditas" : {
             "title" : "High Liquidity",
-            "content" : "No need to ask for stock or availability of Paypal balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7.",
+            "content" : "Spread or the difference in the buying and selling price of Bitcoin Triv is one of the lowest in the market today. With our brokerage system you do not need to wait for other buyers / sellers to make transactions. All buying / selling transactions can be done instantly and in real-time without a waiting process.",
             "content_1" : "Triv's spread",
             "content_2" : "one of the lowest",
             "content_3" : "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
@@ -72,12 +72,12 @@
     "average_section": {
         "live_chat" : {
             "title" : "Average LiveChat Responds",
-            "content" : "Triv's Livechat and Call center are ready to assist you?",
+            "content" : "Livechat and Call center support services at Triv, ready to assist you 24/7",
             "time" : "51"
         },
         "processing" : {
             "title" : "Average Processing Time",
-            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions",
+            "content" : "Automatic and downtime-free transactions at Triv. Since 2015, Triv has been operating without downtime",
             "time" : "102"
         },
         "updated_text" : "*Updated Real-Time"
@@ -88,7 +88,9 @@
         "title_2" : "100 banks & E-wallets",
         "title_3" : "in Indonesia for all our transactions",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
+        "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+        "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "start_now_section": {
         "title" : "Start Investing Now",

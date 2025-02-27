@@ -7,7 +7,10 @@
         "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
         "description" : "Token saham diregulasi oleh BAPPEBTI berdasarkan surat nomor 11/2022. Triv terdaftar dan diawasi oleh BAPPEBTI",
         "sub_description": "Terdaftar dan diawasi oleh",
-        "button_text" : "Daftar Sekarang"
+        "button_text" : "Daftar Sekarang",
+        "details_1" : "24/7 Instant",
+        "details_2" : "Spread Rendah",
+        "details_3" : "No Downtime"
     },
     "register_section" : {
         "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
@@ -73,7 +76,9 @@
         "title_3" : "di Indonesia untuk Semua Transaksi Kami",
         "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet. Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.",
+        "description_1": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.",
+        "description_2" : "Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
     },
     "faq_section": {
         "title_1" : "FAQ",

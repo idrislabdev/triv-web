@@ -7,7 +7,10 @@
         "subtitle" : "Since 2015, low spread, 24/7 online",
         "description" : "Tokenized stock is regulated by BAPPEBTI within letter no. 11 / 2022. Triv is supervised and regulated by BAPPEBTI",
         "sub_description": "Registered and supervised by",
-        "button_text" : "Sign Up"
+        "button_text" : "Start Now",
+        "details_1" : "24/7 Instant",
+        "details_2" : "Low Spread",
+        "details_3" : "No Downtime"
     },
     "register_section" : {
         "title" : "Trade various US Stocks with Triv.",
@@ -72,7 +75,9 @@
         "title_3" : "in Indonesia for All Our Transactions",
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
         "subtitle" : "24/7 Real-time Deposits & Withdrawals",
-        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
+        "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+        "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "faq_section": {
         "title_1" : "FAQ",
