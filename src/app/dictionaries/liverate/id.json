@@ -30,6 +30,16 @@
         },
         "trade_about": {
             "content" : "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan __label__ dilakukan secara kolektif oleh jaringan. __label__ merupakan sumber-terbuka; rancangannya bersifat umum."
+        },
+        "trade_section": {
+            "title" : "Harga __label__ (__currency__) Hari Ini",
+            "buy_form" : "Beli __label__ Mulai dari Rp50.000!",
+            "buy_nominal" : "Masukkan jumlah pembelian:",
+            "what_you_get" : "Kamu akan mendapatkan:",
+            "buy_button" : "Beli __label__ Sekarang",
+            "also_see" : "Lihat Juga",
+            "also_details" : "Harga crypto lain yang tersedia di Triv dalam 24 jam terakhir",
+            "see_more" : "Lihat Semua"
         }
     },
     "faq_section": {

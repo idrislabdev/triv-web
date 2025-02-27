@@ -25,7 +25,7 @@ const StakingPage = (props: {lang:string, objLang:any, stakings:any}) => {
                 <StakingCalculatorSection objLang={objLang.calculator_section}/>
                 <StakingCoinsSection stakings={stakings} objLang={objLang.coin_section}/>
                 <StakingFaqSection objLang={objLang.faq_section}/>
-                <StakingBannerSection />
+                <StakingBannerSection objLang={objLang.start_now_section}/>
             </main>
             <Footer />
         </>

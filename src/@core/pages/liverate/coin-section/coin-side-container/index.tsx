@@ -4,13 +4,13 @@ import CardNewsBlog from '@/@core/components/cards/card-news-blog';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
-const CoinSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[], blogs:IBlog[], lang:string}) => {
-    const { asset, liverateMinies, blogs, lang } = props;
+const CoinSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[], blogs:IBlog[], objLang:any, lang:string}) => {
+    const { asset, liverateMinies, blogs, objLang, lang } = props;
     const [amount, setAmount] = useState("0")
     return (
         <div className='coin-side-container'>
             <div className='buy-subcontainer'>
-            <h5>Beli {asset.label} Mulai dari Rp50.000!</h5>
+            <h5>{objLang.trade_section.buy_form.replaceAll("__label__", asset.label)}</h5>
             <div className='input-subcontainer'>
                 <label>Masukkan jumlah pembelian:</label>
                 <div className='input-area'>

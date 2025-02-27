@@ -5,15 +5,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 
-const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[], blogs:IBlog[], lang:string}) => {
-    const { asset, liverateMinies, blogs, lang } = props;
+const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[], blogs:IBlog[], objLang:any, lang:string}) => {
+    const { asset, liverateMinies, blogs, objLang, lang } = props;
     const [amount, setAmount] = useState("0")
     return (
         <div className='coin-side-container'>
             <div className='buy-subcontainer'>
-            <h5>Beli {asset.label} Mulai dari Rp50.000!</h5>
+            <h5>{objLang.trade_section.buy_form.replaceAll("__label__", asset.label)}</h5>
             <div className='input-subcontainer'>
-                <label>Masukkan jumlah pembelian:</label>
+                <label>{objLang.trade_section.buy_nominal}</label>
                 <div className='input-area'>
                     <div className='group-input append'>
                         <span className='append'>Rp</span>
@@ -31,14 +31,14 @@ const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[
                 </div>
             </div>
             <div className='value-subcontainer'>
-                <span>Kamu akan mendapatkan:</span>
+                <span>{objLang.trade_section.what_you_get}</span>
                 <label>{asset.currency} <span>0</span></label>
             </div>
-            <button>Beli {asset.label} Sekarang</button>
+            <button>{objLang.trade_section.buy_button.replaceAll("__label__", asset.label)}</button>
             </div>
             <div className='other-coins-subcontainer'>
-                <h5>Lihat Juga</h5>
-                <p>Harga crypto lain yang tersedia di Triv dalam 24 jam terakhir</p>
+                <h5>{objLang.trade_section.also_see}</h5>
+                <p>{objLang.trade_section.also_details}</p>
                 <div className='other-list'>
                     {
                         liverateMinies.map((item:ILiverateMini, index:number) => (
@@ -61,7 +61,7 @@ const CoinTradeSideContainer = (props: {asset:any, liverateMinies:ILiverateMini[
                         ))
                     }
                 </div>
-                <Link href={`/${lang}/liverate`}>Lihat Semua</Link>
+                <Link href={`/${lang}/liverate`}>{objLang.trade_section.see_more}</Link>
             </div>
         </div>
     )

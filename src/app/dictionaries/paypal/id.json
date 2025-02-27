@@ -32,7 +32,7 @@
         "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli paypal. Swap, exchange ataupun isi saldo Paypal dapat anda lakukan dalam satu aplikasi.",
         "card" : {
             "jual_beli" : {
-                "title" : "Jual dan Beli Saldo Paypal 24 jam",
+                "title" : "Beli Saldo Paypal 24 jam",
                 "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
                 "image_url" : "/images/services/iphone-paypal.png",
                 "image_class" : "iphone"

@@ -13,7 +13,7 @@ const LiverateCoinSection = (props: {lang:string, objLang:any, blogs:IBlog[], li
         </h2>
         <div className='coin-container'>
           <CoinMainContainer lang={lang} objLang={objLang} blogs={blogs} coin={coin} asset={asset} />
-          <CoinSideContainer asset={asset} liverateMinies={liverateMinies} blogs={blogs} lang={lang}/>
+          <CoinSideContainer asset={asset} liverateMinies={liverateMinies} blogs={blogs} objLang={objLang} lang={lang}/>
         </div>
     </section>
   )

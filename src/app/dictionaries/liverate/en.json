@@ -15,11 +15,11 @@
         "about" : "About",
         "activity" : "Triv User Activity",
         "acitivty_text_1" : " buying and selling activity of all Triv users in the last 24 hours. This shows that Trivusers are interested in the asset, but not an invitation to buy or sell the asset.",
-        "market_activity" : "Kapitalisasi Pasar",
-        "full_value" : "Nilai Terdilusi Penuh",
-        "supply_circulate" : "Suplai Yang Beredar",
-        "supply_maksimum" : "Suplai Maksimum",
-        "volume_global" : "Volume Global",
+        "market_activity" : "Market Capitalization",
+        "full_value" : "Fully Diluted Valuation",
+        "supply_circulate" : "Circulating Supply",
+        "supply_maksimum" : "Maximum Supply",
+        "volume_global" : "Global Volume",
         "buy" : "Buy",
         "sell" : "Sell",
         "trade_overview": {
@@ -29,6 +29,16 @@
         },
         "trade_about": {
             "content" : "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan bitcoin dilakukan secara kolektif oleh jaringan. Bitcoin merupakan sumber-terbuka; rancangannya bersifat umum."
+        },
+        "trade_section": {
+            "title" : "__label__ (__currency__) Price Today",
+            "buy_form" : "Buy __label__ Starting from IDR 50,000!",
+            "buy_nominal" : "Enter the purchase amount:",
+            "what_you_get" : "You will get:",
+            "buy_button" : "Buy __label__ Now",
+            "also_see" : "Other Coins",
+            "also_details" : "Other crypto prices available on Triv in the last 24 hours",
+            "see_more" : "See All"
         }
     },
     "faq_section": {

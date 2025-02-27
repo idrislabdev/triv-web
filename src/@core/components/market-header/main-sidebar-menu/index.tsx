@@ -61,7 +61,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     <li>Paypal</li>
                                 </ul>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a className='flex justify-between items-center' onClick={_ => toggleSubMenu('submenu--product')}>
                                     <span>Product</span>
                                     <svg 
@@ -80,7 +80,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     <li>Mobile Top Up</li>
                                     <li>Electricty Token</li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li><Link href={`/${lang}/staking`}>Staking</Link></li>
                             <li><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
                             <li><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>

@@ -157,7 +157,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     <li><Link href={`/${lang}/home/axielnifinity`}>Axielnifinity</Link></li>
                                 </ul>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a className='flex justify-between items-center' onClick={_ => toggleSubMenu('submenu--product')}>
                                     <span>Product</span>
                                     <svg 
@@ -177,7 +177,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                     <li><Link href={`/${lang}/home/product-token-listrik`}>Token Listrik</Link></li>
                                     <li><Link href={`/${lang}/home/product-tagihan`}>Tagihan</Link></li>
                                 </ul>
-                            </li>
+                            </li> */}
                                 <li><a onClick={_ => goToLink('staking')}>Staking</a></li>
                                 <li><a onClick={_ => goToLink('stocks')}>US Stock</a></li>
                                 <li><a onClick={_ => goToLink('home/affliate')}>Affliate</a></li>
