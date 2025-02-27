@@ -1,7 +1,7 @@
 {
     "header_section": {
         "title" : "Jual Beli Stellar Indonesia 24 jam",
-        "description" : "Jual beli Stellar terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi BTC.",
+        "description" : "Jual beli Stellar terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi XLM.",
         "button_1" : "Beli Stellar",
         "button_2" : "Kunjungi Marketplace"
     },
@@ -33,7 +33,7 @@
             },
             "hoddl" : {
                 "title" : "HODLL Stellar",
-                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER BTC mendapatkan return lebih tinggi daripada trader BTC. Simpan BTCmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah"
+                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER XLM mendapatkan return lebih tinggi daripada trader XLM. Simpan XLMmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah"
             },
             "swap" : {
                 "title" : "Swap Paypal",
@@ -41,7 +41,7 @@
             },
             "isi_pulsa" : {
                 "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan koin BTCmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
+                "content" : "Tukarkan koin XLMmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
             }
         }
     },

@@ -1,7 +1,7 @@
 {
     "header_section": {
         "title" : "Buy and sell DogeCoin Indonesia 24 hours",
-        "description" : "The largest DogeCoin trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact BTC.",
+        "description" : "The largest DogeCoin trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact DOGE.",
         "button_1" : "Buy DogeCoin",
         "button_2" : "Visit Marketplace"
     },
@@ -33,7 +33,7 @@
             },
             "hoddl" : {
                 "title" : "HODLL DogeCoin",
-                "content" : "Did you know that it is historically proven that BTC HODLERS earn higher returns than BTC traders. Store your BTC in Triv with insurance from Bitgo & Lloyd's England up to 100m USD or 1.45 Trillion Rupiah equivalent"
+                "content" : "Did you know that it is historically proven that DOGE HODLERS earn higher returns than DOGE traders. Store your DOGE in Triv with insurance from Bitgo & Lloyd's England up to 100m USD or 1.45 Trillion Rupiah equivalent"
             },
             "swap" : {
                 "title" : "Swap Paypal",
@@ -41,7 +41,7 @@
             },
             "isi_pulsa" : {
                 "title" : "Recharge and Pay Bills",
-                "content" : "Exchange your BTC coins into Triv's rupiah wallet and use them for a variety of purposes such as topping up credit, paying bills and even buying electricity tokens."
+                "content" : "Exchange your DOGE coins into Triv's rupiah wallet and use them for a variety of purposes such as topping up credit, paying bills and even buying electricity tokens."
             }
         }
     },
