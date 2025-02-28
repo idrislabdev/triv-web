@@ -1,6 +1,7 @@
 export interface ILiverateMini {
     currency: string,
     code: string,
+    label:string,
     rate: number,
     change_24h: number,
     icon_url: string,

@@ -22,7 +22,7 @@ const PerfectMoneyPageWrap = (props: {lang:string, objLang:any}) => {
     <>
         <MainHeader classText="header-white" lang={lang}/>
         <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-            <ProductsServiceHeaderNewSection objLang={objLang.header_section} objProduct={objProduct}/>
+            <ProductsServiceHeaderNewSection lang={lang} objLang={objLang.header_section} objProduct={objProduct}/>
             <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
             <ProductsLayananNewSection objLang={objLang.layanan_section} />
             <ProductsAffliateNewSection objLang={objLang.triv_affliate} />

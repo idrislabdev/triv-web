@@ -33,9 +33,9 @@ const HomeHeroSection = (props: {lang:string, objLang:any}) => {
                 <h1>{objLang.title_1} <br /><span>{objLang.title_2}</span></h1>
               </div>
               <ul className='fade-in entry-2'>
-                <li><CheckCircleGradientIcon />24/7 Instant</li>
-                <li><CheckCircleGradientIcon />Spread Rendah</li>
-                <li><CheckCircleGradientIcon />No Downtime</li>
+                <li><CheckCircleGradientIcon />{objLang.list_1}</li>
+                <li><CheckCircleGradientIcon />{objLang.list_2}</li>
+                <li><CheckCircleGradientIcon />{objLang.list_3}</li>
               </ul>
               <p className='fade-in entry-3'>{objLang.description}</p>
             </div>

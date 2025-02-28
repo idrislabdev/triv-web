@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { ArrowRightIcon } from '@/@core/components/custom-icons'
 import FormServicePaypal from '@/@core/components/forms/form-service-paypal'
 
-const ProductsServiceHeaderPaypalNewSection = (props: {objLang:any, objProduct:any}) => {
-    const { objLang, objProduct } = props
+const ProductsServiceHeaderPaypalNewSection = (props: {lang:any, objLang:any, objProduct:any}) => {
+    const { lang, objLang, objProduct } = props
     const inViewport = () => {
         const elements = document.getElementsByClassName("products-service-hero-new-section");
         var element = elements[0];
@@ -46,7 +46,7 @@ const ProductsServiceHeaderPaypalNewSection = (props: {objLang:any, objProduct:a
                     </div>
                 </div>
                 <div className='right-subcontainer fade-in entry-5'>
-                    <FormServicePaypal objProduct={objProduct} objLang={objLang} imgObj={objLang.image_url ? objLang.image_url : ''}/>
+                    <FormServicePaypal lang={lang} objProduct={objProduct} objLang={objLang} imgObj={objLang.image_url ? objLang.image_url : ''}/>
                 </div>
             </div>
         </section>

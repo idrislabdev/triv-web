@@ -159,6 +159,13 @@ const dictionariesPaypal: any = {
   en: () => import("./dictionaries/paypal/en.json").then((module) => module.default),
 };
 
+const dictionariesGeneral: any = {
+  id: () => import("./dictionaries/general/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/general/en.json").then((module) => module.default),
+};
+
+
+
 
 
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
@@ -193,3 +200,4 @@ export const getDictionariesSolana = async (locale: any) => dictionariesSolana[l
 export const getDictionariesAxieinfinity = async (locale: any) => dictionariesAxieinfinity[locale]();
 export const getDictionariesPerfectMoney = async (locale: any) => dictionariesPerfectMoney[locale]();
 export const getDictionariesPaypal = async (locale: any) => dictionariesPaypal[locale]();
+export const getDictionariesGeneral = async (locale: any) => dictionariesGeneral[locale]();

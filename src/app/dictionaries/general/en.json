@@ -1,0 +1,12 @@
+{
+    "form": {
+        "buy_long" : "Buy __label__ Starting from IDR 50,000!",
+        "purchase" : "Enter the purchase amount:",
+        "you_will_get" : "You will get:",
+        "buy_now" : "Buy __label__ Now",
+        "buy" : "Buy",
+        "sell" : "Sell",
+        "now" : "Now",
+        "starting" : "Starting From"
+    }
+}

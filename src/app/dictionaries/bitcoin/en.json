@@ -32,13 +32,13 @@
             "jual_beli" : {
                 "title" : "Buy and sell Bitcoin 24 hours",
                 "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Paypal balance in real-time with banks or e-wallets in seconds even on holidays.",
-                "image_url" : "/images/services/macbook-buy-bitcoin.png",
+                "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "kirim" : {
                 "title" : "Send Bitcoin",
                 "content" : "Send Bitcoin worldwide instantly, Crypto is the money of the future. You can also send Bitcoin to fellow Triv users for free without any fees!",
-                "image_url" : "/images/services/iphone-bitcoin.png",
+                "image_url" : "/images/services/iphone-send-kripto.png",
                 "image_class" : "iphone"
             },
             "terima" : {
@@ -48,7 +48,7 @@
                 "image_class" : "iphone"
             },
             "hoddl" : {
-                "title" : "HODLL Bitcoin",
+                "title" : "HODL Bitcoin",
                 "content" : "Did you know? Historically proven that BTC HODLERS get higher returns than BTC traders. Store your BTC in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"

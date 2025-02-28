@@ -73,12 +73,12 @@
         "live_chat" : {
             "title" : "Average LiveChat Responds",
             "content" : "Livechat dan Call center Triv siap untuk membantu anda",
-            "time" : "45"
+            "time" : "51"
         },
         "processing" : {
             "title" : "Average Processing Time",
             "content" : "Seluruh transaksi Triv berjalan secara otomatis dan tanpa downtime. Sejak 2015 Triv tidak pernah mengalami downtime yang menggangu transaksi nasabah ",
-            "time" : "82"
+            "time" : "102"
         },
         "updated_text" : "*Updated Real-Time"
     },

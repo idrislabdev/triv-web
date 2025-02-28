@@ -5,7 +5,10 @@
         "title_2": "Asset & Cryptocurrency Marketplace",
         "description": "Since 2015, Triv is used by millions of people to invest and transact digital assets. Start with only Rp50.000. Triv is registered and supervised by Bappebti.",
         "button_text" : "Start Now",
-        "sub_description": "Registered and supervised by"
+        "sub_description": "Registered and supervised by",
+        "list_1" : "24/7 Instant",
+        "list_2" : "Low Spread",
+        "list_3" : "No Downtime"
     },
     "special_section" : {
         "title_1" : "Specially designed for crypto",
@@ -79,7 +82,7 @@
         "title_4" : "anytime",
         "title_5" : "with the Triv App",
         "subtitle": "Manage all of your portfolio and transaction in 1 device",
-        "description": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
+        "description": "With Triv Indonesia, you can purchase and do staking with Cryptocurrency in one hand. Get the best experience in building your Digital Asset with Triv.",
         "button": "Regsiter Now"
     },
     "media_section" : {
