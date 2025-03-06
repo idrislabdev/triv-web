@@ -133,7 +133,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
             <Image src={objLang.card.terima.image_url} alt={objLang.card.terima.title} width={0} height={0} sizes='100%'/>
           </div>
         </div>
-        <div className='card-subcontainer pulsa sticky top-[250px] translate-y-[0px]' style={{scale:elPulsa}}>
+        {/* <div className='card-subcontainer pulsa sticky top-[250px] translate-y-[0px]' style={{scale:elPulsa}}>
           <div className='box-layanan'>
             <span><IsiPulsaIcon color={'#fff'} /></span>
             <div className='content'>
@@ -144,7 +144,7 @@ const ProductsLayananNewSection = (props: {objLang:any}) => {
           <div className={`box-img ${objLang.card.isi_pulsa.image_class}`}>
             <Image src={objLang.card.isi_pulsa.image_url} alt={objLang.card.isi_pulsa.title} width={0} height={0} sizes='100%'/>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

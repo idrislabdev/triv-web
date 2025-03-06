@@ -16,8 +16,8 @@ const FormService = (props: {lang:any, objProduct:any, imgObj:string, objLang:an
     return (
         <div className='form-service'>
             <div className={`button-tab ${buttonType}`}>
-                <button className={`!rounded-tl-[4px] !rounded-bl-[4px] ${buttonType === "buy" ? 'active' : ''}`} onClick={_ => setButtonType('buy')}>Beli</button>
-                <button className={`!rounded-tr-[4px] !rounded-br-[4px] ${buttonType === "sell" ? 'active' : ''}`} onClick={_ => setButtonType('sell')}>Jual</button>
+                <button className={`!rounded-tl-[4px] !rounded-bl-[4px] ${buttonType === "buy" ? 'active' : ''}`} onClick={_ => setButtonType('buy')}>{objLangForm.buy}</button>
+                <button className={`!rounded-tr-[4px] !rounded-br-[4px] ${buttonType === "sell" ? 'active' : ''}`} onClick={_ => setButtonType('sell')}>{objLangForm.sell}</button>
             </div>
             {imgObj == '' && <h5 className='title'>{objLangForm.buy_long.replaceAll("__label__", objProduct.name)}</h5> }
             {imgObj != '' &&  
