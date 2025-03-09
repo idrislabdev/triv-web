@@ -1,14 +1,21 @@
 {
     "header_section": {
         "title" : "Buy and sell Ethereum Indonesia 24 hours",
+        "title_1" : "Buy and sell",
+        "title_2" : "Ethereum",
+        "title_3" : "Indonesia 24 hours",
         "description" : "The largest Ethereum trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact ETH.",
         "button_1" : "Buy Ethereum",
-        "button_2" : "Visit Marketplace"
+        "button_2" : "Visit Marketplace",
+        "registered_text" : "Terdaftar dan diawasi oleh"
     },
     "regulasi_section": {
         "liquiditas" : {
             "title" : "High Liquidity",
-            "content" : "Triv's spread is one of the lowest in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
+            "content" : "Triv's spread is one of the lowest in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting.",
+            "content_1" : "Triv's spread",
+            "content_2" : "one of the lowest",
+            "content_3" : "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
         },
         "regulator" : {
             "title" : "Regulated and Insured",
@@ -17,31 +24,46 @@
     },
     "layanan_section": {
         "title" : "What You Can Do With Triv Ethereum Service Indonesia",
+        "title_1" : "What You Can Do With Triv",
+        "title_2" : "Ethereum",
+        "title_3" : "Service Indonesia",
         "content" : "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
         "card" : {
             "jual_beli" : {
                 "title" : "Buy and sell Ethereum 24 hours",
-                "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays You can buy and sell your Paypal balance in real-time with your bank or e-wallet in seconds even on holidays."
+                "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Paypal balance in real-time with banks or e-wallets in seconds even on holidays.",
+                "image_url" : "/images/services/macbook-bitcoin.png",
+                "image_class" : "macbook"
             },
             "kirim" : {
                 "title" : "Send Ethereum",
-                "content" : "Send Ethereum around the world instantly, Crypto is the money of the future. You can also send Ethereum to fellow Triv users for free without any fees!"
+                "content" : "Send Ethereum worldwide instantly, Crypto is the money of the future. You can also send Ethereum to fellow Triv users for free without any fees!",
+                "image_url" : "/images/services/iphone-send-kripto.png",
+                "image_class" : "iphone"
             },
             "terima" : {
-                "title" : "Terima Ethereum",
-                "content" : "Terima Ethereum dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan."
+                "title" : "Receive Ethereum",
+                "content" : "Receive Ethereum from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+                "image_url" : "/images/services/iphone-receive-bitcoin.png",
+                "image_class" : "iphone"
             },
             "hoddl" : {
                 "title" : "HODL Ethereum",
-                "content" : "Did you know that it is historically proven that ETH HODLERS earn higher returns than ETH traders. Store your ETH in Triv with insurance from Bitgo & Lloyd's England up to 100m USD or 1.45 Trillion Rupiah equivalent"
+                "content" : "Did you know? Historically proven that ETH HODLERS get higher returns than ETH traders. Store your ETH in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
+                "image_url" : "/images/services/macbook-bitcoin.png",
+                "image_class" : "macbook"
             },
             "swap" : {
-                "title" : "Swap Paypal",
-                "content" : "Triv supports over 700 cryptocurrencies on our platform and counting. Need another coin? Swap to a wide range of other digital assets in real-time 24/7 on Triv"
+                "title" : "Swap Ethereum",
+                "content" : "Triv supports over 700 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
+                "image_url" : "/images/services/iphone-bitcoin.png",
+                "image_class" : "iphone"
             },
             "isi_pulsa" : {
-                "title" : "Recharge and Pay Bills",
-                "content" : "Exchange your ETH coins into Triv's rupiah wallet and use them for a variety of purposes such as topping up credit, paying bills and even buying electricity tokens."
+                "title" : "Top Up Credit and Pay Bills",
+                "content" : "Exchange your ETH coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
+                "image_url" : "/images/services/macbook-buy-bitcoin.png",
+                "image_class" : "macbook"
             }
         }
     },
@@ -58,9 +80,12 @@
     },
     "ewallet_section": {
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
+        "title_1" : "Triv Supports",
+        "title_2" : "100 banks & E-wallets",
+        "title_3" : "in Indonesia for all our transactions",
         "subtitle" : "24/7 Real-time Deposits & Withdrawals",
         "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
-        "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+    "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
         "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
     "start_now_section": {

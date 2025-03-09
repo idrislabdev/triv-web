@@ -90,7 +90,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 (pathname.split("/")[3] == 'cardano') ||
                 (pathname.split("/")[3] == 'polkadot') ||
                 (pathname.split("/")[3] == 'solana') ||
-                (pathname.split("/")[3] == 'axielnifinity') ||
+                (pathname.split("/")[3] == 'axieinfinity') ||
                 (pathname.split("/")[3] == 'product-pulsa') ||
                 (pathname.split("/")[3] == 'product-token-listrik') ||
                 (pathname.split("/")[3] == 'product-tagihan')) {
@@ -121,7 +121,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 (path == 'cardano') ||
                 (path == 'polkadot') ||
                 (path == 'solana') ||
-                (path == 'axielnifinity')) {
+                (path == 'axieinfinity')) {
                 return true
             } else {
                 return false
@@ -226,7 +226,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polkadot' ? 'active' : ''}`}><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'cardano' ? 'active' : ''}`}><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'solana' ? 'active' : ''}`}><Link href={`/${lang}/home/solana`}>Solana</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'axielnifinity' ? 'active' : ''}`}><Link href={`/${lang}/home/axielnifinity`}>Axielnifinity</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'axieinfinity' ? 'active' : ''}`}><Link href={`/${lang}/home/axieinfinity`}>Axienfinity</Link></li>
                                     </ul>
                                 </li>
                                 {/* <li className={`${checkMenuProduct() ? 'active' : ''}`}>

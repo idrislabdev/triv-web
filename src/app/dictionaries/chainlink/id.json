@@ -1,14 +1,21 @@
 {
     "header_section": {
         "title" : "Jual Beli Chainlink Indonesia 24 jam",
-        "description" : "Jual beli Chainlink terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi BTC.",
+        "title_1" : "Jual Beli",
+        "title_2" : "Chainlink",
+        "title_3" : "Indonesia 24 jam",
+        "description" : "Jual beli Chainlink terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi LINK.",
         "button_1" : "Beli Chainlink",
-        "button_2" : "Kunjungi Marketplace"
+        "button_2" : "Kunjungi Marketplace",
+        "registered_text" : "Terdaftar dan diawasi oleh"
     },
     "regulasi_section": {
         "liquiditas" : {
             "title" : "Likuiditas Tinggi",
-            "content" : "Spread atau selisih harga jual beli Chainlink Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
+            "content" : "Spread atau selisih harga jual beli Chainlink Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu.",
+            "content_1" : "Spread atau selisih",
+            "content_2" : "harga jual beli Chainlink",
+            "content_3" : "Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
         },
         "regulator" : {
             "title" : "Teregulasi dan Terasuransi",
@@ -17,31 +24,46 @@
     },
     "layanan_section": {
         "title" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan Chainlink Indonesia",
+        "title_1" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan",
+        "title_2" : "Chainlink",
+        "title_3" : "Indonesia",
         "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli. Baik itu swap, staking ataupun lainnya dapat anda lakukan dalam satu aplikasi. Triv merupakan Aplikasi dengan fitur terlengkap untuk mengelola dan menumbuhkan portfolio anda.",
         "card" : {
             "jual_beli" : {
                 "title" : "Jual dan Beli Chainlink 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Exchange Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur."
+                "content" : "Tidak seperti instrumen investasi tradisional, Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
+                "image_url" : "/images/services/macbook-bitcoin.png",
+                "image_class" : "macbook"
             },
             "kirim" : {
                 "title" : "Kirim Chainlink",
-                "content" : "Kirim Chainlink ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Chainlink ke sesama pengguna Triv dengan gratis tanpa biaya apapun!"
+                "content" : "Kirim Chainlink ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Chainlink ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
+                "image_url" : "/images/services/iphone-send-kripto.png",
+                "image_class" : "iphone"
             },
             "terima" : {
                 "title" : "Terima Chainlink",
-                "content" : "Terima Chainlink dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan."
+                "content" : "Terima Chainlink dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
+                "image_url" : "/images/services/iphone-receive-bitcoin.png",
+                "image_class" : "iphone"
             },
             "hoddl" : {
                 "title" : "HODL Chainlink",
-                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER BTC mendapatkan return lebih tinggi daripada trader BTC. Simpan BTCmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah"
+                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER LINK mendapatkan return lebih tinggi daripada trader LINK. Simpan LINKmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
+                "image_url" : "/images/services/macbook-bitcoin.png",
+                "image_class" : "macbook"
             },
             "swap" : {
-                "title" : "Swap Paypal",
-                "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv"
+                "title" : "Swap Chainlink",
+                "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
+                "image_url" : "/images/services/iphone-bitcoin.png",
+                "image_class" : "iphone"
             },
             "isi_pulsa" : {
                 "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan koin BTCmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik."
+                "content" : "Tukarkan koin LINKmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
+                "image_url" : "/images/services/macbook-buy-bitcoin.png",
+                "image_class" : "macbook"
             }
         }
     },
@@ -58,6 +80,9 @@
     },
     "ewallet_section": {
         "title" : "Triv Mendukung 100 bank & E-wallet di Indonesia untuk semua transaksi kami",
+        "title_1" : "Triv Mendukung",
+        "title_2" : "100 bank & E-wallet",
+        "title_3" : "di Indonesia untuk semua transaksi kami",
         "subtitle" : "24/7 Real Time Deposit & Withdrawal",
         "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet. Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.",
         "description_1": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.",

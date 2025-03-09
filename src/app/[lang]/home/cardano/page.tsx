@@ -14,17 +14,10 @@ import ProductsAverageSection from '@/@core/pages/products/average-section'
 
 import { getDictionariesCardano } from '@/app/dictionaries'
 import '@/styles/products.css'
+import CardanoPageWrap from '@/@core/pages/products/cardano'
 
 export default async function ServiceLiteCardanoPage({ params }: any) {
-    const {
-        header_section,
-        regulasi_section,
-        ewallet_section,
-        start_now_section,
-        layanan_section,
-        average_section,
-        triv_affliate
-    } = await getDictionariesCardano(params.lang);
+    const objLang = await getDictionariesCardano(params.lang);
     return (
         <html lang={params.lang}>
             <head>
@@ -105,19 +98,7 @@ export default async function ServiceLiteCardanoPage({ params }: any) {
                 }
             </head>
             <body>
-                <MainHeader classText="header-white" lang={params.lang}/>
-                <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-                    <ProductsServiceHeaderSection objLang={header_section} />
-                    <ProductsDeviceSection />
-                    <ProductsRegulasiSection objLang={regulasi_section} />
-                    <ProductsLayananSection objLang={layanan_section} />
-                    <ProductsAverageSection objLang={average_section} />
-                    <ProductsAffliateSection objLang={triv_affliate} />
-                    <ProductsEwalletSection objLang={ewallet_section}/>
-                    <ProductsInvestasiNowSection objLang={start_now_section} />
-                    <ProductsTestimonyCarouselSection />
-                </main>
-                <Footer />
+                <CardanoPageWrap lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )
