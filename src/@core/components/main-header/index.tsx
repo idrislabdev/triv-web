@@ -90,6 +90,12 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 (pathname.split("/")[3] == 'cardano') ||
                 (pathname.split("/")[3] == 'polkadot') ||
                 (pathname.split("/")[3] == 'solana') ||
+                (pathname.split("/")[3] == 'tron') ||
+                (pathname.split("/")[3] == 'pepe') ||
+                (pathname.split("/")[3] == 'hyperliquid') ||
+                (pathname.split("/")[3] == 'shibainu') ||
+                (pathname.split("/")[3] == 'bnb') ||
+                (pathname.split("/")[3] == 'litecoin') ||
                 (pathname.split("/")[3] == 'axieinfinity') ||
                 (pathname.split("/")[3] == 'product-pulsa') ||
                 (pathname.split("/")[3] == 'product-token-listrik') ||
@@ -218,15 +224,21 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'stellar' ? 'active' : ''}`}><Link href={`/${lang}/home/stellar`}>Stellar</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'ripple' ? 'active' : ''}`}><Link href={`/${lang}/home/ripple`}>Ripple</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'eos' ? 'active' : ''}`}><Link href={`/${lang}/home/eos`}>Eos</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'Litecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/litecoin`}>Litecoin</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dash' ? 'active' : ''}`}><Link href={`/${lang}/home/dash`}>Dash</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'tether' ? 'active' : ''}`}><Link href={`/${lang}/home/tether`}>Tether</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'chainlink' ? 'active' : ''}`}><Link href={`/${lang}/home/chainlink`}>Chainlink</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dogecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'bnb' ? 'active' : ''}`}><Link href={`/${lang}/home/bnb`}>BNB</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'matic-polygon' ? 'active' : ''}`}><Link href={`/${lang}/home/matic-polygon`}>Matic-Polygon</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'shibainu' ? 'active' : ''}`}><Link href={`/${lang}/home/shibainu`}>SHIBAINU</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polkadot' ? 'active' : ''}`}><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'cardano' ? 'active' : ''}`}><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'solana' ? 'active' : ''}`}><Link href={`/${lang}/home/solana`}>Solana</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'axieinfinity' ? 'active' : ''}`}><Link href={`/${lang}/home/axieinfinity`}>Axienfinity</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'tron' ? 'active' : ''}`}><Link href={`/${lang}/home/tron`}>Tron</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'pepe' ? 'active' : ''}`}><Link href={`/${lang}/home/pepe`}>Pepe</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'hyperliquid' ? 'active' : ''}`}><Link href={`/${lang}/home/hyperliquid`}>Hyperliquid</Link></li>
                                     </ul>
                                 </li>
                                 {/* <li className={`${checkMenuProduct() ? 'active' : ''}`}>

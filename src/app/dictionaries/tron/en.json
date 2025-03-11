@@ -1,11 +1,11 @@
 {
     "header_section": {
-        "title" : "Buy and sell Shiba Inu Indonesia 24 hours",
+        "title" : "Buy and sell Tron Indonesia 24 hours",
         "title_1" : "Buy and sell",
-        "title_2" : "Shiba Inu",
+        "title_2" : "Tron",
         "title_3" : "Indonesia 24 hours",
-        "description" : "The largest Shiba Inu trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact SHIB.",
-        "button_1" : "Buy Shiba Inu",
+        "description" : "The largest Tron trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact TRX.",
+        "button_1" : "Buy Tron",
         "button_2" : "Visit Marketplace",
         "registered_text" : "Terdaftar dan diawasi oleh"
     },
@@ -23,45 +23,45 @@
         }
     },
     "layanan_section": {
-        "title" : "What You Can Do With Triv Shiba Inu Service Indonesia",
+        "title" : "What You Can Do With Triv Tron Service Indonesia",
         "title_1" : "What You Can Do With Triv",
-        "title_2" : "Shiba Inu",
+        "title_2" : "Tron",
         "title_3" : "Service Indonesia",
         "content" : "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
         "card" : {
             "jual_beli" : {
-                "title" : "Buy and sell Shiba Inu 24 hours",
-                "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Shiba Inu balance in real-time with banks or e-wallets in seconds even on holidays.",
+                "title" : "Buy and sell Tron 24 hours",
+                "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Tron balance in real-time with banks or e-wallets in seconds even on holidays.",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "kirim" : {
-                "title" : "Send Shiba Inu",
-                "content" : "Send Shiba Inu worldwide instantly, Crypto is the money of the future. You can also send Shiba Inu to fellow Triv users for free without any fees!",
+                "title" : "Send Tron",
+                "content" : "Send Tron worldwide instantly, Crypto is the money of the future. You can also send Tron to fellow Triv users for free without any fees!",
                 "image_url" : "/images/services/iphone-send-kripto.png",
                 "image_class" : "iphone"
             },
             "terima" : {
-                "title" : "Receive Shiba Inu",
-                "content" : "Receive Shiba Inu from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+                "title" : "Receive Tron",
+                "content" : "Receive Tron from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
                 "image_url" : "/images/services/iphone-receive-bitcoin.png",
                 "image_class" : "iphone"
             },
             "hoddl" : {
-                "title" : "HODL Shiba Inu",
-                "content" : "Did you know? Historically proven that SHIB HODLERS get higher returns than SHIB traders. Store your SHIB in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
+                "title" : "HODL Tron",
+                "content" : "Did you know? Historically proven that TRX HODLERS get higher returns than TRX traders. Store your TRX in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "swap" : {
-                "title" : "Swap Shiba Inu",
+                "title" : "Swap Tron",
                 "content" : "Triv supports over 700 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
                 "image_url" : "/images/services/iphone-bitcoin.png",
                 "image_class" : "iphone"
             },
             "isi_pulsa" : {
                 "title" : "Top Up Credit and Pay Bills",
-                "content" : "Exchange your SHIB coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
+                "content" : "Exchange your TRX coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
                 "image_url" : "/images/services/macbook-buy-bitcoin.png",
                 "image_class" : "macbook"
             }

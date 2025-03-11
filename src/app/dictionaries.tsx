@@ -164,8 +164,21 @@ const dictionariesGeneral: any = {
   en: () => import("./dictionaries/general/en.json").then((module) => module.default),
 };
 
+const dictionariesHyperliquid: any = {
+  id: () => import("./dictionaries/hyperliquid/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/hyperliquid/en.json").then((module) => module.default),
+};
 
 
+const dictionariesTron: any = {
+  id: () => import("./dictionaries/tron/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/tron/en.json").then((module) => module.default),
+};
+
+const dictionariesPepe: any = {
+  id: () => import("./dictionaries/pepe/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/pepe/en.json").then((module) => module.default),
+};
 
 
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
@@ -201,3 +214,6 @@ export const getDictionariesAxieinfinity = async (locale: any) => dictionariesAx
 export const getDictionariesPerfectMoney = async (locale: any) => dictionariesPerfectMoney[locale]();
 export const getDictionariesPaypal = async (locale: any) => dictionariesPaypal[locale]();
 export const getDictionariesGeneral = async (locale: any) => dictionariesGeneral[locale]();
+export const getDictionariesHyperliquid = async (locale: any) => dictionariesHyperliquid[locale]();
+export const getDictionariesTron = async (locale: any) => dictionariesTron[locale]();
+export const getDictionariesPepe = async (locale: any) => dictionariesPepe[locale]();
