@@ -1,20 +1,20 @@
 {
     "header_section": {
-        "title" : "Jual Beli Axienfinity Indonesia 24 jam",
+        "title" : "Jual Beli Axie Infinity Indonesia 24 jam",
         "title_1" : "Jual Beli",
-        "title_2" : "Axienfinity",
+        "title_2" : "Axie Infinity",
         "title_3" : "Indonesia 24 jam",
-        "description" : "Jual beli Axienfinity terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi AXS.",
-        "button_1" : "Beli Axienfinity",
+        "description" : "Jual beli Axie Infinity terbesar di Indonesia sejak 2015. Mudah, kapanpun & dimanapun 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang untuk bertransaksi AXS.",
+        "button_1" : "Beli Axie Infinity",
         "button_2" : "Kunjungi Marketplace",
         "registered_text" : "Terdaftar dan diawasi oleh"
     },
     "regulasi_section": {
         "liquiditas" : {
             "title" : "Likuiditas Tinggi",
-            "content" : "Spread atau selisih harga jual beli Axienfinity Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu.",
+            "content" : "Spread atau selisih harga jual beli Axie Infinity Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu.",
             "content_1" : "Spread atau selisih",
-            "content_2" : "harga jual beli Axienfinity",
+            "content_2" : "harga jual beli Axie Infinity",
             "content_3" : "Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
         },
         "regulator" : {
@@ -23,38 +23,38 @@
         }
     },
     "layanan_section": {
-        "title" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan Axienfinity Indonesia",
+        "title" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan Axie Infinity Indonesia",
         "title_1" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan",
-        "title_2" : "Axienfinity",
+        "title_2" : "Axie Infinity",
         "title_3" : "Indonesia",
         "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli. Baik itu swap, staking ataupun lainnya dapat anda lakukan dalam satu aplikasi. Triv merupakan Aplikasi dengan fitur terlengkap untuk mengelola dan menumbuhkan portfolio anda.",
         "card" : {
             "jual_beli" : {
-                "title" : "Jual dan Beli Axienfinity 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Paypal anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
+                "title" : "Jual dan Beli Axie Infinity 24 jam",
+                "content" : "Tidak seperti instrumen investasi tradisional, Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Axie Infinity anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "kirim" : {
-                "title" : "Kirim Axienfinity",
-                "content" : "Kirim Axienfinity ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Axienfinity ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
+                "title" : "Kirim Axie Infinity",
+                "content" : "Kirim Axie Infinity ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Axie Infinity ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
                 "image_url" : "/images/services/iphone-send-kripto.png",
                 "image_class" : "iphone"
             },
             "terima" : {
-                "title" : "Terima Axienfinity",
-                "content" : "Terima Axienfinity dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
+                "title" : "Terima Axie Infinity",
+                "content" : "Terima Axie Infinity dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
                 "image_url" : "/images/services/iphone-receive-bitcoin.png",
                 "image_class" : "iphone"
             },
             "hoddl" : {
-                "title" : "HODL Axienfinity",
+                "title" : "HODL Axie Infinity",
                 "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER AXS mendapatkan return lebih tinggi daripada trader AXS. Simpan AXSmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "swap" : {
-                "title" : "Swap Axienfinity",
+                "title" : "Swap Axie Infinity",
                 "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
                 "image_url" : "/images/services/iphone-bitcoin.png",
                 "image_class" : "iphone"

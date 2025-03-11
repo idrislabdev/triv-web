@@ -1,11 +1,11 @@
 {
     "header_section": {
-        "title" : "Buy and sell Axienfinity Indonesia 24 hours",
+        "title" : "Buy and sell Axie Infinity Indonesia 24 hours",
         "title_1" : "Buy and sell",
-        "title_2" : "Axienfinity",
+        "title_2" : "Axie Infinity",
         "title_3" : "Indonesia 24 hours",
-        "description" : "The largest Axienfinity trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact AXS.",
-        "button_1" : "Buy Axienfinity",
+        "description" : "The largest Axie Infinity trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact AXS.",
+        "button_1" : "Buy Axie Infinity",
         "button_2" : "Visit Marketplace",
         "registered_text" : "Terdaftar dan diawasi oleh"
     },
@@ -23,38 +23,38 @@
         }
     },
     "layanan_section": {
-        "title" : "What You Can Do With Triv Axienfinity Service Indonesia",
+        "title" : "What You Can Do With Triv Axie Infinity Service Indonesia",
         "title_1" : "What You Can Do With Triv",
-        "title_2" : "Axienfinity",
+        "title_2" : "Axie Infinity",
         "title_3" : "Service Indonesia",
         "content" : "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
         "card" : {
             "jual_beli" : {
-                "title" : "Buy and sell Axienfinity 24 hours",
-                "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Paypal balance in real-time with banks or e-wallets in seconds even on holidays.",
+                "title" : "Buy and sell Axie Infinity 24 hours",
+                "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Axie Infinity balance in real-time with banks or e-wallets in seconds even on holidays.",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "kirim" : {
-                "title" : "Send Axienfinity",
-                "content" : "Send Axienfinity worldwide instantly, Crypto is the money of the future. You can also send Axienfinity to fellow Triv users for free without any fees!",
+                "title" : "Send Axie Infinity",
+                "content" : "Send Axie Infinity worldwide instantly, Crypto is the money of the future. You can also send Axie Infinity to fellow Triv users for free without any fees!",
                 "image_url" : "/images/services/iphone-send-kripto.png",
                 "image_class" : "iphone"
             },
             "terima" : {
-                "title" : "Receive Axienfinity",
-                "content" : "Receive Axienfinity from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+                "title" : "Receive Axie Infinity",
+                "content" : "Receive Axie Infinity from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
                 "image_url" : "/images/services/iphone-receive-bitcoin.png",
                 "image_class" : "iphone"
             },
             "hoddl" : {
-                "title" : "HODL Axienfinity",
+                "title" : "HODL Axie Infinity",
                 "content" : "Did you know? Historically proven that AXS HODLERS get higher returns than AXS traders. Store your AXS in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "swap" : {
-                "title" : "Swap Axienfinity",
+                "title" : "Swap Axie Infinity",
                 "content" : "Triv supports over 700 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
                 "image_url" : "/images/services/iphone-bitcoin.png",
                 "image_class" : "iphone"

@@ -3,7 +3,7 @@ import { getDictionariesStocks } from "../../dictionaries";
 import StocksPageWrapper from "@/@core/pages/stocks/page-wrapper";
 
 export default async function  Stocks({ params }: any) {
-  const resp =  await getLiverateMini(50);
+  const resp =  await getLiverateMini(100);
   const liverates = resp.data.data
 
   const objHome = await getDictionariesStocks(params.lang);

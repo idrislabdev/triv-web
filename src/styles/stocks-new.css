@@ -139,9 +139,9 @@
                     @apply flex justify-between w-full;
                 }
                 .rfm-child {
-                    @apply mx-auto;
+                    @apply mx-[10px];
                     .index-cyrpto-content {
-                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-[210px];
+                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
                         .crypto-title{
                             @apply flex;
                             label {
