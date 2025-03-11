@@ -16,7 +16,7 @@ import '@/styles/components/form-service.css'
 
 const MaticPolygonPageWrap = (props: {lang:string, objLang:any}) => {
   const {lang, objLang,} = props
-  const objProduct = {code: 'MATIC', name: 'Matic Polygon'}
+  const objProduct = {code: 'MATIC', name: 'Polygon'}
 
   return (
     <>
