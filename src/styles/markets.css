@@ -110,14 +110,20 @@
             }
             .order-book-container {
                 @apply  border-r-neutral-800;
+                .subcontainer-title {
+                    h5 {
+                        @apply !text-slate-200;
+                    }
+                }
                 .order-book-table {
                     @apply flex flex-col gap-[8px] pb-[10px];
-                    /* .table-header {
+                    .table-header {
                         .header-row {
                             label {
+                                @apply text-[#838899];
                             }
                         }
-                    } */
+                    }
                     .table-body {
                         .body-row {
                             label {
