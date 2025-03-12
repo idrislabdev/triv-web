@@ -456,6 +456,21 @@
 
                         }
                     }
+                    &::-webkit-scrollbar {
+                        width: 10px;
+                        height: 10px;
+                        background: none;
+                    }
+                    &:hover::-webkit-scrollbar {
+                        background: #ececec;    
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: none;
+                        border-radius: 20px;
+                    }
+                    &:hover::-webkit-scrollbar-thumb {
+                        @apply bg-neutral-800;
+                    }
                 }
                 &.down {
                     .table-body {
