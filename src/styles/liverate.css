@@ -1422,6 +1422,9 @@
                                 @apply gap-[20px];
                                 .trade-stake-subcontainer {
                                     @apply flex flex-col gap-[20px];
+                                    .card-trade-stake {
+                                        @apply w-full;
+                                    }
                                 }
                             }
                             .insight-area {
