@@ -75,6 +75,9 @@
     }
     button {
         @apply rounded-[14px] text-[16px]/[24px] h-[54px];
+        &.btn-danger {
+            @apply bg-red-600 border-red-600 text-white;
+        }
     }
 }
 

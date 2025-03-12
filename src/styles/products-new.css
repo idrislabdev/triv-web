@@ -54,6 +54,9 @@
                         &.btn-primary {
                             @apply bg-[#3A80AF] border-[#3A80AF];
                         }
+                        &.btn-danger {
+                            @apply bg-red-600 border-red-600;
+                        }
                     }
                 }
             }

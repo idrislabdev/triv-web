@@ -42,7 +42,9 @@ const FormService = (props: {lang:any, objProduct:any, imgObj:string, objLang:an
                     <span>{objProduct.code} 0</span>
                 </div>
             </div>
-            <button className='btn-primary'><span className='capitalize'>{objLangForm[buttonType]} {objProduct.name} {objLangForm.now}</span></button>
+            <button className={`${buttonType == 'buy' ? 'btn-primary' : 'btn-danger'}`}>
+                <span className='capitalize'>{objLangForm[buttonType]} {objProduct.name} {objLangForm.now}</span>
+            </button>
         </div>
   )
 }
