@@ -112,7 +112,7 @@
                 @apply  border-r-neutral-800;
                 .subcontainer-title {
                     h5 {
-                        @apply !text-slate-200;
+                        @apply text-slate-200;
                     }
                 }
                 .order-book-table {
@@ -378,12 +378,12 @@
                                 @apply flex flex-col;
                                 .table-header-row {
                                     @apply flex flex-col;
-                                .wrapper-row {
-                                        @apply flex items-center justify-between px-[20px];
-                                        label {
-                                            @apply text-[14px]/[21px] text-neutral-600 font-medium w-[25%] select-none;
-                                        }
-                                }
+                                    .wrapper-row {
+                                            @apply flex items-center justify-between px-[20px];
+                                            label {
+                                                @apply text-[14px]/[21px] text-neutral-600 font-medium w-[25%] select-none;
+                                            }
+                                    }
                                 }
                             }
                             .table-body {
@@ -393,12 +393,12 @@
                                     &:hover {
                                         @apply bg-neutral-200;
                                     }
-                                .wrapper-row {
-                                        @apply flex items-center justify-between px-[20px] w-full h-full;
-                                        label {
-                                            @apply text-[14px]/[21px] text-neutral-700 font-medium w-[25%] cursor-pointer select-none;
-                                        }
-                                }
+                                    .wrapper-row {
+                                            @apply flex items-center justify-between px-[20px] w-full h-full;
+                                            label {
+                                                @apply text-[14px]/[21px] text-neutral-700 font-medium w-[25%] cursor-pointer select-none;
+                                            }
+                                    }
                                 }
                             }
                         }
@@ -447,10 +447,22 @@
                         @apply flex justify-between items-center relative h-[20px];
                         label {
                             @apply w-1/3 text-[11px]/[16px] font-medium text-neutral-700 text-center z-[10];
+                            &.price-digit {
+                                @apply text-[#EB5757];
+                            }
                         }
                         span {
                             @apply absolute h-full z-0 bg-[#FAD5D5] right-0;
 
+                        }
+                    }
+                }
+                &.down {
+                    .table-body {
+                        label {
+                            &.price-digit {
+                                @apply text-[#67C48F];
+                            }
                         }
                     }
                 }

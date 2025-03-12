@@ -54,7 +54,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                 {
                     dataAsks.map((item:IBookOrder, index:number) => (
                         <div className='body-row' key={index}>
-                            <label className='!text-[#EB5757]'>{item.price.toFixed(market.base_asset.precision)}</label>
+                            <label className='price-digit'>{item.price.toFixed(market.base_asset.precision)}</label>
                             <label>{item.qty.toFixed(market.quote_asset.precision)}</label>
                             <label>{item.total.toFixed(0)}</label>
                             <span style={{width: `${item.progress}%`}} ></span>
@@ -79,7 +79,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                 {
                     dataBids.map((item:IBookOrder, index:number) => (
                         <div className='body-row' key={index}>
-                            <label className='!text-[#EB5757]'>{item.price.toFixed(market.base_asset.precision)}</label>
+                            <label className='price-digit'>{item.price.toFixed(market.base_asset.precision)}</label>
                             <label>{item.qty.toFixed(market.quote_asset.precision)}</label>
                             <label>{item.total.toFixed(0)}</label>
                             <span style={{width: `${item.progress}%`}} ></span>
@@ -104,7 +104,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                 {
                     dataTrades.map((item:ITrade, index:number) => (
                         <div className='body-row' key={index}>
-                            <label className='!text-[#EB5757]'>{item.price.toFixed(0)}</label>
+                            <label className='price-digit'>{item.price.toFixed(0)}</label>
                             <label>{item.quantity.toFixed(0)}</label>
                             <label>{moment.unix(item.timestamp).format('HH:mm:ss')}</label>
                         </div>
