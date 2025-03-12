@@ -788,14 +788,14 @@
                     .coin-staking-container {
                         @apply w-1/3 p-[10px] ;
                         .card-coin-staking-new {
-                            @apply h-[87px] gap-0 rounded-[7px];
+                            @apply h-[87px] gap-0 rounded-[7px] pt-[10px];
                             .card-coin-logo {
                                 img {
                                     @apply w-[57px] h-[57px];
                                 }
                             }
                             .card-coin-desc {
-                                @apply text-center gap-0;
+                                @apply text-center gap-0 h-[45px];
                                 label {
                                     @apply text-[7px]/[10px];
                                 }
