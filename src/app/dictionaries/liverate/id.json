@@ -1,10 +1,10 @@
 {
     "header_section": {
-        "title": "Crypto Prices Today (Cryptocurrency Market)",
-        "description": "See the price development of your favorite crypto with Real-time Crypto Charts. Make smart decisions by monitoring live price updates and identify trading opportunities instantly."
+        "title": "Harga Kripto Hari Ini (Pasar Kripto)",
+        "description": "Lihat perkembangan harga kripto favorit Anda dengan Grafik Kripto Real-time. Ambil keputusan cerdas dengan memantau pembaruan harga secara langsung dan identifikasi peluang perdagangan secara instan."
     },
     "topmovers_section" : {
-        "title" : "🔥 Top Movers(24 Jam)"
+        "title" : "🔥 Top Movers (24 Jam)"
     },
     "invest_section" : {
         "title" : "Mulai Investasi Sekarang",
@@ -50,8 +50,8 @@
         }
     },
     "faq_section": {
-        "title_1" : "What are cryptos?",
-        "title_2" : "Crypto is taken from the word cryptography. Cryptography is the science that deals with techniques for encoding (encrypting) and encrypting (decrypting) messages to protect information from unauthorized access or alteration during transmission. In a more general context",
+        "title_1" : "Apa itu kripto?",
+        "title_2" : "Kripto diambil dari kata kriptografi. Kriptografi adalah ilmu yang mempelajari teknik penyandian (enkripsi) dan penyandian (dekripsi) pesan untuk melindungi informasi dari akses atau perubahan yang tidak sah selama transmisi. Dalam konteks yang lebih umum,",
         "questions" : [
             {
                 "title" : "Apa keuntungan investasi crypto?",
