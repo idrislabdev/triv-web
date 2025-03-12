@@ -85,7 +85,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 (pathname.split("/")[3] == 'dash') ||
                 (pathname.split("/")[3] == 'tether') ||
                 (pathname.split("/")[3] == 'chainlink') ||
-                (pathname.split("/")[3] == 'matic-polygon') ||
+                (pathname.split("/")[3] == 'polygon') ||
                 (pathname.split("/")[3] == 'polkadot') ||
                 (pathname.split("/")[3] == 'cardano') ||
                 (pathname.split("/")[3] == 'polkadot') ||
@@ -122,7 +122,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                 (path == 'dash') ||
                 (path == 'tether') ||
                 (path == 'chainlink') ||
-                (path == 'matic-polygon') ||
+                (path == 'polygon') ||
                 (path == 'polkadot') ||
                 (path == 'cardano') ||
                 (path == 'polkadot') ||
@@ -230,7 +230,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'chainlink' ? 'active' : ''}`}><Link href={`/${lang}/home/chainlink`}>Chainlink</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dogecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'bnb' ? 'active' : ''}`}><Link href={`/${lang}/home/bnb`}>BNB</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'matic-polygon' ? 'active' : ''}`}><Link href={`/${lang}/home/matic-polygon`}>Matic-Polygon</Link></li>
+                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polygon' ? 'active' : ''}`}><Link href={`/${lang}/home/polygon`}>Polygon</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'shibainu' ? 'active' : ''}`}><Link href={`/${lang}/home/shibainu`}>SHIBAINU</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polkadot' ? 'active' : ''}`}><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
                                         <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'cardano' ? 'active' : ''}`}><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
