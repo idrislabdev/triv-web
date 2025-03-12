@@ -35,17 +35,17 @@
                         }
                         &.buy {
                             &::after {
-                                @apply bg-[#3A80AF];
+                                @apply !bg-[#3A80AF];
                             }
                         }
                         &.sell {
                             &::after {
                                 content: '';
-                                @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
+                                @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] !bg-red-700 skew-x-[-25deg];
                             }
                             button {
                                 &.active {
-                                    @apply bg-red-600;
+                                    @apply !bg-red-700;
                                 }
                             }
                         }
@@ -53,9 +53,15 @@
                     button {
                         &.btn-primary {
                             @apply bg-[#3A80AF] border-[#3A80AF];
+                            span {
+                                @apply !text-white;
+                            }
                         }
                         &.btn-danger {
-                            @apply bg-red-600 border-red-600;
+                            @apply bg-red-700 border-red-700;
+                            span {
+                                @apply !text-white;
+                            }
                         }
                     }
                 }
