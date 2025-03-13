@@ -22,6 +22,9 @@ select {
             @apply font-medium text-neutral-400;
         }
     }
+    label {
+        @apply w-full text-[14px]/[21px] font-semibold;
+    }
     span {
         @apply absolute text-[14px]/[21px] text-neutral-500 top-[9px];
         &.prepend {

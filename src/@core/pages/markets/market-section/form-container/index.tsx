@@ -89,11 +89,7 @@ const MarketFormContainer = (props: {
                         <div className='form-group'>
                             <label>Price</label>
                             <div className='group-input prepend'>
-                                <input 
-                                    value={priceInstant}
-                                    className='color-2' placeholder='0' 
-                                    onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPriceInstant(e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, "."))}
-                                />
+                                <label>Market Price</label>
                                 <span className='prepend'>{market.quote_asset.code}</span>
                             </div>
                         </div>
