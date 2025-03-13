@@ -65,7 +65,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
             </div>
         </div>
         <div className='subcontainer-title'>
-            <h5 className='!text-[#67C48F]'>924.038.029</h5>
+            <h5 className='down'>924.038.029</h5>
         </div>
         <div className='order-book-table down'>
             <div className='table-header'>

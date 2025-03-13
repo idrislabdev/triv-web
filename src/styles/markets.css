@@ -113,6 +113,9 @@
                 .subcontainer-title {
                     h5 {
                         @apply text-slate-200;
+                        &.down {
+                            @apply !text-[#67C48F];
+                        }
                     }
                 }
                 .order-book-table {
@@ -156,13 +159,13 @@
                     button {
                         @apply bg-[#101214];
                         &.active {
-                            @apply bg-[#3A80AF] text-white;
+                            @apply bg-[#67C48F] text-white;
                         }
                     }
                     &.buy {
                         &::after {
                             content: '';
-                            @apply bg-[#3A80AF];
+                            @apply bg-[#67C48F];
                         }
                     }
                     &.sell {
@@ -216,7 +219,7 @@
                     }
                     a {
                         &.buy {
-                            @apply bg-[#3A80AF];
+                            @apply bg-[#67C48F];
                         }
                         &.sell {
                             @apply bg-red-700;
@@ -448,7 +451,7 @@
                         label {
                             @apply w-1/3 text-[11px]/[16px] font-medium text-neutral-700 text-center z-[10];
                             &.price-digit {
-                                @apply text-[#EB5757];
+                                @apply !text-[#EB5757];
                             }
                         }
                         span {
@@ -476,7 +479,7 @@
                     .table-body {
                         label {
                             &.price-digit {
-                                @apply text-[#67C48F];
+                                @apply !text-[#67C48F];
                             }
                         }
                     }
@@ -488,7 +491,7 @@
             .button-group {
                 @apply flex items-center relative;
                 button {
-                    @apply h-[35px] text-[10px]/[15px] font-semibold text-[#4B5060] w-1/2 bg-[#F5F7FA];
+                    @apply h-[35px] text-[10px]/[15px] font-semibold text-[#4B5060] w-1/2 bg-[#F5F7FA] text-white;
                     &.active {
                         @apply bg-[#67C48F] text-white;
                     }
