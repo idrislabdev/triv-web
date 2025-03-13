@@ -157,7 +157,7 @@
                 }
                 .button-group {
                     button {
-                        @apply bg-[#101214];
+                        @apply bg-[#101214] text-white;
                         &.active {
                             @apply bg-[#67C48F] text-white;
                         }
@@ -510,7 +510,7 @@
             .button-group {
                 @apply flex items-center relative;
                 button {
-                    @apply h-[35px] text-[10px]/[15px] font-semibold text-[#4B5060] w-1/2 bg-[#F5F7FA] text-white;
+                    @apply h-[35px] text-[10px]/[15px] font-semibold text-[#4B5060] w-1/2 bg-[#F5F7FA] ;
                     &.active {
                         @apply bg-[#67C48F] text-white;
                     }
