@@ -471,7 +471,6 @@
                         }
                         span {
                             @apply absolute h-full z-0 bg-[#FAD5D5] right-0;
-
                         }
                     }
                     &::-webkit-scrollbar {
@@ -492,9 +491,14 @@
                 }
                 &.down {
                     .table-body {
-                        label {
-                            &.price-digit {
-                                @apply !text-[#67C48F];
+                        .body-row {
+                            span {
+                                @apply bg-[#C1E7C2];
+                            }
+                            label {
+                                &.price-digit {
+                                    @apply !text-[#67C48F];
+                                }
                             }
                         }
                     }
