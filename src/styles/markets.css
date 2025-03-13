@@ -82,7 +82,7 @@
                                     .table-body-row {
                                         @apply flex flex-col h-[40px] justify-center w-full cursor-pointer;
                                         &:hover {
-                                            @apply bg-neutral-200;
+                                            @apply bg-neutral-700;
                                         }
                                        .wrapper-row {
                                             @apply flex items-center justify-between px-[20px] w-full h-full;
@@ -402,6 +402,21 @@
                                                 @apply text-[14px]/[21px] text-neutral-700 font-medium w-[25%] cursor-pointer select-none;
                                             }
                                     }
+                                }
+                                &::-webkit-scrollbar {
+                                    width: 10px;
+                                    height: 10px;
+                                    background: none;
+                                }
+                                &:hover::-webkit-scrollbar {
+                                    background: #ececec;    
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    background: none;
+                                    border-radius: 20px;
+                                }
+                                &:hover::-webkit-scrollbar-thumb {
+                                    @apply bg-neutral-800;
                                 }
                             }
                         }

@@ -16,13 +16,10 @@ const MarketHeader = (props: { lang: string}) => {
     const [showSidebar, setShowSidebar] = useState(false);
     const dropdownFlags: any = useRef(null);
     const { globals, saveGlobals } = useGlobals()
+    const [mode, setMode] = useState('light-theme')
 
     const pathname = usePathname()
     const router = useRouter();
-
-    if (localStorage.getItem('mode') === 'dark-theme') {
-        document.body.classList.add("dark-theme", "market")
-    }
 
     const switchTheme = () => {
         var check = document.body.classList.contains('dark-theme')
@@ -53,6 +50,13 @@ const MarketHeader = (props: { lang: string}) => {
             saveGlobals({...globals, theme: 'dark'})
         }
     }, [globals.theme])
+
+    useEffect(() => {
+        if (localStorage.getItem('mode') === 'dark-theme') {
+            document.body.classList.add("dark-theme");
+            setMode('dark-theme')
+        }
+    },[setMode])
 
     useEffect(() => {
         if (!showFlags) return;
