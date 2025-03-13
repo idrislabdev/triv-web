@@ -357,7 +357,7 @@
                         }
                     }
                     .dropdown-market {
-                        @apply w-[518px] h-[490px] absolute rounded-[4px] bg-white top-[70px] transition-all duration-300 scale-0 origin-top-left flex flex-col;
+                        @apply z-[20] w-[518px] h-[490px] absolute rounded-[4px] bg-white top-[70px] transition-all duration-300 scale-0 origin-top-left flex flex-col;
                         box-shadow: 0px 4px 10px 0px #0000004D;
                         &.show {
                             transform: translateX(0%);
