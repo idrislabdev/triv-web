@@ -67,14 +67,17 @@ const InflowChart = (props: {rawChart: any}) => {
             temp.chart.backgroundColor = '#fff'
         }
 
-        const total = rawChart.money_inflow[tabActive].total_buy + rawChart.money_inflow[tabActive].total_sell;
-        const buy = rawChart.money_inflow[tabActive].total_buy / total * 100
-        const sell = rawChart.money_inflow[tabActive].total_sell / total * 100
+        if (rawChart.money_inflow[tabActive]) {
+            const total = rawChart.money_inflow[tabActive].total_buy + rawChart.money_inflow[tabActive].total_sell;
+            const buy = rawChart.money_inflow[tabActive].total_buy / total * 100
+            const sell = rawChart.money_inflow[tabActive].total_sell / total * 100
+    
+            temp.series[0].data[0].y = Math.round(buy);
+            temp.series[0].data[1].y = Math.round(sell);
+            setDataChart(rawChart.money_inflow[tabActive])
+            setData(temp)
+        }
 
-        temp.series[0].data[0].y = Math.round(buy);
-        temp.series[0].data[1].y = Math.round(sell);
-        setDataChart(rawChart.money_inflow[tabActive])
-        setData(temp)
     }, [setData, globals, tabActive, rawChart])
 
     useEffect(() => {

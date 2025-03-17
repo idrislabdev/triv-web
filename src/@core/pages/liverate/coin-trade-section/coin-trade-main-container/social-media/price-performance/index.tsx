@@ -13,13 +13,16 @@ const PricePerformance = (props: {data:any}) => {
     const dataAllTime = data.periods.all_time
 
     const fetchData = useCallback(() => {
-        setDataPerformance(data.periods[tabActive])
-        const close = data.periods[tabActive].quote.IDR.close
-        const low = data.periods[tabActive].quote.IDR.low
-        const high = data.periods[tabActive].quote.IDR.high
-        const total = low + high;
-        const percentage  = close / total * 100
-        setPercentValue(percentage)
+        if (data.periods[tabActive]) {
+            setDataPerformance(data.periods[tabActive])
+            const close = data.periods[tabActive].quote.IDR.close
+            const low = data.periods[tabActive].quote.IDR.low
+            const high = data.periods[tabActive].quote.IDR.high
+            const total = low + high;
+            const percentage  = close / total * 100
+            setPercentValue(percentage)
+        }
+
     }, [data, setDataPerformance, tabActive])
 
     useEffect(() => {

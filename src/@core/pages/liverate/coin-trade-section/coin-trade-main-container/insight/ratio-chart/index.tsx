@@ -137,21 +137,24 @@ const RatioChart = (props: {rawChart: any}) => {
         const shortAccount = [] as any[];
         const longShortRatio = [] as any[];
 
-        rawData.forEach((item:any) => {
-            categories.push(moment.unix(item.time).format('DD, HH:mm'))
-            longAccount.push(item.longAccount)
-            shortAccount.push(item.shortAccount)
-            longShortRatio.push(item.longShortRatio)
-        });
-        const minVal = Math.min(...longShortRatio);
-        const maxVal = Math.max(...longShortRatio);
-        temp.xAxis[0].categories = categories;
-        temp.series[0].data = shortAccount;
-        temp.series[1].data = longAccount;
-        temp.series[2].data = longShortRatio;
-        temp.yAxis[1].min = minVal;
-        temp.yAxis[1].max = maxVal;
-        setData(temp)
+        if (rawData) {
+            rawData.forEach((item:any) => {
+                categories.push(moment.unix(item.time).format('DD, HH:mm'))
+                longAccount.push(item.longAccount)
+                shortAccount.push(item.shortAccount)
+                longShortRatio.push(item.longShortRatio)
+            });
+            const minVal = Math.min(...longShortRatio);
+            const maxVal = Math.max(...longShortRatio);
+            temp.xAxis[0].categories = categories;
+            temp.series[0].data = shortAccount;
+            temp.series[1].data = longAccount;
+            temp.series[2].data = longShortRatio;
+            temp.yAxis[1].min = minVal;
+            temp.yAxis[1].max = maxVal;
+            setData(temp)
+        }
+        
     }, [setData, globals, tabActive, rawChart])
 
     useEffect(() => {

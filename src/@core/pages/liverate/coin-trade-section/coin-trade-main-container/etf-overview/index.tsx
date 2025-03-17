@@ -13,9 +13,11 @@ const EtfOverview = () => {
     const fetchData = useCallback(async () => {
         const resp = await axios.get(`https://ins.triv.id/api/v1/asset-insights?currency=BTC&session=etf_flows`)
         const data = resp.data.etf_flows
-        setTotalObj({total_aum: data.total_aum, total_marketcap: data.total_marketcap, total_volume: data.total_volume})
-        setFlowData(data.flow_data[tabActive])
-        setDataList(data.data_list)
+        if (data.flow_data[tabActive]) {
+            setTotalObj({total_aum: data.total_aum, total_marketcap: data.total_marketcap, total_volume: data.total_volume})
+            setFlowData(data.flow_data[tabActive])
+            setDataList(data.data_list)
+        }
     },[tabActive])
 
     useEffect(() => {
