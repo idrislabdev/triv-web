@@ -1345,6 +1345,12 @@
         
                             .header-subcontainer {
                                 @apply flex-col-reverse gap-[20px];
+
+                                .chart-area {
+                                    &.hidden-mobile {
+                                        @apply hidden;
+                                    }
+                                }
                                 
                                 ul {
                                     &.tab-main {

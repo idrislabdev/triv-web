@@ -16,7 +16,7 @@ const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[],
     return (
         <div className='coin-main-container trade'>
             <div className='header-subcontainer'>
-                <div className='chart-area'>
+                <div className={`chart-area ${tabActive != 'overview' ? 'hidden-mobile' : ''}`}>
                     <LiverateCoinChartWrapper symbol={coin.currency.toUpperCase()+'IDR'} />
                 </div>
                 <ul className='tab-main'>
