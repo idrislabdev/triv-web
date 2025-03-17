@@ -1543,7 +1543,7 @@
                                     .group-input {
                                         @apply text-center;
                                         input {
-                                            @apply text-center;
+                                            /* @apply text-center; */
                                         }
                                     }
                                     .list-button {
@@ -1561,7 +1561,7 @@
                                     
                                 }
                                 label {
-                                    @apply justify-center text-[24px]/[36px];
+                                    @apply text-[24px]/[36px];
                                     span {
                                         @apply text-[24px]/[36px];
                                     }
