@@ -87,70 +87,72 @@
     }
     @layer components {
         &.mobile-responsive {
-            @apply p-[20px] ;
-            .footer-primary {
-                @apply flex-col-reverse gap-[30px];
-                .footer-primary-left {
-                    @apply flex-col gap-[16px];
-                    .container-menu {
-                        label {
-                            @apply text-[10px]/[15px];
-                        }
-                        .container-list-menu {
-                            @apply max-h-0 overflow-hidden relative;
-                            ul {
-                                li {
-                                    @apply text-[8px]/[12px] font-medium;
+           .footer-container {
+                @apply p-[20px] ;
+                .footer-primary {
+                    @apply flex-col-reverse gap-[30px];
+                    .footer-primary-left {
+                        @apply flex-col gap-[16px];
+                        .container-menu {
+                            label {
+                                @apply text-[10px]/[15px];
+                            }
+                            .container-list-menu {
+                                @apply max-h-0 overflow-hidden relative;
+                                ul {
+                                    li {
+                                        @apply text-[8px]/[12px] font-medium;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                .footer-primary-right {
-                    @apply gap-[30px] justify-center items-center;
-                    .footer-triv-logo {
-                        img {
-                            @apply !w-[120px] !h-[54px];
+                    .footer-primary-right {
+                        @apply gap-[30px] justify-center items-center;
+                        .footer-triv-logo {
+                            img {
+                                @apply !w-[120px] !h-[54px];
+                            }
                         }
-                    }
-                    .footer-address {
-                        @apply text-center;
-                        h6 {
-                            @apply text-[10px]/[15px];
+                        .footer-address {
+                            @apply text-center;
+                            h6 {
+                                @apply text-[10px]/[15px];
+                            }
+                            p {
+                                @apply text-[10px]/[15px];
+                            }
                         }
-                        p {
-                            @apply text-[10px]/[15px];
+                        .footer-triv-address-logo {
+                            .footer-socialmedia-list {
+                                @apply justify-center;
+                            }
                         }
-                    }
-                    .footer-triv-address-logo {
-                        .footer-socialmedia-list {
-                            @apply justify-center;
-                        }
-                    }
 
-                }
-            }
-            .footer-secondary {
-                @apply flex-col-reverse items-center gap-[40px];
-                .footer-secondary-right {
-                    @apply items-center;
-                    .terdaftar-text {
-                        label {
-                            @apply text-[12px]/[18px];
-                        }
                     }
                 }
-                .footer-secondary-left {
-                    .copyright-text {
+                .footer-secondary {
+                    @apply flex-col-reverse items-center gap-[40px];
+                    .footer-secondary-right {
                         @apply items-center;
-                        label {
-                            @apply text-[12px]/[18px];
-
+                        .terdaftar-text {
+                            label {
+                                @apply text-[12px]/[18px];
+                            }
                         }
                     }
-                    
+                    .footer-secondary-left {
+                        .copyright-text {
+                            @apply items-center;
+                            label {
+                                @apply text-[12px]/[18px];
+
+                            }
+                        }
+                        
+                    }
                 }
-            }
+           }
 
         }
     }
