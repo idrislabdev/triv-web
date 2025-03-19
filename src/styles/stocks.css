@@ -54,6 +54,7 @@
     }
 }
 .stocks-page {
+    @apply max-w-container mx-auto;
     h1, h2, h3, h4, h5 {
         @apply text-black;
     }

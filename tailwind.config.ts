@@ -44,6 +44,9 @@ const config: Config = {
         md: { max: "850px" },  
         sm: { max: "639px" },
       },
+      spacing: {
+        container: '1536px'
+      }
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import React from 'react'
 
 const ProductsTestimonyCarouselSection = () => {
   return (
-    <section className='products-testimony-carousel-section'>
+    <section className='liverate-testimony-carousel-section'>
         <SwiperTestimony />
     </section>
   )

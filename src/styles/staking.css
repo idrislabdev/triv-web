@@ -103,7 +103,7 @@
     .staking-hero-section {
         @apply h-[750px] py-[100px] relative bg-[#000000] overflow-hidden flex flex-col justify-center;
         .staking-hero-section-area {
-            @apply flex px-[100px];
+            @apply flex px-[100px] max-w-container mx-auto;
             .section-text {
                 @apply flex flex-col w-[75%] gap-[40px] z-[1];
                 .text-title {
@@ -161,7 +161,7 @@
         }
     }
     .staking-benefit-section {
-        @apply py-[50px] px-[100px] flex gap-[80px];
+        @apply py-[50px] px-[100px] flex gap-[80px] max-w-container mx-auto;
         .media-container {
             @apply w-1/2;
             .frame-media {
@@ -215,7 +215,7 @@
         }
     }
     .staking-guide-crypto-section {
-        @apply  py-[50px] px-[100px] flex;
+        @apply  py-[50px] px-[100px] flex max-w-container mx-auto;
         .guide-container {
             @apply flex flex-col gap-[34px] flex-1;
             h2 {
@@ -261,7 +261,7 @@
         }
     }
     .staking-calculator-section {
-        @apply px-[100px] py-[50px] gap-[80px] flex flex-col justify-center items-center;
+        @apply px-[100px] py-[50px] gap-[80px] flex flex-col justify-center items-center max-w-container mx-auto;
         
         .card-staking-calculator{
             @apply flex items-center p-[60px] rounded-[20px] bg-[#F4F8FB] relative w-full;
@@ -337,7 +337,7 @@
         }
     }
     .staking-coins-section {
-        @apply px-[80px] py-[50px] gap-[40px] flex flex-col justify-center items-center;
+        @apply px-[80px] py-[50px] gap-[40px] flex flex-col justify-center items-center max-w-container mx-auto;
         
         .header-coins-staking {
             @apply flex flex-col gap-[8px] text-center;
@@ -361,7 +361,7 @@
         }
     }
     .staking-faq-section {
-        @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center;
+        @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
         h2 {
             @apply text-[48px]/[72px] font-black text-center;
             span {
@@ -409,7 +409,7 @@
         }
     }
     .staking-start-now-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[100px];
+        @apply flex items-center py-[50px]  px-[100px] gap-[100px] max-w-container mx-auto;
         .image-container {
             @apply w-1/2 flex flex-col justify-center items-end relative;
             img {
@@ -470,10 +470,10 @@
         }
     }
     .staking-testimony-carousel-section {
-        @apply px-[100px] py-[50px] gap-[60px] flex justify-center items-center;
+        @apply px-[100px] py-[50px] gap-[60px] flex justify-center items-center max-w-container mx-auto;
     }
     .staking-banner-section {
-        @apply p-[100px];
+        @apply p-[100px] max-w-container mx-auto;
         .main-container {
             .sub-container {
                 @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;

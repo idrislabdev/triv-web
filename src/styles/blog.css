@@ -115,9 +115,8 @@
 
 }
 .blog-page {
-
     .blog-news-section {
-        @apply  py-[50px] px-[100px] flex gap-[64px];
+        @apply  py-[50px] px-[100px] flex gap-[64px] max-w-container mx-auto;
         .blog-main-container {
             @apply flex flex-col gap-[60px] w-1/2;
             .main-subcontainer {
@@ -258,7 +257,7 @@
         }
     }
     .blog-news-new-section {
-        @apply  py-[50px] px-[100px] flex gap-[64px];
+        @apply  py-[50px] px-[100px] flex gap-[64px] max-w-container mx-auto;
         .blog-main-container {
             @apply flex flex-col gap-[60px] flex-1;
             .main-subcontainer {
@@ -386,9 +385,9 @@
         }
     }
     .blog-baru-crypto-section {
-        @apply py-[50px];
+        @apply py-[50px] bg-[#EEF7FD] ;
         .blog-baru-crypto-container {
-            @apply flex gap-[80px] px-[100px] py-[50px]  items-center relative bg-[#EEF7FD];
+            @apply flex gap-[80px] px-[100px] py-[50px]  items-center relative max-w-container mx-auto;
             .baru-crypto-title {
                 @apply flex flex-col gap-[20px];
                 h5 {
@@ -441,7 +440,7 @@
         }
     }
     .blog-investasi-now-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        @apply flex items-center py-[50px]  px-[100px] gap-[60px] max-w-container mx-auto;
         .image-container {
             @apply w-1/2 flex flex-col justify-center items-end relative;
             img {
@@ -502,6 +501,7 @@
         }
     }
     &.detail {
+        @apply max-w-container mx-auto;
         .blog-baru-crypto-section,.blog-investasi-now-section{
             @apply hidden;
         }

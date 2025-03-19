@@ -45,7 +45,7 @@
     }
 }
 .register-page {
-    @apply p-0 flex min-h-screen justify-center;
+    @apply p-0 flex min-h-screen justify-center max-w-container mx-auto;
     &.dark-theme {
         h1, h2, h3, h4, h5 {
             @apply text-slate-200;

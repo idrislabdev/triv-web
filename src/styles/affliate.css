@@ -58,7 +58,7 @@
         background-position: center;
         background-size: cover;
         .comission-container {
-            @apply flex flex-col gap-[82px];
+            @apply flex flex-col gap-[82px] max-w-container mx-auto;
             h2 {
                 @apply text-[38px]/[57px] text-white font-bold;
             }
@@ -70,7 +70,7 @@
     .affliate-downline-section {
         @apply flex flex-col justify-center items-center bg-[#202020];
         .downline-container{
-            @apply flex px-[100px] pt-[120px] pb-[60px] gap-[200px] items-center;
+            @apply flex px-[100px] pt-[120px] pb-[60px] gap-[200px] items-center max-w-container mx-auto;
             .image-subcontainer {
                 @apply w-[331px];
                 img {
@@ -91,7 +91,7 @@
     .affliate-withdraw-section {
         @apply flex flex-col justify-center items-center bg-[#202020];
         .withdraw-container{
-            @apply flex px-[100px] pt-[60px] pb-[120px] gap-[200px] items-center;
+            @apply flex px-[100px] pt-[60px] pb-[120px] gap-[200px] items-center max-w-container mx-auto;
             .image-subcontainer {
                 @apply w-[331px];
                 img {
@@ -115,7 +115,7 @@
     .affliate-holiday-section {
         @apply flex flex-col justify-center items-center bg-[#333333];
         .holiday-container{
-            @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative;
+            @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative max-w-container mx-auto;
             .header-subcontainer {
                 @apply  w-full flex flex-col gap-[16px];
                 h2 {
@@ -146,7 +146,7 @@
         background-position: center;
         background-size: cover;
         .extra-container {
-            @apply flex items-center justify-between;
+            @apply flex items-center justify-between max-w-container mx-auto;
             .content-subcontainer {
                 @apply flex flex-col gap-[30px];
                 h2 {

@@ -53,7 +53,7 @@
     .contact-us-header-section {
         @apply  py-[50px] px-[100px] flex flex-col gap-[20px] items-center justify-center text-center overflow-hidden;
         .header-container {
-            @apply flex flex-col justify-center gap-[20px] w-[80%];
+            @apply flex flex-col justify-center gap-[20px] w-[80%] max-w-container mx-auto;
             h2 {
                 @apply text-[42px]/[63px] font-semibold;
             }
@@ -71,7 +71,7 @@
     .contact-us-info-section {
         @apply  py-[50px] px-[100px] flex flex-col gap-[20px] items-center justify-center text-center;
         .info-container {
-            @apply flex justify-center gap-[50px] w-[80%];
+            @apply flex justify-center gap-[50px] w-[80%] max-w-container mx-auto;
             .info-card{
                 @apply w-1/3 flex flex-col justify-center text-center items-center gap-[20px] border border-neutral-200 rounded-[10px] p-[20px];
                 .card-header {
@@ -101,7 +101,7 @@
         }
     }
     .contact-us-faq-section {
-        @apply py-[50px] px-[100px] flex flex-col gap-[20px];
+        @apply py-[50px] px-[100px] flex flex-col gap-[20px] max-w-container mx-auto;
         .header-faq-contact-us {
             @apply flex justify-between items-center;
             h2 {

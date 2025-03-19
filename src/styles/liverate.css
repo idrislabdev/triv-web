@@ -214,7 +214,7 @@
     }
 
     .liverate-header-section {
-        @apply  pt-[30px] pb-[20px] px-[100px] flex flex-col gap-[20px];
+        @apply  pt-[30px] pb-[20px] px-[100px] flex flex-col gap-[20px] max-w-container mx-auto;
         h2 {
             @apply text-[28px]/[42px] font-bold;
         }
@@ -224,7 +224,7 @@
     }
     
     .liverate-top-mover-section {
-        @apply py-[30px] px-[100px] flex flex-col gap-[20px];
+        @apply py-[30px] px-[100px] flex flex-col gap-[20px] max-w-container mx-auto;
         h2 {
             @apply text-[28px]/[42px] font-bold;
         }
@@ -275,7 +275,7 @@
     }
     
     .liverate-list-section {
-        @apply py-[30px] px-[100px] flex flex-col gap-[40px];
+        @apply py-[30px] px-[100px] flex flex-col gap-[40px] max-w-container mx-auto;
         .list-header {
             @apply flex justify-between items-center;
             .liverate-menu {
@@ -378,7 +378,7 @@
     }
     
     .liverate-ask-section {
-        @apply py-[20px] px-[100px] flex flex-col gap-[20px];
+        @apply py-[20px] px-[100px] flex flex-col gap-[20px] max-w-container mx-auto;
         h2 {
             @apply text-[28px]/[42px] font-bold text-black text-center;
         }
@@ -426,7 +426,7 @@
         }
     }
     .liverate-investasi-now-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+        @apply flex items-center py-[50px]  px-[100px] gap-[60px] max-w-container mx-auto;
         .image-container {
             @apply w-1/2 flex flex-col justify-center items-end relative;
             img {
@@ -488,11 +488,11 @@
     }
 
     .liverate-testimony-carousel-section {
-        @apply px-[100px] pt-[30px] pb-[100px] gap-[60px] flex justify-center items-center;
+        @apply px-[100px] pt-[30px] pb-[100px] gap-[60px] flex justify-center items-center max-w-container mx-auto;
     }
 
     .liverate-coin-section {
-        @apply flex flex-col py-[50px] px-[100px] gap-[47px];
+        @apply flex flex-col py-[50px] px-[100px] gap-[47px] max-w-container mx-auto;
         h2 {
             @apply text-[28px]/[42px] font-bold text-[#000000] flex items-center gap-[30px];
             span {

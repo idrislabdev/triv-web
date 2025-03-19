@@ -125,12 +125,12 @@
         }
     }
     .products-service-hero-new-section {
-        @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px] bg-[#F6F9FB] relative;
+        @apply flex flex-col justify-center items-center py-[50px]  gap-[20px] bg-[#F6F9FB] relative ;
         background: url("/images/ornaments/service-ornament.png") no-repeat;
         background-position: center;
         background-size: cover;
         .service-hero-container {
-            @apply flex gap-[124px] w-full; 
+            @apply flex gap-[124px] px-[100px] w-full max-w-container mx-auto; 
             .left-subcontainer {
                 @apply flex flex-col gap-[40px] flex-1;
                 .text-area {
@@ -254,7 +254,7 @@
         } */
     }
     .products-regulasi-new-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
+        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
         .regulasi-container {
             @apply flex gap-[50px];
             .box-subcontainer {
@@ -283,7 +283,7 @@
         }
     }
     .products-layanan-new-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
+        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
         .title-container {
             @apply flex flex-col items-center text-center justify-center gap-[20px];
             h2 {
@@ -450,11 +450,12 @@
     }
     .products-affliate-new-section {
         @apply relative flex flex-col justify-center py-[50px];
+        background: url("/images/backgrounds/affliate.png") no-repeat;
+        background-position: center;
+        background-size: cover;
         .affliate-container {
-            @apply flex justify-between items-center h-[490px] px-[100px] gap-[20px];
-            background: url("/images/backgrounds/affliate.png") no-repeat;
-            background-position: center;
-            background-size: cover;
+            @apply flex justify-between items-center h-[490px] px-[100px] gap-[20px] max-w-container mx-auto;
+
             .image-subcontainer {
                 @apply w-[400px] h-full flex flex-col justify-end;
                 img {
@@ -565,7 +566,7 @@
         }
     }
     .products-average-new-section {
-        @apply flex flex-col items-center px-[100px] py-[75px] relative;
+        @apply flex flex-col items-center px-[100px] py-[75px] relative max-w-container mx-auto;
         .box-container {
             @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[40px] py-[40px] gap-[60px] relative w-[100%] overflow-hidden;
             .sub-container {
@@ -615,7 +616,7 @@
     
     }   
     .products-ewallet-new-section {
-        @apply flex items-center relative py-[50px];
+        @apply flex items-center relative py-[50px] max-w-container mx-auto;
         .ewallet-description {
             @apply flex-1 flex flex-col gap-[20px] pl-[100px];
             h2 {
@@ -644,7 +645,7 @@
         }
     }
     .products-banner-new-section {
-        @apply p-[100px];
+        @apply p-[100px] max-w-container mx-auto;
         .main-container {
             .sub-container {
                 @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;

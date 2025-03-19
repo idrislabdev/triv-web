@@ -204,99 +204,101 @@ const MainHeader = (props: {classText:string, lang: string}) => {
     
     return (
         <>
-            <header className={`main-header sm:mobile-responsive md:mobile-responsive ${classText} ${classText === 'header-white' ? 'drop-shadow' : ''}`}>
-                <div className='triv-logo-header'>
-                    <Link href="/"><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
-                </div>
-                <div className={`main-header-menu`}>
-                    <ul>
-                        <li className={`${pathname.split("/")[2] === 'liverate' ? 'active' : ''}`}><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
-                        <li className={`has-sub ${checkMenuService() ? 'active' : ''}`}>
-                            <a>Service <ChevronIconDown color={'#fff'} /></a>
-                            <ul className='submenu'>
-                                <li className={`${checkMenuCurrenncy() ? 'active' : ''}`}>
-                                    <a>E-Currency <ChevronIconDown color={'#000'} /></a>
-                                    <ul className='submenu'>
-                                        {/* <li><Link href={`/${lang}/home/perfect-money`}>Perfect Money</Link></li> */}
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'paypal' ? 'active' : ''}`}><Link href={`/${lang}/home/paypal`}>Paypal</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'bitcoin' ? 'active' : ''}`}><Link href={`/${lang}/home/bitcoin`}>Bitcoin</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'ethereum' ? 'active' : ''}`}><Link href={`/${lang}/home/ethereum`}>Ethereum</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'stellar' ? 'active' : ''}`}><Link href={`/${lang}/home/stellar`}>Stellar</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'ripple' ? 'active' : ''}`}><Link href={`/${lang}/home/ripple`}>Ripple</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'eos' ? 'active' : ''}`}><Link href={`/${lang}/home/eos`}>Eos</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'Litecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/litecoin`}>Litecoin</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dash' ? 'active' : ''}`}><Link href={`/${lang}/home/dash`}>Dash</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'tether' ? 'active' : ''}`}><Link href={`/${lang}/home/tether`}>Tether</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'chainlink' ? 'active' : ''}`}><Link href={`/${lang}/home/chainlink`}>Chainlink</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dogecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'bnb' ? 'active' : ''}`}><Link href={`/${lang}/home/bnb`}>BNB</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polygon' ? 'active' : ''}`}><Link href={`/${lang}/home/polygon`}>Polygon</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'shibainu' ? 'active' : ''}`}><Link href={`/${lang}/home/shibainu`}>SHIBAINU</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polkadot' ? 'active' : ''}`}><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'cardano' ? 'active' : ''}`}><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'solana' ? 'active' : ''}`}><Link href={`/${lang}/home/solana`}>Solana</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'axieinfinity' ? 'active' : ''}`}><Link href={`/${lang}/home/axieinfinity`}>Axienfinity</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'tron' ? 'active' : ''}`}><Link href={`/${lang}/home/tron`}>Tron</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'pepe' ? 'active' : ''}`}><Link href={`/${lang}/home/pepe`}>Pepe</Link></li>
-                                        <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'hyperliquid' ? 'active' : ''}`}><Link href={`/${lang}/home/hyperliquid`}>Hyperliquid</Link></li>
-                                    </ul>
-                                </li>
-                                {/* <li className={`${checkMenuProduct() ? 'active' : ''}`}>
-                                    <a>Product <ChevronIconDown color={'#000'} /></a>
-                                    <ul className='submenu'>
-                                        <li className={`${pathname.split("/")[3] === 'product-pulsa' ? 'active' : ''}`}><Link href={`/${lang}/home/product-pulsa`}>Pulsa</Link></li>
-                                        <li className={`${pathname.split("/")[3] === 'product-token-listrik' ? 'active' : ''}`}><Link href={`/${lang}/home/product-token-listrik`}>Token Listrik</Link></li>
-                                        <li className={`${pathname.split("/")[3] === 'product-token-listrik' ? 'active' : ''}`}><Link href={`/${lang}/home/product-tagihan`}>Tagihan</Link></li>
-                                    </ul>
-                                </li> */}
-                            </ul>
-                        </li>
-                        <li className={`${pathname.split("/")[2] === 'staking' ? 'active' : ''}`}><Link href={`/${lang}/staking`}>Staking</Link></li>
-                        <li className={`${pathname.split("/")[2] === 'markets' ? 'active' : ''}`}><Link href={`/${lang}/markets`}>Market</Link></li>
-                        <li className={`${pathname.split("/")[2] === 'stocks' ? 'active' : ''}`}><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
-                        <li className={`${pathname.split("/")[3] === 'affliate' ? 'active' : ''}`}><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>
-                        <li className={`${pathname.split("/")[2] === 'blog' ? 'active' : ''}`}><Link href={`/${lang}/blog`}>Blog</Link></li>
-                        <li className={`${pathname.split("/")[3] === 'contact-us' ? 'active' : ''}`}><Link href={`/${lang}/home/contact-us`}>Contact Us</Link></li>
-                    </ul>
-                </div>
-                <div className='main-header-action'>
-                    <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={classText === '' ? '#fff': '#000'} /></a>
-                    <div className='main-header-action-list'>
-                        <a className='button-switch-theme' onClick={_ => switchTheme()}>
-                            {mode === 'light-theme' && <MoonIcon color='#fff' /> }
-                            {mode === 'dark-theme' && <SunIcon color='#fff' /> }
-                        </a>
+            <header className={`${classText} ${classText === 'header-white' ? 'drop-shadow' : ''}`}>
+                <div className={`main-header sm:mobile-responsive md:mobile-responsive ${classText}`}>
+                    <div className='triv-logo-header'>
+                        <Link href="/"><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
+                    </div>
+                    <div className={`main-header-menu`}>
                         <ul>
-                            <li className={`flags ${showFlags ? 'show': ''}`}>
-                                <ul className={`list-flags ${showFlags ? 'show': ''}`}>
-                                    <li>
-                                        <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
-                                            <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
-                                            {!showFlags &&
-                                                <span className={`chevron-icon`}><ChevronIconDown color={'#fff'}/></span>
-                                            }
-                                            {showFlags &&
-                                                <span className={`check-icon`}><CheckCircleIcon /></span>
-                                            }
-                                        </a>
+                            <li className={`${pathname.split("/")[2] === 'liverate' ? 'active' : ''}`}><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
+                            <li className={`has-sub ${checkMenuService() ? 'active' : ''}`}>
+                                <a>Service <ChevronIconDown color={'#fff'} /></a>
+                                <ul className='submenu'>
+                                    <li className={`${checkMenuCurrenncy() ? 'active' : ''}`}>
+                                        <a>E-Currency <ChevronIconDown color={'#000'} /></a>
+                                        <ul className='submenu'>
+                                            {/* <li><Link href={`/${lang}/home/perfect-money`}>Perfect Money</Link></li> */}
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'paypal' ? 'active' : ''}`}><Link href={`/${lang}/home/paypal`}>Paypal</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'bitcoin' ? 'active' : ''}`}><Link href={`/${lang}/home/bitcoin`}>Bitcoin</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'ethereum' ? 'active' : ''}`}><Link href={`/${lang}/home/ethereum`}>Ethereum</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'stellar' ? 'active' : ''}`}><Link href={`/${lang}/home/stellar`}>Stellar</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'ripple' ? 'active' : ''}`}><Link href={`/${lang}/home/ripple`}>Ripple</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'eos' ? 'active' : ''}`}><Link href={`/${lang}/home/eos`}>Eos</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'Litecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/litecoin`}>Litecoin</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dash' ? 'active' : ''}`}><Link href={`/${lang}/home/dash`}>Dash</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'tether' ? 'active' : ''}`}><Link href={`/${lang}/home/tether`}>Tether</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'chainlink' ? 'active' : ''}`}><Link href={`/${lang}/home/chainlink`}>Chainlink</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'dogecoin' ? 'active' : ''}`}><Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'bnb' ? 'active' : ''}`}><Link href={`/${lang}/home/bnb`}>BNB</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polygon' ? 'active' : ''}`}><Link href={`/${lang}/home/polygon`}>Polygon</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'shibainu' ? 'active' : ''}`}><Link href={`/${lang}/home/shibainu`}>SHIBAINU</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'polkadot' ? 'active' : ''}`}><Link href={`/${lang}/home/polkadot`}>Polkadot</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'cardano' ? 'active' : ''}`}><Link href={`/${lang}/home/cardano`}>Cardano</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'solana' ? 'active' : ''}`}><Link href={`/${lang}/home/solana`}>Solana</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'axieinfinity' ? 'active' : ''}`}><Link href={`/${lang}/home/axieinfinity`}>Axienfinity</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'tron' ? 'active' : ''}`}><Link href={`/${lang}/home/tron`}>Tron</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'pepe' ? 'active' : ''}`}><Link href={`/${lang}/home/pepe`}>Pepe</Link></li>
+                                            <li className={`${pathname.split("/")[2] == 'home' && pathname.split("/")[3] === 'hyperliquid' ? 'active' : ''}`}><Link href={`/${lang}/home/hyperliquid`}>Hyperliquid</Link></li>
+                                        </ul>
                                     </li>
-                                    <li className={`${showFlags ? 'block': 'hidden'}`}>
-                                        {lang === 'en' &&
-                                            <a onClick={_ => switchLang('id')}>
-                                                <Image src={`/images/flags/id.png`} alt='indonesian flags' width={'28'} height={'20'} />
-                                            </a>
-                                        }
-                                         {lang === 'id' &&
-                                            <a onClick={_ => switchLang('en')}>
-                                                <Image src={`/images/flags/en.png`} alt='indonesian flags' width={'28'} height={'20'} />
-                                            </a>
-                                        }
-                                    </li>
+                                    {/* <li className={`${checkMenuProduct() ? 'active' : ''}`}>
+                                        <a>Product <ChevronIconDown color={'#000'} /></a>
+                                        <ul className='submenu'>
+                                            <li className={`${pathname.split("/")[3] === 'product-pulsa' ? 'active' : ''}`}><Link href={`/${lang}/home/product-pulsa`}>Pulsa</Link></li>
+                                            <li className={`${pathname.split("/")[3] === 'product-token-listrik' ? 'active' : ''}`}><Link href={`/${lang}/home/product-token-listrik`}>Token Listrik</Link></li>
+                                            <li className={`${pathname.split("/")[3] === 'product-token-listrik' ? 'active' : ''}`}><Link href={`/${lang}/home/product-tagihan`}>Tagihan</Link></li>
+                                        </ul>
+                                    </li> */}
                                 </ul>
                             </li>
-                            <li><Link href={`/${lang}/login`} className='btn-login-header'>Login</Link></li>
-                            <li><Link href={`/${lang}/register`} className='btn-signup-header'>Sign Up</Link></li>
+                            <li className={`${pathname.split("/")[2] === 'staking' ? 'active' : ''}`}><Link href={`/${lang}/staking`}>Staking</Link></li>
+                            <li className={`${pathname.split("/")[2] === 'markets' ? 'active' : ''}`}><Link href={`/${lang}/markets`}>Market</Link></li>
+                            <li className={`${pathname.split("/")[2] === 'stocks' ? 'active' : ''}`}><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
+                            <li className={`${pathname.split("/")[3] === 'affliate' ? 'active' : ''}`}><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>
+                            <li className={`${pathname.split("/")[2] === 'blog' ? 'active' : ''}`}><Link href={`/${lang}/blog`}>Blog</Link></li>
+                            <li className={`${pathname.split("/")[3] === 'contact-us' ? 'active' : ''}`}><Link href={`/${lang}/home/contact-us`}>Contact Us</Link></li>
                         </ul>
+                    </div>
+                    <div className='main-header-action'>
+                        <a className='burger-menu' onClick={_ => showMobileSidebar()}><BurgerIcon color={classText === '' ? '#fff': '#000'} /></a>
+                        <div className='main-header-action-list'>
+                            <a className='button-switch-theme' onClick={_ => switchTheme()}>
+                                {mode === 'light-theme' && <MoonIcon color='#fff' /> }
+                                {mode === 'dark-theme' && <SunIcon color='#fff' /> }
+                            </a>
+                            <ul>
+                                <li className={`flags ${showFlags ? 'show': ''}`}>
+                                    <ul className={`list-flags ${showFlags ? 'show': ''}`}>
+                                        <li>
+                                            <a className='flag-button' onClick={_ => setShowFlags(!showFlags)} ref={dropdownFlags}>
+                                                <Image src={`/images/flags/${lang}.png`} alt='flag' width={'28'} height={'20'} />
+                                                {!showFlags &&
+                                                    <span className={`chevron-icon`}><ChevronIconDown color={'#fff'}/></span>
+                                                }
+                                                {showFlags &&
+                                                    <span className={`check-icon`}><CheckCircleIcon /></span>
+                                                }
+                                            </a>
+                                        </li>
+                                        <li className={`${showFlags ? 'block': 'hidden'}`}>
+                                            {lang === 'en' &&
+                                                <a onClick={_ => switchLang('id')}>
+                                                    <Image src={`/images/flags/id.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                                </a>
+                                            }
+                                            {lang === 'id' &&
+                                                <a onClick={_ => switchLang('en')}>
+                                                    <Image src={`/images/flags/en.png`} alt='indonesian flags' width={'28'} height={'20'} />
+                                                </a>
+                                            }
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><Link href={`/${lang}/login`} className='btn-login-header'>Login</Link></li>
+                                <li><Link href={`/${lang}/register`} className='btn-signup-header'>Sign Up</Link></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>

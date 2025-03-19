@@ -111,7 +111,7 @@
         background-position: center;
         background-size: cover;
         .home-hero-section-area {
-            @apply flex px-[100px] gap-[20px];
+            @apply flex px-[100px] gap-[20px] max-w-container mx-auto relative;
             .section-text {
                 @apply flex flex-col w-[75%] gap-[40px] z-[1];
                 .text-title {
@@ -175,7 +175,7 @@
     }
     
     .home-index-crypto-section {
-        @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden;
+        @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
         .rfm-marquee-container  {
             @apply flex justify-start overflow-hidden;
             .rfm-marquee {
@@ -294,7 +294,7 @@
     }
     
     .home-rancang-new-section {
-        @apply flex gap-[40px] overflow-hidden h-[600px];
+        @apply flex gap-[40px] overflow-hidden h-[600px] max-w-container mx-auto;
         .home-rancang-device {
             @apply w-[682px] flex flex-col items-center relative;
             img {
@@ -336,7 +336,7 @@
     }
     
     .home-investasi-section {
-        @apply flex flex-col items-center p-[100px] relative;
+        @apply flex flex-col items-center p-[100px] relative max-w-container mx-auto;
         .investasi-section-box {
             @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] pt-[40px] gap-[29px] relative w-full;
             h2 {
@@ -380,7 +380,7 @@
     }
 
     .home-transaksi-section {
-        @apply flex items-center px-[100px] gap-[20px] relative overflow-hidden;
+        @apply flex items-center px-[100px] gap-[20px] relative overflow-hidden max-w-container mx-auto;
         .image-container {
             @apply w-[550px] h-[600px] flex flex-col justify-center items-end;
             img {
@@ -426,7 +426,7 @@
     }
     
     .home-dividen-staking-section {
-        @apply flex  px-[100px] py-[50px] gap-[30px];
+        @apply flex  px-[100px] py-[50px] gap-[30px] max-w-container mx-auto;
         .dividen-staking-device {
             @apply w-[554px] relative flex flex-col justify-center items-end;
             img {
@@ -461,7 +461,7 @@
     }
     
     .home-ewallet-section {
-        @apply flex items-center relative py-[50px];
+        @apply flex items-center relative py-[50px] max-w-container mx-auto;
         .ewallet-description {
             @apply flex-1 flex flex-col gap-[20px] pl-[100px];
             h2 {
@@ -491,9 +491,9 @@
     }
     
     .home-baru-crypto-section {
-        @apply py-[100px];
+        @apply py-[50px] bg-[#EEF7FD] my-[50px];
         .home-baru-crypto-container {
-            @apply flex gap-[80px] py-[50px]  items-center relative bg-[#EEF7FD];
+            @apply flex gap-[80px] py-[50px]  items-center relative max-w-container mx-auto;
             .baru-crypto-title {
                 @apply flex flex-col gap-[20px] pl-[100px];
                 h5 {
@@ -542,7 +542,7 @@
     }
     
     .home-buy-sell-assets-section {
-        @apply flex items-center px-[100px] relative;
+        @apply flex items-center px-[100px] relative  max-w-container mx-auto;
         .image-container {
             @apply w-[500px] h-[500px] flex flex-col justify-center items-end;
             img {
@@ -603,7 +603,7 @@
     }
     
     .home-media-section {
-        @apply flex flex-col justify-center items-center  py-[100px] gap-[40px];
+        @apply flex flex-col justify-center items-center  py-[100px] gap-[40px]  max-w-container mx-auto;
         h2 {
             @apply text-[48px]/[72px] font-black text-neutral-900;
         }
