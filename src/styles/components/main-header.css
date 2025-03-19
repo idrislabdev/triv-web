@@ -181,17 +181,17 @@
                 }
             }
         }
-        .main-sidebar-menu { 
-            @apply bg-[#1f1f1f];
-            .sidebar-list {
-                ul {
-                    @apply !text-slate-300;
-                    li {
-                        a {
-                            svg {
-                                path {
-                                    @apply stroke-white;
-                                }
+    }
+    .main-sidebar-menu { 
+        @apply bg-[#1f1f1f];
+        .sidebar-list {
+            ul {
+                @apply !text-slate-300;
+                li {
+                    a {
+                        svg {
+                            path {
+                                @apply stroke-white;
                             }
                         }
                     }
