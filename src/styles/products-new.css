@@ -722,7 +722,7 @@
             .products-service-hero-new-section {
                 @apply p-[20px];
                 .service-hero-container {
-                    @apply flex-col gap-[40px]; 
+                    @apply flex-col gap-[40px] w-full pl-0 pr-0; 
                     .left-subcontainer {
                         @apply flex flex-col gap-[20px] w-full;
                         .text-area {
