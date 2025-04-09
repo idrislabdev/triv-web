@@ -1354,7 +1354,7 @@
                                 
                                 ul {
                                     &.tab-main {
-                                        @apply gap-[14px] text-[14px]/[21px] overflow-x-auto w-full;
+                                        @apply gap-[14px] text-[14px]/[21px] overflow-x-auto w-fit;
                                         li {
                                             @apply cursor-pointer w-full flex;
                                             a {

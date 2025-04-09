@@ -58,12 +58,48 @@
         background-position: center;
         background-size: cover;
         .comission-container {
-            @apply flex flex-col gap-[82px] max-w-container mx-auto;
+            @apply flex flex-col gap-[82px] max-w-container mx-auto w-full px-[100px];
             h2 {
                 @apply text-[38px]/[57px] text-white font-bold;
             }
             .coupon-subcontainer {
-                @apply flex gap-[80px];
+                @apply flex gap-[80px] justify-center w-full;
+                .card-coupon {
+                    @apply w-1/2;
+                    @media (max-width: 1360px) {
+                        @apply h-[310px];
+                        .card-body {
+                            h5 {
+                                @apply text-[80px]/[125px];
+                            }
+                            p {
+                                @apply text-[18px]/[21px];
+                            }
+                        }
+                    }
+                    @media (max-width: 1240px) {
+                        @apply h-[290px] px-[50px];
+                        .card-body {
+                            h5 {
+                                @apply text-[70px]/[115px];
+                            }
+                            p {
+                                @apply text-[14px]/[19px];
+                            }
+                        }
+                    }
+                    @media (max-width: 1024px) {
+                        @apply h-[290px] px-[50px];
+                        .card-body {
+                            h5 {
+                                @apply text-[50px]/[95px];
+                            }
+                            p {
+                                @apply text-[12px]/[17px];
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -115,7 +151,7 @@
     .affliate-holiday-section {
         @apply flex flex-col justify-center items-center bg-[#333333];
         .holiday-container{
-            @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative max-w-container mx-auto;
+            @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative max-w-container mx-auto w-full;
             .header-subcontainer {
                 @apply  w-full flex flex-col gap-[16px];
                 h2 {
@@ -141,14 +177,14 @@
         }
     }
     .affliate-extra-section {
-        @apply h-[429px] relative flex flex-col justify-center px-[99px];
+        @apply h-[429px] relative flex flex-col justify-center;
         background: url("/images/backgrounds/extra.png") no-repeat;
         background-position: center;
         background-size: cover;
         .extra-container {
-            @apply flex items-center justify-between max-w-container mx-auto;
+            @apply flex items-center justify-between max-w-container mx-auto px-[100px] w-full;
             .content-subcontainer {
-                @apply flex flex-col gap-[30px];
+                @apply flex flex-1 flex-col gap-[30px];
                 h2 {
                     @apply text-[60px]/[90px] text-white font-bold;
                 }
@@ -190,14 +226,14 @@
             .affliate-comission-section {
                 @apply h-[600px] px-[20px];
                 .comission-container {
-                    @apply flex flex-col gap-[48px];
+                    @apply flex flex-col gap-[48px] px-0;
                     h2 {
                         @apply text-[22px]/[33px] text-white font-bold;
                     }
                     .coupon-subcontainer {
                         @apply flex-col items-center gap-[0px];
                         .card-coupon {
-                            @apply w-[332px] h-[189px] px-[30px] py-[10px];
+                            @apply w-[332px] h-[189px] px-[30px];
                             .card-body {
                                 h5 {
                                     @apply text-[51px]/[77px];
@@ -317,11 +353,11 @@
             .affliate-extra-section {
                 @apply px-[20px];
                 .extra-container {
-                    @apply flex-col gap-[80px];
+                    @apply flex-col gap-[80px] w-full px-0;
                     .content-subcontainer {
                         @apply flex flex-col gap-[20px] justify-center items-center text-center;
                         h2 {
-                            @apply text-[38px]/[57px] text-white font-bold;
+                            @apply text-[38px]/[57px] text-white font-bold w-[80%];
                         }
                         p {
                             @apply text-[18px]/[27px] text-white font-medium;
@@ -329,7 +365,7 @@
                         }
                     }
                     a {
-                        @apply text-[18px]/[27px] ;
+                        @apply text-[18px]/[27px] h-[48px];
                     }
                 }
             }
