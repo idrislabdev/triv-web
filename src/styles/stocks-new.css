@@ -145,7 +145,7 @@
                         .crypto-title{
                             @apply flex;
                             label {
-                                @apply text-[12px]/[18px] font-medium text-neutral-500;
+                                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
                             }
                         }
                         .crypto-index{
@@ -293,7 +293,7 @@
             }
         }
         .description-container {
-            @apply flex flex-1 flex-col gap-0;
+            @apply flex flex-1 flex-col gap-[22px];
             .start-now-description {
                 @apply flex flex-col gap-[18px];
                 h2 {
@@ -742,9 +742,12 @@
                         }
                     }
                    .start-button-logo {
-                        @apply flex flex-col gap-[30px];
+                        @apply flex flex-col gap-[30px] items-center;
                         a {
-                           @apply hidden;
+                            @apply h-[34px] text-[12px]/[18px];
+                            svg {
+                                @apply h-[12px] w-[12px];
+                            }
                         }
                    }
                 }

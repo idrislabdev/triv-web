@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 
@@ -32,7 +33,7 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                     <p>{objLang.media.description}</p>
                 </div>
             </div>
-            <div className='benefit-container '>
+            <div className='benefit-container'>
                 <h2 className='fade-in entry-2'>{objLang.benefit.title_1} <span>{objLang.benefit.title_2}</span> {objLang.benefit.title_3}</h2>
                 <div className='benefit-type-container fade-in entry-3'>
                     <div className='benefit-icon'>
@@ -61,6 +62,7 @@ const StakingBenefitSection = (props: {objLang:any}) => {
                         <p>{objLang.benefit.benefits[2].description}</p>
                     </div>
                 </div>
+                <button>{objLang.benefit.button}  <ArrowRightIcon color={'#fff'} /></button>
             </div>
         </section>
     )

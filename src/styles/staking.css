@@ -210,7 +210,7 @@
                 }
             }
             button {
-                @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[9px] w-[260px] text-[14px]/[21px] font-bold;   
+               @apply hidden;   
             }
         }
     }
@@ -564,7 +564,7 @@
             .staking-hero-section {
                 @apply h-full pt-[65px] pb-0;
                 .staking-hero-section-area {
-                    @apply flex-col px-[20px];
+                    @apply flex-col px-[20px] gap-[40px];
                     .section-text {
                         @apply w-full gap-[20px];
                         .text-title {
@@ -580,7 +580,7 @@
                             }
                         }
                         .text-info {
-                            @apply flex gap-[60px] justify-center items-center;
+                            @apply flex gap-0 justify-between items-center;
                             .text-detail-info {
                                 @apply flex flex-col;
                                 label {
@@ -644,7 +644,12 @@
                     }
                 }
                 button {
-                    @apply w-full rounded-[30px] text-[12px]/[18px];
+                    @apply w-full h-[30px] rounded-[30px] text-[12px]/[18px] flex gap-[10px] justify-center items-center bg-primary text-white;
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
                 }
                 .media-container {
                     @apply w-full;

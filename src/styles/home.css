@@ -190,7 +190,7 @@
                         .crypto-title{
                             @apply flex;
                             label {
-                                @apply text-[12px]/[18px] font-medium text-neutral-500;
+                                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
                             }
                         }
                         .crypto-index{
