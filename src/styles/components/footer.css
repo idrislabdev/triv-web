@@ -37,7 +37,7 @@
                     .footer-socialmedia-list {
                         @apply flex justify-end;
                         ul {
-                            @apply flex gap-[20px] list-none;
+                            @apply flex gap-[20px] list-none justify-end;
                         }
                     }
                     .footer-address {
@@ -81,6 +81,95 @@
                 }
                 .footer-terdaftar-list {
                     @apply flex justify-end gap-[37px];
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            @apply gap-[50px];
+            .footer-primary {
+                .footer-primary-left {
+                    @apply gap-[30px];
+                    .container-menu {
+                        @apply gap-[12px];
+                        label {
+                            @apply text-[13px]/[21px];
+                        }
+                        .container-list-menu {
+                            ul {
+                                @apply gap-[20px];
+                                li {
+                                    @apply text-[13px]/[21px] ;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-primary-right {
+                    @apply gap-[40px];
+                    .footer-triv-logo {
+                        @apply items-end;
+                        img {
+                            @apply w-[30%] h-full;
+                        }
+                    }
+                    .footer-triv-address-logo {
+                        @apply gap-[20px];
+                        .footer-socialmedia-list {
+                            ul {
+                                @apply gap-[20px];
+                                li {
+                                    a {
+                                        svg {
+                                            @apply w-[95%] h-[95%];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .footer-address {
+                            @apply text-right;
+                            h6, p {
+                                @apply text-[13px]/[21px] font-medium;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-secondary {
+                .footer-secondary-left {
+                    @apply  gap-[20px];
+                    .copyright-text {
+                        label {
+                            @apply text-[13px]/[21px];
+                        }
+                    }
+                    .footer-appstore {
+                        @apply gap-[8px];
+                        img {
+                            &.logo-playstore {
+                                @apply !w-[30%] !h-[90%];
+                            }
+                            &.logo-appstore {
+                                @apply !w-[30%] !h-[90%];
+        
+                            }
+                        }
+                    }
+                }
+                .footer-secondary-right {
+                    @apply gap-[10px];
+                    .terdaftar-text {
+                        label {
+                            @apply text-[13px]/[21px] ;
+                        }
+                    }
+                    .footer-terdaftar-list {
+                        @apply gap-[27px];
+                        img {
+                            @apply w-[100%];
+                        }
+                    }
                 }
             }
         }
