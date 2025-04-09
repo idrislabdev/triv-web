@@ -159,6 +159,58 @@
             }
            
         }
+        @media (max-width:1024px) {
+            @apply h-[600px];
+            .staking-hero-section-area {
+                .section-text {
+                    .text-title {
+                        @apply gap-[28px];
+                        .title {
+                            @apply w-[90%];
+                            h1 {
+                                @apply text-[42px]/[51px];
+                            }
+                        }
+                        p {
+                            @apply text-[14px]/[21px] w-[65%];
+                        }
+                    }
+                    .text-info {
+                        @apply gap-[60px];
+                        .text-detail-info {
+                            label {
+                                @apply text-[24px]/[31px] text-primary font-bold;
+                            }
+                            span {
+                                @apply text-[14px]/[21px];
+                            }
+                        }
+                    }
+                }
+                .section-image {
+                    &::before {
+                        content: '';
+                        @apply absolute bottom-0 w-[100%] h-full right-0 ;
+                        background: url("/images/ornaments/device-ornament.png") no-repeat;
+                    }
+                    img {
+                        &.img-device {
+                            @apply w-[425px] h-[550px] right-[20px] bottom-[-50px];
+                        }
+                        &.img-coin-1 {
+                            @apply  w-[144px] h-[137px] absolute right-[330px] top-[45%];
+                        }
+                        &.img-coin-2 {
+                            @apply  w-[132px] h-[124px] absolute right-[10px] top-[20%];
+                        }
+                        &.img-coin-3 {
+                            @apply  w-[144px] h-[156px] absolute right-[10px] top-[70%];
+                        }
+                    }    
+                }
+               
+            }
+        }
     }
     .staking-benefit-section {
         @apply py-[50px] px-[100px] flex gap-[80px] max-w-container mx-auto;
@@ -213,6 +265,55 @@
                @apply hidden;   
             }
         }
+
+        @media (max-width:1024px) {
+            @apply gap-[40px];
+            .media-container {
+                @apply w-1/2;
+                .frame-media {
+                    iframe {
+                        @apply w-full h-[224px] rounded-tl-[11px] rounded-tr-[11px];
+                    }
+                }
+                .description-media {
+                    @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
+                    box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
+                    h5 {
+                        @apply text-[14px]/[21px];
+                    }
+                    p {
+                        @apply text-[10px]/[17px];
+                    }
+                }
+            }
+            .benefit-container {
+                @apply gap-[10px];
+                h2 {
+                    @apply text-[36px]/[56px];
+                }
+                .benefit-type-container {
+                    @apply flex gap-[20px];
+                    .benefit-icon {
+                        @apply w-[71px];
+                        img {
+                            @apply w-[71px] h-[71px];
+    
+                        }
+                    }
+                    .benefit-desc {
+                        h4 {
+                            @apply text-[15px]/[26px];
+                        }
+                        p {
+                            @apply text-[11px]/[17px];
+                        }
+                    }
+                }
+                button {
+                   @apply hidden;   
+                }
+            }
+        }
     }
     .staking-guide-crypto-section {
         @apply  py-[50px] px-[100px] flex max-w-container mx-auto;
@@ -257,6 +358,46 @@
             @apply flex flex-col justify-center w-[500px] relative;
             img {
                 @apply w-full;
+            }
+        }
+
+        @media (max-width:1024px) {
+            .guide-container {
+                @apply flex flex-col gap-[34px] flex-1;
+                h2 {
+                    @apply text-[24px]/[37px];
+                }
+                .guide-steps {
+                    ul {
+                        li {
+                            @apply list-none flex gap-[23px] pl-[40px] relative;
+                            &:not(:last-child) {
+                                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
+                            }
+                            .guide-icon {
+                                @apply w-[45px] absolute left-[-23px];
+                                img {
+                                    @apply w-full h-full;
+                                }
+                            }
+                            .guide-desc {
+                                @apply flex flex-col flex-1 gap-[8px];
+                                h5 {
+                                    @apply text-[14px]/[21px];
+                                }
+                                p {
+                                    @apply text-[11px]/[17px];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .image-container {
+                @apply flex flex-col justify-center w-[350px] relative;
+                img {
+                    @apply w-full;
+                }
             }
         }
     }
@@ -335,6 +476,72 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
+
+        @media (max-width:1024px) {
+            .card-staking-calculator{
+                @apply gap-[20px] p-[40px];
+                .title-container {
+                    @apply w-[150px] z-[1];
+                    h2 {
+                        @apply text-[24px]/[37px];
+                    }
+                }
+                .calculator-container {
+                    @apply gap-[10px];
+                    .top-subcontainer {
+                        @apply gap-[20px];
+                        .sub-subcontainer {
+                            @apply gap-[25px];
+                            .form-input {
+                                @apply gap-[8px];
+                                label {
+                                    @apply text-[11px]/[14px];
+                                }
+                                input {
+                                    @apply w-full;
+                                }
+                                select {
+                                    @apply flex-1;
+                                }
+                                .group-input {
+                                    @apply flex-1;
+                                    span {
+                                        @apply top-[12px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middle-subcontainer {
+                        @apply flex gap-[30px];
+                        .sub-subcontainer {
+                            @apply flex flex-col w-[47%];
+                            label {
+                                @apply text-[24px]/[37px];
+                            }
+                            span {
+                                @apply text-[11px]/[17px];
+                            }
+                        }
+                    }
+                    .bottom-subcontainer{
+                        p {
+                            @apply text-[10px]/[15px] font-medium text-neutral-500;
+                        }
+                    }
+                }
+                &::after {
+                    content: '';
+                    @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+                    background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
+                }
+                &::before {
+                    content: '';
+                    @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+                    background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
+                }
+            }
+        }
     }
     .staking-coins-section {
         @apply px-[80px] py-[50px] gap-[40px] flex flex-col justify-center items-center max-w-container mx-auto;
@@ -357,6 +564,42 @@
             @apply flex flex-wrap;
             .coin-staking-container {
                 @apply w-1/4 p-[20px];
+            }
+        }
+
+        @media (max-width:1024px) {
+            .header-coins-staking {
+                h2 {
+                    @apply text-[24px]/[37px];
+                }
+                p {
+                    @apply text-[14px]/[21px];
+                }
+            }
+            .list-coins-staking {
+                @apply flex flex-wrap;
+                .coin-staking-container {
+                    @apply w-1/4 p-[20px];
+                    .card-coin-staking-new {
+                        @apply h-[170px] gap-0;
+                        .card-coin-desc {
+                            label {
+                                @apply text-[14px]/[21px] line-clamp-1;
+                            }
+                            span {
+                                @apply text-[10px]/[17px];
+                                &.span-text {
+                                    @apply line-clamp-2;
+                                }
+                            }
+                        }
+                        .card-coin-logo {
+                            img {
+                                @apply w-[140px] h-[140px];
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -404,6 +647,42 @@
                 @apply w-[197px] flex flex-col justify-center;
                 img {
                     @apply w-[197px] h-[252px];
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            h2 {
+                @apply text-[24px]/[37px];
+            }
+            .question-faq-staking {
+                @apply gap-[40px];
+                .question-faq-accordion {
+                    ul {
+                        li {
+                            button {
+                                .header-button {
+                                    label {
+                                        @apply text-[14px]/[21px];
+                                    }
+                                }
+                            }
+                            .accordion-content {
+                                .content-area {
+                                    @apply py-[8px];
+                                    p {
+                                        @apply text-[11px]/[17px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question-faq-image {
+                    @apply w-[157px];
+                    img {
+                        @apply w-[157px] h-[212px];
+                    }
                 }
             }
         }
@@ -521,7 +800,7 @@
                 .sub-container {
                     @apply gap-[30px] h-[360px];
                     .text-area {
-                        @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
+                        @apply flex flex-col w-[60%] gap-[20px] justify-center pl-[50px];
                         .text-header {
                             @apply flex flex-col gap-[10px] w-[90%];
                             h2 {
@@ -542,6 +821,47 @@
                     .image-area {
                         img {
                             @apply w-[480px];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 1024px) {
+            .main-container {
+                .sub-container {
+                    @apply gap-[30px] h-[260px];
+                    .text-area {
+                        @apply gap-[20px];
+                        .text-header {
+                            h2 {
+                                @apply text-[24px]/[37px];
+                            }
+                            p {
+                                @apply text-[12px]/[17px];
+                            }
+                        }
+                        .button-area {
+                            @apply gap-[20px];
+                            a {
+                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
+                                 
+                            }
+                            .app-store-list {
+                                @apply flex items-center gap-[14px];
+                                img {
+                                    &.playstore-logo {
+                                        @apply w-[110px] h-[30px];
+                                    }
+                                    &.apple-logo {
+                                        @apply w-[94px] h-[29px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .image-area {
+                        img {
+                            @apply w-[380px];
                         }
                     }
                 }
