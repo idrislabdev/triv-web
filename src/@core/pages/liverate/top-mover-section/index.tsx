@@ -17,7 +17,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             <Image src={hightlight.top_gainer.icon_url} alt='graph' width={56} height={56}/>
                             <div className='top-mover-text'>
                                 <label>{hightlight.top_gainer.label}</label>
-                                <p>IDR {hightlight.top_gainer.rate}</p>
+                                <p>IDR {hightlight.top_gainer.rate.toFixed(2)}</p>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             <Image src={hightlight.highest_volume.icon_url} alt='graph' width={56} height={56}/>
                             <div className='top-mover-text'>
                                 <label>{hightlight.highest_volume.label}</label>
-                                <p>IDR {hightlight.highest_volume.rate}</p>
+                                <p>IDR {hightlight.highest_volume.rate.toFixed(2)}</p>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             <Image src={hightlight.most_popular.icon_url} alt='graph' width={56} height={56}/>
                             <div className='top-mover-text'>
                                 <label>{hightlight.most_popular.label}</label>
-                                <p>IDR {hightlight.most_popular.rate}</p>
+                                <p>IDR {hightlight.most_popular.rate.toFixed(2)}</p>
                             </div>
                         </div>
                     </div>

@@ -41,7 +41,7 @@ const config: Config = {
         "2xl": { max: "1535px" },  
         xl: { max: "1279px" },  
         lg: { max: "1180px" },  
-        md: { max: "850px" },  
+        md: { max: "880px" },  
         sm: { max: "639px" },
       },
       spacing: {
