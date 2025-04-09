@@ -528,6 +528,9 @@
                                 @media (max-width: 1380px) {
                                     @apply text-[16px]/[24px];
                                 }
+                                @media (max-width: 1215px) {
+                                    @apply text-[14px]/[21px] gap-0 justify-between;
+                                }
                             }
                         }
                     }
@@ -991,6 +994,17 @@
                                     @apply !text-[#71BBED];
                                 }
                             }
+                            @media (max-width: 1215px) {
+                                .key-statistic-label {
+                                    @apply gap-[10px];
+                                    label {
+                                        @apply text-[10px]/[17px];
+                                    }
+                                }
+                                p {
+                                    @apply text-[14px]/[21px];                                   
+                                }
+                            }
                         }
                     }
                 }
@@ -1095,6 +1109,35 @@
                 }
                 .blog-subcontainer {
                     @apply hidden;
+                }
+                @media (max-width: 1215px) {
+                    .buy-subcontainer {
+                        h5 {
+                            @apply text-[14px]/[21px];
+                        }
+                        .input-subcontainer {
+                            label {
+                                @apply text-[12px]/[19px];
+                            }
+                            .input-area {
+                                .group-input {
+                                    .append {
+                                        @apply text-[21px]/[28px];
+                                    }
+                                    input {
+                                        @apply text-[21px]/[28px];
+                                    }
+                                }
+                                .list-button {
+                                    @apply flex items-center gap-[10px];
+                                    a {
+                                        @apply text-[12px]/[19px] px-[10px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   
                 }
             }
         }

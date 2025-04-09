@@ -437,8 +437,14 @@ header {
         .main-header-menu {
             ul {
                 @apply flex gap-[30px] items-center;
+                @media (max-width: 1250px) {
+                    @apply gap-[15px];
+                }
                 @media (max-width: 1024px) {
                     @apply gap-[15px];
+                }
+                @media (max-width: 990px) {
+                    @apply gap-[8px];
                 }
                 li {
                     @apply relative text-[14px]/[21px] font-medium cursor-pointer;
@@ -450,6 +456,9 @@ header {
                     }
                     @media (max-width: 1024px) {
                         @apply text-[10px]/[15px];
+                    }
+                    @media (max-width: 990px) {
+                        @apply text-[9px]/[11px];
                     }
                     a {
                         @apply block py-[10px];
@@ -512,6 +521,9 @@ header {
             a {
                 svg {
                     @apply w-[99px] h-[31px] fill-white;
+                    @media (max-width: 990px) {
+                        @apply w-[89px] h-[21px] ;
+                    }
                 }
             }
         }
@@ -526,6 +538,9 @@ header {
                 @media (max-width: 1024px) {
                    @apply gap-[10px];
                 }
+                @media (max-width: 990px) {
+                    @apply gap-[6px];
+                 }
                 ul {
                     @apply flex items-center relative;
                     li {
@@ -539,15 +554,28 @@ header {
                                 @apply border-l border-l-neutral-300 mx-[20px]
                                 
                             }
+                            @media (max-width: 1250px) {
+                                &::before {
+                                    @apply mx-[12px];
+                                }
+                            }
                             @media (max-width: 1024px) {
                                 &::before {
                                     @apply mx-[10px];
+                                }
+                            }
+                            @media (max-width: 990px) {
+                                &::before {
+                                    @apply mx-[6px];
                                 }
                             }
                             
                         } 
                         .btn-signup-header {
                             @apply  bg-white text-primary rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
+                            @media (max-width: 1250px) {
+                                @apply px-[8px] py-[6px] text-[11px]/[17px];
+                            }
                             @media (max-width: 1024px) {
                                 @apply px-[6px] py-[4px] text-[10px]/[14px];
                             }
