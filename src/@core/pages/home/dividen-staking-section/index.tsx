@@ -28,7 +28,7 @@ const HomeDividenStakingSection = (props: {lang:string, objLang:any }) => {
   return (
     <section className='home-dividen-staking-section'>
       <div className='dividen-staking-device'>
-        <Image src='/images/devices/iphone-with-description-background.png' className='fade-in entry-1' alt='iphone with description' width={0} height={0} sizes='100%' />
+        <Image src='/images/devices/iphone-with-description-background-2.png' className='fade-in entry-1' alt='iphone with description' width={0} height={0} sizes='100%' />
       </div>
       <div className='dividen-staking-description'>
         <div className='staking-description-title'>

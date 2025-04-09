@@ -43,7 +43,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                             <li><Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link></li>
                             <li>
                                 <a className='flex justify-between items-center' onClick={_ => toggleSubMenu('submenu--emoney')}>
-                                    <span>E-money</span>
+                                    <span>Service</span>
                                     <svg 
                                         id='submenu--emoney--chevron'
                                         className={`w-3 h-3`} 
