@@ -552,6 +552,121 @@
                 }
             }
         }
+
+        @media (max-width:1024px) {
+            @apply gap-[38px];
+            .blog-main-container {
+                @apply gap-[30px];
+                .main-subcontainer {
+                    @apply flex flex-col gap-[20px];
+                    .news-detail-content {
+                        @apply flex flex-col gap-[20px];
+                        .header-content {
+                            @apply flex flex-col gap-[30px];
+                            h2 {
+                                @apply text-[21px]/[32px];
+                    
+                            }
+                            img {
+                                @apply h-[310px] rounded-[10px];
+                            }
+                        }
+                        .detail-content {
+                            @apply flex flex-col ;
+                            .ringkasan-content {
+                                @apply bg-[#FAFBFE] px-[30px] py-[10px] mb-[10px];
+                                p {
+                                    @apply text-[14px]/[21px] text-primary mb-0;
+                                }
+                                ul {
+                                    @apply text-[14px]/[21px] font-medium text-primary list-disc pl-[20px];
+                                }
+                            }
+                            h5 {
+                                @apply text-[24px]/[36px] font-medium mb-[10px] text-neutral-700;
+                            }
+                            p {
+                                @apply text-[14px]/[21px] text-neutral-700 font-medium mb-[30px];
+                            }
+                            img {
+                                @apply h-[259px] w-full object-contain;
+                            }
+                        }
+                    }
+                    .news-detail-footer {
+                        @apply flex justify-between;
+                        .user-info {
+                            @apply flex gap-[4px] items-center;
+                            svg {
+                                @apply w-[25px] h-[25px];
+                            }
+                            span {
+                                @apply text-[14px]/[21px] text-neutral-700 font-bold;
+                            }
+                        }
+                        .socialmedia-list {
+                            @apply flex items-center gap-[10px];
+                            a {
+                                svg {
+                                    @apply w-[24px] h-[24px];
+                                    path {
+                                        @apply fill-neutral-700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .news-comment-column {
+                        &.disabled {
+                            @apply bg-[#F3F3F3] h-[37px] flex flex-col justify-center items-center;
+                            span {
+                                @apply text-[14px]/[21px] text-neutral-700 font-bold;
+                            }
+                        }
+                    }
+                }
+            }
+            .blog-side-container {
+                @apply gap-[15px] w-[312px];
+                .blog-invest-login {
+                    @apply mt-[100px] gap-[19px]  p-[30px] rounded-[10px];
+                    img {
+                        &.crypto {
+                            @apply w-[127px] h-[117px];
+                        }
+                    }
+                    h5 {
+                        @apply text-[14px]/[21px];
+                    }
+                    .button-group {
+                        @apply flex items-center gap-[15px] w-full;
+                        a {
+                            @apply w-1/2 h-[44px] text-[14px]/[21px] rounded-[8px];
+                        }
+                    }
+                    p {
+                        @apply text-[12px]/[17px] font-medium text-black;
+                    }
+                    .barcode-appstore {
+                        @apply flex items-center gap-[20px];
+                        img {
+                            &.barcode {
+                                @apply w-[77px] h-[77px];
+                            }
+                        }
+                        svg {
+                            @apply w-[87px] h-[87px];
+                        }
+                        .appstore-list {
+                            @apply flex flex-col justify-between h-[87px];
+                            img {
+                                @apply w-[144px] h-[37px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .blog-baru-crypto-section {
         @apply py-[50px] bg-[#EEF7FD] ;
