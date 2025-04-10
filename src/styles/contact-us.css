@@ -67,6 +67,19 @@
                 }
             }
         }
+
+        @media (max-width:1024px) {
+            .header-container {
+                h2 {
+                    @apply text-[36px]/[48px];
+                }
+                .header-subcontainer {
+                    p {
+                        @apply text-[14px]/[21px];
+                    }
+                }
+            }
+        }
     }
     .contact-us-info-section {
         @apply  py-[50px] px-[100px] flex flex-col gap-[20px] items-center justify-center text-center;
@@ -95,6 +108,31 @@
                             }
                         }
 
+                    }
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            .info-container {
+                @apply flex justify-center gap-[20px] w-[100%] max-w-container mx-auto;
+                .info-card{
+                    .card-header {
+                        .header-icon {
+                            @apply w-[48px] h-[48px] ;
+                        }
+                    }
+                    .card-content {
+                        @apply flex flex-col gap-[8px] justify-center items-center;
+                        h5 {
+                            @apply text-[14px]/[21px] font-bold;
+                        }
+                        p {
+                            @apply text-[12px]/[17px];
+                        }
+                        a {
+                            @apply text-[12px]/[17px];
+                        }
                     }
                 }
             }
@@ -145,6 +183,46 @@
                 @apply w-[197px] flex flex-col justify-center;
                 img {
                     @apply w-[197px] h-[252px];
+                }
+            }
+        }
+        @media (max-width:1024px) {
+            .header-faq-contact-us {
+                h2 {
+                    @apply text-[24px]/[37px];
+                }
+                a {
+                    @apply text-[14px]/[21px];
+                }
+            }
+            .question-faq-contact-us {
+                @apply gap-[40px];
+                .question-faq-accordion {
+                    ul {
+                        li {
+                            button {
+                                .header-button {
+                                    label {
+                                        @apply text-[14px]/[21px];
+                                    }
+                                }
+                            }
+                            .accordion-content {
+                                .content-area {
+                                    @apply py-[8px];
+                                    p {
+                                        @apply text-[11px]/[17px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question-faq-image {
+                    @apply w-[157px];
+                    img {
+                        @apply w-[157px] h-[212px];
+                    }
                 }
             }
         }
