@@ -340,6 +340,20 @@
             }
 
         }
+
+        @media (max-width:1024px) {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        @apply flex;
+                        label {
+                            @apply text-[12px]/[12px];
+                        }
+                    }
+                }
+    
+            }
+        }
     }
     .market-section {
         @apply flex justify-center items-start  border-b border-b-neutral-200 border-t border-t-neutral-200;
@@ -690,6 +704,72 @@
                                     }
                                     .CircularProgressbar-text {
                                         @apply text-[#67c48f] fill-[#67c48f];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            .tab-table { 
+                ul {
+                    li {
+                        @apply text-[12px]/[17px];
+                        &:not(:last-child) {
+                            a {
+                                @apply mr-[18px];
+                            }
+                        }
+                        a {
+                            @apply block cursor-pointer pb-[10px];
+                           
+                        }
+                    }
+                }
+            }
+            .main-table {
+                table {
+                    @apply text-[12px]/[17px];
+                    thead {
+                        tr {
+                            @apply bg-[#F5F7FA] h-[40px];
+                            td {
+                                @apply px-[20px];
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            &.empty-state {
+                                @apply h-[120px] text-center;
+                                td {
+                                    span {
+                                        a {
+                                            @apply text-primary;
+                                        }
+                                    }
+                                }
+                            }
+                            td {
+                                @apply px-[18px] py-[8px];
+                                svg {
+                                    &.CircularProgressbar  {
+                                        @apply w-[36px] h-[36px];
+                                    }
+                                }
+
+                                span {
+                                    &.badge-status {
+                                        @apply text-[12px]/[17px];
+                                    }
+                                }
+
+                                span {
+                                    &.action {
+                                        @apply text-[12px]/[17px];
                                     }
                                 }
                             }
