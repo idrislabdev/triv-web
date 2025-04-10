@@ -1065,6 +1065,54 @@
             }
             
         }
+        @media (max-width:1024px) {
+            .home-baru-crypto-container {
+                @apply py-[20px];
+                .baru-crypto-title {
+                    @apply flex flex-col gap-[20px];
+                    h5 {
+                        @apply text-[24px]/[21px];
+                    }
+                    p {
+                        @apply text-[14px]/[21px];
+                    }
+                    a {
+                        @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+                    }
+                }
+                .baru-crypto-videos {
+                    @apply flex-1 relative overflow-hidden;
+                    .swiper {
+                        .swiper-wrapper {
+                            @apply gap-[20px];
+                            .swiper-slide {
+                                @apply !w-[200px];
+                                .crypto-thumb-video {
+                                    @apply w-[200px] ;
+                                    .video-thumb {
+                                        img {
+                                            @apply w-[200px] h-[119px] rounded-tr-[8px] rounded-tl-[8px];
+                                        }
+                                    }
+                                   .video-title {
+                                        @apply flex flex-col gap-[14px] p-[13px];
+                                        h6 {
+                                            @apply text-[14px]/[21px] text-black;
+                                        }
+                                        a {
+                                            @apply text-[11px]/[17px] rounded-[22px] w-full h-[30px];
+                                        }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        @apply hidden;
+                    }  
+                }
+            }
+        }
     }
     
     .home-buy-sell-assets-section {
