@@ -476,7 +476,71 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
-
+        @media (max-width:1180px) {
+            .card-staking-calculator{
+                @apply gap-[20px] p-[40px];
+                .title-container {
+                    @apply w-[150px] z-[1];
+                    h2 {
+                        @apply text-[24px]/[37px];
+                    }
+                }
+                .calculator-container {
+                    @apply gap-[10px];
+                    .top-subcontainer {
+                        @apply gap-[20px];
+                        .sub-subcontainer {
+                            @apply gap-[25px];
+                            .form-input {
+                                @apply gap-[8px];
+                                label {
+                                    @apply text-[11px]/[14px];
+                                }
+                                input {
+                                    @apply w-full;
+                                }
+                                select {
+                                    @apply flex-1;
+                                }
+                                .group-input {
+                                    @apply flex-1;
+                                    span {
+                                        @apply top-[12px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middle-subcontainer {
+                        @apply flex gap-[30px];
+                        .sub-subcontainer {
+                            @apply flex flex-col w-[47%];
+                            label {
+                                @apply text-[24px]/[37px];
+                            }
+                            span {
+                                @apply text-[11px]/[17px];
+                            }
+                        }
+                    }
+                    .bottom-subcontainer{
+                        p {
+                            @apply text-[10px]/[15px] font-medium text-neutral-500;
+                        }
+                    }
+                }
+                &::after {
+                    content: '';
+                    @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+                    background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
+                }
+                &::before {
+                    content: '';
+                    @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+                    background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
+                }
+            }
+        }
         @media (max-width:1080px) {
             .card-staking-calculator{
                 @apply gap-[20px] p-[40px];
@@ -566,7 +630,41 @@
                 @apply w-1/4 p-[20px];
             }
         }
-
+        @media (max-width:1180px) {
+            .header-coins-staking {
+                h2 {
+                    @apply text-[25px]/[38px];
+                }
+                p {
+                    @apply text-[14px]/[21px];
+                }
+            }
+            .list-coins-staking {
+                @apply flex flex-wrap;
+                .coin-staking-container {
+                    @apply w-1/4 p-[20px];
+                    .card-coin-staking-new {
+                        @apply h-[180px] gap-0;
+                        .card-coin-desc {
+                            label {
+                                @apply text-[15px]/[22px] line-clamp-1;
+                            }
+                            span {
+                                @apply text-[11px]/[17px];
+                                &.span-text {
+                                    @apply line-clamp-2;
+                                }
+                            }
+                        }
+                        .card-coin-logo {
+                            img {
+                                @apply w-[160px] h-[160px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
         @media (max-width:1080px) {
             .header-coins-staking {
                 h2 {
@@ -821,6 +919,47 @@
                     .image-area {
                         img {
                             @apply w-[480px];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 1180px) {
+            .main-container {
+                .sub-container {
+                    @apply gap-[30px] h-[260px];
+                    .text-area {
+                        @apply gap-[20px];
+                        .text-header {
+                            h2 {
+                                @apply text-[25px]/[38px];
+                            }
+                            p {
+                                @apply text-[14px]/[21px];
+                            }
+                        }
+                        .button-area {
+                            @apply gap-[20px];
+                            a {
+                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
+                                 
+                            }
+                            .app-store-list {
+                                @apply flex items-center gap-[14px];
+                                img {
+                                    &.playstore-logo {
+                                        @apply w-[110px] h-[30px];
+                                    }
+                                    &.apple-logo {
+                                        @apply w-[94px] h-[29px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .image-area {
+                        img {
+                            @apply w-[430px];
                         }
                     }
                 }
