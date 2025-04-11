@@ -256,7 +256,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply gap-[38px];
             .blog-main-container {
                 @apply gap-[30px];
@@ -553,7 +553,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply gap-[38px];
             .blog-main-container {
                 @apply gap-[30px];
@@ -721,7 +721,7 @@
                 }  
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .blog-baru-crypto-container {
                 @apply py-[20px];
                 .baru-crypto-title {
@@ -830,7 +830,7 @@
                 }
            }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .image-container {
                 @apply w-1/2 flex flex-col justify-center items-end relative;
                 img {

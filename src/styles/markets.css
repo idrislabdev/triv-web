@@ -341,7 +341,7 @@
 
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .rfm-marquee-container  {
                 .rfm-marquee {
                     .rfm-child {
@@ -713,7 +713,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .tab-table { 
                 ul {
                     li {

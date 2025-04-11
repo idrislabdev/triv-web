@@ -129,7 +129,7 @@
             } */
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply pb-[50px];
             .stocks-hero-section-area {
                 @apply gap-[20px];
@@ -282,7 +282,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply h-[550px];
             .container {
                 .title-container {
@@ -377,7 +377,7 @@
                 }
            }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .image-container {
                 @apply w-1/2 flex flex-col justify-center items-end relative;
                 img {
@@ -483,7 +483,7 @@
                 }
            }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .image-container {
                 @apply w-[350px] h-[300px];
                 img {
@@ -566,7 +566,7 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .box-container {
                 @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[50px] py-[40px] gap-[30px] relative w-full;
                 h2 {
@@ -662,7 +662,7 @@
                 @apply w-[400px] h-[250px] relative;
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .ewallet-description {
                 @apply gap-[15px];
                 h2 {
@@ -727,7 +727,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             h2 {
                 @apply text-[24px]/[37px];
             }
@@ -837,7 +837,7 @@
                 }
             }
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 1080px) {
             .main-container {
                 .sub-container {
                     @apply gap-[30px] h-[260px];

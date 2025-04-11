@@ -349,7 +349,7 @@ header {
                 a {
                     &.button-switch-theme {
                         @apply cursor-pointer;
-                        @media (max-width: 1024px) {
+                        @media (max-width: 1080px) {
                             svg {
                                 @apply h-[24px] w-[24px];
                             }
@@ -535,7 +535,7 @@ header {
             }
             .main-header-action-list {
                 @apply flex gap-[20px] items-center;
-                @media (max-width: 1024px) {
+                @media (max-width: 1080px) {
                    @apply gap-[10px];
                 }
                 @media (max-width: 990px) {
@@ -545,7 +545,7 @@ header {
                     @apply flex items-center relative;
                     li {
                         @apply text-[14px]/[21px] font-medium cursor-pointer select-none;
-                        @media (max-width: 1024px) {
+                        @media (max-width: 1080px) {
                             @apply text-[10px]/[14px]
                         }
                         &:not(:first-child) {
@@ -559,7 +559,7 @@ header {
                                     @apply mx-[12px];
                                 }
                             }
-                            @media (max-width: 1024px) {
+                            @media (max-width: 1080px) {
                                 &::before {
                                     @apply mx-[10px];
                                 }
@@ -576,7 +576,7 @@ header {
                             @media (max-width: 1250px) {
                                 @apply px-[8px] py-[6px] text-[11px]/[17px];
                             }
-                            @media (max-width: 1024px) {
+                            @media (max-width: 1080px) {
                                 @apply px-[6px] py-[4px] text-[10px]/[14px];
                             }
                         } 

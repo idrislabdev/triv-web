@@ -50,7 +50,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply h-[550px];
             .hero-container {
                 @apply gap-[20px] items-center w-[70%];
@@ -103,7 +103,7 @@
                             }
                         }
                     }
-                    @media (max-width: 1024px) {
+                    @media (max-width: 1080px) {
                         @apply h-[290px] px-[50px];
                         .card-body {
                             h5 {
@@ -163,7 +163,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply h-[525px];
             .comission-container {
                 @apply gap-[42px];
@@ -207,7 +207,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .downline-container{
                 @apply gap-[100px];
                 .image-subcontainer {
@@ -251,7 +251,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .withdraw-container{
                 @apply gap-[100px];
                 .image-subcontainer {
@@ -302,7 +302,7 @@
                 @apply w-full h-[697px] relative;
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .holiday-container{
                 @apply flex flex-col p-[100px] gap-[43px] items-center justify-center text-center overflow-hidden relative max-w-container mx-auto w-full;
                 .header-subcontainer {
@@ -345,7 +345,7 @@
                 @apply border border-white rounded-[10px] text-white text-[30px]/[45px] font-medium py-[10px] px-[20px] flex items-center;
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply h-[329px];
             .extra-container {
                 .content-subcontainer {

@@ -85,7 +85,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply gap-[50px];
             .footer-primary {
                 .footer-primary-left {

@@ -229,7 +229,7 @@
                 @apply text-[14px]/[21px];
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             h2 {
                 @apply text-[24px]/[36px];
             }
@@ -328,7 +328,7 @@
                 }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             h2 {
                 @apply text-[24px]/[36px];
             }
@@ -639,7 +639,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             h2 {
                 @apply text-[24px]/[36px];
             }
@@ -745,7 +745,7 @@
                 }
            }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .image-container {
                 img {
                     @apply  w-[342px] h-[305px] ;
@@ -870,7 +870,7 @@
                                     }
                                 }
                             }
-                            @media (max-width:1024px) {
+                            @media (max-width:1080px) {
                                 .card-trade-stake {
                                     .description {
                                         @apply gap-[14px];
@@ -899,7 +899,7 @@
                             }
                         }
 
-                        @media (max-width:1024px) {
+                        @media (max-width:1080px) {
                             @apply gap-[40px];
                         }
                     }
@@ -1443,7 +1443,7 @@
                     a {
                         @apply text-center text-primary text-[12px]/[18px];
                     }
-                    @media (max-width:1024px) {
+                    @media (max-width:1080px) {
                         .other-list {
                             @apply gap-0;
                         }

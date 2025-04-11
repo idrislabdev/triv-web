@@ -159,7 +159,7 @@
             }
            
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply h-[600px];
             .staking-hero-section-area {
                 .section-text {
@@ -266,7 +266,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             @apply gap-[40px];
             .media-container {
                 @apply w-1/2;
@@ -361,7 +361,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .guide-container {
                 @apply flex flex-col gap-[34px] flex-1;
                 h2 {
@@ -477,7 +477,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .card-staking-calculator{
                 @apply gap-[20px] p-[40px];
                 .title-container {
@@ -567,7 +567,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .header-coins-staking {
                 h2 {
                     @apply text-[24px]/[37px];
@@ -651,7 +651,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             h2 {
                 @apply text-[24px]/[37px];
             }
@@ -826,7 +826,7 @@
                 }
             }
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 1080px) {
             .main-container {
                 .sub-container {
                     @apply gap-[30px] h-[260px];

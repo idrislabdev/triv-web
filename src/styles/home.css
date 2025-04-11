@@ -241,7 +241,7 @@
                         }
                     }
                 }
-                @media (max-width:1024px) {
+                @media (max-width:1080px) {
                     .text-title {
                         .title {
                             h1 {
@@ -297,7 +297,7 @@
                         @apply w-[850px] h-[600px];
                     }
                 }
-                @media (max-width:1024px) {
+                @media (max-width:1080px) {
                     img {
                         @apply w-[800px] h-[550px];
                     }
@@ -465,7 +465,7 @@
                 @apply w-[582px];
 
             }
-            @media (max-width:1024px) {
+            @media (max-width:1080px) {
                 @apply w-[532px];
             }
         }
@@ -550,7 +550,7 @@
                     }
                 }
             }
-            @media (max-width:1024px) { 
+            @media (max-width:1080px) { 
                 h2 {
                     @apply text-[30px]/[52px];
                 }
@@ -660,7 +660,7 @@
                     @apply w-full;
                 }
             }
-            @media (max-width:1024px) {
+            @media (max-width:1080px) {
                 h2 {
                     @apply text-[33px]/[57px];
                 }
@@ -793,7 +793,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .image-container {
                 @apply w-[400px] h-[450px];
                 img {
@@ -909,7 +909,7 @@
             }
         }
 
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .dividen-staking-device {
                 @apply w-[354px];
                 img {
@@ -996,7 +996,7 @@
                 @apply w-[400px] h-[250px] relative;
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .ewallet-description {
                 @apply gap-[15px];
                 h2 {
@@ -1065,7 +1065,7 @@
             }
             
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .home-baru-crypto-container {
                 @apply py-[20px];
                 .baru-crypto-title {
@@ -1262,7 +1262,7 @@
                }
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             .image-container {
                 @apply w-[350px] h-[350px] ;
                 img {
@@ -1395,7 +1395,7 @@
     
             }
         }
-        @media (max-width:1024px) {
+        @media (max-width:1080px) {
             h2 {
                 @apply text-[25px]/[36px];
             }
