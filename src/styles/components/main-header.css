@@ -11,6 +11,49 @@
                 .main-header-menu {
                     ul {
                         @apply text-slate-300;
+                        li {
+                            &.has-sub {
+                                a {
+                                    svg {
+                                        path {
+                                            @apply stroke-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .main-header-action {
+                    .main-header-action-list {
+                        ul {
+                            li {
+                                &.flags {
+                                    ul {
+                                        &.list-flags {
+                                            li {
+                                                a {
+                                                    &.flag-button {
+                                                        span {
+                                                            &.chevron-icon {
+                                                                svg {
+                                                                    path {
+                                                                        @apply stroke-white;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                a {
+                                    @apply text-white;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -247,6 +290,49 @@ header {
             .main-header-menu {
                 ul {
                     @apply text-black;
+                    li {
+                        &.has-sub {
+                            a {
+                                svg {
+                                    path {
+                                        @apply stroke-black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-header-action {
+                .main-header-action-list {
+                    ul {
+                        li {
+                            &.flags {
+                                ul {
+                                    &.list-flags {
+                                        li {
+                                            a {
+                                                &.flag-button {
+                                                    span {
+                                                        &.chevron-icon {
+                                                            svg {
+                                                                path {
+                                                                    @apply stroke-black;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            a {
+                                @apply text-black;
+                            }
+                        }
+                    }
                 }
             }
         }

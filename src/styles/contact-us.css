@@ -67,7 +67,30 @@
                 }
             }
         }
-
+        @media (max-width:1279px) {
+            .header-container {
+                h2 {
+                    @apply text-[40px]/[53px];
+                }
+                .header-subcontainer {
+                    p {
+                        @apply text-[19px]/[25px];
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .header-container {
+                h2 {
+                    @apply text-[38px]/[51px];
+                }
+                .header-subcontainer {
+                    p {
+                        @apply text-[17px]/[23px];
+                    }
+                }
+            }
+        }
         @media (max-width:1080px) {
             .header-container {
                 h2 {
@@ -112,7 +135,54 @@
                 }
             }
         }
-
+        @media (max-width:1279px) {
+            .info-container {
+                @apply flex justify-center gap-[20px] w-[100%] max-w-container mx-auto;
+                .info-card{
+                    .card-header {
+                        .header-icon {
+                            @apply w-[53px] h-[53px] ;
+                        }
+                    }
+                    .card-content {
+                        @apply flex flex-col gap-[8px] justify-center items-center;
+                        h5 {
+                            @apply text-[19px]/[25px] font-bold;
+                        }
+                        p {
+                            @apply text-[17px]/[23px];
+                        }
+                        a {
+                            @apply text-[17px]/[23px];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .info-container {
+                @apply flex justify-center gap-[20px] w-[100%] max-w-container mx-auto;
+                .info-card{
+                    .card-header {
+                        .header-icon {
+                            @apply w-[50px] h-[50px] ;
+                        }
+                    }
+                    .card-content {
+                        @apply flex flex-col gap-[8px] justify-center items-center;
+                        h5 {
+                            @apply text-[17px]/[23px] font-bold;
+                        }
+                        p {
+                            @apply text-[14px]/[21px];
+                        }
+                        a {
+                            @apply text-[14px]/[21px];
+                        }
+                    }
+                }
+            }
+        }
         @media (max-width:1080px) {
             .info-container {
                 @apply flex justify-center gap-[20px] w-[100%] max-w-container mx-auto;
@@ -183,6 +253,86 @@
                 @apply w-[197px] flex flex-col justify-center;
                 img {
                     @apply w-[197px] h-[252px];
+                }
+            }
+        }
+        @media (max-width:1279px) {
+            .header-faq-contact-us {
+                h2 {
+                    @apply text-[29px]/[41px];
+                }
+                a {
+                    @apply text-[19px]/[26px];
+                }
+            }
+            .question-faq-contact-us {
+                @apply gap-[40px];
+                .question-faq-accordion {
+                    ul {
+                        li {
+                            button {
+                                .header-button {
+                                    label {
+                                        @apply text-[19px]/[25px];
+                                    }
+                                }
+                            }
+                            .accordion-content {
+                                .content-area {
+                                    @apply py-[8px];
+                                    p {
+                                        @apply text-[17px]/[23px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question-faq-image {
+                    @apply w-[177px];
+                    img {
+                        @apply w-[197px] h-[242px];
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .header-faq-contact-us {
+                h2 {
+                    @apply text-[27px]/[39px];
+                }
+                a {
+                    @apply text-[17px]/[23px];
+                }
+            }
+            .question-faq-contact-us {
+                @apply gap-[40px];
+                .question-faq-accordion {
+                    ul {
+                        li {
+                            button {
+                                .header-button {
+                                    label {
+                                        @apply text-[17px]/[23px];
+                                    }
+                                }
+                            }
+                            .accordion-content {
+                                .content-area {
+                                    @apply py-[8px];
+                                    p {
+                                        @apply text-[14px]/[21px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .question-faq-image {
+                    @apply w-[177px];
+                    img {
+                        @apply w-[177px] h-[232px];
+                    }
                 }
             }
         }

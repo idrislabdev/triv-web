@@ -244,6 +244,93 @@
                     }
                 }
             }
+            @media (max-width: 1180px) {
+                @apply gap-[30px];
+                .left-subcontainer {
+                    .text-area {
+                        h2 {
+                            @apply text-[35px]/[46px];
+                        }
+                        p {
+                            @apply text-[13px]/[20px];
+                        }
+                    }
+                    .button-logo-area {
+                        .button-group {
+                            @apply gap-[20px] w-full;
+                            button {
+                                @apply w-1/2 h-[40px];
+                            }
+                        }
+                        .logo-area {
+                            @apply flex items-center gap-[30px];
+                            .bappebti-logo {
+                                img {
+                                    @apply w-[157px] h-[34px];
+                                }
+                            }
+                            .kominfo-logo {
+                                img {
+                                    @apply w-[128px] h-[37px];
+                                }
+                            }
+                            .bsi-logo {
+                                img {
+                                    @apply w-[93px] h-[44px];
+                                }
+                            }
+                            .cisa-logo {
+                                img {
+                                    @apply w-[120px] h-[43px];
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-subcontainer {
+                    @apply w-[370px];
+                    .form-service {
+                        @apply w-full rounded-[34px] flex flex-col p-[40px] gap-[20px] bg-white;    
+                        box-shadow: 0px 4px 40px 0px #00000033;
+                        .button-tab {
+                            @apply flex items-center relative;
+                            button {
+                                @apply h-[45px] text-[14px]/[21px] rounded-none ;
+                            }
+                        }
+                        .title {
+                            @apply text-[15px]/[22px];
+                        }
+                        .description {
+                            @apply text-[13px]/[20px];
+                        }
+                        .nominal {
+                            @apply text-[21px]/[31px];
+                        }
+                        .button-group {
+                            @apply flex items-center gap-[8px];
+                            button {
+                                @apply rounded-[8px] text-[10px]/[12px] px-[10px] py-[4px] h-[22px];
+                            }
+                        }
+                        .get-input {
+                            @apply flex flex-col gap-[18px];
+                            label {
+                                @apply text-[15px]/[22px] font-medium text-neutral-700;
+                            }
+                            .label-value {
+                                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
+                                span {
+                                    @apply text-[22px]/[35px];
+                                }
+                            }
+                        }
+                        button {
+                            @apply rounded-[10px] text-[17px]/[25px] h-[54px];
+                        }
+                    }
+                }
+            }
             @media (max-width: 1080px) {
                 @apply gap-[30px];
                 .left-subcontainer {
@@ -357,6 +444,46 @@
                     @apply text-[16px]/[32px] font-medium text-neutral-700;
                     span {
                         @apply underline;
+                    }
+                }
+            }
+        }
+        @media (max-width:1279px) {
+            .regulasi-container {
+                @apply flex gap-[50px];
+                .box-subcontainer {
+                    @apply w-1/2 flex flex-col gap-[15px];
+                    .img-box {
+                        @apply w-[420px] h-[420px];
+                        &::after {
+                            background-size: 100%;
+                        }
+                    }
+                    h5 {
+                        @apply text-[26px]/[38px];
+                    }
+                    p {
+                        @apply text-[16px]/[23px];
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .regulasi-container {
+                @apply flex gap-[50px];
+                .box-subcontainer {
+                    @apply w-1/2 flex flex-col gap-[15px];
+                    .img-box {
+                        @apply w-[400px] h-[400px];
+                        &::after {
+                            background-size: 100%;
+                        }
+                    }
+                    h5 {
+                        @apply text-[25px]/[37px];
+                    }
+                    p {
+                        @apply text-[15px]/[22px];
                     }
                 }
             }
@@ -547,7 +674,174 @@
                 }
            }
         }
-
+        @media (max-width:1279px) {
+            .title-container {
+                h2 {
+                    @apply text-[38px]/[58px];
+                }
+                p {
+                    @apply text-[16px]/[23px];
+                }
+            }
+            .layanan-container {
+                @apply flex flex-col gap-[20px];
+               .card-subcontainer {
+                    @apply h-[340px];
+                    padding-top: calc(var(--index) * var(--card-top-offset));
+                    .box-layanan {
+                        @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+                        span {
+                            @apply w-[60px] h-[60px];
+                            svg {
+                                @apply w-[60%] h-[60%];
+                            }
+                        }
+                        .content {
+                            @apply flex flex-col gap-[10px];
+                            h5 {
+                                @apply text-[24px]/[37px];
+                            }
+                            p {
+                                @apply text-[14px]/[21px];
+                            }
+                        }
+                    }
+                    .box-img {
+                        @apply flex flex-col items-center relative w-1/2 h-full;
+                        &.macbook {
+                            @apply justify-center;
+                            img {
+                                @apply w-[398px] h-[274px];
+    
+                            }
+                        }
+                        &.iphone {
+                            @apply justify-end;
+                            img {
+                                @apply w-[240px];
+                            }
+                        }
+                        &.device-transfer {
+                            @apply justify-center;
+                            img {
+                                @apply w-[295px] h-[344px];
+    
+                            }
+                        }
+                        &.device-pay {
+                            @apply justify-center;
+                            img {
+                                @apply w-[311px] h-[358px];
+    
+                            }
+                        }
+                        &.wallet-debit {
+                            @apply justify-center;
+                            img {
+                                @apply w-[320px] h-[342px];
+    
+                            }
+                        }
+                        &.swap-paypal {
+                            @apply justify-end;
+                            img {
+                                @apply w-[240px];
+                            }
+                        }
+                        &.cashback {
+                            @apply justify-center;
+                            img {
+                                @apply w-[446px];
+                            }
+                        }
+                    }
+               }
+            }
+        }
+        @media (max-width:1180px) {
+            .title-container {
+                h2 {
+                    @apply text-[37px]/[57px];
+                }
+                p {
+                    @apply text-[15px]/[22px];
+                }
+            }
+            .layanan-container {
+                @apply flex flex-col gap-[20px];
+               .card-subcontainer {
+                    @apply h-[320px];
+                    padding-top: calc(var(--index) * var(--card-top-offset));
+                    .box-layanan {
+                        @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+                        span {
+                            @apply w-[60px] h-[60px];
+                            svg {
+                                @apply w-[60%] h-[60%];
+                            }
+                        }
+                        .content {
+                            @apply flex flex-col gap-[10px];
+                            h5 {
+                                @apply text-[23px]/[36px];
+                            }
+                            p {
+                                @apply text-[13px]/[20px];
+                            }
+                        }
+                    }
+                    .box-img {
+                        @apply flex flex-col items-center relative w-1/2 h-full;
+                        &.macbook {
+                            @apply justify-center;
+                            img {
+                                @apply w-[378px] h-[254px];
+    
+                            }
+                        }
+                        &.iphone {
+                            @apply justify-end;
+                            img {
+                                @apply w-[220px];
+                            }
+                        }
+                        &.device-transfer {
+                            @apply justify-center;
+                            img {
+                                @apply w-[275px] h-[324px];
+    
+                            }
+                        }
+                        &.device-pay {
+                            @apply justify-center;
+                            img {
+                                @apply w-[291px] h-[338px];
+    
+                            }
+                        }
+                        &.wallet-debit {
+                            @apply justify-center;
+                            img {
+                                @apply w-[300px] h-[322px];
+    
+                            }
+                        }
+                        &.swap-paypal {
+                            @apply justify-end;
+                            img {
+                                @apply w-[220px];
+                            }
+                        }
+                        &.cashback {
+                            @apply justify-center;
+                            img {
+                                @apply w-[426px];
+                            }
+                        }
+                    }
+               }
+            }
+        }
         @media (max-width:1080px) {
             .title-container {
                 h2 {
@@ -713,7 +1007,7 @@
                 }
             }
         }
-        @media (max-width: 1240px) {
+        @media (max-width: 1279px) {
             .affliate-container {
                 @apply h-[400px];
                 .image-subcontainer {
@@ -743,6 +1037,42 @@
                         @apply !gap-[14px];
                         button {
                             @apply !h-[40px];
+                        }
+        
+                    }
+                }
+            }
+        }
+        @media (max-width: 1180px) {
+            .affliate-container {
+                @apply h-[300px];
+                .image-subcontainer {
+                    @apply w-[270px];
+                    img {
+                        @apply w-[270px];
+                    }
+                }
+            }
+            .text-subcontainer {
+                @apply flex items-center gap-[18px] flex-1;
+                .left-subcontainer {
+                    .sub-subcontainer {
+                        h5 {
+                            @apply !text-[19px]/[31px];
+                        }
+                        p {
+                            @apply !text-[13px]/[20px];
+                        }
+                    }
+                }
+                .right-subcontainer {
+                    h5 {
+                        @apply !text-[22px]/[29px];
+                    }
+                    .button-group {
+                        @apply !gap-[12px];
+                        button {
+                            @apply !h-[45px];
                         }
         
                     }
@@ -834,13 +1164,93 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
+        @media (max-width:1279px) {
+            .box-container {
+                .sub-container {
+                    .detail-subcontainer {
+                        @apply flex items-start w-1/2 gap-[10px];
+                        .detail-img {
+                            @apply flex items-start gap-[4px] w-[128px];
+                            img {
+                                @apply w-[128px] h-[128px];
+                            }
+                            h5 {
+                                @apply text-[62px]/[62px];
+                                span {
+                                    @apply text-[28px]/[40px];
+                                }
+                            }
+                        }
+                        .detail-description-subcontainer {
+                            @apply mt-[70px];
+                            p {
+                                @apply text-[25px]/[31px];
+                            }
+                            span {
+                                @apply text-[16px]/[23px];
+                                span {
+                                    @apply text-[#FF7F17];
+                                }
+                            }
+                        }
+                    }
+                }
+                &::after {
+                    @apply right-[-40px];
+                    background-size: 80%;
+                }
+                &::before {
+                    background-size: 80%;
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .box-container {
+                .sub-container {
+                    .detail-subcontainer {
+                        @apply flex items-start w-1/2 gap-[10px];
+                        .detail-img {
+                            @apply flex items-start gap-[4px] w-[108px];
+                            img {
+                                @apply w-[108px] h-[108px];
+                            }
+                            h5 {
+                                @apply text-[60px]/[60px];
+                                span {
+                                    @apply text-[26px]/[38px];
+                                }
+                            }
+                        }
+                        .detail-description-subcontainer {
+                            @apply mt-[70px];
+                            p {
+                                @apply text-[23px]/[29px];
+                            }
+                            span {
+                                @apply text-[14px]/[21px];
+                                span {
+                                    @apply text-[#FF7F17];
+                                }
+                            }
+                        }
+                    }
+                }
+                &::after {
+                    @apply right-[-40px];
+                    background-size: 80%;
+                }
+                &::before {
+                    background-size: 80%;
+                }
+            }
+        }
         @media (max-width:1080px) {
             .box-container {
                 .sub-container {
                     .detail-subcontainer {
                         @apply flex items-start w-1/2 gap-[10px];
                         .detail-img {
-                            @apply flex items-start gap-[4px] w-[90px];
+                            @apply flex items-start gap-[4px] w-[98px];
                             img {
                                 @apply w-[98px] h-[98px];
                             }
@@ -903,7 +1313,48 @@
                @apply w-full;
             }
         }
-        
+        @media (max-width:1279px) {
+            .ewallet-description {
+                @apply gap-[16px];
+                h2 {
+                    @apply text-[31px]/[43px];
+                  
+                }
+                h5 {
+                    @apply text-[17px]/[24px];
+                }
+                p {
+                    @apply text-[15px]/[22px];
+                }
+            }
+            .ewallet-image {
+                @apply w-[380px] h-[230px];
+                img {
+                   @apply w-full;
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .ewallet-description {
+                @apply gap-[16px];
+                h2 {
+                    @apply text-[29px]/[41px];
+                  
+                }
+                h5 {
+                    @apply text-[15px]/[22px];
+                }
+                p {
+                    @apply text-[13px]/[20px];
+                }
+            }
+            .ewallet-image {
+                @apply w-[360px] h-[210px];
+                img {
+                   @apply w-full;
+                }
+            }
+        }
         @media (max-width:1080px) {
             .ewallet-description {
                 @apply gap-[16px];
@@ -996,23 +1447,23 @@
                 }
             }
         }
-        @media (max-width: 1240px) {
+
+        @media (max-width: 1180px) {
             .main-container {
                 .sub-container {
-                    @apply h-[250px] gap-[30px];
+                    @apply gap-[30px] h-[260px];
                     .text-area {
-                        @apply pl-[50px];
+                        @apply gap-[20px];
                         .text-header {
-                            @apply flex flex-col gap-[10px] w-[90%];
                             h2 {
-                                @apply text-[24px]/[21px] ;
+                                @apply text-[25px]/[38px];
                             }
                             p {
-                                @apply text-[12px]/[21px];
+                                @apply text-[14px]/[21px];
                             }
                         }
                         .button-area {
-                            @apply flex items-center gap-[10px];
+                            @apply gap-[20px];
                             a {
                                 @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
                                  
@@ -1032,7 +1483,48 @@
                     }
                     .image-area {
                         img {
-                            @apply  w-[350px];
+                            @apply w-[430px];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 1080px) {
+            .main-container {
+                .sub-container {
+                    @apply gap-[30px] h-[260px];
+                    .text-area {
+                        @apply gap-[20px];
+                        .text-header {
+                            h2 {
+                                @apply text-[24px]/[37px];
+                            }
+                            p {
+                                @apply text-[12px]/[17px];
+                            }
+                        }
+                        .button-area {
+                            @apply gap-[20px];
+                            a {
+                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
+                                 
+                            }
+                            .app-store-list {
+                                @apply flex items-center gap-[14px];
+                                img {
+                                    &.playstore-logo {
+                                        @apply w-[110px] h-[30px];
+                                    }
+                                    &.apple-logo {
+                                        @apply w-[94px] h-[29px];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .image-area {
+                        img {
+                            @apply w-[380px];
                         }
                     }
                 }

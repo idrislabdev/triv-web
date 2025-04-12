@@ -20,11 +20,6 @@
             background: linear-gradient(to bottom, transparent,#000) #141414;
 
         }
-        .home-assets-crypto-section{
-            a {
-                @apply !bg-transparent !text-primary;
-            }
-        }
         .home-investasi-section {
             .investasi-section-box {
                 @apply bg-[#1b1f22]; 
@@ -363,90 +358,56 @@
     
             }
         }
-    }
-    
-    .home-assets-crypto-section {
-        @apply px-[100px] pt-[30px] pb-[50px] flex flex-col gap-[40px];
-        .crypto-section-title {
-            @apply flex justify-between items-center;
-            h2 {
-                @apply text-[28px]/[42px] font-bold text-neutral-900;
-            }
-            a {
-                @apply text-[14px]/[21px] font-medium text-neutral-900;
-            }
-        }
-        .crypto-section-thumbs {
-            @apply flex gap-[20px] justify-between;
-            .asset-crypto-thumb {
-                @apply w-1/6;
-                .asset-crypto-thumb-container {
-                    @apply border rounded-[14px] border-neutral-200 flex flex-col justify-between px-[20px] py-[16px] h-[140px] w-full;
-                    .crypto-thumb-top {
-                        @apply flex gap-[14px] items-center;
-                        .icon-thumb-top {
-                            @apply w-[36px];
-                            img {
-                                @apply w-[36px] w-[36px];
-    
+        @media (max-width:1180px) {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        @apply mx-[10px];
+                        .index-cyrpto-content {
+                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
+                            .crypto-title{
+                                @apply flex;
+                                label {
+                                    @apply text-[10px]/[16px];
+                                }
                             }
-                        }
-                        label {
-                            @apply text-[14px]/[21px] font-bold text-neutral-900;
-                        }
-                    }
-                    .crypto-thumb-bottom {
-                        @apply flex flex-col gap-[5px];
-                        label {
-                            &.thumb-bottom-idr {
-                                @apply text-[14px]/[21px] font-medium text-neutral-900;
-                            }
-                            &.thumb-bottom-index {
-                                @apply text-[12px]/[18px] font-medium text-primary;
-        
+                            .crypto-index{
+                                @apply flex;
+                                label {
+                                    @apply text-[10px]/[16px];
+                                }
                             }
                         }
                     }
+                    
                 }
+    
             }
         }
-    }
-
-    .home-rancang-section {
-        @apply flex items-end px-[100px] py-[50px] gap-[40px] relative;
-        .home-rancang-device {
-            @apply w-1/2 relative flex flex-col items-center;
-            img {
-                @apply w-[492px] h-[407px] object-contain;
-            }
-            &::after {
-                content: '';
-                @apply absolute bottom-[-50px] w-[642px] h-[642px] z-[-1];
-                background: url("/images/ornaments/circle-loop-ornament.png") no-repeat;
-            }
-        }
-        .home-rancang-description {
-            @apply flex flex-col gap-[60px] w-1/2 justify-center items-center text-center;
-            h2 {
-                @apply text-[28px]/[42px] font-bold text-neutral-900;
-            }
-            .rancang-description-details {
-                @apply flex flex-col gap-[40px];
-                .rancang-description-details-sub {
-                    @apply flex gap-[10px] items-start;
-                    .rancang-description-detail {
-                        @apply flex flex-col gap-[10px] w-1/2 justify-center text-center items-center;
-                        img {
-                            @apply w-[70px] h-[70px] object-contain;
-                        }
-                        h5 {
-                            @apply text-[15px]/[23px] font-semibold text-neutral-900;
-                        }
-                        p {
-                            @apply text-[11px]/[17px] font-medium text-neutral-900;
+        @media (max-width:1080px) {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        @apply mx-[10px];
+                        .index-cyrpto-content {
+                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
+                            .crypto-title{
+                                @apply flex;
+                                label {
+                                    @apply text-[9px]/[15px];
+                                }
+                            }
+                            .crypto-index{
+                                @apply flex;
+                                label {
+                                    @apply text-[9px]/[15px];
+                                }
+                            }
                         }
                     }
+                    
                 }
+    
             }
         }
     }
@@ -1065,6 +1026,102 @@
             }
             
         }
+        @media (max-width:1279px) {
+            .home-baru-crypto-container {
+                @apply py-[20px];
+                .baru-crypto-title {
+                    @apply flex flex-col gap-[20px];
+                    h5 {
+                        @apply text-[26px]/[23px];
+                    }
+                    p {
+                        @apply text-[16px]/[23px];
+                    }
+                    a {
+                        @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+                    }
+                }
+                .baru-crypto-videos {
+                    @apply flex-1 relative overflow-hidden;
+                    .swiper {
+                        .swiper-wrapper {
+                            @apply gap-[20px];
+                            .swiper-slide {
+                                @apply !w-[220px];
+                                .crypto-thumb-video {
+                                    @apply w-[220px] ;
+                                    .video-thumb {
+                                        img {
+                                            @apply w-[220px] h-[139px] rounded-tr-[8px] rounded-tl-[8px];
+                                        }
+                                    }
+                                   .video-title {
+                                        @apply flex flex-col gap-[14px] p-[13px];
+                                        h6 {
+                                            @apply text-[16px]/[23px] text-black;
+                                        }
+                                        a {
+                                            @apply text-[13px]/[20px] rounded-[22px] w-full h-[30px];
+                                        }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        @apply hidden;
+                    }  
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            .home-baru-crypto-container {
+                @apply py-[20px];
+                .baru-crypto-title {
+                    @apply flex flex-col gap-[20px];
+                    h5 {
+                        @apply text-[25px]/[22px];
+                    }
+                    p {
+                        @apply text-[15px]/[22px];
+                    }
+                    a {
+                        @apply text-[13px]/[20px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+                    }
+                }
+                .baru-crypto-videos {
+                    @apply flex-1 relative overflow-hidden;
+                    .swiper {
+                        .swiper-wrapper {
+                            @apply gap-[20px];
+                            .swiper-slide {
+                                @apply !w-[210px];
+                                .crypto-thumb-video {
+                                    @apply w-[210px] ;
+                                    .video-thumb {
+                                        img {
+                                            @apply w-[210px] h-[129px] rounded-tr-[8px] rounded-tl-[8px];
+                                        }
+                                    }
+                                   .video-title {
+                                        @apply flex flex-col gap-[14px] p-[13px];
+                                        h6 {
+                                            @apply text-[15px]/[22px] text-black;
+                                        }
+                                        a {
+                                            @apply text-[12px]/[19px] rounded-[22px] w-full h-[30px];
+                                        }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        @apply hidden;
+                    }  
+                }
+            }
+        }
         @media (max-width:1080px) {
             .home-baru-crypto-container {
                 @apply py-[20px];
@@ -1566,49 +1623,6 @@
                     }
                 }
             }
-            .home-assets-crypto-section {
-                @apply px-[30px] py-[20px] gap-[20px];
-                .crypto-section-title {
-                    @apply flex justify-between items-center;
-                    h2 {
-                        @apply text-[12px]/[18px];
-                    }
-                    a {
-                        @apply text-[8px]/[12px] p-[6px] border border-neutral-200 rounded-[6px];
-                    }
-                }
-                .crypto-section-thumbs {
-                    @apply flex-wrap gap-[0px] justify-center;
-                   .asset-crypto-thumb {
-                        @apply p-[4px] w-1/3;
-                        .asset-crypto-thumb-container {
-                            @apply h-[72px] p-[8px];
-                            .crypto-thumb-top {
-                                @apply gap-[8px];
-                                .icon-thumb-top {
-                                    @apply w-[20px];
-                                    img {
-                                        @apply w-[20px] w-[20px];
-                                    }
-                                }
-                                label {
-                                    @apply text-[8px]/[12px];
-                                }
-                            }
-                            .crypto-thumb-bottom {
-                                label {
-                                    &.thumb-bottom-idr {
-                                        @apply text-[8px]/[12px];
-                                    }
-                                    &.thumb-bottom-index {
-                                        @apply text-[6px]/[9px];
-                                    }
-                                }
-                            }
-                        }
-                   }
-                }
-            }
             .home-index-crypto-section {
                 @apply py-[20px] px-[0px];
                 .rfm-marquee-container  {
@@ -1638,37 +1652,6 @@
                             }
                         }
                         
-                    }
-                }
-            }
-            .home-rancang-section {
-                @apply flex-col px-[30px] py-[20px];
-                .home-rancang-device {
-                    @apply hidden;
-                }
-                .home-rancang-description {
-                    @apply w-full gap-[28px];
-                    h2 {
-                        @apply text-[12px]/[18px] font-bold text-neutral-900;
-                    }
-                    .rancang-description-details {
-                        @apply gap-[24px];
-                        .rancang-description-details-sub {
-                            @apply gap-[24px];
-                            .rancang-description-detail {
-                                @apply w-full;
-                                img {
-                                    width: 35px;
-                                    height: 35px;
-                                }
-                                h5 {
-                                    @apply text-[10px]/[15px];
-                                }
-                                p {
-                                    @apply text-[8px]/[18px];
-                                }
-                            }
-                        }
                     }
                 }
             }
