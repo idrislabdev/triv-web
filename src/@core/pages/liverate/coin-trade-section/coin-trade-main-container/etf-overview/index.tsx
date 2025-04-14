@@ -98,232 +98,232 @@ const EtfOverview = () => {
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'GBTC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'GBTC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'GBTC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'GBTC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'GBTC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'GBTC').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'GBTC') ? dataList.find((x:any) => x.ticker == 'GBTC').name : "GBTC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'GBTC') ? dataList.find((x:any) => x.ticker == 'GBTC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'GBTC') ? dataList.find((x:any) => x.ticker == 'GBTC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'GBTC') ? dataList.find((x:any) => x.ticker == 'GBTC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'GBTC') ? dataList.find((x:any) => x.ticker == 'GBTC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'GBTC') ? dataList.find((x:any) => x.ticker == 'GBTC').marketCap : ""} 
                         />
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'FBTC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'FBTC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'FBTC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'FBTC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'FBTC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'FBTC').marketCap} 
-                        />
-                    </div>
-                }
-                {dataList.length > 0 &&
-                    <div className='row'>
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BITO').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BITO').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BITO').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITO').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BITO').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BITO').marketCap} 
-                        />
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'IBIT').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'IBIT').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'IBIT').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'IBIT').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'IBIT').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'IBIT').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').name : "FBTC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').marketCap : ""} 
                         />
                     </div>
                 }
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'FBTC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'FBTC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'FBTC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'FBTC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'FBTC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'FBTC').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'BITO') ? dataList.find((x:any) => x.ticker == 'BITO').name : "BITO"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BITO') ? dataList.find((x:any) => x.ticker == 'BITO').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BITO') ? dataList.find((x:any) => x.ticker == 'BITO').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITO') ? dataList.find((x:any) => x.ticker == 'BITO').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BITO') ? dataList.find((x:any) => x.ticker == 'BITO').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BITO') ? dataList.find((x:any) => x.ticker == 'BITO').marketCap : ""} 
                         />
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BITB').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BITB').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BITB').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITB').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BITB').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BITB').marketCap} 
-                        />
-                    </div>
-                }
-                {dataList.length > 0 &&
-                    <div className='row'>
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'ARKB').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'ARKB').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'ARKB').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKB').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'ARKB').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'ARKB').marketCap} 
-                        />
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'HODL').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'HODL').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'HODL').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'HODL').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'HODL').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'HODL').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').name : "IBIT"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').marketCap : ""} 
                         />
                     </div>
                 }
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'EZBC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'EZBC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'EZBC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'EZBC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'EZBC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'EZBC').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').name : "FBTC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'FBTC') ? dataList.find((x:any) => x.ticker == 'FBTC').marketCap : ""} 
                         />
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BTCO').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BTCO').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BTCO').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTCO').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BTCO').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BTCO').marketCap} 
-                        />
-                    </div>
-                }
-                {dataList.length > 0 &&
-                    <div className='row'>
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BTF').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BTF').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BTF').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTF').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BTF').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BTF').marketCap} 
-                        />
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BRRR').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BRRR').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BRRR').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BRRR').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BRRR').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BRRR').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'BITB') ? dataList.find((x:any) => x.ticker == 'BITB').name : "BITB"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BITB') ? dataList.find((x:any) => x.ticker == 'BITB').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BITB') ? dataList.find((x:any) => x.ticker == 'BITB').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITB') ? dataList.find((x:any) => x.ticker == 'BITB').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BITB') ? dataList.find((x:any) => x.ticker == 'BITB').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BITB') ? dataList.find((x:any) => x.ticker == 'BITB').marketCap : ""} 
                         />
                     </div>
                 }
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BITS').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BITS').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BITS').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITS').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BITS').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BITS').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'ARKB') ? dataList.find((x:any) => x.ticker == 'ARKB').name : "ARKB"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'ARKB') ? dataList.find((x:any) => x.ticker == 'ARKB').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'ARKB') ? dataList.find((x:any) => x.ticker == 'ARKB').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKB') ? dataList.find((x:any) => x.ticker == 'ARKB').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'ARKB') ? dataList.find((x:any) => x.ticker == 'ARKB').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'ARKB') ? dataList.find((x:any) => x.ticker == 'ARKB').marketCap : ""} 
                         />
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'ARKA').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'ARKA').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'ARKA').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKA').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'ARKA').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'ARKA').marketCap} 
-                        />
-                    </div>
-                }
-                {dataList.length > 0 &&
-                    <div className='row'>
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'DEFI').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'DEFI').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'DEFI').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'DEFI').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'DEFI').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'DEFI').marketCap} 
-                        />
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'IBIT').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'IBIT').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'IBIT').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'IBIT').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'IBIT').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'IBIT').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'HODL') ? dataList.find((x:any) => x.ticker == 'HODL').name : "HODL"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'HODL') ? dataList.find((x:any) => x.ticker == 'HODL').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'HODL') ? dataList.find((x:any) => x.ticker == 'HODL').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'HODL') ? dataList.find((x:any) => x.ticker == 'HODL').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'HODL') ? dataList.find((x:any) => x.ticker == 'HODL').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'HODL') ? dataList.find((x:any) => x.ticker == 'HODL').marketCap : ""} 
                         />
                     </div>
                 }
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BITC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BITC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BITC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BITC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BITC').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'EZBC') ? dataList.find((x:any) => x.ticker == 'EZBC').name : "EZBC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'EZBC') ? dataList.find((x:any) => x.ticker == 'EZBC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'EZBC') ? dataList.find((x:any) => x.ticker == 'EZBC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'EZBC') ? dataList.find((x:any) => x.ticker == 'EZBC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'EZBC') ? dataList.find((x:any) => x.ticker == 'EZBC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'EZBC') ? dataList.find((x:any) => x.ticker == 'EZBC').marketCap : ""} 
                         />
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BETH').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BETH').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BETH').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BETH').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BETH').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BETH').marketCap} 
-                        />
-                    </div>
-                }
-                {dataList.length > 0 &&
-                    <div className='row'>
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BTCW').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BTCW').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BTCW').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTCW').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BTCW').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BTCW').marketCap} 
-                        />
-                        <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BETE').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BETE').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BETE').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BETE').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BETE').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BETE').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'BTCO') ? dataList.find((x:any) => x.ticker == 'BTCO').name : "BTCO"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BTCO') ? dataList.find((x:any) => x.ticker == 'BTCO').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BTCO') ? dataList.find((x:any) => x.ticker == 'BTCO').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTCO') ? dataList.find((x:any) => x.ticker == 'BTCO').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BTCO') ? dataList.find((x:any) => x.ticker == 'BTCO').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BTCO') ? dataList.find((x:any) => x.ticker == 'BTCO').marketCap : ""} 
                         />
                     </div>
                 }
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'ARKC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'ARKC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'ARKC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'ARKC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'ARKC').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'BTF') ? dataList.find((x:any) => x.ticker == 'BTF').name : "BTF"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BTF') ? dataList.find((x:any) => x.ticker == 'BTF').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BTF') ? dataList.find((x:any) => x.ticker == 'BTF').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTF') ? dataList.find((x:any) => x.ticker == 'BTF').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BTF') ? dataList.find((x:any) => x.ticker == 'BTF').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BTF') ? dataList.find((x:any) => x.ticker == 'BTF').marketCap : ""} 
                         />
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'ARKY').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'ARKY').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'ARKY').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKY').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'ARKY').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'ARKY').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'BRRR') ? dataList.find((x:any) => x.ticker == 'BRRR').name : "BRRR"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BRRR') ? dataList.find((x:any) => x.ticker == 'BRRR').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BRRR') ? dataList.find((x:any) => x.ticker == 'BRRR').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BRRR') ? dataList.find((x:any) => x.ticker == 'BRRR').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BRRR') ? dataList.find((x:any) => x.ticker == 'BRRR').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BRRR') ? dataList.find((x:any) => x.ticker == 'BRRR').marketCap : ""} 
                         />
                     </div>
                 }
                 {dataList.length > 0 &&
                     <div className='row'>
                         <EtfCardNew 
-                            title={dataList.find((x:any) => x.ticker == 'BTC').name} 
-                            subTitle={dataList.find((x:any) => x.ticker == 'BTC').ticker} 
-                            price={dataList.find((x:any) => x.ticker == 'BTC').price} 
-                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTC').priceChange}`} 
-                            volume={dataList.find((x:any) => x.ticker == 'BTC').volumeUsd} 
-                            marketCap={dataList.find((x:any) => x.ticker == 'BTC').marketCap} 
+                            title={dataList.find((x:any) => x.ticker == 'BITS') ? dataList.find((x:any) => x.ticker == 'BITS').name : "BITS"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BITS') ? dataList.find((x:any) => x.ticker == 'BITS').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BITS') ? dataList.find((x:any) => x.ticker == 'BITS').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITS') ? dataList.find((x:any) => x.ticker == 'BITS').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BITS') ? dataList.find((x:any) => x.ticker == 'BITS').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BITS') ? dataList.find((x:any) => x.ticker == 'BITS').marketCap : ""} 
+                        />
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'ARKA') ? dataList.find((x:any) => x.ticker == 'ARKA').name : "ARKA"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'ARKA') ? dataList.find((x:any) => x.ticker == 'ARKA').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'ARKA') ? dataList.find((x:any) => x.ticker == 'ARKA').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKA') ? dataList.find((x:any) => x.ticker == 'ARKA').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'ARKA') ? dataList.find((x:any) => x.ticker == 'ARKA').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'ARKA') ? dataList.find((x:any) => x.ticker == 'ARKA').marketCap : ""} 
+                        />
+                    </div>
+                }
+                {dataList.length > 0 &&
+                    <div className='row'>
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'DEFI') ? dataList.find((x:any) => x.ticker == 'DEFI').name : "DEFI"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'DEFI') ? dataList.find((x:any) => x.ticker == 'DEFI').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'DEFI') ? dataList.find((x:any) => x.ticker == 'DEFI').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'DEFI') ? dataList.find((x:any) => x.ticker == 'DEFI').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'DEFI') ? dataList.find((x:any) => x.ticker == 'DEFI').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'DEFI') ? dataList.find((x:any) => x.ticker == 'DEFI').marketCap : ""} 
+                        />
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').name : "IBIT"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'IBIT') ? dataList.find((x:any) => x.ticker == 'IBIT').marketCap : ""} 
+                        />
+                    </div>
+                }
+                {dataList.length > 0 &&
+                    <div className='row'>
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'BITC') ? dataList.find((x:any) => x.ticker == 'BITC').name : "BITC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BITC') ? dataList.find((x:any) => x.ticker == 'BITC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BITC') ? dataList.find((x:any) => x.ticker == 'BITC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BITC') ? dataList.find((x:any) => x.ticker == 'BITC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BITC') ? dataList.find((x:any) => x.ticker == 'BITC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BITC') ? dataList.find((x:any) => x.ticker == 'BITC').marketCap : ""} 
+                        />
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'BETH') ? dataList.find((x:any) => x.ticker == 'BETH').name : "BETH"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BETH') ? dataList.find((x:any) => x.ticker == 'BETH').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BETH') ? dataList.find((x:any) => x.ticker == 'BETH').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BETH') ? dataList.find((x:any) => x.ticker == 'BETH').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BETH') ? dataList.find((x:any) => x.ticker == 'BETH').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BETH') ? dataList.find((x:any) => x.ticker == 'BETH').marketCap : ""} 
+                        />
+                    </div>
+                }
+                {dataList.length > 0 &&
+                    <div className='row'>
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'BTCW') ? dataList.find((x:any) => x.ticker == 'BTCW').name : "BTCW"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BTCW') ? dataList.find((x:any) => x.ticker == 'BTCW').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BTCW') ? dataList.find((x:any) => x.ticker == 'BTCW').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTCW') ? dataList.find((x:any) => x.ticker == 'BTCW').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BTCW') ? dataList.find((x:any) => x.ticker == 'BTCW').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BTCW') ? dataList.find((x:any) => x.ticker == 'BTCW').marketCap : ""} 
+                        />
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'BETE') ? dataList.find((x:any) => x.ticker == 'BETE').name : "BETE"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BETE') ? dataList.find((x:any) => x.ticker == 'BETE').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BETE') ? dataList.find((x:any) => x.ticker == 'BETE').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BETE') ? dataList.find((x:any) => x.ticker == 'BETE').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BETE') ? dataList.find((x:any) => x.ticker == 'BETE').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BETE') ? dataList.find((x:any) => x.ticker == 'BETE').marketCap : ""} 
+                        />
+                    </div>
+                }
+                {dataList.length > 0 &&
+                    <div className='row'>
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'ARKC') ? dataList.find((x:any) => x.ticker == 'ARKC').name : "ARKC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'ARKC') ? dataList.find((x:any) => x.ticker == 'ARKC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'ARKC') ? dataList.find((x:any) => x.ticker == 'ARKC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKC') ? dataList.find((x:any) => x.ticker == 'ARKC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'ARKC') ? dataList.find((x:any) => x.ticker == 'ARKC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'ARKC') ? dataList.find((x:any) => x.ticker == 'ARKC').marketCap : ""} 
+                        />
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'ARKY') ? dataList.find((x:any) => x.ticker == 'ARKY').name : "ARKY"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'ARKY') ? dataList.find((x:any) => x.ticker == 'ARKY').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'ARKY') ? dataList.find((x:any) => x.ticker == 'ARKY').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'ARKY') ? dataList.find((x:any) => x.ticker == 'ARKY').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'ARKY') ? dataList.find((x:any) => x.ticker == 'ARKY').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'ARKY') ? dataList.find((x:any) => x.ticker == 'ARKY').marketCap : ""} 
+                        />
+                    </div>
+                }
+                {dataList.length > 0 &&
+                    <div className='row'>
+                        <EtfCardNew 
+                            title={dataList.find((x:any) => x.ticker == 'BTC') ? dataList.find((x:any) => x.ticker == 'BTC').name : "BTC"} 
+                            subTitle={dataList.find((x:any) => x.ticker == 'BTC') ? dataList.find((x:any) => x.ticker == 'BTC').ticker : ""} 
+                            price={dataList.find((x:any) => x.ticker == 'BTC') ? dataList.find((x:any) => x.ticker == 'BTC').price : ""} 
+                            priceChange={`${dataList.find((x:any) => x.ticker == 'BTC') ? dataList.find((x:any) => x.ticker == 'BTC').priceChange : ""}`} 
+                            volume={dataList.find((x:any) => x.ticker == 'BTC') ? dataList.find((x:any) => x.ticker == 'BTC').volumeUsd : ""} 
+                            marketCap={dataList.find((x:any) => x.ticker == 'BTC') ? dataList.find((x:any) => x.ticker == 'BTC').marketCap : ""} 
                         />
                         <div className='card !border-0'></div>
                     </div>
