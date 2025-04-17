@@ -16,8 +16,8 @@ const Footer = () => {
                 <div className='footer-primary'>
                     <div className='footer-primary-left'>
                         <div className='container-menu'>
-                            <label className='sm:hidden'>Market Price</label>
-                            <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListMarketplace(listMarketPlace !== "1" ? "1" : "")}> Market Place
+                            <label className='sm:hidden md:hidden'>Market Price</label>
+                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListMarketplace(listMarketPlace !== "1" ? "1" : "")}> Market Place
                                 <svg className={`w-3 h-3 ${listMarketPlace === "1" ? 'transform rotate-180' : ''}`} 
                                     fill="none" strokeLinecap="round" 
                                     strokeLinejoin="round" 
@@ -35,8 +35,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='container-menu'>
-                            <label className='sm:hidden'>Triv Feature</label>
-                            <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListrTrivFeature(listTrivFeature !== "1" ? "1" : "")}> Triv Feature
+                            <label className='sm:hidden md:hidden'>Triv Feature</label>
+                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListrTrivFeature(listTrivFeature !== "1" ? "1" : "")}> Triv Feature
                                 <svg className={`w-3 h-3 ${listTrivFeature === "1" ? 'transform rotate-180' : ''}`} 
                                     fill="none" strokeLinecap="round" 
                                     strokeLinejoin="round" 
@@ -58,8 +58,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='container-menu'>
-                            <label className='sm:hidden'>Product</label>
-                            <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListProduct(listProduct !== "1" ? "1" : "")}> Product
+                            <label className='sm:hidden md:hidden'>Product</label>
+                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListProduct(listProduct !== "1" ? "1" : "")}> Product
                                 <svg className={`w-3 h-3 ${listProduct === "1" ? 'transform rotate-180' : ''}`} 
                                     fill="none" strokeLinecap="round" 
                                     strokeLinejoin="round" 
@@ -79,8 +79,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='container-menu'>
-                            <label className='sm:hidden'>Company</label>
-                            <label className='hidden sm:flex sm:justify-between items-center' onClick={_ => setListCompany(listCompany !== "1" ? "1" : "")}> Market Price
+                            <label className='sm:hidden md:hidden'>Company</label>
+                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListCompany(listCompany !== "1" ? "1" : "")}> Market Price
                                 <svg className={`w-3 h-3 ${listCompany === "1" ? 'transform rotate-180' : ''}`} 
                                     fill="none" strokeLinecap="round" 
                                     strokeLinejoin="round" 

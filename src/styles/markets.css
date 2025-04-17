@@ -790,7 +790,16 @@
                     .market-info {
                         @apply flex-col gap-0;
                         .market-symbol {
-                            @apply w-full flex justify-between;
+                            @apply w-full flex;
+                            a {
+                                @apply w-1/2;
+                            }
+                            .info-detail {
+                                @apply w-1/2;
+                            }
+                        }
+                        .market-info-detail {
+                            @apply w-full justify-between;
                         }
                     }
                     .market-tv-wrapper {
