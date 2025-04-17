@@ -57,7 +57,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className='container-menu'>
+                        {/* <div className='container-menu'>
                             <label className='sm:hidden md:hidden'>Product</label>
                             <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListProduct(listProduct !== "1" ? "1" : "")}> Product
                                 <svg className={`w-3 h-3 ${listProduct === "1" ? 'transform rotate-180' : ''}`} 
@@ -77,7 +77,7 @@ const Footer = () => {
                                     <li>Bayar Tagihan</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='container-menu'>
                             <label className='sm:hidden md:hidden'>Company</label>
                             <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListCompany(listCompany !== "1" ? "1" : "")}> Market Price
