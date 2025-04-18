@@ -693,9 +693,15 @@
                     .divide-subcontainer {
                         @apply  w-full h-[80px];
                         background: url("/images/backgrounds/divide-small.png") no-repeat;
+                        background-position: center;
                     }
                     .swiper-subcontainer {
-                        @apply h-[180px];
+                        @media (max-width:880px) {
+                            @apply h-[400px];
+                        }
+                        @media (max-width:450px) {
+                            @apply h-[180px];
+                        }
                         .swiper-background {
                             .swiper {
                                 .swiper-slide {
