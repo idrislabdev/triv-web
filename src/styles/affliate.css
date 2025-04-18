@@ -635,7 +635,7 @@
                 .downline-container{
                     @apply flex-col-reverse px-[20px] pt-[80px] pb-[40px] items-center justify-center gap-[20px];
                     .image-subcontainer {
-                        @apply w-full;
+                        @apply w-full flex flex-col items-center;
                         img {
                             @apply w-[331px] h-[281px] object-contain;
                         }
