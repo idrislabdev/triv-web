@@ -1933,7 +1933,7 @@
                                 
                                 ul {
                                     &.tab-main {
-                                        @apply gap-[14px] text-[14px]/[21px] overflow-x-auto w-fit;
+                                        @apply gap-[14px] text-[14px]/[21px] overflow-x-auto w-full;
                                         li {
                                             @apply cursor-pointer w-full flex;
                                             a {
