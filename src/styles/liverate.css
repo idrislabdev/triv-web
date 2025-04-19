@@ -21,6 +21,7 @@
     .chart-area,
     .buy-subcontainer,
     .about-area,
+    .key-subcontainer,
     .card-overview {
         @apply !border-[#2E3339];
     }
@@ -1085,7 +1086,6 @@
                                 }
                             }
                         }
-
                         @media (max-width:1080px) {
                             @apply gap-[40px];
                         }
@@ -1976,7 +1976,7 @@
                             }
                         }
                         .key-subcontainer {
-                            @apply border border-neutral-200 rounded-[10px] p-[20px] gap-[24px];
+                            @apply border border-[#F0F1F3] rounded-[10px] p-[20px] gap-[24px];
                             h5 {
                                 @apply text-[14px]/[21px];
                             }
