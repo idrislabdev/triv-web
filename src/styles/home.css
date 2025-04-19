@@ -977,9 +977,9 @@
     }
     
     .home-baru-crypto-section {
-        @apply py-[50px] bg-[#EEF7FD] my-[50px];
+        @apply py-0 bg-[#EEF7FD] my-[50px];
         .home-baru-crypto-container {
-            @apply flex gap-[80px] py-[50px]  items-center relative max-w-container mx-auto;
+            @apply flex gap-[80px] py-[100px]  items-center relative max-w-container mx-auto;
             .baru-crypto-title {
                 @apply flex flex-col gap-[20px] pl-[100px];
                 h5 {
@@ -1028,7 +1028,7 @@
         }
         @media (max-width:1279px) {
             .home-baru-crypto-container {
-                @apply py-[20px];
+                @apply py-[70px];
                 .baru-crypto-title {
                     @apply flex flex-col gap-[20px];
                     h5 {
@@ -1076,7 +1076,7 @@
         }
         @media (max-width:1180px) {
             .home-baru-crypto-container {
-                @apply py-[20px];
+                @apply py-[70px];
                 .baru-crypto-title {
                     @apply flex flex-col gap-[20px];
                     h5 {
@@ -1124,7 +1124,7 @@
         }
         @media (max-width:1080px) {
             .home-baru-crypto-container {
-                @apply py-[20px];
+                @apply py-[70px];
                 .baru-crypto-title {
                     @apply flex flex-col gap-[20px];
                     h5 {
@@ -1776,9 +1776,8 @@
                 }
             }
             .home-baru-crypto-section {
-                @apply py-[20px];
                 .home-baru-crypto-container {
-                    @apply flex-col px-[30px] py-[20px] gap-[30px] justify-center;
+                    @apply flex-col px-[30px] py-[70px] gap-[30px] justify-center;
                     .baru-crypto-title {
                         @apply flex flex-col gap-[20px] items-center p-0;
                         h5 {
