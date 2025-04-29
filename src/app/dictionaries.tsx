@@ -8,6 +8,12 @@ const dictionariesRegister: any = {
   en: () => import("./dictionaries/register/en.json").then((module) => module.default),
 };
 
+const dictionariesResetpassword: any = {
+  id: () => import("./dictionaries/reset-password/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/reset-password/en.json").then((module) => module.default),
+};
+
+
 const dictionariesHome: any = {
   id: () => import("./dictionaries/home/id.json").then((module) => module.default),
   en: () => import("./dictionaries/home/en.json").then((module) => module.default),
@@ -183,6 +189,7 @@ const dictionariesPepe: any = {
 
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
 export const getDictionaryRegister = async (locale: any) => dictionariesRegister[locale]();  
+export const getDictionaryResetPassword = async (locale: any) => dictionariesResetpassword[locale]();  
 export const getDictionaryHome = async (locale: any) => dictionariesHome[locale]();  
 export const getDictionaryStaking = async (locale: any) => dictionariesStaking[locale]();
 export const getDictionaryLierate = async (locale: any) => dictionariesLiverate[locale]();
