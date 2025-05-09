@@ -1,0 +1,433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.futures-page {
+    @apply py-0;
+    .futures-hero-section {
+        @apply h-[700px] relative overflow-hidden flex flex-col justify-center;
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures.png") no-repeat;
+        background-size: cover;
+        background-position:center ;
+        .futures-hero-section-area {
+            @apply h-full flex px-[100px] max-w-container mx-auto items-center relative;
+            .section-text {
+                @apply flex flex-col w-[65%] gap-[40px] z-[1];
+                .text-title {
+                    @apply flex flex-col gap-[28px];
+                    .title {
+                        @apply flex flex-col w-[90%];
+                        h1 {
+                            @apply text-[60px]/[140%] text-white font-semibold w-full;
+                        }
+                        span {
+                           @apply text-primary
+                        }
+                    }
+                    p {
+                        @apply text-[20px]/[150%] font-medium text-primary;
+                    }
+                }
+                a {
+                    @apply bg-primary text-white w-[260px] h-[48px] text-[16px]/[150%] flex items-center justify-center rounded-[8px];
+                }
+                .terdaftar {
+                    @apply flex items-center gap-[30px];
+                    h5 {
+                        @apply text-[16px]/[200%] font-medium;
+                    }
+                    .logo-area {
+                        @apply flex items-center gap-[14px];
+                        .bappebti-logo {
+                            img {
+                                @apply w-[105px] h-[24px];
+                            }
+                        }
+                        .cfx-logo {
+                            img {
+                                @apply w-[51px] h-[20px];
+                            }
+                        }
+                        .kki-logo {
+                            img {
+                                @apply w-[71px] h-[25px];
+                            }
+                        }
+                    }
+                }
+
+            }
+            .section-image {
+                @apply relative w-[586px] h-full;
+                img {
+                    &.img-device {
+                        @apply w-full object-contain absolute bottom-0;
+                    }
+                    &.img-bitcoin {
+                        @apply  w-[111px] h-[113px] absolute right-[370px] top-[30%];
+                    }
+                    &.img-etherium {
+                        @apply  w-[87px] h-[87px] absolute right-[470px] top-[50%];
+                    }
+                    &.img-litecoin {
+                        @apply  w-[76px] h-[76px] absolute right-[-5px] top-[38%];
+                    }
+                    &.img-monero {
+                        @apply  w-[67px] h-[67px] absolute right-[-30px] top-[70%];
+                    }
+                }    
+            }
+           
+        }
+    }
+    .futures-index-crypto-section {
+        @apply py-[60px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        .rfm-marquee-container  {
+            @apply flex justify-start overflow-hidden;
+            .rfm-marquee {
+                @apply flex justify-center;
+                .rfm-initial-child-container {
+                    @apply flex justify-between w-full;
+                }
+                .rfm-child {
+                    @apply mx-[10px];
+                    .index-cyrpto-content {
+                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
+                        .crypto-title{
+                            @apply flex;
+                            label {
+                                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
+                            }
+                        }
+                        .crypto-index{
+                            @apply flex;
+                            label {
+                                @apply text-[12px]/[18px] font-medium flex items-center;
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+        }
+        @media (max-width:1279px) {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        @apply mx-[10px];
+                        .index-cyrpto-content {
+                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
+                            .crypto-title{
+                                @apply flex;
+                                label {
+                                    @apply text-[11px]/[17px];
+                                }
+                            }
+                            .crypto-index{
+                                @apply flex;
+                                label {
+                                    @apply text-[11px]/[17px];
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+    
+            }
+        }
+        @media (max-width:1180px) {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        @apply mx-[10px];
+                        .index-cyrpto-content {
+                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
+                            .crypto-title{
+                                @apply flex;
+                                label {
+                                    @apply text-[10px]/[16px];
+                                }
+                            }
+                            .crypto-index{
+                                @apply flex;
+                                label {
+                                    @apply text-[10px]/[16px];
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+    
+            }
+        }
+        @media (max-width:1080px) {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        @apply mx-[10px];
+                        .index-cyrpto-content {
+                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
+                            .crypto-title{
+                                @apply flex;
+                                label {
+                                    @apply text-[9px]/[15px];
+                                }
+                            }
+                            .crypto-index{
+                                @apply flex;
+                                label {
+                                    @apply text-[9px]/[15px];
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+    
+            }
+        }
+    }
+    .futures-what-crypto-section {
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        .main-container {
+            @apply flex items-center gap-[60px];
+            h2 {
+                @apply w-[315px] text-[38px]/[150%] font-bold text-[#2E3339];
+                span {
+                    @apply text-primary;
+                }
+            }
+            p {
+                @apply flex-1 text-[20px]/[150%] font-medium text-[#4B5060];
+                span {
+                    @apply text-primary;
+                }
+            }
+        }
+    }
+    .futures-why-crypto-section {
+        @apply pb-[85px] w-full relative overflow-hidden max-w-container mx-auto;
+        .main-container {
+            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+            h2 {
+                @apply text-[38px]/[150%] font-bold text-[#2E3339];
+                span {
+                    @apply text-primary;
+                }
+            }
+        }
+    }
+    .futures-list-coin-section {
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        .main-container {
+            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+            h2 {
+                @apply text-[38px]/[150%] font-bold text-[#2E3339];
+                span {
+                    @apply text-primary;
+                }
+            }
+            .subcontainer {
+                @apply flex gap-[60px] w-full;
+                .list-coin {
+                    @apply px-[20px] py-[40px] flex flex-col gap-[41px] w-1/2 border border-[#EBEEF4] rounded-[10px];
+                    h5 {
+                        @apply text-[24px]/[150%] text-[#2E3339] font-bold;
+                    }
+                    .coins {
+                        @apply flex flex-col gap-[41px];
+                        .coin {
+                            @apply flex items-center justify-between;
+                            .main-coin {
+                                @apply flex items-center gap-[20px];
+                                img {
+                                    @apply w-[46px] h-[46px];
+                                }
+                                .detail-text {
+                                    @apply flex flex-col;
+                                    label {
+                                        @apply text-[18px]/[150%] font-medium text-[#2E3339];
+                                    }
+                                    span {
+                                        @apply text-[14px]/[150%] font-medium text-[#C1C3CC];
+                                    }
+                                }
+                            }
+                            label {
+                                @apply text-[16px]/[150%] font-semibold flex items-center;
+                                &.plus {
+                                    @apply text-primary;
+                                }
+                                &.minus {
+                                    @apply text-[#EB5757];
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        @apply w-full text-[18px]/[150%] text-[#2E3339] font-medium text-center;
+                    }
+                }
+            }
+        }
+    }
+    .futures-step-section {
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
+        /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
+        background-size: cover;
+        background-position:center ;
+        .main-container {
+            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+            h2 {
+                @apply text-[38px]/[150%] font-bold text-white;
+                span {
+                    @apply text-primary;
+                }
+            }
+            .subcontainer {
+                @apply flex flex-col gap-[100px];
+                .step-row {
+                    @apply flex items-center gap-[130px];
+                    .step {
+                        @apply w-1/2 flex gap-[42px];
+                        .text-area {
+                            @apply pt-[40px] flex-1 flex flex-col gap-[20px] opacity-50;
+                            h5 {
+                                @apply text-[20px]/[150%] font-semibold text-white;
+                            }
+                            p {
+                                @apply text-[12px]/[150%] font-medium text-white;
+                            }
+                        }
+                        .img-area {
+                            @apply w-[185px] h-[240px] opacity-50;
+                            img {
+                                @apply w-full h-full object-contain rounded-[20px];
+                            }
+                        }
+                        &.active {
+                            .text-area {
+                                @apply opacity-100;
+                            }
+                            .img-area {
+                                @apply opacity-100;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .futures-pemisahan-section {
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        .main-container {
+            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+            .title-subcontainer {
+                @apply flex flex-col justify-center items-center gap-[34px] text-center px-[180px];
+                h2 {
+                    @apply text-[38px]/[150%] font-bold text-[#2E3339];
+                    span {
+                        @apply text-primary;
+                    }
+                }
+                p {
+                    @apply text-[20px]/[150%] font-medium text-[#2E3339]
+                }
+            }
+            .subcontainer {
+                @apply flex flex-col justify-center items-center gap-[121px];
+                ul {
+                    @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px];
+                    li {
+                        @apply w-[156px] h-[51px] text-[21px]/[150%] font-medium text-[#646A80] flex flex-col items-center justify-center;    
+                        &.active {
+                            @apply bg-white rounded-[12px];
+                        }
+                    }
+                }
+                .images {
+                    @apply flex items-center justify-center gap-[61px];
+                    .img-area {
+                        @apply w-[288px] h-[600px] relative;
+                        img {
+                            @apply w-full h-full;
+                        }
+                        &::before {
+                            content: '';
+                            @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[20px];
+                        }
+                        &.active {
+                            &::before {
+                                content: '';
+                                @apply  bg-opacity-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .futures-buy-sell-assets-section {
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        .main-container {
+            @apply flex items-center gap-[100px] w-full h-full;
+            .image-subcontainer {
+                @apply w-[500px] h-[500px] flex flex-col justify-center items-end;
+                img {
+                    @apply  w-[615px] h-[450px] left-0 object-cover absolute;
+                }
+            }
+            .description-subcontainer {
+                @apply flex flex-1 flex-col gap-[30px];
+                .start-now-description {
+                    @apply flex flex-col gap-[10px];
+                    h2 {
+                        @apply text-[38px]/[140%] font-black text-[#2E3339];
+                        span {
+                            background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                    h5 {
+                        @apply text-[20px]/[150%] font-bold;
+                        background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    p {
+                        @apply text-[16px]/[200%] font-medium text-neutral-700
+                    }
+                }
+                .start-button-logo {
+                    @apply flex flex-col gap-[30px];
+                    a {
+                        @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                        svg {
+                            path {
+                                @apply fill-white;
+                            }
+                        }
+                    }
+                    .start-now-store {
+                        @apply flex gap-[14px] items-center;
+                        img {
+                            &.apple-logo {
+                                @apply w-[130.64px] h-[38.71px];
+                            }
+                            &.playstore-logo {
+                                @apply w-[114.43px] h-[37.02px];
+        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

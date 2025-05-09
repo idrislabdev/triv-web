@@ -253,6 +253,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
                                 </ul>
                             </li>
                             <li className={`${pathname.split("/")[2] === 'staking' ? 'active' : ''}`}><Link href={`/${lang}/staking`}>Staking</Link></li>
+                            <li className={`${pathname.split("/")[2] === 'futures' ? 'active' : ''}`}><Link href={`/${lang}/futures`}>Futures</Link></li>
                             <li className={`${pathname.split("/")[2] === 'markets' ? 'active' : ''}`}><Link href={`/${lang}/markets`}>Market</Link></li>
                             <li className={`${pathname.split("/")[2] === 'stocks' ? 'active' : ''}`}><Link href={`/${lang}/stocks`}>US Stocks</Link></li>
                             <li className={`${pathname.split("/")[3] === 'affliate' ? 'active' : ''}`}><Link href={`/${lang}/home/affliate`}>Affliate</Link></li>
