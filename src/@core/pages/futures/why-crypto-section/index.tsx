@@ -9,7 +9,9 @@ const FuturesWhyCryptoSection = () => {
   return (
     <section className='futures-why-crypto-section'>
         <div className='main-container'>
-            <h2>Mengapa Trading <span>Futures</span> di Triv</h2>
+            <div className='title-subcontainer'>
+                <h2>Mengapa Trading <span>Futures</span> di Triv</h2>
+            </div>
             <div className='swiper-why'>
                 <Swiper modules={[Navigation]} slidesPerView={'auto'} loop={true}  centeredSlides={true} centeredSlidesBounds={true} navigation>
                     <SwiperSlide>

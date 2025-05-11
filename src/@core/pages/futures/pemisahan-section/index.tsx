@@ -16,14 +16,14 @@ const FuturesPemisahanSection = () => {
                     <li><a>Futures</a></li>
                 </ul>
                 <div className='images'>
-                    <div className='img-area'>
-                        <Image src='/images/futures/iphone-overview.png' alt='iphone-overview' width={0} height={0} sizes='100%'/>
+                    <div className='img-area img-area__1'>
+                        {/* <Image src='/images/futures/iphone-overview.png' alt='iphone-overview' width={0} height={0} sizes='100%'/> */}
                     </div>
-                    <div className='img-area active'>
-                        <Image src='/images/futures/iphone-spot.png' alt='iphone-spot' width={0} height={0} sizes='100%'/>
+                    <div className='img-area img-area__2 active'>
+                        {/* <Image src='/images/futures/iphone-spot.png' alt='iphone-spot' width={0} height={0} sizes='100%'/> */}
                     </div>
-                    <div className='img-area'>
-                        <Image src='/images/futures/iphone-futures.png' alt='iphone-futures' width={0} height={0} sizes='100%'/>
+                    <div className='img-area img-area__3'>
+                        {/* <Image src='/images/futures/iphone-futures.png' alt='iphone-futures' width={0} height={0} sizes='100%'/> */}
                     </div>
                 </div>
             </div>

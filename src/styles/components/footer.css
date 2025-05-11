@@ -1,7 +1,12 @@
 @tailwind components;
 
+.dark-theme {
+   .footer {
+        @apply !bg-[#111111];
+   }
+}
 .footer {
-    @apply w-full bg-black;
+    @apply w-full bg-[black];
     .footer-container {
         @apply flex flex-col gap-[75px] p-[100px]  text-white max-w-container mx-auto;
         .footer-primary {

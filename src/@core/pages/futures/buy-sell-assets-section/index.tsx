@@ -12,7 +12,7 @@ const FuturesBuySellAssetsSection = () => {
                 </div>
                 <div className='description-subcontainer'>
                     <div className='start-now-description'>
-                        <h2>Beli dan Jual Aset Digital<span>dimanapun</span> dan <span>kapanpun</span> dengan Aplikasi Triv</h2>
+                        <h2>Beli dan Jual Aset Digital <span>dimanapun</span> dan <span>kapanpun</span> dengan Aplikasi Triv</h2>
                         <h5>Manage all of your portfolio and transaction in 1 device</h5>
                         <p>With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.</p>
                     </div>

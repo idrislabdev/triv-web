@@ -165,7 +165,7 @@
                         }
                          &::before {
                             content: '';
-                            @apply bg-white bg-opacity-30 w-full h-full absolute block rounded-[20px];
+                            @apply bg-white bg-opacity-30 w-full h-full absolute block rounded-[20px] z-10;
                         }
 
                     }
@@ -193,7 +193,7 @@
                         .image-subcontainer {
                             @apply border-2 border-[#71BBED];
                             &::before {
-                                @apply bg-opacity-90;
+                                @apply bg-opacity-90 z-0;
                             }
                         }
                         .area-subcontainer {

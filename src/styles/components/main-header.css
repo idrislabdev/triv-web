@@ -522,7 +522,7 @@ header {
         }
         .main-header-menu {
             ul {
-                @apply flex gap-[30px] items-center;
+                @apply flex gap-[20px] items-center;
                 @media (max-width: 1250px) {
                     @apply gap-[15px];
                 }

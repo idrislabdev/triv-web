@@ -2,6 +2,166 @@
 @tailwind components;
 @tailwind utilities;
 
+.dark-theme {
+    .futures-page {
+        @apply !bg-[#000000];
+        h1, h2, h3, h4, h5, h6 {
+        @apply !text-slate-200;
+        }
+        p,label,span,a {
+            @apply !text-slate-300;
+        }
+        .futures-index-crypto-section {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        .index-cyrpto-content {
+                            @apply !border-[#2E3339];
+                            .crypto-title{
+                                label {
+                                    @apply !text-[#838899];
+                                    span {
+                                        @apply !text-[#838899];
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .futures-why-crypto-section {
+            .main-container {
+                .title-subcontainer {
+                    &::before {
+                        /* content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+                        z-index: -1;
+                        border-radius: 8px; */
+                    }
+                }
+            }
+            .swiper-why {
+                .swiper {
+                    .swiper-wrapper {
+                        .background-container {
+                            .image-subcontainer {
+                                img {
+                                    @apply w-full h-full rounded-[20px];
+                                }
+                                &::before {
+                                    content: '';
+                                    @apply bg-black bg-opacity-80;
+                                }
+
+                            }
+                            .area-subcontainer {
+                                .img-area {
+                                    @apply border-[#2E3339];
+                                };
+                                .text-area {
+                                    h5 {
+                                        @apply text-[#C1C3CC];
+                                    }
+                                    p {
+                                        @apply text-[#C1C3CC];
+                                    }
+                                }
+                            }
+                        }
+                        &.swiper-slide-active {
+                            .background-container {
+                                .image-subcontainer {
+                                    @apply border-[#275575];
+                                    &::before {
+                                        @apply bg-opacity-80;
+                                    }
+                                }
+                                .area-subcontainer {
+                                    .text-area {
+                                        h5,p {
+                                            @apply !text-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .futures-list-coin-section {
+            .main-container {
+                .subcontainer {
+                    .list-coin {
+                        @apply !border-[#4B5060];
+                    }
+                }
+            }
+        }
+        .futures-pemisahan-section {
+            .main-container {
+                .subcontainer {
+                    @apply flex flex-col justify-center items-center gap-[121px];
+                    ul {
+                        @apply !bg-[#111111] ;
+                        li {
+                            &.active {
+                                @apply !text-white !bg-[#000000];
+                            }
+                        }
+                    }
+                    .images {
+                        &::before {
+                            content: '';
+                            @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center;
+                            background: url("/images/backgrounds/title-background.png") no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            position: absolute;
+                        }
+                        .img-area {
+                            @apply w-[288px] h-[600px] relative;
+                            &__1 {
+                                content: '';
+                                background: url("/images/futures/iphone-overview-black.png") no-repeat !important;
+                                background-position: center;
+                                background-size: cover !important;
+                            }
+                            &__2 {
+                                content: '';
+                                background: url("/images/futures/iphone-spot-black.png") no-repeat !important;
+                                background-position: center;
+                                background-size: cover !important;
+                            }
+                            &__3 {
+                                content: '';
+                                background: url("/images/futures/iphone-futures-black.png") no-repeat !important;
+                                background-position: center;
+                                background-size: cover !important;
+                            }
+                        &::after {
+                                @apply !bg-black bg-opacity-70;
+                            }
+                            &.active {
+                                &::after {
+                                    @apply  bg-opacity-0;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
 .futures-page {
     @apply py-0;
     .futures-hero-section {
@@ -103,6 +263,14 @@
                             @apply flex;
                             label {
                                 @apply text-[12px]/[18px] font-medium flex items-center;
+                                span {
+                                     &.plus {
+                                        @apply !text-primary;
+                                    }
+                                    &.minus {
+                                        @apply !text-[#EB5757];
+                                    }
+                                }
                             }
                         }
                     }
@@ -197,13 +365,13 @@
             h2 {
                 @apply w-[315px] text-[38px]/[150%] font-bold text-[#2E3339];
                 span {
-                    @apply text-primary;
+                    @apply !text-primary;
                 }
             }
             p {
                 @apply flex-1 text-[20px]/[150%] font-medium text-[#4B5060];
                 span {
-                    @apply text-primary;
+                    @apply !text-primary;
                 }
             }
         }
@@ -212,10 +380,13 @@
         @apply pb-[85px] w-full relative overflow-hidden max-w-container mx-auto;
         .main-container {
             @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
-            h2 {
-                @apply text-[38px]/[150%] font-bold text-[#2E3339];
-                span {
-                    @apply text-primary;
+            .title-subcontainer {
+                @apply flex flex-col justify-center items-center w-full;
+                 h2 {
+                    @apply text-[38px]/[150%] font-bold text-[#2E3339];
+                    span {
+                        @apply !text-primary;
+                    }
                 }
             }
         }
@@ -259,10 +430,10 @@
                             label {
                                 @apply text-[16px]/[150%] font-semibold flex items-center;
                                 &.plus {
-                                    @apply text-primary;
+                                    @apply !text-primary;
                                 }
                                 &.minus {
-                                    @apply text-[#EB5757];
+                                    @apply !text-[#EB5757];
                                 }
                             }
                         }
@@ -275,17 +446,17 @@
         }
     }
     .futures-step-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden;
         background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
         /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
         background-size: cover;
         background-position:center ;
         .main-container {
-            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full max-w-container mx-auto;
             h2 {
                 @apply text-[38px]/[150%] font-bold text-white;
                 span {
-                    @apply text-primary;
+                    @apply !text-primary;
                 }
             }
             .subcontainer {
@@ -323,15 +494,15 @@
         }
     }
     .futures-pemisahan-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+        @apply pb-[85px] px-[100px] w-full relative overflow-hidden;
         .main-container {
             @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
             .title-subcontainer {
-                @apply flex flex-col justify-center items-center gap-[34px] text-center px-[180px];
+                @apply flex flex-col justify-center items-center gap-[34px] text-center px-[180px] max-w-container mx-auto;
                 h2 {
                     @apply text-[38px]/[150%] font-bold text-[#2E3339];
                     span {
-                        @apply text-primary;
+                        @apply !text-primary;
                     }
                 }
                 p {
@@ -341,7 +512,7 @@
             .subcontainer {
                 @apply flex flex-col justify-center items-center gap-[121px];
                 ul {
-                    @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px];
+                    @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
                     li {
                         @apply w-[156px] h-[51px] text-[21px]/[150%] font-medium text-[#646A80] flex flex-col items-center justify-center;    
                         &.active {
@@ -352,16 +523,31 @@
                 .images {
                     @apply flex items-center justify-center gap-[61px];
                     .img-area {
-                        @apply w-[288px] h-[600px] relative;
-                        img {
-                            @apply w-full h-full;
-                        }
-                        &::before {
+                        @apply w-[288px] h-[600px] relative max-w-container mx-auto;
+                        &__1 {
                             content: '';
-                            @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[20px];
+                            background: url("/images/futures/iphone-overview.png") no-repeat;
+                            background-position: center;
+                            background-size: cover !important;
+                        }
+                        &__2 {
+                            content: '';
+                            background: url("/images/futures/iphone-spot.png") no-repeat;
+                            background-position: center;
+                            background-size: cover !important;
+                        }
+                        &__3 {
+                            content: '';
+                            background: url("/images/futures/iphone-futures.png") no-repeat;
+                            background-position: center;
+                            background-size: cover !important;
+                        }
+                        &::after {
+                            content: '';
+                            @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[40px];
                         }
                         &.active {
-                            &::before {
+                            &::after {
                                 content: '';
                                 @apply  bg-opacity-0;
                             }
