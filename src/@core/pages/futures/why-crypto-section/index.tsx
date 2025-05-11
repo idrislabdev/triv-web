@@ -10,7 +10,20 @@ const FuturesWhyCryptoSection = () => {
     <section className='futures-why-crypto-section'>
         <div className='main-container'>
             <div className='title-subcontainer'>
-                <h2>Mengapa Trading <span>Futures</span> di Triv</h2>
+                <div className='what-text'>
+                    <h2>Apa itu <span>Futures</span> Kripto</h2>
+                    <p>
+                        Market Futures Kripto adalah instrumen yang bikin 
+                        kamu bisa memanfaatkan perubahan harga kripto 
+                        tanpa harus punya koinnya, cukup buka posisi long 
+                        atau short sesuai kondisi pasar. 
+                        Mulai trading sekarang di TRIV dan eksplor berbagai 
+                        peluang bareng <span>#FuturesnyaTriv</span>.
+                    </p>
+                </div>
+                <div className='why-text'>
+                    <h5>Mengapa Trading <span>Futures</span> di Triv</h5>
+                </div>
             </div>
             <div className='swiper-why'>
                 <Swiper modules={[Navigation]} slidesPerView={'auto'} loop={true}  centeredSlides={true} centeredSlidesBounds={true} navigation>

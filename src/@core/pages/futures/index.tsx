@@ -19,7 +19,7 @@ const FuturesPage = (props: {lang:string, objLang:any, liverates: any}) => {
             <main className='futures-page sm:mobile-responsive md:mobile-responsive light-theme'>
                 <FuturesHeroSection />
                 <FuturesIndexCryptoSection liverates={liverates} />
-                <FuturesWhatCryptoSection />
+                {/* <FuturesWhatCryptoSection /> */}
                 <FuturesWhyCryptoSection />
                 <FuturesListCoinSection />
                 <FuturesStepSection />

@@ -32,21 +32,16 @@
             }
         }
         .futures-why-crypto-section {
-            .main-container {
-                .title-subcontainer {
-                    &::before {
-                        /* content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
-                        z-index: -1;
-                        border-radius: 8px; */
-                    }
-                }
+             &::before {
+                content: '';
+                @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center;
+                background: url("/images/backgrounds/title-background.png") no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                
             }
+    
             .swiper-why {
                 .swiper {
                     .swiper-wrapper {
@@ -181,15 +176,15 @@
                             @apply text-[60px]/[140%] text-white font-semibold w-full;
                         }
                         span {
-                           @apply text-primary
+                           @apply !text-primary;
                         }
                     }
                     p {
-                        @apply text-[20px]/[150%] font-medium text-primary;
+                        @apply text-[20px]/[150%] font-medium !text-primary;
                     }
                 }
                 a {
-                    @apply bg-primary text-white w-[260px] h-[48px] text-[16px]/[150%] flex items-center justify-center rounded-[8px];
+                    @apply bg-primary !text-white w-[260px] h-[48px] text-[16px]/[150%] font-bold flex items-center justify-center rounded-[8px];
                 }
                 .terdaftar {
                     @apply flex items-center gap-[30px];
@@ -377,17 +372,35 @@
         }
     }
     .futures-why-crypto-section {
-        @apply pb-[85px] w-full relative overflow-hidden max-w-container mx-auto;
+        @apply pb-[85px] w-full relative overflow-hidden;
         .main-container {
             @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
             .title-subcontainer {
-                @apply flex flex-col justify-center items-center w-full;
-                 h2 {
-                    @apply text-[38px]/[150%] font-bold text-[#2E3339];
-                    span {
-                        @apply !text-primary;
+                @apply flex flex-col justify-center items-center w-full gap-[170px] pt-[85px];
+                .what-text {
+                    @apply flex items-center gap-[60px] max-w-container mx-auto px-[100px];
+                    h2 {
+                        @apply w-[315px] text-[38px]/[150%] font-bold text-[#2E3339];
+                        span {
+                            @apply !text-primary;
+                        }
+                    }
+                    p {
+                        @apply flex-1 text-[20px]/[150%] font-medium text-[#4B5060];
+                        span {
+                            @apply !text-primary;
+                        }
                     }
                 }
+                .why-text {
+                    h5 {
+                        @apply text-[38px]/[150%] font-bold text-[#2E3339];
+                        span {
+                            @apply !text-primary;
+                        }
+                    }
+                }
+                    
             }
         }
     }
@@ -615,5 +628,112 @@
             }
         }
         
+    }
+    
+    @layer components {
+        &.mobile-responsive {
+            .futures-hero-section {
+                @apply pt-[65px] h-[656px];
+                .futures-hero-section-area {
+                    @apply flex-col px-[20px];
+                    .section-text {
+                        @apply items-center text-center gap-[30px] w-[80%];
+                        .text-title {
+                            @apply flex flex-col gap-[14px];
+                            .title {
+                                @apply w-[100%];
+                                h1 {
+                                    @apply text-[14px]/[150%];
+                                }
+                            }
+                            p {
+                                @apply text-[12px]/[150%];
+                            }
+                        }
+                        a {
+                            @apply w-[260px] h-[30px] text-[12px]/[150%] ;
+                        }
+                        .terdaftar {
+                            @apply flex-col gap-[16px];
+                            h5 {
+                                @apply text-[12px]/[150%];
+                            }
+                            .logo-area {
+                                @apply flex items-center gap-[14px];
+                                .bappebti-logo {
+                                    img {
+                                        @apply w-[70px] h-[16px];
+                                    }
+                                }
+                                .cfx-logo {
+                                    img {
+                                        @apply w-[37px] h-[13px];
+                                    }
+                                }
+                                .kki-logo {
+                                    img {
+                                        @apply w-[51px] h-[18px];
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    .section-image {
+                        @apply relative w-full h-full;
+                        img {
+                            &.img-device {
+                                @apply w-full object-contain absolute bottom-0;
+                            }
+                            &.img-bitcoin {
+                                @apply  w-[57px] h-[58px] absolute right-[75%] top-[20%];
+                            }
+                            &.img-etherium {
+                                @apply  w-[47px] h-[47px] absolute right-[88%] top-[60%];
+                            }
+                            &.img-litecoin {
+                                @apply  w-[39px] h-[39px] absolute right-[0px] top-[28%];
+                            }
+                            &.img-monero {
+                                @apply  w-[34px] h-[34px] absolute right-[-10px] top-[70%];
+                            }
+                        }    
+                    }
+                
+                }
+            }
+            .futures-index-crypto-section {
+                @apply py-[20px] px-[0px];
+                .rfm-marquee-container  {
+                    @apply flex justify-start overflow-hidden;
+                    .rfm-marquee {
+                        @apply flex justify-center;
+                        .rfm-initial-child-container {
+                            @apply flex justify-between w-full;
+                        }
+                        .rfm-child {
+                            @apply mx-[10px];
+                            .index-cyrpto-content {
+                                @apply w-[147px] h-[24px] items-center ;
+                                .crypto-title{
+                                    label {
+                                        @apply text-[8px]/[12px];
+                                    }
+                                }
+                                .crypto-index{
+                                    label {
+                                        @apply text-[8px]/[12px];
+                                        svg {
+                                            @apply w-[12px] h-[12px];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
 }
