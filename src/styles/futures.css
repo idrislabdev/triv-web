@@ -52,7 +52,7 @@
                                 }
                                 &::before {
                                     content: '';
-                                    @apply bg-black bg-opacity-80;
+                                    @apply bg-black !bg-opacity-80;
                                 }
 
                             }
@@ -62,10 +62,10 @@
                                 };
                                 .text-area {
                                     h5 {
-                                        @apply text-[#C1C3CC];
+                                        @apply !text-white;
                                     }
                                     p {
-                                        @apply text-[#C1C3CC];
+                                        @apply !text-[#C1C3CC];
                                     }
                                 }
                             }
