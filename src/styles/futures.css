@@ -453,7 +453,7 @@
         }
     }
     .futures-step-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden;
+        @apply py-[85px] px-[100px] w-full relative overflow-hidden;
         background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
         /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
         background-size: cover;
@@ -501,7 +501,7 @@
         }
     }
     .futures-pemisahan-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden;
+        @apply py-[85px] px-[100px] w-full relative overflow-hidden;
         .main-container {
             @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
             .title-subcontainer {
@@ -628,7 +628,7 @@
     @layer components {
         &.mobile-responsive {
             .futures-hero-section {
-                @apply pt-[65px] h-[656px];
+                @apply pt-[65px] pb-[20px] h-[656px];
                 .futures-hero-section-area {
                     @apply flex-col px-[20px];
                     .section-text {
@@ -730,14 +730,14 @@
                 }
             }
             .futures-why-crypto-section {
-                @apply pb-[60px] w-full relative overflow-hidden;
+                @apply py-[20px] w-full relative overflow-hidden;
                 &::before {
                     @apply h-[400px];
                 }
                 .main-container {
                     @apply flex flex-col justify-center items-center gap-[20px] w-full h-full;
                     .title-subcontainer {
-                        @apply flex flex-col justify-center items-center w-full gap-[60px] pt-[60px];
+                        @apply flex flex-col justify-center items-center w-full gap-[60px] pt-[40px];
                         .what-text {
                             @apply flex-col text-center gap-[20px] px-[20px];
                             h2 {
@@ -792,7 +792,7 @@
                 } 
             }
             .futures-list-coin-section {
-                @apply pb-[60px] px-[20px];
+                @apply py-[20px] px-[20px];
                 .main-container {
                     @apply gap-[30px];
                     h2 {
@@ -837,7 +837,7 @@
                 }
             }
             .futures-step-section {
-                @apply pb-[60px] px-[20px] w-full relative overflow-hidden;
+                @apply py-[20px] px-[20px] w-full relative overflow-hidden;
                 .main-container {
                     @apply gap-[30px];
                     h2 {
@@ -871,7 +871,7 @@
                 }
             }
             .futures-pemisahan-section {
-                @apply pb-[60px] px-[20px];
+                @apply py-[20px] px-[20px];
                 .main-container {
                     @apply gap-[34px];
                     .title-subcontainer {
@@ -899,6 +899,9 @@
                         }
                         .images {
                             @apply gap-[30px];
+                            &::before {
+                                @apply h-[400px];
+                            }
                             .img-area {
                                 @apply w-[203px] h-[423px];
                             }
@@ -907,7 +910,7 @@
                 }
             }
             .futures-buy-sell-assets-section  {
-                @apply py-[30px] px-[20px];
+                @apply pt-[20px] pb-[40px] px-[20px];
                 .main-container {
                     @apply  gap-[20px] flex-col;
                     .image-subcontainer {

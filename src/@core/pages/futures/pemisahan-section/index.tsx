@@ -3,7 +3,7 @@ import React from 'react'
 
 const FuturesPemisahanSection = () => {
   return (
-    <main className='futures-pemisahan-section'>
+    <section className='futures-pemisahan-section'>
         <div className='main-container'>
             <div className='title-subcontainer'>
                 <h2>Pemisahan Aman antara Aset Spot dan <span>Futures</span></h2>
@@ -28,7 +28,7 @@ const FuturesPemisahanSection = () => {
                 </div>
             </div>
         </div>
-    </main>
+    </section>
   )
 }
 

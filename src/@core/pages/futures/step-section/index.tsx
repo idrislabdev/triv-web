@@ -3,7 +3,7 @@ import React from 'react'
 
 const FuturesStepSection = () => {
   return (
-    <main className='futures-step-section'>
+    <section className='futures-step-section'>
         <div className='main-container'>
             <h2>4 Langkah Cepat Buat Trading <span>Futures</span> di Triv</h2>
             <div className='subcontainer'>
@@ -49,7 +49,7 @@ const FuturesStepSection = () => {
                 </div>
             </div>
         </div>
-    </main>
+    </section>
   )
 }
 
