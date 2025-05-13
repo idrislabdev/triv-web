@@ -179,6 +179,7 @@ const MainSidebarMenu = (props: { lang:string, show:boolean, setShow: Dispatch<S
                                 </ul>
                             </li> */}
                                 <li><a onClick={_ => goToLink('staking')}>Staking</a></li>
+                                <li><a onClick={_ => goToLink('futures')}>Futures</a></li>
                                 <li><a onClick={_ => goToLink('markets')}>Market</a></li>
                                 <li><a onClick={_ => goToLink('stocks')}>US Stock</a></li>
                                 <li><a onClick={_ => goToLink('home/affliate')}>Affliate</a></li>
