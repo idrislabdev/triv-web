@@ -149,7 +149,7 @@
             }
            
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply h-[640px];
             .staking-hero-section-area {
                 .section-text {
@@ -359,7 +359,7 @@
                @apply hidden;   
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply gap-[40px];
             .media-container {
                 @apply w-1/2;
@@ -549,7 +549,7 @@
                 @apply w-full;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .guide-container {
                 @apply flex flex-col gap-[34px] flex-1;
                 h2 {
@@ -742,7 +742,7 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .card-staking-calculator{
                 @apply gap-[20px] p-[40px];
                 .title-container {
@@ -961,7 +961,7 @@
                 @apply w-1/4 p-[20px];
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .header-coins-staking {
                 h2 {
                     @apply text-[27px]/[40px];
@@ -1114,7 +1114,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             h2 {
                 @apply text-[27px]/[41px];
             }

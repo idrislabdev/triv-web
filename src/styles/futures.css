@@ -227,7 +227,7 @@
             }
            
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply h-[600px];
             .futures-hero-section-area {
                 .section-text {
@@ -503,7 +503,7 @@
             }
 
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply py-[40px];
             .rfm-marquee-container  {
                 .rfm-marquee {
@@ -615,7 +615,7 @@
                     
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .main-container {
                 .title-subcontainer {
                     @apply gap-[140px] pt-[55px];
@@ -877,7 +877,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply pb-[50px];
             .main-container {
                 h2 {
@@ -1089,7 +1089,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
              .main-container {
                 h2 {
                     @apply text-[34px]/[150%];
@@ -1266,7 +1266,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply py-[50px];
             .main-container {
                 @apply gap-[60px];
@@ -1439,7 +1439,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply pt-[50px];
              .main-container {
                 @apply gap-[40px];

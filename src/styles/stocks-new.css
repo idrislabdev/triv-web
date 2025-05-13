@@ -128,7 +128,7 @@
                 background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
             } */
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply pb-[50px];
             .stocks-hero-section-area {
                 @apply gap-[20px];
@@ -319,7 +319,7 @@
             }
 
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply pb-[50px];
             .rfm-marquee-container  {
                 .rfm-marquee {
@@ -439,7 +439,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             @apply h-[590px];
             .container {
                 .title-container {
@@ -594,7 +594,7 @@
                 }
            }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .image-container {
                 @apply w-1/2 flex flex-col justify-center items-end relative;
                 img {
@@ -914,7 +914,7 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .box-container {
                 @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[50px] gap-[30px] relative w-full;
                 h2 {
@@ -1042,7 +1042,7 @@
                @apply w-full;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .ewallet-description {
                 @apply gap-[15px];
                 h2 {
@@ -1141,7 +1141,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             h2 {
                 @apply text-[27px]/[41px];
             }

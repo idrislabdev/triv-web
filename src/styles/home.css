@@ -154,7 +154,7 @@
                         }
                     }
                 }
-                @media (max-width:1279px) {
+                @media (max-width:1280px) {
                     .text-title {
                         .title {
                             h1 {
@@ -282,7 +282,7 @@
                 img {
                     @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-0 bottom-0;
                 }
-                @media (max-width:1279px) {
+                @media (max-width:1280px) {
                     img {
                         @apply w-[900px] h-[650px];
                     }
@@ -332,7 +332,7 @@
             }
 
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .rfm-marquee-container  {
                 .rfm-marquee {
                     .rfm-child {
@@ -419,7 +419,7 @@
             img {
                 @apply absolute right-0 bottom-0 w-full h-full object-contain;
             }
-            @media (max-width:1279px) {
+            @media (max-width:1280px) {
                 @apply w-[632px];
             }
             @media (max-width:1180px) {
@@ -461,7 +461,7 @@
                     }
                 }
             }
-            @media (max-width:1279px) { 
+            @media (max-width:1280px) { 
                 h2 {
                     @apply text-[39px]/[60px];
                 }
@@ -580,7 +580,7 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
 
-            @media (max-width:1279px) {
+            @media (max-width:1280px) {
                 @apply gap-[20px];
                 h2 {
                     @apply text-[43px]/[67px];
@@ -688,7 +688,7 @@
            }
         }
 
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .image-container {
                 @apply w-[400px] h-[450px];
                 img {
@@ -822,7 +822,7 @@
             }
         }
 
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .dividen-staking-device {
                 @apply w-[454px];
                 img {
@@ -923,7 +923,7 @@
                @apply w-full;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .ewallet-description {
                 @apply gap-[15px];
                 h2 {
@@ -1026,7 +1026,7 @@
             }
             
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .home-baru-crypto-container {
                 @apply py-[70px];
                 .baru-crypto-title {
@@ -1231,7 +1231,7 @@
                 }
            }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .image-container {
                 @apply w-[450px] h-[450px] ;
                 img {
@@ -1418,7 +1418,7 @@
             }
 
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             h2 {
                 @apply text-[35px]/[55px];
             }

@@ -222,7 +222,7 @@
         p {
             @apply text-[18px]/[36px] font-medium;
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             h2 {
                 @apply text-[26px]/[38px];
             }
@@ -297,7 +297,7 @@
     
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             h2 {
                 @apply text-[26px]/[38px];
             }
@@ -522,7 +522,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .list-header {
                 .liverate-menu {
                     ul {

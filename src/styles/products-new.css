@@ -448,7 +448,7 @@
                 }
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .regulasi-container {
                 @apply flex gap-[50px];
                 .box-subcontainer {
@@ -674,7 +674,7 @@
                 }
            }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .title-container {
                 h2 {
                     @apply text-[38px]/[58px];
@@ -1164,7 +1164,7 @@
                 background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .box-container {
                 .sub-container {
                     .detail-subcontainer {
@@ -1313,7 +1313,7 @@
                @apply w-full;
             }
         }
-        @media (max-width:1279px) {
+        @media (max-width:1280px) {
             .ewallet-description {
                 @apply gap-[16px];
                 h2 {
