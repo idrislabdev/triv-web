@@ -41,20 +41,14 @@
                 position: absolute;
                 
             }
-    
             .swiper-why {
                 .swiper {
                     .swiper-wrapper {
                         .background-container {
                             .image-subcontainer {
-                                img {
-                                    @apply w-full h-full rounded-[20px];
-                                }
                                 &::before {
-                                    content: '';
                                     @apply bg-black !bg-opacity-80;
                                 }
-
                             }
                             .area-subcontainer {
                                 .img-area {
@@ -411,7 +405,7 @@
             h2 {
                 @apply text-[38px]/[150%] font-bold text-[#2E3339];
                 span {
-                    @apply text-primary;
+                    @apply !text-primary;
                 }
             }
             .subcontainer {
@@ -563,6 +557,7 @@
                             &::after {
                                 content: '';
                                 @apply  bg-opacity-0;
+                                box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
                             }
                         }
                     }
@@ -731,6 +726,222 @@
                             }
                         }
                         
+                    }
+                }
+            }
+            .futures-why-crypto-section {
+                @apply pb-[60px] w-full relative overflow-hidden;
+                &::before {
+                    @apply h-[400px];
+                }
+                .main-container {
+                    @apply flex flex-col justify-center items-center gap-[20px] w-full h-full;
+                    .title-subcontainer {
+                        @apply flex flex-col justify-center items-center w-full gap-[60px] pt-[60px];
+                        .what-text {
+                            @apply flex-col text-center gap-[20px] px-[20px];
+                            h2 {
+                                @apply text-[18px]/[150%] w-full;
+                            }
+                            p {
+                                @apply text-[10px]/[150%] w-full;
+                            }
+                        }
+                        .why-text {
+                            h5 {
+                                @apply text-[18px]/[150%];
+                            }
+                        }
+                            
+                    }
+                }
+                .swiper-why {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                @apply w-[159px] h-[220px] px-[6px];
+                                .background-container {
+                                    .image-subcontainer {
+                                        @apply rounded-[9px];
+                                        &::before {
+                                            @apply rounded-[9px];
+                                        }
+                                    }
+                                    .area-subcontainer {
+                                        @apply px-[13px] py-0 gap-[13px];
+                                        .img-area {
+                                            @apply w-[36px] h-[36px] ;
+                                            img {
+                                                @apply w-[22px] h-[22px];
+                                            }
+                                        };
+                                        .text-area {
+                                            @apply gap-[9px];
+                                            h5 {
+                                                @apply text-[9px]/[150%]
+                                            }
+                                            p {
+                                                @apply text-[6px]/[150%];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }                            
+                    }
+                } 
+            }
+            .futures-list-coin-section {
+                @apply pb-[60px] px-[20px];
+                .main-container {
+                    @apply gap-[30px];
+                    h2 {
+                        @apply text-[18px]/[150%];
+                    }
+                    .subcontainer {
+                        @apply flex-col gap-[37px];
+                        .list-coin {
+                            @apply w-full gap-[24px] px-[12px] py-[24px];
+                            h5 {
+                                @apply text-[14px]/[150%];
+                            }
+                            .coins {
+                                @apply flex flex-col gap-[28px];
+                                .coin {
+                                    @apply flex items-center justify-between;
+                                    .main-coin {
+                                        @apply flex items-center gap-[20px];
+                                        img {
+                                            @apply w-[46px] h-[46px];
+                                        }
+                                        .detail-text {
+                                            @apply flex flex-col;
+                                            label {
+                                                @apply text-[11.14px]/[150%];
+                                            }
+                                            span {
+                                                @apply text-[8.67px]/[150%];
+                                            }
+                                        }
+                                    }
+                                    label {
+                                        @apply text-[9.9px]/[150%];
+                                    }
+                                }
+                            }
+                            a {
+                                @apply text-[11.14px]/[150%];
+                            }
+                        }
+                    }
+                }
+            }
+            .futures-step-section {
+                @apply pb-[60px] px-[20px] w-full relative overflow-hidden;
+                .main-container {
+                    @apply gap-[30px];
+                    h2 {
+                        @apply text-center text-[18px]/[150%];
+                    }
+                    .subcontainer {
+                        @apply flex flex-col gap-[40px];
+                        .step-row {
+                            @apply flex-col gap-[40px];
+                            .step {
+                                @apply w-full gap-[26px];
+                                .text-area {
+                                    @apply gap-[12px] pt-[25px];
+                                    h5 {
+                                        @apply text-[12px]/[150%];
+                                    }
+                                    p {
+                                        @apply text-[7.54px]/[150%];
+                                    }
+                                }
+                                .img-area {
+                                    @apply w-[116px] h-[150px];
+                                    img {
+                                        @apply rounded-[12px];
+                                    }
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            .futures-pemisahan-section {
+                @apply pb-[60px] px-[20px];
+                .main-container {
+                    @apply gap-[34px];
+                    .title-subcontainer {
+                        @apply gap-[14px] px-[20px];
+                        h2 {
+                            @apply text-[18px]/[150%];
+                            span {
+                                @apply !text-primary;
+                            }
+                        }
+                        p {
+                            @apply text-[10px]/[150%];
+                        }
+                    }
+                    .subcontainer {
+                        @apply gap-[59px];
+                        ul {
+                            @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
+                            li {
+                                @apply w-[104px] h-[40px] text-[14px]/[150%];    
+                                &.active {
+                                    @apply bg-white rounded-[12px];
+                                }
+                            }
+                        }
+                        .images {
+                            @apply gap-[30px];
+                            .img-area {
+                                @apply w-[203px] h-[423px];
+                            }
+                        }
+                    }
+                }
+            }
+            .futures-buy-sell-assets-section  {
+                @apply py-[30px] px-[20px];
+                .main-container {
+                    @apply  gap-[20px] flex-col;
+                    .image-subcontainer {
+                        @apply relative h-full w-full items-center;
+                        img {
+                            @apply h-[281px] w-full relative;
+                        }
+                        &::before {
+                            content: '';
+                            @apply absolute left-[-50px] w-[250px] h-[250px] z-0;
+                            background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                    .description-subcontainer {
+                        @apply w-full;
+                        .start-now-description {
+                            @apply text-center gap-[10px];
+                            h2 {
+                                @apply text-[14px]/[21px];
+                            }
+                            h5,p {
+                                @apply text-[12px]/[18px];
+                            }
+                        }
+                        .start-button-logo {
+                            @apply flex-col justify-center items-center gap-[30px];
+                            a {
+                                @apply w-[80%] text-[12px]/[18px] py-[8px];
+                                svg {
+                                    @apply w-[18px] h-[18px];
+                                }
+                            }
+                        }
                     }
                 }
             }

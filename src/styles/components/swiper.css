@@ -163,7 +163,7 @@
                         img {
                             @apply w-full h-full rounded-[20px];
                         }
-                         &::before {
+                        &::before {
                             content: '';
                             @apply bg-white bg-opacity-30 w-full h-full absolute block rounded-[20px] z-10;
                         }
