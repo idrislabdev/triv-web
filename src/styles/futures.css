@@ -352,7 +352,7 @@
                     .text-title {
                         .title {
                             h1 {
-                                @apply text-[35px]/[140%];
+                                @apply text-[31px]/[140%];
                             }
                         }
                         p {
@@ -1336,6 +1336,50 @@
                         @apply gap-[10px];
                         h2 {
                             @apply text-[30px]/[140%];
+                        }
+                        h5 {
+                            @apply text-[15px]/[150%];
+                        }
+                        p {
+                            @apply text-[11.5px]/[200%];
+                        }
+                    }
+                    .start-button-logo {
+                        @apply gap-[30px];
+                        a {
+                            @apply py-[10px] w-[200px] text-[12px]/[150%];
+                        }
+                        .start-now-store {
+                            @apply flex gap-[14px] items-center;
+                            img {
+                                &.apple-logo {
+                                    @apply w-[100px] h-[33px];
+                                }
+                                &.playstore-logo {
+                                    @apply w-[85px] h-[32px];
+            
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+         @media (max-width:1024px) {
+             .main-container {
+                @apply gap-0;
+                .image-subcontainer {
+                    @apply w-[300px] h-[300px];
+                    img {
+                        @apply  w-[400px] h-[295px];
+                    }
+                }
+                .description-subcontainer {
+                    @apply gap-[30px];
+                    .start-now-description {
+                        @apply gap-[10px];
+                        h2 {
+                            @apply text-[29px]/[140%];
                         }
                         h5 {
                             @apply text-[15px]/[150%];
