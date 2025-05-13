@@ -97,7 +97,6 @@
         .futures-pemisahan-section {
             .main-container {
                 .subcontainer {
-                    @apply flex flex-col justify-center items-center gap-[121px];
                     ul {
                         @apply !bg-[#111111] ;
                         li {
@@ -121,19 +120,19 @@
                                 content: '';
                                 background: url("/images/futures/iphone-overview-black.png") no-repeat !important;
                                 background-position: center;
-                                background-size: cover !important;
+                                background-size: contain !important;
                             }
                             &__2 {
                                 content: '';
                                 background: url("/images/futures/iphone-spot-black.png") no-repeat !important;
                                 background-position: center;
-                                background-size: cover !important;
+                                background-size: contain !important;
                             }
                             &__3 {
                                 content: '';
                                 background: url("/images/futures/iphone-futures-black.png") no-repeat !important;
                                 background-position: center;
-                                background-size: cover !important;
+                                background-size: contain !important;
                             }
                         &::after {
                                 @apply !bg-black bg-opacity-70;
@@ -228,6 +227,183 @@
             }
            
         }
+        @media (max-width:1279px) {
+            @apply h-[600px];
+            .futures-hero-section-area {
+                .section-text {
+                    .text-title {
+                        .title {
+                            h1 {
+                                @apply text-[45px]/[140%];
+                            }
+                        }
+                        p {
+                            @apply text-[18px]/[150%];
+                        }
+                    }
+                    a {
+                        @apply w-[240px] h-[43px] text-[14px]/[150%];
+                    }
+                    .terdaftar {
+                        h5 {
+                            @apply text-[14px]/[200%];
+                        }
+                        .logo-area {
+                            .bappebti-logo {
+                                img {
+                                    @apply w-[100px] h-[22px];
+                                }
+                            }
+                            .cfx-logo {
+                                img {
+                                    @apply w-[45px] h-[18px];
+                                }
+                            }
+                            .kki-logo {
+                                img {
+                                    @apply w-[64px] h-[22.5px];
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-image {
+                    @apply w-[500px];
+                    img {
+                        &.img-bitcoin {
+                            @apply  w-[80px] h-[83px] absolute right-[330px] top-[35%];
+                        }
+                        &.img-etherium {
+                            @apply  w-[67px] h-[67px] absolute right-[400px] top-[70%];
+                        }
+                        &.img-litecoin {
+                            @apply  w-[56px] h-[56px] absolute right-[0px] top-[42%];
+                        }
+                        &.img-monero {
+                            @apply  w-[47px] h-[47px] absolute right-[-5px] top-[80%];
+                        }
+                    }   
+                }
+            }
+        }
+        @media (max-width:1180px) {
+            @apply h-[600px];
+            .futures-hero-section-area {
+                .section-text {
+                    .text-title {
+                        .title {
+                            h1 {
+                                @apply text-[40px]/[140%];
+                            }
+                        }
+                        p {
+                            @apply text-[18px]/[150%];
+                        }
+                    }
+                    a {
+                        @apply w-[240px] h-[43px] text-[14px]/[150%];
+                    }
+                    .terdaftar {
+                        h5 {
+                            @apply text-[14px]/[200%];
+                        }
+                        .logo-area {
+                            .bappebti-logo {
+                                img {
+                                    @apply w-[100px] h-[22px];
+                                }
+                            }
+                            .cfx-logo {
+                                img {
+                                    @apply w-[45px] h-[18px];
+                                }
+                            }
+                            .kki-logo {
+                                img {
+                                    @apply w-[64px] h-[22.5px];
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-image {
+                    @apply w-[500px];
+                    img {
+                        &.img-bitcoin {
+                            @apply  w-[80px] h-[83px] absolute right-[330px] top-[35%];
+                        }
+                        &.img-etherium {
+                            @apply  w-[67px] h-[67px] absolute right-[400px] top-[70%];
+                        }
+                        &.img-litecoin {
+                            @apply  w-[56px] h-[56px] absolute right-[0px] top-[42%];
+                        }
+                        &.img-monero {
+                            @apply  w-[47px] h-[47px] absolute right-[-5px] top-[80%];
+                        }
+                    }   
+                }
+            }
+        }
+        @media (max-width:1080px) {
+            @apply h-[530px];
+            .futures-hero-section-area {
+                .section-text {
+                    .text-title {
+                        .title {
+                            h1 {
+                                @apply text-[35px]/[140%];
+                            }
+                        }
+                        p {
+                            @apply text-[16px]/[150%];
+                        }
+                    }
+                    a {
+                        @apply w-[200px] h-[38px] text-[13px]/[150%];
+                    }
+                    .terdaftar {
+                        h5 {
+                            @apply text-[12px]/[200%];
+                        }
+                        .logo-area {
+                            .bappebti-logo {
+                                img {
+                                    @apply w-[80px] h-[18px];
+                                }
+                            }
+                            .cfx-logo {
+                                img {
+                                    @apply w-[39px] h-[15px];
+                                }
+                            }
+                            .kki-logo {
+                                img {
+                                    @apply w-[52px] h-[18.5px];
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-image {
+                    @apply w-[450px];
+                    img {
+                        &.img-bitcoin {
+                            @apply  w-[70px] h-[73px] absolute right-[290px] top-[37%];
+                        }
+                        &.img-etherium {
+                            @apply  w-[57px] h-[57px] absolute right-[335px] top-[70%];
+                        }
+                        &.img-litecoin {
+                            @apply  w-[57px] h-[57px] absolute right-[0px] top-[43%];
+                        }
+                        &.img-monero {
+                            @apply  w-[37px] h-[37px] absolute right-[-5px] top-[80%];
+                        }
+                    }   
+                }
+            }
+        }
     }
     .futures-index-crypto-section {
         @apply py-[60px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
@@ -269,6 +445,7 @@
 
         }
         @media (max-width:1279px) {
+            @apply py-[40px];
             .rfm-marquee-container  {
                 .rfm-marquee {
                     .rfm-child {
@@ -347,24 +524,6 @@
             }
         }
     }
-    .futures-what-crypto-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
-        .main-container {
-            @apply flex items-center gap-[60px];
-            h2 {
-                @apply w-[315px] text-[38px]/[150%] font-bold text-[#2E3339];
-                span {
-                    @apply !text-primary;
-                }
-            }
-            p {
-                @apply flex-1 text-[20px]/[150%] font-medium text-[#4B5060];
-                span {
-                    @apply !text-primary;
-                }
-            }
-        }
-    }
     .futures-why-crypto-section {
         @apply pb-[85px] w-full relative overflow-hidden;
         .main-container {
@@ -396,6 +555,162 @@
                 }
                     
             }
+        }
+        @media (max-width:1279px) {
+            .main-container {
+                .title-subcontainer {
+                    @apply gap-[140px] pt-[55px];
+                    .what-text {
+                        h2 {
+                            @apply text-[34px]/[150%] ;
+                            span {
+                                @apply !text-primary;
+                            }
+                        }
+                        p {
+                            @apply flex-1 text-[15px]/[150%];
+                        }
+                    }
+                    .why-text {
+                        h5 {
+                            @apply text-[34px]/[150%];
+                        }
+                    }
+                        
+                }
+            }
+            .swiper-why {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            @apply w-[312px] h-[432px] ;
+                            .background-container {
+                                .area-subcontainer {
+                                    @apply px-[13px] gap-[13px];
+                                    .img-area {
+                                        @apply w-[72px] h-[72px] ;
+                                        img {
+                                            @apply w-[44px] h-[44px];
+                                        }
+                                    };
+                                    .text-area {
+                                        h5 {
+                                            @apply text-[18px]/[150%]
+                                        }
+                                        p {
+                                            @apply text-[13px]/[150%];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                            
+                }
+            } 
+        }
+        @media (max-width:1180px) {
+            .main-container {
+                .title-subcontainer {
+                    @apply gap-[140px];
+                    .what-text {
+                        h2 {
+                            @apply text-[34px]/[150%] w-[270px];
+                            span {
+                                @apply !text-primary;
+                            }
+                        }
+                        p {
+                            @apply flex-1 text-[14px]/[150%];
+                        }
+                    }
+                    .why-text {
+                        h5 {
+                            @apply text-[34px]/[150%];
+                        }
+                    }
+                        
+                }
+            }
+            .swiper-why {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            @apply w-[280px] h-[389px] ;
+                            .background-container {
+                                .area-subcontainer {
+                                    @apply px-[13px] gap-[13px];
+                                    .img-area {
+                                        @apply w-[65px] h-[65px] ;
+                                        img {
+                                            @apply w-[40px] h-[40px];
+                                        }
+                                    };
+                                    .text-area {
+                                        h5 {
+                                            @apply text-[17px]/[150%]
+                                        }
+                                        p {
+                                            @apply text-[12px]/[150%];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                            
+                }
+            } 
+        }
+        @media (max-width:1080px) {
+            .main-container {
+                .title-subcontainer {
+                    @apply gap-[120px];
+                    .what-text {
+                        h2 {
+                            @apply text-[31px]/[140%] w-[250px] ;
+                            span {
+                                @apply !text-primary;
+                            }
+                        }
+                        p {
+                            @apply flex-1 text-[12.5px]/[150%];
+                        }
+                    }
+                    .why-text {
+                        h5 {
+                            @apply text-[31px]/[140%];
+                        }
+                    }
+                        
+                }
+            }
+            .swiper-why {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            @apply w-[260px] h-[359px] ;
+                            .background-container {
+                                .area-subcontainer {
+                                    @apply px-[13px] gap-[13px];
+                                    .img-area {
+                                        @apply w-[65px] h-[65px] ;
+                                        img {
+                                            @apply w-[40px] h-[40px];
+                                        }
+                                    };
+                                    .text-area {
+                                        h5 {
+                                            @apply text-[17px]/[150%]
+                                        }
+                                        p {
+                                            @apply text-[12px]/[150%];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                            
+                }
+            } 
         }
     }
     .futures-list-coin-section {
@@ -451,9 +766,132 @@
                 }
             }
         }
+        @media (max-width:1279px) {
+            @apply pb-[50px];
+            .main-container {
+                h2 {
+                    @apply text-[34px]/[150%];
+                }
+                .subcontainer {
+                    .list-coin {
+                        @apply gap-[38px];
+                        h5 {
+                            @apply text-[22px]/[150%];
+                        }
+                        .coins {
+                            @apply gap-[38px];
+                            .coin {
+                                .main-coin {
+                                    img {
+                                        @apply w-[42px] h-[42px];
+                                    }
+                                    .detail-text {
+                                        @apply flex flex-col;
+                                        label {
+                                            @apply text-[16px]/[150%];
+                                        }
+                                        span {
+                                            @apply text-[15px]/[150%];
+                                        }
+                                    }
+                                }
+                                label {
+                                    @apply text-[15px]/[150%];
+                                }
+                            }
+                        }
+                        a {
+                            @apply w-full text-[16px]/[150%];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+              .main-container {
+                h2 {
+                    @apply text-[34px]/[150%];
+                }
+                .subcontainer {
+                    @apply gap-[50px];
+                    .list-coin {
+                        @apply gap-[30px];
+                        h5 {
+                            @apply text-[20px]/[150%];
+                        }
+                        .coins {
+                            @apply gap-[30px];
+                            .coin {
+                                .main-coin {
+                                    img {
+                                        @apply w-[38px] h-[38px];
+                                    }
+                                    .detail-text {
+                                        @apply flex flex-col;
+                                        label {
+                                            @apply text-[15px]/[150%];
+                                        }
+                                        span {
+                                            @apply text-[14px]/[150%];
+                                        }
+                                    }
+                                }
+                                label {
+                                    @apply text-[14px]/[150%];
+                                }
+                            }
+                        }
+                        a {
+                            @apply w-full text-[15px]/[150%];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1080px) {
+              .main-container {
+                h2 {
+                    @apply text-[31px]/[150%];
+                }
+                .subcontainer {
+                    @apply gap-[50px];
+                    .list-coin {
+                        @apply gap-[30px];
+                        h5 {
+                            @apply text-[18px]/[150%];
+                        }
+                        .coins {
+                            @apply gap-[30px];
+                            .coin {
+                                .main-coin {
+                                    img {
+                                        @apply w-[36px] h-[36px];
+                                    }
+                                    .detail-text {
+                                        @apply flex flex-col;
+                                        label {
+                                            @apply text-[14px]/[150%];
+                                        }
+                                        span {
+                                            @apply text-[13px]/[150%];
+                                        }
+                                    }
+                                }
+                                label {
+                                    @apply text-[13px]/[150%];
+                                }
+                            }
+                        }
+                        a {
+                            @apply w-full text-[14px]/[150%];
+                        }
+                    }
+                }
+            }
+        }
     }
     .futures-step-section {
-        @apply py-[85px] px-[100px] w-full relative overflow-hidden;
+        @apply py-[50px] px-[100px] w-full relative overflow-hidden;
         background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
         /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
         background-size: cover;
@@ -499,6 +937,90 @@
                 }
             }
         }
+        @media (max-width:1279px) {
+             .main-container {
+                h2 {
+                    @apply text-[34px]/[150%];
+                }
+                .subcontainer {
+                    @apply gap-[100px];
+                    .step-row {
+                        @apply gap-[110px];
+                        .step {
+                            @apply gap-[42px];
+                            .text-area {
+                                @apply pt-[40px] gap-[20px];
+                                h5 {
+                                    @apply text-[18px]/[150%];
+                                }
+                                p {
+                                    @apply text-[11px]/[150%];
+                                }
+                            }
+                            .img-area {
+                                @apply w-[185px] h-[240px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+             .main-container {
+                h2 {
+                    @apply text-[31px]/[150%];
+                }
+                .subcontainer {
+                    @apply gap-[100px];
+                    .step-row {
+                        @apply gap-[90px];
+                        .step {
+                            @apply gap-[42px];
+                            .text-area {
+                                @apply pt-[40px] gap-[20px];
+                                h5 {
+                                    @apply text-[17px]/[150%];
+                                }
+                                p {
+                                    @apply text-[10px]/[150%];
+                                }
+                            }
+                            .img-area {
+                                @apply w-[185px] h-[240px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1080px) {
+             .main-container {
+                h2 {
+                    @apply text-[31px]/[150%];
+                }
+                .subcontainer {
+                    @apply gap-[100px];
+                    .step-row {
+                        @apply gap-[90px];
+                        .step {
+                            @apply gap-[35px];
+                            .text-area {
+                                @apply pt-[40px] gap-[20px];
+                                h5 {
+                                    @apply text-[15px]/[150%];
+                                }
+                                p {
+                                    @apply text-[10px]/[150%];
+                                }
+                            }
+                            .img-area {
+                                @apply w-[155px] h-[192px];
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .futures-pemisahan-section {
         @apply py-[85px] px-[100px] w-full relative overflow-hidden;
@@ -535,19 +1057,19 @@
                             content: '';
                             background: url("/images/futures/iphone-overview.png") no-repeat;
                             background-position: center;
-                            background-size: cover !important;
+                            background-size: contain !important;
                         }
                         &__2 {
                             content: '';
                             background: url("/images/futures/iphone-spot.png") no-repeat;
                             background-position: center;
-                            background-size: cover !important;
+                            background-size: contain !important;
                         }
                         &__3 {
                             content: '';
                             background: url("/images/futures/iphone-futures.png") no-repeat;
                             background-position: center;
-                            background-size: cover !important;
+                            background-size: contain !important;
                         }
                         &::after {
                             content: '';
@@ -559,6 +1081,94 @@
                                 @apply  bg-opacity-0;
                                 box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1279px) {
+            @apply py-[50px];
+            .main-container {
+                @apply gap-[60px];
+                .title-subcontainer {
+                    @apply px-[150px];
+                    h2 {
+                        @apply text-[34px]/[150%];
+                    }
+                    p {
+                        @apply text-[18px]/[150%];
+                    }
+                }
+                .subcontainer {
+                    @apply !gap-[100px];
+                    ul {
+                        @apply rounded-[12px] py-[5px] px-[6px];
+                        li {
+                            @apply w-[130px] h-[48px] text-[19px]/[150%];    
+                        }
+                    }
+                    .images {
+                        @apply gap-[54px];
+                        .img-area {
+                            @apply !w-[268px] !h-[540px];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+             .main-container {
+                @apply gap-[50px];
+                .title-subcontainer {
+                    @apply px-[130px];
+                    h2 {
+                        @apply text-[31px]/[150%];
+                    }
+                    p {
+                        @apply text-[16px]/[150%];
+                    }
+                }
+                .subcontainer {
+                    @apply !gap-[80px];
+                    ul {
+                        @apply rounded-[12px] py-[5px] px-[6px];
+                        li {
+                            @apply w-[120px] h-[43px] text-[17px]/[150%];    
+                        }
+                    }
+                    .images {
+                        @apply gap-[54px];
+                        .img-area {
+                            @apply !w-[248px] !h-[500px];
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1080px) {
+             .main-container {
+                @apply gap-[50px];
+                .title-subcontainer {
+                    @apply px-[130px];
+                    h2 {
+                        @apply text-[31px]/[150%];
+                    }
+                    p {
+                        @apply text-[14px]/[150%];
+                    }
+                }
+                .subcontainer {
+                    @apply !gap-[80px];
+                    ul {
+                        @apply rounded-[12px] py-[5px] px-[6px];
+                        li {
+                            @apply w-[110px] h-[41px] text-[15px]/[150%];    
+                        }
+                    }
+                    .images {
+                        @apply gap-[50px];
+                        .img-area {
+                            @apply !w-[218px] !h-[450px];
                         }
                     }
                 }
@@ -622,7 +1232,139 @@
                 }
             }
         }
-        
+        @media (max-width:1279px) {
+            @apply pt-[50px];
+             .main-container {
+                @apply gap-[40px];
+                .image-subcontainer {
+                    @apply w-[450px] h-[450px];
+                    img {
+                        @apply  w-[555px] h-[400px];
+                    }
+                }
+                .description-subcontainer {
+                    @apply gap-[30px];
+                    .start-now-description {
+                        @apply gap-[10px];
+                        h2 {
+                            @apply text-[34px]/[140%];
+                        }
+                        h5 {
+                            @apply text-[18px]/[150%];
+                        }
+                        p {
+                            @apply text-[14px]/[200%];
+                        }
+                    }
+                    .start-button-logo {
+                        @apply gap-[30px];
+                        a {
+                            @apply py-[13px] w-[220px] text-[12px]/[150%];
+                        }
+                        .start-now-store {
+                            @apply flex gap-[14px] items-center;
+                            img {
+                                &.apple-logo {
+                                    @apply w-[120px] h-[35px];
+                                }
+                                &.playstore-logo {
+                                    @apply w-[100px] h-[33px];
+            
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1180px) {
+             .main-container {
+                @apply gap-[40px];
+                .image-subcontainer {
+                    @apply w-[400px] h-[400px];
+                    img {
+                        @apply  w-[500px] h-[350px];
+                    }
+                }
+                .description-subcontainer {
+                    @apply gap-[30px];
+                    .start-now-description {
+                        @apply gap-[10px];
+                        h2 {
+                            @apply text-[31px]/[140%];
+                        }
+                        h5 {
+                            @apply text-[16px]/[150%];
+                        }
+                        p {
+                            @apply text-[12px]/[200%];
+                        }
+                    }
+                    .start-button-logo {
+                        @apply gap-[30px];
+                        a {
+                            @apply py-[10px] w-[200px] text-[12px]/[150%];
+                        }
+                        .start-now-store {
+                            @apply flex gap-[14px] items-center;
+                            img {
+                                &.apple-logo {
+                                    @apply w-[110px] h-[34px];
+                                }
+                                &.playstore-logo {
+                                    @apply w-[90px] h-[33px];
+            
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1080px) {
+             .main-container {
+                @apply gap-0;
+                .image-subcontainer {
+                    @apply w-[360px] h-[360px];
+                    img {
+                        @apply  w-[450px] h-[315px];
+                    }
+                }
+                .description-subcontainer {
+                    @apply gap-[30px];
+                    .start-now-description {
+                        @apply gap-[10px];
+                        h2 {
+                            @apply text-[30px]/[140%];
+                        }
+                        h5 {
+                            @apply text-[15px]/[150%];
+                        }
+                        p {
+                            @apply text-[11.5px]/[200%];
+                        }
+                    }
+                    .start-button-logo {
+                        @apply gap-[30px];
+                        a {
+                            @apply py-[10px] w-[200px] text-[12px]/[150%];
+                        }
+                        .start-now-store {
+                            @apply flex gap-[14px] items-center;
+                            img {
+                                &.apple-logo {
+                                    @apply w-[100px] h-[33px];
+                                }
+                                &.playstore-logo {
+                                    @apply w-[85px] h-[32px];
+            
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
     @layer components {
@@ -768,7 +1510,7 @@
                                         }
                                     }
                                     .area-subcontainer {
-                                        @apply px-[13px] py-0 gap-[13px];
+                                        @apply px-[13px] gap-[13px];
                                         .img-area {
                                             @apply w-[36px] h-[36px] ;
                                             img {

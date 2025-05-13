@@ -170,7 +170,7 @@
 
                     }
                     .area-subcontainer {
-                        @apply absolute top-[20%] text-center flex flex-col gap-[30px] justify-center items-center py-[100opx] px-[28px];
+                        @apply absolute top-0 h-full text-center flex flex-col gap-[30px] justify-center items-center px-[28px];
                         .img-area {
                             @apply flex flex-col justify-center items-center w-[80px] h-[80px] border border-[#C1C3CC] rounded-[50%];
                             img {
