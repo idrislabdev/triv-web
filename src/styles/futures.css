@@ -615,6 +615,9 @@
                     
             }
         }
+        .swiper-why {
+            @apply flex justify-center;
+        }
         @media (max-width:1280px) {
             .main-container {
                 .title-subcontainer {
