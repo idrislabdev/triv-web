@@ -584,7 +584,7 @@
         }
     }
     .futures-why-crypto-section {
-        @apply pb-[85px] w-full relative overflow-hidden;
+        @apply pb-[85px] w-full relative overflow-hidden max-w-container mx-auto;
         .main-container {
             @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
             .title-subcontainer {
@@ -617,6 +617,17 @@
         }
         .swiper-why {
             @apply flex justify-center;
+        }
+         @media (max-width:1440px) {
+            .swiper-why {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            @apply  w-[347px] h-[480px];
+                        }
+                    }                            
+                }
+            } 
         }
         @media (max-width:1280px) {
             .main-container {
