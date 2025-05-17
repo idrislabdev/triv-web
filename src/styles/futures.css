@@ -1057,13 +1057,13 @@
         }
     }
     .futures-step-section {
-        @apply py-[50px] px-[100px] w-full relative overflow-hidden;
+        @apply py-[50px] w-full relative overflow-hidden;
         background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
         /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
         background-size: cover;
         background-position:center ;
         .main-container {
-            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full max-w-container mx-auto;
+            @apply flex flex-col justify-center items-center gap-[60px] px-[100px] w-full h-full max-w-container mx-auto;
             h2 {
                 @apply text-[38px]/[150%] font-bold text-white;
                 span {
@@ -1075,11 +1075,11 @@
                 .step-row {
                     @apply flex items-center gap-[130px];
                     .step {
-                        @apply w-1/2 flex gap-[42px];
+                        @apply w-1/2 flex gap-[42px] cursor-pointer;
                         .text-area {
                             @apply pt-[40px] flex-1 flex flex-col gap-[20px] opacity-50;
                             h5 {
-                                @apply text-[20px]/[150%] font-semibold text-white;
+                                @apply text-[20px]/[150%] font-semibold text-white flex gap-[4px];
                             }
                             p {
                                 @apply text-[12px]/[150%] font-medium text-white;
@@ -1096,7 +1096,8 @@
                                 @apply opacity-100;
                             }
                             .img-area {
-                                @apply opacity-100;
+                                @apply opacity-100 rounded-[20px];
+                                box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
                             }
                         }
                     }
@@ -1233,49 +1234,61 @@
                 }
             }
             .subcontainer {
-                @apply flex flex-col justify-center items-center gap-[121px];
+                @apply flex flex-col justify-center items-center gap-[121px] relative;
                 ul {
                     @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
                     li {
-                        @apply w-[156px] h-[51px] text-[21px]/[150%] font-medium text-[#646A80] flex flex-col items-center justify-center;    
+                        @apply w-[156px] h-[51px] text-[21px]/[150%] font-medium text-[#646A80] flex flex-col items-center justify-center cursor-pointer;    
                         &.active {
                             @apply bg-white rounded-[12px];
                         }
                     }
                 }
+                /* .slider {
+                    content: '';
+                    @apply absolute w-[288px] h-[600px] z-[10] bg-white opacity-20 rounded-[40px];
+                    display: flex;
+                    transition: transform 0.4s ease-in-out;
+                    box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
+                } */
+
                 .images {
                     @apply flex items-center justify-center gap-[61px];
                     .img-area {
                         @apply w-[288px] h-[600px] relative max-w-container mx-auto;
-                        &__1 {
+                        &__overview {
                             content: '';
                             background: url("/images/futures/iphone-overview.png") no-repeat;
                             background-position: center;
                             background-size: contain !important;
                         }
-                        &__2 {
+                        &__spot {
                             content: '';
                             background: url("/images/futures/iphone-spot.png") no-repeat;
                             background-position: center;
                             background-size: contain !important;
                         }
-                        &__3 {
+                        &__futures {
                             content: '';
                             background: url("/images/futures/iphone-futures.png") no-repeat;
                             background-position: center;
                             background-size: contain !important;
                         }
-                        &::after {
+
+                         &::after {
                             content: '';
                             @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[40px];
                         }
+                                           
                         &.active {
+                            transition: transform 0.4s ease-in-out;
                             &::after {
                                 content: '';
                                 @apply  bg-opacity-0;
-                                box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
+                                box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33; 
                             }
-                        }
+                        }  
+
                     }
                 }
             }
@@ -1844,9 +1857,9 @@
                 }
             }
             .futures-step-section {
-                @apply py-[20px] px-[20px] w-full relative overflow-hidden;
+                @apply py-[20px] w-full relative overflow-hidden;
                 .main-container {
-                    @apply gap-[30px];
+                    @apply gap-[30px] px-[20px];
                     h2 {
                         @apply text-center text-[18px]/[150%];
                     }

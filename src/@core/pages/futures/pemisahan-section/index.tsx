@@ -1,35 +1,44 @@
-import Image from 'next/image'
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 
 const FuturesPemisahanSection = () => {
-  return (
-    <section className='futures-pemisahan-section'>
-        <div className='main-container'>
-            <div className='title-subcontainer'>
-                <h2>Pemisahan Aman antara Aset Spot dan <span>Futures</span></h2>
-                <p>Dengan pemisahan yang jelas antara portfolio Spot dan Futures, Anda bisa dengan mudah mengelola aset kripto dan bisa memindahkan aset di antara dua Portfolio.</p>
-            </div>
-            <div className='subcontainer'>
-                <ul>
-                    <li><a>Overview</a></li>
-                    <li className='active'><a>Spot</a></li>
-                    <li><a>Futures</a></li>
-                </ul>
-                <div className='images'>
-                    <div className='img-area img-area__1'>
-                        {/* <Image src='/images/futures/iphone-overview.png' alt='iphone-overview' width={0} height={0} sizes='100%'/> */}
-                    </div>
-                    <div className='img-area img-area__2 active'>
-                        {/* <Image src='/images/futures/iphone-spot.png' alt='iphone-spot' width={0} height={0} sizes='100%'/> */}
-                    </div>
-                    <div className='img-area img-area__3'>
-                        {/* <Image src='/images/futures/iphone-futures.png' alt='iphone-futures' width={0} height={0} sizes='100%'/> */}
+    const [active, setActive] = useState('spot')
+    return (
+        <section className='futures-pemisahan-section'>
+            <div className='main-container'>
+                <div className='title-subcontainer'>
+                    <h2>Pemisahan Aman antara Aset Spot dan <span>Futures</span></h2>
+                    <p>Dengan pemisahan yang jelas antara portfolio Spot dan Futures, Anda bisa dengan mudah mengelola aset kripto dan bisa memindahkan aset di antara dua Portfolio.</p>
+                </div>
+                <div className='subcontainer'>
+                    <ul>
+                        <li className={`${active == 'overview' ? 'active' : ''}`}>
+                            <a onClick={() => setActive('overview')}>Overview</a>
+                        </li>
+                        <li className={`${active == 'spot' ? 'active' : ''}`}>
+                            <a onClick={() => setActive('spot')}>Spot</a>
+                        </li>
+                        <li className={`${active == 'futures' ? 'active' : ''}`}>
+                            <a onClick={() => setActive('futures')}>Futures</a>
+                        </li>
+                    </ul>
+                    <div className='images'>
+                        {/* <div
+                            className={`slider ${active === 'overview' ? 'slider__overview' : active === 'spot' ? 'slider__spot' : 'slider__futures'}`}
+                            style={{ transform: `translateX(${active === 'overview' ? -121 : active === 'spot' ? 0 : 121}%)` }}
+                        ></div> */}
+                        <div className={`img-area img-area__overview ${active == 'overview' ? 'active' : ''}`}>
+                        </div>
+                        <div className={`img-area img-area__spot ${active == 'spot' ? 'active' : ''}`}>
+                        </div>
+                        <div className={`img-area img-area__futures ${active == 'futures' ? 'active' : ''}`}>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default FuturesPemisahanSection
