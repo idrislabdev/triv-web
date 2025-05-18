@@ -1256,19 +1256,19 @@
                     @apply flex items-center justify-center gap-[61px];
                     .img-area {
                         @apply w-[288px] h-[600px] relative max-w-container mx-auto;
-                        &__overview {
+                        &__1 {
                             content: '';
                             background: url("/images/futures/iphone-overview.png") no-repeat;
                             background-position: center;
                             background-size: contain !important;
                         }
-                        &__spot {
+                        &__2 {
                             content: '';
                             background: url("/images/futures/iphone-spot.png") no-repeat;
                             background-position: center;
                             background-size: contain !important;
                         }
-                        &__futures {
+                        &__3 {
                             content: '';
                             background: url("/images/futures/iphone-futures.png") no-repeat;
                             background-position: center;

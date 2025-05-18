@@ -1,11 +1,31 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const FuturesStepSection = (props : {objLang:any}) => {
     const { objLang } = props
     const [active, setActive] = useState('1');
+
+    //  const inViewport = () => {
+    //     const elements = document.getElementsByClassName("futures-step-section");
+    //     var element = elements[0];
+    //     if (element) {
+    //         const { top, bottom } = element.getBoundingClientRect();
+    //         console.log(window.innerWidth)
+    //         if(window.innerHeight > top && bottom > 0) {
+    //             document.getElementsByClassName("futures-step-section")[0].classList.add('active-mobile')
+    //         } else {
+    //             document.getElementsByClassName("futures-step-section")[0].classList.remove('active-mobile')
+    //         }
+    //     }
+    // }
+    
+    // useEffect(() => {
+    //     window.addEventListener("scroll", inViewport, { passive: true });
+    //     document.getElementsByClassName("futures-step-section")[0].classList.add('active-mobile')
+    // });
+
     return (
         <section className='futures-step-section'>
             <div className='main-container'>

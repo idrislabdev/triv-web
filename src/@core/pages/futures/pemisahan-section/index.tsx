@@ -29,11 +29,11 @@ const FuturesPemisahanSection = (props : {objLang:any}) => {
                             className={`slider ${active === 'overview' ? 'slider__overview' : active === 'spot' ? 'slider__spot' : 'slider__futures'}`}
                             style={{ transform: `translateX(${active === 'overview' ? -121 : active === 'spot' ? 0 : 121}%)` }}
                         ></div> */}
-                        <div className={`img-area img-area__overview ${active == 'overview' ? 'active' : ''}`}>
+                        <div className={`img-area img-area__1 ${active == 'overview' ? 'active' : ''}`}>
                         </div>
-                        <div className={`img-area img-area__spot ${active == 'spot' ? 'active' : ''}`}>
+                        <div className={`img-area img-area__2 ${active == 'spot' ? 'active' : ''}`}>
                         </div>
-                        <div className={`img-area img-area__futures ${active == 'futures' ? 'active' : ''}`}>
+                        <div className={`img-area img-area__3 ${active == 'futures' ? 'active' : ''}`}>
                         </div>
                     </div>
                 </div>
