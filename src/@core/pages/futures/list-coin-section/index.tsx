@@ -2,7 +2,8 @@ import { CaretDownIcon, CaretUpIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import React from 'react'
 
-const FuturesListCoinSection = () => {
+const FuturesListCoinSection = (props: {objLang:any}) => {
+    const { objLang } = props
     const populars = [
         {img: '/images/coins/btc.png', name: 'BTCUSDT', detail: 'PERP 25x', val: 18.93},
         {img: '/images/coins/dash.png', name: 'DASHUSDT', detail: 'PERP 25x', val: 18.93},
@@ -14,7 +15,7 @@ const FuturesListCoinSection = () => {
     return (
         <section className='futures-list-coin-section'>
             <div className='main-container'>
-                <h2>List coin <span>Futures</span></h2>
+                <h2>{objLang.title_1} <span>{objLang.title_2}</span></h2>
                 <div className='subcontainer'>
                     <div className='list-coin'>
                         <h5>Popular ✨</h5>

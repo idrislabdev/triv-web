@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 
-const FuturesWhyCryptoSection = () => {
+const FuturesWhyCryptoSection = (props: {objLang:any}) => {
+    const { objLang } = props
     useEffect(() => {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
@@ -16,18 +17,13 @@ const FuturesWhyCryptoSection = () => {
         <div className='main-container'>
             <div className='title-subcontainer'>
                 <div className='what-text'>
-                    <h2>Apa itu <span>Futures</span> Kripto</h2>
+                    <h2>{objLang.what_title_1} <span>{objLang.what_title_2}</span> {objLang.what_title_3}</h2>
                     <p>
-                        Market Futures Kripto adalah instrumen yang bikin 
-                        kamu bisa memanfaatkan perubahan harga kripto 
-                        tanpa harus punya koinnya, cukup buka posisi long 
-                        atau short sesuai kondisi pasar. 
-                        Mulai trading sekarang di TRIV dan eksplor berbagai 
-                        peluang bareng <span>#FuturesnyaTriv</span>.
+                        {objLang.what_description} <span>#FuturesnyaTriv</span>.
                     </p>
                 </div>
                 <div className='why-text'>
-                    <h5>Mengapa Trading <span>Futures</span> di Triv</h5>
+                    <h5>{objLang.why_title_1} <span>{objLang.why_title_2}</span> {objLang.why_title_3}</h5>
                 </div>
             </div>
             <div className='swiper-why'>

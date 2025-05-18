@@ -34,7 +34,7 @@
         .futures-why-crypto-section {
              &::before {
                 content: '';
-                @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center z-0;
+                @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center;
                 background: url("/images/backgrounds/title-background.png") no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -584,11 +584,11 @@
         }
     }
     .futures-why-crypto-section {
-        @apply pb-[85px] w-full relative overflow-hidden;
+        @apply pb-[85px] w-full relative overflow-hidden max-w-container mx-auto;
         .main-container {
             @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
             .title-subcontainer {
-                @apply flex flex-col justify-center items-center w-full gap-[170px] pt-[85px] z-[1];
+                @apply flex flex-col justify-center items-center w-full gap-[170px] pt-[85px];
                 .what-text {
                     @apply flex items-center gap-[60px] max-w-container mx-auto px-[100px];
                     h2 {
@@ -1244,18 +1244,37 @@
                         }
                     }
                 }
-                /* .slider {
+                .slider {
                     content: '';
-                    @apply absolute w-[288px] h-[600px] z-[10] bg-white opacity-20 rounded-[40px];
+                    @apply absolute w-[288px] h-[600px] z-[10] bg-white opacity-70 rounded-[40px];
                     display: flex;
                     transition: transform 0.4s ease-in-out;
                     box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
-                } */
+
+                      &__overview {
+                        content: '';
+                        background: url("/images/futures/iphone-overview.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                    &__spot {
+                        content: '';
+                        background: url("/images/futures/iphone-spot.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                    &__futures {
+                        content: '';
+                        background: url("/images/futures/iphone-futures.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                }
 
                 .images {
                     @apply flex items-center justify-center gap-[61px];
                     .img-area {
-                        @apply w-[288px] h-[600px] relative max-w-container mx-auto;
+                        @apply w-[288px] h-[600px] relative max-w-container mx-auto bg-white opacity-20;
                         &__overview {
                             content: '';
                             background: url("/images/futures/iphone-overview.png") no-repeat;
@@ -1274,20 +1293,19 @@
                             background-position: center;
                             background-size: contain !important;
                         }
-
-                         &::after {
+                        
+                        /*                         
+                        &::after {
                             content: '';
                             @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[40px];
                         }
-                                           
                         &.active {
-                            transition: transform 0.4s ease-in-out;
                             &::after {
                                 content: '';
                                 @apply  bg-opacity-0;
                                 box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33; 
                             }
-                        }  
+                        }   */
 
                     }
                 }

@@ -1,0 +1,42 @@
+{
+    "hero_section": {
+        "title_1": "Crypto Futures Platform with",
+        "title_2": "Leverage 25x",
+        "title_3": "Officially Supervised",
+        "button": "Trade Now",
+        "registered" : "Registered and supervised by"
+    },
+    "what_why_section" : {
+        "what_title_1" : "What is",
+        "what_title_2" : "Futures",
+        "what_title_3" : "Crypto",
+        "what_description" : "Crypto Futures Market is an instrument that allows you to take advantage of crypto price changes without having to own the coins, just open a long or short position according to market conditions. Start trading now at TRIV and explore various opportunities together",
+        "why_title_1" : "Why Trade",
+        "why_title_2" : "Futures",
+        "why_title_3" : "on Triv"
+    },
+    "list_coints_section": {
+        "title_1" : "List coin",
+        "title_2" : "Futures"
+    },
+    "step_section" : {
+        "title_1" : "4 Quick Steps to Trading ",
+        "title_2" : "Futures",
+        "title_3" : "on Triv"
+    },
+    "pemisahan_section" : {
+        "title_1" : "Safe Separation between Spot Assets and",
+        "title_2" : "Futures",
+        "description" : "With a clear separation between Spot and Futures portfolios, you can easily manage crypto assets and move assets between the two Portfolios."
+    },
+    "invest_section" : {
+        "title_1" : "Buy and Sell Digital Assets",
+        "title_2" : "anywhere",
+        "title_3" : "and",
+        "title_4" : "anytime",
+        "title_5" : "with the Triv App",
+        "subtitle": "Manage all of your portfolio and transaction in 1 device",
+        "description": "With Triv Indonesia, you can purchase and do staking with Cryptocurrency in one hand. Get the best experience in building your Digital Asset with Triv.",
+        "button": "Regsiter Now"
+    }
+}

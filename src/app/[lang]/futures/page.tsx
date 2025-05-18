@@ -1,9 +1,10 @@
 import FuturesPage from '@/@core/pages/futures'
 import { getLiverateMini } from '@/@core/services/api';
+import { getDictionaryFutures } from '@/app/dictionaries';
 import React from 'react'
 
 export default async function Futures({ params }: any) {
-    const objLang = {}
+      const objLang = await getDictionaryFutures(params.lang);
     const resp =  await getLiverateMini(100);
     const liverates = resp.data.data
     return (

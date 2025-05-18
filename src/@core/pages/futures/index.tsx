@@ -17,14 +17,14 @@ const FuturesPage = (props: {lang:string, objLang:any, liverates: any}) => {
         <>
             <MainHeader classText="header-transparent" lang={lang}/>
             <main className='futures-page sm:mobile-responsive md:mobile-responsive light-theme'>
-                <FuturesHeroSection />
+                <FuturesHeroSection objLang={objLang.hero_section}/>
                 <FuturesIndexCryptoSection liverates={liverates} />
                 {/* <FuturesWhatCryptoSection /> */}
-                <FuturesWhyCryptoSection />
-                <FuturesListCoinSection />
-                <FuturesStepSection />
-                <FuturesPemisahanSection />
-                <FuturesBuySellAssetsSection />
+                <FuturesWhyCryptoSection objLang={objLang.what_why_section} />
+                <FuturesListCoinSection objLang={objLang.list_coints_section} />
+                <FuturesStepSection objLang={objLang.step_section} />
+                <FuturesPemisahanSection objLang={objLang.pemisahan_section} />
+                <FuturesBuySellAssetsSection objLang={objLang.invest_section} />
             </main>
             <Footer />
         </>

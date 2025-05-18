@@ -1,20 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const FuturesHeroSection = () => {
+export const FuturesHeroSection = (props: {objLang:any}) => {
+  const { objLang } = props
   return (
     <section className='futures-hero-section'>
        <div className='futures-hero-section-area'>
           <div className="section-text">
             <div className='text-title'>
               <div className='title fade-in entry-1'>
-                <h1>Platform Futures Crypto dengan <span>Leverage 25x</span>, Telah Diawasi Resmi</h1>
+                <h1>{objLang.title_1} <span>{objLang.title_2}</span>, {objLang.title_3}</h1>
               </div>
               <p className='fade-in entry-2'>#FuturesnyaTriv </p>
             </div>
-            <a>Trade Now</a>
+            <a>{objLang.button}</a>
             <div className='terdaftar'>
-              <h5>Terdaftar dan diawasi oleh</h5>
+              <h5>{objLang.registered}</h5>
               <div className='logo-area fade-in entry-4'>
                 <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-big-white.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
                 <div className='cfx-logo'><Image src='/images/otoritas-keuangans/cfx.png' alt='cfx logo' width={0} height={0} sizes='100%' /></div>              

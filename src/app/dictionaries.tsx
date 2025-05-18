@@ -186,6 +186,11 @@ const dictionariesPepe: any = {
   en: () => import("./dictionaries/pepe/en.json").then((module) => module.default),
 };
 
+const dictionariesFutures: any = {
+  id: () => import("./dictionaries/futures/id.json").then((module) => module.default),
+  en: () => import("./dictionaries/futures/en.json").then((module) => module.default),
+};
+
 
 export const getDictionaryLogin = async (locale: any) => dictionariesLogin[locale]();  
 export const getDictionaryRegister = async (locale: any) => dictionariesRegister[locale]();  
@@ -224,3 +229,5 @@ export const getDictionariesGeneral = async (locale: any) => dictionariesGeneral
 export const getDictionariesHyperliquid = async (locale: any) => dictionariesHyperliquid[locale]();
 export const getDictionariesTron = async (locale: any) => dictionariesTron[locale]();
 export const getDictionariesPepe = async (locale: any) => dictionariesPepe[locale]();
+export const getDictionaryFutures = async (locale: any) => dictionariesFutures[locale]();
+

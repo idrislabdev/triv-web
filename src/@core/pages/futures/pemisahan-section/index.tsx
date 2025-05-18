@@ -2,14 +2,15 @@
 
 import React, { useState } from 'react'
 
-const FuturesPemisahanSection = () => {
+const FuturesPemisahanSection = (props : {objLang:any}) => {
+    const { objLang } = props
     const [active, setActive] = useState('spot')
     return (
         <section className='futures-pemisahan-section'>
             <div className='main-container'>
                 <div className='title-subcontainer'>
-                    <h2>Pemisahan Aman antara Aset Spot dan <span>Futures</span></h2>
-                    <p>Dengan pemisahan yang jelas antara portfolio Spot dan Futures, Anda bisa dengan mudah mengelola aset kripto dan bisa memindahkan aset di antara dua Portfolio.</p>
+                    <h2>{objLang.title_1} <span>{objLang.title_2}</span></h2>
+                    <p>{objLang.description}</p>
                 </div>
                 <div className='subcontainer'>
                     <ul>
