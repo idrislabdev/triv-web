@@ -15,7 +15,6 @@ const FuturesPemisahanSection = (props : {objLang:any}) => {
 
     const handleSlideTo = (val:string, index:number) => {
         if (swiperInstance) {
-            swiperInstance.slideTo(index);
             setActive(val)
         }
     };
