@@ -1407,13 +1407,13 @@
             .main-container {
                 .images {
                     &.translate-overview {
-                        transform: translateX(20%);
+                        transform: translateX(30%);
                     }
                     &.translate-spot {
                         transform: translateX(0%);
                     }
                     &.translate-futures {
-                        transform: translateX(-20%);
+                        transform: translateX(-30%);
                     }
                 }
             }
