@@ -232,6 +232,52 @@
         } */
     }
 }
+.swiper-images {
+    @apply w-full h-full;
+    .swiper {
+        @apply mx-auto relative overflow-hidden z-[1];
+        .swiper-wrapper {
+            @apply relative w-full h-full z-[1] flex;
+            .swiper-slide {
+                @apply flex items-center flex-shrink-0 w-[288px] h-[600px] relative mx-[30px];
+                .image-container {
+                    @apply w-full h-full relative;
+                    &.overview {
+                        content: '';
+                        background: url("/images/futures/iphone-overview.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                    &.spot {
+                        content: '';
+                        background: url("/images/futures/iphone-spot.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                    &.futures {
+                        content: '';
+                        background: url("/images/futures/iphone-futures.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                    &::after {
+                        content: '';
+                        @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[40px];
+                    }
+                }
+                &.swiper-slide-active {
+                    .image-container {
+                         &::after {
+                            content: '';
+                            @apply  bg-opacity-0;
+                            box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @layer components {
     .mobile-responsive {
         .swiper-testimony {

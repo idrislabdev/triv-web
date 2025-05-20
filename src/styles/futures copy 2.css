@@ -143,7 +143,59 @@
                                 }
                             }
                         }
-                    }   
+                    }
+                    .swiper-images {
+                        &::before {
+                            content: '';
+                            @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center;
+                            background: url("/images/backgrounds/title-background.png") no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            position: absolute;
+                        }           
+                        .swiper {
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    .image-container {
+                                        &.overview {
+                                            content: '';
+                                            background: url("/images/futures/iphone-overview-black.png") no-repeat !important;
+                                            background-position: center;
+                                            background-size: contain !important;
+                                        }
+                                        &.spot {
+                                            content: '';
+                                            background: url("/images/futures/iphone-spot-black.png") no-repeat !important;
+                                            background-position: center;
+                                            background-size: contain !important;
+                                        }
+                                        &.futures {
+                                            content: '';
+                                            background: url("/images/futures/iphone-futures-black.png") no-repeat !important;
+                                            background-position: center;
+                                            background-size: contain !important;
+                                        }
+                                        &::after {
+                                            @apply !bg-black bg-opacity-70;
+                                        }
+                                        
+                                    }
+                                    &.swiper-slide-active {
+                                        .image-container {
+                                            &::after {
+                                                @apply  !bg-opacity-0;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                        
                 }
             }
         }
@@ -1249,7 +1301,6 @@
 
                 .images {
                     @apply flex items-center justify-center gap-[61px];
-                    transition: transform 0.4s ease-in-out;
                     .img-area {
                         @apply w-[288px] h-[600px] relative max-w-container mx-auto;
                         &.overview {
@@ -1399,21 +1450,6 @@
                     @apply gap-[45px];
                     .img-area   {
                        @apply !w-[200px] !h-[415px];
-                    }
-                }
-            }
-        }
-        @media (max-width:639px) {
-            .main-container {
-                .images {
-                    &.translate-overview {
-                        transform: translateX(20%);
-                    }
-                    &.translate-spot {
-                        transform: translateX(0%);
-                    }
-                    &.translate-futures {
-                        transform: translateX(-20%);
                     }
                 }
             }
@@ -1934,6 +1970,18 @@
                             }
                             .img-area {
                                 @apply w-[203px] h-[423px];
+                            }
+                        }
+                        .swiper-images {
+                            &::before {
+                                @apply h-[400px];
+                            }           
+                            .swiper {
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                         @apply w-[203px] h-[423px] mx-[15px];
+                                    }
+                                }
                             }
                         }
                     }

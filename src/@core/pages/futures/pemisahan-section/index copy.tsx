@@ -39,20 +39,22 @@ const FuturesPemisahanSection = (props : {objLang:any}) => {
                             <a onClick={() => switchIMage('futures', 2)}>Futures</a>
                         </li>
                     </ul>
-                    <div 
-                        className={`images ${active === 'overview' ? 'translate-overview' : active === 'spot' ? 'translate-spot' : 'translate-futures'}`} 
-                        id="images"
-                        // style={{ transform: `translateX(${active === 'overview' ? 20 : active === 'spot' ? 0 : -20}%)` }}
-                    >
+                    <div className='images' id="images">
                         {/* <div
                             className={`slider ${active === 'overview' ? 'slider__overview' : active === 'spot' ? 'slider__spot' : 'slider__futures'}`}
                             style={{ transform: `translateX(${active === 'overview' ? -121 : active === 'spot' ? 0 : 121}%)` }}
                         ></div> */}
-                        <div id="img_area_1" className={`img-area overview ${active == 'overview' ? 'active' : ''}`}>
+                        {/* <div id="img_area_1" className={`img-area overview ${active == 'overview' ? 'active' : ''}`}>
                         </div>
-                        <div id="img_area_2" className={`img-area spot ${active == 'spot' ? 'active' : ''}`}>
+                        <div id="img_area_2" className={`img-area ${active == 'spot' ? 'active' : ''}`}>
                         </div>
                         <div id="img_area_3" className={`img-area futures ${active == 'futures' ? 'active' : ''}`}>
+                        </div> */}
+                        <div id="img_area_1" className={`img-area ${imgs[0]}`}>
+                        </div>
+                        <div id="img_area_2" className={`img-area active ${imgs[1]}`}>
+                        </div>
+                        <div id="img_area_3" className={`img-area ${imgs[2]}`}>
                         </div>
                     </div>
                 </div>
