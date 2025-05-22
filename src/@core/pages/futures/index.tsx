@@ -11,8 +11,8 @@ import FuturesStepSection from './step-section'
 import FuturesPemisahanSection from './pemisahan-section'
 import FuturesBuySellAssetsSection from './buy-sell-assets-section'
 
-const FuturesPage = (props: {lang:string, objLang:any, liverates: any}) => {
-    const { lang, objLang, liverates} = props
+const FuturesPage = (props: {lang:string, objLang:any, liverates: any, prepsInstrument: any}) => {
+    const { lang, objLang, liverates, prepsInstrument} = props
     return (
         <>
             <MainHeader classText="header-transparent" lang={lang}/>
@@ -20,10 +20,10 @@ const FuturesPage = (props: {lang:string, objLang:any, liverates: any}) => {
                 <FuturesHeroSection objLang={objLang.hero_section}/>
                 <FuturesIndexCryptoSection liverates={liverates} />
                 {/* <FuturesWhatCryptoSection /> */}
-                <FuturesWhyCryptoSection objLang={objLang.what_why_section} />
-                <FuturesListCoinSection objLang={objLang.list_coints_section} />
+                <FuturesWhyCryptoSection objLang={objLang.what_why_section} lang={lang} />
+                <FuturesListCoinSection objLang={objLang.list_coints_section} lang={lang} prepsInstrument={prepsInstrument} />
                 <FuturesStepSection objLang={objLang.step_section} />
-                <FuturesPemisahanSection objLang={objLang.pemisahan_section} />
+                <FuturesPemisahanSection objLang={objLang.pemisahan_section} lang={lang} />
                 <FuturesBuySellAssetsSection objLang={objLang.invest_section} />
             </main>
             <Footer />

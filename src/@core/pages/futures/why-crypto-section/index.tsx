@@ -5,8 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 
-const FuturesWhyCryptoSection = (props: {objLang:any}) => {
-    const { objLang } = props
+const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
+    const { objLang, lang } = props
     useEffect(() => {
         setTimeout(() => {
             window.dispatchEvent(new Event('resize'));
@@ -17,7 +17,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any}) => {
         <div className='main-container'>
             <div className='title-subcontainer'>
                 <div className='what-text'>
-                    <h2>{objLang.what_title_1} <span>{objLang.what_title_2}</span> {objLang.what_title_3}</h2>
+                    {lang == 'id' && <h2>{objLang.what_title_1} <span>{objLang.what_title_2}</span> {objLang.what_title_3}</h2> }
+                    {lang == 'en' && <h2>{objLang.what_title_1} <span>{objLang.what_title_3}</span> {objLang.what_title_2}</h2> }
                     <p>
                         {objLang.what_description} <span>#FuturesnyaTriv</span>.
                     </p>

@@ -58,3 +58,8 @@ export const getOrderTrade = async (symbol:string) => {
     const resp = await axiosInstance.get(`/v2/market/trades?symbol=${symbol}`)
     return resp
 }
+
+export const getPerpetualsInstrument = async () => {
+    const resp = await axiosInstance.get(`/v1/perpetuals/instruments`)
+    return resp
+}

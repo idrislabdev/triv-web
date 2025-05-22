@@ -1,9 +1,10 @@
 import { CaretDownIcon, CaretUpIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const FuturesListCoinSection = (props: {objLang:any}) => {
-    const { objLang } = props
+const FuturesListCoinSection = (props: {objLang:any, lang:string, prepsInstrument:any}) => {
+    const { objLang, lang, prepsInstrument } = props
     const populars = [
         {img: '/images/coins/btc.png', name: 'BTCUSDT', detail: 'PERP 25x', val: 18.93},
         {img: '/images/coins/dash.png', name: 'DASHUSDT', detail: 'PERP 25x', val: 18.93},
@@ -15,51 +16,51 @@ const FuturesListCoinSection = (props: {objLang:any}) => {
     return (
         <section className='futures-list-coin-section'>
             <div className='main-container'>
-                <h2>{objLang.title_1} <span>{objLang.title_2}</span></h2>
+                <h2>{objLang.title_1} <span>{objLang.title_2}</span> {lang == 'en' && objLang.title_3}</h2>
                 <div className='subcontainer'>
                     <div className='list-coin'>
                         <h5>Popular ✨</h5>
                         <div className='coins'>
-                            {populars.map((item, index:number) => (
-                                <div className='coin' key={index}>
+                            {prepsInstrument.map((item:any, index:number) => (
+                                <Link href={`/${lang}/markets/${item.underlying_asset}_${item.settlement_asset}`} className='coin' key={index}>
                                     <div className='main-coin'>
-                                        <Image src={item.img} alt={item.name} width={0} height={0} sizes='100%' />
+                                        <Image src={item.icon_url} alt={item.symbol} width={0} height={0} sizes='100%' />
                                         <div className='detail-text'>
-                                            <label>{item.name}</label>
-                                            <span>{item.detail}</span>
+                                            <label>{item.underlying_asset}{item.settlement_asset}</label>
+                                            <span>PERP {item.leverage}</span>
                                         </div>
                                     </div>
-                                    <label className={item.val < 0 ? 'minus' : 'plus'}>
-                                        {item.val > 0 && <CaretUpIcon color={'#71BBED'} />}
-                                        {item.val < 0 && <CaretDownIcon color={'#EB5757'} />}
-                                        {item.val < 0 ? item.val * -1 : item.val}%
+                                    <label className={item.change_24h < 0 ? 'minus' : 'plus'}>
+                                        {item.change_24h > 0 && <CaretUpIcon color={'#71BBED'} />}
+                                        {item.change_24h < 0 && <CaretDownIcon color={'#EB5757'} />}
+                                        {item.change_24h < 0 ? item.change_24h * -1 : item.change_24h}%
                                     </label>
-                                </div>
+                                </Link>
                             ))}
                         </div>
-                        <a>View More</a>
+                        <Link href={`/${lang}/markets`}>View More</Link>
                     </div>
                     <div className='list-coin'>
                         <h5>New 🎉</h5>
                         <div className='coins'>
-                            {populars.map((item, index:number) => (
-                                <div className='coin' key={index}>
+                            {prepsInstrument.map((item:any, index:number) => (
+                                <Link href={`/${lang}/markets/${item.underlying_asset}_${item.settlement_asset}`} className='coin' key={index}>
                                     <div className='main-coin'>
-                                        <Image src={item.img} alt={item.name} width={0} height={0} sizes='100%' />
+                                        <Image src={item.icon_url} alt={item.symbol} width={0} height={0} sizes='100%' />
                                         <div className='detail-text'>
-                                            <label>{item.name}</label>
-                                            <span>{item.detail}</span>
+                                            <label>{item.underlying_asset}{item.settlement_asset}</label>
+                                            <span>PERP {item.leverage}</span>
                                         </div>
                                     </div>
-                                    <label className={item.val < 0 ? 'minus' : 'plus'}>
-                                        {item.val > 0 && <CaretUpIcon color={'#71BBED'} />}
-                                        {item.val < 0 && <CaretDownIcon color={'#EB5757'} />}
-                                        {item.val < 0 ? item.val * -1 : item.val}%
+                                    <label className={item.change_24h < 0 ? 'minus' : 'plus'}>
+                                        {item.change_24h > 0 && <CaretUpIcon color={'#71BBED'} />}
+                                        {item.change_24h < 0 && <CaretDownIcon color={'#EB5757'} />}
+                                        {item.change_24h < 0 ? item.change_24h * -1 : item.change_24h}%
                                     </label>
-                                </div>
+                                </Link>
                             ))}
                         </div>
-                        <a>View More</a>
+                        <Link href={`/${lang}/markets`}>View More</Link>
                     </div>
                 </div>
             </div>

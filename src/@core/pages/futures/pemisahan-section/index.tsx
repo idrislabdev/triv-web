@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 
-const FuturesPemisahanSection = (props : {objLang:any}) => {
-    const { objLang } = props
+const FuturesPemisahanSection = (props : {objLang:any, lang:string}) => {
+    const { objLang, lang } = props
     const [active, setActive] = useState('spot')
     const [activeIndex, setActiveIndex] = useState(1)
     const [imgs, setImgs] = useState<string[]>(['overview', 'spot', 'futures'])
@@ -24,7 +24,7 @@ const FuturesPemisahanSection = (props : {objLang:any}) => {
         <section className='futures-pemisahan-section'>
             <div className='main-container'>
                 <div className='title-subcontainer'>
-                    <h2>{objLang.title_1} <span>{objLang.title_2}</span></h2>
+                    <h2>{objLang.title_1} <span>{objLang.title_2}</span> {lang == 'en' && objLang.title_3}</h2>
                     <p>{objLang.description}</p>
                 </div>
                 <div className='subcontainer'>

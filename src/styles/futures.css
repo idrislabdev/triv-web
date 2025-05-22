@@ -96,6 +96,11 @@
         }
         .futures-pemisahan-section {
             .main-container {
+                .title-subcontainer {
+                    p {
+                        @apply !text-[#C1C3CC];
+                    }
+                }
                 .subcontainer {
                     ul {
                         @apply !bg-[#111111] ;
@@ -864,7 +869,7 @@
                                     @apply w-[46px] h-[46px];
                                 }
                                 .detail-text {
-                                    @apply flex flex-col;
+                                    @apply flex flex-col text-start;
                                     label {
                                         @apply text-[18px]/[150%] font-medium text-[#2E3339];
                                     }
