@@ -13,7 +13,27 @@
         "what_description" : "Market Futures Kripto adalah instrumen yang bikin kamu bisa memanfaatkan perubahan harga kripto tanpa harus punya koinnya, cukup buka posisi long atau short sesuai kondisi pasar. Mulai trading sekarang di TRIV dan eksplor berbagai peluang bareng",
         "why_title_1" : "Mengapa Trading",
         "why_title_2" : "Futures",
-        "why_title_3" : "di Triv"
+        "why_title_3" : "di Triv",
+        "carousel_1" : {
+            "title" : "Aman, Legal, dan Terpercaya Sejak 2015",
+            "description" : "TRIV sudah ada sejak 2015 dan diawasi langsung oleh Bappebti. Aman, legal, dan bikin kamu bisa fokus trading tanpa rasa khawatir."
+        },
+        "carousel_2" : {
+            "title" : "Market yang Beragam, Peluang Lebih Besar",
+            "description" : "TRIV menyediakan banyak pilihan market futures kripto — dari BTC hingga altcoin yang lagi hype. Semakin luas pilihannya, semakin besar potensi keuntungannya."
+        },
+        "carousel_3" : {
+            "title" : "Untung di Market Naik Maupun Turun",
+            "description" : "Di market futures, kamu bisa buka posisi long atau short sesuai arah market. Jadi kamu tetap bisa dapet peluang, meski market sedang turun."
+        },
+        "carousel_4" : {
+            "title" : "Support Aktif 24/7, Siap Bantu Kapan Aja",
+            "description" : "Tim support TRIV tersedia 24/7 dan selalu siap saat dibutuhkan. Dukungan maksimal biar pengalaman trading kamu makin lancar."
+        },
+        "carousel_5" : {
+            "title" : "Strategi Aman, Profit Maksimal",
+            "description" : "Dengan fitur Take Profit & Stop Loss, kamu bisa atur batas keuntungan dan kerugian sejak awal. Strategi jadi lebih disiplin, dan kamu tetap tenang meski market bergerak cepat."
+        }
     },
     "list_coints_section": {
         "title_1" : "List coin",
@@ -22,7 +42,23 @@
     "step_section" : {
         "title_1" : "4 Langkah Cepat Buat Trading",
         "title_2" : "Futures",
-        "title_3" : "di Triv"
+        "title_3" : "di Triv",
+        "step_1"  : {
+            "title" : "Top up USDT-mu dulu 🪙",
+            "description" : "Beli USDT kamu lewat akun Spot dengan IDR atau swap kripto asset kamu."
+        },
+         "step_2"  : {
+            "title" : "Transfer ke dompet futures 🔁",
+            "description" : "Masukkan nominal, pilih dompet pengirim dan tujuan, lalu tinggal transfer."
+        },
+        "step_3"  : {
+            "title" : "Pilih market favoritmu 📈",
+            "description" : "Telusuri berbagai market kripto, dari BTC sampai altcoin yang lagi hype, dan temukan market terbaik pilihanmu."
+        }, 
+        "step_4"  : {
+            "title" : "Siapin Strategi dan Langsung Buka Posisi 🚀",
+            "description" : "Manfaatkan leverage hingga 25x, serta fitur Take Profit dan Stop Loss untuk bantu optimalkan posisi dan kelola risiko dengan lebih aman."
+        }
     },
     "pemisahan_section" : {
         "title_1" : "Pemisahan Aman antara Aset Spot dan",

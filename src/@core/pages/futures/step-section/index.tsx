@@ -38,8 +38,8 @@ const FuturesStepSection = (props : {objLang:any}) => {
                             onMouseLeave={() => setActive('')}
                         >
                             <div className='text-area'>
-                                <h5><span>1.</span>Top up USDT-mu dulu 🪙</h5>
-                                <p>Beli USDT kamu lewat akun Spot dengan IDR atau swap kripto asset kamu.</p>
+                                <h5><span>1.</span>{objLang.step_1.title}</h5>
+                                <p>{objLang.step_1.description}</p>
                             </div>
                             <div className='img-area'>
                                 <Image src='/images/futures/step-topup.png' alt='step-topup' width={0} height={0} sizes='100%'/>
@@ -51,8 +51,8 @@ const FuturesStepSection = (props : {objLang:any}) => {
                             onMouseLeave={() => setActive('')}
                         >
                             <div className='text-area'>
-                                <h5><span>2.</span>Transfer ke dompet futures 🔁</h5>
-                                <p>Masukkan nominal, pilih dompet pengirim dan tujuan, lalu tinggal transfer.</p>
+                                <h5><span>2.</span>{objLang.step_2.title}</h5>
+                                <p>{objLang.step_2.description}</p>
                             </div>
                             <div className='img-area'>
                                 <Image src='/images/futures/step-transfer.png' alt='step-transfer' width={0} height={0} sizes='100%'/>
@@ -66,8 +66,8 @@ const FuturesStepSection = (props : {objLang:any}) => {
                             onMouseLeave={() => setActive('')}
                         >
                             <div className='text-area'>
-                                <h5><span>3.</span>Pilih market favoritmu 📈</h5>
-                                <p>Telusuri berbagai market kripto, dari BTC sampai altcoin yang lagi hype, dan temukan market terbaik pilihanmu.</p>
+                                <h5><span>3.</span>{objLang.step_3.title}</h5>
+                                <p>{objLang.step_3.description}</p>
                             </div>
                             <div className='img-area'>
                                 <Image src='/images/futures/step-market.png' alt='step-market' width={0} height={0} sizes='100%'/>
@@ -79,8 +79,8 @@ const FuturesStepSection = (props : {objLang:any}) => {
                             onMouseLeave={() => setActive('')}
                         >
                             <div className='text-area'>
-                                <h5><span>4.</span>Siapin Strategi dan Langsung Buka Posisi 🚀</h5>
-                                <p>Manfaatkan leverage hingga 25x, serta fitur Take Profit dan Stop Loss untuk bantu optimalkan posisi dan kelola risiko dengan lebih aman.</p>
+                                <h5><span>4.</span>{objLang.step_4.title}</h5>
+                                <p>{objLang.step_4.description}</p>
                             </div>
                             <div className='img-area'>
                                 <Image src='/images/futures/step-strategy.png' alt='step-strategy' width={0} height={0} sizes='100%'/>

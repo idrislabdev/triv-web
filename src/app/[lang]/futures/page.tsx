@@ -9,7 +9,6 @@ export default async function Futures({ params }: any) {
     const liverates = resp.data.data
     resp = await getPerpetualsInstrument();
     const prepsInstrument = resp.data
-    console.log(prepsInstrument)
     return (
         <html lang={params.lang}>
             <head>

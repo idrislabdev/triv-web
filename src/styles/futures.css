@@ -620,7 +620,7 @@
             }
         }
         .swiper-why {
-            @apply flex justify-center;
+            @apply flex justify-center max-w-container;
         }
          @media (max-width:1440px) {
             .swiper-why {

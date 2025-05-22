@@ -39,11 +39,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                                     <Image src='/images/futures/shield.png' alt='shield' width={0} height={0} sizes='100%'/>
                                 </div>
                                 <div className='text-area'>
-                                    <h5>Aman, Legal, dan Terpercaya Sejak 2015</h5>
-                                    <p>
-                                        TRIV sudah ada sejak 2015 dan diawasi langsung oleh Bappebti. 
-                                        Aman, legal, dan bikin kamu bisa fokus trading tanpa rasa khawatir.
-                                    </p>
+                                    <h5>{objLang.carousel_1.title}</h5>
+                                    <p>{objLang.carousel_1.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -58,12 +55,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                                     <Image src='/images/futures/coins.png' alt='coins' width={0} height={0} sizes='100%'/>
                                 </div>
                                 <div className='text-area'>
-                                    <h5>Market yang Beragam, Peluang Lebih Besar</h5>
-                                    <p>
-                                        TRIV menyediakan banyak pilihan market futures kripto — dari BTC 
-                                        hingga altcoin yang lagi hype. Semakin luas pilihannya, 
-                                        semakin besar potensi keuntungannya.
-                                    </p>
+                                    <h5>{objLang.carousel_2.title}</h5>
+                                    <p>{objLang.carousel_2.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -78,12 +71,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                                     <Image src='/images/futures/transfer.png' alt='transfer' width={0} height={0} sizes='100%'/>
                                 </div>
                                 <div className='text-area'>
-                                    <h5>Untung di Market Naik Maupun Turun</h5>
-                                    <p>
-                                        Di market futures, kamu bisa buka posisi long atau short sesuai 
-                                        arah market. Jadi kamu tetap bisa dapet peluang, meski market 
-                                        sedang turun.
-                                    </p>
+                                    <h5>{objLang.carousel_3.title}</h5>
+                                    <p>{objLang.carousel_3.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -98,11 +87,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                                     <Image src='/images/futures/headset.png' alt='headset' width={0} height={0} sizes='100%'/>
                                 </div>
                                 <div className='text-area'>
-                                    <h5>Support Aktif 24/7, Siap Bantu Kapan Aja</h5>
-                                    <p>
-                                        Tim support TRIV tersedia 24/7 dan selalu siap saat dibutuhkan. 
-                                        Dukungan maksimal biar pengalaman trading kamu makin lancar.
-                                    </p>
+                                    <h5>{objLang.carousel_4.title}</h5>
+                                    <p>{objLang.carousel_4.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -117,12 +103,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                                     <Image src='/images/futures/chart.png' alt='chart' width={0} height={0} sizes='100%'/>
                                 </div>
                                 <div className='text-area'>
-                                    <h5>Strategi Aman, Profit Maksimal</h5>
-                                    <p>
-                                        Dengan fitur Take Profit & Stop Loss, kamu bisa atur batas keuntungan dan kerugian sejak awal. 
-                                        Strategi jadi lebih disiplin, 
-                                        dan kamu tetap tenang meski market bergerak cepat.
-                                    </p>
+                                    <h5>{objLang.carousel_5.title}</h5>
+                                    <p>{objLang.carousel_5.description}</p>
                                 </div>
                             </div>
                         </div>
