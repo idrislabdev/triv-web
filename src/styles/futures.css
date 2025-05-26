@@ -186,7 +186,7 @@
                 .terdaftar {
                     @apply flex items-center gap-[30px];
                     h5 {
-                        @apply text-[16px]/[200%] font-medium;
+                        @apply text-[16px]/[200%] font-medium text-white;
                     }
                     .logo-area {
                         @apply flex items-center gap-[14px];
@@ -1234,7 +1234,7 @@
                     }
                 }
                 p {
-                    @apply text-[20px]/[150%] font-medium text-[#2E3339]
+                    @apply text-[20px]/[150%] font-medium text-[#2E3339] w-[80%];
                 }
             }
             .subcontainer {
@@ -1514,10 +1514,10 @@
                             @apply flex gap-[14px] items-center;
                             img {
                                 &.apple-logo {
-                                    @apply w-[120px] h-[35px];
+                                    @apply w-[130.64px] h-[38.71px];
                                 }
                                 &.playstore-logo {
-                                    @apply w-[100px] h-[33px];
+                                    @apply w-[114.43px] h-[37.02px];
             
                                 }
                             }
@@ -1552,16 +1552,16 @@
                     .start-button-logo {
                         @apply gap-[30px];
                         a {
-                            @apply py-[10px] w-[200px] text-[12px]/[150%];
+                            @apply py-[13px] w-[200px] text-[12px]/[150%];
                         }
                         .start-now-store {
                             @apply flex gap-[14px] items-center;
                             img {
                                 &.apple-logo {
-                                    @apply w-[110px] h-[34px];
+                                    @apply w-[130.64px] h-[38.71px];
                                 }
                                 &.playstore-logo {
-                                    @apply w-[90px] h-[33px];
+                                    @apply w-[114.43px] h-[37.02px];
             
                                 }
                             }
@@ -1596,16 +1596,16 @@
                     .start-button-logo {
                         @apply gap-[30px];
                         a {
-                            @apply py-[10px] w-[200px] text-[12px]/[150%];
+                            @apply py-[13px] w-[200px] text-[12px]/[150%];
                         }
                         .start-now-store {
                             @apply flex gap-[14px] items-center;
                             img {
                                 &.apple-logo {
-                                    @apply w-[100px] h-[33px];
+                                    @apply w-[130.64px] h-[38.71px];
                                 }
                                 &.playstore-logo {
-                                    @apply w-[85px] h-[32px];
+                                    @apply w-[114.43px] h-[37.02px];
             
                                 }
                             }
@@ -1640,16 +1640,16 @@
                     .start-button-logo {
                         @apply gap-[30px];
                         a {
-                            @apply py-[10px] w-[200px] text-[12px]/[150%];
+                            @apply py-[13px] w-[200px] text-[12px]/[150%];
                         }
                         .start-now-store {
                             @apply flex gap-[14px] items-center;
                             img {
                                 &.apple-logo {
-                                    @apply w-[100px] h-[33px];
+                                    @apply w-[130.64px] h-[38.71px];
                                 }
                                 &.playstore-logo {
-                                    @apply w-[85px] h-[32px];
+                                    @apply w-[114.43px] h-[37.02px];
             
                                 }
                             }
@@ -1974,7 +1974,7 @@
                         .start-button-logo {
                             @apply flex-col justify-center items-center gap-[30px];
                             a {
-                                @apply w-[80%] text-[12px]/[18px] py-[8px];
+                                @apply w-[200px] text-[12px]/[18px] py-[10px];
                                 svg {
                                     @apply w-[18px] h-[18px];
                                 }

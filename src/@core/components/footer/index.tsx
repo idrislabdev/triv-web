@@ -9,6 +9,7 @@ const Footer = () => {
     const [listTrivFeature, setListrTrivFeature] = useState("0")
     const [listProduct, setListProduct] = useState("0")
     const [listCompany, setListCompany] = useState("0")
+    const year = new Date()
 
     return (
         <footer className='footer sm:mobile-responsive md:mobile-responsive'>
@@ -124,7 +125,7 @@ const Footer = () => {
                 </div>
                 <div className='footer-secondary'>
                     <div className='footer-secondary-left'>
-                        <div className='copyright-text'><label>© 2024 PT Tiga Inti Utama. All Rights Reserved.</label></div>
+                        <div className='copyright-text'><label>© 2015 - {year.getFullYear()} PT Tiga Inti Utama. All Rights Reserved.</label></div>
                         <div className='footer-appstore'>
                             <Image src='/images/apps-store/playstore-dark-logo.png' className='logo-playstore' alt='playstore logo' width={130} height={38}/>
                             <Image src='/images/apps-store/appstore-dark-logo.png' className='logo-appstore' alt='appstore logo' width={114} height={38}/>

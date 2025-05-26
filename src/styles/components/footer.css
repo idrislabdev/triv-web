@@ -150,13 +150,13 @@
                         }
                     }
                     .footer-appstore {
-                        @apply gap-[8px];
+                        @apply gap-[8px] justify-center;
                         img {
                             &.logo-playstore {
-                                @apply !w-[30%] !h-[90%];
+                                @apply !w-[130px] !h-[38.71px];
                             }
                             &.logo-appstore {
-                                @apply !w-[30%] !h-[90%];
+                                @apply !w-[114px] !h-[38.71px];
         
                             }
                         }
