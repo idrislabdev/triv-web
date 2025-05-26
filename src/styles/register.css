@@ -69,16 +69,16 @@
         @apply flex w-full relative;
         .left-subcontainer {
             @apply flex justify-center items-center w-1/2 h-full py-[20px];
+            .logo-subcontainer {
+                @apply flex-col justify-center items-center hidden;
+                svg {
+                    @apply w-[101px] h-[28px];
+                }
+            }
             .left-main-subcontainer {
                 @apply relative justify-center items-start flex flex-col max-w-[560px] w-full;
                 &.fit-screen {
                     @apply h-screen;
-                }
-                .logo-subcontainer {
-                    @apply flex-col justify-center items-center hidden;
-                    svg {
-                        @apply w-[101px] h-[28px];
-                    }
                 }
                 .title-subcontainer {
                     @apply flex flex-col gap-[18px];
@@ -535,11 +535,11 @@
                 @apply w-full !py-[26px] !px-[20px] justify-center;
                 &.fit-screen {
                     .logo-subcontainer {
-                        @apply absolute top-[26px];
+                        @apply absolute top-[26px] left-[26px];
                     }
                 }
                 .logo-subcontainer {
-                    @apply block pb-[20px];
+                    @apply !block absolute top-[26px] left-[26px];
                 }
                 .title-subcontainer {
                     @apply flex flex-col !gap-[10px];
@@ -615,7 +615,7 @@
                         }
                     }
                     .sub-title-subcontainer {
-                        @apply flex gap-[10px];
+                        @apply !flex gap-[10px];
                      }
                      label {
                         &.has-user {

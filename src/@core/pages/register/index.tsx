@@ -42,10 +42,10 @@ const Register = (props: {dictRegister:any}) => {
     return (
       <div className='register-container'>
         <div className='left-subcontainer'>
+          <div className='logo-subcontainer'>
+            <TrivIcon color={'#318AC6'}/>
+          </div>
           <div className='left-main-subcontainer'>
-            <div className='logo-subcontainer'>
-              <TrivIcon color={'#318AC6'}/>
-            </div>
             <div className='title-subcontainer'>
               <h1>{dictRegister.greeting_text}</h1>
               <p>{dictRegister.entry_text}</p>
