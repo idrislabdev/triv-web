@@ -668,7 +668,7 @@
                     }
                 }
                 .terdaftar-subcontainer {
-                    @apply flex;
+                    @apply !flex w-full pt-[40px];
                 }
             }
             .right-subcontainer {

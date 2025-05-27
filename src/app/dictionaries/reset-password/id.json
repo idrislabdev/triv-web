@@ -3,5 +3,9 @@
     "entry_text" : "Masukkan email Anda untuk menerima tautan untuk reset password Anda.",
     "welcome_text" : "Triv Digunakan Jutaan orang Sejak 2015",
     "sub_welcome_text" : "Terdaftar Dan Diawasi Oleh Bappebti",
-    "not_robot_text" : "Saya bukan robot"
+    "not_robot_text" : "Saya bukan robot",
+    "continue_text": "Lanjutkan",    
+    "info_1" : "Kami telah mengirimkan email ke",
+    "info_2" : "berisi link untuk reset password",
+    "info_3" : "Klik link tersebut untuk me-reset kata sandi Anda."
 }

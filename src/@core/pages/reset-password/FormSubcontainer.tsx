@@ -4,8 +4,8 @@ import { HideEyeIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-const FormSubcontainer = (props: {keepmeText:string, notRobotText:string, forgotText:string, newUserText:string, registerText:string}) => {
-    const { keepmeText, notRobotText, forgotText, newUserText, registerText } = props
+const FormSubcontainer = (props: {continueText:string, notRobotText:string}) => {
+    const { continueText, notRobotText  } = props
     const [typePassword, setTypePassword] = useState('password');
     return (
         <div className='form-subcontainer'>
@@ -23,7 +23,7 @@ const FormSubcontainer = (props: {keepmeText:string, notRobotText:string, forgot
                 </div>
             </div>
             <div className='button-flex'>
-                <button>Log In</button>
+                <button>{continueText}</button>
             </div>
         </div>
   )

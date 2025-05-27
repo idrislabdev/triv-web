@@ -3,5 +3,6 @@
     "entry_text" : "Enter your email to receive a link to reset your password.",
     "welcome_text" : "Triv Used by Millions Since 2015",
     "sub_welcome_text" : "Registered And Supervised By Bappebti",
-    "not_robot_text" : "I`m not a robot"
+    "not_robot_text" : "I`m not a robot",
+    "continue_text": "Continue"
 }

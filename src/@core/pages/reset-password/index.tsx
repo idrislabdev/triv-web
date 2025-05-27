@@ -32,20 +32,17 @@ const ResetPassword = (props: {dictionaries:any}) => {
     return (
         <div className='reset-password-container'>
             <div className='left-subcontainer'>
+                <div className='logo-subcontainer'>
+                    <TrivIcon color={'#318AC6'}/>
+                </div>
                 <div className='left-main-subcontainer'>
-                    <div className='logo-subcontainer'>
-                        <TrivIcon color={'#318AC6'}/>
-                    </div>
                     <div className='title-subcontainer'>
                         <h1>{dictionaries.greeting_text}</h1>
                         <p>{dictionaries.entry_text}</p>
                     </div>
                     <FormSubcontainer 
-                        keepmeText={dictionaries.keepme_text} 
                         notRobotText={dictionaries.not_robot_text} 
-                        forgotText={dictionaries.forgot_text} 
-                        newUserText={dictionaries.new_user_text} 
-                        registerText={dictionaries.register_text} 
+                        continueText={dictionaries.continue_text} 
                     />
                 </div>
             </div>
