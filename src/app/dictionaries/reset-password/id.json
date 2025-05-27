@@ -7,5 +7,10 @@
     "continue_text": "Lanjutkan",    
     "info_1" : "Kami telah mengirimkan email ke",
     "info_2" : "berisi link untuk reset password",
-    "info_3" : "Klik link tersebut untuk me-reset kata sandi Anda."
+    "info_3" : "Klik link tersebut untuk me-reset kata sandi Anda.",
+    "new_password_text" : "Kata Sandi Baru",
+    "entry_new_text" : "Buat kata sandi yang kuat untuk akun dengan e-mail",
+    "password_text" : "Kata Sandi",
+    "password_repead_text" : "Ulang Kata Sandi",
+    "label_info" : "Setelah sandi diubah, silakan masuk kembali dengan kata sandi baru."
 }

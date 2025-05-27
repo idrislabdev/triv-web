@@ -611,7 +611,7 @@
                             }
                         }
                         button {
-                            @apply !rounded-[9px] !h-[34.49px] text-[11.66px]/[17.49px];
+                            @apply !rounded-[9px] !h-[34.49px] !text-[11.66px]/[17.49px];
                         }
                     }
                     .sub-title-subcontainer {

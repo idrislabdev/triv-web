@@ -33,14 +33,14 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
                 <div className='form-password'>
                     <label>{dictRegister.password_text}</label>
                     <div className='form-input'>
-                    <div className='group-input prepend'>
-                        <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
-                        <input type='password' className='color-1' placeholder={dictRegister.password_text}/>
-                    </div>
-                    <div className='group-input prepend'>
-                        <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
-                        <input type='password' className='color-1' placeholder={dictRegister.password_repead_text}/>
-                    </div>
+                        <div className='group-input prepend'>
+                            <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
+                            <input type='password' className='color-1' placeholder={dictRegister.password_text}/>
+                        </div>
+                        <div className='group-input prepend'>
+                            <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
+                            <input type='password' className='color-1' placeholder={dictRegister.password_repead_text}/>
+                        </div>
                     </div>
                 </div>
                 <div className='form-jobs'>

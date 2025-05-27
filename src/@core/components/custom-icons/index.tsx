@@ -695,6 +695,16 @@ const BarcodeIcon = () => {
     )
 }
 
+const InfoCircleIcon = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M14.4141 8.08463V11.2513H17.5807V8.08463H14.4141Z" fill="#4DAAE9"/>
+            <path d="M14.4141 17.5846V23.918H19.1641V20.7513H17.5807V14.418H12.8307V17.5846H14.4141Z" fill="#4DAAE9"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M15.9974 0.167969C7.2574 0.167969 0.164062 7.2613 0.164062 16.0013C0.164062 24.7413 7.2574 31.8346 15.9974 31.8346C24.7374 31.8346 31.8307 24.7413 31.8307 16.0013C31.8307 7.2613 24.7374 0.167969 15.9974 0.167969ZM3.33073 16.0013C3.33073 22.9838 9.0149 28.668 15.9974 28.668C22.9799 28.668 28.6641 22.9838 28.6641 16.0013C28.6641 9.0188 22.9799 3.33464 15.9974 3.33464C9.0149 3.33464 3.33073 9.0188 3.33073 16.0013Z" fill="#4DAAE9"/>
+        </svg>
+    )
+}
+
 
 
 export {
@@ -756,5 +766,6 @@ export {
     ChartDoughnutIcon,
     ChartStatsIcon,
     ChartPie3Icon,
-    BarcodeIcon
+    BarcodeIcon,
+    InfoCircleIcon
 }
