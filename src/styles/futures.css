@@ -623,7 +623,7 @@
             /* @apply flex justify-center max-w-container; */
             @apply flex w-full max-w-container px-[100px];
         }
-         @media (max-width:1440px) {
+        @media (max-width:1440px) {
             .swiper-why {
                 .swiper {
                     .swiper-wrapper {
@@ -1792,6 +1792,7 @@
                     }
                 }
                 .swiper-why {
+                    @apply px-0;
                     .swiper {
                         .swiper-wrapper {
                             .swiper-slide {
