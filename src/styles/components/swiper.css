@@ -149,13 +149,13 @@
 }
 
 .swiper-why {
-    @apply w-full h-full;
+    /* @apply w-full h-full max-w-container flex; */
     .swiper {
-        @apply mx-auto relative overflow-hidden z-[1];
+        @apply overflow-hidden mx-auto flex justify-center;
         .swiper-wrapper {
-            @apply relative w-full h-full z-[1] flex;
+            @apply w-full h-full z-[1] flex box-content;
             .swiper-slide {
-                @apply flex items-center flex-shrink-0 w-[390px] h-[480px] relative px-[10px];
+                @apply flex items-center flex-shrink-0 w-[380px] h-[480px] relative px-[10px];
                 .background-container {
                     @apply w-full h-full relative;
                     .image-subcontainer {
@@ -192,6 +192,7 @@
                     .background-container {
                         .image-subcontainer {
                             @apply border-2 border-[#71BBED];
+                            box-shadow: 14px 14px 60px 0px #1A364766;
                             &::before {
                                 @apply bg-opacity-90 z-0;
                             }

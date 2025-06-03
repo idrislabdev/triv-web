@@ -17,8 +17,8 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
         <div className='main-container'>
             <div className='title-subcontainer'>
                 <div className='what-text'>
-                    {lang == 'id' && <h2>{objLang.what_title_1} <span>{objLang.what_title_2}</span> {objLang.what_title_3}</h2> }
-                    {lang == 'en' && <h2>{objLang.what_title_1} <span>{objLang.what_title_3}</span> {objLang.what_title_2}</h2> }
+                    {lang == 'id' && <h2>{objLang.what_title_1} <span>{objLang.what_title_2}</span> {objLang.what_title_3}?</h2> }
+                    {lang == 'en' && <h2>{objLang.what_title_1} {objLang.what_title_2} <span>{objLang.what_title_3}</span>?</h2> }
                     <p>
                         {objLang.what_description} <span>#FuturesnyaTriv</span>.
                     </p>
@@ -28,7 +28,14 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                 </div>
             </div>
             <div className='swiper-why'>
-                <Swiper modules={[Navigation]} slidesPerView={'auto'} loop={true}  centeredSlides={true} centeredSlidesBounds={true} navigation>
+                <Swiper 
+                    modules={[Navigation]} 
+                    slidesPerView={'auto'} 
+                    loop={true}  
+                    centeredSlides={true} 
+                    centeredSlidesBounds={true} 
+                    speed={1000}
+                >
                     <SwiperSlide>
                         <div className='background-container'>
                             <div className='image-subcontainer'>
