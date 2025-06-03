@@ -34,7 +34,7 @@ const FuturesWhyCryptoSection = (props: {objLang:any, lang:string}) => {
                     loop={true}  
                     centeredSlides={true} 
                     centeredSlidesBounds={true} 
-                    speed={1000}
+                    speed={700}
                 >
                     <SwiperSlide>
                         <div className='background-container'>
