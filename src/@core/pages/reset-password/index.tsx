@@ -5,8 +5,8 @@ import React, { useEffect } from 'react'
 import FormSubcontainer from './FormSubcontainer'
 import Image from 'next/image'
 
-const ResetPassword = (props: {dictionaries:any}) => {
-    const { dictionaries } = props
+const ResetPassword = (props: {lang:string, dictionaries:any}) => {
+    const { lang, dictionaries } = props
     const heightResponsive = () => {
         const elements = document.getElementsByClassName("login-page");
         var element = elements[0];
@@ -41,6 +41,7 @@ const ResetPassword = (props: {dictionaries:any}) => {
                         <p>{dictionaries.entry_text}</p>
                     </div>
                     <FormSubcontainer 
+                        lang={lang}
                         notRobotText={dictionaries.not_robot_text} 
                         continueText={dictionaries.continue_text} 
                     />

@@ -2,11 +2,17 @@
 
 import { HideEyeIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
-const FormSubcontainer = (props: {continueText:string, notRobotText:string}) => {
-    const { continueText, notRobotText  } = props
+const FormSubcontainer = (props: {lang:string, continueText:string, notRobotText:string}) => {
+    const { lang, continueText, notRobotText  } = props
     const [typePassword, setTypePassword] = useState('password');
+    const router = useRouter();
+
+    const onSendEmail = () => {
+        router.push(`/${lang}/reset-password/info`)
+    }
     return (
         <div className='form-subcontainer'>
             <div className='group-input prepend-append'>
@@ -23,7 +29,7 @@ const FormSubcontainer = (props: {continueText:string, notRobotText:string}) => 
                 </div>
             </div>
             <div className='button-flex'>
-                <button>{continueText}</button>
+                <button onClick={() => onSendEmail()}>{continueText}</button>
             </div>
         </div>
   )

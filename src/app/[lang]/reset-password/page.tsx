@@ -70,7 +70,7 @@ export default async function ResetPasswordPage({ params }: any) {
       </head>
       <body>
         <main className='reset-password-page sm:mobile-responsive md:mobile-responsive lg:medium-responsive light-theme'>
-          <ResetPassword dictionaries={dictionaries}/>
+          <ResetPassword lang={params.lang} dictionaries={dictionaries}/>
         </main>
       </body>
     </html>
