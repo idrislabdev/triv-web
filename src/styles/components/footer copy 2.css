@@ -103,6 +103,7 @@
                 .footer-primary-right {
                     @apply gap-[30px];
                     .list-menu {
+                        @apply flex-col;
                         .container-menu {
                             @apply gap-[12px];
                             label {
@@ -196,19 +197,15 @@
                     @apply flex-col gap-[30px];
                     .footer-primary-right {
                         @apply flex-col gap-[16px];
-                        .list-menu {
-                            @apply flex-col gap-[22px];
-                            .container-menu {
-                                label {
-                                    @apply text-[12px]/[150%];
-                                }
-                                .container-list-menu {
-                                    @apply flex-col gap-[22px];
-                                    ul {
-                                        @apply gap-[10px];
-                                        li {
-                                            @apply text-[11px]/[150%] font-medium;
-                                        }
+                        .container-menu {
+                            label {
+                                @apply text-[10px]/[15px];
+                            }
+                            .container-list-menu {
+                                @apply max-h-0 overflow-hidden relative;
+                                ul {
+                                    li {
+                                        @apply text-[8px]/[12px] font-medium;
                                     }
                                 }
                             }
@@ -249,7 +246,7 @@
                     }
                 }
                 .footer-secondary {
-                    @apply flex-col items-center gap-[40px];
+                    @apply flex-col-reverse items-center gap-[40px];
                     .footer-secondary-right {
                         @apply items-center;
                         .terdaftar-text {

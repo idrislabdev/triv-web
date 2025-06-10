@@ -23,79 +23,8 @@ const Footer = () => {
                         <div className='footer-triv-address-logo'>
                             <div className='footer-address'>
                                 <h6>PT. Tiga Inti Utama</h6>
-                                <p>Jl. Jendral Sudirman Kav. 52-53</p>
-                                <p>SCBD - Jakarta Selatan - 12190</p>
-                                <p>phone : 021 4020 0828</p>
+                                <p>Jl. Jendral Sudirman Kav. 52-53 SCBD - Jakarta Selatan - 12190 phone : 021 4020 0828</p>
                             </div>
-                        </div>
-                    </div>
-                    <div className='footer-primary-right'>
-                        <div className='container-menu'>
-                            <label className='sm:hidden md:hidden'>Market Price</label>
-                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListMarketplace(listMarketPlace !== "1" ? "1" : "")}> Market Place
-                                <svg className={`w-3 h-3 ${listMarketPlace === "1" ? 'transform rotate-180' : ''}`} 
-                                    fill="none" strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth="2" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="#fff"
-                                >
-                                    <path d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </label> 
-                            <div className={`container-list-menu ${listMarketPlace === "1" ? `!max-h-[400px]` : ''}`}>
-                                <ul>
-                                    <li>Live Rate</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='container-menu'>
-                            <label className='sm:hidden md:hidden'>Triv Feature</label>
-                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListrTrivFeature(listTrivFeature !== "1" ? "1" : "")}> Triv Feature
-                                <svg className={`w-3 h-3 ${listTrivFeature === "1" ? 'transform rotate-180' : ''}`} 
-                                    fill="none" strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth="2" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="#fff"
-                                >
-                                    <path d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </label> 
-                            <div className={`container-list-menu ${listTrivFeature === "1" ? `!max-h-[400px]` : ''}`}>
-                                <ul>
-                                    <li>Live Rate</li>
-                                    <li>Market</li>
-                                    <li>Merchant</li>
-                                    <li>Affliate</li>
-                                    <li>Gift Cards</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='container-menu'>
-                            <label className='sm:hidden md:hidden'>Company</label>
-                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListCompany(listCompany !== "1" ? "1" : "")}> Market Price
-                                <svg className={`w-3 h-3 ${listCompany === "1" ? 'transform rotate-180' : ''}`} 
-                                    fill="none" strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth="2" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="#fff"
-                                >
-                                    <path d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </label> 
-                            <div className={`container-list-menu ${listCompany === "1" ? `!max-h-[400px]` : ''}`}>
-                                <ul>
-                                    <li>Contact Us</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-primary'>
-                    <div className='footer-primary-left'>
-                        <div className='footer-triv-address-logo'>
                             <div className='footer-socialmedia-list'>
                                 <ul>
                                     <li><a><InstagramIcon color='white'/></a></li>
@@ -110,46 +39,67 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='footer-primary-right'>
-                        <div className='container-menu'>
-                            <label className='sm:hidden md:hidden'>Crypto & Aset Digital Lain</label>
-                            <label className='hidden sm:flex sm:justify-between md:flex md:justify-between items-center' onClick={_ => setListOtherCrypto(listOtherCyrpto !== "1" ? "1" : "")}> Triv Feature
-                                <svg className={`w-3 h-3 ${listOtherCyrpto === "1" ? 'transform rotate-180' : ''}`} 
-                                    fill="none" strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth="2" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="#fff"
-                                >
-                                    <path d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </label> 
-                            <div className={`container-list-menu ${listOtherCyrpto === "1" ? `!max-h-[400px]` : ''}`}>
-                                <ul>
-                                    <li>Bitcoin</li>
-                                    <li>Ethereum</li>
-                                    <li>Stellar</li>
-                                    <li>Ripple</li>
-                                    <li>Cardano</li>
-                                </ul>
-                                <ul>
-                                    <li>Eos</li>
-                                    <li>Dash</li>
-                                    <li>Tether</li>
-                                    <li>Litecoin</li>
-                                    <li>Polkadot</li>
-                                </ul>
-                                 <ul>
-                                    <li>BNB</li>
-                                    <li>DogeCoin</li>
-                                    <li>ChainLink</li>
-                                    <li>MaticPolygon</li>
-                                </ul>
-                                <ul>
-                                    <li>Shiba Inu</li>
-                                    <li>Axie Infinity</li>
-                                    <li>Saham AS</li>
-                                    <li>Saham AS</li>
-                                </ul>
+                        <div className='list-menu'>
+                            <div className='container-menu'>
+                                <label>Market Price</label>
+                                <div className={`container-list-menu ${listMarketPlace === "1" ? `!max-h-[400px]` : ''}`}>
+                                    <ul>
+                                        <li>Live Rate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='container-menu'>
+                                <label>Triv Feature</label>
+                                <div className={`container-list-menu ${listTrivFeature === "1" ? `!max-h-[400px]` : ''}`}>
+                                    <ul>
+                                        <li>Live Rate</li>
+                                        <li>Market</li>
+                                        <li>Merchant</li>
+                                        <li>Affliate</li>
+                                        <li>Gift Cards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='container-menu'>
+                                <label>Company</label>
+                                <div className={`container-list-menu ${listCompany === "1" ? `!max-h-[400px]` : ''}`}>
+                                    <ul>
+                                        <li>Contact Us</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='list-menu'>
+                            <div className='container-menu'>
+                                <label>Crypto & Aset Digital Lain</label>
+                                <div className={`container-list-menu ${listOtherCyrpto === "1" ? `!max-h-[400px]` : ''}`}>
+                                    <ul>
+                                        <li>Bitcoin</li>
+                                        <li>Ethereum</li>
+                                        <li>Stellar</li>
+                                        <li>Ripple</li>
+                                        <li>Cardano</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Eos</li>
+                                        <li>Dash</li>
+                                        <li>Tether</li>
+                                        <li>Litecoin</li>
+                                        <li>Polkadot</li>
+                                    </ul>
+                                    <ul>
+                                        <li>BNB</li>
+                                        <li>DogeCoin</li>
+                                        <li>ChainLink</li>
+                                        <li>MaticPolygon</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Shiba Inu</li>
+                                        <li>Axie Infinity</li>
+                                        <li>Saham AS</li>
+                                        <li>Saham AS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
