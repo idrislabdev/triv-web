@@ -5,8 +5,8 @@ import React, { useEffect } from 'react'
 import FormSubcontainer from './FormSubcontainer'
 import Image from 'next/image'
 
-const Login = (props: {dictLogin:any}) => {
-    const { dictLogin } = props
+const Login = (props: {lang:string, dictLogin:any}) => {
+    const { lang, dictLogin } = props
     const heightResponsive = () => {
         const elements = document.getElementsByClassName("login-page");
         var element = elements[0];
@@ -40,6 +40,7 @@ const Login = (props: {dictLogin:any}) => {
                 <p>{dictLogin.entry_text}</p>
             </div>
             <FormSubcontainer 
+                lang={lang}
                 keepmeText={dictLogin.keepme_text} 
                 notRobotText={dictLogin.not_robot_text} 
                 forgotText={dictLogin.forgot_text} 

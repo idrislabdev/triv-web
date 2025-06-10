@@ -73,7 +73,7 @@ export default async function LoginPage({ params }: any) {
       </head>
       <body>
         <main className='login-page sm:mobile-responsive lg:medium-responsive light-theme'>
-          <Login dictLogin={dictLogin}/>
+          <Login lang={params.lang} dictLogin={dictLogin}/>
         </main>
       </body>
     </html>
