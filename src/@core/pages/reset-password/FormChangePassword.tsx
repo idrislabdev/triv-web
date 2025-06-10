@@ -7,20 +7,25 @@ import React, { useState } from 'react'
 const FormChangePassword = (props: {continueText:string, passwordText:string, passwordRepeadText:string, labelInfo:string}) => {
     const { continueText, passwordText, passwordRepeadText, labelInfo  } = props
     const [typePassword, setTypePassword] = useState('password');
+    const [typeCopnfirmPassword, setTypeConfirmPassword] = useState('password');
     return (
         <div className='form-subcontainer'>
             <div className='form-group'>
                 <label>{passwordText}</label>
                 <div className='group-input prepend'>
-                    <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
-                    <input type='password' className='color-1' placeholder={passwordText}/>
+                    <span className='prepend cursor-pointer' onClick={_ => setTypePassword(typePassword === 'password' ? 'text' : 'password')}>
+                        <HideEyeIcon color={'#838899'} />
+                    </span>
+                    <input type={typePassword} className='color-1' placeholder={passwordText}/>
                 </div>
             </div>
             <div className='form-group'>
                 <label>{passwordRepeadText}</label>
                 <div className='group-input prepend'>
-                    <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
-                    <input type='password' className='color-1' placeholder={passwordRepeadText}/>
+                    <span className='prepend cursor-pointer' onClick={_ => setTypeConfirmPassword(typeCopnfirmPassword === 'password' ? 'text' : 'password')}>
+                        <HideEyeIcon color={'#838899'} />
+                    </span>
+                    <input type={typeCopnfirmPassword} className='color-1' placeholder={passwordRepeadText}/>
                 </div>
             </div>
             <label className='label-info'>

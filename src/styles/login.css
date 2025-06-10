@@ -10,7 +10,7 @@
         @apply !text-slate-300;
     }
     input,select {
-        @apply bg-slate-800 !text-white border-slate-800 caret-white;
+        @apply bg-[#2E3339] !text-white border-[#2E3339] caret-white;
         &::placeholder {
             @apply text-slate-400;
         }
@@ -23,7 +23,10 @@
                 }
                 .form-subcontainer {
                     .captcha-checkbox {
-                        @apply bg-slate-800;
+                        /* @apply bg-slate-800; */
+                        label {
+                            @apply !text-[#2E3339];
+                        }
                     }
                 }
             }
@@ -162,7 +165,7 @@
                             }
                         }
                         input {
-                            @apply text-[12.96px]/[19.43px] !h-[34px]  rounded-[5px];
+                            @apply text-[12.96px]/[19.43px] !h-[40px]  rounded-[5px];
                         }
                     }
                     
@@ -176,7 +179,7 @@
                         .checkbox-input {
                             @apply !text-[12.96px]/[19.43px];
                             .checkmark {
-                                @apply !w-[20px] !h-[20px] !top-[4px];
+                                @apply !w-[20px] !h-[20px] !top-[2px];
                                 &::after {
                                     @apply !left-[6px] !top-[2px];
                                 }
@@ -192,7 +195,7 @@
                     .button-flex {
                         @apply flex flex-col gap-[10px];
                         button {
-                            @apply !h-[34.49px] !text-[14px]/[21px] !rounded-[8px];
+                            @apply !h-[40px] !text-[14px]/[21px] !rounded-[8px];
                         }
                         a {
                             @apply !text-[12.96px]/[19.43px];

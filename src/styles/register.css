@@ -10,7 +10,7 @@
         @apply !text-slate-300;
     }
     input,select {
-        @apply bg-slate-800 !text-white border-slate-800 caret-white;
+        @apply bg-[#2E3339] !text-white border-[#2E3339] caret-white;
         &::placeholder {
             @apply text-slate-400;
         }
@@ -538,22 +538,21 @@
                 .logo-subcontainer {
                     @apply !block absolute top-[26px] left-[26px];
                 }
-                .title-subcontainer {
-                    @apply flex flex-col !gap-[10px];
-                    h1 {
-                        @apply text-[18px]/[27px];
+                .left-main-subcontainer {
+                    .title-subcontainer {
+                        @apply flex flex-col !gap-[10px];
+                        h1 {
+                            @apply text-[18px]/[27px];
+                        }
+                        h1 {
+                            @apply text-[20px]/[30px];
+                        }
+                        p {
+                            @apply text-[12.96px]/[19.43px];
+                        }
                     }
-                    h1 {
-                        @apply text-[20px]/[30px];
-                    }
-                    p {
-                        @apply text-[12.96px]/[19.43px];
-                    }
-                }
-                .form-subcontainer {
-                    @apply !gap-[30px];
-                    form {
-                        @apply gap-[15px];
+                    .form-subcontainer {
+                        @apply !gap-[10px];
                         .form-name {
                             label {
                                 @apply text-[12.96px]/[19.43px];
@@ -561,7 +560,7 @@
                             .form-input {
                                 @apply flex gap-[25.91px];
                                 input {
-                                   @apply text-[12.96px]/[19.43px] !h-[34px]  rounded-[5px];
+                                    @apply text-[12.96px]/[19.43px] !h-[40px]  rounded-[5px];
                                 }
                             }
                         }
@@ -571,7 +570,7 @@
                                 @apply text-[12.96px]/[19.43px];
                             }
                             input {
-                                @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                                @apply text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
                             }
                         }
                         .form-password {
@@ -588,7 +587,7 @@
                                         }
                                     }
                                     input {
-                                        @apply text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                                        @apply text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
                                     }
                                 }
                             }
@@ -596,10 +595,10 @@
                         .form-jobs {
                             @apply flex flex-col gap-[10px];
                             label {
-                              @apply text-[12.96px]/[19.43px];
+                                @apply text-[12.96px]/[19.43px];
                             }
                             select {
-                                @apply w-full text-[12.96px]/[19.43px] !h-[34px] rounded-[5px];
+                                @apply w-full text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
                             }
                         }
                         .form-note {
@@ -608,64 +607,64 @@
                             }
                         }
                         button {
-                            @apply !rounded-[9px] !h-[34.49px] !text-[11.66px]/[17.49px];
+                            @apply !rounded-[9px] !h-[40px] !text-[11.66px]/[17.49px];
+                        }
+                        .sub-title-subcontainer {
+                            @apply !flex gap-[10px];
+                        }
+                        label {
+                            &.has-user {
+                                @apply hidden;
+                            }
                         }
                     }
-                    .sub-title-subcontainer {
-                        @apply !flex gap-[10px];
-                     }
-                     label {
-                        &.has-user {
-                            @apply hidden;
-                        }
-                    }
-                }
-                .information-subcontainer{
-                    @apply pb-[40px];
-                    &.success {
-                        @apply gap-[60px];
-                    }
-                    p {
-                        @apply text-[16px]/[24px];
-                        &.small {
-                            @apply text-[12px]/[18px];
-                        }
-                    }
-                    button {
+                    .information-subcontainer{
+                        @apply pb-[40px];
                         &.success {
-                            @apply py-[7px] rounded-[9px];
-                            span {
+                            @apply gap-[60px];
+                        }
+                        p {
+                            @apply text-[16px]/[24px];
+                            &.small {
                                 @apply text-[12px]/[18px];
                             }
-                            svg {
-                                &.CircularProgressbar  {
-                                    @apply w-[31px] h-[31px];
+                        }
+                        button {
+                            &.success {
+                                @apply py-[7px] rounded-[9px];
+                                span {
+                                    @apply text-[12px]/[18px];
+                                }
+                                svg {
+                                    &.CircularProgressbar  {
+                                        @apply w-[31px] h-[31px];
+                                    }
                                 }
                             }
                         }
-                    }
-                    .otp-input {
-                        @apply w-full;
-                        div {
-                            @apply gap-[3px];
-                        }
-                        input {
-                            @apply h-[50px] text-[30px]/[20px];
-                            &::placeholder {
-                                @apply text-[23px]/[23px];
+                        .otp-input {
+                            @apply w-full;
+                            div {
+                                @apply gap-[3px];
+                            }
+                            input {
+                                @apply h-[50px] text-[30px]/[20px];
+                                &::placeholder {
+                                    @apply text-[23px]/[23px];
+                                }
                             }
                         }
+        
                     }
-    
-                }
-                .notice-subcontainer {
-                    @apply pt-[16px];
-                    p,a {
-                        @apply text-[16px]/[24px];
+                    .notice-subcontainer {
+                        @apply pt-[16px];
+                        p,a {
+                            @apply text-[16px]/[24px];
+                        }
                     }
-                }
-                .terdaftar-subcontainer {
-                    @apply !flex w-full pt-[40px];
+                    .terdaftar-subcontainer {
+                        @apply !flex w-full pt-[40px];
+                    }
                 }
             }
             .right-subcontainer {

@@ -120,7 +120,7 @@
                     }
                 }
                 .footer-primary-left {
-                    @apply gap-[40px];
+                    @apply gap-[40px] w-full;
                     .footer-triv-logo {
                         @apply items-end;
                         img {
