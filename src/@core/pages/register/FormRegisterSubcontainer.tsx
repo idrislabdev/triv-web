@@ -10,7 +10,8 @@ const FormRegisterSubcontainer = (props: {lang:string, dictRegister:any, pekerja
     const router = useRouter();
     const [dataPekerjaan, setDataPekerjaans] = useState(pekerjaans)
     const [pekerjaan, setPekerjaan] = useState('');
-
+    const [typePassword, setTypePassword] = useState('password');
+    const [typeConfirmPassword, setTypeConfirmPassword] = useState('password');
     const changePekerjaan = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setPekerjaan(event.target.value)
     }
@@ -40,12 +41,16 @@ const FormRegisterSubcontainer = (props: {lang:string, dictRegister:any, pekerja
                 <label>{dictRegister.password_text}</label>
                 <div className='form-input'>
                     <div className='group-input prepend'>
-                        <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
-                        <input type='password' className='color-1' placeholder={dictRegister.password_text}/>
+                        <span className='prepend cursor-pointer' onClick={_ => setTypePassword(typePassword === 'password' ? 'text' : 'password')}>
+                            <HideEyeIcon color={'#838899'} />
+                        </span>
+                        <input type={typePassword} className='color-1' placeholder={dictRegister.password_text}/>
                     </div>
                     <div className='group-input prepend'>
-                        <span className='prepend'><HideEyeIcon color={'#838899'} /></span>
-                        <input type='password' className='color-1' placeholder={dictRegister.password_repead_text}/>
+                        <span className='prepend cursor-pointer' onClick={_ => setTypeConfirmPassword(typeConfirmPassword === 'password' ? 'text' : 'password')}>
+                            <HideEyeIcon color={'#838899'} />
+                        </span>
+                        <input type={typeConfirmPassword} className='color-1' placeholder={dictRegister.password_repead_text}/>
                     </div>
                 </div>
             </div>
