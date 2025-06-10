@@ -82,7 +82,7 @@ export default async function RegisterVerifyPage({ params }: any) {
       </head>
       <body>
         <main className='register-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <RegisterVerify dictRegister={dictRegister} />
+          <RegisterVerify lang={params.lang} dictRegister={dictRegister} />
         </main>
       </body>
     </html>

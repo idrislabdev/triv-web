@@ -4,8 +4,8 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import SuccessRegisterSubcontainer from '../SuccessRegisterSubcontainer'
 
-const RegisterrSuccess = (props: {dictRegister:any}) => {
-    const { dictRegister } = props
+const RegisterrSuccess = (props: {lang:string, dictRegister:any}) => {
+    const { lang, dictRegister } = props
 
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {

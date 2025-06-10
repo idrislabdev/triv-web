@@ -7,8 +7,8 @@ import React, { useState } from 'react'
 
 const FormSubcontainer = (props: {lang:string, continueText:string, notRobotText:string}) => {
     const { lang, continueText, notRobotText  } = props
-    const [typePassword, setTypePassword] = useState('password');
     const router = useRouter();
+    const [typePassword, setTypePassword] = useState('password');
 
     const onSendEmail = () => {
         router.push(`/${lang}/reset-password/info`)

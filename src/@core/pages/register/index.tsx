@@ -4,8 +4,8 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import FormRegisterSubcontainer from './FormRegisterSubcontainer'
 
-const Register = (props: {dictRegister:any}) => {
-    const { dictRegister } = props
+const Register = (props: {lang:string, dictRegister:any}) => {
+    const { lang, dictRegister } = props
     const pekerjaans = [
       'Pelajar/Mahasiswa',
       'Karyawan Swasta',
@@ -50,7 +50,7 @@ const Register = (props: {dictRegister:any}) => {
               <h1>{dictRegister.greeting_text}</h1>
               <p>{dictRegister.entry_text}</p>
             </div>
-            <FormRegisterSubcontainer dictRegister={dictRegister} pekerjaans={pekerjaans} />
+            <FormRegisterSubcontainer lang={lang} dictRegister={dictRegister} pekerjaans={pekerjaans} />
           </div>
         </div>
         <div className='right-subcontainer'>

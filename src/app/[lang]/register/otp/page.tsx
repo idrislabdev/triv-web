@@ -71,7 +71,7 @@ export default async function RegisterOTPPage({ params }: any) {
       </head>
       <body>
         <main className='register-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <RegisterOTP dictRegister={dictRegister} />
+          <RegisterOTP lang={params.lang} dictRegister={dictRegister} />
         </main>
       </body>
     </html>

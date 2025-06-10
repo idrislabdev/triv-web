@@ -1,13 +1,19 @@
 "use client";
 
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import OTPInput from 'react-otp-input';
-const OTPRegisterSubcontainer = (props: {dicRegister:any}) => {
-  const { dicRegister } = props
+const OTPRegisterSubcontainer = (props: {lang:string, dicRegister:any}) => {
+  const { lang, dicRegister } = props
+  const router = useRouter();
   const [otp, setOtp] = useState('');
   
+  const onSubmit = () => {
+    router.push(`/${lang}/register/success`)
+  }
+
   return (
     <>
         <div className='title-subcontainer'>
@@ -27,7 +33,7 @@ const OTPRegisterSubcontainer = (props: {dicRegister:any}) => {
                 placeholder='******'
               />
             </div>
-            <button className='verify'>{dicRegister.otp_4}</button>
+            <button className='verify' onClick={() => onSubmit()}>{dicRegister.otp_4}</button>
         </div>
         <div className='notice-subcontainer'>
           <p>{dicRegister.otp_3} <span>28 {dicRegister.second}</span></p>

@@ -4,18 +4,9 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import OTPRegisterSubcontainer from '../OTPRegisterSubcontainer'
 
-const RegisterOTP = (props: {dictRegister:any}) => {
-    const { dictRegister } = props
-    const pekerjaans = [
-        'Pelajar/Mahasiswa',
-        'Karyawan Swasta',
-        'Profesional',
-        'Wiraswasta',
-        'TNI/Polri',
-        'Pensiunan',
-        'Tidak Bekerja',
-        'Lainnya',
-      ]
+const RegisterOTP = (props: {lang:string, dictRegister:any}) => {
+    const { lang, dictRegister } = props
+
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {
             document.body.classList.add("dark-theme");
@@ -29,7 +20,7 @@ const RegisterOTP = (props: {dictRegister:any}) => {
                 <TrivIcon color={'#318AC6'}/>
               </div>
               <div className='left-main-subcontainer'>
-                <OTPRegisterSubcontainer dicRegister={dictRegister} />
+                <OTPRegisterSubcontainer lang={lang} dicRegister={dictRegister} />
                 <div className='terdaftar-subcontainer'>
                   <h5>{dictRegister.welcome_text}</h5>
                   <p>{dictRegister.sub_welcome_text}</p>

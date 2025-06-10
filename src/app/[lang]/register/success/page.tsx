@@ -82,7 +82,7 @@ export default async function RegisterSuccessPage({ params }: any) {
       </head>
       <body>
         <main className='register-page sm:mobile-responsive md:mobile-responsive light-theme'>
-          <RegisterrSuccess dictRegister={dictRegister} />
+          <RegisterrSuccess lang={params.lang} dictRegister={dictRegister} />
         </main>
       </body>
     </html>

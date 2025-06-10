@@ -3,8 +3,8 @@ import { TrivIcon } from '@/@core/components/custom-icons'
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 
-const RegisterVerify = (props: {dictRegister:any}) => {
-    const { dictRegister } = props
+const RegisterVerify = (props: {lang:string, dictRegister:any}) => {
+    const { lang, dictRegister } = props
 
     useEffect(() => {
         if (localStorage.getItem('mode') === 'dark-theme') {

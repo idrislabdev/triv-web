@@ -2,16 +2,23 @@
 
 import { HideEyeIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
-const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}) => {
-    const { dictRegister, pekerjaans } = props
+const FormRegisterSubcontainer = (props: {lang:string, dictRegister:any, pekerjaans:string[]}) => {
+    const { lang, dictRegister, pekerjaans } = props
+    const router = useRouter();
     const [dataPekerjaan, setDataPekerjaans] = useState(pekerjaans)
     const [pekerjaan, setPekerjaan] = useState('');
 
     const changePekerjaan = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setPekerjaan(event.target.value)
     }
+
+    const onSubmit = () => {
+        router.push(`/${lang}/register/verify`)
+    }
+
     return (
         <div className='form-subcontainer'>
             <form>
@@ -57,7 +64,7 @@ const FormRegisterSubcontainer = (props: {dictRegister:any, pekerjaans:string[]}
                 <div className='form-note'>
                     <p>{dictRegister.register_first_text} <span>{dictRegister.register_second_text} </span>{dictRegister.register_third_text} <span> {dictRegister.register_fourth_text}</span></p>
                 </div>
-                <button type='submit'>{dictRegister.register_text}</button>
+                <button onClick={() => onSubmit()}>{dictRegister.register_text}</button>
             </form>
             <label className='has-user'>{dictRegister.has_account_1} <a>{dictRegister.has_account_2}</a></label>
             <div className='sub-title-subcontainer'>

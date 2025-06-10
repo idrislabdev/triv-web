@@ -73,7 +73,7 @@ export default async function RegisterPage({ params }: any) {
       </head>
       <body>
         <main className='register-page lg:medium-responsive md:mobile-responsive sm:mobile-responsive light-theme'>
-          <Register dictRegister={dictRegister} />
+          <Register lang={params.lang} dictRegister={dictRegister} />
         </main>
       </body>
     </html>
