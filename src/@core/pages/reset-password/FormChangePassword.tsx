@@ -1,6 +1,6 @@
 "use client"
 
-import { HideEyeIcon, InfoCircleIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons'
+import { EyeIcon, HideEyeIcon, InfoCircleIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import React, { useState } from 'react'
 
@@ -14,7 +14,8 @@ const FormChangePassword = (props: {continueText:string, passwordText:string, pa
                 <label>{passwordText}</label>
                 <div className='group-input prepend'>
                     <span className='prepend cursor-pointer' onClick={_ => setTypePassword(typePassword === 'password' ? 'text' : 'password')}>
-                        <HideEyeIcon color={'#838899'} />
+                        {typePassword === 'password' && <EyeIcon color={'#838899'} />}
+                        {typePassword === 'text' && <HideEyeIcon color={'#838899'} />}
                     </span>
                     <input type={typePassword} className='color-1' placeholder={passwordText}/>
                 </div>
@@ -23,7 +24,8 @@ const FormChangePassword = (props: {continueText:string, passwordText:string, pa
                 <label>{passwordRepeadText}</label>
                 <div className='group-input prepend'>
                     <span className='prepend cursor-pointer' onClick={_ => setTypeConfirmPassword(typeConfirmPassword === 'password' ? 'text' : 'password')}>
-                        <HideEyeIcon color={'#838899'} />
+                        {typeConfirmPassword === 'password' && <EyeIcon color={'#838899'} />}
+                        {typeConfirmPassword === 'text' && <HideEyeIcon color={'#838899'} />}
                     </span>
                     <input type={typeConfirmPassword} className='color-1' placeholder={passwordRepeadText}/>
                 </div>

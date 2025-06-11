@@ -1,6 +1,6 @@
 "use client"
 
-import { HideEyeIcon } from '@/@core/components/custom-icons'
+import { EyeIcon, HideEyeIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
@@ -42,13 +42,15 @@ const FormRegisterSubcontainer = (props: {lang:string, dictRegister:any, pekerja
                 <div className='form-input'>
                     <div className='group-input prepend'>
                         <span className='prepend cursor-pointer' onClick={_ => setTypePassword(typePassword === 'password' ? 'text' : 'password')}>
-                            <HideEyeIcon color={'#838899'} />
+                            {typePassword === 'password' && <EyeIcon color={'#838899'} />}
+                            {typePassword === 'text' && <HideEyeIcon color={'#838899'} />}
                         </span>
                         <input type={typePassword} className='color-1' placeholder={dictRegister.password_text}/>
                     </div>
                     <div className='group-input prepend'>
                         <span className='prepend cursor-pointer' onClick={_ => setTypeConfirmPassword(typeConfirmPassword === 'password' ? 'text' : 'password')}>
-                            <HideEyeIcon color={'#838899'} />
+                            {typeConfirmPassword === 'password' && <EyeIcon color={'#838899'} />}
+                            {typeConfirmPassword === 'text' && <HideEyeIcon color={'#838899'} />}
                         </span>
                         <input type={typeConfirmPassword} className='color-1' placeholder={dictRegister.password_repead_text}/>
                     </div>

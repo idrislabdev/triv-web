@@ -1,6 +1,6 @@
 "use client"
 
-import { HideEyeIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons'
+import { EyeIcon, HideEyeIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
@@ -21,7 +21,10 @@ const FormSubcontainer = (props: {lang: string, keepmeText:string, notRobotText:
             </div>
             <div className='group-input prepend-append'>
                 <span className='append'><LockIcon color={'#838899'} /></span>
-                <span className='prepend cursor-pointer' onClick={_ => setTypePassword(typePassword === 'password' ? 'text' : 'password')}><HideEyeIcon color={'#838899'} /></span>
+                <span className='prepend cursor-pointer' onClick={_ => setTypePassword(typePassword === 'password' ? 'text' : 'password')}>
+                    {typePassword === 'password' && <EyeIcon color={'#838899'} />}
+                    {typePassword === 'text' && <HideEyeIcon color={'#838899'} />}
+                </span>
                 <input type={typePassword} className='color-1' placeholder='Password'/>
             </div>
             <div className='keepme-login'>
