@@ -49,7 +49,7 @@ const FuturesListCoinSection = (props: {objLang:any, lang:string, prepsInstrumen
                                         <Image src={item.icon_url} alt={item.symbol} width={0} height={0} sizes='100%' />
                                         <div className='detail-text'>
                                             <label>{item.underlying_asset}{item.settlement_asset}</label>
-                                            <span>PERP {item.leverage}</span>
+                                            <span>PERP {item.leverage}X</span>
                                         </div>
                                     </div>
                                     <label className={item.change_24h < 0 ? 'minus' : 'plus'}>

@@ -2,6 +2,7 @@
 
 import { EyeIcon, HideEyeIcon, LockIcon, MailIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
@@ -44,9 +45,9 @@ const FormSubcontainer = (props: {lang: string, keepmeText:string, notRobotText:
             </div>
             <div className='button-flex'>
                 <button onClick={() => onSubmit()}>Log In</button>
-                <a>{forgotText}</a>
+                <Link href={`/${lang}/reset-password`}>{forgotText}</Link>
             </div>
-            <label className='new-user'>{newUserText} <a>{registerText}</a></label>
+            <label className='new-user'>{newUserText} <Link href={`/${lang}/register`}>{registerText}</Link></label>
         </div>
   )
 }
