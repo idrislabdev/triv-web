@@ -64,6 +64,7 @@ const Footer = () => {
                                 <label>Company</label>
                                 <div className={`container-list-menu ${listCompany === "1" ? `!max-h-[400px]` : ''}`}>
                                     <ul>
+                                        <li>Blog</li>
                                         <li>Contact Us</li>
                                     </ul>
                                 </div>
@@ -97,7 +98,7 @@ const Footer = () => {
                                         <li>Shiba Inu</li>
                                         <li>Axie Infinity</li>
                                         <li>Saham AS</li>
-                                        <li>Saham AS</li>
+                                        <li>Saham Tesla</li>
                                     </ul>
                                 </div>
                             </div>
