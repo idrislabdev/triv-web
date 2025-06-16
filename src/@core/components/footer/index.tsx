@@ -52,7 +52,6 @@ const Footer = () => {
                                 <label>Triv Feature</label>
                                 <div className={`container-list-menu ${listTrivFeature === "1" ? `!max-h-[400px]` : ''}`}>
                                     <ul>
-                                        <li>Live Rate</li>
                                         <li>Market</li>
                                         <li>Merchant</li>
                                         <li>Affliate</li>
