@@ -33,7 +33,7 @@
             h1 {
                 @apply text-[50px]/[75px] text-white font-bold;
                 span {
-                    @apply text-primary italic;
+                    @apply !text-primary italic;
                 }
             }
             p {

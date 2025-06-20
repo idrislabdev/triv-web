@@ -131,6 +131,25 @@
                 }
             }
         }
+        &.header-affliate {
+            .main-header-action {
+                .main-header-action-list {
+                    a {
+                        &.button-switch-theme {
+                            @apply cursor-pointer;
+                            svg {
+                                path {
+                                    @apply fill-white;
+                                }
+                                circle {
+                                    @apply fill-white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .main-header {
             .main-header-menu {
                 ul {
@@ -263,6 +282,19 @@ header {
         }
         .main-header-action {
             .main-header-action-list {
+                a {
+                    &.button-switch-theme {
+                        @apply cursor-pointer;
+                        svg {
+                            path {
+                                @apply fill-yellow-600;
+                            }
+                            circle {
+                                @apply fill-yellow-600;
+                            }
+                        }
+                    }
+                }
                 ul {
                     li {
                         a {
