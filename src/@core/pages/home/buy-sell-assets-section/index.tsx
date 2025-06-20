@@ -8,7 +8,7 @@ const HomeBuySellAssetsSection = (props: {lang:string, objLang:any}) => {
     return (
          <section className='home-buy-sell-assets-section'>
          <div className='image-container'>
-             <Image src='/images/others/woman-and-iphone-new.png' alt='woman and iphone' width={0} height={0} sizes='100%'/>
+             <Image src='/images/others/woman-and-iphone-new-masking.png' alt='woman and iphone' width={0} height={0} sizes='100%'/>
          </div>
          <div className='description-container'>
              <div className='start-now-description'>
