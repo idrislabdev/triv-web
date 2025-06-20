@@ -31,37 +31,37 @@
         "card" : {
             "jual_beli" : {
                 "title" : "Buy and sell Bitcoin 24 hours",
-                "content" : "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Bitcoin balance in real-time with banks or e-wallets in seconds even on holidays.",
+                "content" : "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Bitcoin in real-time to your bank / e-wallet in seconds even on holidays.",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "kirim" : {
                 "title" : "Send Bitcoin",
-                "content" : "Send Bitcoin worldwide instantly, Crypto is the money of the future. You can also send Bitcoin to fellow Triv users for free without any fees!",
+                "content" : "Since it is digital, sending Bitcoin can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Bitcoin is free of charge from a fellow Triv users!",
                 "image_url" : "/images/services/iphone-send-kripto.png",
                 "image_class" : "iphone"
             },
             "terima" : {
                 "title" : "Receive Bitcoin",
-                "content" : "Receive Bitcoin from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+                "content" : "You can receive Bitcoin through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
                 "image_url" : "/images/services/iphone-receive-bitcoin.png",
                 "image_class" : "iphone"
             },
             "hoddl" : {
                 "title" : "HODL Bitcoin",
-                "content" : "Did you know? Historically proven that BTC HODLERS get higher returns than BTC traders. Store your BTC in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
+                "content" : "The fact is BTC HODLER get higher returns compared with BTC trader. Therefore, HODL your BTC in Triv, in protection under insurance of Bigo & Llyod England up to USD100 million or equivalent to 1.45 trillion Rupiahs.",
                 "image_url" : "/images/services/macbook-bitcoin.png",
                 "image_class" : "macbook"
             },
             "swap" : {
                 "title" : "Swap Bitcoin",
-                "content" : "Triv supports over 700 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
+                "content" : "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
                 "image_url" : "/images/services/iphone-bitcoin.png",
                 "image_class" : "iphone"
             },
             "isi_pulsa" : {
                 "title" : "Top Up Credit and Pay Bills",
-                "content" : "Exchange your BTC coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
+                "content" : "You can exchange BTC coin for fiat money in Triv platform, to pay bills such as: phone bills, credit, and even the electricity token.",
                 "image_url" : "/images/services/macbook-buy-bitcoin.png",
                 "image_class" : "macbook"
             }
@@ -70,11 +70,11 @@
     "average_section": {
         "live_chat" : {
             "title" : "Average LiveChat Responds",
-            "content" : "Triv's Livechat and Call center are ready to assist you."
+            "content" : "Livechat and Call center support service in Triv, ready to help you 24/7"
         },
         "processing" : {
             "title" : "Average Processing Time",
-            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions"
+            "content" : "Automatic and zero-downtime transaction in Triv. Since 2015, Triv run its operation without incurring downtime"
         },
         "updated_text" : "*Updated Real-Time"
     },
@@ -95,10 +95,10 @@
     },
     "triv_affliate" : {
         "title_1" : "Triv Affiliate",
-        "content_1" : "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
+        "content_1" : "You will receive 10% cashback commission on your downline affiliate transaction, without any conditions!",
         "title_2" : "Invite friends and relatives",
-        "content_2" : "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
-        "follow_text" : "Invite friends and earn extra income",
+        "content_2" : "Triv Affiliate applies life-time referral rewards. You can earn cash back commission on your downline affiliate transaction with no expiry date.",
+        "follow_text" : "Earn Rewards and Bonuses by Referring Friends",
         "button_1" : "Affiliate Program",
         "button_2" : "Invite Friends"
     }
