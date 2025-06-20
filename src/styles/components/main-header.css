@@ -437,7 +437,7 @@ header {
                         @apply cursor-pointer;
                         @media (max-width: 1080px) {
                             svg {
-                                @apply h-[24px] w-[24px];
+                                @apply h-[22px] w-[22px];
                             }
                         }
                         svg {
@@ -622,7 +622,7 @@ header {
             .main-header-action-list {
                 @apply flex gap-[20px] items-center;
                 @media (max-width: 1080px) {
-                   @apply gap-[10px];
+                   @apply gap-0;
                 }
                 @media (max-width: 990px) {
                     @apply gap-[6px];
@@ -647,7 +647,7 @@ header {
                             }
                             @media (max-width: 1080px) {
                                 &::before {
-                                    @apply mx-[10px];
+                                    @apply mx-[8px];
                                 }
                             }
                             @media (max-width: 990px) {
@@ -685,6 +685,18 @@ header {
                                 &.list-flags {
                                     @apply top-[-3px] flex flex-col absolute;
                                     /* @apply absolute flex flex-col transition-all duration-300  scale-0 origin-top left-0; */
+                                    @media (max-width: 1080px) {
+                                        @apply top-[-5px];
+                                        li {
+                                            a {
+                                                &.flag-button {
+                                                    img {
+                                                        @apply w-[24px] h-[17px];
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                     &.show {
                                         @apply bg-white bg-opacity-20 rounded-[4px];
                                         box-shadow: 0px 4px 4px 0px #00000014;
@@ -710,6 +722,11 @@ header {
                 a {
                     &.button-switch-theme {
                         @apply cursor-pointer;
+                        @media (max-width: 1080px) {
+                            svg {
+                                @apply h-[22px] w-[22px];
+                            }
+                        }
                     }
                 }
             }

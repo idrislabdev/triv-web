@@ -23,6 +23,23 @@
                         }
                     }
                 }
+                .button-logo-area {
+                    .logo-area {
+                        @apply flex items-center gap-[30px];
+                        .bappebti-logo {
+                            background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
+                        }
+                        .kominfo-logo {
+                            background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
+                        }
+                        .bsi-logo {
+                            background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
+                        }
+                        .cisa-logo {
+                            background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
+                        }
+                    }
+                }
             }
             .right-subcontainer {
                 .form-service {
@@ -161,24 +178,32 @@
                     .logo-area {
                         @apply flex items-center gap-[30px];
                         .bappebti-logo {
-                            img {
-                                @apply w-[147px] h-[34px];
-                            }
+                            @apply w-[147px] h-[34px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
                         }
                         .kominfo-logo {
-                            img {
-                                @apply w-[118px] h-[37px];
-                            }
+                            @apply w-[118px] h-[37px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
                         }
                         .bsi-logo {
-                            img {
-                                @apply w-[83px] h-[44px];
-                            }
+                            @apply w-[83px] h-[44px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
                         }
                         .cisa-logo {
-                            img {
-                                @apply w-[110px] h-[44px];
-                            }
+                            @apply w-[110px] h-[44px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
                         }
                     }
                 }

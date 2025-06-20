@@ -134,22 +134,22 @@
                         @apply flex items-center gap-[30px];
                         .bappebti-logo {
                             img {
-                                @apply w-[147px] h-[34px];
+                                @apply w-[147px] h-[34px] object-contain;
                             }
                         }
                         .kominfo-logo {
                             img {
-                                @apply w-[118px] h-[37px];
+                                @apply w-[118px] h-[37px] object-contain;
                             }
                         }
                         .bsi-logo {
                             img {
-                                @apply w-[83px] h-[44px];
+                                @apply w-[83px] h-[44px] object-contain;
                             }
                         }
                         .cisa-logo {
                             img {
-                                @apply w-[110px] h-[44px];
+                                @apply w-[110px] h-[44px] object-contain;
                             }
                         }
                     }
@@ -306,6 +306,31 @@
                             }
                             span {
                                 @apply text-[14px]/[21px];
+                            }
+                        }
+                    }
+                    .registered-logo {
+                        .logo-area {
+                            @apply flex items-center gap-[0px];
+                            .bappebti-logo {
+                                img {
+                                    @apply w-[147px] h-[24px];
+                                }
+                            }
+                            .kominfo-logo {
+                                img {
+                                    @apply w-[118px] h-[27px];
+                                }
+                            }
+                            .bsi-logo {
+                                img {
+                                    @apply w-[83px] h-[34px];
+                                }
+                            }
+                            .cisa-logo {
+                                img {
+                                    @apply w-[110px] h-[33px];
+                                }
                             }
                         }
                     }
