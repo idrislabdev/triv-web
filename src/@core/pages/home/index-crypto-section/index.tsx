@@ -16,7 +16,20 @@ const HomeIndexCryptoSection = (props : {liverates:ILiverateMini[]}) => {
                                 <label>{item.code} <span>{item.currency} {formatterNumber(item.rate)}</span></label>
                             </div>
                             <div className='crypto-index'>
-                                <label><CaretUpIcon color={'#71BBED'} /><span className='text-red-600'>{item.change_24h}%</span></label>
+                                <label>
+                                    {item.change_24h < 0 && 
+                                        <>
+                                            <CaretDownIcon color={'#EB5757'} />
+                                            <span className='text-[#EB5757]'>{item.change_24h * -1}%</span>
+                                        </>
+                                    }
+                                    {item.change_24h > 0 && 
+                                        <>
+                                            <CaretUpIcon color={'#71BBED'} />
+                                            <span className='text-[#71BBED]'>{item.change_24h}%</span>
+                                        </>
+                                    }
+                                </label>
                             </div>
                         </div>
                     ))}
