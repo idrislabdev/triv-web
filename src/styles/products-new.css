@@ -60,8 +60,9 @@
                         @apply !bg-[#1b1f22];
                         .button-tab {
                             button {
+                                @apply bg-[#2E3339] text-white;
                                 &.active {
-                                    @apply bg-[#3A80AF] text-white;
+                                    @apply bg-[#3A80AF];
                                 }
                             }
                             &.buy {
@@ -93,6 +94,16 @@
                                 span {
                                     @apply !text-white;
                                 }
+                            }
+                        }
+                        .button-group {
+                            button  {
+                                @apply bg-[#2E3339] text-white;
+                            }
+                        }
+                        .get-input {
+                            .label-value {
+                                @apply bg-[#2E3339];
                             }
                         }
                     }
