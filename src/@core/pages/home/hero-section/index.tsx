@@ -43,8 +43,10 @@ const HomeHeroSection = (props: {lang:string, objLang:any}) => {
             <div className='section-terdaftar fade-in entry-5'>
                 <label>{objLang.sub_description}</label>
                 <div className='terdaftar-list-logo'>
-                    <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-color.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
-                    <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo-color.png' alt='kominfo logo' width={0} height={0} sizes='100%'/></div>
+                    {/* <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-color.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
+                    <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo-color.png' alt='kominfo logo' width={0} height={0} sizes='100%'/></div> */}
+                    <div className='bappebti-logo'></div>
+                    <div className='kominfo-logo'></div>
                 </div>
             </div>
         </div>
