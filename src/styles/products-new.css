@@ -9,80 +9,96 @@
     }
     .products-page {
         .products-service-hero-new-section {
-            .left-subcontainer {
-                button {
-                    &.btn-primary {
-                        @apply bg-[#3A80AF] border-[#3A80AF];
-                    }
-                    &.btn-outline-primary {
-                        @apply text-[#3A80AF] border-[#3A80AF];
-                        svg {
-                            path {
-                                @apply fill-[#3A80AF];
-                            }
+            .service-hero-container {
+                .left-subcontainer {
+                    button {
+                        &.btn-primary {
+                            @apply bg-[#3A80AF] border-[#3A80AF];
                         }
-                    }
-                }
-                .button-logo-area {
-                    .logo-area {
-                        @apply flex items-center gap-[30px];
-                        .bappebti-logo {
-                            background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
-                        }
-                        .kominfo-logo {
-                            background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
-                        }
-                        .bsi-logo {
-                            background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
-                        }
-                        .cisa-logo {
-                            background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
-                        }
-                    }
-                }
-            }
-            .right-subcontainer {
-                .form-service {
-                    @apply !bg-[#1b1f22];
-                    .button-tab {
-                        button {
-                            &.active {
-                                @apply bg-[#3A80AF] text-white;
-                            }
-                        }
-                        &.buy {
-                            &::after {
-                                @apply !bg-[#3A80AF];
-                            }
-                        }
-                        &.sell {
-                            &::after {
-                                content: '';
-                                @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] !bg-red-700 skew-x-[-25deg];
-                            }
-                            button {
-                                &.active {
-                                    @apply !bg-red-700;
+                        &.btn-outline-primary {
+                            @apply text-[#3A80AF] border-[#3A80AF];
+                            svg {
+                                path {
+                                    @apply fill-[#3A80AF];
                                 }
                             }
                         }
                     }
-                    button {
-                        &.btn-primary {
-                            @apply bg-[#3A80AF] border-[#3A80AF];
-                            span {
-                                @apply !text-white;
+                    .button-logo-area {
+                        .button-group {
+                            .btn-outline-primary {
+                                @apply bg-transparent text-primary border-primary;
                             }
                         }
-                        &.btn-danger {
-                            @apply bg-red-700 border-red-700;
-                            span {
-                                @apply !text-white;
+                        .logo-area {
+                            @apply flex items-center gap-[30px];
+                            .bappebti-logo {
+                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .kominfo-logo {
+                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .bsi-logo {
+                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .cisa-logo {
+                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                        }
+                    }
+                }
+                .right-subcontainer {
+                    .form-service {
+                        @apply !bg-[#1b1f22];
+                        .button-tab {
+                            button {
+                                &.active {
+                                    @apply bg-[#3A80AF] text-white;
+                                }
+                            }
+                            &.buy {
+                                &::after {
+                                    @apply !bg-[#3A80AF];
+                                }
+                            }
+                            &.sell {
+                                &::after {
+                                    content: '';
+                                    @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] !bg-red-700 skew-x-[-25deg];
+                                }
+                                button {
+                                    &.active {
+                                        @apply !bg-red-700;
+                                    }
+                                }
+                            }
+                        }
+                        button {
+                            &.btn-primary {
+                                @apply bg-[#3A80AF] border-[#3A80AF];
+                                span {
+                                    @apply !text-white;
+                                }
+                            }
+                            &.btn-danger {
+                                @apply bg-red-700 border-red-700;
+                                span {
+                                    @apply !text-white;
+                                }
                             }
                         }
                     }
                 }
             }
+           
         }
         .products-average-new-section{
             .box-container {
