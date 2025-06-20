@@ -48,6 +48,15 @@ const StakingHeroSection = (props: {objLang:any}) => {
               <span>REWARDS PAID</span>
             </div>
           </div>
+          <div className='registered-logo'>
+            <h5 className='fade-in entry-4'>{objLang.registered_text}</h5>
+            <div className='logo-area fade-in entry-5'>
+                <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-big-white.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
+                <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo-light-logo.png' alt='kominfo logo' width={0} height={0} sizes='100%' /></div>
+                <div className='bsi-logo'><Image src='/images/otoritas-keuangans/bsi-white.png' alt='bsi logo' width={0} height={0} sizes='100%' /></div>
+                <div className='cisa-logo'><Image src='/images/otoritas-keuangans/cisa-light-logo.png' alt='cisa logo' width={0} height={0} sizes='100%' /></div>
+            </div>
+          </div>
         </div>
         <div className='section-image'>
           <Image src='/images/devices/phone-mockup-1.png' className='img-device fade-in entry-4' alt='iphone mockup' width={0} height={0} sizes='100%' />
