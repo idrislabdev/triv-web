@@ -73,7 +73,7 @@ const MarketHeader = (props: { lang: string}) => {
         <>
             <header className={`market-header sm:mobile-responsive`}>
                 <div className='triv-logo-header'>
-                    <Link href="/"><TrivIcon color={'#318AC6'} /></Link>
+                    <Link href={`/${lang}`}><TrivIcon color={'#318AC6'} /></Link>
                 </div>
                 <div className='market-header-action'>
                     <div className='market-header-action-list'>

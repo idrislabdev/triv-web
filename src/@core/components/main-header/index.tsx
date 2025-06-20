@@ -207,7 +207,7 @@ const MainHeader = (props: {classText:string, lang: string}) => {
             <header className={`${classText} ${classText === 'header-white' ? 'drop-shadow' : ''}`}>
                 <div className={`main-header sm:mobile-responsive md:mobile-responsive ${classText}`}>
                     <div className='triv-logo-header'>
-                        <Link href="/"><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
+                        <Link href={`/${lang}`}><TrivIcon color={active === false  && classText === '' ? '#fff': '#318AC6'} /></Link>
                     </div>
                     <div className={`main-header-menu`}>
                         <ul>
