@@ -5,7 +5,7 @@
         "title_3" : "on Triv",
         "title" : "Trade various US Stocks with Triv.",
         "subtitle" : "Since 2015, low spread, 24/7 online",
-        "description" : "Tokenized stock is regulated by BAPPEBTI within letter no. 11 / 2022. Triv is supervised and regulated by BAPPEBTI",
+        "description" : "US stocks trading services are provided by PT. Alpha C. Berjangka, a broker licensed and regulated by Bappebti. PT. Alpha is a subsidiary of PT. Tiga Inti Utama",
         "sub_description": "Registered and supervised by",
         "button_text" : "Start Now",
         "details_1" : "Since 2015",
@@ -23,9 +23,9 @@
         "title_2" : "Trade",
         "title_3" : "US Stocks On Triv?",
         "title" : "Why Trade US Stocks on Triv?",
-        "description" : "We have been trusted by millions of people to invest and transact.",
+        "description" : "We Have Been Trusted by Millions of Indonesians to Invest and Trade",
         "founded" : {
-            "text" : "Trading since",
+            "text" : "Since 2015",
             "value" : "2015"
         },
         "user_registered" : {
@@ -33,7 +33,7 @@
             "value" : "2M+"
         },
         "asset" : {
-            "text" : "Crypto Assets and Stocks",
+            "text" : "US Stocks Assets Options",
             "value" : "700+"
         }
     },
@@ -71,11 +71,11 @@
     },
     "ewallet_section": {
         "title_1" : "Triv Supports",
-        "title_2" : "100 Banks & E-wallets",
+        "title_2" : "61 Banks & E-wallets",
         "title_3" : "in Indonesia for All Our Transactions",
         "title" : "Triv Supports 100 banks & E-wallets in Indonesia for all our transactions",
-        "subtitle" : "24/7 Real-time Deposits & Withdrawals",
-        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
+        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
+        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! no need to wait until the next day. Unlike the stock market and mutual funds, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including holidays.",
         "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
         "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
     },
@@ -85,24 +85,24 @@
         "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
         "questions" : [
             {
-                "title" : "What is tokenized stock?",
-                "description": "Stock tokens are shares that are tokenized on the blockchain, the price of 1 token follows the price of 1 share, according to its underlying asset. Unlike the traditional stock market which has holidays. Stock tokens can be traded 24/7 without holidays."
+                "title" : "What Are American Stocks?",
+                "description": "American stocks offer an opportunity for investors to invest in or trade shares of various US companies."
             },
             {
-                "title" : "Will i get dividend?",
-                "description": "Yes, just like traditional stocks, stock token holders will also get dividends. Unlike traditional stock markets, dividends from stock tokens can be withdrawn 24/7 without holidays to all banks and digital wallets Instantly."
+                "title" : "Will I Earn Dividends from U.S. Stocks?",
+                "description": "Yes, all the stocks you invest in will pay dividends on the dates determined by the company."
             },
             {
-                "title" : "Who can trade?",
-                "description": "All Indonesian residents aged 17 years and over and have an ID card for verification."
+                "title" : "Who is allowed to trade?",
+                "description": "Anyone aged 17 or older who holds a KTP can register and trade tokenized stocks on Triv."
             },
             {
                 "title" : "Are there any additional costs?",
-                "description": "Triv does not charge monthly fees or subscription fees, the only fees charged to users are trading fees. So you are free to choose to invest in the long term or speculate in the short term."
+                "description": "Besides the trading fee imposed by Triv, there are no additional costs to trade tokenized stocks."
             },
             {
                 "title" : "Are there any limitations?",
-                "description": "There are no limitations in your trading decisions, Triv has more than 80 indicators that you can use in making your trading decisions."
+                "description": "The sky is your limit!Tokenized stocks reflect the price of shares on traditional brokers. You can trade as much as you like, or HODL and invest based on your preferences."
             }
         ]
     },

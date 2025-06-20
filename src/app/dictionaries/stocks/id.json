@@ -86,24 +86,24 @@
         "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
         "questions" : [
             {
-                "title" : "Apa itu token saham?",
-                "description": "Token saham adalah saham yang ditoken-kan diatas blockchain, harga 1 token mengikuti harga 1 lembar saham, sesuai dengan underlying assetnya. Berbeda dengan pasar saham tradisional yang memiliki hari libur. Token saham dapat diperdagangkan secara 24/7 tanpa libur."
+                "title" : "Apa itu Saham Amerika?",
+                "description": "Saham Amerika memberikan peluang bagi investor untuk berinvestasi atau memperdagangkan saham dari berbagai perusahaan di Amerika Serikat."
             },
             {
-                "title" : "Apakah Token Saham AS memiliki dividen?",
-                "description": "Ya, sama seperti saham tradisional, pemegang token saham juga akan mendapatkan dividen. Tidak seperti pasar saham tradisional, dividen dari token saham dapat ditarik 24/7 tanpa hari libur ke seluruh bank dan dompet digital secara Instan."
+                "title" : "Apakah Saya Akan Mendapatkan Dividen dari Saham AS?",
+                "description": "Ya, semua saham yang Anda investasikan akan membagikan dividen pada tanggal yang telah ditentukan oleh perusahaan."
             },
             {
-                "title" : "Siapa yang diperbolehkan trading?",
-                "description": "Semua penduduk Indonesia berusia diatas 17 tahun dan memiliki KTP untuk verifikasi."
+                "title" : "Siapa yang Diizinkan untuk Berdagang?",
+                "description": "Siapa pun yang berusia 17 tahun ke atas dan memiliki KTP dapat mendaftar dan memperdagangkan saham token di Triv."
             },
             {
-                "title" : "Apakah ada biaya tambahan?",
-                "description": "Triv tidak membebankan biaya bulanan ataupun biaya berlangganan, Biaya yang dibebankan kepada pengguna hanyalah biaya trading. Sehingga anda bebas untuk memilih berinvestasi dalam jangka panjang atau berspekulasi dalam jangka pendek."
+                "title" : "Apakah Ada Biaya Tambahan?",
+                "description": "Selain biaya transaksi yang dikenakan oleh Triv, tidak ada biaya tambahan untuk memperdagangkan saham token."
             },
             {
-                "title" : "Apakah ada limitasi?",
-                "description": "Tidak ada batasan apapun dalam keputusan perdagangan anda, Triv memiliki lebih dari 80 indikator yang bisa anda gunakan dalam mengambil keputusan perdagangan anda."
+                "title" : "Apakah Ada Batasan?",
+                "description": "Tidak ada batasan! Saham token mencerminkan harga saham di broker tradisional. Anda dapat berdagang sebanyak yang Anda inginkan, atau HODL dan berinvestasi sesuai preferensi Anda."
             }
         ]
     },
