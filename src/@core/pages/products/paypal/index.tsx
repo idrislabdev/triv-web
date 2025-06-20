@@ -3,7 +3,7 @@
 import MainHeader from '@/@core/components/main-header'
 import React from 'react'
 import ProductsRegulasiNewSection from '../sections/regulasi-new-section'
-import ProductsLayananNewSection from '../sections/layanan-new-section'
+import ProductsLayananPaypalNewSection from '../sections/layanan-paypal-new-section'
 import ProductsAffliateNewSection from '../sections/affliate-new-section'
 import ProductsAverageNewSection from '../sections/average-new-section'
 import ProductsEwalletNewSection from '../sections/ewallet-new-section'
@@ -23,7 +23,7 @@ const PaypalPageWrap = (props: {lang:string, objLang:any}) => {
         <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
             <ProductsServiceHeaderPaypalNewSection lang={lang} objLang={objLang.header_section} objProduct={objProduct}/>
             <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
-            <ProductsLayananNewSection objLang={objLang.layanan_section} />
+            <ProductsLayananPaypalNewSection objLang={objLang.layanan_section} />
             <ProductsAffliateNewSection objLang={objLang.triv_affliate} />
             <ProductsAverageNewSection objLang={objLang.average_section} />
             <ProductsEwalletNewSection objLang={objLang.ewallet_section} />

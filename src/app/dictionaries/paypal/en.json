@@ -1,9 +1,9 @@
 {
     "header_section": {
         "title" : "Transaction Paypal 24 hours",
-        "title_1" : "24-hour",
+        "title_1" : "Transactions",
         "title_2" : "Paypal",
-        "title_3" : "transactions",
+        "title_3" : "24 hours",
         "description" : "The largest Bitcoin trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact Paypal.",
         "button_1" : "Buy Paypal",
         "button_2" : "Visit Marketplace",
@@ -13,14 +13,14 @@
     "regulasi_section": {
         "liquiditas" : {
             "title" : "High Liquidity",
-            "content" : "Spread or the difference in the buying and selling price of Bitcoin Triv is one of the lowest in the market today. With our brokerage system you do not need to wait for other buyers / sellers to make transactions. All buying / selling transactions can be done instantly and in real-time without a waiting process.",
+            "content" : "No need to ask for stock or availability of Paypal balance. Triv guarantees that no matter number of purchase, our stock is always available. Our system helps your transaction instantly 24/7.",
             "content_1" : "Triv's spread",
             "content_2" : "one of the lowest",
             "content_3" : "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
         },
         "regulator" : {
             "title" : "Regulated and Trusted Broker",
-            "content" : "Since 2015 Triv has been used by millions of people, all customer funds in our system are insured by Bitgo and Lloyd England for 100 million USD or equivalent to 1.45 trillion rupiah.Triv is an official broker registered and supervised by Bappebti."
+            "content" : "Since 2015 Triv has been used by millions of people, all customer funds in our system are insured by Bitgo and Lloyd England for 100 million USD or equivalent to 1.45 trillion rupiah. Triv is an official broker registered and supervised by Bappebti."
         },
         "device_url" : "/images/devices/iphone-service.png"
     },
@@ -32,26 +32,26 @@
         "content" : "Triv supports various types of transactions and not just paypal buying and selling. Swap, exchange or top up Paypal balance can be done in one application.",
         "card" : {
             "jual_beli" : {
-                "title" : "Buy and Sell Paypal Balance 24 hours",
+                "title" : "24/7 Buy & Sell Paypal Balance",
                 "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays. You can buy your Paypal balance in real-time with banks or e-wallets in seconds even on holidays.",
                 "image_url" : "/images/services/iphone-paypal.png",
                 "image_class" : "iphone"
             },
             "kirim" : {
-                "title" : "Instant overseas transfer",
-                "content" : "You can use your Paypal balance to send money to all Paypal users in the world for free and instantly. Unlike traditional remittances that require 1-2 business days. Digital USD delivery takes place instantly in seconds.",
+                "title" : "Instant Overseas Transfer",
+                "content" : "You can use Paypal balance to transfer money abroad instantly and free of charge. You may compare with traditional remittance agency needs 1 or 2 days for this transaction, meanwhile Triv works in seconds.",
                 "image_url" : "/images/services/device-transfer.png",
                 "image_class" : "device-transfer"
             },
             "terima" : {
-                "title" : "Shopping on International Sites",
-                "content" : "Paypal is accepted by millions of international merchants, so you can shop online without needing a credit card. Simply top up your Paypal balance in Triv, and you can access international markets and shop in minutes.",
+                "title" : "International Online Shopping",
+                "content" : "Paypal is accepted by millions of overseas merchants, so you can shop online without the need for a credit card. Just top up Paypal balance in Triv, and you can access international markets and shop in minutes.",
                 "image_url" : "/images/services/device-pay.png",
                 "image_class" : "device-pay"
             },
             "hoddl" : {
-                "title" : "USD Digital Wallet",
-                "content" : "In addition to being used for shopping, the Paypal Balance can be used as a digital wallet with USD currency. As an alternative for you to invest USD without hassle and in seconds at Triv.",
+                "title" : "Digital USD Wallet",
+                "content" : "You can use Paypal Balance balance as digital wallet in USD currency. It is a great alternative to invest in US Dollar, easy and quick in Triv.",
                 "image_url" : "/images/services/wallet-debit.png",
                 "image_class" : "wallet-debit"
             },
@@ -63,7 +63,7 @@
             },
             "isi_pulsa" : {
                 "title" : "Get Cash back & Protection",
-                "content" : "Shop at various international sites and get cashback with your Paypal Balance. In addition to getting cashback, Paypal will protect your online shopping with insurance. So that all your Paypal transactions will be safe and free from fraud.",
+                "content" : "You can shop in the International online merchants with your Paypal balance. Paypal offers cash back and insurance protection for your online shopping. All Paypal transactions are safe and insured.",
                 "image_url" : "/images/services/cashback.png",
                 "image_class" : "cashback"
             }
