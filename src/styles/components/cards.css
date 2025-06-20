@@ -65,7 +65,7 @@
         }
         .card-coin-logo {
             img {
-                @apply w-[50px] h-[50px];
+                @apply !w-[50px] !h-[50px];
             }
             filter: blur(1px);
             -webkit-filter: blur(1px);
