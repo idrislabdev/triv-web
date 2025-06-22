@@ -768,7 +768,7 @@
                             .content-area {
                                 @apply py-[8px];
                                 p {
-                                    @apply text-[14px]/[21px] font-normal text-neutral-800;
+                                    @apply text-[14px]/[21px] font-normal text-neutral-800 text-justify;
                                 }
                             }
                         }

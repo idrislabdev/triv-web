@@ -326,7 +326,7 @@
                                 .content-area {
                                     @apply py-[8px];
                                     p {
-                                        @apply text-[17px]/[23px];
+                                        @apply text-[17px]/[23px] text-justify;
                                     }
                                 }
                             }

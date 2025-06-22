@@ -1154,7 +1154,7 @@
                             .content-area {
                                 @apply py-[8px];
                                 p {
-                                    @apply text-[14px]/[21px] font-normal;
+                                    @apply text-[14px]/[21px] font-normal text-justify;
                                 }
                             }
                         }

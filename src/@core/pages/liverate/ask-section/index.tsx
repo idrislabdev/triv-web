@@ -56,8 +56,9 @@ const LiverateAskSection = (props: {objLang:any}) => {
                                 </div>
                             </button>
                             <div className={`accordion-content ${selected === "2" ? `max-h-[400px]` : 'max-h-0'}`} ref={container2}>
-                                <div className="content-area">
-                                    <p>{objLang.questions[1].description} </p>
+                                <div className="content-area flex flex-col gap-[20px]">
+                                    <p>{objLang.questions[1].description_1} </p>
+                                    <p>{objLang.questions[1].description_2} </p>
                                 </div>
                             </div>
                         </li>
@@ -77,8 +78,9 @@ const LiverateAskSection = (props: {objLang:any}) => {
                                 </div>
                             </button>
                             <div className={`accordion-content ${selected === "3" ? `max-h-[400px]` : 'max-h-0'}`} ref={container2}>
-                                <div className="content-area">
-                                    <p>{objLang.questions[2].description} </p>
+                                <div className="content-area flex flex-col gap-[20px]">
+                                    <p>{objLang.questions[2].description_1} </p>
+                                    <p>{objLang.questions[2].description_2} </p>
                                 </div>
                             </div>
                         </li>

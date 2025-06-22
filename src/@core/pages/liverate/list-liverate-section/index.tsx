@@ -7,8 +7,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useCallback, useEffect, useState } from 'react'
 
-const LiverateListSection = (props: {liverates: ILiverate[], lang:string}) => {
-  const { liverates, lang } = props
+const LiverateListSection = (props: {objLang:any, liverates: ILiverate[], lang:string}) => {
+  const { objLang, liverates, lang } = props
   const [dataLiverates, setDataLiverates] = useState(liverates)
   const [category, setCategory] = useState('')
   const [params, setParams] = useState<{page:number,per:number,category:string|null,keyword:string|null}>({page: 1, per: 10, category: null, keyword: null})
@@ -60,8 +60,8 @@ const LiverateListSection = (props: {liverates: ILiverate[], lang:string}) => {
               <div className='col-nama'><label>Nama Aset</label></div>
             </div>
            <div className='col-right'>
-              <div className='col-beli'><label>Beli (IDR)</label></div>
-              <div className='col-jual'><label>Jual (IDR)</label></div>
+              <div className='col-beli'><label>{objLang.buy} (IDR)</label></div>
+              <div className='col-jual'><label>{objLang.sell} (IDR)</label></div>
               <div className='col-change'><label>Change</label></div>
               <div className='col-trend'><label>Trend</label></div>
            </div>
