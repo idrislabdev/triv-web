@@ -1,6 +1,6 @@
 @tailwind components;
 .dark-theme {
-    @apply !bg-[#141414];
+    @apply !bg-[#000000];
     h1, h2, h3, h4, h5, h6 {
       @apply !text-slate-200;
     }
@@ -16,7 +16,7 @@
                 }
             }
             input {
-                @apply bg-slate-800 !text-white !border-slate-800 caret-white;
+                @apply bg-[#2E3339] !text-white !border-[#2E3339] caret-white;
                 &::placeholder {
                     @apply text-slate-400;
                 }
@@ -55,7 +55,37 @@
         .topic-container {
             .topic-subcontainer {
                 a {
-                    @apply !bg-[#3A80AF] !text-white;
+                    @apply !bg-[#2E3339] !text-white;
+                    &:hover {
+                        @apply !text-primary;
+                    }
+                }
+            }
+        }
+    }
+    .faq-popular-section {
+        h2 {
+            @apply !text-white;
+        }
+        .popoular-container {
+            .question-accordion {
+                ul {
+                    li {
+                        button {
+                            .header-button {
+                                label {
+                                    @apply !text-[#EBEEF4];
+                                }
+                            }
+                        }
+                        .accordion-content {
+                            .content-area {
+                                p {
+                                    @apply !text-[#C1C3CC];
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -64,26 +94,6 @@
 }
 .faqs-page {
     @apply max-w-container mx-auto;
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
-
     .faqs-search-section {
         @apply  py-[50px] px-[200px] flex flex-col gap-[20px] items-center justify-center text-center;
         .search-container {
@@ -101,6 +111,16 @@
                 }
                 .group-input {
                     @apply w-full;
+                    &.append {
+                        span {
+                            &.append {
+                                @apply top-[20px];
+                            }
+                        }
+                        input {
+                            @apply h-[63px];
+                        }
+                    }
                 }
             }
         }
