@@ -1,6 +1,6 @@
 @tailwind components;
 .dark-theme {
-    @apply !bg-[#141414];
+    @apply !bg-[#000000];
     h1, h2, h3, h4, h5, h6 {
       @apply !text-slate-200;
     }
@@ -77,8 +77,11 @@
             .blog-side-container {
                 .blog-subscribe {
                     .submit-subscribe {
+                        input {
+                            @apply bg-[#000000] border border-[#2E3339];
+                        }
                         button {
-                            @apply !bg-[#3A80AF] !text-white;
+                            @apply !bg-primary !text-white;
                         }
                     }
 
@@ -86,7 +89,7 @@
                 .blog-register {
                     .submit-register {
                         a {
-                            @apply !bg-[#3A80AF] !text-white;
+                            @apply !bg-primary !text-white;
                         }
                     }
 
@@ -101,13 +104,15 @@
             }
         }
         .blog-baru-crypto-section {
+            @apply !bg-[#1b1f22];
             a {
-                @apply !bg-[#3A80AF] !text-white;
+                @apply !bg-primary !text-white;
             }
-            .blog-baru-crypto-container{
-                @apply !bg-[#1b1f22];
+            .blog-baru-crypto-container{  
                 .crypto-thumb-video{
-                    @apply !bg-[#13171a] ;
+                    h6 {
+                        @apply !text-[#191B20];
+                    }
                 }
             }
         }
