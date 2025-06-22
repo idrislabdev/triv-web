@@ -11,7 +11,7 @@ const CoinAbout = (props: {objLang:any, asset:any}) => {
              {objLang.trade_about.content.replaceAll("__label__", asset.label)}
             </p>
         </div>
-        <div className='badges'>
+        {/* <div className='badges'>
             <label className='badge'>
                 <span><GlobeIcon /></span>
                 Situs web
@@ -20,7 +20,7 @@ const CoinAbout = (props: {objLang:any, asset:any}) => {
                 <span><WhitepaperIcon /></span>
                 Whitepaper
             </label>
-        </div>
+        </div> */}
     </div>
   )
 }
