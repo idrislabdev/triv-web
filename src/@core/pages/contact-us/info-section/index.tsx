@@ -8,7 +8,7 @@ const ContactUsInfoSection = (props: { objLang: any}) => {
             <div className='info-container'>
                 <div className='info-card'>
                     <div className='card-header'>
-                        <div className='header-icon bg-[#F0FAF0]'>
+                        <div className='header-icon ask'>
                             <FaqIcon color={'#fff'} />
                         </div>
                     </div>
@@ -20,7 +20,7 @@ const ContactUsInfoSection = (props: { objLang: any}) => {
                 </div>
                 <div className='info-card'>
                     <div className='card-header'>
-                        <div className='header-icon bg-[#FFF3E8]'>
+                        <div className='header-icon live-chat'>
                             <MessageSquareIcon color={'#fff'} />
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const ContactUsInfoSection = (props: { objLang: any}) => {
                 </div>
                 <div className='info-card'>
                     <div className='card-header'>
-                        <div className='header-icon bg-[#F8ECF5]'>
+                        <div className='header-icon letter'>
                             <BuildingIcon color={'#F8ECF5'} />
                         </div>
                     </div>

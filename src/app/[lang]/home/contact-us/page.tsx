@@ -95,7 +95,7 @@ export default async function  ContactUsPage({ params }: any) {
                 <main className='contact-us-page sm:mobile-responsive md:mobile-responsive light-theme'>
                     <ContactUsHeaderSection objLang={header_section} />
                     <ContactUsInfoSection objLang={info_section} />
-                    <ContactUsFaqSection objLang={faq_section} />
+                    <ContactUsFaqSection lang={params.lang} objLang={faq_section} />
                 </main>
                 <Footer />
             </body>
