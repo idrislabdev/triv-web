@@ -33,7 +33,10 @@
                     }
                     .news-comment-column {
                         &.disabled {
-                            @apply bg-slate-800
+                            @apply bg-[#F3F3F3];
+                            span {
+                                @apply !text-[#4B5060];;
+                            }
                         }
                     }
                 }
