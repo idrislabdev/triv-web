@@ -32,9 +32,11 @@ const CoinTradeMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[],
                     <li className={tabActive == 'news' ? 'active' : ''}>
                         <a onClick={() => setTabActive('news')}>News</a>
                     </li>
-                    <li className={tabActive == 'etf_overview' ? 'active' : ''}>
-                        <a onClick={() => setTabActive('etf_overview')}>Bitcoin ETF</a>
-                    </li>
+                    {asset.code === 'BTC' &&
+                        <li className={tabActive == 'etf_overview' ? 'active' : ''}>
+                            <a onClick={() => setTabActive('etf_overview')}>Bitcoin ETF</a>
+                        </li>
+                    }
                     <li className={tabActive == 'about' ? 'active' : ''}>
                         <a onClick={() => setTabActive('about')}>About</a>
                     </li>

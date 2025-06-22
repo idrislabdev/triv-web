@@ -47,7 +47,7 @@ const CoinTradeOverview = (props: {lang:string, objLang:any, asset:any}) => {
                         </div>
                         <button>Stake</button>
                     </div>
-                    <Image src='/images/3d-icons/brankas.png' className='brankas' alt='brankas' width={0} height={0} sizes='100%'/>
+                    <Image src='/images/3d-icons/brankas-new-vector.png' className='brankas' alt='brankas' width={0} height={0} sizes='100%'/>
                 </div>
                 <div className='card-trade-stake'>
                     <div className='description'>
@@ -57,7 +57,7 @@ const CoinTradeOverview = (props: {lang:string, objLang:any, asset:any}) => {
                         </div>
                         <button>Trade</button>
                     </div>
-                    <Image src='/images/3d-icons/iphone-vector.png' className='iphone-vector' alt='iphone vector' width={0} height={0} sizes='100%'/>
+                    <Image src='/images/3d-icons/iphone-new-vector.png' className='iphone-vector' alt='iphone vector' width={0} height={0} sizes='100%'/>
                 </div>
             </div>
             <div className='key-subcontainer'>
