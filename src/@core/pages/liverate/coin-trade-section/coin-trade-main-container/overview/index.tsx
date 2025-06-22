@@ -11,8 +11,8 @@ const CoinTradeOverview = (props: {lang:string, objLang:any, asset:any}) => {
           { value: 1e6, symbol: "Jt" },
           { value: 1e9, symbol: "M" },
           { value: 1e12, symbol: "T" },
-          { value: 1e15, symbol: "KT" },
-          { value: 1e18, symbol: "OT" }
+          { value: 1e15, symbol: "Q" },
+          { value: 1e18, symbol: "Qi" }
         ];
         const regexp = /\.0+$|(?<=\.[0-9]*[1-9])0+$/;
         const item = lookup.findLast(item => num >= item.value);
