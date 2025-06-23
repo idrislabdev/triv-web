@@ -4,5 +4,13 @@
     "welcome_text" : "Triv Used by Millions Since 2015",
     "sub_welcome_text" : "Registered And Supervised By Bappebti",
     "not_robot_text" : "I`m not a robot",
-    "continue_text": "Continue"
+    "continue_text": "Continue",
+    "info_1": "We have sent an email to",
+    "info_2": "containing a link to reset your password",
+    "info_3": "Click the link to reset your password.",
+    "new_password_text": "New Password",
+    "entry_new_text": "Create a strong password for the account with the email",
+    "password_text": "Password",
+    "password_repead_text": "Repeat Password",
+    "label_info": "After the password is changed, please log in again with the new password."
 }
