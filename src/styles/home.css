@@ -12,10 +12,10 @@
     }
     .home-page {
         a {
-            @apply !bg-[#3A80AF] !text-white;
+            @apply !bg-primary !text-white;
         }
         .home-hero-section { 
-            @apply bg-[#1b1f22];
+            @apply bg-[#000000];
             .home-hero-section-area {
                 .section-text {
                     .section-terdaftar {
@@ -47,14 +47,19 @@
         }
         .home-investasi-section {
             .investasi-section-box {
-                @apply bg-[#1b1f22]; 
+                @apply bg-[#111111]; 
             }
         }
         .home-baru-crypto-section {
+            @apply bg-[#111111];
             .home-baru-crypto-container{
-                @apply bg-[#1b1f22];
+                a {
+                    @apply !bg-primary !text-white;
+                }
                 .crypto-thumb-video{
-                    @apply !bg-[#13171a] ;
+                   h6 {
+                        @apply !text-[#191B20];
+                    }
                 }
             }
         }
@@ -978,9 +983,9 @@
         .home-baru-crypto-container {
             @apply flex gap-[80px] py-[100px]  items-center relative max-w-container mx-auto;
             .baru-crypto-title {
-                @apply flex flex-col gap-[20px] pl-[100px];
+                @apply flex flex-col gap-[20px] pl-[100px] w-[353px];
                 h5 {
-                    @apply text-[28px]/[42px] font-bold text-black;
+                    @apply text-[24px]/[42px] font-bold text-black;
                 }
                 p {
                     @apply text-[16px]/[32px] font-medium text-black;

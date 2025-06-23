@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .dark-theme {
-    @apply !bg-[#141414];
+    @apply !bg-[#000000];
     h1, h2, h3, h4, h5, h6 {
       @apply !text-slate-200;
     }
@@ -11,10 +11,10 @@
     }
     .stocks-page {
         a {
-            @apply !bg-[#3A80AF] !text-white;
+            @apply !bg-primary !text-white;
         }
         .stocks-hero-section { 
-            @apply bg-[#1b1f22];
+            @apply bg-[#000000];
         }
         .stocks-banner-section {
             background: linear-gradient(to bottom, transparent,#000) #141414;
@@ -33,6 +33,9 @@
         .stocks-baru-crypto-section {
             .stocks-baru-crypto-container{
                 @apply bg-[#1b1f22];
+                a {
+                    @apply !bg-primary !text-white;
+                }
                 .crypto-thumb-video{
                     @apply !bg-[#13171a] ;
                 }
