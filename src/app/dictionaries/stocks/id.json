@@ -5,7 +5,7 @@
         "title_3" : "(AS) di Triv",
         "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
         "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
-        "description" : "Token saham diregulasi oleh BAPPEBTI berdasarkan surat nomor 11/2022. Triv terdaftar dan diawasi oleh BAPPEBTI",
+        "description" : "Layanan perdagangan saham AS disediakan oleh PT. Alpha C. Berjangka, sebuah broker yang berlisensi dan diawasi oleh Bappebti. PT. Alpha merupakan anak perusahaan dari PT. Tiga Inti Utama.",
         "sub_description": "Terdaftar dan diawasi oleh",
         "button_text" : "Daftar Sekarang",
         "details_1" : "Sejak 2015",
@@ -33,14 +33,14 @@
             "value" : "2M+"
         },
         "asset" : {
-            "text" : "Aset Kripto & Saham",
+            "text" : "Aset Pilihan Saham AS",
             "value" : "700+"
         }
     },
     "dividen_section" : {
         "title_1" : "Dapatkan",
-        "title_2" : "Dividend",
-        "title_3" : " dari Investasi Saham AS",
+        "title_2" : "Dividen",
+        "title_3" : "dari Investasi Saham AS",
         "subtitle": "Dividen saham AS bisa menjadi strategi yang efektif untuk membangun portfolio-mu dan mencapai tujuan keuangan jangka panjang. Di TRIV, kamu bisa mendapatkan informasi seputar dividen dan tanggal distribusi dividen.",
         "button": "Daftar Sekarang"
     },
@@ -82,7 +82,7 @@
     },
     "faq_section": {
         "title_1" : "FAQ",
-        "title_2" : "(Pertanyaan Terkait Crypto Staking)",
+        "title_2" : "(Pertanyaan Umum tentang Perdagangan Saham AS)",
         "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
         "questions" : [
             {

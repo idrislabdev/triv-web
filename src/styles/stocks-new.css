@@ -1097,7 +1097,7 @@
     .stocks-faq-section {
         @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
         h2 {
-            @apply text-[48px]/[72px] font-black text-center;
+            @apply text-[43px]/[150%] font-black text-center;
             span {
                 background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
                 background-clip: text;
