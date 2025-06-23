@@ -942,11 +942,19 @@
                 }
                 .start-now-store-mobile {
                     @apply hidden gap-[14px] items-center;
-                    apple-logo {
+                    .apple-logo {
                         @apply w-[130.64px] h-[38.71px];
+                         content: '';
+                        background: url("/images/apps-store/appstore-logo.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
                     }
-                    playstore-logo {
-                        @apply w-[114.43px] h-[37.02px];
+                    .playstore-logo {
+                        @apply w-[130.43px] h-[37.02px];
+                         content: '';
+                        background: url("/images/apps-store/playstore-logo.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
 
                     }
                 }
