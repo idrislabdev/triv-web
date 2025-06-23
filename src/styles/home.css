@@ -668,7 +668,7 @@
                     @apply text-[16px]/[32px] font-bold text-neutral-700;
                 }
                 p {
-                   @apply font-medium
+                   @apply font-medium text-justify;
                 }
             }
            .start-button-logo {
@@ -910,7 +910,7 @@
                 -webkit-text-fill-color: transparent;
             }
             p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700;
+                @apply text-[16px]/[32px] font-medium text-neutral-700 text-justify;
             }
         }
         .ewallet-image {
@@ -1710,7 +1710,7 @@
                         @apply text-[10px]/[15px];
                     }
                     p {
-                        @apply text-[10px]/[15px];
+                        @apply text-[10px]/[15px] text-center;
                     }
                 }
                 .ewallet-image {
@@ -1791,7 +1791,7 @@
                             @apply text-[14px]/[21px];
                         }
                         h5,p {
-                            @apply text-[12px]/[18px];
+                            @apply text-[12px]/[18px] text-center;
                         }
                     }
                 }
