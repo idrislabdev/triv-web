@@ -16,10 +16,10 @@ const MarketSection = (props: {markets:any, objMarket:any, lang:string, objOrder
     const [tabLimit, setTabLimit] = useState('limits');
     const [tabinfo, setTabInfo] = useState('limit');
 
-    
+    console.log(market)
     return (
         <section className='market-section'>
-            <MarketMainContainer markets={markets} market={market} setMarket={setMarket} />
+            <MarketMainContainer lang={lang} markets={markets} market={market} setMarket={setMarket} />
             <MarketOrderBookContainer  market={market} setMarket={setMarket} orderBook={orderBook} trades={trades}/>
             <MarketFormContainer lang={lang} tabLimit={tabLimit} setTabLimit={setTabLimit} tabInfo={tabinfo} setTabInfo={setTabInfo} market={market}/>
         </section>

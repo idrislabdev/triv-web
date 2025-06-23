@@ -372,7 +372,7 @@
                     .info-detail {
                         @apply pl-[15px] pr-[15px];
                         span {
-                            @apply text-[14px]/[21px] text-neutral-800 font-semibold;
+                            @apply text-[14px]/[21px] text-[#67C48F] font-semibold;
 
                         }
                     }

@@ -6,9 +6,10 @@ import { IBookOrder, ITrade } from '@/@core/@types/interfaces'
 import moment from 'moment';
 import MarketsTvWrapper from '../../tv-wrapper'
 import { usePathname, useRouter } from 'next/navigation';
+import { formatterNumber2, nFormatter2 } from '@/@core/utils/general'
 
-const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch<SetStateAction<any>>}) => {
-    const {markets, market, setMarket} = props
+const MarketMainContainer = (props: {lang:string, markets:any, market:any, setMarket:Dispatch<SetStateAction<any>>}) => {
+    const {lang, markets, market, setMarket} = props
     const [showMarket, setShowMarket] = useState(false)
     const pathname = usePathname()
     const router = useRouter();
@@ -52,11 +53,11 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                 <div className='market-symbol' ref={searchDropdown}>
                     <a onClick={_ => setShowMarket(!showMarket)}>
                         <Image src={market.icon_url} alt={'market logo'}width={0} height={0} sizes='100%'/>
-                        <span className='truncate'>{market.symbol}</span>
+                        <span className='truncate'>{`${market.base_asset.code}/${market.quote_asset.code}`}</span>
                         <span className={`transition-all duration-300 ${showMarket ? 'rotate-180': ''}`}><ChevronIconDown color={'#000'} /></span>
                     </a>
                     <div className='info-detail'>
-                        <span>{market.price}</span>
+                        <span>{formatterNumber2(market.price)}</span>
                     </div>
                     <div className={`dropdown-market ${showMarket ? 'show' : ''}`}>
                         <div className='header-area'>
@@ -84,7 +85,7 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                                             <label>{item.base_asset.code}<span className='text-neutral-400'>/{item.quote_asset.code}</span></label>
                                             <label className='text-right'>{item.price}</label>
                                             <label className='text-right !text-[#EB5757]'>{item.price_changes !== null ? item.price_changes.today : ''}%</label>
-                                            <label className='text-right'>{nFormatter(item.statistic.base_volume, 1)}</label>
+                                            <label className='text-right'>{lang === 'id' ? nFormatter(item.statistic.base_volume, 1) : nFormatter2(item.statistic.base_volume, 1)}</label>
                                         </div>
                                     </div>
                                 ))
@@ -100,19 +101,19 @@ const MarketMainContainer = (props: {markets:any, market:any, setMarket:Dispatch
                     </div>
                     <div className='info-detail'>
                         <label>Tertinggi 24JAM</label>
-                        <span>{nFormatter(market.statistic.high,0)}</span>
+                        <span>{lang === 'id' ? nFormatter(market.statistic.high,0) : nFormatter2(market.statistic.high,0)}</span>
                     </div>
                     <div className='info-detail'>
                         <label>Terendah 24JAM</label>
-                        <span>{nFormatter(market.statistic.low,1)}</span>
+                        <span>{lang === 'id' ? nFormatter(market.statistic.low,1) : nFormatter2(market.statistic.low,1)}</span>
                     </div>
                     <div className='info-detail'>
                         <label>Vol 24JAM ({market.quote_asset.code})</label>
-                        <span>{nFormatter(market.statistic.quote_volume.toFixed(market.quote_asset.precision),1)}</span>
+                        <span>{lang === 'id' ? nFormatter(market.statistic.quote_volume.toFixed(market.quote_asset.precision),1) : nFormatter2(market.statistic.quote_volume.toFixed(market.quote_asset.precision),1)}</span>
                     </div>
                     <div className='info-detail'>
                         <label>Vol 24JAM ({market.base_asset.code})</label>
-                        <span>{nFormatter(market.statistic.base_volume.toFixed(market.base_asset.precision), 1)}</span>
+                        <span>{lang === 'id' ? nFormatter(market.statistic.base_volume.toFixed(market.base_asset.precision), 1) : nFormatter2(market.statistic.base_volume.toFixed(market.base_asset.precision), 1)}</span>
                     </div>
                 </div>
             </div>
