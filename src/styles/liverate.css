@@ -944,7 +944,7 @@
                     @apply hidden gap-[14px] items-center;
                     .apple-logo {
                         @apply w-[130.64px] h-[38.71px];
-                         content: '';
+                        content: '';
                         background: url("/images/apps-store/appstore-logo.png") no-repeat;
                         background-position: center;
                         background-size: contain !important;
