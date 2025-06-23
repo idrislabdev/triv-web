@@ -38,10 +38,10 @@ const ProductsServiceHeaderPaypalNewSection = (props: {lang:any, objLang:any, ob
                         </div>
                         <h5>{objLang.registered_text}</h5>
                         <div className='logo-area fade-in entry-4'>
-                            <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-color-big.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
-                            <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo-color-big.png' alt='kominfo logo' width={0} height={0} sizes='100%' /></div>
-                            <div className='bsi-logo'><Image src='/images/otoritas-keuangans/bsi-color-big.png' alt='bsi logo' width={0} height={0} sizes='100%' /></div>
-                            <div className='cisa-logo'><Image src='/images/otoritas-keuangans/cisa-color-big.png' alt='cisa logo' width={0} height={0} sizes='100%' /></div>
+                            <div className='bappebti-logo'></div>
+                            <div className='kominfo-logo'></div>
+                            <div className='bsi-logo'></div>
+                            <div className='cisa-logo'></div>
                         </div>
                     </div>
                 </div>
