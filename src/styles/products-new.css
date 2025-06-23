@@ -180,7 +180,7 @@
                 .text-area {
                     @apply flex flex-col gap-[30px];
                     h2 {
-                        @apply text-[60px]/[90px] font-black text-black;
+                        @apply text-[46px]/[150%] font-black text-black;
                         span {
                             background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
                             background-clip: text;
@@ -244,7 +244,7 @@
                 .left-subcontainer {
                     .text-area {
                         h2 {
-                            @apply text-[45px]/[65px];
+                            @apply text-[40px]/[65px];
                         }
                         p {
                             @apply text-[14px]/[21px];
@@ -478,7 +478,7 @@
                     @apply text-[28px]/[42px] font-black text-black;
                 }
                 p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700;
+                    @apply text-[16px]/[32px] font-medium text-neutral-700 text-justify;
                     span {
                         @apply underline;
                     }
@@ -1703,7 +1703,7 @@
                             @apply text-[14px]/[21px];
                         }
                         p {
-                            @apply text-[12px]/[18px];
+                            @apply text-[12px]/[18px] text-center;
                         }
                     }
                 }
