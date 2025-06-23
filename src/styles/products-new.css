@@ -549,7 +549,7 @@
     .products-layanan-new-section {
         @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
         .title-container {
-            @apply flex flex-col items-center text-center justify-center gap-[20px];
+            @apply flex flex-col items-center text-center justify-center gap-[20px] w-[75%];
             h2 {
                 @apply text-[48px]/[72px] text-black font-black;
                 span {

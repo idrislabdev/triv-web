@@ -1,10 +1,10 @@
 {
     "header_section": {
         "title" : "Transaksi Paypal 24 jam",
-        "title_1" : "Jual Beli",
+        "title_1" : "Transaksi",
         "title_2" : "Paypal",
         "title_3" : "Indonesia 24 jam",
-        "description" : "Jual beli saldo Paypal terbesar di Indonesia dengan mudah kapanpun dan dimanapun secara instan 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang",
+        "description" : "Transaksi pembelian saldo PayPal terbesar di Indonesia dengan mudah kapanpun dan dimanapun secara instan 24 jam tanpa hari libur. Triv terintegrasi dengan 61 bank & E-money di Indonesia, sejak 2015 Triv digunakan oleh jutaan orang",
         "button_1" : "Beli Paypal",
         "button_2" : "Kunjungi Marketplace",
         "registered_text" : "Terdaftar dan diawasi oleh",
@@ -13,23 +13,23 @@
     "regulasi_section": {
         "liquiditas" : {
             "title" : "Likuiditas Tinggi",
-            "content" : "Tidak perlu menanyakan stok atau ketersediaan saldo Paypal. Triv menjamin bahwa berapapun besar pembelian atau penjualan anda, stok kami akan selalu tersedia. Dengan system kami anda tidak perlu menunggu atau melakukan transaksi secara manual. Seluruh transaksi jual beli dan exchange Paypal anda dapat dilakukan secara instant 24/7.",
+            "content" : "Tidak perlu menanyakan stok atau ketersediaan saldo PayPal. Triv menjamin bahwa berapapun besar pembelian Anda, stok kami akan selalu tersedia. Dengan sistem kami, Anda tidak perlu menunggu atau melakukan transaksi secara manual. Seluruh transaksi jual beli dan exchange PayPal dapat dilakukan secara instan 24/7.",
             "content_1" : "Spread atau selisih",
             "content_2" : "harga jual beli Paypal",
             "content_3" : "Triv merupakan salah satu yang terendah di market saat ini. Dengan system brokerage kami anda tidak perlu menunggu pembeli / penjual lain untuk melakukan transaksi. Seluruh transaksi beli / jual dapat dilakukan secara instant dan real-time tanpa proses tunggu."
         },
         "regulator" : {
-            "title" : "Diregulasi dan Diasuransikan",
-            "content" : "Sejak tahun 2015 Triv telah digunakan oleh jutaan orang, seluruh dana pelanggan di sistem kami diasuransikan oleh Bitgo dan Lloyd England sebesar 100 juta USD atau setara dengan 1,45 triliun rupiah. Triv merupakan broker resmi yang terdaftar dan diawasi oleh Bappebti."
+            "title" : "Teregulasi dan Terasuransi",
+            "content" : "Sejak tahun 2015, Triv telah digunakan oleh jutaan orang. Seluruh dana pelanggan di sistem kami diasuransikan oleh BitGo dan Lloyd England sebesar 100 juta USD atau setara dengan 1,45 triliun Rupiah. Triv merupakan broker resmi yang terdaftar dan diawasi oleh Bappebti."
         },
         "device_url" : "/images/devices/iphone-service.png"
     },
     "layanan_section": {
         "title" : "Yang Bisa Kamu Lakukan Dengan Paypal di Triv",
-        "title_1" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan",
+        "title_1" : "Yang Bisa Kamu Lakukan Dengan",
         "title_2" : "Paypal",
-        "title_3" : "Indonesia",
-        "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli paypal. Swap, exchange ataupun isi saldo Paypal dapat anda lakukan dalam satu aplikasi.",
+        "title_3" : "di Triv",
+        "content" : "Triv mendukung transaksi pembelian PayPal. Anda dapat mengisi saldo PayPal Anda dalam satu aplikasi.",
         "card" : {
             "jual_beli" : {
                 "title" : "Beli Saldo Paypal 24 jam",
@@ -39,13 +39,13 @@
             },
             "kirim" : {
                 "title" : "Transfer ke luar negeri instan",
-                "content" : "Saldo Paypal dapat anda gunakan untuk mengirimkan uang ke seluruh pengguna Paypal di dunia secara gratis dan instan. Berbeda dengan remiten tradisional yang membutuhkan 1-2 hari kerja. Pengiriman USD digital berlangsung secara instant dalam hitungan detik.",
+                "content" : "Saldo PayPal dapat Anda gunakan untuk mengirim uang ke seluruh pengguna PayPal di dunia secara gratis dan instan. Berbeda dengan remiten tradisional yang membutuhkan 1-2 hari kerja, pengiriman USD digital berlangsung secara instan dalam hitungan detik.",
                 "image_url" : "/images/services/device-transfer.png",
                 "image_class" : "device-transfer"
             },
             "terima" : {
                 "title" : "Belanja di situs Internasional",
-                "content" : "Paypal diterima oleh jutaan merchant luar negeri, sehingga anda dapat berbelanja secara online tanpa membutuhkan kartu kredit. Cukup isi saldo Paypal di Triv, dan anda dapat mengakses pasar internasional dan berbelaja dalam hitungan menit.",
+                "content" : "PayPal diterima oleh jutaan merchant luar negeri, sehingga Anda dapat berbelanja online tanpa perlu kartu kredit. Cukup isi saldo PayPal di Triv, dan Anda dapat mengakses pasar internasional serta berbelanja dalam hitungan menit.",
                 "image_url" : "/images/services/device-pay.png",
                 "image_class" : "device-pay"
             },
