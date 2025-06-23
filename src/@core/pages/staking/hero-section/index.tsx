@@ -34,27 +34,29 @@ const StakingHeroSection = (props: {objLang:any}) => {
             </div>
             <p className='fade-in entry-2'>{objLang.description}</p>
           </div>
-          <div className='text-info fade-in entry-3'>
-            <div className='text-detail-info'>
-              <label>IDR 256M</label>
-              <span>ASSETS STAKED</span>
+          <div className='text-info-register'>
+            <div className='text-info fade-in entry-3'>
+              <div className='text-detail-info'>
+                <label>IDR 256M</label>
+                <span>ASSETS STAKED</span>
+              </div>
+              <div className='text-detail-info'>
+                <label>100K+</label>
+                <span>USERS</span>
+              </div>
+              <div className='text-detail-info'>
+                <label>IDR 25M+</label>
+                <span>REWARDS PAID</span>
+              </div>
             </div>
-            <div className='text-detail-info'>
-              <label>100K+</label>
-              <span>USERS</span>
-            </div>
-            <div className='text-detail-info'>
-              <label>IDR 25M+</label>
-              <span>REWARDS PAID</span>
-            </div>
-          </div>
-          <div className='registered-logo'>
-            <h5 className='fade-in entry-4'>{objLang.registered_text}</h5>
-            <div className='logo-area fade-in entry-5'>
-                <div className='bappebti-logo'><Image src='/images/otoritas-keuangans/bappebti-big-white.png' alt='bappebti logo' width={0} height={0} sizes='100%' /></div>
-                <div className='kominfo-logo'><Image src='/images/otoritas-keuangans/kominfo-light-logo.png' alt='kominfo logo' width={0} height={0} sizes='100%' /></div>
-                <div className='bsi-logo'><Image src='/images/otoritas-keuangans/bsi-white.png' alt='bsi logo' width={0} height={0} sizes='100%' /></div>
-                <div className='cisa-logo'><Image src='/images/otoritas-keuangans/cisa-light-logo.png' alt='cisa logo' width={0} height={0} sizes='100%' /></div>
+            <div className='registered-logo'>
+              <h5 className='fade-in entry-4'>{objLang.registered_text}</h5>
+              <div className='logo-area fade-in entry-5'>
+                <div className='bappebti-logo'></div>
+                  <div className='kominfo-logo'></div>
+                  <div className='bsi-logo'></div>
+                  <div className='cisa-logo'></div>
+              </div>
             </div>
           </div>
         </div>

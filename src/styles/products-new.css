@@ -261,7 +261,6 @@
                                 @apply h-[55px] text-[17px]/[24px] rounded-none ;
                             }
                             
-
                         }
                         .title {
                             @apply text-[19px]/[30px];
@@ -315,26 +314,19 @@
                             }
                         }
                         .logo-area {
-                            @apply flex items-center gap-[30px];
+                            @apply gap-[20px];
                             .bappebti-logo {
-                                img {
-                                    @apply w-[157px] h-[34px];
-                                }
+                                @apply w-[127px] h-[34px];
                             }
                             .kominfo-logo {
-                                img {
-                                    @apply w-[128px] h-[37px];
-                                }
+                                @apply w-[98px] h-[37px];
                             }
                             .bsi-logo {
-                                img {
-                                    @apply w-[93px] h-[44px];
-                                }
+                                @apply w-[83px] h-[44px];
+
                             }
                             .cisa-logo {
-                                img {
-                                    @apply w-[120px] h-[43px];
-                                }
+                                @apply w-[90px] h-[43px];
                             }
                         }
                     }
@@ -402,26 +394,19 @@
                             }
                         }
                         .logo-area {
-                            @apply flex items-center gap-[30px];
+                            @apply gap-[15px];
                             .bappebti-logo {
-                                img {
-                                    @apply w-[147px] h-[24px];
-                                }
+                                @apply w-[117px] h-[34px];
                             }
                             .kominfo-logo {
-                                img {
-                                    @apply w-[118px] h-[27px];
-                                }
+                                @apply w-[88px] h-[37px];
                             }
                             .bsi-logo {
-                                img {
-                                    @apply w-[83px] h-[34px];
-                                }
+                                @apply w-[73px] h-[44px];
+
                             }
                             .cisa-logo {
-                                img {
-                                    @apply w-[110px] h-[33px];
-                                }
+                                @apply w-[80px] h-[43px];
                             }
                         }
                     }
@@ -1615,24 +1600,16 @@
                             .logo-area {
                                 @apply gap-[5px] justify-center;
                                 .bappebti-logo {
-                                    img {
-                                        @apply w-[60px] h-[13px];
-                                    }
+                                    @apply w-[60px] h-[13px];
                                 }
                                 .kominfo-logo {
-                                    img {
-                                        @apply w-[60px] h-[20px];
-                                    }
+                                    @apply w-[60px] h-[20px];
                                 }
                                 .bsi-logo {
-                                    img {
-                                        @apply w-[37px] h-[20px];
-                                    }
+                                    @apply w-[37px] h-[20px];
                                 }
                                 .cisa-logo {
-                                    img {
-                                        @apply w-[51px] h-[22px];
-                                    }
+                                    @apply w-[51px] h-[22px];
                                 }
                             }
                         }

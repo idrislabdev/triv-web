@@ -91,13 +91,19 @@
         }
     }
     .staking-hero-section {
-        @apply h-[750px] py-[100px] relative bg-[#000000] overflow-hidden flex flex-col justify-center;
+        @apply relative bg-[#000000] overflow-hidden flex flex-col justify-center;
         .staking-hero-section-area {
-            @apply flex px-[100px] max-w-container mx-auto items-center;
+            @apply flex p-[100px] max-w-container mx-auto items-center relative;
+            &::before {
+                    content: '';
+                    @apply absolute top-0 w-[70%] h-full right-0 ;
+                    background: url("/images/ornaments/device-ornament.png") no-repeat;
+                    background-position: right;
+            }
             .section-text {
-                @apply flex flex-col w-[75%] gap-[40px] z-[1];
+                @apply flex flex-col w-[75%] gap-[25px] z-[1];
                 .text-title {
-                    @apply flex flex-col gap-[28px];
+                    @apply flex flex-col gap-[17px];
                     .title {
                         @apply flex flex-col w-[90%];
                         h1 {
@@ -110,60 +116,67 @@
                         }
                     }
                     p {
-                        @apply text-[16px]/[32px] text-[#C1C3CC] font-medium w-[65%];
+                        @apply text-[16px]/[32px] text-[#C1C3CC] font-medium w-[65%] text-justify;
                     }
                 }
-                .text-info {
-                    @apply flex gap-[60px];
-                    .text-detail-info {
-                        @apply flex flex-col;
-                        label {
-                            @apply text-[36px]/[54px] text-primary font-bold;
-                        }
-                        span {
-                            @apply text-[15px]/[22px] text-[#DEDEDE] font-medium
+                .text-info-register {
+                    @apply flex flex-col gap-[54px];
+                    .text-info {
+                        @apply flex gap-[60px];
+                        .text-detail-info {
+                            @apply flex flex-col;
+                            label {
+                                @apply text-[36px]/[54px] text-primary font-bold;
+                            }
+                            span {
+                                @apply text-[15px]/[22px] text-[#DEDEDE] font-medium
+                            }
                         }
                     }
-                }
-                .registered-logo {
-                    @apply flex flex-col gap-[14px];
-                    h5 {
-                        @apply text-[16px]/[200%] font-medium text-white;
-                    }
-                    .logo-area {
-                        @apply flex items-center gap-[30px];
-                        .bappebti-logo {
-                            img {
-                                @apply w-[147px] h-[34px] object-contain;
-                            }
+                    .registered-logo {
+                        @apply flex flex-col gap-[14px];
+                        h5 {
+                            @apply text-[16px]/[200%] font-medium text-white;
                         }
-                        .kominfo-logo {
-                            img {
-                                @apply w-[118px] h-[37px] object-contain;
+                        .logo-area {
+                            @apply flex items-center gap-[30px];
+                            .bappebti-logo {
+                                @apply w-[147px] h-[34px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
                             }
-                        }
-                        .bsi-logo {
-                            img {
-                                @apply w-[83px] h-[44px] object-contain;
+                            .kominfo-logo {
+                                @apply w-[118px] h-[37px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
                             }
-                        }
-                        .cisa-logo {
-                            img {
-                                @apply w-[110px] h-[44px] object-contain;
+                            .bsi-logo {
+                                @apply w-[83px] h-[44px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .cisa-logo {
+                                @apply w-[110px] h-[44px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
                             }
                         }
                     }
                 }
             }
             .section-image {
-                &::before {
-                    content: '';
-                    @apply absolute bottom-0 w-[100%] h-full right-0 ;
-                    background: url("/images/ornaments/device-ornament.png") no-repeat;
-                }
+                @apply flex-1 flex flex-col justify-center items-center;
                 img {
                     &.img-device {
-                        @apply w-[625px] h-[700px] object-contain absolute right-[-20px] bottom-[-50px];
+                        @apply w-[625px] h-[800px] object-contain absolute right-[-20px] top-[100px];
                     }
                     &.img-coin-1 {
                         @apply  w-[174px] h-[167px] absolute right-[435px] top-[45%];
@@ -179,7 +192,6 @@
            
         }
         @media (max-width:1280px) {
-            @apply h-[640px];
             .staking-hero-section-area {
                 .section-text {
                     .text-title {
@@ -194,36 +206,55 @@
                             @apply text-[16px]/[23px] w-[65%];
                         }
                     }
-                    .text-info {
-                        @apply gap-[60px];
-                        .text-detail-info {
-                            label {
-                                @apply text-[26px]/[33px] text-primary font-bold;
+                    .text-info-register {
+                        .text-info {
+                            @apply gap-[60px];
+                            .text-detail-info {
+                                label {
+                                    @apply text-[26px]/[33px] text-primary font-bold;
+                                }
+                                span {
+                                    @apply text-[16px]/[23px];
+                                }
                             }
-                            span {
-                                @apply text-[16px]/[23px];
+                        }
+                        .registered-logo {
+                            @apply flex flex-col gap-[14px];
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            .logo-area {
+                                @apply gap-[20px];
+                                .bappebti-logo {
+                                    @apply w-[137px] h-[34px];
+                                }
+                                .kominfo-logo {
+                                    @apply w-[108px] h-[37px];
+                                }
+                                .bsi-logo {
+                                    @apply w-[73px] h-[44px];
+
+                                }
+                                .cisa-logo {
+                                    @apply w-[100px] h-[43px];
+                                }
                             }
                         }
                     }
                 }
                 .section-image {
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-0 w-[100%] h-full right-0 ;
-                        background: url("/images/ornaments/device-ornament.png") no-repeat;
-                    }
                     img {
                         &.img-device {
-                            @apply w-[445px] h-[570px] right-[20px] bottom-[-50px];
+                            @apply w-[445px] h-[570px] right-[20px] top-[200px];
                         }
                         &.img-coin-1 {
-                            @apply  w-[164px] h-[157px] absolute right-[330px] top-[45%];
+                            @apply  w-[154px] h-[147px] absolute right-[330px] top-[55%];
                         }
                         &.img-coin-2 {
-                            @apply  w-[152px] h-[144px] absolute right-[10px] top-[20%];
+                            @apply  w-[142px] h-[134px] absolute right-[10px] top-[35%];
                         }
                         &.img-coin-3 {
-                            @apply  w-[164px] h-[176px] absolute right-[10px] top-[70%];
+                            @apply  w-[154px] h-[166px] absolute right-[10px] top-[70%];
                         }
                     }    
                 }
@@ -231,7 +262,6 @@
             }
         }
         @media (max-width:1180px) {
-            @apply h-[620px];
             .staking-hero-section-area {
                 .section-text {
                     .text-title {
@@ -246,33 +276,52 @@
                             @apply text-[15px]/[22px] w-[65%];
                         }
                     }
-                    .text-info {
-                        @apply gap-[60px];
-                        .text-detail-info {
-                            label {
-                                @apply text-[25px]/[32px] text-primary font-bold;
+                    .text-info-register {
+                        .text-info {
+                            @apply gap-[60px];
+                            .text-detail-info {
+                                label {
+                                    @apply text-[25px]/[32px] text-primary font-bold;
+                                }
+                                span {
+                                    @apply text-[15px]/[22px];
+                                }
                             }
-                            span {
-                                @apply text-[15px]/[22px];
+                        }
+                        .registered-logo {
+                            @apply flex flex-col gap-[14px];
+                            h5 {
+                                @apply text-[14px]/[21px];
+                            }
+                            .logo-area {
+                                @apply gap-[20px];
+                                .bappebti-logo {
+                                    @apply w-[127px] h-[34px];
+                                }
+                                .kominfo-logo {
+                                    @apply w-[98px] h-[37px];
+                                }
+                                .bsi-logo {
+                                    @apply w-[83px] h-[44px];
+
+                                }
+                                .cisa-logo {
+                                    @apply w-[90px] h-[43px];
+                                }
                             }
                         }
                     }
                 }
                 .section-image {
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-0 w-[100%] h-full right-0 ;
-                        background: url("/images/ornaments/device-ornament.png") no-repeat;
-                    }
                     img {
-                        &.img-device {
-                            @apply w-[435px] h-[560px] right-[20px] bottom-[-50px];
+                         &.img-device {
+                            @apply w-[445px] h-[570px] right-[20px] top-[200px];
                         }
                         &.img-coin-1 {
-                            @apply  w-[154px] h-[147px] absolute right-[330px] top-[45%];
+                            @apply  w-[154px] h-[147px] absolute right-[330px] top-[55%];
                         }
                         &.img-coin-2 {
-                            @apply  w-[142px] h-[134px] absolute right-[10px] top-[20%];
+                            @apply  w-[142px] h-[134px] absolute right-[10px] top-[35%];
                         }
                         &.img-coin-3 {
                             @apply  w-[154px] h-[166px] absolute right-[10px] top-[70%];
@@ -283,7 +332,6 @@
             }
         }
         @media (max-width:1080px) {
-            @apply h-[600px];
             .staking-hero-section-area {
                 .section-text {
                     .text-title {
@@ -298,58 +346,48 @@
                             @apply text-[14px]/[21px] w-[65%];
                         }
                     }
-                    .text-info {
-                        @apply gap-[60px];
-                        .text-detail-info {
-                            label {
-                                @apply text-[24px]/[31px] text-primary font-bold;
-                            }
-                            span {
-                                @apply text-[14px]/[21px];
+                    .text-info-register {
+                        .text-info {
+                            @apply gap-[60px];
+                            .text-detail-info {
+                                label {
+                                    @apply text-[24px]/[31px] text-primary font-bold;
+                                }
+                                span {
+                                    @apply text-[14px]/[21px];
+                                }
                             }
                         }
-                    }
-                    .registered-logo {
-                        .logo-area {
-                            @apply flex items-center gap-[0px];
-                            .bappebti-logo {
-                                img {
-                                    @apply w-[147px] h-[24px];
+                        .registered-logo {
+                            .logo-area {
+                                @apply flex items-center gap-[15px];
+                                .bappebti-logo {
+                                    @apply w-[117px] h-[34px];
                                 }
-                            }
-                            .kominfo-logo {
-                                img {
-                                    @apply w-[118px] h-[27px];
+                                .kominfo-logo {
+                                    @apply w-[88px] h-[37px];
                                 }
-                            }
-                            .bsi-logo {
-                                img {
-                                    @apply w-[83px] h-[34px];
+                                .bsi-logo {
+                                    @apply w-[73px] h-[44px];
+
                                 }
-                            }
-                            .cisa-logo {
-                                img {
-                                    @apply w-[110px] h-[33px];
+                                .cisa-logo {
+                                    @apply w-[80px] h-[43px];
                                 }
                             }
                         }
                     }
                 }
                 .section-image {
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-0 w-[100%] h-full right-0 ;
-                        background: url("/images/ornaments/device-ornament.png") no-repeat;
-                    }
                     img {
                         &.img-device {
-                            @apply w-[425px] h-[550px] right-[20px] bottom-[-50px];
+                            @apply w-[425px] h-[550px] right-[20px] top-[220px];
                         }
                         &.img-coin-1 {
-                            @apply  w-[144px] h-[137px] absolute right-[330px] top-[45%];
+                            @apply  w-[144px] h-[137px] absolute right-[330px] top-[55%];
                         }
                         &.img-coin-2 {
-                            @apply  w-[132px] h-[124px] absolute right-[10px] top-[20%];
+                            @apply  w-[132px] h-[124px] absolute right-[10px] top-[35%];
                         }
                         &.img-coin-3 {
                             @apply  w-[144px] h-[156px] absolute right-[10px] top-[70%];
@@ -1501,7 +1539,7 @@
         &.mobile-responsive {
             /* @apply pt-[40px]; */
             .staking-header-section {
-                @apply  pb-[30px] px-[20px] gap-[10px];
+                @apply  gap-[10px];
                 h1 {
                     @apply text-[16px]/[24px];
                 }
@@ -1510,9 +1548,12 @@
                 }
             }
             .staking-hero-section {
-                @apply h-full pt-[65px] pb-0;
+                @apply h-full pb-0;
                 .staking-hero-section-area {
-                    @apply flex-col px-[20px] gap-[40px];
+                    @apply flex-col px-[20px] pb-[20px] pt-[60px] gap-[0px];
+                    &::before {
+                        content: unset;
+                    }
                     .section-text {
                         @apply w-full gap-[20px] items-center;
                         .text-title {
@@ -1524,46 +1565,42 @@
                                 }
                             }
                             p {
-                                @apply text-[10px]/[15px] w-full;
+                                @apply text-[10px]/[15px] w-full text-center;
                             }
                         }
-                        .text-info {
-                            @apply flex gap-0 justify-between items-center;
-                            .text-detail-info {
-                                @apply flex flex-col;
-                                label {
-                                    @apply text-[18px]/[28px];
-                                }
-                                span {
-                                    @apply text-[7px]/[11px];
+                        .text-info-register {
+                            @apply gap-[20px];
+                            .text-info {
+                                @apply flex gap-0 justify-between items-center;
+                                .text-detail-info {
+                                    @apply flex flex-col;
+                                    label {
+                                        @apply text-[18px]/[28px];
+                                    }
+                                    span {
+                                        @apply text-[7px]/[11px];
+                                    }
                                 }
                             }
-                        }
-                        .registered-logo {
-                            @apply justify-center items-center;
-                            h5 {
-                                @apply text-[12px]/[150%];
-                            }
-                            .logo-area {
-                                @apply justify-between;
-                                .bappebti-logo {
-                                    img {
+                            .registered-logo {
+                                @apply justify-center items-center;
+                                h5 {
+                                    @apply text-[12px]/[150%];
+                                }
+                                .logo-area {
+                                    @apply justify-between;
+                                    .bappebti-logo {
                                         @apply w-[60px] h-[13px];
                                     }
-                                }
-                                .kominfo-logo {
-                                    img {
+                                    .kominfo-logo {
                                         @apply w-[60px] h-[20px];
                                     }
-                                }
-                                .bsi-logo {
-                                    img {
+                                    .bsi-logo {
                                         @apply w-[37px] h-[20px];
                                     }
-                                }
-                                .cisa-logo {
-                                    img {
+                                    .cisa-logo {
                                         @apply w-[51px] h-[22px];
+
                                     }
                                 }
                             }
@@ -1572,6 +1609,9 @@
                     .section-image {
                         @apply relative flex flex-col justify-center w-[325px];
                         &::before {
+                            content: '';
+                            @apply absolute bottom-0 w-[100%] h-full right-0 top-[25px] ;
+                            background: url("/images/ornaments/device-ornament.png") no-repeat;
                             background-size: cover;
                             width: 500px;
                         }
