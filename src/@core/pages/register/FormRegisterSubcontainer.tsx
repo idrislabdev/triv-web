@@ -2,6 +2,7 @@
 
 import { EyeIcon, HideEyeIcon } from '@/@core/components/custom-icons'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
@@ -68,10 +69,10 @@ const FormRegisterSubcontainer = (props: {lang:string, dictRegister:any, pekerja
                 </select>
             </div>
             <div className='form-note'>
-                <p>{dictRegister.register_first_text} <span>{dictRegister.register_second_text} </span>{dictRegister.register_third_text} <span> {dictRegister.register_fourth_text}</span></p>
+                <p>{dictRegister.register_first_text} <span><Link href={`/${lang}`}>{dictRegister.register_second_text}</Link> </span><Link href={`/${lang}`}>{dictRegister.register_third_text} </Link><span> <Link href={`/${lang}`}>{dictRegister.register_fourth_text}</Link></span></p>
             </div>
             <button onClick={() => onSubmit()}>{dictRegister.register_text}</button>
-            <label className='has-user'>{dictRegister.has_account_1} <a>{dictRegister.has_account_2}</a></label>
+            <label className='has-user'>{dictRegister.has_account_1} <Link href={`/${lang}/login`}>{dictRegister.has_account_2}</Link></label>
             <div className='sub-title-subcontainer'>
                 <h5>{dictRegister.welcome_text}</h5>
                 <p>{dictRegister.sub_welcome_text}</p>

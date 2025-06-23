@@ -2,6 +2,7 @@ import React, { Dispatch, SetStateAction, useCallback, useEffect, useState } fro
 import axiosInstance from '@/@core/utils/axios'
 import { IBookOrder, ITrade } from '@/@core/@types/interfaces'
 import moment from 'moment';
+import { formatterNumber, formatterNumber2 } from '@/@core/utils/general';
 
 const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStateAction<any>>, orderBook:any, trades:any}) => {
     const {market, setMarket, orderBook, trades} = props
@@ -54,9 +55,9 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                 {
                     dataAsks.map((item:IBookOrder, index:number) => (
                         <div className='body-row' key={index}>
-                            <label className='price-digit'>{item.price.toFixed(market.base_asset.precision)}</label>
-                            <label>{item.qty.toFixed(market.quote_asset.precision)}</label>
-                            <label>{item.total.toFixed(0)}</label>
+                            <label className='price-digit'>{formatterNumber2(item.price.toFixed(market.base_asset.precision))}</label>
+                            <label>{formatterNumber2(item.qty.toFixed(market.quote_asset.precision))}</label>
+                            <label>{formatterNumber2(item.total.toFixed(0))}</label>
                             <span style={{width: `${item.progress}%`}} ></span>
                         </div>
                     ))
@@ -79,9 +80,9 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                 {
                     dataBids.map((item:IBookOrder, index:number) => (
                         <div className='body-row' key={index}>
-                            <label className='price-digit'>{item.price.toFixed(market.base_asset.precision)}</label>
-                            <label>{item.qty.toFixed(market.quote_asset.precision)}</label>
-                            <label>{item.total.toFixed(0)}</label>
+                            <label className='price-digit'>{formatterNumber2(item.price.toFixed(market.base_asset.precision))}</label>
+                            <label>{formatterNumber2(item.qty.toFixed(market.quote_asset.precision))}</label>
+                            <label>{formatterNumber2(item.total.toFixed(0))}</label>
                             <span style={{width: `${item.progress}%`}} ></span>
                         </div>
                     ))
@@ -104,8 +105,8 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                 {
                     dataTrades.map((item:ITrade, index:number) => (
                         <div className='body-row' key={index}>
-                            <label className='price-digit'>{item.price.toFixed(0)}</label>
-                            <label>{item.quantity.toFixed(0)}</label>
+                            <label className='price-digit'>{formatterNumber2(item.price.toFixed(0))}</label>
+                            <label>{formatterNumber2(item.quantity.toFixed(0))}</label>
                             <label>{moment.unix(item.timestamp).format('HH:mm:ss')}</label>
                         </div>
                     ))

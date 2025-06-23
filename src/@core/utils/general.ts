@@ -3,10 +3,13 @@ export const formatterNumber = (val:number) => {
         return `${val}`.replace(/\B(?=(\d{3})+(?!\d))/g, ".").replace(/\.(?=\d{0,2}$)/g, ",");
 }
 
-export const formatterNumber2 = (val:string) => {
+export const formatterNumber2 = (val:string) => {   
     if (!val) return 0;
-        return `${val}`.replace(/\B(?=(\d{3})+(?!\d))/g, ".").replace(/\.(?=\d{0,2}$)/g, ",");
+    if (parseFloat(val) < 1) return val.replace(".",",");
+    
+    return `${val}`.replace(/\B(?=(\d{3})+(?!\d))/g, ".").replace(/\.(?=\d{0,2}$)/g, ",");
 }
+
 
 export const nFormatter = (num:number, digits:number) => {
     const lookup = [

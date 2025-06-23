@@ -1,5 +1,24 @@
 @tailwind components;
 
+.dark-theme {
+    .market-header {
+        .market-header-action {
+            a {
+                &.button-switch-theme {
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                        circle {
+                            @apply fill-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .market-header {
     @apply flex fixed top-0 inset-x-0 items-center justify-between py-[13px] px-[20px] z-[20] text-white h-[54px] bg-black;
     .triv-logo-header {
