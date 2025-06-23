@@ -192,6 +192,20 @@
                 }
             }
         }
+        .liverate-investasi-now-section {
+            .start-button-logo {
+                @apply flex gap-[30px];
+                .start-now-store {
+                    @apply flex gap-[14px] items-center;
+                    .apple-logo {
+                        background: url("/images/apps-store/apple-white.png") no-repeat !important;
+                    }
+                    .playstore-logo {
+                        background: url("/images/apps-store/playstore.png") no-repeat !important;
+                    }
+                }
+            }
+        }
     }
 }
 .liverate-page {
@@ -910,26 +924,30 @@
                 }
                 .start-now-store {
                     @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[31px] h-[37px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[30px] h-[32px];
-    
-                        }
+                    .apple-logo {
+                        @apply w-[31px] h-[37px];
+                        content: '';
+                        background: url("/images/apps-store/apple.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+                    }
+                    .playstore-logo {
+                        @apply w-[30px] h-[32px];
+                        content: '';
+                        background: url("/images/apps-store/playstore.png") no-repeat;
+                        background-position: center;
+                        background-size: contain !important;
+
                     }
                 }
                 .start-now-store-mobile {
                     @apply hidden gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
-                        }
+                    apple-logo {
+                        @apply w-[130.64px] h-[38.71px];
+                    }
+                    playstore-logo {
+                        @apply w-[114.43px] h-[37.02px];
+
                     }
                 }
            }
