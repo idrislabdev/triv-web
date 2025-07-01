@@ -68,7 +68,7 @@ export const TVChartContainer = (props: {defaultWidget:Partial<ChartingLibraryWi
 		return () => {
 			tvWidget.remove();
 		};
-	}, [props]);
+	}, [defaultWidget]);
 
 	return (
 		<>

@@ -1,7 +1,7 @@
 "use client"
 
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Script from "next/script";
 
 
@@ -24,7 +24,7 @@ export default function LiverateCoinChartWrapper(props: {symbol:string}) {
   const [defaultWidget, setDefaultWidget] = useState<Partial<ChartingLibraryWidgetOptions>>({})
   const { globals } = useGlobals()
 
-  useEffect(() => {
+  const setChart = useCallback(() => {
     setDefaultWidget({
       symbol: symbol,
       interval: "15" as ResolutionString,
@@ -39,7 +39,12 @@ export default function LiverateCoinChartWrapper(props: {symbol:string}) {
       autosize: true,
       theme: globals.theme === 'dark' ? 'dark' : 'light'    
     })
-  }, [symbol, setDefaultWidget, globals])
+  }, [symbol, globals])
+
+  useEffect(() => {
+    setChart()
+  }, [setChart])
+  
   return (
     <>
       <Script
