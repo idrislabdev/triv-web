@@ -87,7 +87,7 @@ export default async function ServiceLiteAxienfinityPage({ params }: any) {
                 }
             </head>
             <body>
-                <AxieinfinityPageWrap lang={params.lang} objLang={objLang} />
+                <AxieinfinityPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

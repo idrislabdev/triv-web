@@ -14,14 +14,14 @@ import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
 import ProductsServiceHeaderPaypalNewSection from '../sections/service-header-paypal-new-section'
 
-const PaypalPageWrap = (props: {lang:string, objLang:any}) => {
-  const {lang, objLang,} = props
+const PaypalPageWrap = (props: {asset:any, lang:string, objLang:any}) => {
+  const {asset, lang, objLang,} = props
   const objProduct = {code: 'USD', name: 'Paypal'}
   return (
     <>
         <MainHeader classText="header-white" lang={lang}/>
         <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-            <ProductsServiceHeaderPaypalNewSection lang={lang} objLang={objLang.header_section} objProduct={objProduct}/>
+            <ProductsServiceHeaderPaypalNewSection asset={asset} lang={lang} objLang={objLang.header_section} objProduct={objProduct}/>
             <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
             <ProductsLayananPaypalNewSection objLang={objLang.layanan_section} />
             <ProductsAffliateNewSection objLang={objLang.triv_affliate} />

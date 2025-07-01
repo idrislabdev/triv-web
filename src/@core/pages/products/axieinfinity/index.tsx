@@ -14,8 +14,8 @@ import Footer from '@/@core/components/footer'
 import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
 
-const AxieinfinityPageWrap = (props: {lang:string, objLang:any}) => {
-  const {lang, objLang,} = props
+const AxieinfinityPageWrap = (props: {asset:any, lang:string, objLang:any}) => {
+  const {asset, lang, objLang,} = props
   const objProduct = {code: 'AXS', name: 'Axieinfinity'}
 
   return (

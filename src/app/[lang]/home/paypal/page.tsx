@@ -1,10 +1,13 @@
 import React from 'react'
 import PaypalPageWrap from '@/@core/pages/products/paypal'
 import { getDictionariesPaypal } from '@/app/dictionaries'
+import { getAsset } from '@/@core/services/api';
 
 
 export default async function ServicePaypal({ params }: any) {
     const objLang = await getDictionariesPaypal(params.lang);
+    const resAsset = await getAsset('USD')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServicePaypal({ params }: any) {
                 }
             </head>
             <body>
-                <PaypalPageWrap lang={params.lang} objLang={objLang} />
+                <PaypalPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )
