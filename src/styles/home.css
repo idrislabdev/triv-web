@@ -1730,7 +1730,7 @@
                 .home-baru-crypto-container {
                     @apply flex-col px-[30px] py-[70px] gap-[30px] justify-center;
                     .baru-crypto-title {
-                        @apply flex flex-col gap-[20px] items-center p-0;
+                        @apply flex flex-col gap-[20px] items-center p-0 w-full;
                         h5 {
                             @apply text-[14px]/[21px] font-bold text-black;
                         }
