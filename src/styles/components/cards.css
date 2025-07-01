@@ -56,7 +56,7 @@
         .card-coin-desc {
             span {
                 &.span-text {
-                    @apply hidden;
+                    @apply !hidden;
                 }
                 &.span-label {
                     @apply opacity-100 visible;

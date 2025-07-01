@@ -11,8 +11,22 @@
         @apply !text-slate-300;
     }
     input,select {
-        @apply bg-slate-800 !text-white border-slate-800 caret-white;
+        @apply !bg-[#2E3339] !text-white border-[#2E3339];
         &::placeholder {
+            @apply text-slate-400;
+        }
+    }
+    select {
+        appearance:none;
+        background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="black"/></svg>');
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 15px;
+        background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="white"/></svg>') !important;
+        option {
+            @apply text-white;
+        }
+        option:disabled {
             @apply text-slate-400;
         }
     }
@@ -1397,7 +1411,7 @@
                     .button-area {
                         @apply flex items-center gap-[39px];
                         a {
-                            @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;   
+                            @apply flex justify-center items-center gap-[4px] bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;   
                              
                         }
                         .app-store-list {
@@ -1926,6 +1940,14 @@
                                 p {
                                     @apply text-[4px]/[8px] text-white font-medium w-[80%];
                                 }
+                                @media (max-width:330px) {
+                                    h2 {
+                                        @apply text-[9px]/[13px];
+                                    }
+                                    p {
+                                        @apply text-[4px]/[6px];
+                                    }
+                                }
                             }
                             .button-area {
                                 @apply gap-[7px];
@@ -1952,6 +1974,11 @@
                             @apply flex-1 overflow-hidden;
                             img {
                                 @apply absolute bottom-0 right-0 w-[150px];
+                            }
+                            @media (max-width:330px) {
+                                img {
+                                    @apply w-[130px];
+                                }
                             }
                         }
                     }
