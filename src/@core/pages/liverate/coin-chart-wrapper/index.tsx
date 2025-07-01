@@ -25,7 +25,6 @@ export default function LiverateCoinChartWrapper(props: {symbol:string}) {
   const { globals } = useGlobals()
 
   useEffect(() => {
-    console.log(globals.theme)
     setDefaultWidget({
       symbol: symbol,
       interval: "15" as ResolutionString,
@@ -39,7 +38,7 @@ export default function LiverateCoinChartWrapper(props: {symbol:string}) {
       fullscreen: false,
       autosize: true,
       theme: globals.theme === 'dark' ? 'dark' : 'light'    
-})
+    })
   }, [symbol, setDefaultWidget, globals])
   return (
     <>

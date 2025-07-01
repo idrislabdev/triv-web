@@ -6,7 +6,7 @@ import { getAsset } from '@/@core/services/api';
 
 export default async function ServicePaypal({ params }: any) {
     const objLang = await getDictionariesPaypal(params.lang);
-    const resAsset = await getAsset('USD')
+    const resAsset = await getAsset('PAYPAL')
     const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
