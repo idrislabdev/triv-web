@@ -1,11 +1,26 @@
 "use client"
 
+import { IStaking } from '@/@core/@types/interfaces'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import CurrencyInput from 'react-currency-input-field'
 
-const StakingCalculatorSection = (props: {objLang:any}) => {
-    const { objLang } = props
-    const [selectedAsset, setSelectedAsset] = useState('ETH')
+const StakingCalculatorSection = (props: {objLang:any, stakings: any, }) => {
+    const { objLang, stakings } = props
+    const [inputVal, setInputVal] = useState("0");
+    const [asset, setAsset] = useState<IStaking>(stakings.find((x:IStaking) => x.currency === 'ETH'))
+    const [yearlyReward, setYearlyReward] = useState(0);
+    const [monthlyReward, setMonthlyReward] = useState(0);
+    const [dailyReward, setDailyReward] = useState(0);
+    const selectAsset = (val: string) => {
+        setAsset(stakings.find((x:any) => x.currency === val))
+    }
+
+    useEffect(() => {
+        setYearlyReward((asset.apy / 100) * parseInt(inputVal))
+        setMonthlyReward(((asset.apy / 52) / 100) * parseInt(inputVal))
+        setDailyReward(((asset.apy / 365) / 100) * parseInt(inputVal))
+    }, [inputVal, asset.apy])
 
     return (
         <section className='staking-calculator-section'>
@@ -18,38 +33,43 @@ const StakingCalculatorSection = (props: {objLang:any}) => {
                         <div className='sub-subcontainer'>
                             <div className='form-input'>
                                 <label>Stake Asset</label>
-                                <select defaultValue={selectedAsset}>
-                                    <option value="ETH">ETH</option>
-                                    <option value="FTM">FTM</option>
-                                    <option value="GRT">GRT</option>
+                                <select defaultValue={asset.currency} onChange={e => selectAsset(e.target.value)}>
+                                    {stakings.map((item:any, index:number) => (
+                                        <option value={item.currency} key={index}>{item.currency}</option>
+                                    ))}
                                 </select>
                             </div>
                             <div className='form-input'>
                                 <label>Amount Stake</label>
                                 <div className='group-input'>
-                                    <input />
-                                    <span className='prepend'>ETH</span>
+                                    <CurrencyInput
+                                        value={inputVal}
+                                        decimalSeparator="," 
+                                        groupSeparator="."
+                                        onValueChange={(value) => setInputVal(value ? value : "0")}
+                                    />
+                                    <span className='prepend'>{asset.currency}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='middle-subcontainer'>
                         <div className='sub-subcontainer'>
-                            <label>4-6<span>%</span></label>
+                            <label>{asset.apy}<span>%</span></label>
                             <span>Annual Yield (Est.)</span>
                         </div>
                         <div className='sub-subcontainer'>
-                            <label>0.0291992<span>ETH</span></label>
+                            <label>{dailyReward.toFixed(7)} <span>{asset.currency}</span></label>
                             <span>Daily Reward (Est.)</span>
                         </div>
                     </div>
                     <div className='middle-subcontainer'>
                         <div className='sub-subcontainer'>
-                            <label>0.389029<span>ETH</span></label>
+                            <label>{monthlyReward.toFixed(7)} <span>{asset.currency}</span></label>
                             <span>Monthly Reward (Est.)</span>
                         </div>
                         <div className='sub-subcontainer'>
-                            <label>0.389029<span>ETH</span></label>
+                            <label>{yearlyReward.toFixed(7)} <span>{asset.currency}</span></label>
                             <span>Yearly Reward (Est.)</span>
                         </div>
                     </div>
