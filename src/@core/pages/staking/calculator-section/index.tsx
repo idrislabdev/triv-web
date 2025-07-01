@@ -44,8 +44,8 @@ const StakingCalculatorSection = (props: {objLang:any, stakings: any, }) => {
                                 <div className='group-input'>
                                     <CurrencyInput
                                         value={inputVal}
-                                        decimalSeparator="," 
-                                        groupSeparator="."
+                                        decimalSeparator="." 
+                                        groupSeparator=","
                                         onValueChange={(value) => setInputVal(value ? value : "0")}
                                     />
                                     <span className='prepend'>{asset.currency}</span>

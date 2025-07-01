@@ -2,9 +2,13 @@ import React from 'react'
 import EosPageWrap from '@/@core/pages/products/eos'
 import { getDictionariesEos } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceEosPage({ params }: any) {
     const objLang = await getDictionariesEos(params.lang);
+    const resAsset = await getAsset('EOS')
+    const asset:any = resAsset.data.data
+    
     return (
     <html lang={params.lang}>
         <head>
@@ -84,7 +88,7 @@ export default async function ServiceEosPage({ params }: any) {
             }
         </head>
         <body>
-            <EosPageWrap lang={params.lang} objLang={objLang} />
+            <EosPageWrap asset={asset} lang={params.lang} objLang={objLang} />
         </body>
     </html>
   )

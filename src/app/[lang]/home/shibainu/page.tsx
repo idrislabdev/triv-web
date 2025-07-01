@@ -2,9 +2,12 @@ import React from 'react'
 import ShibainuPageWrap from '@/@core/pages/products/shibainu'
 import { getDictionariesShibainu } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteShibainuPage({ params }: any) {
     const objLang = await getDictionariesShibainu(params.lang);
+    const resAsset = await getAsset('SHIB')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceLiteShibainuPage({ params }: any) {
                 }
             </head>
             <body>
-                <ShibainuPageWrap lang={params.lang} objLang={objLang} />
+                <ShibainuPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

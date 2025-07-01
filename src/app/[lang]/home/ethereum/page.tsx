@@ -2,9 +2,13 @@ import React from 'react'
 import EthereumPageWrap from '@/@core/pages/products/ethereum'
 import { getDictionariesEtherum } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceEthereumPage({ params }: any) {
     const objLang = await getDictionariesEtherum(params.lang);
+    const resAsset = await getAsset('ETH')
+    const asset:any = resAsset.data.data
+
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +88,7 @@ export default async function ServiceEthereumPage({ params }: any) {
                 }
             </head>
             <body>
-                <EthereumPageWrap lang={params.lang} objLang={objLang} />
+                <EthereumPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

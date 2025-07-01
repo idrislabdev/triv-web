@@ -89,7 +89,7 @@ export default async function ServiceLiteCardanoPage({ params }: any) {
                 }
             </head>
             <body>
-                <CardanoPageWrap lang={params.lang} objLang={objLang} />
+                <CardanoPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

@@ -2,9 +2,12 @@ import React from 'react'
 import LitecoinPageWrap from '@/@core/pages/products/litecoin'
 import { getDictionariesLitecoin } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteCoinPage({ params }: any) {
     const objLang = await getDictionariesLitecoin(params.lang);
+    const resAsset = await getAsset('LTC')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceLiteCoinPage({ params }: any) {
                 }
             </head>
             <body>
-                <LitecoinPageWrap lang={params.lang} objLang={objLang} />
+                <LitecoinPageWrap asset={asset} lang={params.lang} objLang={objLang} />
 
             </body>
         </html>

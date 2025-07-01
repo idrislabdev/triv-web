@@ -2,9 +2,12 @@ import React from 'react'
 import PolokadotPageWrap from '@/@core/pages/products/polkadot'
 import { getDictionariesPolkadot } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLitePolkadotPage({ params }: any) {
     const objLang = await getDictionariesPolkadot(params.lang);
+    const resAsset = await getAsset('DOT')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceLitePolkadotPage({ params }: any) {
                 }
             </head>
             <body>
-                <PolokadotPageWrap lang={params.lang} objLang={objLang} />
+                <PolokadotPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

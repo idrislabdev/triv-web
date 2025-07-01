@@ -2,9 +2,13 @@ import React from 'react'
 import TronPageWrap from '@/@core/pages/products/tron';
 import { getDictionariesTron } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteTronPage({ params }: any) {
     const objLang = await getDictionariesTron(params.lang);
+    const resAsset = await getAsset('TRX')
+    const asset:any = resAsset.data.data
+
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +88,7 @@ export default async function ServiceLiteTronPage({ params }: any) {
                 }
             </head>
             <body>
-                <TronPageWrap lang={params.lang} objLang={objLang} />
+                <TronPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

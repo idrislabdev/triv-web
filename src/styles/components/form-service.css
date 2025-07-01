@@ -52,8 +52,16 @@
     .description {
         @apply text-[16px]/[24px] text-neutral-700 font-medium;
     }
-    .nominal {
-        @apply text-[24px]/[36px] font-bold text-neutral-800;
+    .group-input {
+        span {
+            &.append {
+                @apply text-[24px]/[36px] font-bold text-neutral-800 top-[2px];
+            }
+        }
+        input {
+            @apply text-[24px]/[36px] font-bold text-neutral-800 !px-[45px];
+
+        }
     }
     .button-group {
         @apply flex items-center gap-[10px];

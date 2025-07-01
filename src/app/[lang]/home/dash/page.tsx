@@ -87,7 +87,7 @@ export default async function ServiceDashPage({ params }: any) {
                 }
             </head>
             <body>
-                <DashPageWrap lang={params.lang} objLang={objLang} />
+                <DashPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

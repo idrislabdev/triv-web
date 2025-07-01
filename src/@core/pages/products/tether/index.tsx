@@ -14,15 +14,15 @@ import Footer from '@/@core/components/footer'
 import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
 
-const TetherPageWrap = (props: {lang:string, objLang:any}) => {
-  const {lang, objLang,} = props
+const TetherPageWrap = (props: {asset:any, lang:string, objLang:any}) => {
+  const {asset, lang, objLang,} = props
   const objProduct = {code: 'USDT', name: 'Tether'}
 
   return (
     <>
         <MainHeader classText="header-white" lang={lang}/>
         <main className='products-page sm:mobile-responsive md:mobile-responsive light-theme'>
-            <ProductsServiceHeaderNewSection lang={lang} objLang={objLang.header_section} objProduct={objProduct} />
+            <ProductsServiceHeaderNewSection asset={asset} lang={lang} objLang={objLang.header_section} objProduct={objProduct} />
             <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
             <ProductsLayananNewSection objLang={objLang.layanan_section} />
             <ProductsAffliateNewSection objLang={objLang.triv_affliate} />

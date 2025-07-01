@@ -96,6 +96,11 @@
                                 }
                             }
                         }
+                       .group-input {
+                            input {
+                                @apply bg-[#1b1f22] border-[#1b1f22] !text-white;
+                            }
+                       }
                         .button-group {
                             button  {
                                 @apply bg-[#2E3339] text-white;
@@ -268,8 +273,15 @@
                         .description {
                             @apply text-[15px]/[23px];
                         }
-                        .nominal {
-                            @apply text-[22px]/[34px];
+                        .group-input {
+                            span {
+                                &.append {
+                                    @apply text-[22px]/[34px];
+                                }
+                            }
+                            input {
+                               @apply text-[22px]/[34px];
+                            }
                         }
                         .button-group {
                             @apply flex items-center gap-[10px];
@@ -348,8 +360,15 @@
                         .description {
                             @apply text-[13px]/[20px];
                         }
-                        .nominal {
-                            @apply text-[21px]/[31px];
+                        .group-input {
+                            span {
+                                &.append {
+                                    @apply text-[21px]/[31px] top-[4px];
+                                }
+                            }
+                            input {
+                               @apply text-[21px]/[31px] px-[30px];
+                            }
                         }
                         .button-group {
                             @apply flex items-center gap-[8px];
@@ -428,8 +447,15 @@
                         .description {
                             @apply text-[12px]/[19px];
                         }
-                        .nominal {
+                        .group-input {
+                            span {
+                                &.append {
+                                    @apply text-[20px]/[30px];
+                                }
+                            }
+                            input {
                             @apply text-[20px]/[30px];
+                            }
                         }
                         .button-group {
                             @apply flex items-center gap-[8px];
@@ -1648,8 +1674,15 @@
                             .description {
                                 @apply text-[9px]/[14px] text-neutral-700 font-medium;
                             }
-                            .nominal {
-                                @apply text-[14px]/[21px] font-bold text-neutral-800;
+                            .group-input {
+                                span {
+                                    &.append {
+                                        @apply text-[14px]/[21px] top-[10px];
+                                    }
+                                }
+                                input {
+                                    @apply text-[14px]/[21px] !px-[30px];
+                                }
                             }
                             .button-group {
                                 @apply flex items-center gap-[10px];

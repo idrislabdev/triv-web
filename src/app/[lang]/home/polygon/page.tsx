@@ -2,10 +2,13 @@ import React from 'react'
 import MaticPolygonPageWrap from '@/@core/pages/products/matic-polygon'
 import { getDictionariesMaticPolgyon } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 
 export default async function ServiceMaticPolygonPage({ params }: any) {
     const objLang = await getDictionariesMaticPolgyon(params.lang);
+     const resAsset = await getAsset('MATIC')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -85,7 +88,7 @@ export default async function ServiceMaticPolygonPage({ params }: any) {
                 }
             </head>
             <body>
-                <MaticPolygonPageWrap lang={params.lang} objLang={objLang} />
+                <MaticPolygonPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

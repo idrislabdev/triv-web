@@ -91,7 +91,7 @@ export default async function ServiceBitcoinPage({ params }: any) {
                 }
             </head>
             <body>
-                <BitcoinPageWrap lang={params.lang} objLang={objLang} />
+                <BitcoinPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

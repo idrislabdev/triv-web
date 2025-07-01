@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { ArrowRightIcon } from '@/@core/components/custom-icons'
 import FormService from '@/@core/components/forms/form-service'
 
-const ProductsServiceHeaderNewSection = (props: {lang:any, objLang:any, objProduct:any}) => {
-    const { lang, objLang, objProduct } = props
+const ProductsServiceHeaderNewSection = (props: {asset:any, lang:any, objLang:any, objProduct:any}) => {
+    const { asset, lang, objLang, objProduct } = props
     const inViewport = () => {
         const elements = document.getElementsByClassName("products-service-hero-new-section");
         var element = elements[0];
@@ -46,7 +46,7 @@ const ProductsServiceHeaderNewSection = (props: {lang:any, objLang:any, objProdu
                     </div>
                 </div>
                 <div className='right-subcontainer fade-in entry-5'>
-                    <FormService lang={lang} objProduct={objProduct} objLang={objLang} imgObj={objLang.image_url ? objLang.image_url : ''}/>
+                    <FormService asset={asset} lang={lang} objProduct={objProduct} objLang={objLang} imgObj={objLang.image_url ? objLang.image_url : ''}/>
                 </div>
             </div>
         </section>

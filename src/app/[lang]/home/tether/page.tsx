@@ -2,9 +2,13 @@ import React from 'react'
 import TetherPageWrap from '@/@core/pages/products/tether'
 import { getDictionariesTether } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceTetherPage({ params }: any) {
     const objLang = await getDictionariesTether(params.lang);
+    const resAsset = await getAsset('USDT')
+    const asset:any = resAsset.data.data
+
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +88,7 @@ export default async function ServiceTetherPage({ params }: any) {
                 }
             </head>
             <body>
-                <TetherPageWrap lang={params.lang} objLang={objLang} />
+                <TetherPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

@@ -2,9 +2,12 @@ import React from 'react'
 import PepePageWrap from '@/@core/pages/products/pepe';
 import { getDictionariesPepe } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLitePepePage({ params }: any) {
     const objLang = await getDictionariesPepe(params.lang);
+    const resAsset = await getAsset('PEPE')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceLitePepePage({ params }: any) {
                 }
             </head>
             <body>
-                <PepePageWrap lang={params.lang} objLang={objLang} />
+                <PepePageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

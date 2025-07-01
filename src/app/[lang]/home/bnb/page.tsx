@@ -88,7 +88,7 @@ export default async function ServiceBnbPage({ params }: any) {
                 }
             </head>
             <body>
-                <BNBPageWrap lang={params.lang} objLang={objLang} />
+                <BNBPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

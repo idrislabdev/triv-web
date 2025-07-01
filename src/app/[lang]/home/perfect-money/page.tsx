@@ -1,10 +1,13 @@
 import React from 'react'
 import { getDictionariesPerfectMoney } from '@/app/dictionaries'
 import PerfectMoneyPageWrap from '@/@core/pages/products/perfect-money'
+import { getAsset } from '@/@core/services/api';
 
 
 export default async function ServicePerfectMoney({ params }: any) {
     const objlang = await getDictionariesPerfectMoney(params.lang);
+    const resAsset = await getAsset('USD')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -85,7 +88,7 @@ export default async function ServicePerfectMoney({ params }: any) {
                 }
             </head>
             <body>
-                <PerfectMoneyPageWrap lang={params.lang} objLang={objlang} />
+                <PerfectMoneyPageWrap asset={asset} lang={params.lang} objLang={objlang} />
             </body>
         </html>
   )

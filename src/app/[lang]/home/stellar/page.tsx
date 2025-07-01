@@ -2,9 +2,12 @@ import React from 'react'
 import StellarPageWrap from '@/@core/pages/products/stellar'
 import { getDictionariesStelllar } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceStellarPage({ params }: any) {
     const objLang = await getDictionariesStelllar(params.lang);
+    const resAsset = await getAsset('XLM')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceStellarPage({ params }: any) {
                 }
             </head>
             <body>
-                <StellarPageWrap lang={params.lang} objLang={objLang} />
+                <StellarPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

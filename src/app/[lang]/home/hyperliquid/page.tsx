@@ -2,9 +2,12 @@ import React from 'react'
 import HyperliquidPageWrap from '@/@core/pages/products/hyperliquid';
 import { getDictionariesHyperliquid } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteHyperliquidPage({ params }: any) {
     const objLang = await getDictionariesHyperliquid(params.lang);
+    const resAsset = await getAsset('HYPE')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceLiteHyperliquidPage({ params }: any) {
                 }
             </head>
             <body>
-                <HyperliquidPageWrap lang={params.lang} objLang={objLang} />
+                <HyperliquidPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

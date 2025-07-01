@@ -2,9 +2,12 @@ import React from 'react'
 import AxieinfinityPageWrap from '@/@core/pages/products/axieinfinity'
 import { getDictionariesAxieinfinity } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteAxienfinityPage({ params }: any) {
     const objLang = await getDictionariesAxieinfinity(params.lang);
+    const resAsset = await getAsset('AXS')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>

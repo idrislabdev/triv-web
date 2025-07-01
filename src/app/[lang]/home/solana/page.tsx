@@ -2,9 +2,12 @@ import React from 'react'
 import SolanaPageWrap from '@/@core/pages/products/solana'
 import { getDictionariesSolana } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteSolanaPage({ params }: any) {
     const objLang = await getDictionariesSolana(params.lang);
+    const resAsset = await getAsset('SOL')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceLiteSolanaPage({ params }: any) {
                 }
             </head>
             <body>
-                <SolanaPageWrap lang={params.lang} objLang={objLang} />
+                <SolanaPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

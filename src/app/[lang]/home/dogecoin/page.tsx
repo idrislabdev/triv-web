@@ -2,9 +2,12 @@ import React from 'react'
 import DogecoinPageWrap from '@/@core/pages/products/dogecoin'
 import { getDictionariesDogeCoin } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceDogeCoinPage({ params }: any) {
     const objLang = await getDictionariesDogeCoin(params.lang);
+    const resAsset = await getAsset('DASH')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -85,7 +88,7 @@ export default async function ServiceDogeCoinPage({ params }: any) {
                 }
             </head>
             <body>
-                <DogecoinPageWrap lang={params.lang} objLang={objLang} />
+                <DogecoinPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )

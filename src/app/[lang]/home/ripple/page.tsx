@@ -2,9 +2,12 @@ import React from 'react'
 import RipplePageWrap from '@/@core/pages/products/ripple'
 import { getDictionariesRipple } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceRipplePage({ params }: any) {
     const objLang = await getDictionariesRipple(params.lang);
+     const resAsset = await getAsset('XRP')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
@@ -84,7 +87,7 @@ export default async function ServiceRipplePage({ params }: any) {
                 }
             </head>
             <body>
-                <RipplePageWrap lang={params.lang} objLang={objLang} /> 
+                <RipplePageWrap asset={asset} lang={params.lang} objLang={objLang} /> 
             </body>
         </html>
   )

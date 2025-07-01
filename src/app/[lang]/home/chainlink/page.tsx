@@ -88,7 +88,7 @@ export default async function ServiceChainLinkPage({ params }: any) {
                 }
             </head>
             <body>
-                <ChainlinkPageWrap lang={params.lang} objLang={objLang} />
+                <ChainlinkPageWrap asset={asset} lang={params.lang} objLang={objLang} />
             </body>
         </html>
   )
