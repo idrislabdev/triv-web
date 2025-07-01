@@ -2,9 +2,12 @@ import React from 'react'
 import BNBPageWrap from '@/@core/pages/products/bnb'
 import { getDictionariesBnb } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceBnbPage({ params }: any) {
     const objLang = await getDictionariesBnb(params.lang);
+    const resAsset = await getAsset('BNB')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>

@@ -1,23 +1,14 @@
 import React from 'react'
-import Footer from '@/@core/components/footer'
-import MainHeader from '@/@core/components/main-header'
-
-import ProductsEwalletSection from '@/@core/pages/products/ewallet-section'
-import ProductsInvestasiNowSection from '@/@core/pages/products/investasi-now-section'
-import ProductsTestimonyCarouselSection from '@/@core/pages/liverate/testimony-carousel-section'
-import ProductsAffliateSection from '@/@core/pages/products/affliate-section'
-import ProductsServiceHeaderSection from '@/@core/pages/products/service-header-section'
-import ProductsDeviceSection from '@/@core/pages/products/device-section'
-import ProductsRegulasiSection from '@/@core/pages/products/regulasi-section'
-import ProductsLayananSection from '@/@core/pages/products/layanan-section'
-import ProductsAverageSection from '@/@core/pages/products/average-section'
 
 import { getDictionariesCardano } from '@/app/dictionaries'
 import '@/styles/products.css'
 import CardanoPageWrap from '@/@core/pages/products/cardano'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceLiteCardanoPage({ params }: any) {
     const objLang = await getDictionariesCardano(params.lang);
+    const resAsset = await getAsset('ADA')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>

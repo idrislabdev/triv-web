@@ -4,10 +4,13 @@ import { getDictionariesBitcoin } from '@/app/dictionaries'
 
 import '@/styles/products-new.css'
 import '@/styles/components/form-service.css'
+import { getAsset } from '@/@core/services/api'
 
 
 export default async function ServiceBitcoinPage({ params }: any) {
     const objLang = await getDictionariesBitcoin(params.lang);
+    const resAsset = await getAsset('BTC')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>

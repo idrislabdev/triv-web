@@ -2,9 +2,12 @@ import React from 'react'
 import ChainlinkPageWrap from '@/@core/pages/products/chainlink'
 import { getDictionariesChainlink } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceChainLinkPage({ params }: any) {
     const objLang = await getDictionariesChainlink(params.lang);
+    const resAsset = await getAsset('LINK')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>

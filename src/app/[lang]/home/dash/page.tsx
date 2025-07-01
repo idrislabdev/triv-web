@@ -2,9 +2,12 @@ import React from 'react'
 import DashPageWrap from '@/@core/pages/products/dash'
 import { getDictionariesDash } from '@/app/dictionaries'
 import '@/styles/products.css'
+import { getAsset } from '@/@core/services/api';
 
 export default async function ServiceDashPage({ params }: any) {
     const objLang = await getDictionariesDash(params.lang);
+    const resAsset = await getAsset('DASH')
+    const asset:any = resAsset.data.data
     return (
         <html lang={params.lang}>
             <head>
