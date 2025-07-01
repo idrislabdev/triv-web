@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import 'swiper/css';
 import { ILiverateMini } from '@/@core/@types/interfaces';
+import { ArrowRightIcon } from '@/@core/components/custom-icons';
 
 const BaruCryptoSection = (props: {objLang:any}) => {
     const { objLang } = props
@@ -13,7 +14,7 @@ const BaruCryptoSection = (props: {objLang:any}) => {
                 <div className='baru-crypto-title'>
                     <h5>{objLang.title}</h5>
                     <p>{objLang.description}</p>
-                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>{objLang.button_text}</a>
+                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>{objLang.button_text} <ArrowRightIcon color={'#fff'}/></a>
                 </div>
                 <div className='baru-crypto-videos'>
                     <Swiper slidesPerView={'auto'} loop={true}>
@@ -51,7 +52,7 @@ const BaruCryptoSection = (props: {objLang:any}) => {
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                    <a>Lihat Semua Video</a>
+                    <a href='https://www.youtube.com/@TrivIndonesia' target='_blank'>{objLang.button_text} <ArrowRightIcon color={'#fff'}/></a>
                 </div>
             </div>
         </section>

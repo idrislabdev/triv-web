@@ -991,7 +991,12 @@
                     @apply text-[16px]/[32px] font-medium text-black;
                 }
                 a {
-                    @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex flex-col justify-center items-center;
+                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+                    svg {
+                        path {
+                            @apply fill-white;
+                        }
+                    }
                 }
             }
             .baru-crypto-videos {
@@ -1730,7 +1735,7 @@
                 .home-baru-crypto-container {
                     @apply flex-col px-[30px] py-[70px] gap-[30px] justify-center;
                     .baru-crypto-title {
-                        @apply flex flex-col gap-[20px] items-center p-0 w-full;
+                        @apply flex flex-col gap-[20px] justify-center text-center items-center p-0 w-full;
                         h5 {
                             @apply text-[14px]/[21px] font-bold text-black;
                         }
@@ -1770,7 +1775,13 @@
                             }
                         }
                         a {
-                            @apply bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px] flex flex-col justify-center items-center;
+                            @apply flex items-center justify-center gap-[8px] bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px];
+                            svg {
+                                @apply w-[18px] h-[18px];
+                                path {
+                                    @apply fill-white;
+                                }
+                            }
                         }
                         
                     }
