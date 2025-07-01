@@ -59,7 +59,7 @@ const FormService = (props: {asset:any, lang:any, objProduct:any, imgObj:string,
             <div className='get-input'>
                 <label>{objLangForm.you_will_get}</label>
                 <div className='label-value'>
-                    <span>{objProduct.code} {value.toFixed(7)}</span>
+                    <span>{asset.currency} {value.toFixed(7)}</span>
                 </div>
             </div>
             <button className={`${buttonType == 'buy' ? 'btn-primary' : 'btn-danger'}`}>

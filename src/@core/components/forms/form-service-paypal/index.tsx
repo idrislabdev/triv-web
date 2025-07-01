@@ -59,7 +59,7 @@ const FormServicePaypal = (props: {asset:any, lang:any, objProduct:any, imgObj:s
             <div className='get-input'>
                 <label>{objLangForm.you_will_get}</label>
                 <div className='label-value'>
-                    <span>{objProduct.code} 0</span>
+                    <span>{asset.currency} {value.toFixed(7)}</span>
                 </div>
             </div>
             <button className='btn-primary'>{objLangForm.buy} {objProduct.name} {objLangForm.now}</button>

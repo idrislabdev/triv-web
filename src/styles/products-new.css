@@ -204,38 +204,41 @@
                             @apply w-[260px] h-[48px] rounded-[30px] text-[14px]/[21px];
                         }
                     }
-                    h5 {
-                        @apply hidden;
-                    }
-                    .logo-area {
-                        @apply flex items-center gap-[30px];
-                        .bappebti-logo {
-                            @apply w-[147px] h-[34px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
+                    .section-terdaftar {
+                        @apply flex flex-col gap-[19px];
+                        h5 {
+                            @apply text-[16px]/[32px] text-[#646464] font-medium;
                         }
-                        .kominfo-logo {
-                            @apply w-[118px] h-[37px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .bsi-logo {
-                            @apply w-[83px] h-[44px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .cisa-logo {
-                            @apply w-[110px] h-[44px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
+                        .logo-area {
+                            @apply flex items-center gap-[30px];
+                            .bappebti-logo {
+                                @apply w-[147px] h-[34px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .kominfo-logo {
+                                @apply w-[118px] h-[37px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .bsi-logo {
+                                @apply w-[83px] h-[44px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .cisa-logo {
+                                @apply w-[110px] h-[44px];
+                                content: '';
+                                background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
                         }
                     }
                 }
@@ -325,20 +328,25 @@
                                 @apply w-1/2 h-[40px];
                             }
                         }
-                        .logo-area {
-                            @apply gap-[20px];
-                            .bappebti-logo {
-                                @apply w-[127px] h-[34px];
+                        .section-terdaftar {
+                            h5  {
+                                @apply text-[12px]/[19px];
                             }
-                            .kominfo-logo {
-                                @apply w-[98px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[83px] h-[44px];
+                            .logo-area {
+                                @apply gap-[20px];
+                                .bappebti-logo {
+                                    @apply w-[127px] h-[34px];
+                                }
+                                .kominfo-logo {
+                                    @apply w-[98px] h-[37px];
+                                }
+                                .bsi-logo {
+                                    @apply w-[83px] h-[44px];
 
-                            }
-                            .cisa-logo {
-                                @apply w-[90px] h-[43px];
+                                }
+                                .cisa-logo {
+                                    @apply w-[90px] h-[43px];
+                                }
                             }
                         }
                     }
@@ -412,20 +420,25 @@
                                 @apply w-1/2 h-[40px];
                             }
                         }
-                        .logo-area {
-                            @apply gap-[15px];
-                            .bappebti-logo {
-                                @apply w-[117px] h-[34px];
+                        .section-terdaftar {
+                            h5  {
+                                @apply text-[11px]/[18px];
                             }
-                            .kominfo-logo {
-                                @apply w-[88px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[73px] h-[44px];
+                            .logo-area {
+                                @apply gap-[15px];
+                                .bappebti-logo {
+                                    @apply w-[117px] h-[34px];
+                                }
+                                .kominfo-logo {
+                                    @apply w-[88px] h-[37px];
+                                }
+                                .bsi-logo {
+                                    @apply w-[73px] h-[44px];
 
-                            }
-                            .cisa-logo {
-                                @apply w-[80px] h-[43px];
+                                }
+                                .cisa-logo {
+                                    @apply w-[80px] h-[43px];
+                                }
                             }
                         }
                     }
@@ -1620,22 +1633,24 @@
                                     @apply w-[200px] h-[34px] rounded-[30px] text-[12px]/[18px];
                                 }
                             }
-                            h5 {
-                                @apply block text-[10px]/[15px] text-center text-neutral-700;
-                            }
-                            .logo-area {
-                                @apply gap-[5px] justify-center;
-                                .bappebti-logo {
-                                    @apply w-[60px] h-[13px];
+                            .section-terdaftar {
+                                h5 {
+                                    @apply text-[10px]/[15px] text-center text-neutral-700;
                                 }
-                                .kominfo-logo {
-                                    @apply w-[60px] h-[20px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[37px] h-[20px];
-                                }
-                                .cisa-logo {
-                                    @apply w-[51px] h-[22px];
+                                .logo-area {
+                                    @apply gap-[5px] justify-center;
+                                    .bappebti-logo {
+                                        @apply w-[60px] h-[13px];
+                                    }
+                                    .kominfo-logo {
+                                        @apply w-[60px] h-[20px];
+                                    }
+                                    .bsi-logo {
+                                        @apply w-[37px] h-[20px];
+                                    }
+                                    .cisa-logo {
+                                        @apply w-[51px] h-[22px];
+                                    }
                                 }
                             }
                         }

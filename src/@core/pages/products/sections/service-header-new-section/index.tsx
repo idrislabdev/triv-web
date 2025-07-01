@@ -36,12 +36,14 @@ const ProductsServiceHeaderNewSection = (props: {asset:any, lang:any, objLang:an
                             <button className='btn-primary'>{objLang.button_1} <ArrowRightIcon color={'#fff'}/></button>
                             <button className='btn-outline-primary'>{objLang.button_2} <ArrowRightIcon color={'#fff'}/></button>
                         </div>
-                        <h5>{objLang.registered_text}</h5>
-                        <div className='logo-area fade-in entry-4'>
-                            <div className='bappebti-logo'></div>
-                            <div className='kominfo-logo'></div>
-                            <div className='bsi-logo'></div>
-                            <div className='cisa-logo'></div>
+                        <div className='section-terdaftar fade-in entry-4'>
+                            <h5>{objLang.registered_text}</h5>
+                            <div className='logo-area'>
+                                <div className='bappebti-logo'></div>
+                                <div className='kominfo-logo'></div>
+                                <div className='bsi-logo'></div>
+                                <div className='cisa-logo'></div>
+                            </div>
                         </div>
                     </div>
                 </div>
