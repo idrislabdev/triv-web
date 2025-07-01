@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className='footer-primary'>
                     <div className='footer-primary-left'>
                         <div className='footer-triv-logo'>
-                            <Image src='/images/logos/triv-logo-dark.png' alt='triv logo dark logo' width={226} height={101}/>
+                            <Image src='/images/logos/triv-logo-big.png' alt='triv logo dark logo' width={0} height={0} sizes='100%'/>
                         </div>
                         <div className='footer-triv-address-logo'>
                             <div className='footer-address'>
@@ -27,13 +27,13 @@ const Footer = () => {
                             </div>
                             <div className='footer-socialmedia-list'>
                                 <ul>
-                                    <li><a><InstagramIcon color='white'/></a></li>
-                                    <li><a><YoutubeIcon color='white'/></a></li>
-                                    <li><a><LinkedinIcon color='white'/></a></li>
-                                    <li><a><FacebookIcon color='white'/></a></li>
-                                    <li><a><TwiterIcon color='white'/></a></li>
-                                    <li><a><TiktokIcon color='white'/></a></li>
-                                    <li><a><TelegramIcon color='white'/></a></li>
+                                    <li><a href='https://triv.co.id/instagram' target='_blank'><InstagramIcon color='white'/></a></li>
+                                    <li><a href='https://triv.co.id/youtube' target='_blank'><YoutubeIcon color='white'/></a></li>
+                                    <li><a href='https://id.linkedin.com/company/triv' target='_blank'><LinkedinIcon color='white'/></a></li>
+                                    <li><a href='https://www.facebook.com/Trivcoid-Triv-Indonesia-830427083739607' target='_blank'><FacebookIcon color='white'/></a></li>
+                                    <li><a href='https://triv.co.id/twitter' target='_blank'><TwiterIcon color='white'/></a></li>
+                                    <li><a href='https://triv.co.id/tiktok' target='_blank'><TiktokIcon color='white'/></a></li>
+                                    <li><a href='https://triv.co.id/grouptelegram' target='_blank'><TelegramIcon color='white'/></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -108,8 +108,8 @@ const Footer = () => {
                     <div className='footer-secondary-left'>
                         <div className='copyright-text'><label>© 2015 - {year.getFullYear()} PT Tiga Inti Utama. All Rights Reserved.</label></div>
                         <div className='footer-appstore'>
-                            <Image src='/images/apps-store/playstore-dark-logo.png' className='logo-playstore' alt='playstore logo' width={130} height={38}/>
-                            <Image src='/images/apps-store/appstore-dark-logo.png' className='logo-appstore' alt='appstore logo' width={114} height={38}/>
+                            <a href='https://play.google.com/store/apps/details?id=id.co.triv' target='_blank'><Image src='/images/apps-store/playstore-dark-logo.png' className='logo-playstore' alt='playstore logo' width={130} height={38}/></a>
+                            <a href='https://apps.apple.com/id/app/triv-buy-bitcoin-crypto/id1470919460' target='_blank'><Image src='/images/apps-store/appstore-dark-logo.png' className='logo-appstore' alt='appstore logo' width={114} height={38}/></a>
                         </div>
                     </div>
                     <div className='footer-secondary-right'>
