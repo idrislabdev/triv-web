@@ -146,7 +146,84 @@
             @apply p-[20px];
             .layanan-container {
                 .card-subcontainer {
-                    @apply !bg-[#1b1f22];
+                     &.swap {
+                        @apply bg-[#234324];
+                        .box-layanan {
+                            span {
+                                @apply  bg-[#67C48F];
+                                svg {
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.hoddl {
+                        @apply bg-[#4A270A];
+                        .box-layanan {
+                            span {
+                                @apply  bg-[#FF7F17];
+                                svg {
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.kirim {
+                        @apply bg-[#13413B];
+                        .box-layanan {
+                            span {
+                                @apply  bg-[#289C8C];
+                                svg {
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.jual-beli {
+                        @apply bg-[#1A3647];
+                        .box-layanan {
+                            span {
+                                @apply  bg-[#85C8FA];
+                                svg {
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.terima {
+                        @apply bg-[#4E3C06];
+                        .box-layanan {
+                            span {
+                                @apply  !bg-[#F2AF22];
+                                svg {
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.pulsa {
+                        @apply bg-[#451739];
+                        .box-layanan {
+                            span {
+                                @apply  bg-[#B63F9B];
+                                svg {
+                                    path {
+                                        @apply fill-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1771,84 +1848,6 @@
                    .card-subcontainer {
                         @apply flex-col h-[574px]  rounded-[22px];
                         padding-top: calc(var(--index) * var(--card-top-offset));
-                        &.swap {
-                            @apply bg-[#F0FAF0];
-                            .box-layanan {
-                                span {
-                                    @apply  bg-[#67C48F];
-                                    svg {
-                                        path {
-                                            @apply fill-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &.hoddl {
-                            @apply bg-[#FFF3E8];
-                            .box-layanan {
-                                span {
-                                    @apply  bg-[#FF7F17];
-                                    svg {
-                                        path {
-                                            @apply fill-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &.kirim {
-                            @apply bg-[#EBFBF9];
-                            .box-layanan {
-                                span {
-                                    @apply  bg-[#289C8C];
-                                    svg {
-                                        path {
-                                            @apply fill-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &.jual-beli {
-                            @apply bg-[#F4F8FB];
-                            .box-layanan {
-                                span {
-                                    @apply  bg-[#85C8FA];
-                                    svg {
-                                        path {
-                                            @apply fill-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &.terima {
-                            @apply bg-[#FFF9E6];
-                            .box-layanan {
-                                span {
-                                    @apply  !bg-[#F2AF22];
-                                    svg {
-                                        path {
-                                            @apply fill-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &.pulsa {
-                            @apply bg-[#F8ECF5];
-                            .box-layanan {
-                                span {
-                                    @apply  bg-[#B63F9B];
-                                    svg {
-                                        path {
-                                            @apply fill-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
                         .box-layanan {
                             @apply w-full justify-center items-center text-center;
                             span {

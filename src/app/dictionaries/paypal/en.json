@@ -32,7 +32,7 @@
         "content" : "Triv supports various types of transactions and not just paypal buying and selling. Swap, exchange or top up Paypal balance can be done in one application.",
         "card" : {
             "jual_beli" : {
-                "title" : "24/7 Buy & Sell Paypal Balance",
+                "title" : "24/7 Buy Paypal Balance",
                 "content" : "Unlike traditional investment instruments, Triv Exchange has no holidays. You can buy your Paypal balance in real-time with banks or e-wallets in seconds even on holidays.",
                 "image_url" : "/images/services/iphone-paypal.png",
                 "image_class" : "iphone"
