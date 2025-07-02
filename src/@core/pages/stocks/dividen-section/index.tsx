@@ -35,7 +35,7 @@ const StocksDividenSection = (props: {lang:string, objLang:any}) => {
                 </div>
                 <div className='fade-in entry-3'>
                   {/* <Marquee autoFill={true} speed={100} loop={0} gradient={true}> */}
-                  <Marquee speed={100} loop={0} gradient={true}>
+                  <Marquee speed={100} loop={0}>
                     <Image src='/images/logos/tesla.png' alt='tesla' width={0} height={0} sizes='100%' />
                     <Image src='/images/logos/amazon.png' alt='amazon' width={0} height={0} sizes='100%' />
                     <Image src='/images/logos/apple.png' alt='apple' width={0} height={0} sizes='100%' />
