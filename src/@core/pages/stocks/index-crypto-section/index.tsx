@@ -3,6 +3,7 @@ import { CaretDownIcon, CaretUpIcon } from '@/@core/components/custom-icons';
 import React from 'react'
 import Marquee from "react-fast-marquee";
 import { ILiverateMini } from '@/@core/@types/interfaces';
+import { formatterNumber2 } from '@/@core/utils/general';
 
 const StocksIndexCryptoSection = (props : {liverates:ILiverateMini[]}) => {
     const {liverates} = props
@@ -12,10 +13,23 @@ const StocksIndexCryptoSection = (props : {liverates:ILiverateMini[]}) => {
                 {liverates.map((item:ILiverateMini, index:number) => (
                     <div className='index-cyrpto-content' key={index}>
                         <div className='crypto-title'>
-                            <label>BTC <span>Rp 10.000.000</span></label>
+                            <label>{item.code} <span>Rp {formatterNumber2(item.rate.toString().replace(".", ","))}</span></label>
                         </div>
                         <div className='crypto-index'>
-                            <label><CaretUpIcon color={'#71BBED'} /><span className='text-red-600'>8.08%</span></label>
+                            <label>
+                                {item.change_24h < 0 && 
+                                    <>
+                                        <CaretDownIcon color={'#EB5757'} />
+                                        <span className='text-[#EB5757]'>{item.change_24h * -1}%</span>
+                                    </>
+                                }
+                                {item.change_24h > 0 && 
+                                    <>
+                                        <CaretUpIcon color={'#71BBED'} />
+                                        <span className='text-[#71BBED]'>{item.change_24h}%</span>
+                                    </>
+                                }
+                            </label>
                         </div>
                     </div>
                 ))}
