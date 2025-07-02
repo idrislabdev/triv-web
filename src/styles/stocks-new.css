@@ -15,6 +15,34 @@
         }
         .stocks-hero-section { 
             @apply bg-[#000000];
+            .stocks-hero-section-area {
+                .section-text {
+                    .section-terdaftar {
+                        .terdaftar-list-logo {
+                            .bappebti-logo {
+                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .kominfo-logo {
+                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .bsi-logo {
+                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                            .cisa-logo {
+                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
+                                background-position: center;
+                                background-size: contain !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .stocks-banner-section {
             background: linear-gradient(to bottom, transparent,#000) #141414;
@@ -100,21 +128,39 @@
                     }
                 }
                 .section-terdaftar {
-                    @apply flex gap-[30px] items-center;
+                    @apply flex flex-col gap-[19px];
                     label  {
                         @apply text-[16px]/[32px] text-[#646464] font-medium;
                     }
                     .terdaftar-list-logo {
-                        @apply flex gap-[14px] items-center;
+                        @apply flex gap-[30px] items-center;
                         .bappebti-logo {
-                            img {
-                                @apply w-[105px] h-[24px];
-                            }
+                            @apply w-[147px] h-[34px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
                         }
                         .kominfo-logo {
-                            img {
-                                @apply w-[105px] h-[36px];
-                            }
+                            @apply w-[118px] h-[37px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
+                        }
+                        .bsi-logo {
+                            @apply w-[83px] h-[44px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
+                        }
+                        .cisa-logo {
+                            @apply w-[110px] h-[44px];
+                            content: '';
+                            background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
+                            background-position: center;
+                            background-size: contain !important;
                         }
                     }
                 }
@@ -158,20 +204,23 @@
                         @apply text-[16px]/[23px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
                     }
                     .section-terdaftar {
-                        @apply flex gap-[30px] items-center;
                         label  {
                             @apply text-[14px]/[21px];
                         }
                         .terdaftar-list-logo {
+                            @apply gap-[20px];
                             .bappebti-logo {
-                                img {
-                                    @apply w-[105px] h-full;
-                                }
+                                @apply w-[137px] h-[34px];
                             }
                             .kominfo-logo {
-                                img {
-                                    @apply w-[105px] h-full;
-                                }
+                                @apply w-[108px] h-[37px];
+                            }
+                            .bsi-logo {
+                                @apply w-[73px] h-[44px];
+
+                            }
+                            .cisa-logo {
+                                @apply w-[100px] h-[43px];
                             }
                         }
                     }
@@ -211,20 +260,23 @@
                         @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
                     }
                     .section-terdaftar {
-                        @apply flex gap-[30px] items-center;
                         label  {
                             @apply text-[12px]/[19px];
                         }
                         .terdaftar-list-logo {
+                            @apply gap-[20px];
                             .bappebti-logo {
-                                img {
-                                    @apply w-[95px] h-full;
-                                }
+                                @apply w-[127px] h-[34px];
                             }
                             .kominfo-logo {
-                                img {
-                                    @apply w-[95px] h-full;
-                                }
+                                @apply w-[98px] h-[37px];
+                            }
+                            .bsi-logo {
+                                @apply w-[83px] h-[44px];
+
+                            }
+                            .cisa-logo {
+                                @apply w-[90px] h-[43px];
                             }
                         }
                     }
@@ -264,20 +316,23 @@
                         @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
                     }
                     .section-terdaftar {
-                        @apply flex gap-[30px] items-center;
                         label  {
                             @apply text-[11px]/[18px];
                         }
                         .terdaftar-list-logo {
+                            @apply gap-[15px];
                             .bappebti-logo {
-                                img {
-                                    @apply w-[85px] h-full;
-                                }
+                                @apply w-[117px] h-[34px];
                             }
                             .kominfo-logo {
-                                img {
-                                    @apply w-[85px] h-full;
-                                }
+                                @apply w-[88px] h-[37px];
+                            }
+                            .bsi-logo {
+                                @apply w-[73px] h-[44px];
+
+                            }
+                            .cisa-logo {
+                                @apply w-[80px] h-[43px];
                             }
                         }
                     }
@@ -1443,19 +1498,21 @@
                         .section-terdaftar {
                             @apply flex flex-col;
                             label  {
-                                @apply text-[10px]/[15px] ;
+                                @apply !text-[10px]/[15px] ;
                             }
                             .terdaftar-list-logo {
-                                @apply flex gap-[14px] items-center;
+                                @apply flex gap-[5px] items-center;
                                 .bappebti-logo {
-                                    img {
-                                        @apply w-[72px] h-[16px];
-                                    }
+                                    @apply w-[60px] h-[13px];
                                 }
                                 .kominfo-logo {
-                                    img {
-                                        @apply w-[72px] h-[24px];
-                                    }
+                                    @apply w-[60px] h-[20px];
+                                }
+                                .bsi-logo {
+                                    @apply w-[37px] h-[20px];
+                                }
+                                .cisa-logo {
+                                    @apply w-[51px] h-[22px];
                                 }
                             }
                         }
