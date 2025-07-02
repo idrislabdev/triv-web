@@ -26,7 +26,7 @@ const HomeRancangSection = (props: {objLang:any}) => {
     return (
         <section className='home-rancang-new-section'>
             <div className='home-rancang-description'>
-                <h2 className='fade-in entry-1'>{objLang.title_1} <span>{objLang.title_2}</span></h2>
+                <h2 className='fade-in entry-1'>{objLang.title_1} <span>{objLang.title_2}</span> {objLang.title_3}</h2>
                 <div className='rancang-description-details'>
                     <div className='rancang-description-details-sub'>
                         <div className='rancang-description-detail fade-in entry-2'>
