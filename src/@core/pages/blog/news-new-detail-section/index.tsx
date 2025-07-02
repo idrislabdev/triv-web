@@ -33,15 +33,19 @@ const BlogNewsNewDetailSection = (props: {main:any, news:any[], stickies:any[], 
           <Image src='/images/3d-icons/3d-cryptocurrency.png' className='crypto' alt='3d cryptocurrency' width={0} height={0} sizes='100%'/>     
           <h5>Yuk, berinvestasi & kembangkan aset dengan Triv</h5>   
           <div className='button-group'>
-            <a className='btn-login'>Login</a>
-            <a className='btn-daftar'>Daftar</a>
+            <Link href={`/${lang}/login`} className='btn-login'>Login</Link>
+            <Link href={`/${lang}/register`} className='btn-daftar'>Daftar</Link>
           </div>  
           <p>Kamu juga bisa download aplikasi Triv sekarang!</p>
           <div className='barcode-appstore'>
-            <BarcodeIcon />
+            {/* <BarcodeIcon /> */}
             <div className='appstore-list'>
-              <Image src='/images/apps-store/playstore-logo-new.png' alt='barcode login' width={0} height={0} sizes='100%'/>     
-              <Image src='/images/apps-store/appstore-logo-new.png' alt='barcode login' width={0} height={0} sizes='100%'/>     
+              <a href='https://play.google.com/store/apps/details?id=id.co.triv' target='_blank'>
+                <Image src='/images/apps-store/playstore-logo-new.png' alt='barcode login' width={0} height={0} sizes='100%'/>     
+              </a>
+              <a href='https://apps.apple.com/id/app/triv-buy-bitcoin-crypto/id1470919460' target='_blank'>
+                <Image src='/images/apps-store/appstore-logo-new.png' alt='barcode login' width={0} height={0} sizes='100%'/>
+              </a>
             </div>
           </div>
         </div>
