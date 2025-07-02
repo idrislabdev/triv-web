@@ -75,6 +75,23 @@
             }
         
         }
+        .stocks-faq-section {
+            .question-faq-stocks {
+                .question-faq-accordion {
+                    ul {
+                        li {
+                            button {
+                                .header-button {
+                                    svg {
+                                        @apply !stroke-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .stocks-page {
@@ -1177,6 +1194,9 @@
                                 @apply flex items-center justify-between;
                                 label {
                                     @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
+                                }
+                                svg {
+                                    @apply stroke-black;
                                 }
                             }
                         }

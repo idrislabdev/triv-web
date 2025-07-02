@@ -28,7 +28,6 @@ const StocksFaqSection = (props: {objLang:any}) => {
                                         strokeLinejoin="round" 
                                         strokeWidth="2" 
                                         viewBox="0 0 24 24" 
-                                        stroke="#000000"
                                     >
                                         <path d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -49,7 +48,6 @@ const StocksFaqSection = (props: {objLang:any}) => {
                                         strokeLinejoin="round" 
                                         strokeWidth="2" 
                                         viewBox="0 0 24 24" 
-                                        stroke="#000000"
                                     >
                                         <path d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -70,7 +68,6 @@ const StocksFaqSection = (props: {objLang:any}) => {
                                         strokeLinejoin="round" 
                                         strokeWidth="2" 
                                         viewBox="0 0 24 24" 
-                                        stroke="#000000"
                                     >
                                         <path d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -91,7 +88,6 @@ const StocksFaqSection = (props: {objLang:any}) => {
                                         strokeLinejoin="round" 
                                         strokeWidth="2" 
                                         viewBox="0 0 24 24" 
-                                        stroke="#000000"
                                     >
                                         <path d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -112,7 +108,6 @@ const StocksFaqSection = (props: {objLang:any}) => {
                                         strokeLinejoin="round" 
                                         strokeWidth="2" 
                                         viewBox="0 0 24 24" 
-                                        stroke="#000000"
                                     >
                                         <path d="M19 9l-7 7-7-7"></path>
                                     </svg>
