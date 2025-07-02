@@ -1589,7 +1589,7 @@
                             @apply flex justify-between w-full;
                         }
                         .rfm-child {
-                            @apply mx-[10px];
+                            @apply mx-[5px];
                             .index-cyrpto-content {
                                 @apply w-[147px] h-[24px] items-center ;
                                 .crypto-title{

@@ -7,6 +7,7 @@ import React from 'react'
 
 const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:IHighlight}) => {
     const { lang, objLang, hightlight } = props
+    console.log(hightlight)
     return (
         <div className='liverate-top-mover-section'>
             <h2><span></span>{objLang.title}</h2>
