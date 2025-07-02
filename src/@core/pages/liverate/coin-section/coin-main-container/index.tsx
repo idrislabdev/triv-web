@@ -3,6 +3,7 @@ import { ArrowRightIcon, ChartPie, ChartPie2, ChartPPT, ChevronIconDown, TrendCh
 import LiverateCoinChartWrapper from '../../coin-chart-wrapper'
 import CardNewsBlog from '@/@core/components/cards/card-news-blog'
 import { IBlog, ICoin } from '@/@core/@types/interfaces'
+import { nFormatter2 } from '@/@core/utils/general'
 
 const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asset:any, coin:ICoin}) => {
     const { lang, objLang, blogs, asset, coin } = props
@@ -63,35 +64,35 @@ const CoinMainContainer = (props: {lang:string, objLang:any, blogs:IBlog[], asse
                             <TrendChartIcon2 color={'#fff'} />
                             <label>{objLang.market_activity}</label>
                         </div>
-                        <p>{nFormatter(asset.key_statistic.market_cap, 1)}</p>
+                        <p>{lang == 'id' ? nFormatter(asset.key_statistic.market_cap, 1) : nFormatter2(asset.key_statistic.market_cap, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <TrendChartIcon color={'#fff'} />
                             <label>{objLang.full_value}</label>
                         </div>
-                        <p>{nFormatter(asset.key_statistic.fully_diluted_valuation, 1)}</p>
+                        <p>{lang == 'id'  ? nFormatter(asset.key_statistic.fully_diluted_valuation, 1) : nFormatter2(asset.key_statistic.fully_diluted_valuation, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPie color={'#fff'} />
                             <label>{objLang.supply_circulate}</label>
                         </div>
-                        <p>{nFormatter(asset.key_statistic.circulating_supply, 1)}</p>
+                        <p>{lang == 'id' ? nFormatter(asset.key_statistic.circulating_supply, 1) : nFormatter2(asset.key_statistic.circulating_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPie2 color={'#fff'} />
                             <label>{objLang.supply_maksimum}</label>
                         </div>
-                        <p className='!text-[#71BBED]'>{nFormatter(asset.key_statistic.max_supply, 1)}</p>
+                        <p className='!text-[#71BBED]'>{lang == 'id' ? nFormatter(asset.key_statistic.max_supply, 1) : nFormatter2(asset.key_statistic.max_supply, 1)}</p>
                     </div>
                     <div className='key-statistic'>
                         <div className='key-statistic-label'>
                             <ChartPPT color={'#fff'} />
                             <label>{objLang.volume_global}</label>
                         </div>
-                        <p className='!text-[#EB5757]'>{nFormatter(asset.key_statistic.volume_24h, 1)}</p>
+                        <p className='!text-[#EB5757]'>{lang == 'id' ? nFormatter(asset.key_statistic.volume_24h, 1) : nFormatter(asset.key_statistic.volume_24h, 1)}</p>
                     </div>
                 </div>
             </div>
