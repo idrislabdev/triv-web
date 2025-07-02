@@ -1,5 +1,6 @@
 import { IHighlight, ILiverateMini } from '@/@core/@types/interfaces'
 import { CaretUpIcon, GraphIcon } from '@/@core/components/custom-icons'
+import { formatterNumber, formatterNumber2 } from '@/@core/utils/general'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -17,11 +18,11 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             <Image src={hightlight.top_gainer.icon_url} alt='graph' width={56} height={56}/>
                             <div className='top-mover-text'>
                                 <label>{hightlight.top_gainer.label}</label>
-                                <p>IDR {hightlight.top_gainer.rate.toFixed(2)}</p>
+                                <p>IDR {formatterNumber2(hightlight.top_gainer.rate.toFixed(2))}</p>
                             </div>
                         </div>
                     </div>
-                    <p className='top-mover-text-mobile truncate'>IDR {hightlight.top_gainer.rate}</p>
+                    <p className='top-mover-text-mobile truncate'>IDR {formatterNumber2(hightlight.top_gainer.rate.toFixed(2))}</p>
                     <div className='top-mover-container-right'>
                         <span><span><CaretUpIcon color={'#71BBED'} /></span>14.93%</span>
                         <div className='top-mover-graph'>
@@ -36,11 +37,11 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             <Image src={hightlight.highest_volume.icon_url} alt='graph' width={56} height={56}/>
                             <div className='top-mover-text'>
                                 <label>{hightlight.highest_volume.label}</label>
-                                <p>IDR {hightlight.highest_volume.rate.toFixed(2)}</p>
+                                <p>IDR {formatterNumber2(hightlight.highest_volume.rate.toFixed(2))}</p>
                             </div>
                         </div>
                     </div>
-                    <p className='top-mover-text-mobile truncate'>IDR {hightlight.highest_volume.rate}</p>
+                    <p className='top-mover-text-mobile truncate'>IDR {formatterNumber2(hightlight.highest_volume.rate.toFixed(2))}</p>
                     <div className='top-mover-container-right'>
                         <span><span><CaretUpIcon color={'#71BBED'} /></span>14.93%</span>
                         <div className='top-mover-graph'>
@@ -55,11 +56,11 @@ const LiverateTopMoverSection = (props : { lang:string, objLang:any, hightlight:
                             <Image src={hightlight.most_popular.icon_url} alt='graph' width={56} height={56}/>
                             <div className='top-mover-text'>
                                 <label>{hightlight.most_popular.label}</label>
-                                <p>IDR {hightlight.most_popular.rate.toFixed(2)}</p>
+                                <p>IDR {formatterNumber2(hightlight.most_popular.rate.toFixed(2))}</p>
                             </div>
                         </div>
                     </div>
-                    <p className='top-mover-text-mobile'>IDR {hightlight.most_popular.rate}</p>
+                    <p className='top-mover-text-mobile'>IDR {formatterNumber2(hightlight.most_popular.rate.toFixed(2))}</p>
                     <div className='top-mover-container-right'>
                         <span><span><CaretUpIcon color={'#71BBED'} /></span>14.93%</span>
                         <div className='top-mover-graph'>

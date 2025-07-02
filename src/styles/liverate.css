@@ -1728,9 +1728,9 @@
                     .top-mover-container {
                         @apply flex-col gap-[10px] h-[101px] px-[10px] py-[8px] rounded-[8px];
                         .top-mover-container-left {
-                            @apply gap-[10px];
+                            @apply gap-[10px] w-full;
                             label {
-                                @apply text-center w-full text-[7px]/[10.5px] font-bold text-neutral-900;
+                                @apply text-left w-full text-[7px]/[10.5px] font-bold text-neutral-900;
                             }
                             .top-mover-text-icon {
                                 @apply items-center;
