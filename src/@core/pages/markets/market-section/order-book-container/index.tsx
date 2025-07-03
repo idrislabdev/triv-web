@@ -66,7 +66,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
             </div>
         </div>
         <div className='subcontainer-title'>
-            <h5 className='down'>924.038.029</h5>
+            <h5 className='down'>{formatterNumber2(dataBids.reduce((a, b) => a + (b['total'] || 0), 0).toFixed(2))}</h5>
         </div>
         <div className='order-book-table down'>
             <div className='table-header'>
@@ -106,7 +106,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
                     dataTrades.map((item:ITrade, index:number) => (
                         <div className='body-row' key={index}>
                             <label className='price-digit'>{formatterNumber2(item.price.toFixed(0))}</label>
-                            <label>{formatterNumber2(item.quantity.toFixed(0))}</label>
+                            <label>{formatterNumber2(item.quantity.toString())}</label>
                             <label>{moment.unix(item.timestamp).format('HH:mm:ss')}</label>
                         </div>
                     ))
