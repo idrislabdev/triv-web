@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { FacebookIcon, InstagramIcon, LinkedinIcon, TelegramIcon, TiktokIcon, TwiterIcon, YoutubeIcon } from '../custom-icons'
+import { FacebookIcon, InstagramIcon, LinkedinIcon, NewFacebookIcon, NewInstagramIcom, NewLinkedinIcon, NewTelegramIcon, NewTiktokIcon, NewXIcon, NewYoutubeIcon, TelegramIcon, TiktokIcon, TwiterIcon, YoutubeIcon } from '../custom-icons'
 
 const Footer = () => {
     const [listMarketPlace, setListMarketplace] = useState("1")
@@ -27,13 +27,13 @@ const Footer = () => {
                             </div>
                             <div className='footer-socialmedia-list'>
                                 <ul>
-                                    <li><a href='https://triv.co.id/instagram' target='_blank'><InstagramIcon color='white'/></a></li>
-                                    <li><a href='https://triv.co.id/youtube' target='_blank'><YoutubeIcon color='white'/></a></li>
-                                    <li><a href='https://id.linkedin.com/company/triv' target='_blank'><LinkedinIcon color='white'/></a></li>
-                                    <li><a href='https://www.facebook.com/Trivcoid-Triv-Indonesia-830427083739607' target='_blank'><FacebookIcon color='white'/></a></li>
-                                    <li><a href='https://triv.co.id/twitter' target='_blank'><TwiterIcon color='white'/></a></li>
-                                    <li><a href='https://triv.co.id/tiktok' target='_blank'><TiktokIcon color='white'/></a></li>
-                                    <li><a href='https://triv.co.id/grouptelegram' target='_blank'><TelegramIcon color='white'/></a></li>
+                                    <li><a href='https://triv.co.id/instagram' target='_blank'><NewInstagramIcom /></a></li>
+                                    <li><a href='https://triv.co.id/youtube' target='_blank'><NewYoutubeIcon /></a></li>
+                                    <li><a href='https://id.linkedin.com/company/triv' target='_blank'><NewLinkedinIcon /></a></li>
+                                    <li><a href='https://www.facebook.com/Trivcoid-Triv-Indonesia-830427083739607' target='_blank'><NewFacebookIcon /></a></li>
+                                    <li><a href='https://triv.co.id/twitter' target='_blank'><NewXIcon /></a></li>
+                                    <li><a href='https://triv.co.id/tiktok' target='_blank'><NewTiktokIcon /></a></li>
+                                    <li><a href='https://triv.co.id/grouptelegram' target='_blank'><NewTelegramIcon /></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -104,6 +104,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <hr />
                 <div className='footer-secondary'>
                     <div className='footer-secondary-left'>
                         <div className='copyright-text'><label>© 2015 - {year.getFullYear()} PT Tiga Inti Utama. All Rights Reserved.</label></div>

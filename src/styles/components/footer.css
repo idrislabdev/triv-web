@@ -61,6 +61,9 @@
                 
             }
         }
+        hr {
+            @apply border-[#FFFFFF33];
+        }
         .footer-secondary {
             @apply flex justify-between  ;
             .footer-secondary-left {
@@ -86,7 +89,7 @@
             .footer-secondary-right {
                 @apply flex flex-col gap-[20px];
                 .terdaftar-text {
-                    @apply flex justify-end;
+                    @apply flex;
                     label {
                         @apply text-[16px]/[28px] font-medium;
                     }
