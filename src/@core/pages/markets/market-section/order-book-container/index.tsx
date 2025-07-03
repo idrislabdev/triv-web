@@ -8,10 +8,10 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
     const {market, setMarket, orderBook, trades} = props
     const asks  = orderBook.asks;
     const bids = orderBook.bids;
-
+    const symbol = market.symbol.split("_");
     let arrAsks:IBookOrder[] = [] as IBookOrder[];
     let arrBids:IBookOrder[] = [] as IBookOrder[];
-
+    console.log(market.symbol)
     let increment = 0;
     increment=1;
     asks.forEach((item:any) => {
@@ -47,8 +47,8 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
             <div className='table-header'>
                 <div className='header-row'>
                     <label>Harga (IDR)</label>
-                    <label>Jumlah</label>
-                    <label>Total</label>
+                    <label>Jumlah ({symbol[0]})</label>
+                    <label>Total ({symbol[0]})</label>
                 </div>
             </div>
             <div className='table-body'>
@@ -72,8 +72,8 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
             <div className='table-header'>
                 <div className='header-row'>
                     <label>Harga (IDR)</label>
-                    <label>Jumlah</label>
-                    <label>Total</label>
+                    <label>Jumlah ({symbol[0]})</label>
+                    <label>Total ({symbol[0]})</label>
                 </div>
             </div>
             <div className='table-body'>
@@ -97,7 +97,7 @@ const MarketOrderBookContainer = (props: {market:any, setMarket:Dispatch<SetStat
             <div className='table-header'>
                 <div className='header-row'>
                     <label>Harga (IDR)</label>
-                    <label>Jumlah</label>
+                    <label>Jumlah ({symbol[0]})</label>
                     <label>Waktu</label>
                 </div>
             </div>
