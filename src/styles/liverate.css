@@ -2034,13 +2034,13 @@
                                 @apply flex flex-col gap-[18px] w-full;
                                 .card-news-secondary-2 {
                                     .card-content {
-                                        @apply gap-[4px] flex-1;
+                                        @apply gap-[4px] flex-1 w-[70%];
                                         h5,p {
                                             @apply text-[10px]/[15px] line-clamp-2 w-full;
                                         }
                                     }
                                     img {
-                                        @apply w-[110px] h-[60px] rounded-[4px] object-contain;
+                                        @apply w-[60px] h-[60px] rounded-[4px] object-contain;
                                     }
                                 }
                             }
