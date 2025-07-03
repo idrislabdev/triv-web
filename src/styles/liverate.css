@@ -2030,6 +2030,20 @@
                             /* @apply hidden; */
                         }
                         .main-subcontainer {
+                            .blog-subcontainer {
+                                @apply flex flex-col gap-[18px];
+                                .card-news-secondary-2 {
+                                    .card-content {
+                                        @apply gap-[4px];
+                                        h5,p {
+                                            @apply text-[10px]/[15px] line-clamp-2;
+                                        }
+                                    }
+                                    img {
+                                        @apply w-[110px] h-[60px] rounded-[4px];
+                                    }
+                                }
+                            }
                             .overview-area {
                                 @apply gap-[20px];
                                 .trade-stake-subcontainer {
@@ -2186,20 +2200,6 @@
                                 @apply text-[12px]/[18px];
                             }
                             
-                        }
-                        .blog-subcontainer {
-                            @apply flex flex-col gap-[18px];
-                            .card-news-secondary-2 {
-                                .card-content {
-                                    @apply gap-[4px];
-                                    h5,p {
-                                        @apply text-[10px]/[15px] line-clamp-2;
-                                    }
-                                }
-                                img {
-                                    @apply w-[110px] h-[60px] rounded-[4px];
-                                }
-                            }
                         }
                     }
                 }
