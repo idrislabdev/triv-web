@@ -184,7 +184,7 @@ const MarketFormContainer = (props: {
                 <ul>
                     <li className={`${tabInfo === "limit" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('limit')}>Limit</a></li>
                     {/* <li className={`${tabInfo === "biaya" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('biaya')}>Biaya</a></li> */}
-                    <li className={`${tabInfo === "info" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('info')}>Info</a></li>
+                    {/* <li className={`${tabInfo === "info" ? 'active' : ''}`}><a onClick={_ => changeTabInfo('info')}>Info</a></li> */}
                 </ul>
             </div>
             <div className='info-market'>
