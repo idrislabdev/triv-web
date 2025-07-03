@@ -141,7 +141,7 @@
         }
     }
     img {
-        @apply h-[121px] w-[153px] object-cover rounded-[10px];
+        @apply h-[121px] w-[153px] object-contain rounded-[10px];
     }
 }
 
