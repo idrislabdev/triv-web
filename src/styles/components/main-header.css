@@ -6,6 +6,21 @@
             @apply !bg-[#1f1f1f] !text-slate-300;
         }
         &.header-transparent {
+            .main-header-menu {
+                ul {
+                    &.submenu {
+                        li {
+                            a {
+                                svg {
+                                    path {
+                                        @apply !stroke-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             &.drop-shadow {
                 @apply !bg-[#1f1f1f] !text-slate-300;
                 .main-header-menu {
@@ -317,6 +332,21 @@ header {
         }
     }
     &.header-transparent {
+        .main-header-menu {
+            ul {
+                &.submenu {
+                    li {
+                        a {
+                            svg {
+                                path {
+                                    @apply !stroke-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &.drop-shadow {
             @apply !bg-white !text-black;
             .main-header-menu {
