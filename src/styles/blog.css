@@ -1286,6 +1286,9 @@
                                     img {
                                         @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
                                     }
+                                    iframe {
+                                        @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
+                                    }
                                 }
                                .video-title {
                                     @apply flex flex-col gap-[14px] p-[13px];
