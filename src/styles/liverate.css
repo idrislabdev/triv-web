@@ -2031,12 +2031,12 @@
                         }
                         .main-subcontainer {
                             .blog-subcontainer {
-                                @apply flex flex-col gap-[18px];
+                                @apply flex flex-col gap-[18px] w-full;
                                 .card-news-secondary-2 {
                                     .card-content {
                                         @apply gap-[4px] flex-1;
                                         h5,p {
-                                            @apply text-[10px]/[15px] line-clamp-2;
+                                            @apply text-[10px]/[15px] line-clamp-2 w-full;
                                         }
                                     }
                                     img {
