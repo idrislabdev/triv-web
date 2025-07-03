@@ -28,6 +28,18 @@
         }
     }
     .markets-page {
+        .marque-text-section {
+            .rfm-marquee-container  {
+                .rfm-marquee {
+                    .rfm-child {
+                        label {
+                            @apply text-white;
+                        }
+                    }
+                }
+
+            }
+        }
         .market-section {
             @apply !border-b-[#2E3339] !border-t-[#2E3339];
             .market-container {
@@ -321,9 +333,14 @@
                 .rfm-child {
                     @apply flex;
                     label {
-                        @apply text-[14px]/[14px] text-[#4B5060] font-medium flex cursor-pointer;
+                        @apply text-[14px]/[14px] text-[#4B5060] font-medium flex cursor-pointer gap-[4px];
                         span {
-                            @apply text-[#67C48F];
+                            &.plus {
+                                @apply text-[#67C48F];
+                            }
+                            &.minus {
+                                @apply text-[#EB5757];
+                            }
                         }
                         &:hover {
                             @apply font-semibold;
@@ -451,6 +468,12 @@
                         }
                         span {
                             @apply text-[14px]/[21px] text-neutral-800 font-semibold;
+                            &.plus {
+                                @apply !text-[#67C48F];
+                            }
+                            &.minus {
+                                @apply !text-['#EB5757'];
+                            }
 
                         }
                     }

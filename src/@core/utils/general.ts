@@ -40,3 +40,13 @@ export const nFormatter2 = (num:number, digits:number) => {
     const item = lookup.findLast(item => num >= item.value);
     return item ? (num / item.value).toFixed(digits).replace(regexp, "").concat(item.symbol) : "0";
 }
+
+export const formatPlusMinus = (val:number) => {
+  let returnVal = val.toString();;
+  if (val > 0) {
+      returnVal = `+${returnVal}`
+  } else if (val < 0) {
+      returnVal = `-${returnVal}`
+  }
+  return returnVal;
+}

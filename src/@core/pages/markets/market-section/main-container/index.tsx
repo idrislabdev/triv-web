@@ -6,7 +6,7 @@ import { IBookOrder, ITrade } from '@/@core/@types/interfaces'
 import moment from 'moment';
 import MarketsTvWrapper from '../../tv-wrapper'
 import { usePathname, useRouter } from 'next/navigation';
-import { formatterNumber2, nFormatter2 } from '@/@core/utils/general'
+import { formatPlusMinus, formatterNumber2, nFormatter2 } from '@/@core/utils/general'
 
 const MarketMainContainer = (props: {lang:string, markets:any, market:any, setMarket:Dispatch<SetStateAction<any>>}) => {
     const {lang, markets, market, setMarket} = props
@@ -97,7 +97,9 @@ const MarketMainContainer = (props: {lang:string, markets:any, market:any, setMa
                 <div className='market-info-detail'>
                     <div className='info-detail'>
                         <label>24H Change</label>
-                        <span>{market.price_changes.today}%</span>
+                        <span className={market.price_changes.today > 0 ? 'plus' : (market.price_changes.today < 0 ? 'minus' : '')}>
+                            {formatPlusMinus(parseFloat(market.price_changes.today))}%
+                        </span>
                     </div>
                     <div className='info-detail'>
                         <label>Tertinggi 24JAM</label>
