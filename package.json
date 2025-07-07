@@ -11,6 +11,8 @@
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "axios": "^1.7.2",
+    "clsx": "^2.1.1",
+    "debounce": "^2.2.0",
     "highcharts": "^12.1.2",
     "highcharts-react-official": "^3.2.1",
     "moment": "^2.30.1",
