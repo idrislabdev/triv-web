@@ -52,7 +52,7 @@ const Pagination: React.FC<PaginationProps> = ({
     <nav className="pagination">
       {/* Prev */}
       <button
-        className="navButton"
+        className="nav-button"
         disabled={currentPage === 1}
         onClick={
           currentPage === 1 ? undefined : () => onPageChange(currentPage - 1)
@@ -71,7 +71,7 @@ const Pagination: React.FC<PaginationProps> = ({
           <button
             key={i}
             onClick={handleClick(page)}
-            className={clsx("pageButton", { active: page === currentPage })}
+            className={clsx("page-button", { active: page === currentPage })}
           >
             {page}
           </button>
@@ -80,7 +80,7 @@ const Pagination: React.FC<PaginationProps> = ({
 
       {/* Next */}
       <button
-        className="navButton"
+        className="nav-button"
         disabled={currentPage === totalPages}
         onClick={
           currentPage === totalPages

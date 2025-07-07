@@ -1,88 +1,48 @@
-/* Default Light Theme ---------------------------------------------------- */
 .pagination {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  user-select: none;
-}
+  @apply flex items-center gap-1 select-none;
 
-/* Prev / Next Buttons ---------------------------------------------------- */
-.navButton {
-  padding: 0 8px;
-  font-size: 0.875rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #38bdf8; /* sky-400 */
-}
+  .nav-button {
+    @apply px-2 text-sm transition-colors text-sky-500 hover:underline;
 
-.navButton:hover:not(:disabled) {
-  text-decoration: underline;
-}
+    &:disabled {
+      @apply text-gray-300 cursor-default;
+    }
+  }
 
-.navButton:disabled {
-  color: #d1d5db; /* gray-300 */
-  cursor: default;
-}
+  .page-button {
+    @apply w-8 h-8 mx-0.5 flex items-center justify-center rounded-md border text-sm transition-colors;
 
-/* Page Number Buttons ---------------------------------------------------- */
-.pageButton {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #d1d5db; /* gray-300 */
-  border-radius: 6px;
-  background: #ffffff;
-  color: #374151; /* gray-700 */
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
+    &.active {
+      @apply bg-primary border-primary text-white;
+    }
 
-.pageButton:hover:not(.active) {
-  background: #f3f4f6; /* gray-100 */
-}
+    &:not(.active) {
+      @apply bg-white border-gray-300 text-gray-700 hover:bg-gray-100;
+    }
+  }
 
-.pageButton.active {
-  background: #38bdf8; /* sky-400 */
-  border-color: #38bdf8;
-  color: #ffffff;
-}
+  .ellipsis {
+    @apply mx-1 text-gray-500 select-none;
+  }
 
-/* Ellipsis */
-.ellipsis {
-  margin: 0 4px;
-  color: #6b7280; /* gray-500 */
-}
+  /* Dark Theme Styles (using .dark-theme class) */
+  .dark-theme & {
+    .nav-button {
+      @apply text-blue-400;
 
-/* Dark Theme Support ----------------------------------------------------- */
-.dark-theme .pagination {
-  gap: 4px;
-}
+      &:disabled {
+        @apply text-gray-600;
+      }
+    }
 
-.dark-theme .navButton {
-  color: #60a5fa; /* blue-400 */
-}
+    .page-button {
+      &:not(.active) {
+        @apply bg-gray-800 border-gray-700 text-gray-300 hover:bg-gray-700;
+      }
+    }
 
-.dark-theme .navButton:disabled {
-  color: #4b5563; /* gray-600 */
-}
-
-.dark-theme .pageButton {
-  background: #1f2937; /* gray-800 */
-  border-color: #374151; /* gray-700 */
-  color: #d1d5db; /* gray-300 */
-}
-
-.dark-theme .pageButton:hover:not(.active) {
-  background: #374151; /* gray-700 */
-}
-
-.dark-theme .pageButton.active {
-  background: #38bdf8; /* sky-400 */
-  color: #ffffff;
-  border-color: #38bdf8;
-}
-
-.dark-theme .ellipsis {
-  color: #9ca3af; /* gray-400 */
+    .ellipsis {
+      @apply text-gray-400;
+    }
+  }
 }
