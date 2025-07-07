@@ -13,7 +13,7 @@ import React, { useCallback, useEffect, useState } from "react";
 
 import settings from "./setting";
 
-const ProductsLayananNewSection = (props: { coin: string; objLang: any }) => {
+const ProductsLayananAllSection = (props: { coin: string; objLang: any }) => {
   const { coin, objLang } = props;
   const [elSwap, setElSwap] = useState("");
   const [elHoddl, setElHoddl] = useState("");
@@ -209,9 +209,32 @@ const ProductsLayananNewSection = (props: { coin: string; objLang: any }) => {
             </div>
           </div>
         )}
+        {/* <div
+          className="card-subcontainer pulsa sticky top-[250px] translate-y-[0px]"
+          style={{ scale: elPulsa }}
+        >
+          <div className="box-layanan">
+            <span>
+              <IsiPulsaIcon color={"#fff"} />
+            </span>
+            <div className="content">
+              <h5>{objLang.card.isi_pulsa.title}</h5>
+              <p>{objLang.card.isi_pulsa.content}</p>
+            </div>
+          </div>
+          <div className={`box-img ${objLang.card.isi_pulsa.image_class}`}>
+            <Image
+              src={objLang.card.isi_pulsa.image_url}
+              alt={objLang.card.isi_pulsa.title}
+              width={0}
+              height={0}
+              sizes="100%"
+            />
+          </div>
+        </div> */}
       </div>
     </section>
   );
 };
 
-export default ProductsLayananNewSection;
+export default ProductsLayananAllSection;
