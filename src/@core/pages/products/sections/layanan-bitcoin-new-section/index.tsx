@@ -27,6 +27,7 @@ const ProductsLayananBitcoinNewSection = (props: { objLang: any }) => {
     );
     var element = elements[0];
     if (element) {
+      if (scrollY > 3760) {
         setElSwap("0.80");
         setElHoddl("0.84");
         setElKirim("0.88");
