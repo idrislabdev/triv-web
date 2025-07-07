@@ -1,0 +1,88 @@
+/* Default Light Theme ---------------------------------------------------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+}
+
+/* Prev / Next Buttons ---------------------------------------------------- */
+.navButton {
+  padding: 0 8px;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #38bdf8; /* sky-400 */
+}
+
+.navButton:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.navButton:disabled {
+  color: #d1d5db; /* gray-300 */
+  cursor: default;
+}
+
+/* Page Number Buttons ---------------------------------------------------- */
+.pageButton {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151; /* gray-700 */
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.pageButton:hover:not(.active) {
+  background: #f3f4f6; /* gray-100 */
+}
+
+.pageButton.active {
+  background: #38bdf8; /* sky-400 */
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+/* Ellipsis */
+.ellipsis {
+  margin: 0 4px;
+  color: #6b7280; /* gray-500 */
+}
+
+/* Dark Theme Support ----------------------------------------------------- */
+.dark-theme .pagination {
+  gap: 4px;
+}
+
+.dark-theme .navButton {
+  color: #60a5fa; /* blue-400 */
+}
+
+.dark-theme .navButton:disabled {
+  color: #4b5563; /* gray-600 */
+}
+
+.dark-theme .pageButton {
+  background: #1f2937; /* gray-800 */
+  border-color: #374151; /* gray-700 */
+  color: #d1d5db; /* gray-300 */
+}
+
+.dark-theme .pageButton:hover:not(.active) {
+  background: #374151; /* gray-700 */
+}
+
+.dark-theme .pageButton.active {
+  background: #38bdf8; /* sky-400 */
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
+.dark-theme .ellipsis {
+  color: #9ca3af; /* gray-400 */
+}
