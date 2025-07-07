@@ -35,6 +35,13 @@ const LiverateListSection = (props: {
     keyword: string | null;
   }>({ page: 1, per: 10, category: null, keyword: null });
 
+  const [paramsMobile, setParamsMobile] = useState<{
+    page: number;
+    per: number;
+    category: string | null;
+    keyword: string | null;
+  }>({ page: 1, per: 10, category: null, keyword: null });
+
   const fetchDataLiverate = useCallback(async () => {
     const resp = await axiosInstance.get(`/v2/liverate`, {
       params: { ...params },
@@ -47,9 +54,22 @@ const LiverateListSection = (props: {
     setParams({ ...params, category: value });
   };
 
+  const fetchDataLiverateMobile = useCallback(async () => {
+    const resp = await axiosInstance.get(`/v2/liverate`, {
+      params: { ...paramsMobile },
+    });
+    const temp = [...dataLiverates];
+    temp.push(resp.data.data);
+    setDataLiverates(temp);
+  }, [paramsMobile, dataLiverates]);
+
   useEffect(() => {
     fetchDataLiverate();
   }, [category, fetchDataLiverate]);
+
+  useEffect(() => {
+    fetchDataLiverateMobile();
+  }, [category, fetchDataLiverateMobile]);
 
   return (
     <section className="liverate-list-section">
@@ -256,6 +276,14 @@ const LiverateListSection = (props: {
             onPageChange={(val) => setParams({ ...params, page: val })}
             siblingCount={1} // bebas atur 0,1,2 dll
           />
+          <a
+            className="show-more"
+            onClick={() =>
+              setParamsMobile({ ...paramsMobile, page: paramsMobile.page + 1 })
+            }
+          >
+            + Tampilkan Lebih Banyak
+          </a>
         </div>
       </div>
     </section>
