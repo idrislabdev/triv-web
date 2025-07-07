@@ -1876,16 +1876,16 @@
           }
           .list-table-pagination {
             @apply justify-center;
-            a {
+            /* a {
               &.show-more {
                 @apply block text-primary text-[12px]/[150%] font-medium;
               }
-            }
-            nav {
+            } */
+            /* nav {
               &.pagination {
                 @apply hidden;
               }
-            }
+            } */
           }
         }
       }
