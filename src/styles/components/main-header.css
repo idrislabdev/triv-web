@@ -1,907 +1,901 @@
 @tailwind components;
 
 .dark-theme {
-    header {
-        &.drop-shadow {
-            @apply !bg-[#1f1f1f] !text-slate-300;
+  header {
+    &.drop-shadow {
+      @apply !bg-[#1f1f1f] !text-slate-300;
+    }
+    &.header-transparent {
+      .main-header-menu {
+        ul {
+          &.submenu {
+            li {
+              a {
+                svg {
+                  path {
+                    @apply !stroke-white;
+                  }
+                }
+              }
+            }
+          }
         }
-        &.header-transparent {
-            .main-header-menu {
-                ul {
-                    &.submenu {
-                        li {
-                            a {
+      }
+      &.drop-shadow {
+        @apply !bg-[#1f1f1f] !text-slate-300;
+        .main-header-menu {
+          ul {
+            @apply text-slate-300;
+            li {
+              &.has-sub {
+                a {
+                  svg {
+                    path {
+                      @apply stroke-white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .main-header-action {
+          .main-header-action-list {
+            ul {
+              li {
+                &.flags {
+                  ul {
+                    &.list-flags {
+                      li {
+                        a {
+                          &.flag-button {
+                            span {
+                              &.chevron-icon {
                                 svg {
-                                    path {
-                                        @apply !stroke-white;
-                                    }
+                                  path {
+                                    @apply stroke-white;
+                                  }
                                 }
+                              }
                             }
+                          }
                         }
+                      }
                     }
-                }
-            }
-            &.drop-shadow {
-                @apply !bg-[#1f1f1f] !text-slate-300;
-                .main-header-menu {
-                    ul {
-                        @apply text-slate-300;
-                        li {
-                            &.has-sub {
-                                a {
-                                    svg {
-                                        path {
-                                            @apply stroke-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .main-header-action {
-                    .main-header-action-list {
-                        ul {
-                            li {
-                                &.flags {
-                                    ul {
-                                        &.list-flags {
-                                            li {
-                                                a {
-                                                    &.flag-button {
-                                                        span {
-                                                            &.chevron-icon {
-                                                                svg {
-                                                                    path {
-                                                                        @apply stroke-white;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                a {
-                                    @apply text-white;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .main-header-menu {
-                ul {
-                    li {
-                        &.has-sub {
-                            a {
-                                svg {
-                                    path {
-                                        @apply stroke-white;
-                                        /* @apply stroke-slate-300; */
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .main-header-action {
-                .main-header-action-list {
-                    ul {
-                        li {
-                            a {
-                                &.flag-button {
-                                    span {
-                                        &.chevron-icon {
-                                            svg {
-                                                path {
-                                                     @apply !stroke-white;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .btn-signup-header {
-                                @apply !bg-[#3A80AF] !text-white;
-                            }
-                            &.flags {
-                                @apply pr-[50px];
-                                ul {
-                                    &.list-flags {
-                                        &.show {
-                                            @apply bg-[#000] bg-opacity-70;
-                                            box-shadow: 0px 4px 4px 0px #00000014;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    a {
-                        &.button-switch-theme {
-                            @apply cursor-pointer;
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                                circle {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
+                  }
                 }
                 a {
-                    &.burger-menu {
-                        svg {
-                            path {
-                                @apply fill-primary;
-                            }
-                        }
-                    }
+                  @apply text-white;
                 }
+              }
             }
+          }
         }
-        &.header-affliate {
-            .main-header-action {
-                .main-header-action-list {
-                    a {
-                        &.button-switch-theme {
-                            @apply cursor-pointer;
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                                circle {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
+      }
+      .main-header-menu {
+        ul {
+          li {
+            &.has-sub {
+              a {
+                svg {
+                  path {
+                    @apply stroke-white;
+                    /* @apply stroke-slate-300; */
+                  }
                 }
+              }
             }
+          }
         }
-        .main-header {
-            .main-header-menu {
+      }
+      .main-header-action {
+        .main-header-action-list {
+          ul {
+            li {
+              a {
+                &.flag-button {
+                  span {
+                    &.chevron-icon {
+                      svg {
+                        path {
+                          @apply !stroke-white;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .btn-signup-header {
+                @apply !bg-[#3A80AF] !text-white;
+              }
+              &.flags {
+                @apply pr-[50px];
                 ul {
-                    li {
-                        &.has-sub {
-                            .submenu {
-                                @apply bg-[#1f1f1f];
-                                /* box-shadow: 0px 4px 16px 0px #0000001A; */
-                                li {
-                                    @apply text-slate-300;
-                                }
-                            }
-                        }
+                  &.list-flags {
+                    &.show {
+                      @apply bg-[#000] bg-opacity-70;
+                      box-shadow: 0px 4px 4px 0px #00000014;
                     }
+                  }
                 }
+              }
             }
-            &.header-white {
-                @apply !text-slate-300;
-                .main-header-menu {
-                    ul {
-                        li {
-                            &.has-sub {
-                                a {
-                                    svg {
-                                        path {
-                                            @apply stroke-white;
-                                            /* @apply stroke-slate-300; */
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+          }
+          a {
+            &.button-switch-theme {
+              @apply cursor-pointer;
+              svg {
+                path {
+                  @apply fill-white;
                 }
-                .main-header-action {
-                    .main-header-action-list {
-                        ul {
-                            li {
-                                a {
-                                    &.flag-button {
-                                        span {
-                                            &.chevron-icon {
-                                                svg {
-                                                    path {
-                                                         @apply !stroke-white;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                .btn-signup-header {
-                                    @apply !bg-[#3A80AF] !text-white;
-                                }
-                                &.flags {
-                                    @apply pr-[50px];
-                                    ul {
-                                        &.list-flags {
-                                            &.show {
-                                                @apply bg-[#000] bg-opacity-70;
-                                                box-shadow: 0px 4px 4px 0px #00000014;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        a {
-                            &.button-switch-theme {
-                                @apply cursor-pointer;
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                    circle {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    a {
-                        &.burger-menu {
-                            svg {
-                                path {
-                                    @apply fill-primary;
-                                }
-                            }
-                        }
-                    }
+                circle {
+                  @apply fill-white;
                 }
+              }
             }
+          }
         }
+        a {
+          &.burger-menu {
+            svg {
+              path {
+                @apply fill-primary;
+              }
+            }
+          }
+        }
+      }
     }
-    .main-sidebar-menu { 
-        @apply bg-[#1f1f1f];
-        .sidebar-list {
-            ul {
-                @apply !text-slate-300;
+    &.header-affliate {
+      .main-header-action {
+        .main-header-action-list {
+          a {
+            &.button-switch-theme {
+              @apply cursor-pointer;
+              svg {
+                path {
+                  @apply fill-white;
+                }
+                circle {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-header {
+      .main-header-menu {
+        ul {
+          li {
+            &.has-sub {
+              .submenu {
+                @apply bg-[#1f1f1f];
+                /* box-shadow: 0px 4px 16px 0px #0000001A; */
                 li {
-                    a {
-                        svg {
-                            path {
-                                @apply stroke-white;
-                            }
-                        }
-                    }
+                  @apply text-slate-300;
                 }
+              }
             }
+          }
         }
+      }
+      &.header-white {
+        @apply !text-slate-300;
+        .main-header-menu {
+          ul {
+            li {
+              &.has-sub {
+                a {
+                  svg {
+                    path {
+                      @apply stroke-white;
+                      /* @apply stroke-slate-300; */
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .main-header-action {
+          .main-header-action-list {
+            ul {
+              li {
+                a {
+                  &.flag-button {
+                    span {
+                      &.chevron-icon {
+                        svg {
+                          path {
+                            @apply !stroke-white;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .btn-signup-header {
+                  @apply !bg-[#3A80AF] !text-white;
+                }
+                &.flags {
+                  @apply pr-[50px];
+                  ul {
+                    &.list-flags {
+                      &.show {
+                        @apply bg-[#000] bg-opacity-70;
+                        box-shadow: 0px 4px 4px 0px #00000014;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            a {
+              &.button-switch-theme {
+                @apply cursor-pointer;
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                  circle {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+          a {
+            &.burger-menu {
+              svg {
+                path {
+                  @apply fill-primary;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
+  .main-sidebar-menu {
+    @apply bg-[#1f1f1f];
+    .sidebar-list {
+      ul {
+        @apply !text-slate-300;
+        li {
+          a {
+            svg {
+              path {
+                @apply stroke-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 header {
-    @apply h-[70px] w-full fixed top-0 inset-x-0 z-10;
+  @apply h-[70px] w-full fixed top-0 inset-x-0 z-10;
+  &.drop-shadow {
+    @apply !bg-white;
+    box-shadow: 0px 4px 16px 0px #0000001a;
+  }
+  &.header-affliate {
     &.drop-shadow {
-        @apply !bg-white;
-        box-shadow: 0px 4px 16px 0px #0000001A;
+      @apply !bg-[#1f1f1f];
     }
-    &.header-affliate {
-        &.drop-shadow {
-            @apply !bg-[#1f1f1f];
+    .triv-logo-header {
+      a {
+        path {
+          @apply fill-primary;
         }
-        .triv-logo-header {
+      }
+    }
+    .main-header-action {
+      .main-header-action-list {
+        a {
+          &.button-switch-theme {
+            @apply cursor-pointer;
+            svg {
+              path {
+                @apply fill-yellow-600;
+              }
+              circle {
+                @apply fill-yellow-600;
+              }
+            }
+          }
+        }
+        ul {
+          li {
             a {
+              &.btn-signup-header {
+                @apply bg-primary text-white;
+              }
+            }
+          }
+        }
+      }
+      a {
+        &.burger-menu {
+          svg {
+            path {
+              @apply !fill-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.header-transparent {
+    .main-header-menu {
+      ul {
+        &.submenu {
+          li {
+            a {
+              svg {
                 path {
-                    @apply fill-primary;
+                  @apply !stroke-black;
                 }
+              }
             }
+          }
         }
-        .main-header-action {
-            .main-header-action-list {
-                a {
-                    &.button-switch-theme {
-                        @apply cursor-pointer;
-                        svg {
-                            path {
-                                @apply fill-yellow-600;
-                            }
-                            circle {
-                                @apply fill-yellow-600;
-                            }
-                        }
-                    }
-                }
-                ul {
-                    li {
-                        a {
-                            &.btn-signup-header {
-                                @apply bg-primary text-white;
-                            }
-                        }
-                    }
-                }
-            }
-            a {
-                &.burger-menu {
-                    svg {
-                        path {
-                            @apply !fill-primary;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-    &.header-transparent {
-        .main-header-menu {
-            ul {
-                &.submenu {
-                    li {
-                        a {
-                            svg {
-                                path {
-                                    @apply !stroke-black;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.drop-shadow {
-            @apply !bg-white !text-black;
-            .main-header-menu {
-                ul {
-                    @apply text-black;
-                    li {
-                        &.has-sub {
-                            a {
-                                svg {
-                                    path {
-                                        @apply stroke-black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .main-header-action {
-                .main-header-action-list {
-                    ul {
-                        li {
-                            &.flags {
-                                ul {
-                                    &.list-flags {
-                                        li {
-                                            a {
-                                                &.flag-button {
-                                                    span {
-                                                        &.chevron-icon {
-                                                            svg {
-                                                                path {
-                                                                    @apply stroke-black;
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            a {
-                                @apply text-black;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .triv-logo-header {
-            a {
-                path {
-                    @apply fill-primary;
-                }
-            }
-        }
-        .main-header-action {
-            a {
-                &.button-switch-theme {
-                    @apply cursor-pointer;
-                    svg {
-                        path {
-                            @apply fill-yellow-600;
-                        }
-                        circle {
-                            @apply fill-yellow-600;
-                        }
-                    }
-                }
-            }
-            ul {
-                li {
-                    .btn-signup-header {
-                        @apply  !bg-primary !text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
-                    }
-                }
-            }
-            .main-header-action-list {
-                ul {
-                    li {
-                        a {
-                            &.flag-button {
-                                span {
-                                    &.chevron-icon {
-                                        svg {
-                                            path {
-                                                 @apply stroke-white;
-                                            }
-                                        }
-                                    }
-                                    &.check-icon {
-                                        svg {
-                                            path {
-                                                 @apply fill-primary stroke-white;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &.flags {
-                            @apply pr-[50px];
-                            ul {
-                                &.list-flags {
-                                    &.show {
-                                        @apply bg-white bg-opacity-100;
-                                        box-shadow: 0px 4px 4px 0px #00000014;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            a {
-                &.burger-menu {
-                    svg {
-                        path {
-                            @apply fill-primary;
-                        }
-                    }
-                }
-            }
-        }
-        .main-header-menu {
-            ul {
-                li {
-                    &.has-sub {
-                        a {
-                            svg {
-                                path {
-                                    @apply stroke-black;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .main-header {
-        @apply flex  items-center justify-between py-[20px] px-[100px]  text-white h-[70px] max-w-container mx-auto;
-        &.header-white {
-            @apply text-black;
-            .main-header-action {
-                a {
-                    &.button-switch-theme {
-                        @apply cursor-pointer;
-                        @media (max-width: 1080px) {
-                            svg {
-                                @apply h-[22px] w-[22px];
-                            }
-                        }
-                        svg {
-                            path {
-                                @apply fill-yellow-600;
-                            }
-                            circle {
-                                @apply fill-yellow-600;
-                            }
-                        }
-                    }
-                }
-                ul {
-                    li {
-                        .btn-signup-header {
-                            @apply  !bg-primary !text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
-                        }
-                    }
-                }
-                .main-header-action-list {
-                    ul {
-                        li {
-                            a {
-                                &.flag-button {
-                                    span {
-                                        &.chevron-icon {
-                                            svg {
-                                                path {
-                                                     @apply stroke-black;
-                                                }
-                                            }
-                                        }
-                                        &.check-icon {
-                                            svg {
-                                                path {
-                                                     @apply fill-primary stroke-white;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            &.flags {
-                                @apply pr-[50px];
-                                ul {
-                                    &.list-flags {
-                                        &.show {
-                                            @apply bg-white bg-opacity-100;
-                                            box-shadow: 0px 4px 4px 0px #00000014;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                a {
-                    &.burger-menu {
-                        svg {
-                            path {
-                                @apply fill-primary;
-                            }
-                        }
-                    }
-                }
-            }
-            .main-header-menu {
-                ul {
-                    li {
-                        &.has-sub {
-                            a {
-                                svg {
-                                    path {
-                                        @apply stroke-black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .main-header-menu {
-            ul {
-                @apply flex gap-[20px] items-center;
-                @media (max-width: 1250px) {
-                    @apply gap-[15px];
-                }
-                @media (max-width: 1055px) {
-                    @apply gap-[15px];
-                }
-                @media (max-width: 990px) {
-                    @apply gap-[8px];
-                }
-                li {
-                    @apply relative text-[14px]/[21px] font-medium cursor-pointer;
-                    @media (max-width: 1350px) {
-                        @apply text-[12px]/[18px];
-                    }
-                    @media (max-width: 1250px) {
-                        @apply text-[11px]/[15px];
-                    }
-                    @media (max-width: 1055px) {
-                        @apply text-[10px]/[15px];
-                    }
-                    @media (max-width: 990px) {
-                        @apply text-[9px]/[11px];
-                    }
-                    a {
-                        @apply block py-[10px];
-                    }
-                    &.active {
-                        @apply !text-primary;
-                    }
-                    &:hover {
-                        @apply text-primary;
-                    }
-                    &.has-sub {
-                        a {
-                            @apply flex gap-[4px] items-center;
-                            svg {
-                                path {
-                                    @apply stroke-white;
-                                }
-                            }
-                        }
-                        .submenu {
-                            @apply absolute left-0 m-0 list-none w-[150px] hidden bg-white  duration-300 transition-all z-10;
-                            box-shadow: 0px 4px 16px 0px #0000001A;
-    
-                            .submenu {
-                                position: absolute;
-                                left: 150px;
-                                top: 0px;
-                            }
-                            li {
-                                @apply text-black;
-                                a {
-                                    @apply flex justify-between px-[10px] py-[5px] items-center;
-                                    svg {
-                                        @apply -rotate-90
-                                    }
-                                }
-                            }
-                        }
-                        &:hover {
-                            @apply text-primary;
-                            > .submenu {
-                                @apply block;
-                                li {
-                                    &:hover {
-                                        @apply text-primary;
-                                        > .submenu {
-                                            @apply block;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-    
-    
-                    }
-                }
-            }
-        }
-        .triv-logo-header {
-            a {
+    &.drop-shadow {
+      @apply !bg-white !text-black;
+      .main-header-menu {
+        ul {
+          @apply text-black;
+          li {
+            &.has-sub {
+              a {
                 svg {
-                    @apply w-[99px] h-[31px] fill-white;
-                    @media (max-width: 990px) {
-                        @apply w-[89px] h-[21px] ;
-                    }
+                  path {
+                    @apply stroke-black;
+                  }
                 }
+              }
             }
+          }
         }
-        .main-header-action {
-            @apply flex items-center gap-[20px];
-            .burger-menu {
-                @apply hidden;
-                
-            }
-            .main-header-action-list {
-                @apply flex gap-[20px] items-center;
-                @media (max-width: 1080px) {
-                   @apply gap-0;
-                }
-                @media (max-width: 990px) {
-                    @apply gap-[6px];
-                 }
+      }
+      .main-header-action {
+        .main-header-action-list {
+          ul {
+            li {
+              &.flags {
                 ul {
-                    @apply flex items-center relative;
+                  &.list-flags {
                     li {
-                        @apply text-[14px]/[21px] font-medium cursor-pointer select-none;
-                        @media (max-width: 1080px) {
-                            @apply text-[10px]/[14px]
+                      a {
+                        &.flag-button {
+                          span {
+                            &.chevron-icon {
+                              svg {
+                                path {
+                                  @apply stroke-black;
+                                }
+                              }
+                            }
+                          }
                         }
-                        &:not(:first-child) {
-                            &::before {
-                                content: '';
-                                @apply border-l border-l-neutral-300 mx-[20px]
-                                
-                            }
-                            @media (max-width: 1250px) {
-                                &::before {
-                                    @apply mx-[12px];
-                                }
-                            }
-                            @media (max-width: 1080px) {
-                                &::before {
-                                    @apply mx-[8px];
-                                }
-                            }
-                            @media (max-width: 990px) {
-                                &::before {
-                                    @apply mx-[6px];
-                                }
-                            }
-                            
-                        } 
-                        .btn-signup-header {
-                            @apply  bg-white text-primary rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
-                            @media (max-width: 1250px) {
-                                @apply px-[8px] py-[6px] text-[11px]/[17px];
-                            }
-                            @media (max-width: 1080px) {
-                                @apply px-[6px] py-[4px] text-[10px]/[14px];
-                            }
-                        } 
-                        a {
-                            &.flag-button {
-                                span {
-                                    &.check-icon {
-                                        svg {
-                                            path {
-                                                 @apply fill-white;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                      }
+                    }
+                  }
+                }
+              }
+              a {
+                @apply text-black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .triv-logo-header {
+      a {
+        path {
+          @apply fill-primary;
+        }
+      }
+    }
+    .main-header-action {
+      a {
+        &.button-switch-theme {
+          @apply cursor-pointer;
+          svg {
+            path {
+              @apply fill-yellow-600;
+            }
+            circle {
+              @apply fill-yellow-600;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          .btn-signup-header {
+            @apply !bg-primary !text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
+          }
+        }
+      }
+      .main-header-action-list {
+        ul {
+          li {
+            a {
+              &.flag-button {
+                span {
+                  &.chevron-icon {
+                    svg {
+                      path {
+                        @apply stroke-white;
+                      }
+                    }
+                  }
+                  &.check-icon {
+                    svg {
+                      path {
+                        @apply fill-primary stroke-white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.flags {
+              @apply pr-[50px];
+              ul {
+                &.list-flags {
+                  &.show {
+                    @apply bg-white bg-opacity-100;
+                    box-shadow: 0px 4px 4px 0px #00000014;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      a {
+        &.burger-menu {
+          svg {
+            path {
+              @apply fill-primary;
+            }
+          }
+        }
+      }
+    }
+    .main-header-menu {
+      ul {
+        li {
+          &.has-sub {
+            a {
+              svg {
+                path {
+                  @apply stroke-black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-header {
+    @apply flex  items-center justify-between py-[20px] px-[100px]  text-white h-[70px] max-w-container mx-auto;
+    &.header-white {
+      @apply text-black;
+      .main-header-action {
+        a {
+          &.button-switch-theme {
+            @apply cursor-pointer;
+            @media (max-width: 1080px) {
+              svg {
+                @apply h-[22px] w-[22px];
+              }
+            }
+            svg {
+              path {
+                @apply fill-yellow-600;
+              }
+              circle {
+                @apply fill-yellow-600;
+              }
+            }
+          }
+        }
+        ul {
+          li {
+            .btn-signup-header {
+              @apply !bg-primary !text-white rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
+            }
+          }
+        }
+        .main-header-action-list {
+          ul {
+            li {
+              a {
+                &.flag-button {
+                  span {
+                    &.chevron-icon {
+                      svg {
+                        path {
+                          @apply stroke-black;
                         }
-                        &.flags {
-                            @apply pr-[50px];
-                            ul {
-                                &.list-flags {
-                                    @apply top-[-3px] flex flex-col absolute;
-                                    /* @apply absolute flex flex-col transition-all duration-300  scale-0 origin-top left-0; */
-                                    @media (max-width: 1080px) {
-                                        @apply top-[-5px];
-                                        li {
-                                            a {
-                                                &.flag-button {
-                                                    img {
-                                                        @apply w-[24px] h-[17px];
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    &.show {
-                                        @apply bg-white bg-opacity-20 rounded-[4px];
-                                        box-shadow: 0px 4px 4px 0px #00000014;
-                                    }
-                                    li {
-                                        @apply w-[60px] px-[8px] py-[4px];
-                                        a {
-                                            @apply flex items-center gap-[4px]
-                                        }
-                                        /* &:hover {
+                      }
+                    }
+                    &.check-icon {
+                      svg {
+                        path {
+                          @apply fill-primary stroke-white;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &.flags {
+                @apply pr-[50px];
+                ul {
+                  &.list-flags {
+                    &.show {
+                      @apply bg-white bg-opacity-100;
+                      box-shadow: 0px 4px 4px 0px #00000014;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        a {
+          &.burger-menu {
+            svg {
+              path {
+                @apply fill-primary;
+              }
+            }
+          }
+        }
+      }
+      .main-header-menu {
+        ul {
+          li {
+            &.has-sub {
+              a {
+                svg {
+                  path {
+                    @apply stroke-black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-header-menu {
+      ul {
+        @apply flex gap-[20px] items-center;
+        @media (max-width: 1250px) {
+          @apply gap-[15px];
+        }
+        @media (max-width: 1055px) {
+          @apply gap-[15px];
+        }
+        @media (max-width: 990px) {
+          @apply gap-[8px];
+        }
+        li {
+          @apply relative text-[14px]/[21px] font-medium cursor-pointer;
+          @media (max-width: 1350px) {
+            @apply text-[12px]/[18px];
+          }
+          @media (max-width: 1250px) {
+            @apply text-[11px]/[15px];
+          }
+          @media (max-width: 1055px) {
+            @apply text-[10px]/[15px];
+          }
+          @media (max-width: 990px) {
+            @apply text-[9px]/[11px];
+          }
+          a {
+            @apply block py-[10px];
+          }
+          &.active {
+            @apply !text-primary;
+          }
+          &:hover {
+            @apply text-primary;
+          }
+          &.has-sub {
+            a {
+              @apply flex gap-[4px] items-center;
+              svg {
+                path {
+                  @apply stroke-white;
+                }
+              }
+            }
+            .submenu {
+              @apply absolute left-0 m-0 list-none w-[150px] hidden bg-white  duration-300 transition-all z-10;
+              box-shadow: 0px 4px 16px 0px #0000001a;
+
+              .submenu {
+                @apply overflow-y-auto;
+                position: absolute;
+                left: 150px;
+                top: 0px;
+              }
+              li {
+                @apply text-black;
+                a {
+                  @apply flex justify-between px-[10px] py-[5px] items-center;
+                  svg {
+                    @apply -rotate-90;
+                  }
+                }
+              }
+            }
+            &:hover {
+              @apply text-primary;
+              > .submenu {
+                @apply block;
+                li {
+                  &:hover {
+                    @apply text-primary;
+                    > .submenu {
+                      @apply block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .triv-logo-header {
+      a {
+        svg {
+          @apply w-[99px] h-[31px] fill-white;
+          @media (max-width: 990px) {
+            @apply w-[89px] h-[21px];
+          }
+        }
+      }
+    }
+    .main-header-action {
+      @apply flex items-center gap-[20px];
+      .burger-menu {
+        @apply hidden;
+      }
+      .main-header-action-list {
+        @apply flex gap-[20px] items-center;
+        @media (max-width: 1080px) {
+          @apply gap-0;
+        }
+        @media (max-width: 990px) {
+          @apply gap-[6px];
+        }
+        ul {
+          @apply flex items-center relative;
+          li {
+            @apply text-[14px]/[21px] font-medium cursor-pointer select-none;
+            @media (max-width: 1080px) {
+              @apply text-[10px]/[14px];
+            }
+            &:not(:first-child) {
+              &::before {
+                content: "";
+                @apply border-l border-l-neutral-300 mx-[20px];
+              }
+              @media (max-width: 1250px) {
+                &::before {
+                  @apply mx-[12px];
+                }
+              }
+              @media (max-width: 1080px) {
+                &::before {
+                  @apply mx-[8px];
+                }
+              }
+              @media (max-width: 990px) {
+                &::before {
+                  @apply mx-[6px];
+                }
+              }
+            }
+            .btn-signup-header {
+              @apply bg-white text-primary rounded-[8px] px-[8px] py-[6px] w-full h-[29px];
+              @media (max-width: 1250px) {
+                @apply px-[8px] py-[6px] text-[11px]/[17px];
+              }
+              @media (max-width: 1080px) {
+                @apply px-[6px] py-[4px] text-[10px]/[14px];
+              }
+            }
+            a {
+              &.flag-button {
+                span {
+                  &.check-icon {
+                    svg {
+                      path {
+                        @apply fill-white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.flags {
+              @apply pr-[50px];
+              ul {
+                &.list-flags {
+                  @apply top-[-3px] flex flex-col absolute;
+                  /* @apply absolute flex flex-col transition-all duration-300  scale-0 origin-top left-0; */
+                  @media (max-width: 1080px) {
+                    @apply top-[-5px];
+                    li {
+                      a {
+                        &.flag-button {
+                          img {
+                            @apply w-[24px] h-[17px];
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &.show {
+                    @apply bg-white bg-opacity-20 rounded-[4px];
+                    box-shadow: 0px 4px 4px 0px #00000014;
+                  }
+                  li {
+                    @apply w-[60px] px-[8px] py-[4px];
+                    a {
+                      @apply flex items-center gap-[4px];
+                    }
+                    /* &:hover {
                                             @apply bg-primary;
                                         } */
-                                        &::before {
-                                            @apply !content-none;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
+                    &::before {
+                      @apply !content-none;
                     }
+                  }
                 }
-                a {
-                    &.button-switch-theme {
-                        @apply cursor-pointer;
-                        @media (max-width: 1080px) {
-                            svg {
-                                @apply h-[22px] w-[22px];
-                            }
-                        }
-                    }
-                }
+              }
             }
+          }
         }
-        @layer components {
-            &.mobile-responsive {
-                @apply px-[20px] py-[15px]  h-[60px];
-                .triv-logo-header {
-                    a {
-                        svg {
-                            @apply !w-[71px] !h-[20.11px];
-                        }
-                    }
-                }
-                .main-header-menu {
-                    @apply hidden;
-                }
-                .main-header-action {
-                    .burger-menu {
-                        @apply block;
-                    }
-                    .main-header-action-list {
-                       @apply hidden;
-                    }
-                }
+        a {
+          &.button-switch-theme {
+            @apply cursor-pointer;
+            @media (max-width: 1080px) {
+              svg {
+                @apply h-[22px] w-[22px];
+              }
             }
+          }
         }
-    }    
+      }
+    }
+    @layer components {
+      &.mobile-responsive {
+        @apply px-[20px] py-[15px]  h-[60px];
+        .triv-logo-header {
+          a {
+            svg {
+              @apply !w-[71px] !h-[20.11px];
+            }
+          }
+        }
+        .main-header-menu {
+          @apply hidden;
+        }
+        .main-header-action {
+          .burger-menu {
+            @apply block;
+          }
+          .main-header-action-list {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
 }
 .main-sidebar-overlay {
-    @apply bg-black opacity-50 h-full w-full fixed z-10;
+  @apply bg-black opacity-50 h-full w-full fixed z-10;
 }
 
 .main-sidebar-menu {
-    @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[20] justify-between transition-all duration-500 ;
-    &.show {
-        @apply mr-[0px];
-    }
-    .sidebar-menu-top {
-        @apply flex flex-col gap-[46px] overflow-y-auto;
-        .sidebar-header {
-            @apply flex justify-between items-center;
-            .sidebar-header-logo {
-                svg {
-                    @apply w-[71px] h-[20.11px];
-                }
+  @apply bg-white w-[300px] mr-[-300px] h-full fixed right-0 flex flex-col px-[20px] py-[15px] z-[20] justify-between transition-all duration-500;
+  &.show {
+    @apply mr-[0px];
+  }
+  .sidebar-menu-top {
+    @apply flex flex-col gap-[46px] overflow-y-auto;
+    .sidebar-header {
+      @apply flex justify-between items-center;
+      .sidebar-header-logo {
+        svg {
+          @apply w-[71px] h-[20.11px];
+        }
+      }
+      .sidebar-header-action {
+        @apply flex gap-[8px] items-center relative;
+        ul {
+          &.list-flags {
+            @apply top-[-2px] right-[50px] flex flex-col absolute;
+            /* @apply absolute flex flex-col transition-all duration-300  scale-0 origin-top left-0; */
+            &.show {
+              @apply bg-white rounded-[4px];
+              box-shadow: 0px 4px 4px 0px #00000014;
             }
-            .sidebar-header-action {
-                @apply flex gap-[8px] items-center relative;
-                ul {
-                    &.list-flags {
-                        @apply top-[-2px] right-[50px] flex flex-col absolute;
-                        /* @apply absolute flex flex-col transition-all duration-300  scale-0 origin-top left-0; */
-                        &.show {
-                            @apply bg-white rounded-[4px];
-                            box-shadow: 0px 4px 4px 0px #00000014;
-                        }
-                        li {
-                            @apply w-[60px] px-[8px] py-[4px];
-                            a {
-                                @apply flex items-center gap-[4px];
-                                .chevron-icon {
-                                    svg {
-                                        path {
-                                            @apply stroke-primary;
-                                        }
-                                    }
-                                }
-                                .check-icon {
-                                    svg {
-                                        path {
-                                            @apply fill-primary;
-                                        }
-                                    }
-                                }
-                            }
-                            &::before {
-                                @apply !content-none;
-                            }
-                        }
+            li {
+              @apply w-[60px] px-[8px] py-[4px];
+              a {
+                @apply flex items-center gap-[4px];
+                .chevron-icon {
+                  svg {
+                    path {
+                      @apply stroke-primary;
                     }
+                  }
                 }
-            }
-        }
-        .sidebar-list {
-            @apply overflow-y-auto;
-            ul {
-                @apply text-black flex flex-col gap-[25px];
-                li {
-                    @apply text-[14px]/[21px] font-medium;
-                    ul {
-                        &.sidebar-submenu {
-                            @apply p-[5px] transition-all duration-500 gap-[5px];
-                            li {
-                                @apply text-[13px]/[18px] font-normal;
-
-                            }
-                        }
+                .check-icon {
+                  svg {
+                    path {
+                      @apply fill-primary;
                     }
+                  }
                 }
+              }
+              &::before {
+                @apply !content-none;
+              }
             }
+          }
         }
+      }
     }
-    .sidebar-menu-bottom {
-        @apply flex justify-between gap-[20px];
-        a {
-            @apply w-1/2 flex justify-center items-center py-[8px] text-[12px]/[18px] font-medium rounded-[30px];
-            &.button-login{
-                @apply  bg-primary text-white;
+    .sidebar-list {
+      @apply overflow-y-auto;
+      ul {
+        @apply text-black flex flex-col gap-[25px];
+        li {
+          @apply text-[14px]/[21px] font-medium;
+          ul {
+            &.sidebar-submenu {
+              @apply p-[5px] transition-all duration-500 gap-[5px];
+              li {
+                @apply text-[13px]/[18px] font-normal;
+              }
             }
-            &.button-register {
-                @apply  bg-white text-primary border border-primary;
-            }
+          }
         }
+      }
     }
+  }
+  .sidebar-menu-bottom {
+    @apply flex justify-between gap-[20px];
+    a {
+      @apply w-1/2 flex justify-center items-center py-[8px] text-[12px]/[18px] font-medium rounded-[30px];
+      &.button-login {
+        @apply bg-primary text-white;
+      }
+      &.button-register {
+        @apply bg-white text-primary border border-primary;
+      }
+    }
+  }
 }
