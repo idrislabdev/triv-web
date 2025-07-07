@@ -59,7 +59,7 @@ const LiverateListSection = (props: {
       params: { ...paramsMobile },
     });
     const temp = [...dataLiverates];
-    temp.push(resp.data.data);
+    temp.concat(resp.data.data);
     setDataLiverates(temp);
   }, [paramsMobile, dataLiverates]);
 
