@@ -92,7 +92,7 @@ const MainHeader = (props: { classText: string; lang: string }) => {
         pathname.split("/")[3] == "ethereum" ||
         pathname.split("/")[3] == "stellar" ||
         pathname.split("/")[3] == "ripple" ||
-        pathname.split("/")[3] == "eos" ||
+        pathname.split("/")[3] == "vaulta" ||
         pathname.split("/")[3] == "dash" ||
         pathname.split("/")[3] == "tether" ||
         pathname.split("/")[3] == "chainlink" ||
@@ -131,7 +131,7 @@ const MainHeader = (props: { classText: string; lang: string }) => {
         path == "ethereum" ||
         path == "stellar" ||
         path == "ripple" ||
-        path == "eos" ||
+        path == "vaulta" ||
         path == "dash" ||
         path == "tether" ||
         path == "chainlink" ||
@@ -338,12 +338,12 @@ const MainHeader = (props: { classText: string; lang: string }) => {
                       <li
                         className={`${
                           pathname.split("/")[2] == "home" &&
-                          pathname.split("/")[3] === "eos"
+                          pathname.split("/")[3] === "vaulta"
                             ? "active"
                             : ""
                         }`}
                       >
-                        <Link href={`/${lang}/home/eos`}>Eos</Link>
+                        <Link href={`/${lang}/home/vaulta`}>Vaulta</Link>
                       </li>
                       <li
                         className={`${

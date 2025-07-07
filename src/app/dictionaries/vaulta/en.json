@@ -1,0 +1,105 @@
+{
+  "header_section": {
+    "title": "Buy and sell Vaulta Indonesia 24 hours",
+    "title_1": "Buy and sell",
+    "title_2": "Vaulta",
+    "title_3": "Indonesia 24 hours",
+    "description": "The largest Vaulta trading platform in Indonesia since 2015. Easy, anytime & anywhere 24 hours without holidays. Triv is integrated with 61 banks & E-money in Indonesia, since 2015 Triv is used by millions of people to transact A.",
+    "button_1": "Buy Vaulta",
+    "button_2": "Visit Marketplace",
+    "registered_text": "Terdaftar dan diawasi oleh"
+  },
+  "regulasi_section": {
+    "liquiditas": {
+      "title": "High Liquidity",
+      "content": "Spread or the difference in the buying and selling price of Vaulta Triv is one of the lowest in the market today. With our brokerage system you do not need to wait for other buyers / sellers to make transactions. All buying / selling transactions can be done instantly and in real-time without a waiting process.",
+      "content_1": "Triv's spread",
+      "content_2": "one of the lowest",
+      "content_3": "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
+    },
+    "regulator": {
+      "title": "Regulated and Insured",
+      "content": "Since 2015 Triv has been used by millions of people, all customer funds in our system are insured by Bitgo and Lloyd England for 100 million USD or the equivalent of 1.45 trillion rupiah. Triv is an authorized broker registered and supervised by Bappebti."
+    }
+  },
+  "layanan_section": {
+    "title": "What You Can Do With Triv Vaulta Service Indonesia",
+    "title_1": "What You Can Do With Triv",
+    "title_2": "Vaulta",
+    "title_3": "Service Indonesia",
+    "content": "Triv app allows you to buy, sell, trade – as well swap and staking – crypto currencies. Triv is the most comprehensive and secure trading platform to manage and develop the value of your portfolio according to the current crypto currencies price.",
+    "card": {
+      "jual_beli": {
+        "title": "Buy and sell Vaulta 24 hours",
+        "content": "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Vaulta in real-time to your bank / e-wallet in seconds even on holidays.",
+        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_class": "macbook"
+      },
+      "kirim": {
+        "title": "Send Vaulta",
+        "content": "Since it is digital, sending Vaulta can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Vaulta is free of charge from a fellow Triv users!",
+        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_class": "iphone"
+      },
+      "terima": {
+        "title": "Receive Vaulta",
+        "content": "You can receive Vaulta through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
+        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_class": "iphone"
+      },
+      "hoddl": {
+        "title": "HODL Vaulta",
+        "content": "The fact is A HODLER get higher returns compared with A trader. Therefore, HODL your A in Triv, in protection under insurance of Bigo & Llyod England up to USD100 million or equivalent to 1.45 trillion Rupiahs.",
+        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_class": "macbook"
+      },
+      "swap": {
+        "title": "Swap Vaulta",
+        "content": "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
+        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_class": "iphone"
+      },
+      "isi_pulsa": {
+        "title": "Top Up Credit and Pay Bills",
+        "content": "You can exchange A coin for fiat money in Triv platform, to pay bills such as: phone bills, credit, and even the electricity token.",
+        "image_url": "/images/services/macbook-buy-bitcoin.png",
+        "image_class": "macbook"
+      }
+    }
+  },
+  "average_section": {
+    "live_chat": {
+      "title": "Average LiveChat Responds",
+      "content": "Livechat and Call center support service in Triv, ready to help you 24/7"
+    },
+    "processing": {
+      "title": "Average Processing Time",
+      "content": "Automatic and zero-downtime transaction in Triv. Since 2015, Triv run its operation without incurring downtime"
+    },
+    "updated_text": "*Updated Real-Time"
+  },
+  "ewallet_section": {
+    "title": "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
+    "title_1": "Triv Supports",
+    "title_2": "61 banks & E-wallets",
+    "title_3": "in Indonesia for all our transactions",
+    "subtitle": "24/7 Real-time Deposits & Withdrawals",
+    "description": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
+    "description_1": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+    "description_2": "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+  },
+  "start_now_section": {
+    "title": "Start Investing Now",
+    "description": "Sign up in minutes and achieve your investment goals now🚀",
+    "button": "Start Now"
+  },
+  "triv_affliate": {
+    "title_1": "Triv Affiliate",
+    "content_1": "You will receive 10% cashback commission on your downline affiliate transaction, without any conditions!",
+    "title_2": "Invite friends and relatives",
+    "content_2": "Triv Affiliate applies life-time referral rewards. You can earn cash back commission on your downline affiliate transaction with no expiry date.",
+    "follow_text": "Earn Rewards and Bonuses by Referring Friends",
+    "button_1": "Affiliate Program",
+    "button_2": "Invite Friends"
+  }
+}
