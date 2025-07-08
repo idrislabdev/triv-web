@@ -1,105 +1,105 @@
 {
-    "header_section": {
-        "title" : "Jual Beli Solana Indonesia 24 jam",
-        "title_1" : "Triv - Platform Jual Beli",
-        "title_2" : "Solana",
-        "title_3" : "Indonesia yang Mudah & Cepat",
-        "description" : "Jual beli Solana 24 jam dengan update harga SOL/IDR secara real-time dan spread terendah. Layanan cryptocurrency terpercaya di Indonesia sejak 2015, berizin dan diawasi oleh OJK serta Bappebti.",
-        "button_1" : "Beli Solana",
-        "button_2" : "Kunjungi Marketplace",
-        "registered_text" : "Terdaftar dan diawasi oleh"
+  "header_section": {
+    "title": "Jual Beli Solana Indonesia 24 jam",
+    "title_1": "Triv - Platform Jual Beli",
+    "title_2": "Solana",
+    "title_3": "Indonesia yang Mudah & Cepat",
+    "description": "Jual beli Solana 24 jam dengan update harga SOL/IDR secara real-time dan spread terendah. Layanan cryptocurrency terpercaya di Indonesia sejak 2015, berizin dan diawasi oleh OJK serta Bappebti.",
+    "button_1": "Beli Solana",
+    "button_2": "Kunjungi Marketplace",
+    "registered_text": "Terdaftar dan diawasi oleh"
+  },
+  "regulasi_section": {
+    "liquiditas": {
+      "title": "Likuiditas Tinggi",
+      "content": "Spread atau selisih harga jual beli Solana di Triv merupakan salah satu yang terendah di pasar saat ini. Dengan sistem brokerage kami, Anda tidak perlu menunggu pembeli atau penjual lain untuk melakukan transaksi. Seluruh transaksi beli dan jual dapat dilakukan secara instan dan real-time tanpa proses menunggu.",
+      "content_1": "Spread atau selisih",
+      "content_2": "harga jual beli Solana",
+      "content_3": "di Triv merupakan salah satu yang terendah di pasar saat ini. Dengan sistem brokerage kami, Anda tidak perlu menunggu pembeli atau penjual lain untuk melakukan transaksi. Seluruh transaksi beli dan jual dapat dilakukan secara instan dan real-time tanpa proses menunggu."
     },
-    "regulasi_section": {
-        "liquiditas" : {
-            "title" : "Likuiditas Tinggi",
-            "content" : "Spread atau selisih harga jual beli Solana di Triv merupakan salah satu yang terendah di pasar saat ini. Dengan sistem brokerage kami, Anda tidak perlu menunggu pembeli atau penjual lain untuk melakukan transaksi. Seluruh transaksi beli dan jual dapat dilakukan secara instan dan real-time tanpa proses menunggu.",
-            "content_1" : "Spread atau selisih",
-            "content_2" : "harga jual beli Solana",
-            "content_3" : "di Triv merupakan salah satu yang terendah di pasar saat ini. Dengan sistem brokerage kami, Anda tidak perlu menunggu pembeli atau penjual lain untuk melakukan transaksi. Seluruh transaksi beli dan jual dapat dilakukan secara instan dan real-time tanpa proses menunggu."
-        },
-        "regulator" : {
-            "title" : "Teregulasi dan Terasuransi",
-            "content" : "Sejak tahun 2015 Triv telah digunakan oleh jutaan orang, seluruh dana pelanggan di sistem kami diasuransikan oleh Bitgo dan Lloyd England sebesar 100 juta USD atau setara dengan 1,45 triliun rupiah. Triv merupakan broker resmi yang terdaftar dan diawasi oleh Bappebti."
-        }
-    },
-    "layanan_section": {
-        "title" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan Solana Indonesia",
-        "title_1" : "Yang Bisa Kamu Lakukan Dengan Triv Layanan",
-        "title_2" : "Solana",
-        "title_3" : "Indonesia",
-        "content" : "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli. Baik itu swap, staking ataupun lainnya dapat anda lakukan dalam satu aplikasi. Triv merupakan Aplikasi dengan fitur terlengkap untuk mengelola dan menumbuhkan portfolio anda.",
-        "card" : {
-            "jual_beli" : {
-                "title" : "Jual dan Beli Solana 24 jam",
-                "content" : "Tidak seperti instrumen investasi tradisional, Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Solana anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
-                "image_url" : "/images/services/macbook-bitcoin.png",
-                "image_class" : "macbook"
-            },
-            "kirim" : {
-                "title" : "Kirim Solana",
-                "content" : "Kirim Solana ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Solana ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
-                "image_url" : "/images/services/iphone-send-kripto.png",
-                "image_class" : "iphone"
-            },
-            "terima" : {
-                "title" : "Terima Solana",
-                "content" : "Terima Solana dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
-                "image_url" : "/images/services/iphone-receive-bitcoin.png",
-                "image_class" : "iphone"
-            },
-            "hoddl" : {
-                "title" : "HODL Solana",
-                "content" : "Tahukah kamu? Secara historis terbukti bahwa HODLER SOL mendapatkan return lebih tinggi daripada trader SOL. Simpan SOLmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
-                "image_url" : "/images/services/macbook-bitcoin.png",
-                "image_class" : "macbook"
-            },
-            "swap" : {
-                "title" : "Swap Solana",
-                "content" : "Triv mendukung lebih dari 700 cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
-                "image_url" : "/images/services/iphone-bitcoin.png",
-                "image_class" : "iphone"
-            },
-            "isi_pulsa" : {
-                "title" : "Isi Pulsa dan Bayar Tagihan",
-                "content" : "Tukarkan koin SOLmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
-                "image_url" : "/images/services/macbook-buy-bitcoin.png",
-                "image_class" : "macbook"
-            }
-        }
-    },
-    "average_section": {
-        "live_chat" : {
-            "title" : "Average LiveChat Responds",
-            "content" : "Livechat dan Call center Triv siap untuk membantu anda"
-        },
-        "processing" : {
-            "title" : "Average Processing Time",
-            "content" : "Seluruh transaksi Triv berjalan secara otomatis dan tanpa downtime. Sejak 2015 Triv tidak pernah mengalami downtime yang menggangu transaksi nasabah "
-        },
-        "updated_text" : "*Updated Real-Time"
-    },
-    "ewallet_section": {
-        "title" : "Triv Mendukung 61 bank & E-wallet di Indonesia untuk semua transaksi kami",
-        "title_1" : "Triv Mendukung",
-        "title_2" : "Lebih dari 61 bank & E-wallet",
-        "title_3" : "di Indonesia untuk semua transaksi kami",
-        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet. Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.",
-        "description_1": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.",
-        "description_2" : "Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
-    },
-    "start_now_section": {
-        "title" : "Mulai Investasi Sekarang",
-        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
-        "button": "Mulai Sekarang"
-    },
-    "triv_affliate" : {
-        "title_1" : "Triv Affiliate",
-        "content_1" : "Dengan program Affiliate kami setiap downline melakukan transaksi, anda akan mendapatkan cashback 10% tanpa syarat!",
-        "title_2" : "Undang teman dan saudara",
-        "content_2" : "Affiliate Triv tidak memiliki masa kadaluarsa dan berlaku seumur hidup, selama downline anda melakukan transaksi, maka anda akan tetap mendapatkan komisi tanpa batasan waktu.",
-        "follow_text" : "Ajak teman dan dapatkan tambahan penghasilan",
-        "button_1" : "Affiliate Program",
-        "button_2" : "Invite Friends"
+    "regulator": {
+      "title": "Teregulasi dan Terasuransi",
+      "content": "Sejak tahun 2015 Triv telah digunakan oleh jutaan orang, seluruh dana pelanggan di sistem kami diasuransikan oleh Bitgo dan Lloyd England sebesar 100 juta USD atau setara dengan 1,45 triliun rupiah. Triv merupakan broker resmi yang terdaftar dan diawasi oleh Bappebti."
     }
+  },
+  "layanan_section": {
+    "title": "Yang Bisa Kamu Lakukan Dengan Triv Layanan Solana Indonesia",
+    "title_1": "Yang Bisa Kamu Lakukan Dengan Triv Layanan",
+    "title_2": "Solana",
+    "title_3": "Indonesia",
+    "content": "Triv mendukung berbagai macam jenis transaksi dan bukan hanya jual beli. Baik itu swap, staking ataupun lainnya dapat anda lakukan dalam satu aplikasi. Triv merupakan Aplikasi dengan fitur terlengkap untuk mengelola dan menumbuhkan portfolio anda.",
+    "card": {
+      "jual_beli": {
+        "title": "Jual dan Beli Solana 24 jam",
+        "content": "Tidak seperti instrumen investasi tradisional, Triv tidak memiliki hari libur Anda dapat beli dan jual saldo Solana anda secara real-time dengan bank ataupun e-wallet dalam hitungan detik bahkan pada hari libur.",
+        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_class": "macbook"
+      },
+      "kirim": {
+        "title": "Kirim Solana",
+        "content": "Kirim Solana ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Solana ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
+        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_class": "iphone"
+      },
+      "terima": {
+        "title": "Terima Solana",
+        "content": "Terima Solana dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
+        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_class": "iphone"
+      },
+      "hoddl": {
+        "title": "HODL Solana",
+        "content": "Tahukah kamu? Secara historis terbukti bahwa HODLER SOL mendapatkan return lebih tinggi daripada trader SOL. Simpan SOLmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
+        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_class": "macbook"
+      },
+      "swap": {
+        "title": "Swap Solana",
+        "content": "triv mendukung lebih dari 1000+ cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
+        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_class": "iphone"
+      },
+      "isi_pulsa": {
+        "title": "Isi Pulsa dan Bayar Tagihan",
+        "content": "Tukarkan koin SOLmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
+        "image_url": "/images/services/macbook-buy-bitcoin.png",
+        "image_class": "macbook"
+      }
+    }
+  },
+  "average_section": {
+    "live_chat": {
+      "title": "Average LiveChat Responds",
+      "content": "Livechat dan Call center Triv siap untuk membantu anda"
+    },
+    "processing": {
+      "title": "Average Processing Time",
+      "content": "Seluruh transaksi Triv berjalan secara otomatis dan tanpa downtime. Sejak 2015 Triv tidak pernah mengalami downtime yang menggangu transaksi nasabah "
+    },
+    "updated_text": "*Updated Real-Time"
+  },
+  "ewallet_section": {
+    "title": "Triv Mendukung 61 bank & E-wallet di Indonesia untuk semua transaksi kami",
+    "title_1": "Triv Mendukung",
+    "title_2": "Lebih dari 61 bank & E-wallet",
+    "title_3": "di Indonesia untuk semua transaksi kami",
+    "subtitle": "24/7 Real Time Deposit & Withdrawal",
+    "description": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet. Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.",
+    "description_1": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.",
+    "description_2": "Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+  },
+  "start_now_section": {
+    "title": "Mulai Investasi Sekarang",
+    "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang🚀",
+    "button": "Mulai Sekarang"
+  },
+  "triv_affliate": {
+    "title_1": "Triv Affiliate",
+    "content_1": "Dengan program Affiliate kami setiap downline melakukan transaksi, anda akan mendapatkan cashback 10% tanpa syarat!",
+    "title_2": "Undang teman dan saudara",
+    "content_2": "Affiliate Triv tidak memiliki masa kadaluarsa dan berlaku seumur hidup, selama downline anda melakukan transaksi, maka anda akan tetap mendapatkan komisi tanpa batasan waktu.",
+    "follow_text": "Ajak teman dan dapatkan tambahan penghasilan",
+    "button_1": "Affiliate Program",
+    "button_2": "Invite Friends"
+  }
 }
