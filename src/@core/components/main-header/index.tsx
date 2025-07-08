@@ -272,7 +272,9 @@ const MainHeader = (props: { classText: string; lang: string }) => {
                   pathname.split("/")[2] === "liverate" ? "active" : ""
                 }`}
               >
-                <Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link>
+                <Link href={`/${lang}/liverate`}>
+                  {lang == "id" ? "Harga (Jual Beli)" : "Liverate"}
+                </Link>
               </li>
               <li className={`has-sub ${checkMenuService() ? "active" : ""}`}>
                 <a>

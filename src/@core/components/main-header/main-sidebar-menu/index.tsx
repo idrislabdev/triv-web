@@ -172,7 +172,9 @@ const MainSidebarMenu = (props: {
           <div className="sidebar-list">
             <ul>
               <li>
-                <Link href={`/${lang}/liverate`}>Harga (Jual Beli)</Link>
+                <Link href={`/${lang}/liverate`}>
+                  {lang == "id" ? "Harga (Jual Beli)" : "Liverate"}
+                </Link>
               </li>
               <li>
                 <a

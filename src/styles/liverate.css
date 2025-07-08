@@ -1787,22 +1787,24 @@
       .liverate-list-section {
         @apply py-[15px] px-[20px] gap-[10px];
         .list-header {
+          @apply flex-col-reverse gap-[24px];
           .liverate-menu {
             @apply w-full;
             ul {
               @apply w-full justify-between;
               li {
                 a {
-                  @apply text-[10px]/[15px];
+                  @apply text-[10px]/[150%];
                   svg {
-                    @apply w-[18.33px] h-[18.33px];
+                    @apply w-[20px] h-[20px];
                   }
                 }
               }
             }
           }
           .group-input {
-            @apply hidden;
+            /* @apply hidden; */
+            @apply w-full;
           }
         }
         .list-liverate-content {
