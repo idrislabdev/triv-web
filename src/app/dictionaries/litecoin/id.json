@@ -32,19 +32,19 @@
       "jual_beli": {
         "title": "Jual dan Beli Litecoin 24 jam",
         "content": "Tidak seperti instrumen investasi tradisional, pasar Kripto tidak memiliki hari libur Anda dapat menjual Litecoin anda secara real-time ke bank / e-wallet dalam hitungan detik bahkan pada hari libur.",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/litecoin/buy-litecoin.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Kirim Litecoin",
         "content": "Kirim Litecoin ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Litecoin ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
-        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_url": "/images/services/litecoin/send-litecoin.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Terima Litecoin",
         "content": "Terima Litecoin dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
-        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_url": "/images/services/litecoin/receive-litecoin.png",
         "image_class": "iphone"
       },
       "hoddl": {
@@ -56,7 +56,7 @@
       "swap": {
         "title": "Swap Litecoin",
         "content": "triv mendukung lebih dari 1000+ cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
-        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_url": "/images/services/litecoin/swap-litecoin.png",
         "image_class": "iphone"
       },
       "isi_pulsa": {

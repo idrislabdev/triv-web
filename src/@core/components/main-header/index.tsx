@@ -350,7 +350,7 @@ const MainHeader = (props: { classText: string; lang: string }) => {
                       <li
                         className={`${
                           pathname.split("/")[2] == "home" &&
-                          pathname.split("/")[3] === "Litecoin"
+                          pathname.split("/")[3] === "litecoin"
                             ? "active"
                             : ""
                         }`}

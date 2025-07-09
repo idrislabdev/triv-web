@@ -32,31 +32,31 @@
       "jual_beli": {
         "title": "Jual dan Beli Tether 24 jam",
         "content": "Tidak seperti instrumen investasi tradisional, pasar Kripto tidak memiliki hari libur Anda dapat menjual Tether anda secara real-time ke bank / e-wallet dalam hitungan detik bahkan pada hari libur.",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/tether/buy-tether.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Kirim Tether",
         "content": "Kirim Tether ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Tether ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
-        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_url": "/images/services/tether/send-tether.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Terima Tether",
         "content": "Terima Tether dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
-        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_url": "/images/services/tether/receive-tether.png",
         "image_class": "iphone"
       },
       "hoddl": {
         "title": "HODL Tether",
         "content": "Tahukah kamu? Secara historis terbukti bahwa HODLER USDT mendapatkan return lebih tinggi daripada trader USDT. Simpan USDTmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/tether/hodl-tether.png",
         "image_class": "macbook"
       },
       "swap": {
         "title": "Swap Tether",
         "content": "triv mendukung lebih dari 1000+ cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
-        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_url": "/images/services/tether/swap-tether.png",
         "image_class": "iphone"
       },
       "isi_pulsa": {

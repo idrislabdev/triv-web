@@ -32,37 +32,37 @@
       "jual_beli": {
         "title": "Jual dan Beli Ethereum 24 jam",
         "content": "Tidak seperti instrumen investasi tradisional, pasar Kripto tidak memiliki hari libur Anda dapat menjual Ethereum anda secara real-time ke bank / e-wallet dalam hitungan detik bahkan pada hari libur.",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/ethereum/buy-ethereum.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Kirim Ethereum",
         "content": "Kirim Ethereum ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Ethereum ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
-        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_url": "/images/services/ethereum/send-ethereum.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Terima Ethereum",
         "content": "Terima Ethereum dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
-        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_url": "/images/services/ethereum/receive-ethreum.png",
         "image_class": "iphone"
       },
       "hoddl": {
         "title": "HODL Ethereum",
         "content": "Tahukah kamu? Secara historis terbukti bahwa HODLER ETH mendapatkan return lebih tinggi daripada trader ETH. Simpan ETHmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/ethereum/hodl-ethereum.png",
         "image_class": "macbook"
       },
       "swap": {
         "title": "Swap Ethereum",
         "content": "triv mendukung lebih dari 1000+ cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
-        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_url": "/images/services/ethereum/swap-ethereum.png",
         "image_class": "iphone"
       },
       "isi_pulsa": {
         "title": "Isi Pulsa dan Bayar Tagihan",
         "content": "Tukarkan koin ETHmu ke dompet rupiah Triv dan gunakan untuk berbagai macam keperluan seperti isi pulsa, bayar tagihan bahkan membeli token listrik.",
-        "image_url": "/images/services/macbook-buy-bitcoin.png",
+        "image_url": "/images/services/ethereum/macbook-buy-bitcoin.png",
         "image_class": "macbook"
       }
     }
