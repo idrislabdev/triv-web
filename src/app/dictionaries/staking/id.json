@@ -1,92 +1,92 @@
 {
-    "header_section": {
-        "title_1": "Dapatkan Penghasilan Tambahan Dengan",
-        "title_2": "Triv Staking Crypto",
-        "description": "Kripto staking membantu mengamankan protokol koin terkait, dan sebagai imbalannya, Anda akan mendapatkan bunga dari koin Anda. Berbeda dengan deposito bank, bunga staking dapat diambil secara harian atau mingguan.",
-        "registered_text": "Terdaftar dan diawasi oleh"
+  "header_section": {
+    "title_1": "Dapatkan Penghasilan Tambahan Dengan",
+    "title_2": "Triv Staking Kripto",
+    "description": "Kripto staking membantu mengamankan protokol koin terkait, dan sebagai imbalannya, Anda akan mendapatkan bunga dari koin Anda. Berbeda dengan deposito bank, bunga staking dapat diambil secara harian atau mingguan.",
+    "registered_text": "Terdaftar dan diawasi oleh"
+  },
+  "benefit_section": {
+    "media": {
+      "title": "Tonton video youtube kami untuk mempelajari langkah tutorial lengkap melakukan Triv Staking",
+      "description": "Dengan menggunakan staking Triv, Anda akan memperoleh penghasilan tambahan sambil HODLing koin Anda, sangat cocok untuk investor jangka panjang yang percaya pada pertumbuhan ekosistem koin Anda. Tanpa biaya, Tanpa risiko, dan Diasuransikan untuk semua transaksi staking Triv Anda."
     },
-    "benefit_section": {
-        "media": {
-            "title" : "Tonton video youtube kami untuk mempelajari langkah tutorial lengkap melakukan Triv Staking",
-            "description": "Dengan menggunakan staking Triv, Anda akan memperoleh penghasilan tambahan sambil HODLing koin Anda, sangat cocok untuk investor jangka panjang yang percaya pada pertumbuhan ekosistem koin Anda. Tanpa biaya, Tanpa risiko, dan Diasuransikan untuk semua transaksi staking Triv Anda."
+    "benefit": {
+      "title_1": "Keuntungan",
+      "title_2": "staking kripto",
+      "title_3": "di Triv",
+      "benefits": [
+        {
+          "title": "100% Insured",
+          "description": "Seluruh dana nasabah Triv yang disimpan di cold storage dijamin dan diasuransikan oleh BitGo Custodian dan Lloyd Insurance England sebesar 100.000.000 USD atau setara dengan 1,45 triliun Rupiah."
         },
-        "benefit": {
-            "title_1": "Keuntungan",
-            "title_2": "staking kripto",
-            "title_3": "di Triv",
-            "benefits": [
-                {
-                    "title": "100% Insured",
-                    "description": "Seluruh dana nasabah Triv yang disimpan di cold storage dijamin dan diasuransikan oleh BitGo Custodian dan Lloyd Insurance England sebesar 100.000.000 USD atau setara dengan 1,45 triliun Rupiah."
-                },
-                {
-                    "title": "0% Fee",
-                    "description": "Terima bunga tanpa potongan apapun, bunga yang ditunjukkan adalah bunga bersih yang Anda dapatkan."
-                },
-                {
-                    "title": "Bunga Dividen",
-                    "description": "Bunga dibagikan secara tetap dan dapat Anda cairkan langsung ke 61 bank dan E-wallet yang didukung oleh sistem Triv, 24 jam tanpa hari libur."
-                }
-            ],
-            "button": "Mulai Sekarang"
+        {
+          "title": "0% Fee",
+          "description": "Terima bunga tanpa potongan apapun, bunga yang ditunjukkan adalah bunga bersih yang Anda dapatkan."
+        },
+        {
+          "title": "Bunga Dividen",
+          "description": "Bunga dibagikan secara tetap dan dapat Anda cairkan langsung ke 61 bank dan E-wallet yang didukung oleh sistem Triv, 24 jam tanpa hari libur."
         }
-    },
-    "guide_crypto_section": {
-        "title_1": "Panduan tentang cara",
-        "title_2": "staking kripto",
-        "title_3": "dengan mudah di TRIV",
-        "guides": [
-            {
-                "title": "Pilih koin favorit Anda",
-                "description": "Pilih berbagai jenis koin yang didukung oleh Triv. Crypto Staking cocok untuk investor jangka panjang yang percaya pada pertumbuhan koin tersebut."
-            },
-            {
-                "title": "Masukkan jumlah Staking",
-                "description": "Hanya dengan Rp 50.000, anda sudah dapat melakukan staking dan mendapatkan bunga dari coin terkait."
-            },
-            {
-                "title": "Terima bunga staking !",
-                "description": "Bunga akan langsung dikreditkan ke akun Anda, baik secara harian maupun mingguan, dan dapat langsung dicairkan ke berbagai bank atau distaking ulang untuk mendapatkan bunga dividen yang lebih besar."
-            }
-        ]
-    },
-    "calculator_section" : {
-        "title": "Lihat berapa banyak yang bisa Anda hasilkan🚀",
-        "description": "*Perhitungan di atas hanya bersifat indikatif. Bunga staking dapat berubah sewaktu-waktu sesuai dengan supply dan demand pada on-chain terkait."
-    },
-    "coin_section": {
-        "title_1": "Coin Apa Saja Yang Bisa di",
-        "title_2": "Staking",
-        "title_3": "di TRIV?",
-        "description": "Mulailah dari sekarang. Pilih aset favorit dan tumbuhkan kriptomu bersama TRIV, Staking Crypto terbaik di Indonesia",
-        "text_card_1" : "Staking",
-        "text_card_2" : "dengan Bunga",
-        "text_card_3" : "tahun sekarang."
-    },
-    "faq_section": {
-        "title_1" : "FAQ",
-        "title_2" : "(Pertanyaan Terkait Crypto Staking)",
-        "questions" : [
-            {
-                "title" : "Apa Itu Crypto Staking?",
-                "description": "Staking kripto adalah proses mengunci koin Anda dalam blockchain proof of stake untuk mengamankan jaringan tersebut dan mendapatkan bunga atau dividen. Bunga ini berasal dari protokol blockchain terkait, bukan dari Triv."
-            },
-            {
-                "title" : "Apa Keuntungan Staking Crypto?",
-                "description": "Staking kripto cocok bagi investor yang mempunyai pandangan jangka panjang, karena selama anda HODL coin tersebut anda akan terus mendapatkan bunga. Sehingga selama proses investasi, koin anda juga dapat bertumbuh secara nominal coin."
-            },
-            {
-                "title" : "Apakah Staking Crypto aman?",
-                "description_1": "Staking kripto biasanya membutuhkan modal besar dan keahlian IT yang tinggi. Sebagai contoh, untuk melakukan staking ETH secara mandiri, minimal staking adalah 32 ETH atau setara sekitar 1,5 miliar Rupiah saat artikel ini ditulis.",
-                "description_2": "Selain itu, terdapat berbagai risiko staking kripto terkait aspek teknis, seperti capital loss atau yang dikenal dengan istilah slashing. Risiko ini bisa terjadi jika proses staking tidak dilakukan dengan benar, misalnya server validator offline, sehingga dana staking Anda dikenakan penalti.",
-                "description_3": "Dengan staking di Triv, Anda bisa mulai hanya dengan modal Rp 50.000. Triv menjamin perlindungan modal Anda dari risiko tersebut berkat keahlian teknis kami. Sejak 2015, Triv tidak pernah mengalami downtime atau insiden keamanan yang berarti.",
-                "description_4": "Triv juga tersertifikasi ISO27001, CISA, dan PCI DSS 6.6, menjamin standar keamanan dan kepatuhan yang tinggi."
-            }
-        ]
-    },
-    "start_now_section": {
-        "title" : "Triv Crypto Staking Terbaik, Mulai Crypto Staking Hanya Dengan Rp 50.000 !",
-        "description": "Bangun portofolio kriptomu dan kembangkan dengan staking crypto terbaik di ekosistem Triv Marketplace, platform cryptocurrency Indonesia yang terdaftar dan diawasi oleh Bappebti.",
-        "button": "Mulai Sekarang"
+      ],
+      "button": "Mulai Sekarang"
     }
+  },
+  "guide_crypto_section": {
+    "title_1": "Panduan tentang cara",
+    "title_2": "staking kripto",
+    "title_3": "dengan mudah di TRIV",
+    "guides": [
+      {
+        "title": "Pilih koin favorit Anda",
+        "description": "Pilih berbagai jenis koin yang didukung oleh Triv. Staking kripto cocok untuk investor jangka panjang yang percaya pada pertumbuhan koin tersebut."
+      },
+      {
+        "title": "Masukkan jumlah Staking",
+        "description": "Hanya dengan Rp 50.000, anda sudah dapat melakukan staking dan mendapatkan bunga dari coin terkait."
+      },
+      {
+        "title": "Terima bunga staking !",
+        "description": "Bunga akan langsung dikreditkan ke akun Anda, baik secara harian maupun mingguan, dan dapat langsung dicairkan ke berbagai bank atau distaking ulang untuk mendapatkan bunga dividen yang lebih besar."
+      }
+    ]
+  },
+  "calculator_section": {
+    "title": "Lihat berapa banyak yang bisa Anda hasilkan🚀",
+    "description": "*Perhitungan di atas hanya bersifat indikatif. Bunga staking dapat berubah sewaktu-waktu sesuai dengan supply dan demand pada on-chain terkait."
+  },
+  "coin_section": {
+    "title_1": "Coin Apa Saja Yang Bisa di",
+    "title_2": "Staking",
+    "title_3": "di TRIV?",
+    "description": "Mulailah dari sekarang. Pilih aset favorit dan tumbuhkan kriptomu bersama TRIV, Staking Kripto terbaik di Indonesia",
+    "text_card_1": "Staking",
+    "text_card_2": "dengan Bunga",
+    "text_card_3": "tahun sekarang."
+  },
+  "faq_section": {
+    "title_1": "FAQ",
+    "title_2": "(Pertanyaan Terkait Staking Kripto)",
+    "questions": [
+      {
+        "title": "Apa Itu Staking Kripto?",
+        "description": "Staking kripto adalah proses mengunci koin Anda dalam blockchain proof of stake untuk mengamankan jaringan tersebut dan mendapatkan bunga atau dividen. Bunga ini berasal dari protokol blockchain terkait, bukan dari Triv."
+      },
+      {
+        "title": "Apa Keuntungan Staking Kripto?",
+        "description": "Staking kripto cocok bagi investor yang mempunyai pandangan jangka panjang, karena selama anda HODL coin tersebut anda akan terus mendapatkan bunga. Sehingga selama proses investasi, koin anda juga dapat bertumbuh secara nominal coin."
+      },
+      {
+        "title": "Apakah Staking Kripto aman?",
+        "description_1": "Staking kripto biasanya membutuhkan modal besar dan keahlian IT yang tinggi. Sebagai contoh, untuk melakukan staking ETH secara mandiri, minimal staking adalah 32 ETH atau setara sekitar 1,5 miliar Rupiah saat artikel ini ditulis.",
+        "description_2": "Selain itu, terdapat berbagai risiko staking kripto terkait aspek teknis, seperti capital loss atau yang dikenal dengan istilah slashing. Risiko ini bisa terjadi jika proses staking tidak dilakukan dengan benar, misalnya server validator offline, sehingga dana staking Anda dikenakan penalti.",
+        "description_3": "Dengan staking di Triv, Anda bisa mulai hanya dengan modal Rp 50.000. Triv menjamin perlindungan modal Anda dari risiko tersebut berkat keahlian teknis kami. Sejak 2015, Triv tidak pernah mengalami downtime atau insiden keamanan yang berarti.",
+        "description_4": "Triv juga tersertifikasi ISO27001, CISA, dan PCI DSS 6.6, menjamin standar keamanan dan kepatuhan yang tinggi."
+      }
+    ]
+  },
+  "start_now_section": {
+    "title": "Triv Staking Kripto Terbaik, Mulai Staking Kripto Hanya Dengan Rp 50.000 !",
+    "description": "Bangun portofolio kriptomu dan kembangkan dengan staking ripto terbaik di ekosistem Triv Marketplace, platform aset kripto di Indonesia yang terdaftar dan diawasi oleh Bappebti.",
+    "button": "Mulai Sekarang"
+  }
 }
