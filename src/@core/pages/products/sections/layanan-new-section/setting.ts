@@ -54,7 +54,7 @@ const settings: Settings = {
     terima: true,
   },
   dash: { swap: true, hodl: true, kirim: true, jual_beli: true, terima: true },
-  tether: {
+  tetherusd: {
     swap: true,
     hodl: true,
     kirim: true,
@@ -76,7 +76,7 @@ const settings: Settings = {
     terima: true,
   },
   bnb: { swap: true, hodl: true, kirim: true, jual_beli: true, terima: true },
-  polygon: {
+  maticpolygon: {
     swap: true,
     hodl: true,
     kirim: true,
@@ -111,7 +111,7 @@ const settings: Settings = {
     jual_beli: true,
     terima: true,
   },
-  axienfinity: {
+  axieinfinity: {
     swap: true,
     hodl: true,
     kirim: true,

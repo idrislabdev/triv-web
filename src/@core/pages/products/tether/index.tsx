@@ -17,7 +17,6 @@ import "@/styles/components/form-service.css";
 const TetherPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
   const { asset, lang, objLang } = props;
   const objProduct = { code: "USDT", name: "Tether" };
-
   return (
     <>
       <MainHeader classText="header-white" lang={lang} />
@@ -30,7 +29,7 @@ const TetherPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
         />
         <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
         <ProductsLayananNewSection
-          coin={asset.label.toLowerCase()}
+          coin={asset.label.replace(/\s+/g, "").toLowerCase()}
           objLang={objLang.layanan_section}
         />
         <ProductsAffliateNewSection objLang={objLang.triv_affliate} />

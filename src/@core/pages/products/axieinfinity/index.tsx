@@ -34,7 +34,7 @@ const AxieinfinityPageWrap = (props: {
         />
         <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
         <ProductsLayananNewSection
-          coin={asset.label.toLowerCase()}
+          coin={asset.label.replace(/\s+/g, "").toLowerCase()}
           objLang={objLang.layanan_section}
         />
         <ProductsAffliateNewSection objLang={objLang.triv_affliate} />

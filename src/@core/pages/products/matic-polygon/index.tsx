@@ -21,7 +21,6 @@ const MaticPolygonPageWrap = (props: {
 }) => {
   const { asset, lang, objLang } = props;
   const objProduct = { code: "MATIC", name: "Polygon" };
-
   return (
     <>
       <MainHeader classText="header-white" lang={lang} />
@@ -34,7 +33,7 @@ const MaticPolygonPageWrap = (props: {
         />
         <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
         <ProductsLayananNewSection
-          coin={asset.label.toLowerCase()}
+          coin={asset.label.replace(/\s+/g, "").toLowerCase()}
           objLang={objLang.layanan_section}
         />
         <ProductsAffliateNewSection objLang={objLang.triv_affliate} />
