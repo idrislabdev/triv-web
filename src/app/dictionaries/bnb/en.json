@@ -30,32 +30,32 @@
     "content": "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
     "card": {
       "jual_beli": {
-        "title": "Buy and sell BNB 24 hours",
+        "title": "Buy and Sell Binance 24 hours",
         "content": "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your BNB balance in real-time with banks or e-wallets in seconds even on holidays.",
         "image_url": "/images/services/bnb/buy-bnb.png",
         "image_class": "macbook"
       },
       "kirim": {
-        "title": "Send BNB",
-        "content": "Send BNB worldwide instantly, Crypto is the money of the future. You can also send BNB to fellow Triv users for free without any fees!",
+        "title": "Send Binance",
+        "content": "Since it is digital, sending Binance can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Binance is free of charge from a fellow Triv users!",
         "image_url": "/images/services/bnb/send-bnb.png",
         "image_class": "iphone"
       },
       "terima": {
-        "title": "Receive BNB",
-        "content": "Receive BNB from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+        "title": "Receive Binance",
+        "content": "You can receive Binance through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
         "image_url": "/images/services/bnb/receive-bnb.png",
         "image_class": "iphone"
       },
       "hoddl": {
-        "title": "HODL BNB",
-        "content": "Did you know? Historically proven that BNB HODLERS get higher returns than BNB traders. Store your BNB in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
+        "title": "HODL Binance",
+        "content": "The fact is Binance HODLER get higher returns compared with Binance trader. Therefore, HODL your Binance in Triv, in protection under insurance of Bigo & Llyod England up to USD100 million or equivalent to 1.45 trillion Rupiahs.",
         "image_url": "/images/services/bnb/hodl-bnb.png",
         "image_class": "macbook"
       },
       "swap": {
-        "title": "Swap BNB",
-        "content": "Triv supports over 1000 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
+        "title": "Swap Binance",
+        "content": "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
         "image_url": "/images/services/bnb/swap-bnb.png",
         "image_class": "iphone"
       },

@@ -31,31 +31,31 @@
     "card": {
       "jual_beli": {
         "title": "Buy and sell Tether 24 hours",
-        "content": "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Tether balance in real-time with banks or e-wallets in seconds even on holidays.",
+        "content": "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Tether in real-time to your bank / e-wallet in seconds even on holidays.",
         "image_url": "/images/services/tether/buy-tether.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Send Tether",
-        "content": "Send Tether worldwide instantly, Crypto is the money of the future. You can also send Tether to fellow Triv users for free without any fees!",
+        "content": "Since it is digital, sending Tether can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Tether is free of charge from a fellow Triv users!",
         "image_url": "/images/services/tether/send-tether.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Receive Tether",
-        "content": "Receive Tether from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+        "content": "You can receive Tether through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
         "image_url": "/images/services/tether/receive-tether.png",
         "image_class": "iphone"
       },
       "hoddl": {
         "title": "HODL Tether",
-        "content": "Did you know? Historically proven that USDT HODLERS get higher returns than USDT traders. Store your USDT in Triv with insurance from Bitgo & Lloyd England up to 100 million USD or equivalent to 1.45 trillion Rupiah",
+        "content": "The fact is Tether HODLER get higher returns compared with Tether trader. Therefore, HODL your Tether in Triv, in protection under insurance of Bigo & Llyod England up to USD100 million or equivalent to 1.45 trillion Rupiahs.",
         "image_url": "/images/services/tether/hodl-tether.png",
         "image_class": "macbook"
       },
       "swap": {
         "title": "Swap Tether",
-        "content": "Triv supports over 1000 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
+        "content": "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
         "image_url": "/images/services/tether/swap-tether.png",
         "image_class": "iphone"
       },

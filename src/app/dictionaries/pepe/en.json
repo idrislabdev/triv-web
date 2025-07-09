@@ -31,7 +31,7 @@
     "card": {
       "jual_beli": {
         "title": "Buy and sell Pepe 24 hours",
-        "content": "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Pepe balance in real-time with banks or e-wallets in seconds even on holidays.",
+        "content": "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Pepe in real-time to your bank / e-wallet in seconds even on holidays.",
         "image_url": "/images/services/pepe/buy-pepe.png",
         "image_class": "macbook"
       },
@@ -55,7 +55,7 @@
       },
       "swap": {
         "title": "Swap Pepe",
-        "content": "Triv supports over 1000 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
+        "content": "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
         "image_url": "/images/services/pepe/swap-pepe.png",
         "image_class": "iphone"
       },

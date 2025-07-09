@@ -31,19 +31,19 @@
     "card": {
       "jual_beli": {
         "title": "Buy and sell Litecoin 24 hours",
-        "content": "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Litecoin balance in real-time with banks or e-wallets in seconds even on holidays.",
+        "content": "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Litecoin in real-time to your bank / e-wallet in seconds even on holidays.",
         "image_url": "/images/services/litecoin/buy-litecoin.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Send Litecoin",
-        "content": "Send Litecoin worldwide instantly, Crypto is the money of the future. You can also send Litecoin to fellow Triv users for free without any fees!",
+        "content": "Since it is digital, sending Litecoin can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Litecoin is free of charge from a fellow Triv users!",
         "image_url": "/images/services/litecoin/send-litecoin.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Receive Litecoin",
-        "content": "Receive Litecoin from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
+        "content": "You can receive Litecoin through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
         "image_url": "/images/services/litecoin/receive-litecoin.png",
         "image_class": "iphone"
       },
@@ -55,7 +55,7 @@
       },
       "swap": {
         "title": "Swap Litecoin",
-        "content": "Triv supports over 1000 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
+        "content": "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
         "image_url": "/images/services/litecoin/swap-litecoin.png",
         "image_class": "iphone"
       },
