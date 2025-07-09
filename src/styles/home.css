@@ -17,9 +17,6 @@
     @apply !text-slate-300;
   }
   .home-page {
-    a {
-      @apply !bg-primary !text-white;
-    }
     .home-hero-section {
       @apply bg-[#000000];
       .home-hero-section-area {
@@ -695,10 +692,12 @@
       .start-button-logo {
         @apply flex flex-col gap-[30px];
         a {
-          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-          svg {
-            path {
-              @apply fill-white;
+          &.button {
+            @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+            svg {
+              path {
+                @apply fill-white;
+              }
             }
           }
         }
@@ -733,7 +732,9 @@
         .start-button-logo {
           @apply flex flex-col gap-[30px];
           a {
-            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
         }
       }
@@ -767,7 +768,9 @@
         .start-button-logo {
           @apply flex flex-col gap-[30px];
           a {
-            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
         }
       }
@@ -801,7 +804,9 @@
         .start-button-logo {
           @apply flex flex-col gap-[30px];
           a {
-            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
         }
       }
@@ -1250,21 +1255,26 @@
       .start-button-logo {
         @apply flex flex-col gap-[30px];
         a {
-          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-          svg {
-            path {
-              @apply fill-white;
+          &.button {
+            @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+
+            svg {
+              path {
+                @apply fill-white;
+              }
             }
           }
         }
         .start-now-store {
           @apply flex gap-[14px] items-center;
-          img {
-            &.apple-logo {
-              @apply w-[130.64px] h-[38.71px];
-            }
-            &.playstore-logo {
-              @apply w-[114.43px] h-[37.02px];
+          a {
+            img {
+              &.apple-logo {
+                @apply w-[130.64px] h-[38.71px];
+              }
+              &.playstore-logo {
+                @apply w-[114.43px] h-[37.02px];
+              }
             }
           }
         }
@@ -1297,7 +1307,9 @@
         .start-button-logo {
           @apply gap-[20px];
           a {
-            @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
           .start-now-store {
             @apply flex gap-[14px] items-center;
@@ -1340,7 +1352,9 @@
         .start-button-logo {
           @apply gap-[20px];
           a {
-            @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
           .start-now-store {
             @apply flex gap-[14px] items-center;
@@ -1383,7 +1397,9 @@
         .start-button-logo {
           @apply gap-[20px];
           a {
-            @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
           .start-now-store {
             img {
@@ -1703,7 +1719,9 @@
           .start-button-logo {
             @apply flex flex-col gap-[30px];
             a {
-              @apply hidden;
+              &.button {
+                @apply hidden;
+              }
             }
           }
         }
@@ -1841,9 +1859,11 @@
         .start-button-logo {
           @apply flex-col justify-center items-center gap-[30px];
           a {
-            @apply w-[80%] text-[12px]/[18px] py-[8px];
-            svg {
-              @apply w-[18px] h-[18px];
+            &.button {
+              @apply w-[80%] text-[12px]/[18px] py-[8px];
+              svg {
+                @apply w-[18px] h-[18px];
+              }
             }
           }
         }
