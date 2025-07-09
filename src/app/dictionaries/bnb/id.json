@@ -32,31 +32,31 @@
       "jual_beli": {
         "title": "Jual dan Beli BNB 24 jam",
         "content": "Tidak seperti instrumen investasi tradisional, pasar Kripto tidak memiliki hari libur Anda dapat menjual BNB anda secara real-time ke bank / e-wallet dalam hitungan detik bahkan pada hari libur.",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/bnb/buy-bnb.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Kirim BNB",
         "content": "Kirim BNB ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim BNB ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
-        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_url": "/images/services/bnb/send-bnb.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Terima BNB",
         "content": "Terima BNB dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
-        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_url": "/images/services/bnb/receive-bnb.png",
         "image_class": "iphone"
       },
       "hoddl": {
         "title": "HODL BNB",
         "content": "Tahukah kamu? Secara historis terbukti bahwa HODLER BNB mendapatkan return lebih tinggi daripada trader BNB. Simpan BNBmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/bnb/hodl-bnb.png",
         "image_class": "macbook"
       },
       "swap": {
         "title": "Swap BNB",
         "content": "triv mendukung lebih dari 1000+ cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
-        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_url": "/images/services/bnb/swap-bnb.png",
         "image_class": "iphone"
       },
       "isi_pulsa": {
