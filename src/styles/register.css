@@ -547,8 +547,9 @@
     }
     &.mobile-responsive {
       .left-subcontainer {
-        @apply w-full !py-[26px] !px-[20px] items-start flex-col gap-[10px];
+        @apply w-full !py-[26px] !px-[20px] items-start flex-col gap-[20px] justify-start;
         &.fit-screen {
+          @apply justify-center;
           .logo-subcontainer {
             @apply absolute top-[26px] left-[26px];
           }
