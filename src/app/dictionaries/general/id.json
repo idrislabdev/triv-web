@@ -1,12 +1,12 @@
 {
-    "form": {
-        "buy_long" : "Beli __label__ Mulai dari Rp 50.000!",
-        "purchase" : "Masukkan jumlah pembelian:",
-        "you_will_get" : "Anda akan mendapatkan:",
-        "buy_now" : "Beli __label__ Sekarang",
-        "buy" : "Beli",
-        "sell": "Jual",
-        "now" : "Sekarang",
-        "starting" : "Mulai Dari"
-    }
+  "form": {
+    "buy_long": "__type__ __label__ Mulai dari Rp 50.000!",
+    "purchase": "Masukkan jumlah pembelian:",
+    "you_will_get": "Anda akan mendapatkan:",
+    "buy_now": "Beli __label__ Sekarang",
+    "buy": "Beli",
+    "sell": "Jual",
+    "now": "Sekarang",
+    "starting": "Mulai Dari"
+  }
 }
