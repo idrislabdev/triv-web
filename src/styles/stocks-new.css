@@ -2,1869 +2,1909 @@
 @tailwind components;
 @tailwind utilities;
 .dark-theme {
-    @apply !bg-[#000000];
-    h1, h2, h3, h4, h5, h6 {
-      @apply !text-slate-200;
+  @apply !bg-[#000000];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !text-slate-200;
+  }
+  p,
+  label {
+    @apply !text-slate-300;
+  }
+  .stocks-page {
+    /* a {
+      @apply !bg-primary !text-white;
+    } */
+    .stocks-hero-section {
+      @apply bg-[#000000];
+      .stocks-hero-section-area {
+        .section-text {
+          .section-terdaftar {
+            .terdaftar-list-logo {
+              .bappebti-logo {
+                background: url("/images/otoritas-keuangans/bappebti-big-white.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .kominfo-logo {
+                background: url("/images/otoritas-keuangans/kominfo-light-logo.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .bsi-logo {
+                background: url("/images/otoritas-keuangans/bsi-white.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cisa-logo {
+                background: url("/images/otoritas-keuangans/cisa-light-logo.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+            }
+          }
+        }
+      }
     }
-    p,label {
-        @apply !text-slate-300;
+    .stocks-banner-section {
+      background: linear-gradient(to bottom, transparent, #000) #141414;
     }
-    .stocks-page {
+    .stocks-assets-crypto-section {
+      a {
+        @apply !bg-transparent !text-primary;
+      }
+    }
+    .stocks-investasi-section {
+      .investasi-section-box {
+        @apply bg-[#1b1f22];
+      }
+    }
+    .stocks-baru-crypto-section {
+      .stocks-baru-crypto-container {
+        @apply bg-[#1b1f22];
         a {
-            @apply !bg-primary !text-white;
+          @apply !bg-primary !text-white;
         }
-        .stocks-hero-section { 
-            @apply bg-[#000000];
-            .stocks-hero-section-area {
-                .section-text {
-                    .section-terdaftar {
-                        .terdaftar-list-logo {
-                            .bappebti-logo {
-                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .kominfo-logo {
-                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .bsi-logo {
-                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .cisa-logo {
-                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                        }
-                    }
-                }
-            }
+        .crypto-thumb-video {
+          @apply !bg-[#13171a];
         }
-        .stocks-banner-section {
-            background: linear-gradient(to bottom, transparent,#000) #141414;
-
-        }
-        .stocks-assets-crypto-section{
-            a {
-                @apply !bg-transparent !text-primary;
-            }
-        }
-        .stocks-investasi-section {
-            .investasi-section-box {
-                @apply bg-[#1b1f22]; 
-            }
-        }
-        .stocks-baru-crypto-section {
-            .stocks-baru-crypto-container{
-                @apply bg-[#1b1f22];
-                a {
-                    @apply !bg-primary !text-white;
-                }
-                .crypto-thumb-video{
-                    @apply !bg-[#13171a] ;
-                }
-            }
-        }
-        .stocks-regulated-insured-section {
-            .box-container {
-                @apply bg-[#1b1f22];
-            }
-        
-        }
-        .stocks-faq-section {
-            .question-faq-stocks {
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    svg {
-                                        @apply !stroke-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    .stocks-regulated-insured-section {
+      .box-container {
+        @apply bg-[#1b1f22];
+      }
+    }
+    .stocks-faq-section {
+      .question-faq-stocks {
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  svg {
+                    @apply !stroke-white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .stocks-page {
-    @apply py-0;
+  @apply py-0;
 
-    h1, h2, h3, h4, h5 {
-        @apply text-black;
-    }
-    p {
-        @apply text-neutral-700;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-black;
+  }
+  p {
+    @apply text-neutral-700;
+  }
 
-    .stocks-hero-section {
-        @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
-        background: url("/images/ornaments/home-ornament.png") no-repeat;
-        background-position: center;
-        background-size: cover;
-        .stocks-hero-section-area {
-            @apply flex px-[100px] gap-[20px] max-w-container mx-auto w-full relative;
-            .section-text {
-                @apply flex flex-col w-[52%] gap-[40px] z-[1];
-                .text-title {
-                    @apply flex flex-col gap-[28px];
-                    .title {
-                        @apply flex flex-col;
-                        h1 {
-                            @apply text-[60px]/[72px] text-[#323232] font-black w-full;
-                            span {
-                                background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
-                                background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                            }
-                        }
-                    }
-                    ul {
-                        @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[14px]/[14px];
-                        li {
-                            @apply flex items-center gap-[8px];
-                        }
-                    }
-                    p {
-                        @apply text-[16px]/[32px] text-[#646464] font-medium w-full;
-                    }
-                }
-                a {
-                    @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .section-terdaftar {
-                    @apply flex flex-col gap-[19px];
-                    label  {
-                        @apply text-[16px]/[32px] text-[#646464] font-medium;
-                    }
-                    .terdaftar-list-logo {
-                        @apply flex gap-[30px] items-center;
-                        .bappebti-logo {
-                            @apply w-[147px] h-[34px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .kominfo-logo {
-                            @apply w-[118px] h-[37px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .bsi-logo {
-                            @apply w-[83px] h-[44px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .cisa-logo {
-                            @apply w-[110px] h-[44px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                    }
-                }
+  .stocks-hero-section {
+    @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
+    background: url("/images/ornaments/home-ornament.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .stocks-hero-section-area {
+      @apply flex px-[100px] gap-[20px] max-w-container mx-auto w-full relative;
+      .section-text {
+        @apply flex flex-col w-[52%] gap-[40px] z-[1];
+        .text-title {
+          @apply flex flex-col gap-[28px];
+          .title {
+            @apply flex flex-col;
+            h1 {
+              @apply text-[60px]/[72px] text-[#323232] font-black w-full;
+              span {
+                background: linear-gradient(
+                  89.51deg,
+                  #1b4ca7 7.36%,
+                  #318ac6 98.35%
+                );
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
             }
-            .section-device {
-                @apply w-[550px] h-[600px] flex flex-col justify-center items-end;
-                img {
-                    @apply  w-[800px] h-[450px] right-[-10%] object-cover absolute;
-                }
+          }
+          ul {
+            @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[14px]/[14px];
+            li {
+              @apply flex items-center gap-[8px];
             }
-            /* &::after {
+          }
+          p {
+            @apply text-[16px]/[32px] text-[#646464] font-medium w-full;
+          }
+        }
+        a {
+          @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .section-terdaftar {
+          @apply flex flex-col gap-[19px];
+          label {
+            @apply text-[16px]/[32px] text-[#646464] font-medium;
+          }
+          .terdaftar-list-logo {
+            @apply flex gap-[30px] items-center;
+            .bappebti-logo {
+              @apply w-[147px] h-[34px];
+              content: "";
+              background: url("/images/otoritas-keuangans/bappebti-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .kominfo-logo {
+              @apply w-[118px] h-[37px];
+              content: "";
+              background: url("/images/otoritas-keuangans/kominfo-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .bsi-logo {
+              @apply w-[83px] h-[44px];
+              content: "";
+              background: url("/images/otoritas-keuangans/bsi-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .cisa-logo {
+              @apply w-[110px] h-[44px];
+              content: "";
+              background: url("/images/otoritas-keuangans/cisa-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+          }
+        }
+      }
+      .section-device {
+        @apply w-[550px] h-[600px] flex flex-col justify-center items-end;
+        img {
+          @apply w-[800px] h-[450px] right-[-10%] object-cover absolute;
+        }
+      }
+      /* &::after {
                 content: '';
                 @apply absolute right-0 bottom-0 w-[830px] h-[575px];
                 background: url("/images/ornaments/banner-section-ornament.png") no-repeat;
             } */
-        }
-        @media (max-width:1280px) {
-            @apply pb-[50px];
-            .stocks-hero-section-area {
-                @apply gap-[20px];
-                .section-text {
-                    @apply gap-[40px];
-                    .text-title {
-                        @apply gap-[28px];
-                        .title {
-                            h1 {
-                                @apply text-[46px]/[55px];
-                            }
-                        }
-                        ul {
-                            @apply text-[14px]/[14px];
-                            li {
-                                @apply gap-[8px];
-                            }
-                        }
-                        p {
-                            @apply text-[14px]/[21px];
-                        }
-                    }
-                    a {
-                        @apply text-[16px]/[23px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-                    .section-terdaftar {
-                        label  {
-                            @apply text-[14px]/[21px];
-                        }
-                        .terdaftar-list-logo {
-                            @apply gap-[20px];
-                            .bappebti-logo {
-                                @apply w-[137px] h-[34px];
-                            }
-                            .kominfo-logo {
-                                @apply w-[108px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[73px] h-[44px];
-
-                            }
-                            .cisa-logo {
-                                @apply w-[100px] h-[43px];
-                            }
-                        }
-                    }
-                }
-                .section-device {
-                    @apply w-[390px] h-[440px] flex flex-col justify-center items-end;
-                    img {
-                        @apply  w-[640px] h-[490px] right-[-10%] object-cover absolute;
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            @apply pb-[50px];
-            .stocks-hero-section-area {
-                @apply gap-[20px];
-                .section-text {
-                    @apply gap-[40px];
-                    .text-title {
-                        @apply gap-[28px];
-                        .title {
-                            h1 {
-                                @apply text-[44px]/[53px];
-                            }
-                        }
-                        ul {
-                            @apply text-[12px]/[12px];
-                            li {
-                                @apply gap-[8px];
-                            }
-                        }
-                        p {
-                            @apply text-[12px]/[19px];
-                        }
-                    }
-                    a {
-                        @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-                    .section-terdaftar {
-                        label  {
-                            @apply text-[12px]/[19px];
-                        }
-                        .terdaftar-list-logo {
-                            @apply gap-[20px];
-                            .bappebti-logo {
-                                @apply w-[127px] h-[34px];
-                            }
-                            .kominfo-logo {
-                                @apply w-[98px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[83px] h-[44px];
-
-                            }
-                            .cisa-logo {
-                                @apply w-[90px] h-[43px];
-                            }
-                        }
-                    }
-                }
-                .section-device {
-                    @apply w-[370px] h-[420px] flex flex-col justify-center items-end;
-                    img {
-                        @apply  w-[620px] h-[470px] right-[-10%] object-cover absolute;
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            @apply pb-[50px];
-            .stocks-hero-section-area {
-                @apply gap-[20px];
-                .section-text {
-                    @apply gap-[40px];
-                    .text-title {
-                        @apply gap-[28px];
-                        .title {
-                            h1 {
-                                @apply text-[42px]/[51px];
-                            }
-                        }
-                        ul {
-                            @apply text-[11px]/[11px];
-                            li {
-                                @apply gap-[8px];
-                            }
-                        }
-                        p {
-                            @apply text-[11px]/[18px];
-                        }
-                    }
-                    a {
-                        @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-                    .section-terdaftar {
-                        label  {
-                            @apply text-[11px]/[18px];
-                        }
-                        .terdaftar-list-logo {
-                            @apply gap-[15px];
-                            .bappebti-logo {
-                                @apply w-[117px] h-[34px];
-                            }
-                            .kominfo-logo {
-                                @apply w-[88px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[73px] h-[44px];
-
-                            }
-                            .cisa-logo {
-                                @apply w-[80px] h-[43px];
-                            }
-                        }
-                    }
-                }
-                .section-device {
-                    @apply w-[350px] h-[400px] flex flex-col justify-center items-end;
-                    img {
-                        @apply  w-[600px] h-[450px] right-[-10%] object-cover absolute;
-                    }
-                }
-            }
-        }
     }
-    .stocks-index-crypto-section {
-        @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
-        .rfm-marquee-container  {
-            @apply flex justify-start overflow-hidden;
-            .rfm-marquee {
-                @apply flex justify-center;
-                .rfm-initial-child-container {
-                    @apply flex justify-between w-full;
-                }
-                .rfm-child {
-                    @apply mx-[10px];
-                    .index-cyrpto-content {
-                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
-                        .crypto-title{
-                            @apply flex;
-                            label {
-                                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
-                            }
-                        }
-                        .crypto-index{
-                            @apply flex;
-                            label {
-                                @apply text-[12px]/[18px] font-medium flex items-center;
-                            }
-                        }
-                    }
-                }
-                
+    @media (max-width: 1280px) {
+      @apply pb-[50px];
+      .stocks-hero-section-area {
+        @apply gap-[20px];
+        .section-text {
+          @apply gap-[40px];
+          .text-title {
+            @apply gap-[28px];
+            .title {
+              h1 {
+                @apply text-[46px]/[55px];
+              }
             }
-
-        }
-        @media (max-width:1280px) {
-            @apply pb-[50px];
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
-        @media (max-width:1180px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[10px]/[16px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[10px]/[16px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
-        @media (max-width:1080px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[9px]/[15px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[9px]/[15px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
-    }
-    .stocks-why-section {
-        @apply flex flex-col items-center h-[850px] relative;
-        .container {
-            @apply flex flex-col justify-center items-center max-w-container mx-auto w-full;
-            .title-container {
-                @apply px-[100px] flex flex-col justify-center items-center text-center;
-                h1 {
-                    @apply text-[48px]/[72px] text-black font-black w-[711px];
-                    span {
-                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-                p {
-                    @apply text-[18px]/[27px] font-medium;
-                }
-            }
-            .description-container {
-                @apply flex-col flex items-center w-full h-[749px] justify-end absolute top-0;
-                img {
-                    @apply w-full h-full object-cover absolute top-[100px];
-                }
-                .details-subcontainer {
-                    @apply flex items-center gap-[100px];
-                    .detail-subcontainer {
-                        @apply flex flex-col justify-center z-[2];
-                        h5 {
-                            @apply text-[96px]/[114px] font-black;
-                            background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }
-                        p {
-                            @apply text-[24px]/[31px] font-semibold;
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1280px) {
-            @apply h-[590px];
-            .container {
-                .title-container {
-                    h1 {
-                        @apply text-[48px]/[59px];
-                    }
-                    p {
-                        @apply text-[19px]/[26px];
-                    }
-                }
-                .description-container {
-                    @apply flex-col flex items-center w-full h-[589px] justify-end absolute top-0;
-                    img {
-                        @apply w-full h-full object-cover absolute top-[50px];
-                    }
-                    .details-subcontainer {
-                        @apply gap-[50px];
-                        .detail-subcontainer {
-                            h5 {
-                                @apply text-[52px]/[76px];
-                            }
-                            p {
-                                @apply text-[18px]/[25px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            @apply h-[570px];
-            .container {
-                .title-container {
-                    h1 {
-                        @apply text-[46px]/[55px];
-                    }
-                    p {
-                        @apply text-[18px]/[25px];
-                    }
-                }
-                .description-container {
-                    @apply flex-col flex items-center w-full h-[569px] justify-end absolute top-0;
-                    img {
-                        @apply w-full h-full object-cover absolute top-[50px];
-                    }
-                    .details-subcontainer {
-                        @apply gap-[50px];
-                        .detail-subcontainer {
-                            h5 {
-                                @apply text-[50px]/[74px];
-                            }
-                            p {
-                                @apply text-[16px]/[23px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            @apply h-[550px];
-            .container {
-                .title-container {
-                    h1 {
-                        @apply text-[45px]/[53px];
-                    }
-                    p {
-                        @apply text-[16px]/[23px];
-                    }
-                }
-                .description-container {
-                    @apply flex-col flex items-center w-full h-[549px] justify-end absolute top-0;
-                    img {
-                        @apply w-full h-full object-cover absolute top-[50px];
-                    }
-                    .details-subcontainer {
-                        @apply gap-[50px];
-                        .detail-subcontainer {
-                            h5 {
-                                @apply text-[48px]/[72px];
-                            }
-                            p {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .stocks-dividen-section {
-        @apply flex items-center px-[100px] pt-[120px] pb-[40px] relative overflow-hidden gap-[30px] max-w-container mx-auto;
-        .image-container {
-            @apply w-1/2 flex flex-col justify-center items-end relative;
-            img {
-                @apply  w-full object-contain absolute;
-            }
-        }
-        .description-container {
-            @apply flex w-1/2 flex-col gap-[30px];
-            .start-now-description {
-                @apply flex flex-col gap-[15px] w-full;
-                h2 {
-                    @apply text-[48px]/[67px] font-black text-neutral-900;
-                    span {
-                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-                h5,p {
-                    @apply text-[16px]/[32px] font-bold text-neutral-700;
-                }
-                p {
-                   @apply font-medium
-                }
-            }
-            .rfm-marquee-container  {
-                @apply flex justify-start overflow-hidden;
-                .rfm-marquee {
-                    @apply flex justify-center;
-                    .rfm-initial-child-container {
-                        @apply flex justify-between w-full;
-                    }
-                    .rfm-child {
-                        @apply h-[56px] flex flex-col justify-center items-center rounded-[8px] mx-[20px];
-                        img {
-                            @apply w-[46px] h-[46px];
-                            &.master-card {
-                                @apply w-[73px] h-[46px];
-                            }
-                            &.ibm {
-                                @apply w-[80px] h-[38px];
-                            }
-                            &.mcd {
-                                @apply w-[48px] h-[42px];
-                            }
-                        }
-                    }
-                }
-    
-            }
-           .start-button-logo {
-                @apply flex flex-col gap-[30px];
-                a {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-           }
-        }
-        @media (max-width:1280px) {
-            .image-container {
-                @apply w-1/2 flex flex-col justify-center items-end relative;
-                img {
-                    @apply  w-full object-contain absolute;
-                }
-            }
-            .description-container {
-                @apply flex w-1/2 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[15px] w-full;
-                    h2 {
-                        @apply text-[33px]/[43px];
-                    }
-                    h5 {
-                        @apply text-[17px]/[25px];
-                    }
-                    p {
-                        @apply text-[17px]/[23px];
-                    }
-                }
-                .rfm-marquee-container  {
-                    .rfm-marquee {
-                        .rfm-child {
-                            @apply h-[56px] rounded-[8px] mx-[20px];
-                            img {
-                                @apply w-[48px] h-[48px];
-                                &.master-card {
-                                    @apply w-[93px] h-[58px];
-                                }
-                                &.ibm {
-                                    @apply w-[100px] h-[58px];
-                                }
-                                &.mcd {
-                                    @apply w-[58px] h-[52px];
-                                }
-                            }
-                        }
-                    }
-        
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply text-[17px]/[23px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-               }
-            }
-        }
-        @media (max-width:1180px) {
-            .image-container {
-                @apply w-1/2 flex flex-col justify-center items-end relative;
-                img {
-                    @apply  w-full object-contain absolute;
-                }
-            }
-            .description-container {
-                @apply flex w-1/2 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[15px] w-full;
-                    h2 {
-                        @apply text-[30px]/[40px];
-                    }
-                    h5 {
-                        @apply text-[15px]/[22px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                }
-                .rfm-marquee-container  {
-                    .rfm-marquee {
-                        .rfm-child {
-                            @apply h-[56px] rounded-[8px] mx-[20px];
-                            img {
-                                @apply w-[38px] h-[38px];
-                                &.master-card {
-                                    @apply w-[83px] h-[48px];
-                                }
-                                &.ibm {
-                                    @apply w-[90px] h-[38px];
-                                }
-                                &.mcd {
-                                    @apply w-[48px] h-[42px];
-                                }
-                            }
-                        }
-                    }
-        
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-               }
-            }
-        }
-        @media (max-width:1080px) {
-            .image-container {
-                @apply w-1/2 flex flex-col justify-center items-end relative;
-                img {
-                    @apply  w-full object-contain absolute;
-                }
-            }
-            .description-container {
-                @apply flex w-1/2 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[15px] w-full;
-                    h2 {
-                        @apply text-[28px]/[38px];
-                    }
-                    h5 {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                        @apply text-[12px]/[19px];
-                    }
-                }
-                .rfm-marquee-container  {
-                    .rfm-marquee {
-                        .rfm-child {
-                            @apply h-[56px] rounded-[8px] mx-[20px];
-                            img {
-                                @apply w-[38px] h-[38px];
-                                &.master-card {
-                                    @apply w-[73px] h-[38px];
-                                }
-                                &.ibm {
-                                    @apply w-[70px] h-[28px];
-                                }
-                                &.mcd {
-                                    @apply w-[38px] h-[32px];
-                                }
-                            }
-                        }
-                    }
-        
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-               }
-            }
-        }
-    }
-    .stocks-buy-section {   
-        @apply flex items-center px-[100px] py-[40px] gap-[20px] relative overflow-hidden max-w-container mx-auto;
-        .image-container {
-            @apply w-[550px] h-[600px] flex flex-col justify-center items-end relative;
-            img {
-                @apply  w-[838px] h-[558px] object-cover absolute;
-                &.coin {
-                    @apply w-[100px] h-[100px] z-[3];
-                    &.coin-tesla {
-                        @apply top-[150px] left-[50px];
-                    }
-                    &.coin-netflix {
-                        @apply top-[50px] right-[50px];
-                    }
-                    &.coin-airbnb {
-                        @apply bottom-[100px] right-[-30px];
-                    }
-                }
-            }
-            &::before {
-                content: '';
-                @apply absolute w-[500px] h-[500px] z-[-1] bottom-[170px] right-[30px];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-            }
-        }
-        .description-container {
-            @apply flex flex-1 flex-col gap-[22px];
-            .start-now-description {
-                @apply flex flex-col gap-[18px];
-                h2 {
-                    @apply text-[48px]/[67px] font-black text-neutral-900;
-                    span {
-                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-                h5,p {
-                    @apply text-[16px]/[32px] font-bold text-neutral-700;
-                }
-                p {
-                   @apply font-medium
-                }
-            }
-           .start-button-logo {
-                @apply flex flex-col gap-[30px];
-                a {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-           }
-        }
-        @media (max-width:1180px) {
-            .image-container {
-                @apply w-[500px] h-[550px];
-                img {
-                    @apply  h-[458px];
-                    &.coin {
-                        @apply w-[90px] h-[90px] z-[3];
-                        &.coin-airbnb {
-                            @apply right-0;
-                        }
-                    }
-                }
-                &::before {
-                    @apply absolute w-[500px] h-[500px] z-[-1] bottom-[100px] right-0;
-                
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[22px];
-                .start-now-description {
-                    @apply flex flex-col gap-[18px];
-                    h2 {
-                        @apply text-[38px]/[48px] font-black text-neutral-900;
-                    }
-                    h5 {
-                        @apply text-[17px]/[23px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-               }
-            }
-        }
-        @media (max-width:1080px) {
-            .image-container {
-                @apply w-[480px] h-[530px];
-                img {
-                    @apply  h-[438px];
-                    &.coin {
-                        @apply w-[80px] h-[80px] z-[3];
-
-                        &.coin-airbnb {
-                            @apply right-0;
-                        }
-                    }
-                }
-                &::before {
-                    @apply absolute w-[500px] h-[500px] z-[-1] bottom-[100px] right-0;
-                
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[22px];
-                .start-now-description {
-                    @apply flex flex-col gap-[18px];
-                    h2 {
-                        @apply text-[36px]/[46px] font-black text-neutral-900;
-                    }
-                    h5 {
-                        @apply text-[15px]/[22px];
-                    }
-                    p {
-                        @apply text-[12px]/[19px];
-                    }
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-               }
-            }
-        }
-    }
-    .stocks-regulated-insured-section {
-        @apply flex flex-col items-center px-[100px] py-[75px] relative max-w-container mx-auto;
-        .box-container {
-            @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-full;
-            h2 {
-                @apply text-[48px]/[72px] font-black text-neutral-900 z-[1];
-            }
-            .sub-container {
-                @apply flex gap-[100px];
-                .detail-subcontainer {
-                    @apply flex flex-col items-center gap-[10px] w-1/2;
-                    img {
-                        @apply w-[164px] h-[164px];
-                    }
-                    .detail-description-subcontainer {
-                        @apply flex flex-col gap-[10px] items-center text-center;
-                        h5 {
-                            @apply text-[24px]/[36px] font-bold text-neutral-900;
-                        }
-                        p {
-                            @apply text-[14px]/[21px] font-medium text-neutral-900;
-                        }
-                    }
-                }
-            }
-            &::after {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-            }
-            &::before {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-            }
-        }
-        @media (max-width:1280px) {
-            .box-container {
-                @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[50px] gap-[30px] relative w-full;
-                h2 {
-                    @apply text-[30px]/[40px] ;
-                }
-                .sub-container {
-                    @apply flex gap-[100px];
-                    .detail-subcontainer {
-                        @apply flex flex-col items-center gap-[10px] w-1/2;
-                        img {
-                            @apply w-[164px] h-[164px];
-                        }
-                        .detail-description-subcontainer {
-                            h5 {
-                                @apply text-[22px]/[32px];
-                            }
-                            p {
-                                @apply text-[16px]/[23px];
-                            }
-                        }
-                    }
-                }
-                &::after {
-                    background-size: 80%;
-                    @apply right-[-40px];
-                }
-                &::before {
-                    background-size: 80%;
-
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .box-container {
-                @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[50px] gap-[30px] relative w-full;
-                h2 {
-                    @apply text-[28px]/[38px] ;
-                }
-                .sub-container {
-                    @apply flex gap-[100px];
-                    .detail-subcontainer {
-                        @apply flex flex-col items-center gap-[10px] w-1/2;
-                        img {
-                            @apply w-[144px] h-[144px];
-                        }
-                        .detail-description-subcontainer {
-                            h5 {
-                                @apply text-[20px]/[30px];
-                            }
-                            p {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                    }
-                }
-                &::after {
-                    background-size: 80%;
-                    @apply right-[-40px];
-                }
-                &::before {
-                    background-size: 80%;
-
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .box-container {
-                @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[40px] gap-[30px] relative w-full;
-                h2 {
-                    @apply text-[26px]/[36px] ;
-                }
-                .sub-container {
-                    @apply flex gap-[100px];
-                    .detail-subcontainer {
-                        @apply flex flex-col items-center gap-[10px] w-1/2;
-                        img {
-                            @apply w-[124px] h-[124px];
-                        }
-                        .detail-description-subcontainer {
-                            h5 {
-                                @apply text-[14px]/[21px];
-                            }
-                            p {
-                                @apply text-[11px]/[17px];
-                            }
-                        }
-                    }
-                }
-                &::after {
-                    background-size: 80%;
-                    @apply right-[-40px];
-                }
-                &::before {
-                    background-size: 80%;
-
-                }
-            }
-        }
-    }
-    .stocks-ewallet-section {
-        @apply flex items-center py-[50px] relative max-w-container mx-auto;
-        .ewallet-description {
-            @apply flex-1 flex flex-col gap-[20px] pl-[100px];
-            h2 {
-                @apply text-[45px]/[65px] font-black text-neutral-900;
-                span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            h5 {
-                @apply text-[20px]/[30px] font-bold;
-                background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+            ul {
+              @apply text-[14px]/[14px];
+              li {
+                @apply gap-[8px];
+              }
             }
             p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700;
+              @apply text-[14px]/[21px];
             }
+          }
+          a {
+            @apply text-[16px]/[23px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+          .section-terdaftar {
+            label {
+              @apply text-[14px]/[21px];
+            }
+            .terdaftar-list-logo {
+              @apply gap-[20px];
+              .bappebti-logo {
+                @apply w-[137px] h-[34px];
+              }
+              .kominfo-logo {
+                @apply w-[108px] h-[37px];
+              }
+              .bsi-logo {
+                @apply w-[73px] h-[44px];
+              }
+              .cisa-logo {
+                @apply w-[100px] h-[43px];
+              }
+            }
+          }
+        }
+        .section-device {
+          @apply w-[390px] h-[440px] flex flex-col justify-center items-end;
+          img {
+            @apply w-[640px] h-[490px] right-[-10%] object-cover absolute;
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      @apply pb-[50px];
+      .stocks-hero-section-area {
+        @apply gap-[20px];
+        .section-text {
+          @apply gap-[40px];
+          .text-title {
+            @apply gap-[28px];
+            .title {
+              h1 {
+                @apply text-[44px]/[53px];
+              }
+            }
+            ul {
+              @apply text-[12px]/[12px];
+              li {
+                @apply gap-[8px];
+              }
+            }
+            p {
+              @apply text-[12px]/[19px];
+            }
+          }
+          a {
+            @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+          .section-terdaftar {
+            label {
+              @apply text-[12px]/[19px];
+            }
+            .terdaftar-list-logo {
+              @apply gap-[20px];
+              .bappebti-logo {
+                @apply w-[127px] h-[34px];
+              }
+              .kominfo-logo {
+                @apply w-[98px] h-[37px];
+              }
+              .bsi-logo {
+                @apply w-[83px] h-[44px];
+              }
+              .cisa-logo {
+                @apply w-[90px] h-[43px];
+              }
+            }
+          }
+        }
+        .section-device {
+          @apply w-[370px] h-[420px] flex flex-col justify-center items-end;
+          img {
+            @apply w-[620px] h-[470px] right-[-10%] object-cover absolute;
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      @apply pb-[50px];
+      .stocks-hero-section-area {
+        @apply gap-[20px];
+        .section-text {
+          @apply gap-[40px];
+          .text-title {
+            @apply gap-[28px];
+            .title {
+              h1 {
+                @apply text-[42px]/[51px];
+              }
+            }
+            ul {
+              @apply text-[11px]/[11px];
+              li {
+                @apply gap-[8px];
+              }
+            }
+            p {
+              @apply text-[11px]/[18px];
+            }
+          }
+          a {
+            @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+          .section-terdaftar {
+            label {
+              @apply text-[11px]/[18px];
+            }
+            .terdaftar-list-logo {
+              @apply gap-[15px];
+              .bappebti-logo {
+                @apply w-[117px] h-[34px];
+              }
+              .kominfo-logo {
+                @apply w-[88px] h-[37px];
+              }
+              .bsi-logo {
+                @apply w-[73px] h-[44px];
+              }
+              .cisa-logo {
+                @apply w-[80px] h-[43px];
+              }
+            }
+          }
+        }
+        .section-device {
+          @apply w-[350px] h-[400px] flex flex-col justify-center items-end;
+          img {
+            @apply w-[600px] h-[450px] right-[-10%] object-cover absolute;
+          }
+        }
+      }
+    }
+  }
+  .stocks-index-crypto-section {
+    @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+    .rfm-marquee-container {
+      @apply flex justify-start overflow-hidden;
+      .rfm-marquee {
+        @apply flex justify-center;
+        .rfm-initial-child-container {
+          @apply flex justify-between w-full;
+        }
+        .rfm-child {
+          @apply mx-[10px];
+          .index-cyrpto-content {
+            @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
+            .crypto-title {
+              @apply flex;
+              label {
+                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
+              }
+            }
+            .crypto-index {
+              @apply flex;
+              label {
+                @apply text-[12px]/[18px] font-medium flex items-center;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply pb-[50px];
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[11px]/[17px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[11px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[10px]/[16px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[10px]/[16px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[9px]/[15px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[9px]/[15px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .stocks-why-section {
+    @apply flex flex-col items-center h-[850px] relative;
+    .container {
+      @apply flex flex-col justify-center items-center max-w-container mx-auto w-full;
+      .title-container {
+        @apply px-[100px] flex flex-col justify-center items-center text-center;
+        h1 {
+          @apply text-[48px]/[72px] text-black font-black w-[711px];
+          span {
+            background: linear-gradient(
+              89.49deg,
+              #1b4ca7 -18.69%,
+              #318ac6 98.33%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        p {
+          @apply text-[18px]/[27px] font-medium;
+        }
+      }
+      .description-container {
+        @apply flex-col flex items-center w-full h-[749px] justify-end absolute top-0;
+        img {
+          @apply w-full h-full object-cover absolute top-[100px];
+        }
+        .details-subcontainer {
+          @apply flex items-center gap-[100px];
+          .detail-subcontainer {
+            @apply flex flex-col justify-center z-[2];
+            h5 {
+              @apply text-[96px]/[114px] font-black;
+              background: linear-gradient(
+                89.33deg,
+                #0c29c1 0.57%,
+                #fa00ff 147.17%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            p {
+              @apply text-[24px]/[31px] font-semibold;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply h-[590px];
+      .container {
+        .title-container {
+          h1 {
+            @apply text-[48px]/[59px];
+          }
+          p {
+            @apply text-[19px]/[26px];
+          }
+        }
+        .description-container {
+          @apply flex-col flex items-center w-full h-[589px] justify-end absolute top-0;
+          img {
+            @apply w-full h-full object-cover absolute top-[50px];
+          }
+          .details-subcontainer {
+            @apply gap-[50px];
+            .detail-subcontainer {
+              h5 {
+                @apply text-[52px]/[76px];
+              }
+              p {
+                @apply text-[18px]/[25px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      @apply h-[570px];
+      .container {
+        .title-container {
+          h1 {
+            @apply text-[46px]/[55px];
+          }
+          p {
+            @apply text-[18px]/[25px];
+          }
+        }
+        .description-container {
+          @apply flex-col flex items-center w-full h-[569px] justify-end absolute top-0;
+          img {
+            @apply w-full h-full object-cover absolute top-[50px];
+          }
+          .details-subcontainer {
+            @apply gap-[50px];
+            .detail-subcontainer {
+              h5 {
+                @apply text-[50px]/[74px];
+              }
+              p {
+                @apply text-[16px]/[23px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      @apply h-[550px];
+      .container {
+        .title-container {
+          h1 {
+            @apply text-[45px]/[53px];
+          }
+          p {
+            @apply text-[16px]/[23px];
+          }
+        }
+        .description-container {
+          @apply flex-col flex items-center w-full h-[549px] justify-end absolute top-0;
+          img {
+            @apply w-full h-full object-cover absolute top-[50px];
+          }
+          .details-subcontainer {
+            @apply gap-[50px];
+            .detail-subcontainer {
+              h5 {
+                @apply text-[48px]/[72px];
+              }
+              p {
+                @apply text-[14px]/[21px];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .stocks-dividen-section {
+    @apply flex items-center px-[100px] pt-[120px] pb-[40px] relative overflow-hidden gap-[30px] max-w-container mx-auto;
+    .image-container {
+      @apply w-1/2 flex flex-col justify-center items-end relative;
+      img {
+        @apply w-full object-contain absolute;
+      }
+    }
+    .description-container {
+      @apply flex w-1/2 flex-col gap-[30px];
+      .start-now-description {
+        @apply flex flex-col gap-[15px] w-full;
+        h2 {
+          @apply text-[48px]/[67px] font-black text-neutral-900;
+          span {
+            background: linear-gradient(
+              89.49deg,
+              #1b4ca7 -18.69%,
+              #318ac6 98.33%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        h5,
+        p {
+          @apply text-[16px]/[32px] font-bold text-neutral-700;
+        }
+        p {
+          @apply font-medium;
+        }
+      }
+      .rfm-marquee-container {
+        @apply flex justify-start overflow-hidden;
+        .rfm-marquee {
+          @apply flex justify-center;
+          .rfm-initial-child-container {
+            @apply flex justify-between w-full;
+          }
+          .rfm-child {
+            @apply h-[56px] flex flex-col justify-center items-center rounded-[8px] mx-[20px];
+            img {
+              @apply w-[46px] h-[46px];
+              &.master-card {
+                @apply w-[73px] h-[46px];
+              }
+              &.ibm {
+                @apply w-[80px] h-[38px];
+              }
+              &.mcd {
+                @apply w-[48px] h-[42px];
+              }
+            }
+          }
+        }
+      }
+      .start-button-logo {
+        @apply flex flex-col gap-[30px];
+        a {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .image-container {
+        @apply w-1/2 flex flex-col justify-center items-end relative;
+        img {
+          @apply w-full object-contain absolute;
+        }
+      }
+      .description-container {
+        @apply flex w-1/2 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[15px] w-full;
+          h2 {
+            @apply text-[33px]/[43px];
+          }
+          h5 {
+            @apply text-[17px]/[25px];
+          }
+          p {
+            @apply text-[17px]/[23px];
+          }
+        }
+        .rfm-marquee-container {
+          .rfm-marquee {
+            .rfm-child {
+              @apply h-[56px] rounded-[8px] mx-[20px];
+              img {
+                @apply w-[48px] h-[48px];
+                &.master-card {
+                  @apply w-[93px] h-[58px];
+                }
+                &.ibm {
+                  @apply w-[100px] h-[58px];
+                }
+                &.mcd {
+                  @apply w-[58px] h-[52px];
+                }
+              }
+            }
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply text-[17px]/[23px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .image-container {
+        @apply w-1/2 flex flex-col justify-center items-end relative;
+        img {
+          @apply w-full object-contain absolute;
+        }
+      }
+      .description-container {
+        @apply flex w-1/2 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[15px] w-full;
+          h2 {
+            @apply text-[30px]/[40px];
+          }
+          h5 {
+            @apply text-[15px]/[22px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+        }
+        .rfm-marquee-container {
+          .rfm-marquee {
+            .rfm-child {
+              @apply h-[56px] rounded-[8px] mx-[20px];
+              img {
+                @apply w-[38px] h-[38px];
+                &.master-card {
+                  @apply w-[83px] h-[48px];
+                }
+                &.ibm {
+                  @apply w-[90px] h-[38px];
+                }
+                &.mcd {
+                  @apply w-[48px] h-[42px];
+                }
+              }
+            }
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .image-container {
+        @apply w-1/2 flex flex-col justify-center items-end relative;
+        img {
+          @apply w-full object-contain absolute;
+        }
+      }
+      .description-container {
+        @apply flex w-1/2 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[15px] w-full;
+          h2 {
+            @apply text-[28px]/[38px];
+          }
+          h5 {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply text-[12px]/[19px];
+          }
+        }
+        .rfm-marquee-container {
+          .rfm-marquee {
+            .rfm-child {
+              @apply h-[56px] rounded-[8px] mx-[20px];
+              img {
+                @apply w-[38px] h-[38px];
+                &.master-card {
+                  @apply w-[73px] h-[38px];
+                }
+                &.ibm {
+                  @apply w-[70px] h-[28px];
+                }
+                &.mcd {
+                  @apply w-[38px] h-[32px];
+                }
+              }
+            }
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+      }
+    }
+  }
+  .stocks-buy-section {
+    @apply flex items-center px-[100px] py-[40px] gap-[20px] relative overflow-hidden max-w-container mx-auto;
+    .image-container {
+      @apply w-[550px] h-[600px] flex flex-col justify-center items-end relative;
+      img {
+        @apply w-[838px] h-[558px] object-cover absolute;
+        &.coin {
+          @apply w-[100px] h-[100px] z-[3];
+          &.coin-tesla {
+            @apply top-[150px] left-[50px];
+          }
+          &.coin-netflix {
+            @apply top-[50px] right-[50px];
+          }
+          &.coin-airbnb {
+            @apply bottom-[100px] right-[-30px];
+          }
+        }
+      }
+      &::before {
+        content: "";
+        @apply absolute w-[500px] h-[500px] z-[-1] bottom-[170px] right-[30px];
+        background: url("/images/ornaments/circle-loop-ornament-2.png")
+          no-repeat;
+      }
+    }
+    .description-container {
+      @apply flex flex-1 flex-col gap-[22px];
+      .start-now-description {
+        @apply flex flex-col gap-[18px];
+        h2 {
+          @apply text-[48px]/[67px] font-black text-neutral-900;
+          span {
+            background: linear-gradient(
+              89.49deg,
+              #1b4ca7 -18.69%,
+              #318ac6 98.33%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        h5,
+        p {
+          @apply text-[16px]/[32px] font-bold text-neutral-700;
+        }
+        p {
+          @apply font-medium;
+        }
+      }
+      .start-button-logo {
+        @apply flex flex-col gap-[30px];
+        a {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .image-container {
+        @apply w-[500px] h-[550px];
+        img {
+          @apply h-[458px];
+          &.coin {
+            @apply w-[90px] h-[90px] z-[3];
+            &.coin-airbnb {
+              @apply right-0;
+            }
+          }
+        }
+        &::before {
+          @apply absolute w-[500px] h-[500px] z-[-1] bottom-[100px] right-0;
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[22px];
+        .start-now-description {
+          @apply flex flex-col gap-[18px];
+          h2 {
+            @apply text-[38px]/[48px] font-black text-neutral-900;
+          }
+          h5 {
+            @apply text-[17px]/[23px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .image-container {
+        @apply w-[480px] h-[530px];
+        img {
+          @apply h-[438px];
+          &.coin {
+            @apply w-[80px] h-[80px] z-[3];
+
+            &.coin-airbnb {
+              @apply right-0;
+            }
+          }
+        }
+        &::before {
+          @apply absolute w-[500px] h-[500px] z-[-1] bottom-[100px] right-0;
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[22px];
+        .start-now-description {
+          @apply flex flex-col gap-[18px];
+          h2 {
+            @apply text-[36px]/[46px] font-black text-neutral-900;
+          }
+          h5 {
+            @apply text-[15px]/[22px];
+          }
+          p {
+            @apply text-[12px]/[19px];
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+      }
+    }
+  }
+  .stocks-regulated-insured-section {
+    @apply flex flex-col items-center px-[100px] py-[75px] relative max-w-container mx-auto;
+    .box-container {
+      @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-full;
+      h2 {
+        @apply text-[48px]/[72px] font-black text-neutral-900 z-[1];
+      }
+      .sub-container {
+        @apply flex gap-[100px];
+        .detail-subcontainer {
+          @apply flex flex-col items-center gap-[10px] w-1/2;
+          img {
+            @apply w-[164px] h-[164px];
+          }
+          .detail-description-subcontainer {
+            @apply flex flex-col gap-[10px] items-center text-center;
+            h5 {
+              @apply text-[24px]/[36px] font-bold text-neutral-900;
+            }
+            p {
+              @apply text-[14px]/[21px] font-medium text-neutral-900;
+            }
+          }
+        }
+      }
+      &::after {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+        background: url("/images/ornaments/investasi-right-ornament.png")
+          no-repeat;
+      }
+      &::before {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+        background: url("/images/ornaments/investasi-left-ornament.png")
+          no-repeat;
+      }
+    }
+    @media (max-width: 1280px) {
+      .box-container {
+        @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[50px] gap-[30px] relative w-full;
+        h2 {
+          @apply text-[30px]/[40px];
+        }
+        .sub-container {
+          @apply flex gap-[100px];
+          .detail-subcontainer {
+            @apply flex flex-col items-center gap-[10px] w-1/2;
+            img {
+              @apply w-[164px] h-[164px];
+            }
+            .detail-description-subcontainer {
+              h5 {
+                @apply text-[22px]/[32px];
+              }
+              p {
+                @apply text-[16px]/[23px];
+              }
+            }
+          }
+        }
+        &::after {
+          background-size: 80%;
+          @apply right-[-40px];
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .box-container {
+        @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[50px] gap-[30px] relative w-full;
+        h2 {
+          @apply text-[28px]/[38px];
+        }
+        .sub-container {
+          @apply flex gap-[100px];
+          .detail-subcontainer {
+            @apply flex flex-col items-center gap-[10px] w-1/2;
+            img {
+              @apply w-[144px] h-[144px];
+            }
+            .detail-description-subcontainer {
+              h5 {
+                @apply text-[20px]/[30px];
+              }
+              p {
+                @apply text-[14px]/[21px];
+              }
+            }
+          }
+        }
+        &::after {
+          background-size: 80%;
+          @apply right-[-40px];
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .box-container {
+        @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[100px] py-[40px] gap-[30px] relative w-full;
+        h2 {
+          @apply text-[26px]/[36px];
+        }
+        .sub-container {
+          @apply flex gap-[100px];
+          .detail-subcontainer {
+            @apply flex flex-col items-center gap-[10px] w-1/2;
+            img {
+              @apply w-[124px] h-[124px];
+            }
+            .detail-description-subcontainer {
+              h5 {
+                @apply text-[14px]/[21px];
+              }
+              p {
+                @apply text-[11px]/[17px];
+              }
+            }
+          }
+        }
+        &::after {
+          background-size: 80%;
+          @apply right-[-40px];
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+    }
+  }
+  .stocks-ewallet-section {
+    @apply flex items-center py-[50px] relative max-w-container mx-auto;
+    .ewallet-description {
+      @apply flex-1 flex flex-col gap-[20px] pl-[100px];
+      h2 {
+        @apply text-[45px]/[65px] font-black text-neutral-900;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      h5 {
+        @apply text-[20px]/[30px] font-bold;
+        background: linear-gradient(89.33deg, #0c29c1 0.57%, #fa00ff 147.17%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        @apply text-[16px]/[32px] font-medium text-neutral-700;
+      }
+    }
+    .ewallet-image {
+      @apply w-[550px] h-[400px] relative;
+      img {
+        @apply w-full;
+      }
+    }
+    @media (max-width: 1280px) {
+      .ewallet-description {
+        @apply gap-[15px];
+        h2 {
+          @apply text-[35px]/[55px];
+        }
+        h5 {
+          @apply text-[17px]/[24px];
+        }
+        p {
+          @apply text-[14px]/[21px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[450px] h-[300px] relative;
+      }
+    }
+    @media (max-width: 1180px) {
+      .ewallet-description {
+        @apply gap-[15px];
+        h2 {
+          @apply text-[30px]/[50px];
+        }
+        h5 {
+          @apply text-[14px]/[21px];
+        }
+        p {
+          @apply text-[12px]/[19px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[400px] h-[250px] relative;
+      }
+    }
+    @media (max-width: 1080px) {
+      .ewallet-description {
+        @apply gap-[15px];
+        h2 {
+          @apply text-[25px]/[36px];
+        }
+        h5 {
+          @apply text-[14px]/[21px];
+        }
+        p {
+          @apply text-[12px]/[19px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[350px] h-[200px] relative;
+      }
+    }
+  }
+  .stocks-faq-section {
+    @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
+    h2 {
+      @apply text-[43px]/[150%] font-black text-center;
+      span {
+        background: linear-gradient(89.49deg, #1b4ca7 -18.69%, #318ac6 98.33%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .question-faq-stocks {
+      @apply flex gap-[80px] items-center w-[85%];
+      .question-faq-accordion {
+        @apply flex-1;
+        ul {
+          li {
+            &:not(:last-child) {
+              @apply relative pb-[10px];
+            }
+            button {
+              @apply w-full py-[8px] text-left;
+              .header-button {
+                @apply flex items-center justify-between;
+                label {
+                  @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
+                }
+                svg {
+                  @apply stroke-black;
+                }
+              }
+            }
+            .accordion-content {
+              @apply relative overflow-hidden transition-all duration-700;
+              .content-area {
+                @apply py-[8px];
+                p {
+                  @apply text-[14px]/[21px] font-normal;
+                }
+              }
+            }
+          }
+        }
+      }
+      .question-faq-image {
+        @apply w-[197px] flex flex-col justify-center;
+        img {
+          @apply w-[197px] h-[252px];
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      h2 {
+        @apply text-[27px]/[41px];
+      }
+      .question-faq-stocks {
+        @apply gap-[40px];
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  label {
+                    @apply text-[17px]/[25px];
+                  }
+                }
+              }
+              .accordion-content {
+                .content-area {
+                  @apply py-[8px];
+                  p {
+                    @apply text-[14px]/[21px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .question-faq-image {
+          @apply w-[187px];
+          img {
+            @apply w-[187px] h-[242px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      h2 {
+        @apply text-[25px]/[39px];
+      }
+      .question-faq-stocks {
+        @apply gap-[40px];
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  label {
+                    @apply text-[15px]/[23px];
+                  }
+                }
+              }
+              .accordion-content {
+                .content-area {
+                  @apply py-[8px];
+                  p {
+                    @apply text-[12px]/[19px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .question-faq-image {
+          @apply w-[167px];
+          img {
+            @apply w-[167px] h-[222px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      h2 {
+        @apply text-[24px]/[37px];
+      }
+      .question-faq-stocks {
+        @apply gap-[40px];
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  label {
+                    @apply text-[14px]/[21px];
+                  }
+                }
+              }
+              .accordion-content {
+                .content-area {
+                  @apply py-[8px];
+                  p {
+                    @apply text-[11px]/[17px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .question-faq-image {
+          @apply w-[157px];
+          img {
+            @apply w-[157px] h-[212px];
+          }
+        }
+      }
+    }
+  }
+  .stocks-banner-section {
+    @apply p-[100px] max-w-container mx-auto;
+    .main-container {
+      .sub-container {
+        @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
+        background: linear-gradient(89.49deg, #1b4ca7 -18.69%, #318ac6 98.33%);
+        .text-area {
+          @apply flex flex-col w-[60%] gap-[40px] justify-center pl-[50px];
+          .text-header {
+            @apply flex flex-col gap-[40px] w-[98%];
+            h2 {
+              @apply text-[40px]/[60px] text-white font-black;
+            }
+            p {
+              @apply text-[16px]/[32px] text-white font-medium w-[80%];
+            }
+          }
+          .button-area {
+            @apply flex items-center gap-[39px];
+            a {
+              &.button {
+                @apply flex justify-center items-center gap-[4px] bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;
+                svg {
+                  path {
+                    @apply fill-primary;
+                  }
+                }
+              }
+            }
+            .app-store-list {
+              @apply flex items-center gap-[14px];
+              a {
+                img {
+                  &.playstore-logo {
+                    @apply w-[130px] h-[38px];
+                  }
+                  &.apple-logo {
+                    @apply w-[114px] h-[37px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .image-area {
+          @apply flex-1 overflow-hidden;
+          img {
+            @apply absolute bottom-0 right-0 w-[510px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1380px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px];
+          .text-area {
+            @apply flex flex-col w-[60%] gap-[40px] justify-center pl-[50px];
+            .text-header {
+              @apply flex flex-col gap-[40px] w-[90%];
+              h2 {
+                @apply text-[34px]/[42px];
+              }
+              p {
+                @apply text-[15px]/[30px];
+              }
+            }
+            .button-area {
+              @apply flex items-center gap-[39px];
+              a {
+                &.button {
+                  @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[260px];
+          .text-area {
+            @apply gap-[20px];
+            .text-header {
+              h2 {
+                @apply text-[25px]/[38px];
+              }
+              p {
+                @apply text-[14px]/[21px];
+              }
+            }
+            .button-area {
+              @apply gap-[20px];
+              a {
+                &.button {
+                  @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px];
+                }
+              }
+              .app-store-list {
+                @apply flex items-center gap-[14px];
+                a {
+                  img {
+                    &.playstore-logo {
+                      @apply w-[110px] h-[30px];
+                    }
+                    &.apple-logo {
+                      @apply w-[94px] h-[29px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[430px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[260px];
+          .text-area {
+            @apply gap-[20px];
+            .text-header {
+              h2 {
+                @apply text-[24px]/[37px];
+              }
+              p {
+                @apply text-[12px]/[17px];
+              }
+            }
+            .button-area {
+              @apply gap-[20px];
+              a {
+                &.button {
+                  @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px];
+                }
+              }
+              .app-store-list {
+                @apply flex items-center gap-[14px];
+                a {
+                  img {
+                    &.playstore-logo {
+                      @apply w-[110px] h-[30px];
+                    }
+                    &.apple-logo {
+                      @apply w-[94px] h-[29px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[380px];
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @layer components {
+    &.mobile-responsive {
+      .stocks-hero-section {
+        @apply h-[624px] pt-[65px] pb-0 justify-start;
+        .stocks-hero-section-area {
+          @apply px-[20px] flex-col text-center;
+          .section-text {
+            @apply flex flex-col w-[100%] gap-[14px] items-center;
+            .text-title {
+              @apply flex flex-col justify-center gap-[14px] items-center;
+              .title {
+                @apply flex flex-col;
+                h1 {
+                  @apply text-[14px]/[21px] w-[100%];
+                }
+              }
+              ul {
+                @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[7.24px]/[7.24px];
+                li {
+                  @apply flex items-center gap-[3px];
+                  svg {
+                    @apply w-[15px] h-[15px];
+                  }
+                }
+              }
+              p {
+                @apply text-[10px]/[15px] w-[100%];
+              }
+            }
+            a {
+              @apply text-[12px]/[18px] w-[200px] h-[34px];
+            }
+            .section-terdaftar {
+              @apply flex flex-col;
+              label {
+                @apply !text-[10px]/[15px];
+              }
+              .terdaftar-list-logo {
+                @apply flex gap-[5px] items-center;
+                .bappebti-logo {
+                  @apply w-[60px] h-[13px];
+                }
+                .kominfo-logo {
+                  @apply w-[60px] h-[20px];
+                }
+                .bsi-logo {
+                  @apply w-[37px] h-[20px];
+                }
+                .cisa-logo {
+                  @apply w-[51px] h-[22px];
+                }
+              }
+            }
+          }
+          .section-device {
+            @apply w-full h-full  flex flex-col justify-center items-end;
+            img {
+              @apply w-full h-full right-0 object-contain relative;
+            }
+          }
+        }
+      }
+      .stocks-index-crypto-section {
+        @apply py-[35px] px-[0px];
+        .rfm-marquee-container {
+          @apply flex justify-start overflow-hidden;
+          .rfm-marquee {
+            @apply flex justify-center;
+            .rfm-initial-child-container {
+              @apply flex justify-between w-full;
+            }
+            .rfm-child {
+              @apply mx-[10px];
+              .index-cyrpto-content {
+                @apply w-[147px] h-[24px] items-center;
+                .crypto-title {
+                  label {
+                    @apply text-[8px]/[12px];
+                  }
+                }
+                .crypto-index {
+                  label {
+                    @apply text-[8px]/[12px];
+                    svg {
+                      @apply w-[12px] h-[12px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .stocks-why-section {
+        @apply flex flex-col items-center h-[450px] relative;
+        .container {
+          @apply px-[20px];
+          .title-container {
+            @apply w-full px-0;
+            h1 {
+              @apply text-[14px]/[21px] w-full;
+            }
+            p {
+              @apply text-[12px]/[18px];
+            }
+          }
+          .description-container {
+            @apply h-[380px];
+            img {
+              @apply w-full h-full object-cover absolute top-[35px];
+            }
+            .details-subcontainer {
+              @apply flex items-center gap-0 justify-around w-full;
+              .detail-subcontainer {
+                @apply flex flex-col justify-center z-[2];
+                h5 {
+                  @apply text-[30px]/[45px];
+                }
+                p {
+                  @apply text-[8px]/[10px] font-semibold;
+                }
+              }
+            }
+          }
+        }
+      }
+      .stocks-dividen-section {
+        @apply flex-col px-[20px] py-[20px];
+        .image-container {
+          @apply w-full h-full  flex flex-col justify-center items-end relative;
+          img {
+            @apply w-full h-full right-0 object-contain relative;
+          }
+          &::before {
+            @apply absolute top-0 right-0 w-full h-full z-[-1];
+            background-position: center;
+            background-size: cover;
+          }
+        }
+        .description-container {
+          @apply flex w-full h-full flex-col gap-[30px] text-center;
+          /* flex: unset; */
+          .start-now-description {
+            @apply flex flex-col gap-[18px];
+            h2 {
+              @apply text-[14px]/[21px];
+            }
+            h5,
+            p {
+              @apply text-[12px]/[18px];
+            }
+            p {
+              @apply font-medium;
+            }
+          }
+          .rfm-marquee-container {
+            @apply flex justify-start overflow-hidden;
+            .rfm-marquee {
+              @apply flex;
+              .rfm-child {
+                @apply h-[30px] flex flex-col justify-center items-center rounded-[8px] mx-[10px];
+                img {
+                  @apply w-[28px] h-[28px];
+                  &.master-card {
+                    @apply w-[38px] h-[24px];
+                  }
+                  &.ibm {
+                    @apply w-[41px] h-[19px];
+                  }
+                  &.mcd {
+                    @apply w-[30px] h-[28px];
+                  }
+                }
+              }
+            }
+          }
+          .start-button-logo {
+            @apply flex flex-col justify-center items-center gap-[30px];
+            a {
+              @apply h-[34px] text-[12px]/[18px];
+              svg {
+                @apply h-[12px] w-[12px];
+              }
+            }
+          }
+        }
+      }
+      .stocks-buy-section {
+        @apply flex-col-reverse px-[20px] py-[20px];
+        .image-container {
+          @apply w-full h-full  flex flex-col justify-center items-end relative;
+          img {
+            @apply w-full h-full right-0 object-contain relative;
+            &.coin {
+              @apply w-[50px] h-[50px] z-[3] absolute;
+              &.coin-tesla {
+                @apply top-[50px] left-[50px];
+              }
+              &.coin-netflix {
+                @apply top-0 right-[50px];
+              }
+              &.coin-airbnb {
+                @apply bottom-[20px] right-[30px];
+              }
+            }
+          }
+          &::before {
+            @apply absolute top-0 right-0 w-full h-full z-[-1];
+            background-position: center;
+            background-size: cover;
+          }
+        }
+        .description-container {
+          @apply flex w-full h-full flex-col gap-[30px] text-center;
+          /* flex: unset; */
+          .start-now-description {
+            @apply flex flex-col gap-[18px];
+            h2 {
+              @apply text-[14px]/[21px];
+            }
+            h5,
+            p {
+              @apply text-[12px]/[18px];
+            }
+            p {
+              @apply font-medium;
+            }
+          }
+          .start-button-logo {
+            @apply flex flex-col gap-[30px] items-center;
+            a {
+              @apply h-[34px] text-[12px]/[18px];
+              svg {
+                @apply h-[12px] w-[12px];
+              }
+            }
+          }
+        }
+      }
+      .stocks-regulated-insured-section {
+        @apply p-[20px];
+        .box-container {
+          @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] rounded-bl-none rounded-br-none w-full;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          .sub-container {
+            @apply flex-col gap-[20px];
+            .detail-subcontainer {
+              @apply w-full gap-[10px];
+              img {
+                @apply w-[110px] h-[110px];
+              }
+              .detail-description-subcontainer {
+                h5 {
+                  @apply text-[10px]/[15px];
+                }
+                p {
+                  @apply text-[8px]/[12px];
+                }
+              }
+            }
+          }
+          &::after {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-right-ornament-mobile.png")
+              no-repeat;
+          }
+          &::before {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-left-ornament-mobile.png")
+              no-repeat;
+          }
+        }
+      }
+      .stocks-ewallet-section {
+        @apply flex-col py-[30px] px-[20px] gap-[20px];
+        .ewallet-description {
+          @apply justify-center items-center w-full text-center p-0;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          h5 {
+            @apply text-[10px]/[15px];
+          }
+          p {
+            @apply text-[10px]/[15px];
+          }
         }
         .ewallet-image {
-            @apply w-[550px] h-[400px] relative;
-            img {
-               @apply w-full;
-            }
+          @apply w-[246px] h-full flex flex-col justify-center items-center;
+          img {
+            @apply w-[246px] h-[219px] relative;
+          }
         }
-        @media (max-width:1280px) {
-            .ewallet-description {
-                @apply gap-[15px];
-                h2 {
-                    @apply text-[35px]/[55px];
-                }
-                h5 {
-                    @apply text-[17px]/[24px];
-                }
-                p {
-                    @apply text-[14px]/[21px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[450px] h-[300px] relative;
-            }
-        }
-        @media (max-width:1180px) {
-            .ewallet-description {
-                @apply gap-[15px];
-                h2 {
-                    @apply text-[30px]/[50px];
-                }
-                h5 {
-                    @apply text-[14px]/[21px];
-                }
-                p {
-                    @apply text-[12px]/[19px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[400px] h-[250px] relative;
-            }
-        }
-        @media (max-width:1080px) {
-            .ewallet-description {
-                @apply gap-[15px];
-                h2 {
-                    @apply text-[25px]/[36px];
-                }
-                h5 {
-                    @apply text-[14px]/[21px];
-                }
-                p {
-                    @apply text-[12px]/[19px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[350px] h-[200px] relative;
-            }
-        }
-    }
-    .stocks-faq-section {
-        @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
+      }
+      .stocks-faq-section {
+        @apply py-[30px] px-[20px] gap-[20px];
         h2 {
-            @apply text-[43px]/[150%] font-black text-center;
-            span {
-                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
+          @apply text-[16px]/[24px];
         }
         .question-faq-stocks {
-            @apply flex gap-[80px] items-center w-[85%];
-            .question-faq-accordion {
-                @apply flex-1;
-                ul {
-                    li {
-                        &:not(:last-child) {
-                            @apply relative pb-[10px];
-                        }
-                        button {
-                            @apply w-full py-[8px] text-left;
-                            .header-button {
-                                @apply flex items-center justify-between;
-                                label {
-                                    @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
-                                }
-                                svg {
-                                    @apply stroke-black;
-                                }
-                            }
-                        }
-                        .accordion-content {
-                            @apply relative overflow-hidden transition-all duration-700;
-                            .content-area {
-                                @apply py-[8px];
-                                p {
-                                    @apply text-[14px]/[21px] font-normal;
-                                }
-                            }
-                        }
-                    }
-                }
+          @apply flex-col gap-[31px];
+          .question-faq-image {
+            @apply w-full items-center;
+            img {
+              @apply w-[157px] h-[201px];
             }
-            .question-faq-image {
-                @apply w-[197px] flex flex-col justify-center;
-                img {
-                    @apply w-[197px] h-[252px];
+          }
+          .question-faq-accordion {
+            @apply w-full;
+            ul {
+              li {
+                button {
+                  @apply py-[4px];
+                  .header-button {
+                    label {
+                      @apply text-[12px]/[18px];
+                    }
+                  }
                 }
-            }
-        }
-        @media (max-width:1280px) {
-            h2 {
-                @apply text-[27px]/[41px];
-            }
-            .question-faq-stocks {
-                @apply gap-[40px];
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    label {
-                                        @apply text-[17px]/[25px];
-                                    }
-                                }
-                            }
-                            .accordion-content {
-                                .content-area {
-                                    @apply py-[8px];
-                                    p {
-                                        @apply text-[14px]/[21px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .question-faq-image {
-                    @apply w-[187px];
-                    img {
-                        @apply w-[187px] h-[242px];
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            h2 {
-                @apply text-[25px]/[39px];
-            }
-            .question-faq-stocks {
-                @apply gap-[40px];
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    label {
-                                        @apply text-[15px]/[23px];
-                                    }
-                                }
-                            }
-                            .accordion-content {
-                                .content-area {
-                                    @apply py-[8px];
-                                    p {
-                                        @apply text-[12px]/[19px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .question-faq-image {
-                    @apply w-[167px];
-                    img {
-                        @apply w-[167px] h-[222px];
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            h2 {
-                @apply text-[24px]/[37px];
-            }
-            .question-faq-stocks {
-                @apply gap-[40px];
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    label {
-                                        @apply text-[14px]/[21px];
-                                    }
-                                }
-                            }
-                            .accordion-content {
-                                .content-area {
-                                    @apply py-[8px];
-                                    p {
-                                        @apply text-[11px]/[17px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .question-faq-image {
-                    @apply w-[157px];
-                    img {
-                        @apply w-[157px] h-[212px];
-                    }
-                }
-            }
-        }
-    }
-    .stocks-banner-section {
-        @apply p-[100px] max-w-container mx-auto;
-        .main-container {
-            .sub-container {
-                @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
-                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                .text-area {
-                    @apply flex flex-col w-[60%] gap-[40px] justify-center pl-[50px];
-                    .text-header {
-                        @apply flex flex-col gap-[40px] w-[98%];
-                        h2 {
-                            @apply text-[40px]/[60px] text-white font-black;
-                        }
-                        p {
-                            @apply text-[16px]/[32px] text-white font-medium w-[80%];
-                        }
-                    }
-                    .button-area {
-                        @apply flex items-center gap-[39px];
-                        a {
-                            @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;   
-                            svg {
-                                path {
-                                    @apply fill-primary;
-                                }
-                            } 
-                        }
-                        .app-store-list {
-                            @apply flex items-center gap-[14px];
-                            img {
-                                &.playstore-logo {
-                                    @apply w-[130px] h-[38px];
-                                }
-                                &.apple-logo {
-                                    @apply w-[114px] h-[37px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .image-area {
-                    @apply flex-1 overflow-hidden;
-                    img {
-                        @apply absolute bottom-0 right-0 w-[510px];
-                    }
-                }
-            }
-        }
-        @media (max-width: 1380px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px];
-                    .text-area {
-                        @apply flex flex-col w-[60%] gap-[40px] justify-center pl-[50px];
-                        .text-header {
-                            @apply flex flex-col gap-[40px] w-[90%];
-                            h2 {
-                                @apply text-[34px]/[42px] ;
-                            }
-                            p {
-                                @apply text-[15px]/[30px];
-                            }
-                        }
-                        .button-area {
-                            @apply flex items-center gap-[39px];
-                            a {
-                                @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px] ;   
-                                 
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width: 1180px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[260px];
-                    .text-area {
-                        @apply gap-[20px];
-                        .text-header {
-                            h2 {
-                                @apply text-[25px]/[38px];
-                            }
-                            p {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                        .button-area {
-                            @apply gap-[20px];
-                            a {
-                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
-                                 
-                            }
-                            .app-store-list {
-                                @apply flex items-center gap-[14px];
-                                img {
-                                    &.playstore-logo {
-                                        @apply w-[110px] h-[30px];
-                                    }
-                                    &.apple-logo {
-                                        @apply w-[94px] h-[29px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[430px];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width: 1080px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[260px];
-                    .text-area {
-                        @apply gap-[20px];
-                        .text-header {
-                            h2 {
-                                @apply text-[24px]/[37px];
-                            }
-                            p {
-                                @apply text-[12px]/[17px];
-                            }
-                        }
-                        .button-area {
-                            @apply gap-[20px];
-                            a {
-                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
-                                 
-                            }
-                            .app-store-list {
-                                @apply flex items-center gap-[14px];
-                                img {
-                                    &.playstore-logo {
-                                        @apply w-[110px] h-[30px];
-                                    }
-                                    &.apple-logo {
-                                        @apply w-[94px] h-[29px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[380px];
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    @layer components {
-        &.mobile-responsive {
-            .stocks-hero-section {
-                @apply h-[624px] pt-[65px] pb-0 justify-start;
-                .stocks-hero-section-area {
-                    @apply px-[20px] flex-col text-center;
-                    .section-text {
-                        @apply flex flex-col w-[100%] gap-[14px] items-center;
-                        .text-title {
-                            @apply flex flex-col justify-center gap-[14px] items-center;
-                            .title {
-                                @apply flex flex-col;
-                                h1 {
-                                    @apply text-[14px]/[21px] w-[100%];
-                                }
-                            }
-                            ul {
-                                @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[7.24px]/[7.24px];
-                                li {
-                                    @apply flex items-center gap-[3px];
-                                    svg {
-                                        @apply w-[15px] h-[15px];
-                                    }
-                                }
-                            }
-                            p {
-                                @apply text-[10px]/[15px] w-[100%];
-                            }
-                        }
-                        a {
-                            @apply text-[12px]/[18px] w-[200px] h-[34px];
-                        }
-                        .section-terdaftar {
-                            @apply flex flex-col;
-                            label  {
-                                @apply !text-[10px]/[15px] ;
-                            }
-                            .terdaftar-list-logo {
-                                @apply flex gap-[5px] items-center;
-                                .bappebti-logo {
-                                    @apply w-[60px] h-[13px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[60px] h-[20px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[37px] h-[20px];
-                                }
-                                .cisa-logo {
-                                    @apply w-[51px] h-[22px];
-                                }
-                            }
-                        }
-                    }
-                    .section-device {
-                        @apply w-full h-full  flex flex-col justify-center items-end;
-                        img {
-                            @apply  w-full h-full right-0 object-contain relative;
-                        }
-                    }
-                }
-            }
-            .stocks-index-crypto-section {
-                @apply py-[35px] px-[0px];
-                .rfm-marquee-container  {
-                    @apply flex justify-start overflow-hidden;
-                    .rfm-marquee {
-                        @apply flex justify-center;
-                        .rfm-initial-child-container {
-                            @apply flex justify-between w-full;
-                        }
-                        .rfm-child {
-                            @apply mx-[10px];
-                            .index-cyrpto-content {
-                                @apply w-[147px] h-[24px] items-center ;
-                                .crypto-title{
-                                    label {
-                                        @apply text-[8px]/[12px];
-                                    }
-                                }
-                                .crypto-index{
-                                    label {
-                                        @apply text-[8px]/[12px];
-                                        svg {
-                                            @apply w-[12px] h-[12px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
-            .stocks-why-section {
-                @apply flex flex-col items-center h-[450px] relative;
-                .container {
-                    @apply px-[20px];
-                    .title-container {
-                        @apply w-full px-0;
-                        h1 {
-                            @apply text-[14px]/[21px] w-full;
-                        }
-                        p {
-                            @apply text-[12px]/[18px];
-                        }
-                    }
-                    .description-container {
-                        @apply h-[380px];
-                        img {
-                            @apply w-full h-full object-cover absolute top-[35px];
-                        }
-                        .details-subcontainer {
-                            @apply flex items-center gap-0 justify-around w-full;
-                            .detail-subcontainer {
-                                @apply flex flex-col justify-center z-[2];
-                                h5 {
-                                    @apply text-[30px]/[45px];
-                                }
-                                p {
-                                    @apply text-[8px]/[10px] font-semibold;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .stocks-dividen-section {
-                @apply flex-col px-[20px] py-[20px];
-                .image-container {
-                    @apply w-full h-full  flex flex-col justify-center items-end relative;
-                    img {
-                        @apply  w-full h-full right-0 object-contain relative;
-                    }
-                    &::before {
-                        @apply absolute top-0 right-0 w-full h-full z-[-1];
-                        background-position: center;
-                        background-size: cover;
-                    }
-                }
-                .description-container {
-                    @apply flex w-full h-full flex-col gap-[30px] text-center;
-                    /* flex: unset; */
-                    .start-now-description {
-                        @apply flex flex-col gap-[18px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        h5,p {
-                            @apply text-[12px]/[18px];
-                        }
-                        p {
-                           @apply font-medium
-                        }
-                    }
-                    .rfm-marquee-container  {
-                        @apply flex justify-start overflow-hidden;
-                        .rfm-marquee {
-                            @apply flex;
-                            .rfm-child {
-                                @apply h-[30px] flex flex-col justify-center items-center rounded-[8px] mx-[10px];
-                                img {
-                                    @apply w-[28px] h-[28px];
-                                    &.master-card {
-                                        @apply w-[38px] h-[24px];
-                                    }
-                                    &.ibm {
-                                        @apply w-[41px] h-[19px];
-                                    }
-                                    &.mcd {
-                                        @apply w-[30px] h-[28px];
-                                    }
-                                }
-                            }
-                        }
-            
-                    }
-                    .start-button-logo {
-                        @apply flex flex-col justify-center items-center gap-[30px];
-                        a {
-                            @apply h-[34px] text-[12px]/[18px];
-                            svg {
-                                @apply h-[12px] w-[12px];
-                            }
-                        }
-                    }
-                }
-            }
-            .stocks-buy-section {
-                @apply flex-col-reverse px-[20px] py-[20px];
-                .image-container {
-                    @apply w-full h-full  flex flex-col justify-center items-end relative;
-                    img {
-                        @apply  w-full h-full right-0 object-contain relative;
-                        &.coin {
-                            @apply w-[50px] h-[50px] z-[3] absolute;
-                            &.coin-tesla {
-                                @apply top-[50px] left-[50px];
-                            }
-                            &.coin-netflix {
-                                @apply top-0 right-[50px];
-                            }
-                            &.coin-airbnb {
-                                @apply bottom-[20px] right-[30px];
-                            }
-                        }
-                    }
-                    &::before {
-                        @apply absolute top-0 right-0 w-full h-full z-[-1];
-                        background-position: center;
-                        background-size: cover;
-                    }
-                }
-                .description-container {
-                    @apply flex w-full h-full flex-col gap-[30px] text-center;
-                    /* flex: unset; */
-                    .start-now-description {
-                        @apply flex flex-col gap-[18px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        h5,p {
-                            @apply text-[12px]/[18px];
-                        }
-                        p {
-                           @apply font-medium
-                        }
-                    }
-                   .start-button-logo {
-                        @apply flex flex-col gap-[30px] items-center;
-                        a {
-                            @apply h-[34px] text-[12px]/[18px];
-                            svg {
-                                @apply h-[12px] w-[12px];
-                            }
-                        }
-                   }
-                }
-            }
-            .stocks-regulated-insured-section {
-                @apply p-[20px] ;
-                .box-container {
-                    @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] rounded-bl-none rounded-br-none w-full;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    .sub-container {
-                        @apply flex-col gap-[20px];
-                        .detail-subcontainer {
-                            @apply w-full gap-[10px];
-                            img {
-                                @apply w-[110px] h-[110px];
-                            }
-                            .detail-description-subcontainer {
-                                h5 {
-                                    @apply text-[10px]/[15px];
-                                }
-                                p {
-                                    @apply text-[8px]/[12px];
-                                }
-                            }
-                        }
-                    }
-                    &::after {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
-                    }
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
-                    }
-                }
-            
-            }
-            .stocks-ewallet-section {
-                @apply flex-col py-[30px] px-[20px] gap-[20px];
-                .ewallet-description {
-                    @apply justify-center items-center w-full text-center p-0;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    h5 {
-                        @apply text-[10px]/[15px];
-                    }
+                .accordion-content {
+                  .content-area {
+                    @apply py-[4px];
                     p {
-                        @apply text-[10px]/[15px];
+                      @apply text-[10px]/[15px];
                     }
+                  }
                 }
-                .ewallet-image {
-                    @apply w-[246px] h-full flex flex-col justify-center items-center;
-                    img {
-                        @apply w-[246px] h-[219px] relative;
-                    }
-                }
+              }
             }
-            .stocks-faq-section {
-                @apply py-[30px] px-[20px] gap-[20px];
-                h2 {
-                    @apply text-[16px]/[24px];
-                }
-                .question-faq-stocks{
-                    @apply flex-col gap-[31px];
-                    .question-faq-image{
-                        @apply w-full items-center;
-                        img {
-                            @apply w-[157px] h-[201px];
-                        }
-                    }
-                    .question-faq-accordion {
-                        @apply w-full;
-                        ul {
-                            li {
-                                button {
-                                    @apply py-[4px];
-                                    .header-button {
-                                        label {
-                                            @apply text-[12px]/[18px];
-                                        }
-                                    }
-                                }
-                                .accordion-content {
-                                    .content-area {
-                                        @apply py-[4px];
-                                        p {
-                                            @apply text-[10px]/[15px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .stocks-banner-section {
-                @apply px-[20px] py-[50px];
-                .main-container {
-                    .sub-container {
-                        @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
-                        .text-area {
-                            @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
-                            .text-header {
-                                @apply flex flex-col gap-[2px];
-                                h2 {
-                                    @apply text-[10px]/[15px] text-white font-black;
-                                }
-                                p {
-                                    @apply text-[4px]/[8px] text-white font-medium w-[80%];
-                                }
-                            }
-                            .button-area {
-                                @apply gap-[7px];
-                                a {
-                                    @apply  w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];   
-                                    svg {
-                                        @apply w-[4px] h-[4px];
-                                    }
-                                }
-                                .app-store-list {
-                                    @apply gap-[3px];
-                                    img {
-                                        &.playstore-logo {
-                                            @apply w-[33px] h-[10px];
-                                        }
-                                        &.apple-logo {
-                                            @apply w-[30px] h-[10px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .image-area {
-                            @apply flex-1 overflow-hidden;
-                            img {
-                                @apply absolute bottom-0 right-0 w-[150px];
-                            }
-                        }
-                    }
-                }
-        
-            }
+          }
         }
+      }
+      .stocks-banner-section {
+        @apply px-[20px] py-[50px];
+        .main-container {
+          .sub-container {
+            @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
+            .text-area {
+              @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
+              .text-header {
+                @apply flex flex-col gap-[2px];
+                h2 {
+                  @apply text-[10px]/[15px] text-white font-black;
+                }
+                p {
+                  @apply text-[4px]/[8px] text-white font-medium w-[80%];
+                }
+              }
+              .button-area {
+                @apply gap-[7px];
+                a {
+                  &.button {
+                    @apply w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];
+                    svg {
+                      @apply w-[4px] h-[4px];
+                    }
+                  }
+                }
+                .app-store-list {
+                  @apply gap-[3px];
+                  a {
+                    img {
+                      &.playstore-logo {
+                        @apply w-[33px] h-[10px];
+                      }
+                      &.apple-logo {
+                        @apply w-[30px] h-[10px];
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .image-area {
+              @apply flex-1 overflow-hidden;
+              img {
+                @apply absolute bottom-0 right-0 w-[150px];
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
