@@ -1,72 +1,72 @@
 {
-    "header_section": {
-        "title": "Harga Kripto Hari Ini (Pasar Kripto)",
-        "description": "Lihat perkembangan harga kripto favorit Anda dengan Grafik Kripto Real-time. Ambil keputusan cerdas dengan memantau pembaruan harga secara langsung dan identifikasi peluang perdagangan secara instan."
+  "header_section": {
+    "title": "Harga Kripto Hari Ini (Pasar Kripto)",
+    "description": "Lihat perkembangan harga kripto favorit Anda dengan Grafik Kripto Real-time. Ambil keputusan cerdas dengan memantau pembaruan harga secara langsung dan identifikasi peluang perdagangan secara instan."
+  },
+  "topmovers_section": {
+    "title": "🔥 Top Movers (24 Jam)"
+  },
+  "invest_section": {
+    "title": "Mulai Investasi Sekarang",
+    "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang 🚀",
+    "button": "Daftar Sekarang"
+  },
+  "liverate_coin_section": {
+    "about": "Tentang",
+    "activity": "Aktivitas Pengguna Triv",
+    "acitivty_text_1": "Aktivitas beli dan jual",
+    "activity_text_2": "seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset",
+    "market_activity": "Kapitalisasi Pasar",
+    "full_value": "Nilai Terdilusi Penuh",
+    "supply_circulate": "Suplai Yang Beredar",
+    "supply_maksimum": "Suplai Maksimum",
+    "volume_global": "Volume Global",
+    "buy": "Beli",
+    "sell": "Jual",
+    "trade_overview": {
+      "header": "Aktivitas beli dan jual __code__ seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset",
+      "stake": "Dapatkan penghasilan tambahan dengan Staking __label__ di Triv, tanpa biaya!",
+      "market": "Trading __label__ di Triv Market dengan Limit Order dan Stop Loss"
     },
-    "topmovers_section" : {
-        "title" : "🔥 Top Movers (24 Jam)"
+    "trade_about": {
+      "content": "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan __label__ dilakukan secara kolektif oleh jaringan. __label__ merupakan sumber-terbuka; rancangannya bersifat umum."
     },
-    "invest_section" : {
-        "title" : "Mulai Investasi Sekarang",
-        "description": "Daftar dalam hitungan menit dan capai tujuan investasimu sekarang 🚀",
-        "button": "Daftar Sekarang"
+    "trade_section": {
+      "title": "Harga __label__ (__currency__) Hari Ini",
+      "buy_form": "Beli __label__ Mulai dari Rp50.000!",
+      "buy_nominal": "Masukkan jumlah pembelian:",
+      "what_you_get": "Kamu akan mendapatkan:",
+      "buy_button": "Beli __label__ Sekarang",
+      "also_see": "Lihat Juga",
+      "also_details": "Harga crypto lain yang tersedia di Triv dalam 24 jam terakhir",
+      "see_more": "Lihat Semua"
     },
-    "liverate_coin_section" : {
-        "about" : "Tentang",
-        "activity" : "Aktivitas Pengguna Triv",
-        "acitivty_text_1" : "Aktivitas beli dan jual",
-        "activity_text_2" : "seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset",
-        "market_activity" : "Kapitalisasi Pasar",
-        "full_value" : "Nilai Terdilusi Penuh",
-        "supply_circulate" : "Suplai Yang Beredar",
-        "supply_maksimum" : "Suplai Maksimum",
-        "volume_global" : "Volume Global",
-        "buy" : "Beli",
-        "sell" : "Jual",
-        "trade_overview": {
-            "header" : "Aktivitas beli dan jual __code__ seluruh pengguna Triv dalam 24 jam terakhir. Hal ini menunjukkan Trivuser tertarik pada aset, namun bukan ajakan untuk membeli atau menjual aset",
-            "stake" : "Dapatkan penghasilan tambahan dengan Staking __label__ di Triv, tanpa biaya!", 
-            "market" : "Trading __label__ di Triv Market dengan Limit Order dan Stop Loss"
-        },
-        "trade_about": {
-            "content" : "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan __label__ dilakukan secara kolektif oleh jaringan. __label__ merupakan sumber-terbuka; rancangannya bersifat umum."
-        },
-        "trade_section": {
-            "title" : "Harga __label__ (__currency__) Hari Ini",
-            "buy_form" : "Beli __label__ Mulai dari Rp50.000!",
-            "buy_nominal" : "Masukkan jumlah pembelian:",
-            "what_you_get" : "Kamu akan mendapatkan:",
-            "buy_button" : "Beli __label__ Sekarang",
-            "also_see" : "Lihat Juga",
-            "also_details" : "Harga crypto lain yang tersedia di Triv dalam 24 jam terakhir",
-            "see_more" : "Lihat Semua"
-        },
-        "chart" : {
-            "sentiment_anlysis" : "Gunakan analisis data media sosial yang didukung TRIV AI untuk memahami sentimen pasar dan memutuskan rencana perdagangan Anda.",
-            "social_metric_note" : "Catatan: presentase mungkin tidak bertambah hingga 100% karena pembulatan",
-            "social_metric_note_1" : "Jumlah penyebutan berita MSFT hari ini lebih",
-            "social_metric_note_2" : "tinggi",
-            "social_metric_note_3" : "dibandingkan rata-rata 14 hari terakhir"
-        }
-    },
-    "faq_section": {
-        "title_1" : "Apa itu kripto?",
-        "title_2" : "Crypto berasal dari kata cryptography atau kriptografi. Kriptografi adalah ilmu yang mempelajari teknik-teknik untuk mengamankan informasi, yaitu dengan mengubah pesan menjadi kode rahasia (enkripsi) dan mengembalikannya ke bentuk semula (dekripsi), guna melindungi data dari akses ilegal atau perubahan selama proses pengiriman.",
-        "questions" : [
-            {
-                "title" : "Apa Saja Keuntungan Investasi Cryptocurrency?",
-                "description": "Investasi cryptocurrency memiliki potensi keuntungan yang signifikan. Salah satu keuntungan utama adalah peluang pertumbuhan nilai aset yang cepat. Beberapa cryptocurrency telah mengalami kenaikan nilai yang luar biasa dalam beberapa tahun terakhir. Selain itu, akses pasar global investasi cryptocurrency terbuka 24/7, memungkinkan fleksibilitas dalam perdagangan. Teknologi blockchain yang mendasari cryptocurrency juga menawarkan transparansi dan keamanan tingkat tinggi. Dengan kemampuan untuk mendiversifikasi portofolio, investasi cryptocurrency dapat menjadi tambahan yang berpotensi menguntungkan, meskipun tetap penting untuk memahami risiko dan riset yang cermat."
-            },
-            {
-                "title" : "Bagaimana cara invest crypto untuk pemula?",
-                "description_1" : "Untuk pemula yang ingin berinvestasi dalam cryptocurrency, langkah awal adalah melakukan penelitian mendalam. Pelajari tentang berbagai jenis cryptocurrency yang ada, buat rencana investasi yang sesuai dengan tujuan dan toleransi risiko Anda, dan mulai beli cryptocurrency yang Anda minati. Penting untuk memahami volatilitas pasar dan melakukan diversifikasi portofolio Anda dengan berinvestasi dalam beberapa cryptocurrency. Pertimbangkan juga untuk berkonsultasi dengan profesional keuangan jika diperlukan. Platform triv memudahkan anda dalam mempelajari berbagai jenis crypto, anda juga bisa menghubungi kontak layanan kami atau gabung dengan komunitas kami. Install aplikasi Triv (Marketplace Cryptocurrency Indonesia) sekarang",
-                "description_2" : ""
-            },
-            {
-                "title": "Apakah investasi crypto aman?",
-                "description_1": "Investasi kripto di Triv aman karena platform ini mengutamakan keamanan dan kepatuhan. Triv menerapkan standar keamanan tertinggi, termasuk enkripsi data dan perlindungan dari serangan siber. Selain itu, mereka mematuhi peraturan yang berlaku dalam industri ini untuk menjaga keamanan dana pengguna. Dengan reputasi yang solid dan transparansi operasional, Triv memberikan perlindungan tambahan kepada investor dalam dunia yang berfluktuasi seperti pasar cryptocurrency. Namun, penting untuk diingat bahwa investasi apa pun memiliki risiko, dan pemahaman yang baik tentang pasar kripto serta diversifikasi portofolio tetap menjadi faktor kunci dalam mengelola investasi.",
-                "description_2" : ""
-            }
-        ]
+    "chart": {
+      "sentiment_anlysis": "Gunakan analisis data media sosial yang didukung TRIV AI untuk memahami sentimen pasar dan memutuskan rencana perdagangan Anda.",
+      "social_metric_note": "Catatan: presentase mungkin tidak bertambah hingga 100% karena pembulatan",
+      "social_metric_note_1": "Jumlah penyebutan berita MSFT hari ini lebih",
+      "social_metric_note_2": "tinggi",
+      "social_metric_note_3": "dibandingkan rata-rata 14 hari terakhir"
     }
+  },
+  "faq_section": {
+    "title_1": "Apa itu kripto?",
+    "title_2": "Crypto berasal dari kata cryptography atau kriptografi. Kriptografi adalah ilmu yang mempelajari teknik-teknik untuk mengamankan informasi, yaitu dengan mengubah pesan menjadi kode rahasia (enkripsi) dan mengembalikannya ke bentuk semula (dekripsi), guna melindungi data dari akses ilegal atau perubahan selama proses pengiriman.",
+    "questions": [
+      {
+        "title": "Apa Keuntungan Investasi Kripto?",
+        "description": "Investasi cryptocurrency menawarkan potensi keuntungan signifikan, terutama dari pertumbuhan nilai aset yang cepat. Beberapa cryptocurrency telah mengalami kenaikan luar biasa dalam beberapa tahun terakhir. Pasar global cryptocurrency buka 24/7, memberikan fleksibilitas dalam perdagangan. Teknologi blockchain memberikan transparansi dan keamanan tinggi. Dengan diversifikasi portofolio, investasi cryptocurrency bisa menjadi tambahan yang menguntungkan, namun penting untuk memahami risiko dan melakukan riset cermat."
+      },
+      {
+        "title": "Bagaimana Cara Invest Kripto Untuk Pemula?",
+        "description_1": "Untuk pemula yang ingin berinvestasi cryptocurrency, langkah pertama adalah melakukan penelitian mendalam. Pelajari berbagai jenis cryptocurrency, buat rencana investasi sesuai tujuan dan toleransi risiko Anda, lalu mulai beli aset yang diminati. Pahami volatilitas pasar dan lakukan diversifikasi portofolio dengan berinvestasi di beberapa cryptocurrency. Jika perlu, konsultasikan dengan profesional keuangan. Platform Triv memudahkan Anda mempelajari berbagai jenis kripto, serta menyediakan layanan kontak dan komunitas untuk dukungan. Install aplikasi Triv (Marketplace Cryptocurrency Indonesia) sekarang juga!",
+        "description_2": ""
+      },
+      {
+        "title": "Apakah Investasi Kripto Aman?",
+        "description_1": "Investasi kripto di Triv aman karena platform ini mengutamakan keamanan dan kepatuhan. Triv menerapkan standar keamanan tertinggi, termasuk enkripsi data dan perlindungan dari serangan siber. Selain itu, mereka mematuhi peraturan yang berlaku dalam industri ini untuk menjaga keamanan dana pengguna. Dengan reputasi yang solid dan transparansi operasional, Triv memberikan perlindungan tambahan kepada investor dalam dunia yang berfluktuasi seperti pasar cryptocurrency. Namun, penting untuk diingat bahwa investasi apa pun memiliki risiko, dan pemahaman yang baik tentang pasar kripto serta diversifikasi portofolio tetap menjadi faktor kunci dalam mengelola investasi.",
+        "description_2": ""
+      }
+    ]
+  }
 }

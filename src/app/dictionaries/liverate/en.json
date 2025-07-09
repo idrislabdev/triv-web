@@ -1,71 +1,71 @@
 {
-    "header_section": {
-        "title": "Crypto Prices Today (Cryptocurrency Market)",
-        "description": "See the price development of your favorite crypto with Real-time Crypto Charts. Make smart decisions by monitoring live price updates and identify trading opportunities instantly."
+  "header_section": {
+    "title": "Crypto Prices Today (Cryptocurrency Market)",
+    "description": "See the price development of your favorite crypto with Real-time Crypto Charts. Make smart decisions by monitoring live price updates and identify trading opportunities instantly."
+  },
+  "topmovers_section": {
+    "title": "🔥 Top Movers (24 Jam)"
+  },
+  "invest_section": {
+    "title": "Start Investing Now",
+    "description": "Sign up in minutes and achieve your investment goals now 🚀",
+    "button": "Regsiter Now"
+  },
+  "liverate_coin_section": {
+    "about": "About",
+    "activity": "Triv User Activity",
+    "acitivty_text_1": " buying and selling activity of all Triv users in the last 24 hours. This shows that Trivusers are interested in the asset, but not an invitation to buy or sell the asset.",
+    "market_activity": "Market Capitalization",
+    "full_value": "Fully Diluted Valuation",
+    "supply_circulate": "Circulating Supply",
+    "supply_maksimum": "Maximum Supply",
+    "volume_global": "Global Volume",
+    "buy": "Buy",
+    "sell": "Sell",
+    "trade_overview": {
+      "header": "The __code__ buying and selling activity of all Triv users in the last 24 hours shows that Triv users are interested in the asset. However, this is not an invitation to buy or sell the asset.",
+      "stake": "Earn extra income by Staking __label__ on Triv, no fees!",
+      "market": "Trading __label__ on Triv Market with Limit Orders and Stop Loss"
     },
-    "topmovers_section" : {
-        "title" : "🔥 Top Movers (24 Jam)"
+    "trade_about": {
+      "content": "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan bitcoin dilakukan secara kolektif oleh jaringan. Bitcoin merupakan sumber-terbuka; rancangannya bersifat umum."
     },
-    "invest_section" : {
-        "title" : "Start Investing Now",
-        "description": "Sign up in minutes and achieve your investment goals now 🚀",
-        "button": "Regsiter Now"
+    "trade_section": {
+      "title": "__label__ (__currency__) Price Today",
+      "buy_form": "Buy __label__ Starting from IDR 50,000!",
+      "buy_nominal": "Enter the purchase amount:",
+      "what_you_get": "You will get:",
+      "buy_button": "Buy __label__ Now",
+      "also_see": "Other Coins",
+      "also_details": "Other crypto prices available on Triv in the last 24 hours",
+      "see_more": "See All"
     },
-    "liverate_coin_section" : {
-        "about" : "About",
-        "activity" : "Triv User Activity",
-        "acitivty_text_1" : " buying and selling activity of all Triv users in the last 24 hours. This shows that Trivusers are interested in the asset, but not an invitation to buy or sell the asset.",
-        "market_activity" : "Market Capitalization",
-        "full_value" : "Fully Diluted Valuation",
-        "supply_circulate" : "Circulating Supply",
-        "supply_maksimum" : "Maximum Supply",
-        "volume_global" : "Global Volume",
-        "buy" : "Buy",
-        "sell" : "Sell",
-        "trade_overview": {
-            "header" : "The __code__ buying and selling activity of all Triv users in the last 24 hours shows that Triv users are interested in the asset. However, this is not an invitation to buy or sell the asset.",
-            "stake" : "Earn extra income by Staking __label__ on Triv, no fees!",
-            "market" : "Trading __label__ on Triv Market with Limit Orders and Stop Loss" 
-        },
-        "trade_about": {
-            "content" : "__label__ menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan bitcoin dilakukan secara kolektif oleh jaringan. Bitcoin merupakan sumber-terbuka; rancangannya bersifat umum."
-        },
-        "trade_section": {
-            "title" : "__label__ (__currency__) Price Today",
-            "buy_form" : "Buy __label__ Starting from IDR 50,000!",
-            "buy_nominal" : "Enter the purchase amount:",
-            "what_you_get" : "You will get:",
-            "buy_button" : "Buy __label__ Now",
-            "also_see" : "Other Coins",
-            "also_details" : "Other crypto prices available on Triv in the last 24 hours",
-            "see_more" : "See All"
-        },
-        "chart" : {
-            "sentiment_anlysis" : "Use TRIV AI-powered social media data analysis to understand market sentiments and decide your trading plans.",
-            "social_metric_note" : "Note: percentages might not add up to 100% due to rounidng",
-            "social_metric_note_1" : "The number of news mentions for MSFT today is",
-            "social_metric_note_2" : "higher",
-            "social_metric_note_3" : "compared to the average last 14 days"
-        }
-    },
-    "faq_section": {
-        "title_1" : "What are cryptos?",
-        "title_2" : "Crypto is taken from the word cryptography. Cryptography is the science that deals with techniques for encoding (encrypting) and encrypting (decrypting) messages to protect information from unauthorized access or alteration during transmission. In a more general context",
-        "questions" : [
-            {
-                "title" : "What are the benefits of crypto investment?",
-                "description": "Investing in cryptocurrency offers the potential for significant returns. One of the main advantages is the opportunity for rapid asset value growth. Several cryptocurrencies have experienced remarkable increases in value over the past few years. In addition, the global cryptocurrency market is accessible 24/7, providing flexibility in trading. The blockchain technology behind cryptocurrencies also offers a high level of transparency and security. With the ability to diversify a portfolio, cryptocurrency investments can be a potentially profitable addition—though it remains essential to understand the risks and conduct thorough research."
-            },
-            {
-                "title" : "How to invest in crypto for beginners?",
-                "description_1": "For beginners looking to invest in cryptocurrency, the first step is to do thorough research. Learn about the different types of cryptocurrencies available, create an investment plan that aligns with your goals and risk tolerance, and start by purchasing the cryptocurrencies you're interested in. It's important to understand market volatility and to diversify your portfolio by investing in multiple cryptocurrencies. You may also consider consulting a financial professional if needed.",
-                "description_2" : "Triv makes it easy for you to explore various types of cryptocurrencies. You can also contact our support team or join our community for more guidance. Download the Triv app (Indonesia's Cryptocurrency Marketplace) now!"
-            },
-            {
-                "title": "Is crypto investing safe?",
-                "description_1": "Investing in crypto through Triv is safe because the platform prioritizes security and compliance. Triv implements the highest security standards, including data encryption and protection against cyberattacks. Additionally, the platform adheres to industry regulations to ensure the safety of users' funds. With a strong reputation and operational transparency, Triv provides added protection for investors in the highly volatile cryptocurrency market.",
-                "description_2": "However, it’s important to remember that all investments carry risks. A solid understanding of the crypto market and a well-diversified portfolio remain key factors in managing your investment effectively."
-            }
-        ]
+    "chart": {
+      "sentiment_anlysis": "Use TRIV AI-powered social media data analysis to understand market sentiments and decide your trading plans.",
+      "social_metric_note": "Note: percentages might not add up to 100% due to rounidng",
+      "social_metric_note_1": "The number of news mentions for MSFT today is",
+      "social_metric_note_2": "higher",
+      "social_metric_note_3": "compared to the average last 14 days"
     }
+  },
+  "faq_section": {
+    "title_1": "What are cryptos?",
+    "title_2": "Crypto is taken from the word cryptography. Cryptography is the science that deals with techniques for encoding (encrypting) and encrypting (decrypting) messages to protect information from unauthorized access or alteration during transmission. In a more general context",
+    "questions": [
+      {
+        "title": "What are the benefits of crypto investment?",
+        "description": "Cryptocurrency investment has significant profit potential. One of the main advantages is the opportunity for rapid asset growth. Several cryptocurrencies have experienced tremendous increases in value in recent years. Additionally, access to the global cryptocurrency investment market is open 24/7, allowing for flexibility in trading. The blockchain technology underlying cryptocurrencies also offers a high level of transparency and security. With the ability to diversify a portfolio, cryptocurrency investment can be a potentially profitable addition, although it is still important to understand the risks and do thorough research."
+      },
+      {
+        "title": "How to invest in crypto for beginners?",
+        "description_1": "For beginners who want to invest in cryptocurrency, the first step is to do in-depth research. Learn about the different types of cryptocurrencies available, create an investment plan that suits your goals and risk tolerance, and start buying the cryptocurrencies you are interested in. It is important to understand market volatility and diversify your portfolio by investing in several cryptocurrencies. Also consider consulting a financial professional if needed. The triv platform makes it easy for you to learn about various types of crypto, you can also contact our service contact or join our community. Install the Triv application (Indonesian Cryptocurrency Marketplace) now",
+        "description_2": ""
+      },
+      {
+        "title": "Is crypto investing safe?",
+        "description_1": "Crypto investments on Triv are safe because the platform prioritizes security and compliance. Triv implements the highest security standards, including data encryption and protection from cyberattacks. In addition, they comply with industry regulations to keep user funds safe. With a solid reputation and operational transparency, Triv provides additional protection to investors in a volatile world like the cryptocurrency market. However, it is important to remember that any investment carries risks, and a good understanding of the crypto market and portfolio diversification remain key factors in managing investments.",
+        "description_2": ""
+      }
+    ]
+  }
 }
