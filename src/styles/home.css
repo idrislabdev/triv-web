@@ -1257,7 +1257,6 @@
         a {
           &.button {
             @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-
             svg {
               path {
                 @apply fill-white;
@@ -1632,7 +1631,7 @@
             .rfm-child {
               @apply mx-[5px];
               .index-cyrpto-content {
-                @apply w-[147px] h-[24px] items-center;
+                @apply w-full h-[24px] items-center rounded-[6px];
                 .crypto-title {
                   label {
                     @apply text-[8px]/[12px];

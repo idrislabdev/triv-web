@@ -1593,7 +1593,7 @@
             .rfm-child {
               @apply mx-[10px];
               .index-cyrpto-content {
-                @apply w-[147px] h-[24px] items-center;
+                @apply w-full h-[24px] items-center rounded-[6px];
                 .crypto-title {
                   label {
                     @apply text-[8px]/[12px];
