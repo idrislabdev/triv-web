@@ -1,33 +1,33 @@
 {
-    "header_section": {
-        "title" : "Triv untuk isi pulsa anda!",
-        "description" : "Hemat, 24 jam, kapanpun dan dimanapun..."
-    },
-    "topup_section": {
-        "title" : "Isi pulsa di Triv, hemaat!",
-        "description" : "Pakai Triv untuk isi ulang pulsa dan hemat hingga 5%. Triv menjalin kerja sama dengan pihak distributor, memastikan harga kompetitif dan transaksi tanpa gangguan.",
-        "choose_text" : "Pilih Pulsa",
-        "button_text" : "Beli Pulsa"
-    },
-    "ewallet_section": {
-        "title" : "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
-        "subtitle" : "24/7 Real-time Deposits & Withdrawals",
-        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
-        "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
-        "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
-    },
-    "start_now_section": {
-        "title" : "Start Investing Now",
-        "description": "Sign up in minutes and achieve your investment goals now🚀",
-        "button": "Start Now"
-    },
-    "triv_affliate" : {
-        "title_1" : "Triv Affiliate",
-        "content_1" : "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
-        "title_2" : "Invite friends and relatives",
-        "content_2" : "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
-        "follow_text" : "Invite friends and earn extra income",
-        "button_1" : "Affiliate Program",
-        "button_2" : "Invite Friends"
-    }
+  "header_section": {
+    "title": "Triv untuk isi pulsa anda!",
+    "description": "Hemat, 24 jam, kapanpun dan dimanapun..."
+  },
+  "topup_section": {
+    "title": "Isi pulsa di Triv, hemaat!",
+    "description": "Pakai Triv untuk isi ulang pulsa dan hemat hingga 5%. Triv menjalin kerja sama dengan pihak distributor, memastikan harga kompetitif dan transaksi tanpa gangguan.",
+    "choose_text": "Pilih Pulsa",
+    "button_text": "Beli Pulsa"
+  },
+  "ewallet_section": {
+    "title": "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
+    "subtitle": "24/7 Real-time Deposits & Withdrawals",
+    "description": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
+    "description_1": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+    "description_2": "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+  },
+  "start_now_section": {
+    "title": "Start Investing Now",
+    "description": "Sign up in minutes and achieve your investment goals now🚀",
+    "button": "Start Now"
+  },
+  "triv_affliate": {
+    "title_1": "Triv Affiliate",
+    "content_1": "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
+    "title_2": "Life-time refferal rewards",
+    "content_2": "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
+    "follow_text": "Invite friends and earn extra income",
+    "button_1": "Affiliate Program",
+    "button_2": "Invite Friends"
+  }
 }

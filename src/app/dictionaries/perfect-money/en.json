@@ -1,108 +1,108 @@
 {
-    "header_section": {
-        "title" : "Buy & Sell & Exchange Perfect Money Indonesia 24 Hours",
-        "title_1" : "Exchange",
-        "title_2" : "Perfect Money",
-        "title_3" : "Indonesia 24 hours",
-        "description" : "The largest Buy Sell Perfect Money in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
-        "button_1" : "Buy Perfect Money",
-        "button_2" : "Visit Marketplace",
-        "image_url" : "/images/products/perfect-money.png"
+  "header_section": {
+    "title": "Buy & Sell & Exchange Perfect Money Indonesia 24 Hours",
+    "title_1": "Exchange",
+    "title_2": "Perfect Money",
+    "title_3": "Indonesia 24 hours",
+    "description": "The largest Buy Sell Perfect Money in Indonesia easily anytime and anywhere instantly 24 hours without holidays and has been integrated with 61 of the best banks in Indonesia",
+    "button_1": "Buy Perfect Money",
+    "button_2": "Visit Marketplace",
+    "image_url": "/images/products/perfect-money.png"
+  },
+  "regulasi_section": {
+    "liquiditas": {
+      "title": "High Liquidity",
+      "content": "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7.",
+      "content_1": "Triv's spread",
+      "content_2": "one of the lowest",
+      "content_3": "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
     },
-    "regulasi_section": {
-        "liquiditas" : {
-            "title" : "High Liquidity",
-            "content" : "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7.",
-            "content_1" : "Triv's spread",
-            "content_2" : "one of the lowest",
-            "content_3" : "in the market today. With our brokerage system you don't have to wait for other buyers/sellers to make transactions. All buy/sell transactions can be done instantly and in real-time without waiting."
-        },
-        "regulator" : {
-            "title" : "Regulated and Trusted Broker",
-            "content" : "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7."
-        },
-        "device_url" : "/images/devices/iphone-perfect-money.png"
+    "regulator": {
+      "title": "Regulated and Trusted Broker",
+      "content": "No need to ask for stock or availability of Perfect Money balance. Triv guarantees that no matter number of purchase and sales, our stock is always available. Our system helps your transaction instantly 24/7."
     },
-    "layanan_section": {
-        "title" : "All You can do with Perfect Money in Triv",
-        "title_1" : "All You can do with",
-        "title_2" : "Perfect Money",
-        "title_3" : "in Triv",
-        "content" : "Triv supports all transactions, as well swap, exchange, etc. Triv is the most comprehensive and secure trading platform to manage and develop the value of your portfolio.",
-        "card" : {
-            "jual_beli" : {
-                "title" : "Perfect Money Exchange 24 hours",
-                "content" : "Unlike traditional investment instruments, the Perfect Money market has no holidays. You can sell and exchange your Perfect Money in real-time to banks or e-wallets in seconds even on holidays.",
-                "image_url" : "/images/services/iphone-perfect-money.png",
-                "image_class" : "iphone"
-            },
-            "kirim" : {
-                "title" : "Send Perfect Money",
-                "content" : "Exchange Perfect Money anda ke dompet rupiah Triv dan Kirim ke seluruh pengguna Triv secara instan dan gratis.",
-                "image_url" : "/images/services/device-transfer.png",
-                "image_class" : "device-transfer"
-            },
-            "terima" : {
-                "title" : "Shopping on International Sites",
-                "content" : "Perfect Money is accepted by thousands of overseas merchants, so you can shop online without needing a credit card. By topping up your Perfect Money balance at Triv, you can access international markets and shop in minutes.",
-                "image_url" : "/images/services/device-pay.png",
-                "image_class" : "device-pay"
-            },
-            "hoddl" : {
-                "title" : "USD Digital Wallet",
-                "content" : "In addition to being used for shopping, the Paypal Balance can be used as a digital wallet with USD currency. As an alternative for you to invest USD without hassle and in seconds at Triv.",
-                "image_url" : "/images/services/wallet-debit.png",
-                "image_class" : "wallet-debit"
-            },
-            "swap" : {
-                "title" : "Swap Saldo Perfect Money",
-                "content" : "Triv supports over 65+ digital assets on our platform and growing. Need to exchange to paypal/other e-money? Easy! Just access the swap menu from the Triv app.",
-                "image_url" : "/images/services/swap-asset.png",
-                "image_class" : "swap-paypal"
-            },
-            "isi_pulsa" : {
-                "title" : "Top Up Credit and Pay Bills",
-                "content" : "Exchange your BTC coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
-                "image_url" : "/images/services/iphone-topup.png",
-                "image_class" : "iphone"
-            }
-        }
-    },
-    "average_section": {
-        "live_chat" : {
-            "title" : "Average LiveChat Responds",
-            "content" : "Triv's Livechat and Call center are ready to assist you?",
-            "time" : "12"
-        },
-        "processing" : {
-            "title" : "Average Processing Time",
-            "content" : "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions",
-            "time" : "77"
-        },
-        "updated_text" : "*Updated Real-Time"
-    },
-    "ewallet_section": {
-        "title" : "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
-        "title_1" : "Triv Supports",
-        "title_2" : "61 banks & E-wallets",
-        "title_3" : "in Indonesia for all our transactions",
-        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
-        "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
-        "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
-    },
-    "start_now_section": {
-        "title" : "Start Investing Now",
-        "description": "Sign up in minutes and achieve your investment goals now🚀",
-        "button": "Start Now"
-    },
-    "triv_affliate" : {
-        "title_1" : "Triv Affiliate",
-        "content_1" : "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
-        "title_2" : "Invite friends and relatives",
-        "content_2" : "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
-        "follow_text" : "Invite friends and earn extra income",
-        "button_1" : "Affiliate Program",
-        "button_2" : "Invite Friends"
+    "device_url": "/images/devices/iphone-perfect-money.png"
+  },
+  "layanan_section": {
+    "title": "All You can do with Perfect Money in Triv",
+    "title_1": "All You can do with",
+    "title_2": "Perfect Money",
+    "title_3": "in Triv",
+    "content": "Triv supports all transactions, as well swap, exchange, etc. Triv is the most comprehensive and secure trading platform to manage and develop the value of your portfolio.",
+    "card": {
+      "jual_beli": {
+        "title": "Perfect Money Exchange 24 hours",
+        "content": "Unlike traditional investment instruments, the Perfect Money market has no holidays. You can sell and exchange your Perfect Money in real-time to banks or e-wallets in seconds even on holidays.",
+        "image_url": "/images/services/iphone-perfect-money.png",
+        "image_class": "iphone"
+      },
+      "kirim": {
+        "title": "Send Perfect Money",
+        "content": "Exchange Perfect Money anda ke dompet rupiah Triv dan Kirim ke seluruh pengguna Triv secara instan dan gratis.",
+        "image_url": "/images/services/device-transfer.png",
+        "image_class": "device-transfer"
+      },
+      "terima": {
+        "title": "Shopping on International Sites",
+        "content": "Perfect Money is accepted by thousands of overseas merchants, so you can shop online without needing a credit card. By topping up your Perfect Money balance at Triv, you can access international markets and shop in minutes.",
+        "image_url": "/images/services/device-pay.png",
+        "image_class": "device-pay"
+      },
+      "hoddl": {
+        "title": "USD Digital Wallet",
+        "content": "In addition to being used for shopping, the Paypal Balance can be used as a digital wallet with USD currency. As an alternative for you to invest USD without hassle and in seconds at Triv.",
+        "image_url": "/images/services/wallet-debit.png",
+        "image_class": "wallet-debit"
+      },
+      "swap": {
+        "title": "Swap Saldo Perfect Money",
+        "content": "Triv supports over 65+ digital assets on our platform and growing. Need to exchange to paypal/other e-money? Easy! Just access the swap menu from the Triv app.",
+        "image_url": "/images/services/swap-asset.png",
+        "image_class": "swap-paypal"
+      },
+      "isi_pulsa": {
+        "title": "Top Up Credit and Pay Bills",
+        "content": "Exchange your BTC coins to Triv rupiah wallet and use it for various purposes such as topping up credit, paying bills and even buying electricity tokens.",
+        "image_url": "/images/services/iphone-topup.png",
+        "image_class": "iphone"
+      }
     }
+  },
+  "average_section": {
+    "live_chat": {
+      "title": "Average LiveChat Responds",
+      "content": "Triv's Livechat and Call center are ready to assist you?",
+      "time": "12"
+    },
+    "processing": {
+      "title": "Average Processing Time",
+      "content": "All Triv transactions run automatically and without downtime. Since 2015, Triv has never experienced downtime that disrupts customer transactions",
+      "time": "77"
+    },
+    "updated_text": "*Updated Real-Time"
+  },
+  "ewallet_section": {
+    "title": "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
+    "title_1": "Triv Supports",
+    "title_2": "61 banks & E-wallets",
+    "title_3": "in Indonesia for all our transactions",
+    "subtitle": "24/7 Real Time Deposit & Withdrawal",
+    "description": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays.",
+    "description_1": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+    "description_2": "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+  },
+  "start_now_section": {
+    "title": "Start Investing Now",
+    "description": "Sign up in minutes and achieve your investment goals now🚀",
+    "button": "Start Now"
+  },
+  "triv_affliate": {
+    "title_1": "Triv Affiliate",
+    "content_1": "With our Affiliate program every time your downline makes a transaction, you will get 10% cashback unconditionally!",
+    "title_2": "Life-time refferal rewards",
+    "content_2": "Triv Affiliates have no expiration date and are valid for life, as long as your downline makes transactions, you will continue to earn commissions without time limit.",
+    "follow_text": "Invite friends and earn extra income",
+    "button_1": "Affiliate Program",
+    "button_2": "Invite Friends"
+  }
 }
