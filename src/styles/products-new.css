@@ -1,2042 +1,2063 @@
 @tailwind components;
 .dark-theme {
-    @apply !bg-[#000000];
-    h1, h2, h3, h4, h5, h6 {
-      @apply !text-slate-200;
-    }
-    p,label,span {
-        @apply !text-slate-300;
-    }
-    .products-page {
-        .products-service-hero-new-section {
-            .service-hero-container {
-                .left-subcontainer {
-                    button {
-                        &.btn-primary {
-                            @apply bg-[#3A80AF] border-[#3A80AF];
-                        }
-                        &.btn-outline-primary {
-                            @apply text-[#3A80AF] border-[#3A80AF];
-                            svg {
-                                path {
-                                    @apply fill-[#3A80AF];
-                                }
-                            }
-                        }
-                    }
-                    .button-logo-area {
-                        .button-group {
-                            .btn-outline-primary {
-                                @apply bg-transparent text-primary border-primary;
-                            }
-                        }
-                        .logo-area {
-                            @apply flex items-center gap-[30px];
-                            .bappebti-logo {
-                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .kominfo-logo {
-                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .bsi-logo {
-                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .cisa-logo {
-                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    .form-service {
-                        @apply !bg-[#1b1f22];
-                        .button-tab {
-                            button {
-                                @apply bg-[#2E3339] text-white;
-                                &.active {
-                                    @apply bg-[#3A80AF];
-                                }
-                            }
-                            &.buy {
-                                &::after {
-                                    @apply !bg-[#3A80AF];
-                                }
-                            }
-                            &.sell {
-                                &::after {
-                                    content: '';
-                                    @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] !bg-red-700 skew-x-[-25deg];
-                                }
-                                button {
-                                    &.active {
-                                        @apply !bg-red-700;
-                                    }
-                                }
-                            }
-                        }
-                        button {
-                            &.btn-primary {
-                                @apply bg-[#3A80AF] border-[#3A80AF];
-                                span {
-                                    @apply !text-white;
-                                }
-                            }
-                            &.btn-danger {
-                                @apply bg-red-700 border-red-700;
-                                span {
-                                    @apply !text-white;
-                                }
-                            }
-                        }
-                       .group-input {
-                            input {
-                                @apply bg-[#1b1f22] border-[#1b1f22] !text-white;
-                            }
-                       }
-                        .button-group {
-                            button  {
-                                @apply bg-[#2E3339] text-white;
-                            }
-                        }
-                        .get-input {
-                            .label-value {
-                                @apply bg-[#2E3339];
-                            }
-                        }
-                    }
-                }
-            }
-           
-        }
-        .products-average-new-section{
-            .box-container {
-                @apply bg-[#1b1f22];
-                .sub-container {
-                    .detail-subcontainer {
-                        .detail-description-subcontainer {
-                            p {
-                                span {
-                                    @apply !text-[#FF7F17];   
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .products-affliate-new-section {
-            button {
-                @apply !bg-[#3A80AF] !text-white;
-            }
-        }
-        .products-investasi-now-new-section {
-            a {
-                @apply !bg-[#3A80AF] !text-white;
-            }
-        }
-        .products-layanan-new-section {
-            @apply p-[20px];
-            .layanan-container {
-                .card-subcontainer {
-                     &.swap {
-                        @apply bg-[#234324];
-                        .box-layanan {
-                            span {
-                                @apply  bg-[#67C48F];
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.hoddl {
-                        @apply bg-[#4A270A];
-                        .box-layanan {
-                            span {
-                                @apply  bg-[#FF7F17];
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.kirim {
-                        @apply bg-[#13413B];
-                        .box-layanan {
-                            span {
-                                @apply  bg-[#289C8C];
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.jual-beli {
-                        @apply bg-[#1A3647];
-                        .box-layanan {
-                            span {
-                                @apply  bg-[#85C8FA];
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.terima {
-                        @apply bg-[#4E3C06];
-                        .box-layanan {
-                            span {
-                                @apply  !bg-[#F2AF22];
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.pulsa {
-                        @apply bg-[#451739];
-                        .box-layanan {
-                            span {
-                                @apply  bg-[#B63F9B];
-                                svg {
-                                    path {
-                                        @apply fill-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-.products-page {
-    @apply pb-0;
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
+  @apply !bg-[#000000];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !text-slate-200;
+  }
+  p,
+  label,
+  span {
+    @apply !text-slate-300;
+  }
+  .products-page {
     .products-service-hero-new-section {
-        @apply flex flex-col justify-center items-center py-[50px]  gap-[20px] bg-[#F6F9FB] relative ;
-        background: url("/images/ornaments/service-ornament.png") no-repeat;
-        background-position: center;
-        background-size: cover;
-        .service-hero-container {
-            @apply flex gap-[124px] px-[100px] w-full max-w-container mx-auto; 
-            .left-subcontainer {
-                @apply flex flex-col gap-[40px] flex-1;
-                .text-area {
-                    @apply flex flex-col gap-[30px];
-                    h2 {
-                        @apply text-[46px]/[150%] font-black text-black;
-                        span {
-                            background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-                    p {
-                        @apply text-[16px]/[32px] text-neutral-700;
-                    }
-                }
-                .button-logo-area {
-                    @apply flex flex-col gap-[90px] w-full;;
-                    .button-group {
-                        @apply flex items-center gap-[20px];
-                        button {
-                            @apply w-[260px] h-[48px] rounded-[30px] text-[14px]/[21px];
-                        }
-                    }
-                    .section-terdaftar {
-                        @apply flex flex-col gap-[19px];
-                        h5 {
-                            @apply text-[16px]/[32px] text-[#646464] font-medium;
-                        }
-                        .logo-area {
-                            @apply flex items-center gap-[30px];
-                            .bappebti-logo {
-                                @apply w-[147px] h-[34px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .kominfo-logo {
-                                @apply w-[118px] h-[37px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .bsi-logo {
-                                @apply w-[83px] h-[44px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .cisa-logo {
-                                @apply w-[110px] h-[44px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                        }
-                    }
-                }
-               
+      .service-hero-container {
+        .left-subcontainer {
+          button {
+            &.btn-primary {
+              @apply bg-[#3A80AF] border-[#3A80AF];
             }
-            .right-subcontainer {
-                @apply w-[512px];
+            &.btn-outline-primary {
+              @apply text-[#3A80AF] border-[#3A80AF];
+              svg {
+                path {
+                  @apply fill-[#3A80AF];
+                }
+              }
             }
-            @media (max-width: 1380px) {
-                @apply gap-[75px] justify-between;
-                .left-subcontainer {
-                    .text-area {
-                        h2 {
-                            @apply text-[40px]/[65px];
-                        }
-                        p {
-                            @apply text-[14px]/[21px];
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    .form-service {
-                        @apply rounded-[34px] flex flex-col p-[40px] gap-[30px] bg-white;    
-                        box-shadow: 0px 4px 40px 0px #00000033;
-                        .button-tab {
-                            @apply flex items-center relative;
-                            button {
-                                @apply h-[55px] text-[17px]/[24px] rounded-none ;
-                            }
-                            
-                        }
-                        .title {
-                            @apply text-[19px]/[30px];
-                        }
-                        .description {
-                            @apply text-[15px]/[23px];
-                        }
-                        .group-input {
-                            span {
-                                &.append {
-                                    @apply text-[22px]/[34px];
-                                }
-                            }
-                            input {
-                               @apply text-[22px]/[34px];
-                            }
-                        }
-                        .button-group {
-                            @apply flex items-center gap-[10px];
-                            button {
-                                @apply rounded-[10px] text-[12px]/[18px] px-[12px] py-[4px] h-[28px];
-                            }
-                        }
-                        .get-input {
-                            @apply flex flex-col gap-[18px];
-                            label {
-                                @apply text-[14px]/[21px] font-medium text-neutral-700;
-                            }
-                            .label-value {
-                                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
-                                span {
-                                    @apply text-[21px]/[34px];
-                                }
-                            }
-                        }
-                        button {
-                            @apply rounded-[10px] text-[16px]/[24px] h-[54px];
-                        }
-                    }
-                }
+          }
+          .button-logo-area {
+            .button-group {
+              .btn-outline-primary {
+                @apply bg-transparent text-primary border-primary;
+              }
             }
-            @media (max-width: 1180px) {
-                @apply gap-[30px];
-                .left-subcontainer {
-                    .text-area {
-                        h2 {
-                            @apply text-[35px]/[46px];
-                        }
-                        p {
-                            @apply text-[13px]/[20px];
-                        }
-                    }
-                    .button-logo-area {
-                        .button-group {
-                            @apply gap-[20px] w-full;
-                            button {
-                                @apply w-1/2 h-[40px];
-                            }
-                        }
-                        .section-terdaftar {
-                            h5  {
-                                @apply text-[12px]/[19px];
-                            }
-                            .logo-area {
-                                @apply gap-[20px];
-                                .bappebti-logo {
-                                    @apply w-[127px] h-[34px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[98px] h-[37px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[83px] h-[44px];
-
-                                }
-                                .cisa-logo {
-                                    @apply w-[90px] h-[43px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    @apply w-[370px];
-                    .form-service {
-                        @apply w-full rounded-[34px] flex flex-col p-[40px] gap-[20px] bg-white;    
-                        box-shadow: 0px 4px 40px 0px #00000033;
-                        .button-tab {
-                            @apply flex items-center relative;
-                            button {
-                                @apply h-[45px] text-[14px]/[21px] rounded-none ;
-                            }
-                        }
-                        .title {
-                            @apply text-[15px]/[22px];
-                        }
-                        .description {
-                            @apply text-[13px]/[20px];
-                        }
-                        .group-input {
-                            span {
-                                &.append {
-                                    @apply text-[21px]/[31px] top-[4px];
-                                }
-                            }
-                            input {
-                               @apply text-[21px]/[31px] px-[30px];
-                            }
-                        }
-                        .button-group {
-                            @apply flex items-center gap-[8px];
-                            button {
-                                @apply rounded-[8px] text-[10px]/[12px] px-[10px] py-[4px] h-[22px];
-                            }
-                        }
-                        .get-input {
-                            @apply flex flex-col gap-[18px];
-                            label {
-                                @apply text-[15px]/[22px] font-medium text-neutral-700;
-                            }
-                            .label-value {
-                                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
-                                span {
-                                    @apply text-[22px]/[35px];
-                                }
-                            }
-                        }
-                        button {
-                            @apply rounded-[10px] text-[17px]/[25px] h-[54px];
-                        }
-                    }
-                }
+            .logo-area {
+              @apply flex items-center gap-[30px];
+              .bappebti-logo {
+                background: url("/images/otoritas-keuangans/bappebti-big-white.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .kominfo-logo {
+                background: url("/images/otoritas-keuangans/kominfo-light-logo.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .bsi-logo {
+                background: url("/images/otoritas-keuangans/bsi-white.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cisa-logo {
+                background: url("/images/otoritas-keuangans/cisa-light-logo.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
             }
-            @media (max-width: 1080px) {
-                @apply gap-[30px];
-                .left-subcontainer {
-                    .text-area {
-                        h2 {
-                            @apply text-[34px]/[45px];
-                        }
-                        p {
-                            @apply text-[12px]/[19px];
-                        }
-                    }
-                    .button-logo-area {
-                        .button-group {
-                            @apply gap-[20px] w-full;
-                            button {
-                                @apply w-1/2 h-[40px];
-                            }
-                        }
-                        .section-terdaftar {
-                            h5  {
-                                @apply text-[11px]/[18px];
-                            }
-                            .logo-area {
-                                @apply gap-[15px];
-                                .bappebti-logo {
-                                    @apply w-[117px] h-[34px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[88px] h-[37px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[73px] h-[44px];
-
-                                }
-                                .cisa-logo {
-                                    @apply w-[80px] h-[43px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    @apply w-[370px];
-                    .form-service {
-                        @apply w-full rounded-[34px] flex flex-col p-[40px] gap-[20px] bg-white;    
-                        box-shadow: 0px 4px 40px 0px #00000033;
-                        .button-tab {
-                            @apply flex items-center relative;
-                            button {
-                                @apply h-[45px] text-[14px]/[21px] rounded-none ;
-                            }
-                        }
-                        .title {
-                            @apply text-[14px]/[21px];
-                        }
-                        .description {
-                            @apply text-[12px]/[19px];
-                        }
-                        .group-input {
-                            span {
-                                &.append {
-                                    @apply text-[20px]/[30px];
-                                }
-                            }
-                            input {
-                            @apply text-[20px]/[30px];
-                            }
-                        }
-                        .button-group {
-                            @apply flex items-center gap-[8px];
-                            button {
-                                @apply rounded-[8px] text-[10px]/[12px] px-[10px] py-[4px] h-[22px];
-                            }
-                        }
-                        .get-input {
-                            @apply flex flex-col gap-[18px];
-                            label {
-                                @apply text-[14px]/[21px] font-medium text-neutral-700;
-                            }
-                            .label-value {
-                                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
-                                span {
-                                    @apply text-[21px]/[34px];
-                                }
-                            }
-                        }
-                        button {
-                            @apply rounded-[10px] text-[16px]/[24px] h-[54px];
-                        }
-                    }
-                }
-            }
+          }
         }
-    }
-    .products-regulasi-new-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
-        .regulasi-container {
-            @apply flex gap-[50px];
-            .box-subcontainer {
-                @apply w-1/2 flex flex-col gap-[20px];
-                .img-box {
-                    @apply w-[460px] h-[460px] relative;
-                    img {
-                        @apply w-full h-full object-cover;
-                    }
-                    &::after {
-                        content: '';
-                        @apply absolute right-0 top-0 w-full h-full z-[-1];
-                        background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-                    }
+        .right-subcontainer {
+          .form-service {
+            @apply !bg-[#1b1f22];
+            .button-tab {
+              button {
+                @apply bg-[#2E3339] text-white;
+                &.active {
+                  @apply bg-[#3A80AF];
                 }
-                h5 {
-                    @apply text-[28px]/[42px] font-black text-black;
+              }
+              &.buy {
+                &::after {
+                  @apply !bg-[#3A80AF];
                 }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700 text-justify;
-                    span {
-                        @apply underline;
-                    }
+              }
+              &.sell {
+                &::after {
+                  content: "";
+                  @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] !bg-red-700 skew-x-[-25deg];
                 }
+                button {
+                  &.active {
+                    @apply !bg-red-700;
+                  }
+                }
+              }
             }
-        }
-        @media (max-width:1280px) {
-            .regulasi-container {
-                @apply flex gap-[50px];
-                .box-subcontainer {
-                    @apply w-1/2 flex flex-col gap-[15px];
-                    .img-box {
-                        @apply w-[420px] h-[420px];
-                        &::after {
-                            background-size: 100%;
-                        }
-                    }
-                    h5 {
-                        @apply text-[26px]/[38px];
-                    }
-                    p {
-                        @apply text-[16px]/[23px];
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .regulasi-container {
-                @apply flex gap-[50px];
-                .box-subcontainer {
-                    @apply w-1/2 flex flex-col gap-[15px];
-                    .img-box {
-                        @apply w-[400px] h-[400px];
-                        &::after {
-                            background-size: 100%;
-                        }
-                    }
-                    h5 {
-                        @apply text-[25px]/[37px];
-                    }
-                    p {
-                        @apply text-[15px]/[22px];
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .regulasi-container {
-                @apply flex gap-[50px];
-                .box-subcontainer {
-                    @apply w-1/2 flex flex-col gap-[15px];
-                    .img-box {
-                        @apply w-[380px] h-[380px];
-                        &::after {
-                            background-size: 100%;
-                        }
-                    }
-                    h5 {
-                        @apply text-[24px]/[36px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                }
-            }
-        }
-    }
-    .products-layanan-new-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
-        .title-container {
-            @apply flex flex-col items-center text-center justify-center gap-[20px] w-[75%];
-            h2 {
-                @apply text-[48px]/[72px] text-black font-black;
+            button {
+              &.btn-primary {
+                @apply bg-[#3A80AF] border-[#3A80AF];
                 span {
-                    background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                  @apply !text-white;
                 }
+              }
+              &.btn-danger {
+                @apply bg-red-700 border-red-700;
+                span {
+                  @apply !text-white;
+                }
+              }
             }
-            p {
-                @apply text-[18px]/[27px] font-medium text-neutral-700;
+            .group-input {
+              input {
+                @apply bg-[#1b1f22] border-[#1b1f22] !text-white;
+              }
             }
+            .button-group {
+              button {
+                @apply bg-[#2E3339] text-white;
+              }
+            }
+            .get-input {
+              .label-value {
+                @apply bg-[#2E3339];
+              }
+            }
+          }
         }
-        .layanan-container {
-            @apply flex flex-col gap-[20px];
-           .card-subcontainer {
-                @apply w-full rounded-[30px] flex items-start justify-between h-[400px] transition-transform duration-200 ease-linear origin-top sticky overflow-hidden ;
-                padding-top: calc(var(--index) * var(--card-top-offset));
-                &.swap {
-                    @apply bg-[#F0FAF0];
-                    .box-layanan {
-                        span {
-                            @apply  bg-[#67C48F];
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                &.hoddl {
-                    @apply bg-[#FFF3E8];
-                    .box-layanan {
-                        span {
-                            @apply  bg-[#FF7F17];
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                &.kirim {
-                    @apply bg-[#EBFBF9];
-                    .box-layanan {
-                        span {
-                            @apply  bg-[#289C8C];
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                &.jual-beli {
-                    @apply bg-[#F4F8FB];
-                    .box-layanan {
-                        span {
-                            @apply  bg-[#85C8FA];
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                &.terima {
-                    @apply bg-[#FFF9E6];
-                    .box-layanan {
-                        span {
-                            @apply  !bg-[#F2AF22];
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                &.pulsa {
-                    @apply bg-[#F8ECF5];
-                    .box-layanan {
-                        span {
-                            @apply  bg-[#B63F9B];
-                            svg {
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                .box-layanan {
-                    @apply w-1/2 flex flex-col gap-[10px] p-[40px];
-                    span {
-                        @apply bg-[#B63F9B] w-[80px] h-[80px] rounded-[50%] flex flex-col justify-center items-center;
-                    }
-                    .content {
-                        @apply flex flex-col gap-[10px];
-                        h5 {
-                            @apply text-[31px]/[48px] font-bold text-neutral-800;
-                        }
-                        p {
-                            @apply text-[16px]/[32px] font-medium text-neutral-700;
-                        }
-                    }
-                }
-                .box-img {
-                    @apply flex flex-col items-center relative w-1/2 h-full;
-                    &.macbook {
-                        @apply justify-center;
-                        img {
-                            @apply w-[488px] h-[314px];
-
-                        }
-                    }
-                    &.iphone {
-                        @apply justify-end;
-                        img {
-                            @apply w-[271px];
-                        }
-                    }
-                    &.device-transfer {
-                        @apply justify-center;
-                        img {
-                            @apply w-[365px] h-[444px];
-
-                        }
-                    }
-                    &.device-pay {
-                        @apply justify-center;
-                        img {
-                            @apply w-[371px] h-[418px];
-
-                        }
-                    }
-                    &.wallet-debit {
-                        @apply justify-center;
-                        img {
-                            @apply w-[380px] h-[402px];
-
-                        }
-                    }
-                    &.swap-paypal {
-                        @apply justify-end;
-                        img {
-                            @apply w-[271px];
-                        }
-                    }
-                    &.cashback {
-                        @apply justify-center;
-                        img {
-                            @apply w-[406px];
-                        }
-                    }
-                }
-           }
-        }
-        @media (max-width:1280px) {
-            .title-container {
-                h2 {
-                    @apply text-[38px]/[58px];
-                }
-                p {
-                    @apply text-[16px]/[23px];
-                }
-            }
-            .layanan-container {
-                @apply flex flex-col gap-[20px];
-               .card-subcontainer {
-                    @apply h-[340px];
-                    padding-top: calc(var(--index) * var(--card-top-offset));
-                    .box-layanan {
-                        @apply w-1/2 flex flex-col gap-[10px] p-[40px];
-                        span {
-                            @apply w-[60px] h-[60px];
-                            svg {
-                                @apply w-[60%] h-[60%];
-                            }
-                        }
-                        .content {
-                            @apply flex flex-col gap-[10px];
-                            h5 {
-                                @apply text-[24px]/[37px];
-                            }
-                            p {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                    }
-                    .box-img {
-                        @apply flex flex-col items-center relative w-1/2 h-full;
-                        &.macbook {
-                            @apply justify-center;
-                            img {
-                                @apply w-[398px] h-[274px];
-    
-                            }
-                        }
-                        &.iphone {
-                            @apply justify-end;
-                            img {
-                                @apply w-[240px];
-                            }
-                        }
-                        &.device-transfer {
-                            @apply justify-center;
-                            img {
-                                @apply w-[295px] h-[344px];
-    
-                            }
-                        }
-                        &.device-pay {
-                            @apply justify-center;
-                            img {
-                                @apply w-[311px] h-[358px];
-    
-                            }
-                        }
-                        &.wallet-debit {
-                            @apply justify-center;
-                            img {
-                                @apply w-[320px] h-[342px];
-    
-                            }
-                        }
-                        &.swap-paypal {
-                            @apply justify-end;
-                            img {
-                                @apply w-[240px];
-                            }
-                        }
-                        &.cashback {
-                            @apply justify-center;
-                            img {
-                                @apply w-[446px];
-                            }
-                        }
-                    }
-               }
-            }
-        }
-        @media (max-width:1180px) {
-            .title-container {
-                h2 {
-                    @apply text-[37px]/[57px];
-                }
-                p {
-                    @apply text-[15px]/[22px];
-                }
-            }
-            .layanan-container {
-                @apply flex flex-col gap-[20px];
-               .card-subcontainer {
-                    @apply h-[320px];
-                    padding-top: calc(var(--index) * var(--card-top-offset));
-                    .box-layanan {
-                        @apply w-1/2 flex flex-col gap-[10px] p-[40px];
-                        span {
-                            @apply w-[60px] h-[60px];
-                            svg {
-                                @apply w-[60%] h-[60%];
-                            }
-                        }
-                        .content {
-                            @apply flex flex-col gap-[10px];
-                            h5 {
-                                @apply text-[23px]/[36px];
-                            }
-                            p {
-                                @apply text-[13px]/[20px];
-                            }
-                        }
-                    }
-                    .box-img {
-                        @apply flex flex-col items-center relative w-1/2 h-full;
-                        &.macbook {
-                            @apply justify-center;
-                            img {
-                                @apply w-[378px] h-[254px];
-    
-                            }
-                        }
-                        &.iphone {
-                            @apply justify-end;
-                            img {
-                                @apply w-[220px];
-                            }
-                        }
-                        &.device-transfer {
-                            @apply justify-center;
-                            img {
-                                @apply w-[275px] h-[324px];
-    
-                            }
-                        }
-                        &.device-pay {
-                            @apply justify-center;
-                            img {
-                                @apply w-[291px] h-[338px];
-    
-                            }
-                        }
-                        &.wallet-debit {
-                            @apply justify-center;
-                            img {
-                                @apply w-[300px] h-[322px];
-    
-                            }
-                        }
-                        &.swap-paypal {
-                            @apply justify-end;
-                            img {
-                                @apply w-[220px];
-                            }
-                        }
-                        &.cashback {
-                            @apply justify-center;
-                            img {
-                                @apply w-[426px];
-                            }
-                        }
-                    }
-               }
-            }
-        }
-        @media (max-width:1080px) {
-            .title-container {
-                h2 {
-                    @apply text-[36px]/[56px];
-                }
-                p {
-                    @apply text-[14px]/[21px];
-                }
-            }
-            .layanan-container {
-                @apply flex flex-col gap-[20px];
-               .card-subcontainer {
-                    @apply h-[300px];
-                    padding-top: calc(var(--index) * var(--card-top-offset));
-                    .box-layanan {
-                        @apply w-1/2 flex flex-col gap-[10px] p-[40px];
-                        span {
-                            @apply w-[60px] h-[60px];
-                            svg {
-                                @apply w-[60%] h-[60%];
-                            }
-                        }
-                        .content {
-                            @apply flex flex-col gap-[10px];
-                            h5 {
-                                @apply text-[22px]/[35px];
-                            }
-                            p {
-                                @apply text-[12px]/[19px];
-                            }
-                        }
-                    }
-                    .box-img {
-                        @apply flex flex-col items-center relative w-1/2 h-full;
-                        &.macbook {
-                            @apply justify-center;
-                            img {
-                                @apply w-[358px] h-[234px];
-    
-                            }
-                        }
-                        &.iphone {
-                            @apply justify-end;
-                            img {
-                                @apply w-[200px];
-                            }
-                        }
-                        &.device-transfer {
-                            @apply justify-center;
-                            img {
-                                @apply w-[265px] h-[304px];
-    
-                            }
-                        }
-                        &.device-pay {
-                            @apply justify-center;
-                            img {
-                                @apply w-[271px] h-[318px];
-    
-                            }
-                        }
-                        &.wallet-debit {
-                            @apply justify-center;
-                            img {
-                                @apply w-[280px] h-[302px];
-    
-                            }
-                        }
-                        &.swap-paypal {
-                            @apply justify-end;
-                            img {
-                                @apply w-[200px];
-                            }
-                        }
-                        &.cashback {
-                            @apply justify-center;
-                            img {
-                                @apply w-[406px];
-                            }
-                        }
-                    }
-               }
-            }
-        }
-    }
-    .products-affliate-new-section {
-        @apply relative flex flex-col justify-center py-[50px];
-        background: url("/images/backgrounds/affliate.png") no-repeat;
-        background-position: center;
-        background-size: cover;
-        .affliate-container {
-            @apply flex justify-between items-center h-[490px] px-[100px] gap-[20px] max-w-container mx-auto;
-
-            .image-subcontainer {
-                @apply w-[400px] h-full flex flex-col justify-end;
-                img {
-                    @apply w-[400px];
-                }
-            }
-            .text-subcontainer {
-                @apply flex items-center gap-[20px] flex-1;
-                .left-subcontainer {
-                    @apply flex flex-col gap-[40px] w-1/2;
-                    .sub-subcontainer {
-                        @apply flex flex-col gap-[10px];
-                        h5 {
-                            @apply text-[30px]/[45px] font-black text-primary;
-                        }
-                        p {
-                            @apply text-[16px]/[32px] font-medium text-neutral-200;
-                        }
-                    }
-
-                }
-                .right-subcontainer {
-                    @apply flex flex-col gap-[40px] w-1/2;
-                    h5 {
-                        @apply text-[40px]/[60px] font-bold text-white;
-                    }
-                    .button-group {
-                        @apply flex flex-col gap-[22px];
-                        button {
-                            @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[13px] w-full h-[54px] text-[16px]/[24px] font-bold;
-                        }
-        
-                    }
-                }
-            }
-        }
-        @media (max-width: 1380px) {
-            .affliate-container {
-                @apply h-[400px];
-                .image-subcontainer {
-                    @apply w-[300px];
-                    img {
-                        @apply w-[300px];
-                    }
-                }
-            }
-            .text-subcontainer {
-                @apply flex items-center gap-[20px] flex-1;
-                .left-subcontainer {
-                    .sub-subcontainer {
-                        h5 {
-                            @apply !text-[25px]/[35px];
-                        }
-                        p {
-                            @apply !text-[17px]/[25px];
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    h5 {
-                        @apply !text-[30px]/[45px];
-                    }
-                    .button-group {
-                        @apply !gap-[16px];
-                        button {
-                            @apply !h-[45px];
-                        }
-        
-                    }
-                }
-            }
-        }
-        @media (max-width: 1279px) {
-            .affliate-container {
-                @apply h-[400px];
-                .image-subcontainer {
-                    @apply w-[300px];
-                    img {
-                        @apply w-[300px];
-                    }
-                }
-            }
-            .text-subcontainer {
-                @apply flex items-center gap-[20px] flex-1;
-                .left-subcontainer {
-                    .sub-subcontainer {
-                        h5 {
-                            @apply !text-[20px]/[30px];
-                        }
-                        p {
-                            @apply !text-[14px]/[20px];
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    h5 {
-                        @apply !text-[25px]/[40px];
-                    }
-                    .button-group {
-                        @apply !gap-[14px];
-                        button {
-                            @apply !h-[40px];
-                        }
-        
-                    }
-                }
-            }
-        }
-        @media (max-width: 1180px) {
-            .affliate-container {
-                @apply h-[300px];
-                .image-subcontainer {
-                    @apply w-[270px];
-                    img {
-                        @apply w-[270px];
-                    }
-                }
-            }
-            .text-subcontainer {
-                @apply flex items-center gap-[18px] flex-1;
-                .left-subcontainer {
-                    .sub-subcontainer {
-                        h5 {
-                            @apply !text-[19px]/[31px];
-                        }
-                        p {
-                            @apply !text-[13px]/[20px];
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    h5 {
-                        @apply !text-[22px]/[29px];
-                    }
-                    .button-group {
-                        @apply !gap-[12px];
-                        button {
-                            @apply !h-[45px];
-                        }
-        
-                    }
-                }
-            }
-        }
-        @media (max-width: 1080px) {
-            .affliate-container {
-                @apply h-[300px];
-                .image-subcontainer {
-                    @apply w-[250px];
-                    img {
-                        @apply w-[250px];
-                    }
-                }
-            }
-            .text-subcontainer {
-                @apply flex items-center gap-[18px] flex-1;
-                .left-subcontainer {
-                    .sub-subcontainer {
-                        h5 {
-                            @apply !text-[18px]/[30px];
-                        }
-                        p {
-                            @apply !text-[12px]/[18px];
-                        }
-                    }
-                }
-                .right-subcontainer {
-                    h5 {
-                        @apply !text-[21px]/[27px];
-                    }
-                    .button-group {
-                        @apply !gap-[12px];
-                        button {
-                            @apply !h-[35px];
-                        }
-        
-                    }
-                }
-            }
-        }
+      }
     }
     .products-average-new-section {
-        @apply flex flex-col items-center px-[100px] py-[75px] relative max-w-container mx-auto;
-        .box-container {
-            @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[40px] py-[40px] gap-[60px] relative w-[100%] overflow-hidden;
-            .sub-container {
-                @apply flex z-[1];
-                .detail-subcontainer {
-                    @apply flex items-start w-1/2 gap-[10px];
-                    .detail-img {
-                        @apply flex items-start gap-[4px] w-[180px];
-                        img {
-                            @apply w-[188px] h-[188px];
-                        }
-                        h5 {
-                            @apply text-[96px]/[96px] font-black;
-                            background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            span {
-                                @apply text-[48px]/[72px];
-                            }
-                        }
-                    }
-                    .detail-description-subcontainer {
-                        @apply flex flex-col items-start flex-1 mt-[80px];
-                        p {
-                            @apply text-[36px]/[46px] font-black text-neutral-800 mb-[10px];
-                        }
-                        span {
-                            @apply text-[14px]/[21px] font-medium text-neutral-700;
-                            span {
-                                @apply text-[#FF7F17];
-                            }
-                        }
-                    }
-                }
-            }
-            &::after {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-            }
-            &::before {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-            }
-        }
-        @media (max-width:1280px) {
-            .box-container {
-                .sub-container {
-                    .detail-subcontainer {
-                        @apply flex items-start w-1/2 gap-[10px];
-                        .detail-img {
-                            @apply flex items-start gap-[4px] w-[128px];
-                            img {
-                                @apply w-[128px] h-[128px];
-                            }
-                            h5 {
-                                @apply text-[62px]/[62px];
-                                span {
-                                    @apply text-[28px]/[40px];
-                                }
-                            }
-                        }
-                        .detail-description-subcontainer {
-                            @apply mt-[70px];
-                            p {
-                                @apply text-[25px]/[31px];
-                            }
-                            span {
-                                @apply text-[16px]/[23px];
-                                span {
-                                    @apply text-[#FF7F17];
-                                }
-                            }
-                        }
-                    }
-                }
-                &::after {
-                    @apply right-[-40px];
-                    background-size: 80%;
-                }
-                &::before {
-                    background-size: 80%;
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .box-container {
-                .sub-container {
-                    .detail-subcontainer {
-                        @apply flex items-start w-1/2 gap-[10px];
-                        .detail-img {
-                            @apply flex items-start gap-[4px] w-[108px];
-                            img {
-                                @apply w-[108px] h-[108px];
-                            }
-                            h5 {
-                                @apply text-[60px]/[60px];
-                                span {
-                                    @apply text-[26px]/[38px];
-                                }
-                            }
-                        }
-                        .detail-description-subcontainer {
-                            @apply mt-[70px];
-                            p {
-                                @apply text-[23px]/[29px];
-                            }
-                            span {
-                                @apply text-[14px]/[21px];
-                                span {
-                                    @apply text-[#FF7F17];
-                                }
-                            }
-                        }
-                    }
-                }
-                &::after {
-                    @apply right-[-40px];
-                    background-size: 80%;
-                }
-                &::before {
-                    background-size: 80%;
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .box-container {
-                .sub-container {
-                    .detail-subcontainer {
-                        @apply flex items-start w-1/2 gap-[10px];
-                        .detail-img {
-                            @apply flex items-start gap-[4px] w-[98px];
-                            img {
-                                @apply w-[98px] h-[98px];
-                            }
-                            h5 {
-                                @apply text-[58px]/[58px];
-                                span {
-                                    @apply text-[24px]/[36px];
-                                }
-                            }
-                        }
-                        .detail-description-subcontainer {
-                            @apply mt-[70px];
-                            p {
-                                @apply text-[21px]/[27px];
-                            }
-                            span {
-                                @apply text-[12px]/[19px];
-                                span {
-                                    @apply text-[#FF7F17];
-                                }
-                            }
-                        }
-                    }
-                }
-                &::after {
-                    @apply right-[-40px];
-                    background-size: 80%;
-                }
-                &::before {
-                    background-size: 80%;
-                }
-            }
-        }
-    }   
-    .products-ewallet-new-section {
-        @apply flex items-center relative py-[50px] max-w-container mx-auto;
-        .ewallet-description {
-            @apply flex-1 flex flex-col gap-[20px] pl-[100px];
-            h2 {
-                @apply text-[45px]/[65px] font-black text-neutral-900;
+      .box-container {
+        @apply bg-[#1b1f22];
+        .sub-container {
+          .detail-subcontainer {
+            .detail-description-subcontainer {
+              p {
                 span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                  @apply !text-[#FF7F17];
                 }
+              }
             }
+          }
+        }
+      }
+    }
+    .products-affliate-new-section {
+      button {
+        @apply !bg-[#3A80AF] !text-white;
+      }
+    }
+    .products-investasi-now-new-section {
+      a {
+        @apply !bg-[#3A80AF] !text-white;
+      }
+    }
+    .products-layanan-new-section {
+      @apply p-[20px];
+      .layanan-container {
+        .card-subcontainer {
+          &.swap {
+            @apply bg-[#234324];
+            .box-layanan {
+              span {
+                @apply bg-[#67C48F];
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+          &.hoddl {
+            @apply bg-[#4A270A];
+            .box-layanan {
+              span {
+                @apply bg-[#FF7F17];
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+          &.kirim {
+            @apply bg-[#13413B];
+            .box-layanan {
+              span {
+                @apply bg-[#289C8C];
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+          &.jual-beli {
+            @apply bg-[#1A3647];
+            .box-layanan {
+              span {
+                @apply bg-[#85C8FA];
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+          &.terima {
+            @apply bg-[#4E3C06];
+            .box-layanan {
+              span {
+                @apply !bg-[#F2AF22];
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+          &.pulsa {
+            @apply bg-[#451739];
+            .box-layanan {
+              span {
+                @apply bg-[#B63F9B];
+                svg {
+                  path {
+                    @apply fill-white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.products-page {
+  @apply pb-0;
+  &.dark-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @apply text-slate-200;
+    }
+    p {
+      @apply text-slate-300;
+    }
+    a {
+      @apply text-[#737aff];
+    }
+  }
+  &.light-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @apply text-black;
+    }
+    p {
+      @apply text-neutral-700;
+    }
+  }
+  .products-service-hero-new-section {
+    @apply flex flex-col justify-center items-center py-[50px]  gap-[20px] bg-[#F6F9FB] relative;
+    background: url("/images/ornaments/service-ornament.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .service-hero-container {
+      @apply flex gap-[124px] px-[100px] w-full max-w-container mx-auto;
+      .left-subcontainer {
+        @apply flex flex-col gap-[40px] flex-1;
+        .text-area {
+          @apply flex flex-col gap-[30px];
+          h2 {
+            @apply text-[46px]/[150%] font-black text-black;
+            span {
+              background: linear-gradient(
+                89.51deg,
+                #1b4ca7 7.36%,
+                #318ac6 98.35%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+          p {
+            @apply text-[16px]/[32px] text-neutral-700;
+          }
+        }
+        .button-logo-area {
+          @apply flex flex-col gap-[90px] w-full;
+          .button-group {
+            @apply flex items-center gap-[20px];
+            button {
+              @apply w-[260px] h-[48px] rounded-[30px] text-[14px]/[21px];
+            }
+          }
+          .section-terdaftar {
+            @apply flex flex-col gap-[19px];
             h5 {
-                @apply text-[20px]/[30px] font-bold;
-                background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+              @apply text-[16px]/[32px] text-[#646464] font-medium;
+            }
+            .logo-area {
+              @apply flex items-center gap-[30px];
+              .bappebti-logo {
+                @apply w-[147px] h-[34px];
+                content: "";
+                background: url("/images/otoritas-keuangans/bappebti-color-big.png")
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .kominfo-logo {
+                @apply w-[118px] h-[37px];
+                content: "";
+                background: url("/images/otoritas-keuangans/kominfo-color-big.png")
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .bsi-logo {
+                @apply w-[83px] h-[44px];
+                content: "";
+                background: url("/images/otoritas-keuangans/bsi-color-big.png")
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cisa-logo {
+                @apply w-[110px] h-[44px];
+                content: "";
+                background: url("/images/otoritas-keuangans/cisa-color-big.png")
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+            }
+          }
+        }
+      }
+      .right-subcontainer {
+        @apply w-[512px];
+      }
+      @media (max-width: 1380px) {
+        @apply gap-[75px] justify-between;
+        .left-subcontainer {
+          .text-area {
+            h2 {
+              @apply text-[40px]/[65px];
             }
             p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700;
+              @apply text-[14px]/[21px];
             }
+          }
         }
-        .ewallet-image {
-            @apply w-[550px] h-[400px] relative;
+        .right-subcontainer {
+          .form-service {
+            @apply rounded-[34px] flex flex-col p-[40px] gap-[30px] bg-white;
+            box-shadow: 0px 4px 40px 0px #00000033;
+            .button-tab {
+              @apply flex items-center relative;
+              button {
+                @apply h-[55px] text-[17px]/[24px] rounded-none;
+              }
+            }
+            .title {
+              @apply text-[19px]/[30px];
+            }
+            .description {
+              @apply text-[15px]/[23px];
+            }
+            .group-input {
+              span {
+                &.append {
+                  @apply text-[22px]/[34px];
+                }
+              }
+              input {
+                @apply text-[22px]/[34px];
+              }
+            }
+            .button-group {
+              @apply flex items-center gap-[10px];
+              button {
+                @apply rounded-[10px] text-[12px]/[18px] px-[12px] py-[4px] h-[28px];
+              }
+            }
+            .get-input {
+              @apply flex flex-col gap-[18px];
+              label {
+                @apply text-[14px]/[21px] font-medium text-neutral-700;
+              }
+              .label-value {
+                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
+                span {
+                  @apply text-[21px]/[34px];
+                }
+              }
+            }
+            button {
+              @apply rounded-[10px] text-[16px]/[24px] h-[54px];
+            }
+          }
+        }
+      }
+      @media (max-width: 1180px) {
+        @apply gap-[30px];
+        .left-subcontainer {
+          .text-area {
+            h2 {
+              @apply text-[35px]/[46px];
+            }
+            p {
+              @apply text-[13px]/[20px];
+            }
+          }
+          .button-logo-area {
+            .button-group {
+              @apply gap-[20px] w-full;
+              button {
+                @apply w-1/2 h-[40px];
+              }
+            }
+            .section-terdaftar {
+              h5 {
+                @apply text-[12px]/[19px];
+              }
+              .logo-area {
+                @apply gap-[20px];
+                .bappebti-logo {
+                  @apply w-[127px] h-[34px];
+                }
+                .kominfo-logo {
+                  @apply w-[98px] h-[37px];
+                }
+                .bsi-logo {
+                  @apply w-[83px] h-[44px];
+                }
+                .cisa-logo {
+                  @apply w-[90px] h-[43px];
+                }
+              }
+            }
+          }
+        }
+        .right-subcontainer {
+          @apply w-[370px];
+          .form-service {
+            @apply w-full rounded-[34px] flex flex-col p-[40px] gap-[20px] bg-white;
+            box-shadow: 0px 4px 40px 0px #00000033;
+            .button-tab {
+              @apply flex items-center relative;
+              button {
+                @apply h-[45px] text-[14px]/[21px] rounded-none;
+              }
+            }
+            .title {
+              @apply text-[15px]/[22px];
+            }
+            .description {
+              @apply text-[13px]/[20px];
+            }
+            .group-input {
+              span {
+                &.append {
+                  @apply text-[21px]/[31px] top-[4px];
+                }
+              }
+              input {
+                @apply text-[21px]/[31px] px-[30px];
+              }
+            }
+            .button-group {
+              @apply flex items-center gap-[8px];
+              button {
+                @apply rounded-[8px] text-[10px]/[12px] px-[10px] py-[4px] h-[22px];
+              }
+            }
+            .get-input {
+              @apply flex flex-col gap-[18px];
+              label {
+                @apply text-[15px]/[22px] font-medium text-neutral-700;
+              }
+              .label-value {
+                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
+                span {
+                  @apply text-[22px]/[35px];
+                }
+              }
+            }
+            button {
+              @apply rounded-[10px] text-[17px]/[25px] h-[54px];
+            }
+          }
+        }
+      }
+      @media (max-width: 1080px) {
+        @apply gap-[30px];
+        .left-subcontainer {
+          .text-area {
+            h2 {
+              @apply text-[34px]/[45px];
+            }
+            p {
+              @apply text-[12px]/[19px];
+            }
+          }
+          .button-logo-area {
+            .button-group {
+              @apply gap-[20px] w-full;
+              button {
+                @apply w-1/2 h-[40px];
+              }
+            }
+            .section-terdaftar {
+              h5 {
+                @apply text-[11px]/[18px];
+              }
+              .logo-area {
+                @apply gap-[15px];
+                .bappebti-logo {
+                  @apply w-[117px] h-[34px];
+                }
+                .kominfo-logo {
+                  @apply w-[88px] h-[37px];
+                }
+                .bsi-logo {
+                  @apply w-[73px] h-[44px];
+                }
+                .cisa-logo {
+                  @apply w-[80px] h-[43px];
+                }
+              }
+            }
+          }
+        }
+        .right-subcontainer {
+          @apply w-[370px];
+          .form-service {
+            @apply w-full rounded-[34px] flex flex-col p-[40px] gap-[20px] bg-white;
+            box-shadow: 0px 4px 40px 0px #00000033;
+            .button-tab {
+              @apply flex items-center relative;
+              button {
+                @apply h-[45px] text-[14px]/[21px] rounded-none;
+              }
+            }
+            .title {
+              @apply text-[14px]/[21px];
+            }
+            .description {
+              @apply text-[12px]/[19px];
+            }
+            .group-input {
+              span {
+                &.append {
+                  @apply text-[20px]/[30px];
+                }
+              }
+              input {
+                @apply text-[20px]/[30px];
+              }
+            }
+            .button-group {
+              @apply flex items-center gap-[8px];
+              button {
+                @apply rounded-[8px] text-[10px]/[12px] px-[10px] py-[4px] h-[22px];
+              }
+            }
+            .get-input {
+              @apply flex flex-col gap-[18px];
+              label {
+                @apply text-[14px]/[21px] font-medium text-neutral-700;
+              }
+              .label-value {
+                @apply bg-neutral-100 h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
+                span {
+                  @apply text-[21px]/[34px];
+                }
+              }
+            }
+            button {
+              @apply rounded-[10px] text-[16px]/[24px] h-[54px];
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-regulasi-new-section {
+    @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
+    .regulasi-container {
+      @apply flex gap-[50px];
+      .box-subcontainer {
+        @apply w-1/2 flex flex-col gap-[20px];
+        .img-box {
+          @apply w-[460px] h-[460px] relative;
+          img {
+            @apply w-full h-full object-cover;
+          }
+          &::after {
+            content: "";
+            @apply absolute right-0 top-0 w-full h-full z-[-1];
+            background: url("/images/ornaments/circle-loop-ornament-2.png")
+              no-repeat;
+          }
+        }
+        h5 {
+          @apply text-[28px]/[42px] font-black text-black;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700 text-justify;
+          span {
+            @apply underline;
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .regulasi-container {
+        @apply flex gap-[50px];
+        .box-subcontainer {
+          @apply w-1/2 flex flex-col gap-[15px];
+          .img-box {
+            @apply w-[420px] h-[420px];
+            &::after {
+              background-size: 100%;
+            }
+          }
+          h5 {
+            @apply text-[26px]/[38px];
+          }
+          p {
+            @apply text-[16px]/[23px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .regulasi-container {
+        @apply flex gap-[50px];
+        .box-subcontainer {
+          @apply w-1/2 flex flex-col gap-[15px];
+          .img-box {
+            @apply w-[400px] h-[400px];
+            &::after {
+              background-size: 100%;
+            }
+          }
+          h5 {
+            @apply text-[25px]/[37px];
+          }
+          p {
+            @apply text-[15px]/[22px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .regulasi-container {
+        @apply flex gap-[50px];
+        .box-subcontainer {
+          @apply w-1/2 flex flex-col gap-[15px];
+          .img-box {
+            @apply w-[380px] h-[380px];
+            &::after {
+              background-size: 100%;
+            }
+          }
+          h5 {
+            @apply text-[24px]/[36px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+        }
+      }
+    }
+  }
+  .products-layanan-new-section {
+    @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px] max-w-container mx-auto;
+    .title-container {
+      @apply flex flex-col items-center text-center justify-center gap-[20px] w-[75%];
+      h2 {
+        @apply text-[48px]/[72px] text-black font-black;
+        span {
+          background: linear-gradient(89.51deg, #1b4ca7 7.36%, #318ac6 98.35%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      p {
+        @apply text-[18px]/[27px] font-medium text-neutral-700;
+      }
+    }
+    .layanan-container {
+      @apply flex flex-col gap-[20px];
+      .card-subcontainer {
+        @apply w-full rounded-[30px] flex items-start justify-between h-[400px] transition-transform duration-200 ease-linear origin-top sticky overflow-hidden;
+        padding-top: calc(var(--index) * var(--card-top-offset));
+        &.swap {
+          @apply bg-[#F0FAF0];
+          .box-layanan {
+            span {
+              @apply bg-[#67C48F];
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+        &.hoddl {
+          @apply bg-[#FFF3E8];
+          .box-layanan {
+            span {
+              @apply bg-[#FF7F17];
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+        &.kirim {
+          @apply bg-[#EBFBF9];
+          .box-layanan {
+            span {
+              @apply bg-[#289C8C];
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+        &.jual-beli {
+          @apply bg-[#F4F8FB];
+          .box-layanan {
+            span {
+              @apply bg-[#85C8FA];
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+        &.terima {
+          @apply bg-[#FFF9E6];
+          .box-layanan {
+            span {
+              @apply !bg-[#F2AF22];
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+        &.pulsa {
+          @apply bg-[#F8ECF5];
+          .box-layanan {
+            span {
+              @apply bg-[#B63F9B];
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+        .box-layanan {
+          @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+          span {
+            @apply bg-[#B63F9B] w-[80px] h-[80px] rounded-[50%] flex flex-col justify-center items-center;
+          }
+          .content {
+            @apply flex flex-col gap-[10px];
+            h5 {
+              @apply text-[31px]/[48px] font-bold text-neutral-800;
+            }
+            p {
+              @apply text-[16px]/[32px] font-medium text-neutral-700;
+            }
+          }
+        }
+        .box-img {
+          @apply flex flex-col items-center relative w-1/2 h-full;
+          &.macbook {
+            @apply justify-center;
             img {
-               @apply w-full;
+              @apply w-[488px] h-[314px];
             }
+          }
+          &.iphone {
+            @apply justify-end;
+            img {
+              @apply w-[271px];
+            }
+          }
+          &.device-transfer {
+            @apply justify-center;
+            img {
+              @apply w-[365px] h-[444px];
+            }
+          }
+          &.device-pay {
+            @apply justify-center;
+            img {
+              @apply w-[371px] h-[418px];
+            }
+          }
+          &.wallet-debit {
+            @apply justify-center;
+            img {
+              @apply w-[380px] h-[402px];
+            }
+          }
+          &.swap-paypal {
+            @apply justify-end;
+            img {
+              @apply w-[271px];
+            }
+          }
+          &.cashback {
+            @apply justify-center;
+            img {
+              @apply w-[406px];
+            }
+          }
         }
-        @media (max-width:1280px) {
-            .ewallet-description {
-                @apply gap-[16px];
-                h2 {
-                    @apply text-[31px]/[43px];
-                  
-                }
-                h5 {
-                    @apply text-[17px]/[24px];
-                }
-                p {
-                    @apply text-[15px]/[22px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[380px] h-[230px];
-                img {
-                   @apply w-full;
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .ewallet-description {
-                @apply gap-[16px];
-                h2 {
-                    @apply text-[29px]/[41px];
-                  
-                }
-                h5 {
-                    @apply text-[15px]/[22px];
-                }
-                p {
-                    @apply text-[13px]/[20px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[360px] h-[210px];
-                img {
-                   @apply w-full;
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .ewallet-description {
-                @apply gap-[16px];
-                h2 {
-                    @apply text-[28px]/[40px];
-                  
-                }
-                h5 {
-                    @apply text-[14px]/[21px];
-                }
-                p {
-                    @apply text-[12px]/[19px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[350px] h-[200px];
-                img {
-                   @apply w-full;
-                }
-            }
-        }
+      }
     }
-    .products-banner-new-section {
-        @apply p-[100px] max-w-container mx-auto;
-        .main-container {
-            .sub-container {
-                @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
-                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                .text-area {
-                    @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
-                    .text-header {
-                        @apply flex flex-col gap-[10px] w-[98%];
-                        h2 {
-                            @apply text-[40px]/[60px] text-white font-black;
-                        }
-                        p {
-                            @apply text-[16px]/[32px] text-white font-medium w-[80%];
-                        }
-                    }
-                    .button-area {
-                        @apply flex items-center gap-[39px];
-                        a {
-                            @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold gap-[4px];   
-                             
-                        }
-                        .app-store-list {
-                            @apply flex items-center gap-[14px];
-                            img {
-                                &.playstore-logo {
-                                    @apply w-[130px] h-[38px];
-                                }
-                                &.apple-logo {
-                                    @apply w-[114px] h-[37px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .image-area {
-                    @apply flex-1 overflow-hidden;
-                    img {
-                        @apply absolute bottom-0 left-0 w-[510px];
-                    }
-                }
-            }
+    @media (max-width: 1280px) {
+      .title-container {
+        h2 {
+          @apply text-[38px]/[58px];
         }
-        @media (max-width: 1380px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px];
-                    .text-area {
-                        @apply pl-[100px];
-                        .text-header {
-                            @apply flex flex-col gap-[10px] w-[90%];
-                            h2 {
-                                @apply text-[34px]/[42px] ;
-                            }
-                            p {
-                                @apply text-[15px]/[30px];
-                            }
-                        }
-                        .button-area {
-                            @apply flex items-center gap-[20px];
-                            a {
-                                @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px] ;   
-                                 
-                            }
-                        }
-                    }
-                }
-            }
+        p {
+          @apply text-[16px]/[23px];
         }
+      }
+      .layanan-container {
+        @apply flex flex-col gap-[20px];
+        .card-subcontainer {
+          @apply h-[340px];
+          padding-top: calc(var(--index) * var(--card-top-offset));
+          .box-layanan {
+            @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+            span {
+              @apply w-[60px] h-[60px];
+              svg {
+                @apply w-[60%] h-[60%];
+              }
+            }
+            .content {
+              @apply flex flex-col gap-[10px];
+              h5 {
+                @apply text-[24px]/[37px];
+              }
+              p {
+                @apply text-[14px]/[21px];
+              }
+            }
+          }
+          .box-img {
+            @apply flex flex-col items-center relative w-1/2 h-full;
+            &.macbook {
+              @apply justify-center;
+              img {
+                @apply w-[398px] h-[274px];
+              }
+            }
+            &.iphone {
+              @apply justify-end;
+              img {
+                @apply w-[240px];
+              }
+            }
+            &.device-transfer {
+              @apply justify-center;
+              img {
+                @apply w-[295px] h-[344px];
+              }
+            }
+            &.device-pay {
+              @apply justify-center;
+              img {
+                @apply w-[311px] h-[358px];
+              }
+            }
+            &.wallet-debit {
+              @apply justify-center;
+              img {
+                @apply w-[320px] h-[342px];
+              }
+            }
+            &.swap-paypal {
+              @apply justify-end;
+              img {
+                @apply w-[240px];
+              }
+            }
+            &.cashback {
+              @apply justify-center;
+              img {
+                @apply w-[446px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .title-container {
+        h2 {
+          @apply text-[37px]/[57px];
+        }
+        p {
+          @apply text-[15px]/[22px];
+        }
+      }
+      .layanan-container {
+        @apply flex flex-col gap-[20px];
+        .card-subcontainer {
+          @apply h-[320px];
+          padding-top: calc(var(--index) * var(--card-top-offset));
+          .box-layanan {
+            @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+            span {
+              @apply w-[60px] h-[60px];
+              svg {
+                @apply w-[60%] h-[60%];
+              }
+            }
+            .content {
+              @apply flex flex-col gap-[10px];
+              h5 {
+                @apply text-[23px]/[36px];
+              }
+              p {
+                @apply text-[13px]/[20px];
+              }
+            }
+          }
+          .box-img {
+            @apply flex flex-col items-center relative w-1/2 h-full;
+            &.macbook {
+              @apply justify-center;
+              img {
+                @apply w-[378px] h-[254px];
+              }
+            }
+            &.iphone {
+              @apply justify-end;
+              img {
+                @apply w-[220px];
+              }
+            }
+            &.device-transfer {
+              @apply justify-center;
+              img {
+                @apply w-[275px] h-[324px];
+              }
+            }
+            &.device-pay {
+              @apply justify-center;
+              img {
+                @apply w-[291px] h-[338px];
+              }
+            }
+            &.wallet-debit {
+              @apply justify-center;
+              img {
+                @apply w-[300px] h-[322px];
+              }
+            }
+            &.swap-paypal {
+              @apply justify-end;
+              img {
+                @apply w-[220px];
+              }
+            }
+            &.cashback {
+              @apply justify-center;
+              img {
+                @apply w-[426px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .title-container {
+        h2 {
+          @apply text-[36px]/[56px];
+        }
+        p {
+          @apply text-[14px]/[21px];
+        }
+      }
+      .layanan-container {
+        @apply flex flex-col gap-[20px];
+        .card-subcontainer {
+          @apply h-[300px];
+          padding-top: calc(var(--index) * var(--card-top-offset));
+          .box-layanan {
+            @apply w-1/2 flex flex-col gap-[10px] p-[40px];
+            span {
+              @apply w-[60px] h-[60px];
+              svg {
+                @apply w-[60%] h-[60%];
+              }
+            }
+            .content {
+              @apply flex flex-col gap-[10px];
+              h5 {
+                @apply text-[22px]/[35px];
+              }
+              p {
+                @apply text-[12px]/[19px];
+              }
+            }
+          }
+          .box-img {
+            @apply flex flex-col items-center relative w-1/2 h-full;
+            &.macbook {
+              @apply justify-center;
+              img {
+                @apply w-[358px] h-[234px];
+              }
+            }
+            &.iphone {
+              @apply justify-end;
+              img {
+                @apply w-[200px];
+              }
+            }
+            &.device-transfer {
+              @apply justify-center;
+              img {
+                @apply w-[265px] h-[304px];
+              }
+            }
+            &.device-pay {
+              @apply justify-center;
+              img {
+                @apply w-[271px] h-[318px];
+              }
+            }
+            &.wallet-debit {
+              @apply justify-center;
+              img {
+                @apply w-[280px] h-[302px];
+              }
+            }
+            &.swap-paypal {
+              @apply justify-end;
+              img {
+                @apply w-[200px];
+              }
+            }
+            &.cashback {
+              @apply justify-center;
+              img {
+                @apply w-[406px];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-affliate-new-section {
+    @apply relative flex flex-col justify-center py-[50px];
+    background: url("/images/backgrounds/affliate.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .affliate-container {
+      @apply flex justify-between items-center h-[490px] px-[100px] gap-[20px] max-w-container mx-auto;
 
-        @media (max-width: 1180px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[260px];
-                    .text-area {
-                        @apply gap-[20px];
-                        .text-header {
-                            h2 {
-                                @apply text-[25px]/[38px];
-                            }
-                            p {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                        .button-area {
-                            @apply gap-[20px];
-                            a {
-                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
-                                 
-                            }
-                            .app-store-list {
-                                @apply flex items-center gap-[14px];
-                                img {
-                                    &.playstore-logo {
-                                        @apply w-[110px] h-[30px];
-                                    }
-                                    &.apple-logo {
-                                        @apply w-[94px] h-[29px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[430px];
-                        }
-                    }
-                }
-            }
+      .image-subcontainer {
+        @apply w-[400px] h-full flex flex-col justify-end;
+        img {
+          @apply w-[400px];
         }
-        @media (max-width: 1080px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[260px];
-                    .text-area {
-                        @apply gap-[20px];
-                        .text-header {
-                            h2 {
-                                @apply text-[24px]/[37px];
-                            }
-                            p {
-                                @apply text-[12px]/[17px];
-                            }
-                        }
-                        .button-area {
-                            @apply gap-[20px];
-                            a {
-                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
-                                 
-                            }
-                            .app-store-list {
-                                @apply flex items-center gap-[14px];
-                                img {
-                                    &.playstore-logo {
-                                        @apply w-[110px] h-[30px];
-                                    }
-                                    &.apple-logo {
-                                        @apply w-[94px] h-[29px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[380px];
-                        }
-                    }
-                }
+      }
+      .text-subcontainer {
+        @apply flex items-center gap-[20px] flex-1;
+        .left-subcontainer {
+          @apply flex flex-col gap-[40px] w-1/2;
+          .sub-subcontainer {
+            @apply flex flex-col gap-[10px];
+            h5 {
+              @apply text-[30px]/[45px] font-black text-primary;
             }
+            p {
+              @apply text-[16px]/[32px] font-medium text-neutral-200;
+            }
+          }
         }
+        .right-subcontainer {
+          @apply flex flex-col gap-[40px] w-1/2;
+          h5 {
+            @apply text-[40px]/[60px] font-bold text-white;
+          }
+          .button-group {
+            @apply flex flex-col gap-[22px];
+            button {
+              @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[13px] w-full h-[54px] text-[16px]/[24px] font-bold;
+            }
+          }
+        }
+      }
     }
-    @layer components {
-        &.mobile-responsive {
-            padding-top: 50px;
-            .products-service-hero-new-section {
-                @apply p-[20px];
-                .service-hero-container {
-                    @apply flex-col gap-[40px] w-full pl-0 pr-0; 
-                    .left-subcontainer {
-                        @apply flex flex-col gap-[20px] w-full;
-                        .text-area {
-                            @apply flex flex-col gap-[30px] text-center;
-                            h2 {
-                                @apply text-[14px]/[21px] font-bold;
-                            }
-                            p {
-                                @apply text-[10px]/[15px];
-                            }
-                        }
-                        .button-logo-area {
-                            @apply gap-[20px];
-                            .button-group {
-                                @apply flex flex-col gap-[10px];
-                                button {
-                                    @apply w-[200px] h-[34px] rounded-[30px] text-[12px]/[18px];
-                                }
-                            }
-                            .section-terdaftar {
-                                h5 {
-                                    @apply text-[10px]/[15px] text-center text-neutral-700;
-                                }
-                                .logo-area {
-                                    @apply gap-[5px] justify-center;
-                                    .bappebti-logo {
-                                        @apply w-[60px] h-[13px];
-                                    }
-                                    .kominfo-logo {
-                                        @apply w-[60px] h-[20px];
-                                    }
-                                    .bsi-logo {
-                                        @apply w-[37px] h-[20px];
-                                    }
-                                    .cisa-logo {
-                                        @apply w-[51px] h-[22px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .right-subcontainer {
-                        @apply w-full px-[20px];
-                        .form-service {
-                            @apply rounded-[23px] p-[23px] gap-[17px];    
-                            box-shadow: 0px 4px 40px 0px #00000033;
-                            .button-tab {
-                                @apply flex items-center relative;
-                                button {
-                                    @apply h-[34px] text-[12px]/[17px] rounded-none;
-                                }
-                                &.buy {
-                                    &::after {
-                                        content: '';
-                                        @apply absolute left-[calc(50%-22px)] z-[1] h-full w-[30px] bg-primary skew-x-[-25deg];
-                                    }
-                                }
-                                &.sell {
-                                    &::after {
-                                        content: '';
-                                        @apply absolute right-[calc(50%-22px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
-                                    }
-                                    button {
-                                        &.active {
-                                            @apply bg-red-600;
-                                        }
-                                    }
-                                }
-                            }
-                            .title {
-                                @apply text-[12px]/[19px];
-                            }
-                            .description {
-                                @apply text-[9px]/[14px] text-neutral-700 font-medium;
-                            }
-                            .group-input {
-                                span {
-                                    &.append {
-                                        @apply text-[14px]/[21px] top-[10px];
-                                    }
-                                }
-                                input {
-                                    @apply text-[14px]/[21px] !px-[30px];
-                                }
-                            }
-                            .button-group {
-                                @apply flex items-center gap-[10px];
-                                button {
-                                    @apply rounded-[6px] text-[8px]/[6px] px-[8px] py-[6px] h-[18px];
-                                }
-                            }
-                            .get-input {
-                                @apply flex flex-col gap-[18px];
-                                label {
-                                    @apply text-[9px]/[14px];
-                                }
-                                .label-value {
-                                    @apply h-[30px];
-                                    span {
-                                        @apply text-[14px]/[21px];
-                                    }
-                                }
-                            }
-                            button {
-                                @apply rounded-[8px] text-[9px]/[14px] h-[31px];
-                            }
-                        }
-                    }
+    @media (max-width: 1380px) {
+      .affliate-container {
+        @apply h-[400px];
+        .image-subcontainer {
+          @apply w-[300px];
+          img {
+            @apply w-[300px];
+          }
+        }
+      }
+      .text-subcontainer {
+        @apply flex items-center gap-[20px] flex-1;
+        .left-subcontainer {
+          .sub-subcontainer {
+            h5 {
+              @apply !text-[25px]/[35px];
+            }
+            p {
+              @apply !text-[17px]/[25px];
+            }
+          }
+        }
+        .right-subcontainer {
+          h5 {
+            @apply !text-[30px]/[45px];
+          }
+          .button-group {
+            @apply !gap-[16px];
+            button {
+              @apply !h-[45px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1279px) {
+      .affliate-container {
+        @apply h-[400px];
+        .image-subcontainer {
+          @apply w-[300px];
+          img {
+            @apply w-[300px];
+          }
+        }
+      }
+      .text-subcontainer {
+        @apply flex items-center gap-[20px] flex-1;
+        .left-subcontainer {
+          .sub-subcontainer {
+            h5 {
+              @apply !text-[20px]/[30px];
+            }
+            p {
+              @apply !text-[14px]/[20px];
+            }
+          }
+        }
+        .right-subcontainer {
+          h5 {
+            @apply !text-[25px]/[40px];
+          }
+          .button-group {
+            @apply !gap-[14px];
+            button {
+              @apply !h-[40px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .affliate-container {
+        @apply h-[300px];
+        .image-subcontainer {
+          @apply w-[270px];
+          img {
+            @apply w-[270px];
+          }
+        }
+      }
+      .text-subcontainer {
+        @apply flex items-center gap-[18px] flex-1;
+        .left-subcontainer {
+          .sub-subcontainer {
+            h5 {
+              @apply !text-[19px]/[31px];
+            }
+            p {
+              @apply !text-[13px]/[20px];
+            }
+          }
+        }
+        .right-subcontainer {
+          h5 {
+            @apply !text-[22px]/[29px];
+          }
+          .button-group {
+            @apply !gap-[12px];
+            button {
+              @apply !h-[45px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .affliate-container {
+        @apply h-[300px];
+        .image-subcontainer {
+          @apply w-[250px];
+          img {
+            @apply w-[250px];
+          }
+        }
+      }
+      .text-subcontainer {
+        @apply flex items-center gap-[18px] flex-1;
+        .left-subcontainer {
+          .sub-subcontainer {
+            h5 {
+              @apply !text-[18px]/[30px];
+            }
+            p {
+              @apply !text-[12px]/[18px];
+            }
+          }
+        }
+        .right-subcontainer {
+          h5 {
+            @apply !text-[21px]/[27px];
+          }
+          .button-group {
+            @apply !gap-[12px];
+            button {
+              @apply !h-[35px];
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-average-new-section {
+    @apply flex flex-col items-center px-[100px] py-[75px] relative max-w-container mx-auto;
+    .box-container {
+      @apply flex flex-col items-center bg-[#F4F8FB] rounded-[40px] px-[40px] py-[40px] gap-[60px] relative w-[100%] overflow-hidden;
+      .sub-container {
+        @apply flex z-[1];
+        .detail-subcontainer {
+          @apply flex items-start w-1/2 gap-[10px];
+          .detail-img {
+            @apply flex items-start gap-[4px] w-[180px];
+            img {
+              @apply w-[188px] h-[188px];
+            }
+            h5 {
+              @apply text-[96px]/[96px] font-black;
+              background: linear-gradient(
+                89.51deg,
+                #1b4ca7 7.36%,
+                #318ac6 98.35%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              span {
+                @apply text-[48px]/[72px];
+              }
+            }
+          }
+          .detail-description-subcontainer {
+            @apply flex flex-col items-start flex-1 mt-[80px];
+            p {
+              @apply text-[36px]/[46px] font-black text-neutral-800 mb-[10px];
+            }
+            span {
+              @apply text-[14px]/[21px] font-medium text-neutral-700;
+              span {
+                @apply text-[#FF7F17];
+              }
+            }
+          }
+        }
+      }
+      &::after {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+        background: url("/images/ornaments/investasi-right-ornament.png")
+          no-repeat;
+      }
+      &::before {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+        background: url("/images/ornaments/investasi-left-ornament.png")
+          no-repeat;
+      }
+    }
+    @media (max-width: 1280px) {
+      .box-container {
+        .sub-container {
+          .detail-subcontainer {
+            @apply flex items-start w-1/2 gap-[10px];
+            .detail-img {
+              @apply flex items-start gap-[4px] w-[128px];
+              img {
+                @apply w-[128px] h-[128px];
+              }
+              h5 {
+                @apply text-[62px]/[62px];
+                span {
+                  @apply text-[28px]/[40px];
                 }
-                /* &::after {
+              }
+            }
+            .detail-description-subcontainer {
+              @apply mt-[70px];
+              p {
+                @apply text-[25px]/[31px];
+              }
+              span {
+                @apply text-[16px]/[23px];
+                span {
+                  @apply text-[#FF7F17];
+                }
+              }
+            }
+          }
+        }
+        &::after {
+          @apply right-[-40px];
+          background-size: 80%;
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .box-container {
+        .sub-container {
+          .detail-subcontainer {
+            @apply flex items-start w-1/2 gap-[10px];
+            .detail-img {
+              @apply flex items-start gap-[4px] w-[108px];
+              img {
+                @apply w-[108px] h-[108px];
+              }
+              h5 {
+                @apply text-[60px]/[60px];
+                span {
+                  @apply text-[26px]/[38px];
+                }
+              }
+            }
+            .detail-description-subcontainer {
+              @apply mt-[70px];
+              p {
+                @apply text-[23px]/[29px];
+              }
+              span {
+                @apply text-[14px]/[21px];
+                span {
+                  @apply text-[#FF7F17];
+                }
+              }
+            }
+          }
+        }
+        &::after {
+          @apply right-[-40px];
+          background-size: 80%;
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .box-container {
+        .sub-container {
+          .detail-subcontainer {
+            @apply flex items-start w-1/2 gap-[10px];
+            .detail-img {
+              @apply flex items-start gap-[4px] w-[98px];
+              img {
+                @apply w-[98px] h-[98px];
+              }
+              h5 {
+                @apply text-[58px]/[58px];
+                span {
+                  @apply text-[24px]/[36px];
+                }
+              }
+            }
+            .detail-description-subcontainer {
+              @apply mt-[70px];
+              p {
+                @apply text-[21px]/[27px];
+              }
+              span {
+                @apply text-[12px]/[19px];
+                span {
+                  @apply text-[#FF7F17];
+                }
+              }
+            }
+          }
+        }
+        &::after {
+          @apply right-[-40px];
+          background-size: 80%;
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+    }
+  }
+  .products-ewallet-new-section {
+    @apply flex items-center relative py-[50px] max-w-container mx-auto;
+    .ewallet-description {
+      @apply flex-1 flex flex-col gap-[20px] pl-[100px];
+      h2 {
+        @apply text-[45px]/[65px] font-black text-neutral-900;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      h5 {
+        @apply text-[20px]/[30px] font-bold;
+        background: linear-gradient(89.33deg, #0c29c1 0.57%, #fa00ff 147.17%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        @apply text-[16px]/[32px] font-medium text-neutral-700;
+      }
+    }
+    .ewallet-image {
+      @apply w-[550px] h-[400px] relative;
+      img {
+        @apply w-full;
+      }
+    }
+    @media (max-width: 1280px) {
+      .ewallet-description {
+        @apply gap-[16px];
+        h2 {
+          @apply text-[31px]/[43px];
+        }
+        h5 {
+          @apply text-[17px]/[24px];
+        }
+        p {
+          @apply text-[15px]/[22px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[380px] h-[230px];
+        img {
+          @apply w-full;
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .ewallet-description {
+        @apply gap-[16px];
+        h2 {
+          @apply text-[29px]/[41px];
+        }
+        h5 {
+          @apply text-[15px]/[22px];
+        }
+        p {
+          @apply text-[13px]/[20px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[360px] h-[210px];
+        img {
+          @apply w-full;
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .ewallet-description {
+        @apply gap-[16px];
+        h2 {
+          @apply text-[28px]/[40px];
+        }
+        h5 {
+          @apply text-[14px]/[21px];
+        }
+        p {
+          @apply text-[12px]/[19px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[350px] h-[200px];
+        img {
+          @apply w-full;
+        }
+      }
+    }
+  }
+  .products-banner-new-section {
+    @apply p-[100px] max-w-container mx-auto;
+    .main-container {
+      .sub-container {
+        @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
+        background: linear-gradient(89.49deg, #1b4ca7 -18.69%, #318ac6 98.33%);
+        .text-area {
+          @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
+          .text-header {
+            @apply flex flex-col gap-[10px] w-[98%];
+            h2 {
+              @apply text-[40px]/[60px] text-white font-black;
+            }
+            p {
+              @apply text-[16px]/[32px] text-white font-medium w-[80%];
+            }
+          }
+          .button-area {
+            @apply flex items-center gap-[39px];
+            a {
+              &.button {
+                @apply flex justify-center items-center bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold gap-[4px];
+              }
+            }
+            .app-store-list {
+              @apply flex items-center gap-[14px];
+              a {
+                img {
+                  &.playstore-logo {
+                    @apply w-[130px] h-[38px];
+                  }
+                  &.apple-logo {
+                    @apply w-[114px] h-[37px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .image-area {
+          @apply flex-1 overflow-hidden;
+          img {
+            @apply absolute bottom-0 left-0 w-[510px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1380px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px];
+          .text-area {
+            @apply pl-[100px];
+            .text-header {
+              @apply flex flex-col gap-[10px] w-[90%];
+              h2 {
+                @apply text-[34px]/[42px];
+              }
+              p {
+                @apply text-[15px]/[30px];
+              }
+            }
+            .button-area {
+              @apply flex items-center gap-[20px];
+              a {
+                &.button {
+                  @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[260px];
+          .text-area {
+            @apply gap-[20px];
+            .text-header {
+              h2 {
+                @apply text-[25px]/[38px];
+              }
+              p {
+                @apply text-[14px]/[21px];
+              }
+            }
+            .button-area {
+              @apply gap-[20px];
+              a {
+                &.button {
+                  @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px];
+                }
+              }
+              .app-store-list {
+                @apply flex items-center gap-[14px];
+                a {
+                  img {
+                    &.playstore-logo {
+                      @apply w-[110px] h-[30px];
+                    }
+                    &.apple-logo {
+                      @apply w-[94px] h-[29px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[430px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[260px];
+          .text-area {
+            @apply gap-[20px];
+            .text-header {
+              h2 {
+                @apply text-[24px]/[37px];
+              }
+              p {
+                @apply text-[12px]/[17px];
+              }
+            }
+            .button-area {
+              @apply gap-[20px];
+              a {
+                &.button {
+                  @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px];
+                }
+              }
+              .app-store-list {
+                @apply flex items-center gap-[14px];
+                a {
+                  img {
+                    &.playstore-logo {
+                      @apply w-[110px] h-[30px];
+                    }
+                    &.apple-logo {
+                      @apply w-[94px] h-[29px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[380px];
+            }
+          }
+        }
+      }
+    }
+  }
+  @layer components {
+    &.mobile-responsive {
+      padding-top: 50px;
+      .products-service-hero-new-section {
+        @apply p-[20px];
+        .service-hero-container {
+          @apply flex-col gap-[40px] w-full pl-0 pr-0;
+          .left-subcontainer {
+            @apply flex flex-col gap-[20px] w-full;
+            .text-area {
+              @apply flex flex-col gap-[30px] text-center;
+              h2 {
+                @apply text-[14px]/[21px] font-bold;
+              }
+              p {
+                @apply text-[10px]/[15px];
+              }
+            }
+            .button-logo-area {
+              @apply gap-[20px];
+              .button-group {
+                @apply flex flex-col gap-[10px];
+                button {
+                  @apply w-[200px] h-[34px] rounded-[30px] text-[12px]/[18px];
+                }
+              }
+              .section-terdaftar {
+                h5 {
+                  @apply text-[10px]/[15px] text-center text-neutral-700;
+                }
+                .logo-area {
+                  @apply gap-[5px] justify-center;
+                  .bappebti-logo {
+                    @apply w-[60px] h-[13px];
+                  }
+                  .kominfo-logo {
+                    @apply w-[60px] h-[20px];
+                  }
+                  .bsi-logo {
+                    @apply w-[37px] h-[20px];
+                  }
+                  .cisa-logo {
+                    @apply w-[51px] h-[22px];
+                  }
+                }
+              }
+            }
+          }
+          .right-subcontainer {
+            @apply w-full px-[20px];
+            .form-service {
+              @apply rounded-[23px] p-[23px] gap-[17px];
+              box-shadow: 0px 4px 40px 0px #00000033;
+              .button-tab {
+                @apply flex items-center relative;
+                button {
+                  @apply h-[34px] text-[12px]/[17px] rounded-none;
+                }
+                &.buy {
+                  &::after {
+                    content: "";
+                    @apply absolute left-[calc(50%-22px)] z-[1] h-full w-[30px] bg-primary skew-x-[-25deg];
+                  }
+                }
+                &.sell {
+                  &::after {
+                    content: "";
+                    @apply absolute right-[calc(50%-22px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
+                  }
+                  button {
+                    &.active {
+                      @apply bg-red-600;
+                    }
+                  }
+                }
+              }
+              .title {
+                @apply text-[12px]/[19px];
+              }
+              .description {
+                @apply text-[9px]/[14px] text-neutral-700 font-medium;
+              }
+              .group-input {
+                span {
+                  &.append {
+                    @apply text-[14px]/[21px] top-[10px];
+                  }
+                }
+                input {
+                  @apply text-[14px]/[21px] !px-[30px];
+                }
+              }
+              .button-group {
+                @apply flex items-center gap-[10px];
+                button {
+                  @apply rounded-[6px] text-[8px]/[6px] px-[8px] py-[6px] h-[18px];
+                }
+              }
+              .get-input {
+                @apply flex flex-col gap-[18px];
+                label {
+                  @apply text-[9px]/[14px];
+                }
+                .label-value {
+                  @apply h-[30px];
+                  span {
+                    @apply text-[14px]/[21px];
+                  }
+                }
+              }
+              button {
+                @apply rounded-[8px] text-[9px]/[14px] h-[31px];
+              }
+            }
+          }
+        }
+        /* &::after {
                     content: '';
                     @apply absolute w-[500px] h-[500px] right-[50%];
                     background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
                 } */
+      }
+      .products-regulasi-new-section {
+        @apply p-[20px];
+        .regulasi-container {
+          @apply flex-col justify-center items-center;
+          .box-subcontainer {
+            @apply w-full text-center justify-center items-center;
+            .img-box {
+              @apply w-full h-full relative flex flex-col justify-center items-center;
+              img {
+                @apply w-[212px]  h-[212px]  object-cover;
+              }
+              &::after {
+                content: "";
+                @apply absolute right-[63px] top-0 w-[63%] z-[-1];
+                background: url("/images/ornaments/circle-loop-ornament-2.png")
+                  no-repeat;
+                background-size: cover;
+              }
             }
-            .products-regulasi-new-section {
-                @apply p-[20px];
-                .regulasi-container {
-                    @apply flex-col justify-center items-center;
-                    .box-subcontainer {
-                        @apply w-full text-center justify-center items-center;
-                        .img-box {
-                            @apply w-full h-full relative flex flex-col justify-center items-center;
-                            img {
-                                @apply w-[212px]  h-[212px]  object-cover;
-                            }
-                            &::after {
-                                content: '';
-                                @apply absolute right-[63px] top-0 w-[63%] z-[-1];
-                                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-                                background-size: cover;
-                            }
-                        }
-                        h5 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[12px]/[18px] text-center;
-                        }
-                    }
-                }
+            h5 {
+              @apply text-[14px]/[21px];
             }
-            .products-layanan-new-section {
-                @apply p-[20px];
-                .title-container {
-                    h2 {
-                        @apply text-[14px]/[21px] font-bold;
-                    }
-                    p {
-                        @apply text-[10px]/[15px] ;
-                    }
-                }
-                .layanan-container {
-                    @apply flex flex-col gap-[20px];
-                   .card-subcontainer {
-                        @apply flex-col h-[574px]  rounded-[22px];
-                        padding-top: calc(var(--index) * var(--card-top-offset));
-                        .box-layanan {
-                            @apply w-full justify-center items-center text-center;
-                            span {
-                                @apply w-[60px] h-[60px];
-                                svg {
-                                    @apply w-[50%];
-                                }
-                            }
-                            .content {
-                                @apply flex flex-col gap-[10px];
-                                h5 {
-                                    @apply text-[24px]/[36px];
-                                }
-                                p {
-                                    @apply text-[12px]/[24px];
-                                }
-                            }
-                        }
-                        .box-img {
-                            @apply w-full;
-                            &.macbook {
-                                @apply justify-center;
-                                img {
-                                    @apply w-[80%] h-[80%];
-        
-                                }
-                            }
-                            &.iphone {
-                                @apply justify-end;
-                                img {
-                                    @apply w-[50%];
-                                }
-                            }
-                        }
-                   }
-                }
+            p {
+              @apply text-[12px]/[18px] text-center;
             }
-            .products-affliate-new-section {
-                @apply py-[50px];
-                .affliate-container {
-                    @apply flex-col h-full px-[20px] py-[37px];
-                    .image-subcontainer {
-                        @apply w-full flex flex-col justify-center items-center;
-                        img {
-                            @apply w-[258px];
-                        }
-                    }
-                    .text-subcontainer {
-                        @apply w-full flex-col justify-center items-center text-center;
-                        .left-subcontainer {
-                            @apply flex flex-col gap-[30px] w-full;
-                            .sub-subcontainer {
-                                @apply flex flex-col gap-[10px];
-                                h5 {
-                                    @apply text-[18px]/[27px];
-                                }
-                                p {
-                                    @apply text-[12px]/[18px];
-                                }
-                            }
-                        }
-                        .right-subcontainer {
-                            @apply flex flex-col gap-[30px] w-full;
-                            h5 {
-                                @apply text-[16px]/[24px];
-                            }
-                            .button-group {
-                                @apply flex flex-col justify-center items-center gap-[20px];
-                                button {
-                                    @apply w-[200px] rounded-[30px] text-[12px]/[18px] h-[34px];
-                                }
-                
-                            }
-                        }
-                    }
-                }
-            }
-            .products-average-new-section {
-                @apply p-[20px];
-                .box-container {
-                    @apply rounded-br-none rounded-bl-none;
-                    .sub-container {
-                        @apply flex-col gap-[30px];
-                        .detail-subcontainer {
-                            @apply w-full flex-col justify-center items-center;
-                            .detail-img {
-                                @apply items-center w-full justify-center;
-                                img {
-                                    @apply w-[61px] h-[61px];
-                                }
-                                h5 {
-                                    @apply text-[22px]/[33px];
-                                    span {
-                                        @apply text-[16px]/[25px];
-                                    }
-                                }
-                            }
-                            .detail-description-subcontainer {
-                                @apply w-full mt-0 justify-center items-center text-center;
-                                p {
-                                    @apply text-[10px]/[15px];
-                                }
-                                span {
-                                    @apply text-[10px]/[15px];
-                                }
-                            }
-                        }
-                    }
-                    &::after {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
-                    }
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
-                    }
-                }
-            
-            }   
-            .products-ewallet-new-section {
-                @apply flex-col py-[30px] px-[20px] gap-[20px];
-                .ewallet-description {
-                    @apply justify-center items-center w-full text-center p-0;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    h5 {
-                        @apply text-[10px]/[15px];
-                    }
-                    p {
-                        @apply text-[10px]/[15px];
-                    }
-                }
-                .ewallet-image {
-                    @apply w-[246px] h-full flex flex-col justify-center items-center;
-                    img {
-                        @apply w-[246px] h-[219px] relative;
-                    }
-                }
-            }
-            .products-banner-new-section {
-                @apply p-[20px];
-                .main-container {
-                    .sub-container {
-                        @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
-                        .text-area {
-                            @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
-                            .text-header {
-                                @apply flex flex-col gap-[2px];
-                                h2 {
-                                    @apply text-[10px]/[15px] text-white font-black;
-                                }
-                                p {
-                                    @apply text-[4px]/[8px] text-white font-medium w-[80%];
-                                }
-                            }
-                            .button-area {
-                                @apply gap-[7px];
-                                a {
-                                    @apply  w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];   
-                                    svg {
-                                        @apply w-[4px] h-[4px];
-                                    }
-                                }
-                                .app-store-list {
-                                    @apply gap-[3px];
-                                    img {
-                                        &.playstore-logo {
-                                            @apply w-[33px] h-[10px];
-                                        }
-                                        &.apple-logo {
-                                            @apply w-[30px] h-[10px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .image-area {
-                            @apply flex-1 overflow-hidden;
-                            img {
-                                @apply absolute bottom-0 right-0 w-[150px];
-                            }
-                        }
-                    }
-                }
-        
-            }
+          }
         }
+      }
+      .products-layanan-new-section {
+        @apply p-[20px];
+        .title-container {
+          h2 {
+            @apply text-[14px]/[21px] font-bold;
+          }
+          p {
+            @apply text-[10px]/[15px];
+          }
+        }
+        .layanan-container {
+          @apply flex flex-col gap-[20px];
+          .card-subcontainer {
+            @apply flex-col h-[574px]  rounded-[22px];
+            padding-top: calc(var(--index) * var(--card-top-offset));
+            .box-layanan {
+              @apply w-full justify-center items-center text-center;
+              span {
+                @apply w-[60px] h-[60px];
+                svg {
+                  @apply w-[50%];
+                }
+              }
+              .content {
+                @apply flex flex-col gap-[10px];
+                h5 {
+                  @apply text-[24px]/[36px];
+                }
+                p {
+                  @apply text-[12px]/[24px];
+                }
+              }
+            }
+            .box-img {
+              @apply w-full;
+              &.macbook {
+                @apply justify-center;
+                img {
+                  @apply w-[80%] h-[80%];
+                }
+              }
+              &.iphone {
+                @apply justify-end;
+                img {
+                  @apply w-[50%];
+                }
+              }
+            }
+          }
+        }
+      }
+      .products-affliate-new-section {
+        @apply py-[50px];
+        .affliate-container {
+          @apply flex-col h-full px-[20px] py-[37px];
+          .image-subcontainer {
+            @apply w-full flex flex-col justify-center items-center;
+            img {
+              @apply w-[258px];
+            }
+          }
+          .text-subcontainer {
+            @apply w-full flex-col justify-center items-center text-center;
+            .left-subcontainer {
+              @apply flex flex-col gap-[30px] w-full;
+              .sub-subcontainer {
+                @apply flex flex-col gap-[10px];
+                h5 {
+                  @apply text-[18px]/[27px];
+                }
+                p {
+                  @apply text-[12px]/[18px];
+                }
+              }
+            }
+            .right-subcontainer {
+              @apply flex flex-col gap-[30px] w-full;
+              h5 {
+                @apply text-[16px]/[24px];
+              }
+              .button-group {
+                @apply flex flex-col justify-center items-center gap-[20px];
+                button {
+                  @apply w-[200px] rounded-[30px] text-[12px]/[18px] h-[34px];
+                }
+              }
+            }
+          }
+        }
+      }
+      .products-average-new-section {
+        @apply p-[20px];
+        .box-container {
+          @apply rounded-br-none rounded-bl-none;
+          .sub-container {
+            @apply flex-col gap-[30px];
+            .detail-subcontainer {
+              @apply w-full flex-col justify-center items-center;
+              .detail-img {
+                @apply items-center w-full justify-center;
+                img {
+                  @apply w-[61px] h-[61px];
+                }
+                h5 {
+                  @apply text-[22px]/[33px];
+                  span {
+                    @apply text-[16px]/[25px];
+                  }
+                }
+              }
+              .detail-description-subcontainer {
+                @apply w-full mt-0 justify-center items-center text-center;
+                p {
+                  @apply text-[10px]/[15px];
+                }
+                span {
+                  @apply text-[10px]/[15px];
+                }
+              }
+            }
+          }
+          &::after {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-right-ornament-mobile.png")
+              no-repeat;
+          }
+          &::before {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-left-ornament-mobile.png")
+              no-repeat;
+          }
+        }
+      }
+      .products-ewallet-new-section {
+        @apply flex-col py-[30px] px-[20px] gap-[20px];
+        .ewallet-description {
+          @apply justify-center items-center w-full text-center p-0;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          h5 {
+            @apply text-[10px]/[15px];
+          }
+          p {
+            @apply text-[10px]/[15px];
+          }
+        }
+        .ewallet-image {
+          @apply w-[246px] h-full flex flex-col justify-center items-center;
+          img {
+            @apply w-[246px] h-[219px] relative;
+          }
+        }
+      }
+      .products-banner-new-section {
+        @apply p-[20px];
+        .main-container {
+          .sub-container {
+            @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
+            .text-area {
+              @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
+              .text-header {
+                @apply flex flex-col gap-[2px];
+                h2 {
+                  @apply text-[10px]/[15px] text-white font-black;
+                }
+                p {
+                  @apply text-[4px]/[8px] text-white font-medium w-[80%];
+                }
+              }
+              .button-area {
+                @apply gap-[7px];
+                a {
+                  &.button {
+                    @apply w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];
+                    svg {
+                      @apply w-[4px] h-[4px];
+                    }
+                  }
+                }
+                .app-store-list {
+                  @apply gap-[3px];
+                  a {
+                    img {
+                      &.playstore-logo {
+                        @apply w-[33px] h-[10px];
+                      }
+                      &.apple-logo {
+                        @apply w-[30px] h-[10px];
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .image-area {
+              @apply flex-1 overflow-hidden;
+              img {
+                @apply absolute bottom-0 right-0 w-[150px];
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

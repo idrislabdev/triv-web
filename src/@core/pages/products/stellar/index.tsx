@@ -36,7 +36,10 @@ const StellarPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
         <ProductsAffliateNewSection objLang={objLang.triv_affliate} />
         <ProductsAverageNewSection objLang={objLang.average_section} />
         <ProductsEwalletNewSection objLang={objLang.ewallet_section} />
-        <ProductsBannerSection objLang={objLang.start_now_section} />
+        <ProductsBannerSection
+          lang={lang}
+          objLang={objLang.start_now_section}
+        />
       </main>
       <Footer />
     </>
