@@ -2,1845 +2,1867 @@
 @tailwind components;
 @tailwind utilities;
 .dark-theme {
-    /* @apply !bg-[#141414]; */
-    @apply !bg-[#000000];
-    h1, h2, h3, h4, h5, h6 {
-      @apply !text-slate-200;
+  /* @apply !bg-[#141414]; */
+  @apply !bg-[#000000];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !text-slate-200;
+  }
+  p,
+  label {
+    @apply !text-slate-300;
+  }
+  .home-page {
+    a {
+      @apply !bg-primary !text-white;
     }
-    p,label {
-        @apply !text-slate-300;
+    .home-hero-section {
+      @apply bg-[#000000];
+      .home-hero-section-area {
+        .section-text {
+          .section-terdaftar {
+            .terdaftar-list-logo {
+              .bappebti-logo {
+                background: url("/images/otoritas-keuangans/bappebti-big-white.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .kominfo-logo {
+                background: url("/images/otoritas-keuangans/kominfo-light-logo.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .bsi-logo {
+                background: url("/images/otoritas-keuangans/bsi-white.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cisa-logo {
+                background: url("/images/otoritas-keuangans/cisa-light-logo.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+            }
+          }
+        }
+      }
     }
-    .home-page {
+    .home-investasi-section {
+      .investasi-section-box {
+        @apply bg-[#111111];
+      }
+    }
+    .home-baru-crypto-section {
+      @apply bg-[#111111];
+      .home-baru-crypto-container {
         a {
-            @apply !bg-primary !text-white;
+          @apply !bg-primary !text-white;
         }
-        .home-hero-section { 
-            @apply bg-[#000000];
-            .home-hero-section-area {
-                .section-text {
-                    .section-terdaftar {
-                        .terdaftar-list-logo {
-                            .bappebti-logo {
-                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .kominfo-logo {
-                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .bsi-logo {
-                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .cisa-logo {
-                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                        }
-                    }
-                }
-            }
+        .crypto-thumb-video {
+          h6 {
+            @apply !text-[#191B20];
+          }
         }
-        .home-investasi-section {
-            .investasi-section-box {
-                @apply bg-[#111111]; 
-            }
-        }
-        .home-baru-crypto-section {
-            @apply bg-[#111111];
-            .home-baru-crypto-container{
-                a {
-                    @apply !bg-primary !text-white;
-                }
-                .crypto-thumb-video{
-                   h6 {
-                        @apply !text-[#191B20];
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 .home-page {
-    @apply pt-0;
+  @apply pt-0;
 
-    h1, h2, h3, h4, h5 {
-        @apply text-black;
-    }
-    p {
-        @apply text-neutral-700;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-black;
+  }
+  p {
+    @apply text-neutral-700;
+  }
 
-    .home-hero-section {
-        @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
-        background: url("/images/ornaments/home-ornament.png") no-repeat;
-        background-position: center;
-        background-size: cover;
-        .home-hero-section-area {
-            @apply flex px-[100px] gap-[20px] max-w-container mx-auto relative;
-            .section-text {
-                @apply flex flex-col w-[75%] gap-[40px] z-[1];
-                .text-title {
-                    @apply flex flex-col gap-[28px];
-                    .title {
-                        @apply flex flex-col;
-                        h1 {
-                            @apply text-[60px]/[72px] text-[#323232] font-black w-[90%];
-                        }
-                    }
-                    ul {
-                        @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[14px]/[14px];
-                        li {
-                            @apply flex items-center gap-[8px];
-                        }
-                    }
-                    p {
-                        @apply text-[16px]/[32px] text-[#646464] font-medium w-[65%];
-                    }
-                }
-                a {
-                    @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .section-terdaftar {
-                    @apply flex flex-col gap-[19px];
-                    label  {
-                        @apply text-[16px]/[32px] text-[#646464] font-medium;
-                    }
-                    .terdaftar-list-logo {
-                        @apply flex gap-[30px] items-center;
-                       .bappebti-logo {
-                            @apply w-[147px] h-[34px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/bappebti-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .kominfo-logo {
-                            @apply w-[118px] h-[37px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/kominfo-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .bsi-logo {
-                            @apply w-[83px] h-[44px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/bsi-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        .cisa-logo {
-                            @apply w-[110px] h-[44px];
-                            content: '';
-                            background: url("/images/otoritas-keuangans/cisa-color-big.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                    }
-                }
-                @media (max-width:1280px) {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[50px]/[62px];
-                            }
-                        }
-                        ul {
-                            @apply text-[13px]/[13px];
-                            li {
-                                @apply flex items-center gap-[8px];
-                                svg {
-                                    @apply w-[20px] h-[20px];
-                                }
-                            }
-                        }
-                        p {
-                            @apply text-[14px]/[21px];
-                        }
-                    }
-                    a {
-                        @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-
-                    }
-                    .section-terdaftar {
-                        label  {
-                            @apply text-[14px]/[21px];
-                        }
-                        .terdaftar-list-logo {
-                            @apply gap-[20px];
-                            .bappebti-logo {
-                                @apply w-[137px] h-[34px];
-                            }
-                            .kominfo-logo {
-                                @apply w-[108px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[73px] h-[44px];
-
-                            }
-                            .cisa-logo {
-                                @apply w-[100px] h-[43px];
-                            }
-                        }
-                    }
-                }
-                @media (max-width:1180px) {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[45px]/[57px];
-                            }
-                        }
-                        ul {
-                            @apply text-[12px]/[12px];
-                            li {
-                                @apply flex items-center gap-[8px];
-                                svg {
-                                    @apply w-[19px] h-[19px];
-                                }
-                            }
-                        }
-                        p {
-                            @apply text-[12px]/[19px];
-                        }
-                    }
-                    .section-terdaftar {
-                        label  {
-                            @apply text-[12px]/[19px];
-                        }
-                        .terdaftar-list-logo {
-                            @apply gap-[20px];
-                            .bappebti-logo {
-                                @apply w-[127px] h-[34px];
-                            }
-                            .kominfo-logo {
-                                @apply w-[98px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[83px] h-[44px];
-
-                            }
-                            .cisa-logo {
-                                @apply w-[90px] h-[43px];
-                            }
-                        }
-                    }
-                }
-                @media (max-width:1080px) {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[40px]/[52px];
-                            }
-                        }
-                        ul {
-                            @apply text-[11px]/[11px];
-                            li {
-                                @apply flex items-center gap-[8px];
-                                svg {
-                                    @apply w-[18px] h-[18px];
-                                }
-                            }
-                        }
-                        p {
-                            @apply text-[11px]/[18px];
-                        }
-                    }
-                    .section-terdaftar {
-                        label  {
-                            @apply text-[11px]/[18px];
-                        }
-                        .terdaftar-list-logo {
-                            @apply gap-[15px];
-                            .bappebti-logo {
-                                @apply w-[117px] h-[34px];
-                            }
-                            .kominfo-logo {
-                                @apply w-[88px] h-[37px];
-                            }
-                            .bsi-logo {
-                                @apply w-[73px] h-[44px];
-
-                            }
-                            .cisa-logo {
-                                @apply w-[80px] h-[43px];
-                            }
-                        }
-                    }
-                }
-
+  .home-hero-section {
+    @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
+    background: url("/images/ornaments/home-ornament.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .home-hero-section-area {
+      @apply flex px-[100px] gap-[20px] max-w-container mx-auto relative;
+      .section-text {
+        @apply flex flex-col w-[75%] gap-[40px] z-[1];
+        .text-title {
+          @apply flex flex-col gap-[28px];
+          .title {
+            @apply flex flex-col;
+            h1 {
+              @apply text-[60px]/[72px] text-[#323232] font-black w-[90%];
             }
-            .section-device {
-                @apply flex-1 flex flex-col justify-center items-center;
-                img {
-                    @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-0 bottom-0;
-                }
-                @media (max-width:1280px) {
-                    img {
-                        @apply w-[900px] h-[650px];
-                    }
-                }
-                @media (max-width:1180px) {
-                    img {
-                        @apply w-[850px] h-[600px];
-                    }
-                }
-                @media (max-width:1080px) {
-                    img {
-                        @apply w-[800px] h-[550px];
-                    }
-                }
+          }
+          ul {
+            @apply flex items-center text-[#0C29C1] gap-[20px] font-bold text-[14px]/[14px];
+            li {
+              @apply flex items-center gap-[8px];
             }
+          }
+          p {
+            @apply text-[16px]/[32px] text-[#646464] font-medium w-[65%];
+          }
         }
-    }
-    
-    .home-index-crypto-section {
-        @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
-        .rfm-marquee-container  {
-            @apply flex justify-start overflow-hidden;
-            .rfm-marquee {
-                @apply flex justify-center;
-                .rfm-initial-child-container {
-                    @apply flex justify-between w-full;
-                }
-                .rfm-child {
-                    @apply mx-[10px];
-                    .index-cyrpto-content {
-                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
-                        .crypto-title{
-                            @apply flex;
-                            label {
-                                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
-                            }
-                        }
-                        .crypto-index{
-                            @apply flex;
-                            label {
-                                @apply text-[12px]/[18px] font-medium flex items-center;
-                            }
-                        }
-                    }
-                }
-                
+        a {
+          @apply bg-primary text-white text-[14px]/[21px] font-bold rounded-[30px] w-[260px] h-[48px] flex justify-center items-center gap-[8px];
+          svg {
+            path {
+              @apply fill-white;
             }
-
+          }
         }
-        @media (max-width:1280px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
+        .section-terdaftar {
+          @apply flex flex-col gap-[19px];
+          label {
+            @apply text-[16px]/[32px] text-[#646464] font-medium;
+          }
+          .terdaftar-list-logo {
+            @apply flex gap-[30px] items-center;
+            .bappebti-logo {
+              @apply w-[147px] h-[34px];
+              content: "";
+              background: url("/images/otoritas-keuangans/bappebti-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
             }
+            .kominfo-logo {
+              @apply w-[118px] h-[37px];
+              content: "";
+              background: url("/images/otoritas-keuangans/kominfo-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .bsi-logo {
+              @apply w-[83px] h-[44px];
+              content: "";
+              background: url("/images/otoritas-keuangans/bsi-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .cisa-logo {
+              @apply w-[110px] h-[44px];
+              content: "";
+              background: url("/images/otoritas-keuangans/cisa-color-big.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+          }
         }
-        @media (max-width:1180px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[10px]/[16px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[10px]/[16px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
+        @media (max-width: 1280px) {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[50px]/[62px];
+              }
             }
-        }
-        @media (max-width:1080px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[9px]/[15px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[9px]/[15px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
-    }
-    
-    .home-rancang-new-section {
-        @apply flex gap-[40px] overflow-hidden  max-w-container mx-auto;
-        .home-rancang-device {
-            @apply w-[682px] flex flex-col items-center relative;
-            img {
-                @apply absolute right-0 bottom-0 w-full h-full object-contain;
-            }
-            @media (max-width:1280px) {
-                @apply w-[632px];
-            }
-            @media (max-width:1180px) {
-                @apply w-[582px];
-
-            }
-            @media (max-width:1080px) {
-                @apply w-[532px];
-            }
-        }
-        .home-rancang-description {
-            @apply flex flex-col gap-[13px] flex-1 justify-start items-start pl-[100px] h-full;
-            h2 {
-                @apply text-[48px]/[67px] font-black text-neutral-900;
-                span {
-                    background: linear-gradient(89.51deg, #1B4CA7 7.36%, #318AC6 98.35%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            .rancang-description-details {
-                @apply flex flex-col gap-[21px];
-                .rancang-description-details-sub {
-                    @apply flex gap-[21px] items-start flex-col;
-                    .rancang-description-detail {
-                        @apply flex gap-[10px] w-full items-center;
-                        img {
-                            @apply w-[70px] h-[70px] object-contain;
-                        }
-                        .description-detail {
-                            @apply flex flex-col justify-start text-left;
-                            h5 {
-                                @apply text-[16px]/[24px] font-bold text-neutral-900;
-                            }
-                            p {
-                                @apply text-[12px]/[18px] font-medium text-neutral-900;
-                            }
-                        }
-                    }
-                }
-            }
-            @media (max-width:1280px) { 
-                h2 {
-                    @apply text-[39px]/[60px];
-                }
-                .rancang-description-details {
-                    @apply gap-[18px];
-                    .rancang-description-details-sub {
-                        @apply gap-[18px];
-                        .rancang-description-detail {
-                            @apply gap-[8px] ;
-                            img {
-                                @apply w-[60px] h-[60px];
-                            }
-                            .description-detail {
-                                h5 {
-                                    @apply text-[14px]/[21px];
-                                }
-                                p {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            @media (max-width:1180px) { 
-                h2 {
-                    @apply text-[35px]/[55px];
-                }
-                .rancang-description-details {
-                    @apply gap-[17px];
-                    .rancang-description-details-sub {
-                        @apply gap-[17px];
-                        .rancang-description-detail {
-                            @apply gap-[7px] ;
-                            img {
-                                @apply w-[55px] h-[55px];
-                            }
-                            .description-detail {
-                                h5 {
-                                    @apply text-[13px]/[20px];
-                                }
-                                p {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            @media (max-width:1080px) { 
-                h2 {
-                    @apply text-[30px]/[52px];
-                }
-                .rancang-description-details {
-                    @apply gap-[15px];
-                    .rancang-description-details-sub {
-                        @apply gap-[15px];
-                        .rancang-description-detail {
-                            @apply gap-[5px] ;
-                            img {
-                                @apply w-[50px] h-[50px];
-                            }
-                            .description-detail {
-                                h5 {
-                                    @apply text-[12px]/[19px];
-                                }
-                                p {
-                                    @apply text-[10px]/[15px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    .home-investasi-section {
-        @apply flex flex-col items-center p-[100px] relative max-w-container mx-auto;
-        .investasi-section-box {
-            @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] pt-[40px] gap-[29px] relative w-full;
-            h2 {
-                @apply text-[48px]/[72px] font-black text-neutral-900;
-                span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            .investasi-details {
-                @apply flex justify-between w-[80%];
-                .investasi-detail {
-                    @apply flex flex-col items-center gap-[59px] w-[221px] justify-between;
-                    .investasi-detail-description {
-                        @apply flex flex-col gap-[10px] items-center text-center;
-                        h5 {
-                            @apply text-[16px]/[24px] font-semibold text-neutral-900;
-                        }
-                        p {
-                            @apply text-[12px]/[18px] font-medium text-neutral-900;
-                        }
-                    }
-                }
-                img {
-                    @apply w-full;
-                }
-            }
-            &::after {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-            }
-            &::before {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-            }
-
-            @media (max-width:1280px) {
-                @apply gap-[20px];
-                h2 {
-                    @apply text-[43px]/[67px];
-                }
-                .investasi-details {
-                    @apply flex justify-between w-[80%];
-                    .investasi-detail {
-                        @apply gap-[40px];
-                        .investasi-detail-description {
-                            h5 {
-                                @apply text-[14px]/[21px];
-                            }
-                            p {
-                                @apply text-[11px]/[17px];
-                            }
-                        }
-                    }
-                    img {
-                        @apply w-[90%];
-                    }
-                }
-            }
-            @media (max-width:1180px) {
-                h2 {
-                    @apply text-[38px]/[62px];
-                }
-                .investasi-detail {
-                    .investasi-detail-description {
-                        h5 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[11px]/[17px];
-                        }
-                    }
-                }
-                img {
-                    @apply w-full;
-                }
-            }
-            @media (max-width:1080px) {
-                h2 {
-                    @apply text-[33px]/[57px];
-                }
-                .investasi-detail {
-                    .investasi-detail-description {
-                        h5 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[11px]/[17px];
-                        }
-                    }
-                }
-                img {
-                    @apply w-full;
-                }
-            }
-        }
-    
-    }
-
-    .home-transaksi-section {
-        @apply flex items-center px-[100px] gap-[20px] relative overflow-hidden max-w-container mx-auto;
-        .image-container {
-            @apply w-[550px] h-[600px] flex flex-col justify-center items-end;
-            img {
-                @apply  w-[800px] h-[450px] right-[-10%] object-cover absolute;
-            }
-            &::before {
-                content: '';
-                @apply absolute right-[250px] w-[500px] h-[500px] z-[-1] bottom-[150px];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-            }
-        }
-        .description-container {
-            @apply flex flex-1 flex-col gap-[20px];
-            .start-now-description {
-                @apply flex flex-col gap-[18px];
-                h2 {
-                    @apply text-[47px]/[65px] font-black text-neutral-900;
-                    span {
-                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-                h5,p {
-                    @apply text-[16px]/[32px] font-bold text-neutral-700;
-                }
-                p {
-                   @apply font-medium text-justify;
-                }
-            }
-           .start-button-logo {
-                @apply flex flex-col gap-[30px];
-                a {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-           }
-        }
-
-        @media (max-width:1280px) {
-            .image-container {
-                @apply w-[400px] h-[450px];
-                img {
-                    @apply  w-[650px] h-[380px];
-                }
-                &::before {
-                    @apply absolute right-[220px] w-[410px] h-[425px] z-[-1] bottom-[50px];
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[20px];
-                .start-now-description {
-                    @apply flex flex-col gap-[18px];
-                    h2 {
-                        @apply text-[42px]/[60px];
-                    }
-                    h5,p {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                       @apply font-medium
-                    }
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px] ;
-                    }
-               }
-            }
-        }
-
-        @media (max-width:1180px) {
-            .image-container {
-                @apply w-[400px] h-[450px];
-                img {
-                    @apply  w-[650px] h-[380px];
-                }
-                &::before {
-                    @apply absolute right-[220px] w-[410px] h-[425px] z-[-1] bottom-[50px];
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[20px];
-                .start-now-description {
-                    @apply flex flex-col gap-[18px];
-                    h2 {
-                        @apply text-[37px]/[55px];
-                    }
-                    h5,p {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                       @apply font-medium
-                    }
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px] ;
-                    }
-               }
-            }
-        }
-
-        @media (max-width:1080px) {
-            .image-container {
-                @apply w-[400px] h-[450px];
-                img {
-                    @apply  w-[600px] h-[350px];
-                }
-                &::before {
-                    @apply absolute right-[200px] w-[410px] h-[425px] z-[-1] bottom-[50px];
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[20px];
-                .start-now-description {
-                    @apply flex flex-col gap-[18px];
-                    h2 {
-                        @apply text-[25px]/[36px];
-                    }
-                    h5,p {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                       @apply font-medium
-                    }
-                }
-               .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px] ;
-                    }
-               }
-            }
-        }
-    }
-    
-    .home-dividen-staking-section {
-        @apply flex  px-[100px] py-[50px] gap-[30px] max-w-container mx-auto;
-        .dividen-staking-device {
-            @apply w-[554px] relative flex flex-col justify-center items-end;
-            img {
-                @apply w-[554px] h-[386px];
-            }
-        }
-        .dividen-staking-description {
-            @apply flex flex-1 flex-col gap-[40px];
-            .staking-description-title {
-                @apply flex flex-col gap-[20px];
-                h2 {
-                    @apply text-[48px]/[67px] font-black ;
-                    span {
-                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-                p {
-                    @apply text-[18px]/[32px] font-medium text-neutral-700;
-                }
-            }
-            a {
-                @apply flex justify-center gap-[8px] items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+            ul {
+              @apply text-[13px]/[13px];
+              li {
+                @apply flex items-center gap-[8px];
                 svg {
-                    path {
-                        @apply fill-white;
-                    }
+                  @apply w-[20px] h-[20px];
                 }
-            }
-        }
-
-        @media (max-width:1280px) {
-            .dividen-staking-device {
-                @apply w-[454px];
-                img {
-                    @apply w-[454px] h-full object-contain;
-                }
-            }
-            .dividen-staking-description {
-                @apply flex flex-1 flex-col gap-[35px];
-                .staking-description-title {
-                    @apply flex flex-col gap-[15px];
-                    h2 {
-                        @apply text-[35px]/[55px];
-                    }
-                    p {
-                        @apply text-[17px]/[24px];
-                    }
-                }
-                a {
-                    @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
-                }
-            }
-        }
-
-        @media (max-width:1180px) {
-            .dividen-staking-device {
-                @apply w-[404px];
-                img {
-                    @apply w-[404px] h-full object-contain;
-                }
-            }
-            .dividen-staking-description {
-                @apply flex flex-1 flex-col gap-[35px];
-                .staking-description-title {
-                    @apply flex flex-col gap-[15px];
-                    h2 {
-                        @apply text-[30px]/[50px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                }
-                a {
-                    @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
-                }
-            }
-        }
-
-        @media (max-width:1080px) {
-            .dividen-staking-device {
-                @apply w-[354px];
-                img {
-                    @apply w-[354px] h-full object-contain;
-                }
-            }
-            .dividen-staking-description {
-                @apply flex flex-1 flex-col gap-[35px];
-                .staking-description-title {
-                    @apply flex flex-col gap-[15px];
-                    h2 {
-                        @apply text-[25px]/[36px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                }
-                a {
-                    @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
-                }
-            }
-        }
-    }
-    
-    .home-ewallet-section {
-        @apply flex items-center relative py-[50px] max-w-container mx-auto;
-        .ewallet-description {
-            @apply flex-1 flex flex-col gap-[20px] pl-[100px];
-            h2 {
-                @apply text-[45px]/[65px] font-black text-neutral-900;
-                span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            h5 {
-                @apply text-[20px]/[30px] font-bold;
-                background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+              }
             }
             p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700 text-justify;
+              @apply text-[14px]/[21px];
             }
+          }
+          a {
+            @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+          .section-terdaftar {
+            label {
+              @apply text-[14px]/[21px];
+            }
+            .terdaftar-list-logo {
+              @apply gap-[20px];
+              .bappebti-logo {
+                @apply w-[137px] h-[34px];
+              }
+              .kominfo-logo {
+                @apply w-[108px] h-[37px];
+              }
+              .bsi-logo {
+                @apply w-[73px] h-[44px];
+              }
+              .cisa-logo {
+                @apply w-[100px] h-[43px];
+              }
+            }
+          }
         }
-        .ewallet-image {
-            @apply w-[550px] h-[400px] relative;
-            img {
-               @apply w-full;
+        @media (max-width: 1180px) {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[45px]/[57px];
+              }
             }
+            ul {
+              @apply text-[12px]/[12px];
+              li {
+                @apply flex items-center gap-[8px];
+                svg {
+                  @apply w-[19px] h-[19px];
+                }
+              }
+            }
+            p {
+              @apply text-[12px]/[19px];
+            }
+          }
+          .section-terdaftar {
+            label {
+              @apply text-[12px]/[19px];
+            }
+            .terdaftar-list-logo {
+              @apply gap-[20px];
+              .bappebti-logo {
+                @apply w-[127px] h-[34px];
+              }
+              .kominfo-logo {
+                @apply w-[98px] h-[37px];
+              }
+              .bsi-logo {
+                @apply w-[83px] h-[44px];
+              }
+              .cisa-logo {
+                @apply w-[90px] h-[43px];
+              }
+            }
+          }
         }
-        @media (max-width:1280px) {
-            .ewallet-description {
-                @apply gap-[15px];
-                h2 {
-                    @apply text-[35px]/[55px];
-                }
-                h5 {
-                    @apply text-[17px]/[24px];
-                }
-                p {
-                    @apply text-[14px]/[21px];
-                }
+        @media (max-width: 1080px) {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[40px]/[52px];
+              }
             }
-            .ewallet-image {
-                @apply w-[450px] h-[300px] relative;
+            ul {
+              @apply text-[11px]/[11px];
+              li {
+                @apply flex items-center gap-[8px];
+                svg {
+                  @apply w-[18px] h-[18px];
+                }
+              }
             }
+            p {
+              @apply text-[11px]/[18px];
+            }
+          }
+          .section-terdaftar {
+            label {
+              @apply text-[11px]/[18px];
+            }
+            .terdaftar-list-logo {
+              @apply gap-[15px];
+              .bappebti-logo {
+                @apply w-[117px] h-[34px];
+              }
+              .kominfo-logo {
+                @apply w-[88px] h-[37px];
+              }
+              .bsi-logo {
+                @apply w-[73px] h-[44px];
+              }
+              .cisa-logo {
+                @apply w-[80px] h-[43px];
+              }
+            }
+          }
         }
-        @media (max-width:1180px) {
-            .ewallet-description {
-                @apply gap-[15px];
-                h2 {
-                    @apply text-[30px]/[50px];
-                }
-                h5 {
-                    @apply text-[14px]/[21px];
-                }
-                p {
-                    @apply text-[12px]/[19px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[400px] h-[250px] relative;
-            }
+      }
+      .section-device {
+        @apply flex-1 flex flex-col justify-center items-center;
+        img {
+          @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-0 bottom-0;
         }
-        @media (max-width:1080px) {
-            .ewallet-description {
-                @apply gap-[15px];
-                h2 {
-                    @apply text-[25px]/[36px];
-                }
-                h5 {
-                    @apply text-[14px]/[21px];
-                }
-                p {
-                    @apply text-[12px]/[19px];
-                }
-            }
-            .ewallet-image {
-                @apply w-[350px] h-[200px] relative;
-            }
+        @media (max-width: 1280px) {
+          img {
+            @apply w-[900px] h-[650px];
+          }
         }
+        @media (max-width: 1180px) {
+          img {
+            @apply w-[850px] h-[600px];
+          }
+        }
+        @media (max-width: 1080px) {
+          img {
+            @apply w-[800px] h-[550px];
+          }
+        }
+      }
     }
-    
-    .home-baru-crypto-section {
-        @apply py-0 bg-[#EEF7FD] my-[50px];
-        .home-baru-crypto-container {
-            @apply flex gap-[80px] py-[100px]  items-center relative max-w-container mx-auto;
-            .baru-crypto-title {
-                @apply flex flex-col gap-[20px] pl-[100px] w-[353px];
+  }
+
+  .home-index-crypto-section {
+    @apply pt-[50px] pb-[100px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+    .rfm-marquee-container {
+      @apply flex justify-start overflow-hidden;
+      .rfm-marquee {
+        @apply flex justify-center;
+        .rfm-initial-child-container {
+          @apply flex justify-between w-full;
+        }
+        .rfm-child {
+          @apply mx-[10px];
+          .index-cyrpto-content {
+            @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
+            .crypto-title {
+              @apply flex;
+              label {
+                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
+              }
+            }
+            .crypto-index {
+              @apply flex;
+              label {
+                @apply text-[12px]/[18px] font-medium flex items-center;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[11px]/[17px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[11px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[10px]/[16px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[10px]/[16px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[9px]/[15px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[9px]/[15px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home-rancang-new-section {
+    @apply flex gap-[40px] overflow-hidden  max-w-container mx-auto;
+    .home-rancang-device {
+      @apply w-[682px] flex flex-col items-center relative;
+      img {
+        @apply absolute right-0 bottom-0 w-full h-full object-contain;
+      }
+      @media (max-width: 1280px) {
+        @apply w-[632px];
+      }
+      @media (max-width: 1180px) {
+        @apply w-[582px];
+      }
+      @media (max-width: 1080px) {
+        @apply w-[532px];
+      }
+    }
+    .home-rancang-description {
+      @apply flex flex-col gap-[13px] flex-1 justify-start items-start pl-[100px] h-full;
+      h2 {
+        @apply text-[48px]/[67px] font-black text-neutral-900;
+        span {
+          background: linear-gradient(89.51deg, #1b4ca7 7.36%, #318ac6 98.35%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .rancang-description-details {
+        @apply flex flex-col gap-[21px];
+        .rancang-description-details-sub {
+          @apply flex gap-[21px] items-start flex-col;
+          .rancang-description-detail {
+            @apply flex gap-[10px] w-full items-center;
+            img {
+              @apply w-[70px] h-[70px] object-contain;
+            }
+            .description-detail {
+              @apply flex flex-col justify-start text-left;
+              h5 {
+                @apply text-[16px]/[24px] font-bold text-neutral-900;
+              }
+              p {
+                @apply text-[12px]/[18px] font-medium text-neutral-900;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: 1280px) {
+        h2 {
+          @apply text-[39px]/[60px];
+        }
+        .rancang-description-details {
+          @apply gap-[18px];
+          .rancang-description-details-sub {
+            @apply gap-[18px];
+            .rancang-description-detail {
+              @apply gap-[8px];
+              img {
+                @apply w-[60px] h-[60px];
+              }
+              .description-detail {
                 h5 {
-                    @apply text-[24px]/[42px] font-bold text-black;
+                  @apply text-[14px]/[21px];
                 }
                 p {
-                    @apply text-[16px]/[32px] font-medium text-black;
+                  @apply text-[11px]/[17px];
                 }
-                a {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: 1180px) {
+        h2 {
+          @apply text-[35px]/[55px];
+        }
+        .rancang-description-details {
+          @apply gap-[17px];
+          .rancang-description-details-sub {
+            @apply gap-[17px];
+            .rancang-description-detail {
+              @apply gap-[7px];
+              img {
+                @apply w-[55px] h-[55px];
+              }
+              .description-detail {
+                h5 {
+                  @apply text-[13px]/[20px];
+                }
+                p {
+                  @apply text-[11px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: 1080px) {
+        h2 {
+          @apply text-[30px]/[52px];
+        }
+        .rancang-description-details {
+          @apply gap-[15px];
+          .rancang-description-details-sub {
+            @apply gap-[15px];
+            .rancang-description-detail {
+              @apply gap-[5px];
+              img {
+                @apply w-[50px] h-[50px];
+              }
+              .description-detail {
+                h5 {
+                  @apply text-[12px]/[19px];
+                }
+                p {
+                  @apply text-[10px]/[15px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home-investasi-section {
+    @apply flex flex-col items-center p-[100px] relative max-w-container mx-auto;
+    .investasi-section-box {
+      @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] pt-[40px] gap-[29px] relative w-full;
+      h2 {
+        @apply text-[48px]/[72px] font-black text-neutral-900;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .investasi-details {
+        @apply flex justify-between w-[80%];
+        .investasi-detail {
+          @apply flex flex-col items-center gap-[59px] w-[221px] justify-between;
+          .investasi-detail-description {
+            @apply flex flex-col gap-[10px] items-center text-center;
+            h5 {
+              @apply text-[16px]/[24px] font-semibold text-neutral-900;
+            }
+            p {
+              @apply text-[12px]/[18px] font-medium text-neutral-900;
+            }
+          }
+        }
+        img {
+          @apply w-full;
+        }
+      }
+      &::after {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+        background: url("/images/ornaments/investasi-right-ornament.png")
+          no-repeat;
+      }
+      &::before {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+        background: url("/images/ornaments/investasi-left-ornament.png")
+          no-repeat;
+      }
+
+      @media (max-width: 1280px) {
+        @apply gap-[20px];
+        h2 {
+          @apply text-[43px]/[67px];
+        }
+        .investasi-details {
+          @apply flex justify-between w-[80%];
+          .investasi-detail {
+            @apply gap-[40px];
+            .investasi-detail-description {
+              h5 {
+                @apply text-[14px]/[21px];
+              }
+              p {
+                @apply text-[11px]/[17px];
+              }
+            }
+          }
+          img {
+            @apply w-[90%];
+          }
+        }
+      }
+      @media (max-width: 1180px) {
+        h2 {
+          @apply text-[38px]/[62px];
+        }
+        .investasi-detail {
+          .investasi-detail-description {
+            h5 {
+              @apply text-[14px]/[21px];
+            }
+            p {
+              @apply text-[11px]/[17px];
+            }
+          }
+        }
+        img {
+          @apply w-full;
+        }
+      }
+      @media (max-width: 1080px) {
+        h2 {
+          @apply text-[33px]/[57px];
+        }
+        .investasi-detail {
+          .investasi-detail-description {
+            h5 {
+              @apply text-[14px]/[21px];
+            }
+            p {
+              @apply text-[11px]/[17px];
+            }
+          }
+        }
+        img {
+          @apply w-full;
+        }
+      }
+    }
+  }
+
+  .home-transaksi-section {
+    @apply flex items-center px-[100px] gap-[20px] relative overflow-hidden max-w-container mx-auto;
+    .image-container {
+      @apply w-[550px] h-[600px] flex flex-col justify-center items-end;
+      img {
+        @apply w-[800px] h-[450px] right-[-10%] object-cover absolute;
+      }
+      &::before {
+        content: "";
+        @apply absolute right-[250px] w-[500px] h-[500px] z-[-1] bottom-[150px];
+        background: url("/images/ornaments/circle-loop-ornament-2.png")
+          no-repeat;
+      }
+    }
+    .description-container {
+      @apply flex flex-1 flex-col gap-[20px];
+      .start-now-description {
+        @apply flex flex-col gap-[18px];
+        h2 {
+          @apply text-[47px]/[65px] font-black text-neutral-900;
+          span {
+            background: linear-gradient(
+              89.49deg,
+              #1b4ca7 -18.69%,
+              #318ac6 98.33%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        h5,
+        p {
+          @apply text-[16px]/[32px] font-bold text-neutral-700;
+        }
+        p {
+          @apply font-medium text-justify;
+        }
+      }
+      .start-button-logo {
+        @apply flex flex-col gap-[30px];
+        a {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .image-container {
+        @apply w-[400px] h-[450px];
+        img {
+          @apply w-[650px] h-[380px];
+        }
+        &::before {
+          @apply absolute right-[220px] w-[410px] h-[425px] z-[-1] bottom-[50px];
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[20px];
+        .start-now-description {
+          @apply flex flex-col gap-[18px];
+          h2 {
+            @apply text-[42px]/[60px];
+          }
+          h5,
+          p {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply font-medium;
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .image-container {
+        @apply w-[400px] h-[450px];
+        img {
+          @apply w-[650px] h-[380px];
+        }
+        &::before {
+          @apply absolute right-[220px] w-[410px] h-[425px] z-[-1] bottom-[50px];
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[20px];
+        .start-now-description {
+          @apply flex flex-col gap-[18px];
+          h2 {
+            @apply text-[37px]/[55px];
+          }
+          h5,
+          p {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply font-medium;
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1080px) {
+      .image-container {
+        @apply w-[400px] h-[450px];
+        img {
+          @apply w-[600px] h-[350px];
+        }
+        &::before {
+          @apply absolute right-[200px] w-[410px] h-[425px] z-[-1] bottom-[50px];
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[20px];
+        .start-now-description {
+          @apply flex flex-col gap-[18px];
+          h2 {
+            @apply text-[25px]/[36px];
+          }
+          h5,
+          p {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply font-medium;
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+          }
+        }
+      }
+    }
+  }
+
+  .home-dividen-staking-section {
+    @apply flex  px-[100px] py-[50px] gap-[30px] max-w-container mx-auto;
+    .dividen-staking-device {
+      @apply w-[554px] relative flex flex-col justify-center items-end;
+      img {
+        @apply w-[554px] h-[386px];
+      }
+    }
+    .dividen-staking-description {
+      @apply flex flex-1 flex-col gap-[40px];
+      .staking-description-title {
+        @apply flex flex-col gap-[20px];
+        h2 {
+          @apply text-[48px]/[67px] font-black;
+          span {
+            background: linear-gradient(
+              89.49deg,
+              #1b4ca7 -18.69%,
+              #318ac6 98.33%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        p {
+          @apply text-[18px]/[32px] font-medium text-neutral-700;
+        }
+      }
+      a {
+        @apply flex justify-center gap-[8px] items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+        svg {
+          path {
+            @apply fill-white;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .dividen-staking-device {
+        @apply w-[454px];
+        img {
+          @apply w-[454px] h-full object-contain;
+        }
+      }
+      .dividen-staking-description {
+        @apply flex flex-1 flex-col gap-[35px];
+        .staking-description-title {
+          @apply flex flex-col gap-[15px];
+          h2 {
+            @apply text-[35px]/[55px];
+          }
+          p {
+            @apply text-[17px]/[24px];
+          }
+        }
+        a {
+          @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+        }
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .dividen-staking-device {
+        @apply w-[404px];
+        img {
+          @apply w-[404px] h-full object-contain;
+        }
+      }
+      .dividen-staking-description {
+        @apply flex flex-1 flex-col gap-[35px];
+        .staking-description-title {
+          @apply flex flex-col gap-[15px];
+          h2 {
+            @apply text-[30px]/[50px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+        }
+        a {
+          @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+        }
+      }
+    }
+
+    @media (max-width: 1080px) {
+      .dividen-staking-device {
+        @apply w-[354px];
+        img {
+          @apply w-[354px] h-full object-contain;
+        }
+      }
+      .dividen-staking-description {
+        @apply flex flex-1 flex-col gap-[35px];
+        .staking-description-title {
+          @apply flex flex-col gap-[15px];
+          h2 {
+            @apply text-[25px]/[36px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+        }
+        a {
+          @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+        }
+      }
+    }
+  }
+
+  .home-ewallet-section {
+    @apply flex items-center relative py-[50px] max-w-container mx-auto;
+    .ewallet-description {
+      @apply flex-1 flex flex-col gap-[20px] pl-[100px];
+      h2 {
+        @apply text-[45px]/[65px] font-black text-neutral-900;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      h5 {
+        @apply text-[20px]/[30px] font-bold;
+        background: linear-gradient(89.33deg, #0c29c1 0.57%, #fa00ff 147.17%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        @apply text-[16px]/[32px] font-medium text-neutral-700 text-justify;
+      }
+    }
+    .ewallet-image {
+      @apply w-[550px] h-[400px] relative;
+      img {
+        @apply w-full;
+      }
+    }
+    @media (max-width: 1280px) {
+      .ewallet-description {
+        @apply gap-[15px];
+        h2 {
+          @apply text-[35px]/[55px];
+        }
+        h5 {
+          @apply text-[17px]/[24px];
+        }
+        p {
+          @apply text-[14px]/[21px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[450px] h-[300px] relative;
+      }
+    }
+    @media (max-width: 1180px) {
+      .ewallet-description {
+        @apply gap-[15px];
+        h2 {
+          @apply text-[30px]/[50px];
+        }
+        h5 {
+          @apply text-[14px]/[21px];
+        }
+        p {
+          @apply text-[12px]/[19px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[400px] h-[250px] relative;
+      }
+    }
+    @media (max-width: 1080px) {
+      .ewallet-description {
+        @apply gap-[15px];
+        h2 {
+          @apply text-[25px]/[36px];
+        }
+        h5 {
+          @apply text-[14px]/[21px];
+        }
+        p {
+          @apply text-[12px]/[19px];
+        }
+      }
+      .ewallet-image {
+        @apply w-[350px] h-[200px] relative;
+      }
+    }
+  }
+
+  .home-baru-crypto-section {
+    @apply py-0 bg-[#EEF7FD] my-[50px];
+    .home-baru-crypto-container {
+      @apply flex gap-[80px] py-[100px]  items-center relative max-w-container mx-auto;
+      .baru-crypto-title {
+        @apply flex flex-col gap-[20px] pl-[100px] w-[353px];
+        h5 {
+          @apply text-[24px]/[42px] font-bold text-black;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-black;
+        }
+        a {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+      }
+      .baru-crypto-videos {
+        @apply flex-1 relative overflow-hidden;
+        .swiper {
+          .swiper-wrapper {
+            @apply flex relative w-full gap-[20px] justify-start;
+            .swiper-slide {
+              @apply !w-[300px];
+              .crypto-thumb-video {
+                @apply bg-white w-[300px] flex flex-col gap-[20px] rounded-[10px];
+                .video-thumb {
+                  @apply w-full h-full;
+                  img {
+                    @apply w-full h-full rounded-tr-[10px] rounded-tl-[10px];
+                  }
+                  iframe {
+                    @apply w-full h-full rounded-tr-[10px] rounded-tl-[10px];
+                  }
+                }
+                .video-title {
+                  @apply flex flex-col gap-[14px] p-[13px];
+                  h6 {
+                    @apply text-[16px]/[24px] text-black;
+                  }
+                  a {
+                    @apply bg-[#EEF7FD] text-[#4DAAE9] text-[13px]/[20px] font-bold rounded-[31px] w-full h-[30px] flex flex-col justify-center items-center;
+                  }
+                }
+              }
+            }
+          }
+        }
+        a {
+          @apply hidden;
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .home-baru-crypto-container {
+        @apply py-[70px];
+        .baru-crypto-title {
+          @apply flex flex-col gap-[20px];
+          h5 {
+            @apply text-[26px]/[23px];
+          }
+          p {
+            @apply text-[16px]/[23px];
+          }
+          a {
+            @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+        .baru-crypto-videos {
+          @apply flex-1 relative overflow-hidden;
+          .swiper {
+            .swiper-wrapper {
+              @apply gap-[20px];
+              .swiper-slide {
+                @apply !w-[220px];
+                .crypto-thumb-video {
+                  @apply w-[220px];
+                  .video-thumb {
+                    img {
+                      @apply w-[220px] h-[139px] rounded-tr-[8px] rounded-tl-[8px];
+                    }
+                  }
+                  .video-title {
+                    @apply flex flex-col gap-[14px] p-[13px];
+                    h6 {
+                      @apply text-[16px]/[23px] text-black;
+                    }
+                    a {
+                      @apply text-[13px]/[20px] rounded-[22px] w-full h-[30px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          a {
+            @apply hidden;
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .home-baru-crypto-container {
+        @apply py-[70px];
+        .baru-crypto-title {
+          @apply flex flex-col gap-[20px];
+          h5 {
+            @apply text-[25px]/[22px];
+          }
+          p {
+            @apply text-[15px]/[22px];
+          }
+          a {
+            @apply text-[13px]/[20px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+        .baru-crypto-videos {
+          @apply flex-1 relative overflow-hidden;
+          .swiper {
+            .swiper-wrapper {
+              @apply gap-[20px];
+              .swiper-slide {
+                @apply !w-[210px];
+                .crypto-thumb-video {
+                  @apply w-[210px];
+                  .video-thumb {
+                    img {
+                      @apply w-[210px] h-[129px] rounded-tr-[8px] rounded-tl-[8px];
+                    }
+                  }
+                  .video-title {
+                    @apply flex flex-col gap-[14px] p-[13px];
+                    h6 {
+                      @apply text-[15px]/[22px] text-black;
+                    }
+                    a {
+                      @apply text-[12px]/[19px] rounded-[22px] w-full h-[30px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          a {
+            @apply hidden;
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .home-baru-crypto-container {
+        @apply py-[70px];
+        .baru-crypto-title {
+          @apply flex flex-col gap-[20px];
+          h5 {
+            @apply text-[24px]/[21px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+          a {
+            @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
+          }
+        }
+        .baru-crypto-videos {
+          @apply flex-1 relative overflow-hidden;
+          .swiper {
+            .swiper-wrapper {
+              @apply gap-[20px];
+              .swiper-slide {
+                @apply !w-[200px];
+                .crypto-thumb-video {
+                  @apply w-[200px];
+                  .video-thumb {
+                    img {
+                      @apply w-[200px] h-[119px] rounded-tr-[8px] rounded-tl-[8px];
+                    }
+                  }
+                  .video-title {
+                    @apply flex flex-col gap-[14px] p-[13px];
+                    h6 {
+                      @apply text-[14px]/[21px] text-black;
+                    }
+                    a {
+                      @apply text-[11px]/[17px] rounded-[22px] w-full h-[30px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+          a {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .home-buy-sell-assets-section {
+    @apply flex items-center px-[100px] relative  max-w-container mx-auto;
+    .image-container {
+      @apply w-[500px] h-[500px] flex flex-col justify-center items-end;
+      img {
+        @apply w-[615px] h-[450px] left-0 object-cover absolute;
+      }
+      &::before {
+        content: "";
+        @apply absolute left-[-50px] w-[500px] h-[500px] z-[-1];
+        background: url("/images/ornaments/circle-loop-ornament-2.png")
+          no-repeat;
+      }
+    }
+    .description-container {
+      @apply flex flex-1 flex-col gap-[30px];
+      .start-now-description {
+        @apply flex flex-col gap-[10px];
+        h2 {
+          @apply text-[48px]/[67px] font-black text-neutral-900;
+          span {
+            background: linear-gradient(
+              89.49deg,
+              #1b4ca7 -18.69%,
+              #318ac6 98.33%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        h5 {
+          @apply text-[20px]/[30px] font-bold text-neutral-700;
+          background: linear-gradient(89.33deg, #0c29c1 0.57%, #fa00ff 147.17%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+      }
+      .start-button-logo {
+        @apply flex flex-col gap-[30px];
+        a {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .start-now-store {
+          @apply flex gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[130.64px] h-[38.71px];
+            }
+            &.playstore-logo {
+              @apply w-[114.43px] h-[37.02px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .image-container {
+        @apply w-[450px] h-[450px];
+        img {
+          @apply w-[555px] h-[450px];
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply text-[35px]/[55px];
+          }
+          h5 {
+            @apply text-[17px]/[24px];
+          }
+          p {
+            @apply text-[14px]/[21px];
+          }
+        }
+        .start-button-logo {
+          @apply gap-[20px];
+          a {
+            @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+          }
+          .start-now-store {
+            @apply flex gap-[14px] items-center;
+            img {
+              &.apple-logo {
+                @apply w-[130.64px] h-[38.71px];
+              }
+              &.playstore-logo {
+                @apply w-[114.43px] h-[37.02px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .image-container {
+        @apply w-[350px] h-[350px];
+        img {
+          @apply w-[455px] h-[300px];
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply text-[27px]/[45px];
+          }
+          h5 {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply text-[12px]/[17px];
+          }
+        }
+        .start-button-logo {
+          @apply gap-[20px];
+          a {
+            @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+          }
+          .start-now-store {
+            @apply flex gap-[14px] items-center;
+            img {
+              &.apple-logo {
+                @apply w-[130.64px] h-[38.71px];
+              }
+              &.playstore-logo {
+                @apply w-[114.43px] h-[37.02px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .image-container {
+        @apply w-[350px] h-[350px];
+        img {
+          @apply w-[455px] h-[300px];
+        }
+        &::before {
+          background-size: 80%;
+        }
+      }
+      .description-container {
+        @apply flex flex-1 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply text-[25px]/[36px];
+          }
+          h5 {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply text-[12px]/[17px];
+          }
+        }
+        .start-button-logo {
+          @apply gap-[20px];
+          a {
+            @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
+          }
+          .start-now-store {
+            img {
+              &.apple-logo {
+                @apply w-[100.64px] h-[31px];
+              }
+              &.playstore-logo {
+                @apply w-[104.43px] h-full;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home-media-section {
+    @apply flex flex-col justify-center items-center  py-[100px] gap-[40px]  max-w-container mx-auto;
+    h2 {
+      @apply text-[48px]/[72px] font-black text-neutral-900;
+    }
+    .rfm-marquee-container {
+      @apply flex justify-start overflow-hidden;
+      .rfm-marquee {
+        @apply flex justify-center;
+        .rfm-initial-child-container {
+          @apply flex justify-between w-full;
+        }
+        .rfm-child {
+          @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mx-[20px];
+          box-shadow: 4px 14px 30px 0px #00000014;
+          img {
+            &.tempo-logo {
+              @apply w-[92px] h-[36px];
+            }
+            &.kontan-logo {
+              @apply w-[92px] h-[36px];
+            }
+            &.kontan-logo {
+              @apply w-[107px] h-[36px];
+            }
+            &.dailysocial-logo {
+              @apply w-[135px] h-[36px];
+            }
+            &.tirto-logo {
+              @apply w-[107px] h-[36px];
+            }
+            &.detikfinance-logo {
+              @apply w-[150px] h-[36px];
+            }
+            &.kontan-logo {
+              @apply w-[150px] h-[36px];
+            }
+            &.kumparan-logo {
+              @apply w-[127px] h-[36px];
+            }
+            &.suara-logo {
+              @apply w-[142px] h-[36px];
+            }
+            &.beritasatu-logo {
+              @apply w-[89px] h-[36px];
+            }
+            &.cnbc-logo {
+              @apply w-[107px] h-[36px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      h2 {
+        @apply text-[35px]/[55px];
+      }
+      .rfm-marquee-container {
+        @apply flex justify-start overflow-hidden;
+        .rfm-marquee {
+          .rfm-child {
+            @apply h-[46px] p-[14px] mx-[8px];
+            img {
+              @apply !w-[90%] !h-[90%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      h2 {
+        @apply text-[30px]/[55px];
+      }
+      .rfm-marquee-container {
+        @apply flex justify-start overflow-hidden;
+        .rfm-marquee {
+          .rfm-child {
+            @apply h-[46px] p-[14px] mx-[8px];
+            img {
+              @apply !w-[90%] !h-[90%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      h2 {
+        @apply text-[25px]/[36px];
+      }
+      .rfm-marquee-container {
+        @apply flex justify-start overflow-hidden;
+        .rfm-marquee {
+          .rfm-child {
+            @apply h-[46px] p-[14px] mx-[8px];
+            img {
+              @apply !w-[90%] !h-[90%];
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @layer components {
+    &.mobile-responsive {
+      .home-hero-section {
+        @apply h-[624px] pt-[65px] pb-0 justify-start;
+        .home-hero-section-area {
+          @apply px-[20px] flex-col text-center;
+          .section-text {
+            @apply flex flex-col w-[100%] gap-[14px] items-center;
+            .text-title {
+              @apply flex flex-col justify-center gap-[14px] items-center;
+              .title {
+                @apply flex flex-col;
+                h1 {
+                  @apply !text-[14px]/[21px] w-[100%];
+                }
+              }
+              ul {
+                @apply flex items-center text-[#0C29C1] gap-[20px] font-bold !text-[7.24px]/[7.24px];
+                li {
+                  @apply flex items-center gap-[3px];
+                  svg {
+                    @apply !w-[15px] h-[15px];
+                  }
+                }
+              }
+              p {
+                @apply !text-[10px]/[15px] w-[100%];
+              }
+            }
+            a {
+              @apply !text-[12px]/[18px] w-[200px] h-[34px];
+            }
+            .section-terdaftar {
+              @apply flex flex-col;
+              label {
+                @apply !text-[10px]/[15px];
+              }
+              .terdaftar-list-logo {
+                @apply flex gap-[5px] items-center;
+                .bappebti-logo {
+                  @apply w-[60px] h-[13px];
+                }
+                .kominfo-logo {
+                  @apply w-[60px] h-[20px];
+                }
+                .bsi-logo {
+                  @apply w-[37px] h-[20px];
+                }
+                .cisa-logo {
+                  @apply w-[51px] h-[22px];
+                }
+              }
+            }
+          }
+          .section-device {
+            @apply flex-1 flex flex-col justify-center items-center relative;
+            img {
+              @apply !w-[408px] !h-[272px] right-0 bottom-0 relative;
+            }
+          }
+        }
+      }
+      .home-rancang-new-section {
+        @apply flex flex-col gap-[64px] py-[20px];
+        height: unset;
+        .home-rancang-device {
+          @apply w-full flex flex-col items-center relative px-[20px] h-[235px];
+          img {
+            @apply object-contain w-full h-full;
+          }
+        }
+        .home-rancang-description {
+          @apply gap-[13px] items-center px-[20px] py-0;
+          height: unset;
+          flex: unset;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          .rancang-description-details {
+            @apply flex flex-row gap-[21px];
+            .rancang-description-details-sub {
+              @apply w-1/2 items-start flex-col;
+              .rancang-description-detail {
+                @apply flex gap-[10px] w-full items-center flex-col justify-center;
+                img {
+                  @apply w-[37px] h-[37px] object-contain;
+                }
+                .description-detail {
+                  @apply flex flex-col justify-start text-center;
+                  h5 {
+                    @apply text-[10px]/[15px];
+                  }
+                  p {
+                    @apply text-[8px]/[12px];
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .home-index-crypto-section {
+        @apply py-[20px] px-[0px];
+        .rfm-marquee-container {
+          @apply flex justify-start overflow-hidden;
+          .rfm-marquee {
+            @apply flex justify-center;
+            .rfm-initial-child-container {
+              @apply flex justify-between w-full;
+            }
+            .rfm-child {
+              @apply mx-[5px];
+              .index-cyrpto-content {
+                @apply w-[147px] h-[24px] items-center;
+                .crypto-title {
+                  label {
+                    @apply text-[8px]/[12px];
+                  }
+                }
+                .crypto-index {
+                  label {
+                    @apply text-[8px]/[12px];
                     svg {
-                        path {
-                            @apply fill-white;
-                        }
+                      @apply w-[12px] h-[12px];
                     }
+                  }
                 }
+              }
             }
-            .baru-crypto-videos {
-                @apply flex-1 relative overflow-hidden;
-                .swiper {
-                    .swiper-wrapper {
-                        @apply flex relative w-full gap-[20px] justify-start;
-                        .swiper-slide {
-                            @apply !w-[300px];
-                            .crypto-thumb-video {
-                                @apply bg-white w-[300px] flex flex-col gap-[20px] rounded-[10px];
-                                .video-thumb {
-                                    img {
-                                        @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
-                                    }
-                                    iframe {
-                                        @apply w-[300px] h-[169px] rounded-tr-[10px] rounded-tl-[10px];
-                                    }
-                                }
-                               .video-title {
-                                    @apply flex flex-col gap-[14px] p-[13px];
-                                    h6 {
-                                        @apply text-[16px]/[24px] text-black;
-                                    }
-                                    a {
-                                        @apply bg-[#EEF7FD] text-[#4DAAE9] text-[13px]/[20px] font-bold rounded-[31px] w-full h-[30px] flex flex-col justify-center items-center;
-                                    }
-                               }
-                            }
-                        }
-                    }
-                }
-                a {
-                    @apply hidden;
-                }
-                
-            }
-            
+          }
         }
-        @media (max-width:1280px) {
-            .home-baru-crypto-container {
-                @apply py-[70px];
-                .baru-crypto-title {
-                    @apply flex flex-col gap-[20px];
-                    h5 {
-                        @apply text-[26px]/[23px];
-                    }
-                    p {
-                        @apply text-[16px]/[23px];
-                    }
-                    a {
-                        @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
+      }
+      .home-investasi-section {
+        @apply px-[20px] py-[40px];
+        .investasi-section-box {
+          @apply overflow-hidden w-full;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          .investasi-details {
+            @apply flex-col gap-[30px];
+            .investasi-detail {
+              @apply w-full gap-[30px];
+              .investasi-detail-description {
+                h5 {
+                  @apply text-[10px]/[15px] font-semibold;
                 }
-                .baru-crypto-videos {
-                    @apply flex-1 relative overflow-hidden;
-                    .swiper {
-                        .swiper-wrapper {
-                            @apply gap-[20px];
-                            .swiper-slide {
-                                @apply !w-[220px];
-                                .crypto-thumb-video {
-                                    @apply w-[220px] ;
-                                    .video-thumb {
-                                        img {
-                                            @apply w-[220px] h-[139px] rounded-tr-[8px] rounded-tl-[8px];
-                                        }
-                                    }
-                                   .video-title {
-                                        @apply flex flex-col gap-[14px] p-[13px];
-                                        h6 {
-                                            @apply text-[16px]/[23px] text-black;
-                                        }
-                                        a {
-                                            @apply text-[13px]/[20px] rounded-[22px] w-full h-[30px];
-                                        }
-                                   }
-                                }
-                            }
-                        }
-                    }
-                    a {
-                        @apply hidden;
-                    }  
+                p {
+                  @apply text-[8px]/[12px] font-medium;
                 }
+              }
+              img {
+                @apply w-[109.67px] h-[162px];
+              }
             }
+          }
+          &::after {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-right-ornament-mobile.png")
+              no-repeat;
+          }
+          &::before {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-left-ornament-mobile.png")
+              no-repeat;
+          }
         }
-        @media (max-width:1180px) {
-            .home-baru-crypto-container {
-                @apply py-[70px];
-                .baru-crypto-title {
-                    @apply flex flex-col gap-[20px];
-                    h5 {
-                        @apply text-[25px]/[22px];
-                    }
-                    p {
-                        @apply text-[15px]/[22px];
-                    }
-                    a {
-                        @apply text-[13px]/[20px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-                }
-                .baru-crypto-videos {
-                    @apply flex-1 relative overflow-hidden;
-                    .swiper {
-                        .swiper-wrapper {
-                            @apply gap-[20px];
-                            .swiper-slide {
-                                @apply !w-[210px];
-                                .crypto-thumb-video {
-                                    @apply w-[210px] ;
-                                    .video-thumb {
-                                        img {
-                                            @apply w-[210px] h-[129px] rounded-tr-[8px] rounded-tl-[8px];
-                                        }
-                                    }
-                                   .video-title {
-                                        @apply flex flex-col gap-[14px] p-[13px];
-                                        h6 {
-                                            @apply text-[15px]/[22px] text-black;
-                                        }
-                                        a {
-                                            @apply text-[12px]/[19px] rounded-[22px] w-full h-[30px];
-                                        }
-                                   }
-                                }
-                            }
-                        }
-                    }
-                    a {
-                        @apply hidden;
-                    }  
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .home-baru-crypto-container {
-                @apply py-[70px];
-                .baru-crypto-title {
-                    @apply flex flex-col gap-[20px];
-                    h5 {
-                        @apply text-[24px]/[21px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                    a {
-                        @apply text-[12px]/[19px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
-                    }
-                }
-                .baru-crypto-videos {
-                    @apply flex-1 relative overflow-hidden;
-                    .swiper {
-                        .swiper-wrapper {
-                            @apply gap-[20px];
-                            .swiper-slide {
-                                @apply !w-[200px];
-                                .crypto-thumb-video {
-                                    @apply w-[200px] ;
-                                    .video-thumb {
-                                        img {
-                                            @apply w-[200px] h-[119px] rounded-tr-[8px] rounded-tl-[8px];
-                                        }
-                                    }
-                                   .video-title {
-                                        @apply flex flex-col gap-[14px] p-[13px];
-                                        h6 {
-                                            @apply text-[14px]/[21px] text-black;
-                                        }
-                                        a {
-                                            @apply text-[11px]/[17px] rounded-[22px] w-full h-[30px];
-                                        }
-                                   }
-                                }
-                            }
-                        }
-                    }
-                    a {
-                        @apply hidden;
-                    }  
-                }
-            }
-        }
-    }
-    
-    .home-buy-sell-assets-section {
-        @apply flex items-center px-[100px] relative  max-w-container mx-auto;
+      }
+      .home-transaksi-section {
+        @apply flex-col px-[20px] py-[40px];
         .image-container {
-            @apply w-[500px] h-[500px] flex flex-col justify-center items-end;
-            img {
-                @apply  w-[615px] h-[450px] left-0 object-cover absolute;
-            }
-            &::before {
-                content: '';
-                @apply absolute left-[-50px] w-[500px] h-[500px] z-[-1];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-            }
+          @apply w-full h-full  flex flex-col justify-center items-end;
+          img {
+            @apply w-full h-full right-0 object-contain relative;
+          }
+          &::before {
+            content: none;
+          }
         }
         .description-container {
-            @apply flex flex-1 flex-col gap-[30px];
-            .start-now-description {
-                @apply flex flex-col gap-[10px];
-                h2 {
-                    @apply text-[48px]/[67px] font-black text-neutral-900;
-                    span {
-                        background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-                h5 {
-                    @apply text-[20px]/[30px] font-bold text-neutral-700;
-                    background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700
-                }
+          @apply flex w-full h-full flex-col gap-[30px] text-center;
+          /* flex: unset; */
+          .start-now-description {
+            @apply flex flex-col gap-[18px];
+            h2 {
+              @apply text-[14px]/[21px];
             }
-           .start-button-logo {
-                @apply flex flex-col gap-[30px];
-                a {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .start-now-store {
-                    @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
-                        }
-                    }
-                }
-           }
+            h5,
+            p {
+              @apply text-[16px]/[32px];
+            }
+            p {
+              @apply font-medium;
+            }
+          }
+          .start-button-logo {
+            @apply flex flex-col gap-[30px];
+            a {
+              @apply hidden;
+            }
+          }
         }
-        @media (max-width:1280px) {
-            .image-container {
-                @apply w-[450px] h-[450px] ;
-                img {
-                    @apply  w-[555px] h-[450px];
-                }
-                &::before {
-                   background-size: 80%;
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply text-[35px]/[55px];
-                    }
-                    h5 {
-                        @apply text-[17px]/[24px];
-                    }
-                    p {
-                        @apply text-[14px]/[21px];
-                    }
-                }
-               .start-button-logo {
-                    @apply gap-[20px];
-                    a {
-                        @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
-                    }
-                    .start-now-store {
-                        @apply flex gap-[14px] items-center;
-                        img {
-                            &.apple-logo {
-                                @apply w-[130.64px] h-[38.71px];
-                            }
-                            &.playstore-logo {
-                                @apply w-[114.43px] h-[37.02px];
-        
-                            }
-                        }
-                    }
-               }
-            }
+      }
+
+      .home-dividen-staking-section {
+        @apply flex-col-reverse px-[30px] py-[20px] justify-center;
+        .dividen-staking-device {
+          @apply w-full justify-center items-center;
+          img {
+            @apply w-[302px] h-[242px];
+          }
         }
-        @media (max-width:1180px) {
-            .image-container {
-                @apply w-[350px] h-[350px] ;
-                img {
-                    @apply  w-[455px] h-[300px];
-                }
-                &::before {
-                   background-size: 80%;
-                }
+        .dividen-staking-description {
+          @apply gap-[20px] justify-center items-center text-center;
+          .staking-description-title {
+            @apply flex flex-col gap-[20px];
+            h2 {
+              @apply text-[14px]/[21px];
             }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply text-[27px]/[45px];
-                    }
-                    h5 {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                        @apply text-[12px]/[17px];
-                    }
-                }
-               .start-button-logo {
-                    @apply gap-[20px];
-                    a {
-                        @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
-                    }
-                    .start-now-store {
-                        @apply flex gap-[14px] items-center;
-                        img {
-                            &.apple-logo {
-                                @apply w-[130.64px] h-[38.71px];
-                            }
-                            &.playstore-logo {
-                                @apply w-[114.43px] h-[37.02px];
-        
-                            }
-                        }
-                    }
-               }
+            p {
+              @apply text-[10px]/[15px];
             }
+          }
+          a {
+            @apply h-[34px] w-[200px] text-[12px]/[18px];
+            svg {
+              @apply w-[18px] h-[18px];
+            }
+          }
         }
-        @media (max-width:1080px) {
-            .image-container {
-                @apply w-[350px] h-[350px] ;
-                img {
-                    @apply  w-[455px] h-[300px];
-                }
-                &::before {
-                   background-size: 80%;
-                }
-            }
-            .description-container {
-                @apply flex flex-1 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply text-[25px]/[36px];
-                    }
-                    h5 {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                        @apply text-[12px]/[17px];
-                    }
-                }
-               .start-button-logo {
-                    @apply gap-[20px];
-                    a {
-                        @apply rounded-[20px] py-[10px] w-[260px] text-[14px]/[21px];
-                    }
-                    .start-now-store {
-                        img {
-                            &.apple-logo {
-                                @apply w-[100.64px] h-[31px];
-                            }
-                            &.playstore-logo {
-                                @apply w-[104.43px] h-full;
-        
-                            }
-                        }
-                    }
-               }
-            }
+      }
+      .home-ewallet-section {
+        @apply flex-col py-[30px] px-[20px] gap-[20px];
+        .ewallet-description {
+          @apply justify-center items-center w-full text-center p-0;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          h5 {
+            @apply text-[10px]/[15px];
+          }
+          p {
+            @apply text-[10px]/[15px] text-center;
+          }
         }
-    }
-    
-    .home-media-section {
-        @apply flex flex-col justify-center items-center  py-[100px] gap-[40px]  max-w-container mx-auto;
+        .ewallet-image {
+          @apply w-[246px] h-full flex flex-col justify-center items-center;
+          img {
+            @apply w-[246px] h-[219px] relative;
+          }
+        }
+      }
+      .home-baru-crypto-section {
+        .home-baru-crypto-container {
+          @apply flex-col px-[30px] py-[70px] gap-[30px] justify-center;
+          .baru-crypto-title {
+            @apply flex flex-col gap-[20px] justify-center text-center items-center p-0 w-full;
+            h5 {
+              @apply text-[14px]/[21px] font-bold text-black;
+            }
+            p {
+              @apply text-[12px]/[18px] font-medium text-black;
+            }
+            a {
+              @apply hidden;
+            }
+          }
+          .baru-crypto-videos {
+            @apply relative overflow-hidden w-full flex flex-col gap-[30px] justify-center items-center;
+            .swiper {
+              @apply w-full;
+              .swiper-wrapper {
+                @apply flex relative w-full gap-[20px];
+                .swiper-slide {
+                  @apply !w-[165px];
+                  .crypto-thumb-video {
+                    @apply w-[165px] flex;
+                    .video-thumb {
+                      img {
+                        @apply w-[165px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
+                      }
+                    }
+                    .video-title {
+                      @apply flex flex-col gap-[14px] p-[13px];
+                      h6 {
+                        @apply text-[8.15px]/[12.23px];
+                      }
+                      a {
+                        @apply text-[6.79px]/[10.19px] h-[15.44px];
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            a {
+              @apply flex items-center justify-center gap-[8px] bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px];
+              svg {
+                @apply w-[18px] h-[18px];
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .home-buy-sell-assets-section {
+        @apply py-[30px] px-[20px] gap-[20px] flex-col;
+        .image-container {
+          @apply relative h-full w-full items-center;
+          img {
+            @apply h-[281px] w-full relative;
+          }
+          &::before {
+            @apply absolute top-0 left-[-20px] w-[60%] h-[60%] z-[-1];
+            background-position: center;
+            background-size: cover;
+          }
+        }
+        .description-container {
+          @apply w-full;
+          .start-now-description {
+            @apply text-center gap-[10px];
+            h2 {
+              @apply text-[14px]/[21px];
+            }
+            h5,
+            p {
+              @apply text-[12px]/[18px] text-center;
+            }
+          }
+        }
+        .start-button-logo {
+          @apply flex-col justify-center items-center gap-[30px];
+          a {
+            @apply w-[80%] text-[12px]/[18px] py-[8px];
+            svg {
+              @apply w-[18px] h-[18px];
+            }
+          }
+        }
+      }
+      .home-media-section {
+        @apply p-[20px] gap-[20px];
         h2 {
-            @apply text-[48px]/[72px] font-black text-neutral-900;
+          @apply text-[14px]/[21px];
         }
-        .rfm-marquee-container  {
-            @apply flex justify-start overflow-hidden;
-            .rfm-marquee {
-                @apply flex justify-center;
-                .rfm-initial-child-container {
-                    @apply flex justify-between w-full;
-                }
-                .rfm-child {
-                    @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mx-[20px];
-                    box-shadow: 4px 14px 30px 0px #00000014;
-                    img {
-                        &.tempo-logo {
-                            @apply w-[92px] h-[36px];
-                        }
-                        &.kontan-logo {
-                            @apply w-[92px] h-[36px];
-                        }
-                        &.kontan-logo {
-                            @apply w-[107px] h-[36px];
-                        }
-                        &.dailysocial-logo {
-                            @apply w-[135px] h-[36px];
-                        }
-                        &.tirto-logo {
-                            @apply w-[107px] h-[36px];
-                        }
-                        &.detikfinance-logo {
-                            @apply w-[150px] h-[36px];
-                        }
-                        &.kontan-logo {
-                            @apply w-[150px] h-[36px];
-                        }
-                        &.kumparan-logo {
-                            @apply w-[127px] h-[36px];
-                        }
-                        &.suara-logo {
-                            @apply w-[142px] h-[36px];
-                        }
-                        &.beritasatu-logo {
-                            @apply w-[89px] h-[36px];
-                        }
-                        &.cnbc-logo {
-                            @apply w-[107px] h-[36px];
-                        }
-                    }
-                }
+        .rfm-marquee-container {
+          .rfm-marquee {
+            .rfm-child {
+              img {
+                @apply !w-[81.72px] !h-[22.63px];
+              }
             }
-
+          }
         }
-        @media (max-width:1280px) {
-            h2 {
-                @apply text-[35px]/[55px];
-            }
-            .rfm-marquee-container  {
-                @apply flex justify-start overflow-hidden;
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply h-[46px] p-[14px] mx-[8px];
-                        img {
-                            @apply !w-[90%] !h-[90%];
-                        }
-                    }
-                }
-    
-            }
-        }
-        @media (max-width:1180px) {
-            h2 {
-                @apply text-[30px]/[55px];
-            }
-            .rfm-marquee-container  {
-                @apply flex justify-start overflow-hidden;
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply h-[46px] p-[14px] mx-[8px];
-                        img {
-                            @apply !w-[90%] !h-[90%];
-                        }
-                    }
-                }
-    
-            }
-        }
-        @media (max-width:1080px) {
-            h2 {
-                @apply text-[25px]/[36px];
-            }
-            .rfm-marquee-container  {
-                @apply flex justify-start overflow-hidden;
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply h-[46px] p-[14px] mx-[8px];
-                        img {
-                            @apply !w-[90%] !h-[90%];
-                        }
-                    }
-                }
-    
-            }
-        }
+      }
     }
-
-    @layer components {
-        &.mobile-responsive {
-            .home-hero-section {
-                @apply h-[624px] pt-[65px] pb-0 justify-start;
-                .home-hero-section-area {
-                    @apply px-[20px] flex-col text-center;
-                    .section-text {
-                        @apply flex flex-col w-[100%] gap-[14px] items-center;
-                        .text-title {
-                            @apply flex flex-col justify-center gap-[14px] items-center;
-                            .title {
-                                @apply flex flex-col;
-                                h1 {
-                                    @apply !text-[14px]/[21px] w-[100%];
-                                }
-                            }
-                            ul {
-                                @apply flex items-center text-[#0C29C1] gap-[20px] font-bold !text-[7.24px]/[7.24px];
-                                li {
-                                    @apply flex items-center gap-[3px];
-                                    svg {
-                                        @apply !w-[15px] h-[15px];
-                                    }
-                                }
-                            }
-                            p {
-                                @apply !text-[10px]/[15px] w-[100%];
-                            }
-                        }
-                        a {
-                            @apply !text-[12px]/[18px] w-[200px] h-[34px];
-                        }
-                        .section-terdaftar {
-                            @apply flex flex-col;
-                            label  {
-                                @apply !text-[10px]/[15px] ;
-                            }
-                            .terdaftar-list-logo {
-                                @apply flex gap-[5px] items-center;
-                                .bappebti-logo {
-                                    @apply w-[60px] h-[13px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[60px] h-[20px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[37px] h-[20px];
-                                }
-                                .cisa-logo {
-                                    @apply w-[51px] h-[22px];
-                                }
-                            }
-                        }
-                    }
-                    .section-device {
-                        @apply flex-1 flex flex-col justify-center items-center relative;
-                        img {
-                            @apply !w-[408px] !h-[272px] right-0 bottom-0 relative;
-                        }
-                    }
-                }
-            }
-            .home-rancang-new-section {
-                @apply flex flex-col gap-[64px] py-[20px];
-                height: unset;
-                .home-rancang-device {
-                    @apply w-full flex flex-col items-center relative px-[20px] h-[235px];
-                    img {
-                        @apply object-contain w-full h-full;
-                    }
-                }
-                .home-rancang-description {
-                    @apply gap-[13px] items-center px-[20px] py-0;
-                    height: unset;
-                    flex: unset;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    .rancang-description-details {
-                        @apply flex flex-row gap-[21px];
-                        .rancang-description-details-sub {
-                            @apply w-1/2 items-start flex-col;
-                            .rancang-description-detail {
-                                @apply flex gap-[10px] w-full items-center flex-col justify-center;
-                                img {
-                                    @apply w-[37px] h-[37px] object-contain;
-                                }
-                                .description-detail {
-                                    @apply flex flex-col justify-start text-center;
-                                    h5 {
-                                        @apply text-[10px]/[15px];
-                                    }
-                                    p {
-                                        @apply text-[8px]/[12px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .home-index-crypto-section {
-                @apply py-[20px] px-[0px];
-                .rfm-marquee-container  {
-                    @apply flex justify-start overflow-hidden;
-                    .rfm-marquee {
-                        @apply flex justify-center;
-                        .rfm-initial-child-container {
-                            @apply flex justify-between w-full;
-                        }
-                        .rfm-child {
-                            @apply mx-[5px];
-                            .index-cyrpto-content {
-                                @apply w-[147px] h-[24px] items-center ;
-                                .crypto-title{
-                                    label {
-                                        @apply text-[8px]/[12px];
-                                    }
-                                }
-                                .crypto-index{
-                                    label {
-                                        @apply text-[8px]/[12px];
-                                        svg {
-                                            @apply w-[12px] h-[12px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
-            .home-investasi-section {
-                @apply px-[20px] py-[40px] ;
-                .investasi-section-box {
-                    @apply overflow-hidden w-full;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    .investasi-details {
-                        @apply flex-col gap-[30px];
-                        .investasi-detail {
-                            @apply w-full gap-[30px];
-                            .investasi-detail-description {
-                                h5 {
-                                    @apply text-[10px]/[15px] font-semibold;
-                                }
-                                p {
-                                    @apply text-[8px]/[12px] font-medium;
-                                }
-                            }
-                            img {
-                                @apply w-[109.67px] h-[162px];
-                            }
-                        }
-                    }
-                    &::after {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
-                    }
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
-                    }
-                }
-            
-            }
-            .home-transaksi-section {
-                @apply flex-col px-[20px] py-[40px];
-                .image-container {
-                    @apply w-full h-full  flex flex-col justify-center items-end;
-                    img {
-                        @apply  w-full h-full right-0 object-contain relative;
-                    }
-                    &::before {
-                        content: none;
-                    }
-                }
-                .description-container {
-                    @apply flex w-full h-full flex-col gap-[30px] text-center;
-                    /* flex: unset; */
-                    .start-now-description {
-                        @apply flex flex-col gap-[18px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        h5,p {
-                            @apply text-[16px]/[32px];
-                        }
-                        p {
-                           @apply font-medium
-                        }
-                    }
-                   .start-button-logo {
-                        @apply flex flex-col gap-[30px];
-                        a {
-                           @apply hidden;
-                        }
-                   }
-                }
-            }
-            
-            .home-dividen-staking-section {
-                @apply flex-col-reverse px-[30px] py-[20px] justify-center;
-                .dividen-staking-device {
-                    @apply w-full justify-center items-center;
-                    img {
-                        @apply w-[302px] h-[242px];
-                    }
-                }
-                .dividen-staking-description {
-                    @apply gap-[20px] justify-center items-center text-center;
-                    .staking-description-title {
-                        @apply flex flex-col gap-[20px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[10px]/[15px];
-                        }
-                    }
-                    a {
-                        @apply h-[34px] w-[200px] text-[12px]/[18px];
-                        svg {
-                            @apply w-[18px] h-[18px];
-                        }
-                    }
-                }
-            }
-            .home-ewallet-section {
-                @apply flex-col py-[30px] px-[20px] gap-[20px];
-                .ewallet-description {
-                    @apply justify-center items-center w-full text-center p-0;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    h5 {
-                        @apply text-[10px]/[15px];
-                    }
-                    p {
-                        @apply text-[10px]/[15px] text-center;
-                    }
-                }
-                .ewallet-image {
-                    @apply w-[246px] h-full flex flex-col justify-center items-center;
-                    img {
-                        @apply w-[246px] h-[219px] relative;
-                    }
-                }
-            }
-            .home-baru-crypto-section {
-                .home-baru-crypto-container {
-                    @apply flex-col px-[30px] py-[70px] gap-[30px] justify-center;
-                    .baru-crypto-title {
-                        @apply flex flex-col gap-[20px] justify-center text-center items-center p-0 w-full;
-                        h5 {
-                            @apply text-[14px]/[21px] font-bold text-black;
-                        }
-                        p {
-                            @apply text-[12px]/[18px] font-medium text-black;
-                        }
-                        a {
-                            @apply hidden;
-                        }
-                    }
-                    .baru-crypto-videos {
-                        @apply relative overflow-hidden w-full flex flex-col gap-[30px] justify-center items-center;
-                        .swiper {
-                            @apply w-full;
-                            .swiper-wrapper {
-                                @apply flex relative w-full gap-[20px];
-                                .swiper-slide {
-                                    @apply !w-[165px];
-                                    .crypto-thumb-video {
-                                        @apply w-[165px] flex;
-                                        .video-thumb {
-                                            img {
-                                                @apply w-[165px] h-[84px] rounded-tr-[6px] rounded-tl-[6px];
-                                            }
-                                        }
-                                       .video-title {
-                                            @apply flex flex-col gap-[14px] p-[13px];
-                                            h6 {
-                                                @apply text-[8.15px]/[12.23px];
-                                            }
-                                            a {
-                                                @apply text-[6.79px]/[10.19px] h-[15.44px];
-                                            }
-                                       }
-                                    }
-                                }
-                            }
-                        }
-                        a {
-                            @apply flex items-center justify-center gap-[8px] bg-primary text-white text-[12px]/[18px] font-bold rounded-[30px] w-[200px] h-[34px];
-                            svg {
-                                @apply w-[18px] h-[18px];
-                                path {
-                                    @apply fill-white;
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
-            .home-buy-sell-assets-section  {
-                @apply py-[30px] px-[20px] gap-[20px] flex-col;
-                .image-container {
-                    @apply relative h-full w-full items-center;
-                    img {
-                        @apply h-[281px] w-full relative;
-                    }
-                    &::before {
-                        @apply absolute top-0 left-[-20px] w-[60%] h-[60%] z-[-1];
-                        background-position: center;
-                        background-size: cover;
-                    }
-                }
-                .description-container {
-                    @apply w-full;
-                    .start-now-description {
-                        @apply text-center gap-[10px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        h5,p {
-                            @apply text-[12px]/[18px] text-center;
-                        }
-                    }
-                }
-                .start-button-logo {
-                    @apply flex-col justify-center items-center gap-[30px];
-                    a {
-                        @apply w-[80%] text-[12px]/[18px] py-[8px];
-                        svg {
-                            @apply w-[18px] h-[18px];
-                        }
-                    }
-                }
-            }
-            .home-media-section {
-                @apply p-[20px] gap-[20px];
-                h2 {
-                    @apply text-[14px]/[21px];
-                }
-                .rfm-marquee-container  {
-                    .rfm-marquee {
-                        .rfm-child {
-                            img {
-                                @apply !w-[81.72px] !h-[22.63px];
-                            }
-                        }
-                    }
-        
-                }
-            }
-        } 
-    }
+  }
 }
