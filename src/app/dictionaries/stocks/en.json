@@ -1,119 +1,119 @@
 {
-    "hero_section" : {
-        "title_1" : "Trade Various",
-        "title_2" : "United States (US) Stocks",
-        "title_3" : "on Triv",
-        "title" : "Trade various US Stocks with Triv.",
-        "subtitle" : "Since 2015, low spread, 24/7 online",
-        "description" : "US stocks trading services are provided by PT. Alpha C. Berjangka, a broker licensed and regulated by Bappebti. PT. Alpha is a subsidiary of PT. Tiga Inti Utama",
-        "sub_description": "Registered and supervised by",
-        "button_text" : "Start Now",
-        "details_1" : "Since 2015",
-        "details_2" : "  Spread",
-        "details_3" : "24/7 Online"
+  "hero_section": {
+    "title_1": "Trading Various",
+    "title_2": "United States (US) Stocks",
+    "title_3": "on Triv",
+    "title": "Trading various US Stocks with Triv.",
+    "subtitle": "Since 2015, low spread, 24/7 online",
+    "description": "US stocks trading services are provided by PT. Alpha C. Berjangka, a broker licensed and regulated by Bappebti. PT. Alpha is a subsidiary of PT. Tiga Inti Utama",
+    "sub_description": "Registered and supervised by",
+    "button_text": "Start Now",
+    "details_1": "Since 2015",
+    "details_2": "  Spread",
+    "details_3": "24/7 Online"
+  },
+  "register_section": {
+    "title": "Trading various US Stocks on Triv.",
+    "subtitle": "Since 2015, low spread, 24/7 online",
+    "description": "Tokenized stock is regulated by BAPPEBTI within letter no. 11 / 2022. Triv is supervised and regulated by BAPPEBTI",
+    "button_text": "Sign Up"
+  },
+  "why_section": {
+    "title_1": "Why",
+    "title_2": "Trade",
+    "title_3": "US Stocks On Triv?",
+    "title": "Why Trade US Stocks on Triv?",
+    "description": "We Have Been Trusted by Millions of Indonesians to Invest and Trade",
+    "founded": {
+      "text": "Since 2015",
+      "value": "2015"
     },
-    "register_section" : {
-        "title" : "Trade various US Stocks on Triv.",
-        "subtitle" : "Since 2015, low spread, 24/7 online",
-        "description" : "Tokenized stock is regulated by BAPPEBTI within letter no. 11 / 2022. Triv is supervised and regulated by BAPPEBTI",
-        "button_text" : "Sign Up"
+    "user_registered": {
+      "text": "Registered users",
+      "value": "2M+"
     },
-    "why_section" : {
-        "title_1" : "Why",
-        "title_2" : "Trade",
-        "title_3" : "US Stocks On Triv?",
-        "title" : "Why Trade US Stocks on Triv?",
-        "description" : "We Have Been Trusted by Millions of Indonesians to Invest and Trade",
-        "founded" : {
-            "text" : "Since 2015",
-            "value" : "2015"
-        },
-        "user_registered" : {
-            "text" : "Registered users",
-            "value" : "2M+"
-        },
-        "asset" : {
-            "text" : "US Stocks Assets Options",
-            "value" : "700+"
-        }
-    },
-    "dividen_section" : {
-        "title_1" : "Earn",
-        "title_2" : "Dividends",
-        "title_3" : " from US Stock Investments",
-        "subtitle": "US stock dividends can be an effective strategy for building your portfolio and achieving long-term financial goals. At TRIV, you can get information about dividends and dividend distribution dates.",
-        "button": "Regsiter Now"
-    },
-    "buy_section" : {
-        "title_1" : "Buy American (US) Stocks Starting From Just",
-        "title_2" : "IDR 50k",
-        "title_3" : "!",
-        "subtitle": "At TRIV, you can buy American (US) Stocks in fractional amounts, not necessarily 1 lot. With only IDR 50,000, get access to the stocks of the largest and most influential US companies in the world. Change the way you invest—starting today.",
-        "button": "Regsiter Now"
-    },
-    "regulated_insured_section" : {
-        "title" : "Regulated and Insured",
-        "hour_insured" : {
-            "title" : "24/7, No Downtime No Maintenance",
-            "description" : "Triv uses cutting-edge technology and ensures that you can trade with low latency. Unlike traditional stock markets, Triv's stock market is open 24 hours a day, 7 days a week."
-        },
-        "spread_insured" : {
-            "title" : "Low Spread",
-            "description" : "Triv is a low spread broker, with our high liquidity, we have helped millions of people to execute a wide variety of our users' trading strategies to the fullest."
-        }
-    },
-    "calculator_section" : {
-        "title": "Triv with multiple payment methods",
-        "description": "Triv Is Integrated To 61 Banks In Indonesia And Various E-Wallet Such As Gopay, Shopee, OVO And DANA. Get Your Balance Topup And Withdrawal Instantly 24/7",
-        "payment_method" : "Payment Method",
-        "amount" : "Amount",
-        "button_text": "Deposit"
-    },
-    "ewallet_section": {
-        "title_1" : "Triv Supports",
-        "title_2" : "61 Banks & E-wallets",
-        "title_3" : "in Indonesia for All Our Transactions",
-        "title" : "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
-        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! no need to wait until the next day. Unlike the stock market and mutual funds, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including holidays.",
-        "description_1" : "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
-        "description_2" : "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
-    },
-    "faq_section": {
-        "title_1" : "FAQ",
-        "title_2" : "(US Stock Trading Questions)",
-        "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
-        "questions" : [
-            {
-                "title" : "What Are American Stocks?",
-                "description": "American stocks offer an opportunity for investors to invest in or trade shares of various US companies."
-            },
-            {
-                "title" : "Will I Earn Dividends from U.S. Stocks?",
-                "description": "Yes, all the stocks you invest in will pay dividends on the dates determined by the company."
-            },
-            {
-                "title" : "Who is allowed to trade?",
-                "description": "Anyone aged 17 or older who holds a KTP can register and trade tokenized stocks on Triv."
-            },
-            {
-                "title" : "Are there any additional costs?",
-                "description": "Besides the trading fee imposed by Triv, there are no additional costs to trade tokenized stocks."
-            },
-            {
-                "title" : "Are there any limitations?",
-                "description": "The sky is your limit!Tokenized stocks reflect the price of shares on traditional brokers. You can trade as much as you like, or HODL and invest based on your preferences."
-            }
-        ]
-    },
-    "register_now_section": {
-        "title": "Trading Buying and Selling Various US Stocks on Triv Now",
-        "description": "Start as little as just 3$ and pay with various payment options",
-        "button_text" : "Start Now"
-    },
-    "banner_section": {
-        "title": "Trading Buy Sell Various American Stocks on Triv Now",
-        "subtitle" : "Starting from only 50 thousand rupiah.",
-        "button_text": "Start Now"
+    "asset": {
+      "text": "US Stocks Assets Options",
+      "value": "700+"
     }
+  },
+  "dividen_section": {
+    "title_1": "Earn",
+    "title_2": "Dividends",
+    "title_3": " from US Stock Investments",
+    "subtitle": "US stock dividends can be an effective strategy for building your portfolio and achieving long-term financial goals. At TRIV, you can get information about dividends and dividend distribution dates.",
+    "button": "Regsiter Now"
+  },
+  "buy_section": {
+    "title_1": "Buy American (US) Stocks Starting From Just",
+    "title_2": "IDR 50k",
+    "title_3": "!",
+    "subtitle": "At TRIV, you can buy American (US) Stocks in fractional amounts, not necessarily 1 lot. With only IDR 50,000, get access to the stocks of the largest and most influential US companies in the world. Change the way you invest—starting today.",
+    "button": "Regsiter Now"
+  },
+  "regulated_insured_section": {
+    "title": "Regulated and Insured",
+    "hour_insured": {
+      "title": "24/7, No Downtime No Maintenance",
+      "description": "Triv uses cutting-edge technology and ensures that you can trade with low latency. Unlike traditional stock markets, Triv's stock market is open 24 hours a day, 7 days a week."
+    },
+    "spread_insured": {
+      "title": "Low Spread",
+      "description": "Triv is a low spread broker, with our high liquidity, we have helped millions of people to execute a wide variety of our users' trading strategies to the fullest."
+    }
+  },
+  "calculator_section": {
+    "title": "Triv with multiple payment methods",
+    "description": "Triv Is Integrated To 61 Banks In Indonesia And Various E-Wallet Such As Gopay, Shopee, OVO And DANA. Get Your Balance Topup And Withdrawal Instantly 24/7",
+    "payment_method": "Payment Method",
+    "amount": "Amount",
+    "button_text": "Deposit"
+  },
+  "ewallet_section": {
+    "title_1": "Triv Supports",
+    "title_2": "61 Banks & E-wallets",
+    "title_3": "in Indonesia for All Our Transactions",
+    "title": "Triv Supports 61 banks & E-wallets in Indonesia for all our transactions",
+    "subtitle": "24/7 Real Time Deposit & Withdrawal",
+    "description": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets. Need funds in the middle of the night? Done! no need to wait until the next day. Unlike the stock market and mutual funds, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including holidays.",
+    "description_1": "All Triv rupiah deposits and withdrawals are processed instantly within minutes to various banks and e-wallets.",
+    "description_2": "Need funds in the middle of the night? Done! No need to wait until the next day.Unlike the stock and mutual fund markets, digital assets do not have holidays, all deposit and withdrawal transactions are processed 24 hours including on holidays."
+  },
+  "faq_section": {
+    "title_1": "FAQ",
+    "title_2": "(US Stock Trading Questions)",
+    "title": "FAQ (Pertanyaan Terkait Crypto Staking)",
+    "questions": [
+      {
+        "title": "What Are American Stocks?",
+        "description": "American stocks offer an opportunity for investors to invest in or trade shares of various US companies."
+      },
+      {
+        "title": "Will I Earn Dividends from U.S. Stocks?",
+        "description": "Yes, all the stocks you invest in will pay dividends on the dates determined by the company."
+      },
+      {
+        "title": "Who is allowed to trade?",
+        "description": "Anyone aged 17 or older who holds a KTP can register and trade tokenized stocks on Triv."
+      },
+      {
+        "title": "Are there any additional costs?",
+        "description": "Besides the trading fee imposed by Triv, there are no additional costs to trade tokenized stocks."
+      },
+      {
+        "title": "Are there any limitations?",
+        "description": "The sky is your limit!Tokenized stocks reflect the price of shares on traditional brokers. You can trade as much as you like, or HODL and invest based on your preferences."
+      }
+    ]
+  },
+  "register_now_section": {
+    "title": "Trading Buying and Selling Various US Stocks on Triv Now",
+    "description": "Start as little as just 3$ and pay with various payment options",
+    "button_text": "Start Now"
+  },
+  "banner_section": {
+    "title": "Trading Buy Sell Various American Stocks on Triv Now",
+    "subtitle": "Starting from IDR 50.000",
+    "button_text": "Start Now"
+  }
 }
