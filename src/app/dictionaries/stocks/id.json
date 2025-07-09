@@ -1,120 +1,119 @@
 {
-    "hero_section" : {
-        "title_1" : "Trading Berbagai",
-        "title_2" : "Saham Amerika Serikat",
-        "title_3" : "(AS) di Triv",
-        "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
-        "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
-        "description" : "Layanan perdagangan saham AS disediakan oleh PT. Alpha C. Berjangka, sebuah broker yang berlisensi dan diawasi oleh Bappebti. PT. Alpha merupakan anak perusahaan dari PT. Tiga Inti Utama.",
-        "sub_description": "Terdaftar dan diawasi oleh",
-        "button_text" : "Daftar Sekarang",
-        "details_1" : "Sejak 2015",
-        "details_2" : "Spread Rendah",
-        "details_3" : "24/7 Online"
+  "hero_section": {
+    "title_1": "Trading Berbagai",
+    "title_2": "Saham Amerika Serikat",
+    "title_3": "(AS) di Triv",
+    "title": "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
+    "subtitle": "Sejak 2015, spread rendah, 24/7 online",
+    "description": "Layanan perdagangan saham AS disediakan oleh PT. Alpha C. Berjangka, sebuah broker yang berlisensi dan diawasi oleh Bappebti. PT. Alpha merupakan anak perusahaan dari PT. Tiga Inti Utama.",
+    "sub_description": "Terdaftar dan diawasi oleh",
+    "button_text": "Daftar Sekarang",
+    "details_1": "Sejak 2015",
+    "details_2": "Spread Rendah",
+    "details_3": "24/7 Online"
+  },
+  "register_section": {
+    "title": "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
+    "subtitle": "Sejak 2015, spread rendah, 24/7 online",
+    "description": "Token saham diregulasi oleh BAPPEBTI berdasarkan surat nomor 11/2022. Triv terdaftar dan diawasi oleh BAPPEBTI",
+    "button_text": "Daftar Sekarang"
+  },
+  "why_section": {
+    "title_1": "Kenapa Harus",
+    "title_2": "Trading",
+    "title_3": "Saham AS Di Triv?",
+    "title": "Kenapa Harus Trading Saham AS Di Triv?",
+    "description": "Kami telah dipercaya oleh jutaan orang untuk berinvestasi dan bertransaksi.",
+    "founded": {
+      "text": "Berdiri Sejak",
+      "value": "2015"
     },
-    "register_section" : {
-        "title" : "Trading Berbagai Saham Amerika Serikat (AS) di Triv",
-        "subtitle" : "Sejak 2015, spread rendah, 24/7 online",
-        "description" : "Token saham diregulasi oleh BAPPEBTI berdasarkan surat nomor 11/2022. Triv terdaftar dan diawasi oleh BAPPEBTI",
-        "button_text" : "Daftar Sekarang"
+    "user_registered": {
+      "text": "Pengguna Terdaftar",
+      "value": "2M+"
     },
-    "why_section" : {
-        "title_1" : "Kenapa Harus",
-        "title_2" : "Trading",
-        "title_3" : "Saham AS Di Triv?",
-        "title" : "Kenapa Harus Trading Saham AS Di Triv?",
-        "description" : "Kami telah dipercaya oleh jutaan orang untuk berinvestasi dan bertransaksi.",
-        "founded" : {
-            "text" : "Berdiri Sejak",
-            "value" : "2015"
-        },
-        "user_registered" : {
-            "text" : "Pengguna Terdaftar",
-            "value" : "2M+"
-        },
-        "asset" : {
-            "text" : "Aset Pilihan Saham AS",
-            "value" : "700+"
-        }
-    },
-    "dividen_section" : {
-        "title_1" : "Dapatkan",
-        "title_2" : "Dividen",
-        "title_3" : "dari Investasi Saham AS",
-        "subtitle": "Dividen saham AS bisa menjadi strategi yang efektif untuk membangun portfolio-mu dan mencapai tujuan keuangan jangka panjang. Di TRIV, kamu bisa mendapatkan informasi seputar dividen dan tanggal distribusi dividen.",
-        "button": "Daftar Sekarang"
-    },
-    "buy_section" : {
-        "title_1" : "Beli Saham Amerika (AS) Mulai Dari",
-        "title_2" : "50 Ribu",
-        "title_3" : "Saja!",
-        "subtitle": "Di TRIV, kamu bisa beli Saham Amerika (AS) dalam bentuk fraksional, tidak harus 1 lot.  Hanya dengan IDR 50.000, dapatkan akses ke saham-saham perusahaan AS terbesar dan paling berpengaruh di dunia. Ubah cara kamu berinvestasi—mulai hari ini.",
-        "button": "Daftar Sekarang"
-    },
-    "regulated_insured_section" : {
-        "title" : "Teregulasi dan Terasuransi",
-        "hour_insured" : {
-            "title" : "24/7, Tanpa downtime Tanpa maintenance.",
-            "description" : "Triv menggunakan teknologi terdepan dan memastikan anda dapat melakukan trading dengan latensi rendah. Tidak seperti pasar saham tradisional, pasar saham Triv buka 24 jam tanpa hari libur."
-        },
-        "spread_insured" : {
-            "title" : "Spread Rendah",
-            "description" : "Triv adalah broker dengan spread rendah, dengan likuiditas kami yang tinggi, kami telah membantu jutaan orang untuk mengeksekusi berbagai macam strategi trading pengguna kami dengan maksimal."
-        }
-    },
-    "calculator_section" : {
-        "title": "Lihat berapa banyak yang bisa Anda hasilkan🚀",
-        "description": "Triv terintegrasi ke 100 bank di Indonesia dan berbagai e-wallet seperti Gopay, Shopeepay, OVO dan Dana. Topup dan tarik dana secara real-time dan instant 24/7 tanpa hari libur!",
-        "payment_method" : "Metode Pembayaran",
-        "amount" : "Jumlah",
-        "button_text": "Deposit"
-
-    },
-    "ewallet_section": {
-        "title_1" : "Triv Mendukung",
-        "title_2" : "Lebih dari 61 bank & E-wallet",
-        "title_3" : "di Indonesia untuk Semua Transaksi Kami",
-        "title" : "Triv Mendukung 61 bank & E-wallet di Indonesia untuk semua transaksi kami",
-        "subtitle" : "24/7 Real Time Deposit & Withdrawal",
-        "description" : "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet. Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.",
-        "description_1": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.",
-        "description_2" : "Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
-    },
-    "faq_section": {
-        "title_1" : "FAQ",
-        "title_2" : "(Pertanyaan Umum tentang Perdagangan Saham AS)",
-        "title" : "FAQ (Pertanyaan Terkait Crypto Staking)",
-        "questions" : [
-            {
-                "title" : "Apa itu Saham Amerika?",
-                "description": "Saham Amerika memberikan peluang bagi investor untuk berinvestasi atau memperdagangkan saham dari berbagai perusahaan di Amerika Serikat."
-            },
-            {
-                "title" : "Apakah Saya Akan Mendapatkan Dividen dari Saham AS?",
-                "description": "Ya, semua saham yang Anda investasikan akan membagikan dividen pada tanggal yang telah ditentukan oleh perusahaan."
-            },
-            {
-                "title" : "Siapa yang Diizinkan untuk Berdagang?",
-                "description": "Siapa pun yang berusia 17 tahun ke atas dan memiliki KTP dapat mendaftar dan memperdagangkan saham token di Triv."
-            },
-            {
-                "title" : "Apakah Ada Biaya Tambahan?",
-                "description": "Selain biaya transaksi yang dikenakan oleh Triv, tidak ada biaya tambahan untuk memperdagangkan saham token."
-            },
-            {
-                "title" : "Apakah Ada Batasan?",
-                "description": "Tidak ada batasan! Saham token mencerminkan harga saham di broker tradisional. Anda dapat berdagang sebanyak yang Anda inginkan, atau HODL dan berinvestasi sesuai preferensi Anda."
-            }
-        ]
-    },
-    "register_now_section": {
-        "title": "Trading Jual Beli Berbagai Saham Amerika di Triv Sekarang",
-        "description": "Mulai hanya dengan 50rb rupiah.",
-        "button_text" : "Daftar Sekarang"
-    },
-    "banner_section": {
-        "title": "Trading Jual Beli Berbagai Saham Amerika di Triv Sekarang",
-        "subtitle" : "Mulai hanya dengan IDR 50.000.",
-        "button_text": "Mulai Sekarang"
+    "asset": {
+      "text": "Aset Pilihan Saham AS",
+      "value": "700+"
     }
+  },
+  "dividen_section": {
+    "title_1": "Dapatkan",
+    "title_2": "Dividen",
+    "title_3": "dari Investasi Saham AS",
+    "subtitle": "Dividen saham AS bisa menjadi strategi yang efektif untuk membangun portfolio-mu dan mencapai tujuan keuangan jangka panjang. Di TRIV, kamu bisa mendapatkan informasi seputar dividen dan tanggal distribusi dividen.",
+    "button": "Daftar Sekarang"
+  },
+  "buy_section": {
+    "title_1": "Beli Saham Amerika (AS) Mulai Dari",
+    "title_2": "50 Ribu",
+    "title_3": "Saja!",
+    "subtitle": "Di TRIV, kamu bisa beli Saham Amerika (AS) dalam bentuk fraksional, tidak harus 1 lot.  Hanya dengan IDR 50.000, dapatkan akses ke saham-saham perusahaan AS terbesar dan paling berpengaruh di dunia. Ubah cara kamu berinvestasi—mulai hari ini.",
+    "button": "Daftar Sekarang"
+  },
+  "regulated_insured_section": {
+    "title": "Teregulasi dan Terasuransi",
+    "hour_insured": {
+      "title": "24/7, Tanpa downtime Tanpa maintenance.",
+      "description": "Triv menggunakan teknologi terdepan dan memastikan anda dapat melakukan trading dengan latensi rendah. Tidak seperti pasar saham tradisional, pasar saham Triv buka 24 jam tanpa hari libur."
+    },
+    "spread_insured": {
+      "title": "Spread Rendah",
+      "description": "Triv adalah broker dengan spread rendah, dengan likuiditas kami yang tinggi, kami telah membantu jutaan orang untuk mengeksekusi berbagai macam strategi trading pengguna kami dengan maksimal."
+    }
+  },
+  "calculator_section": {
+    "title": "Lihat berapa banyak yang bisa Anda hasilkan🚀",
+    "description": "Triv terintegrasi ke 100 bank di Indonesia dan berbagai e-wallet seperti Gopay, Shopeepay, OVO dan Dana. Topup dan tarik dana secara real-time dan instant 24/7 tanpa hari libur!",
+    "payment_method": "Metode Pembayaran",
+    "amount": "Jumlah",
+    "button_text": "Deposit"
+  },
+  "ewallet_section": {
+    "title_1": "Triv Mendukung",
+    "title_2": "Lebih dari 61 bank & E-wallet",
+    "title_3": "di Indonesia untuk Semua Transaksi Kami",
+    "title": "Triv Mendukung 61 bank & E-wallet di Indonesia untuk semua transaksi kami",
+    "subtitle": "24/7 Real Time Deposit & Withdrawal",
+    "description": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet. Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur.",
+    "description_1": "Seluruh deposit dan penarikan rupiah Triv diproses secara instant dalam hitungan menit ke berbagai bank dan e-wallet.",
+    "description_2": "Butuh dana tengah malam? Done! tidak perlu menunggu hingga esok harinya.Berbeda dengan pasar saham dan reksa dana, Aset digital tidak memiliki hari libur, seluruh transaksi deposit dan penarikan diproses 24 jam termasuk pada hari libur."
+  },
+  "faq_section": {
+    "title_1": "FAQ",
+    "title_2": "(Pertanyaan Umum tentang Perdagangan Saham AS)",
+    "title": "FAQ (Pertanyaan Terkait Crypto Staking)",
+    "questions": [
+      {
+        "title": "Apa itu Saham Amerika?",
+        "description": "Saham Amerika memberikan peluang bagi investor untuk berinvestasi atau memperdagangkan saham dari berbagai perusahaan di Amerika Serikat."
+      },
+      {
+        "title": "Apakah Saya Akan Mendapatkan Dividen dari Saham AS?",
+        "description": "Ya, semua saham yang Anda investasikan akan membagikan dividen pada tanggal yang telah ditentukan oleh perusahaan."
+      },
+      {
+        "title": "Siapa Yang Diperbolehkan Trading?",
+        "description": "Siapa pun yang berusia 17 tahun ke atas dan memiliki KTP dapat mendaftar dan memperdagangkan saham token di Triv."
+      },
+      {
+        "title": "Apakah Ada Biaya Tambahan?",
+        "description": "Triv tidak membebankan biaya bulanan maupun biaya berlangganan. Biaya yang dikenakan kepada pengguna hanyalah biaya trading, sehingga Anda bebas memilih untuk berinvestasi jangka panjang atau berspekulasi dalam jangka pendek."
+      },
+      {
+        "title": "Apakah ada limitasi?",
+        "description": "Tidak ada batasan apapun dalam keputusan perdagangan Anda. Triv menyediakan lebih dari 80 indikator yang dapat Anda gunakan untuk membantu pengambilan keputusan perdagangan."
+      }
+    ]
+  },
+  "register_now_section": {
+    "title": "Trading Jual Beli Berbagai Saham Amerika di Triv Sekarang",
+    "description": "Mulai hanya dengan 50rb rupiah.",
+    "button_text": "Daftar Sekarang"
+  },
+  "banner_section": {
+    "title": "Trading Jual Beli Berbagai Saham Amerika di Triv Sekarang",
+    "subtitle": "Mulai hanya dengan IDR 50.000.",
+    "button_text": "Mulai Sekarang"
+  }
 }
