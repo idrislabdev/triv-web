@@ -32,31 +32,31 @@
       "jual_beli": {
         "title": "Jual dan Beli Polkadot 24 jam",
         "content": "Tidak seperti instrumen investasi tradisional, pasar Kripto tidak memiliki hari libur Anda dapat menjual Polkadot anda secara real-time ke bank / e-wallet dalam hitungan detik bahkan pada hari libur.",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/polkadot/buy-polkadot.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Kirim Polkadot",
         "content": "Kirim Polkadot ke seluruh dunia secara instan, Kripto adalah uang masa depan. Anda juga dapat mengirim Polkadot ke sesama pengguna Triv dengan gratis tanpa biaya apapun!",
-        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_url": "/images/services/polkadot/send-polkadot.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Terima Polkadot",
         "content": "Terima Polkadot dari seluruh dunia ke akun Triv anda secara instan. Kripto adalah ekosistem finansial tanpa batasan.",
-        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_url": "/images/services/polkadot/receive-polkadot.png",
         "image_class": "iphone"
       },
       "hoddl": {
         "title": "HODL Polkadot",
         "content": "Tahukah kamu? Secara historis terbukti bahwa HODLER DOT mendapatkan return lebih tinggi daripada trader DOT. Simpan DOTmu di Triv dengan asuransi dari Bitgo & Lloyd England hingga 100jt USD atau setara 1,45 Triliun Rupiah",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/polkadot/hodl-polkadot.png",
         "image_class": "macbook"
       },
       "swap": {
         "title": "Swap Polkadot",
         "content": "triv mendukung lebih dari 1000+ cryptocurrency dalam platform kami dan terus bertambah. Butuh koin lain? Swap ke berbagai macam aset digital lain secara real-time 24/7 di Triv",
-        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_url": "/images/services/polkadot/swap-polkadot.png",
         "image_class": "iphone"
       },
       "isi_pulsa": {

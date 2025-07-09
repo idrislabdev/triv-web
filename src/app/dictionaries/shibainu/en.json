@@ -32,19 +32,19 @@
       "jual_beli": {
         "title": "Buy and sell Shiba Inu 24 hours",
         "content": "Unlike traditional investment instruments, Triv has no holidays. You can buy and sell your Shiba Inu balance in real-time with banks or e-wallets in seconds even on holidays.",
-        "image_url": "/images/services/macbook-bitcoin.png",
+        "image_url": "/images/services/shibainu/buy-shibainu.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Send Shiba Inu",
         "content": "Send Shiba Inu worldwide instantly, Crypto is the money of the future. You can also send Shiba Inu to fellow Triv users for free without any fees!",
-        "image_url": "/images/services/iphone-send-kripto.png",
+        "image_url": "/images/services/shibainu/send-shibainu.png",
         "image_class": "iphone"
       },
       "terima": {
         "title": "Receive Shiba Inu",
         "content": "Receive Shiba Inu from all over the world to your Triv account instantly. Crypto is a financial ecosystem without borders.",
-        "image_url": "/images/services/iphone-receive-bitcoin.png",
+        "image_url": "/images/services/shibainu/receive-shibainu.png",
         "image_class": "iphone"
       },
       "hoddl": {
@@ -56,7 +56,7 @@
       "swap": {
         "title": "Swap Shiba Inu",
         "content": "Triv supports over 1000 cryptocurrencies on our platform and growing. Need another coin? Swap to a variety of other digital assets in real-time 24/7 on Triv.",
-        "image_url": "/images/services/iphone-bitcoin.png",
+        "image_url": "/images/services/shibainu/swap-shibainu.png",
         "image_class": "iphone"
       },
       "isi_pulsa": {
