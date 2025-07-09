@@ -3,1988 +3,1996 @@
 @tailwind utilities;
 
 .dark-theme {
-    .futures-page {
-        @apply !bg-[#000000];
-        h1, h2, h3, h4, h5, h6 {
-        @apply !text-slate-200;
-        }
-        p,label,span,a {
-            @apply !text-slate-300;
-        }
-        .futures-index-crypto-section {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        .index-cyrpto-content {
-                            @apply !border-[#2E3339];
-                            .crypto-title{
-                                label {
-                                    @apply !text-[#838899];
-                                    span {
-                                        @apply !text-[#838899];
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .futures-why-crypto-section {
-             &::before {
-                content: '';
-                @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center z-0;
-                background: url("/images/backgrounds/title-background.png") no-repeat;
-                background-position: center;
-                background-size: cover;
-                position: absolute;
-                
-            }
-            .swiper-why {
-                .swiper {
-                    .swiper-wrapper {
-                        .background-container {
-                            .image-subcontainer {
-                                &::before {
-                                    @apply bg-black !bg-opacity-80;
-                                }
-                            }
-                            .area-subcontainer {
-                                .img-area {
-                                    @apply border-[#2E3339];
-                                };
-                                .text-area {
-                                    h5 {
-                                        @apply !text-white;
-                                    }
-                                    p {
-                                        @apply !text-[#C1C3CC];
-                                    }
-                                }
-                            }
-                        }
-                        &.swiper-slide-active {
-                            .background-container {
-                                .image-subcontainer {
-                                    @apply border-[#275575];
-                                    &::before {
-                                        @apply bg-opacity-80;
-                                    }
-                                }
-                                .area-subcontainer {
-                                    .text-area {
-                                        h5,p {
-                                            @apply !text-white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            } 
-        }
-        .futures-list-coin-section {
-            .main-container {
-                .subcontainer {
-                    .list-coin {
-                        @apply !border-[#4B5060];
-                    }
-                }
-            }
-        }
-        .futures-pemisahan-section {
-            .main-container {
-                .title-subcontainer {
-                    p {
-                        @apply !text-[#C1C3CC];
-                    }
-                }
-                .subcontainer {
-                    ul {
-                        @apply !bg-[#111111] ;
-                        li {
-                            &.active {
-                                @apply !text-white !bg-[#000000];
-                            }
-                        }
-                    }
-                    .images {
-                        &::before {
-                            content: '';
-                            @apply  w-full h-[800px] relative flex flex-col justify-start items-center text-center;
-                            background: url("/images/backgrounds/title-background.png") no-repeat;
-                            background-position: center;
-                            background-size: cover;
-                            position: absolute;
-                        }
-                        .img-area {
-                            @apply w-[288px] h-[600px] relative;
-                            &.overview {
-                                content: '';
-                                background: url("/images/futures/iphone-overview-black.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            &.spot {
-                                content: '';
-                                background: url("/images/futures/iphone-spot-black.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            &.futures {
-                                content: '';
-                                background: url("/images/futures/iphone-futures-black.png") no-repeat !important;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            &::after {
-                                @apply !bg-black bg-opacity-70;
-                            }
-                            &.active {
-                                &::after {
-                                    @apply  !bg-opacity-0;
-                                }
-                            }
-                        }
-                    }   
-                }
-            }
-        }
+  .futures-page {
+    @apply !bg-[#000000];
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply !text-slate-200;
     }
-}
-.futures-page {
-    @apply py-0;
-    .futures-hero-section {
-        @apply h-[700px] relative overflow-hidden flex flex-col justify-center;
-        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures.png") no-repeat;
-        background-size: cover;
-        background-position:center ;
-        .futures-hero-section-area {
-            @apply h-full flex px-[100px] max-w-container mx-auto items-center relative;
-            .section-text {
-                @apply flex flex-col w-[65%] gap-[40px] z-[1];
-                .text-title {
-                    @apply flex flex-col gap-[28px];
-                    .title {
-                        @apply flex flex-col w-[90%];
-                        h1 {
-                            @apply text-[60px]/[140%] text-white font-semibold w-full;
-                        }
-                        span {
-                           @apply !text-primary;
-                        }
-                    }
-                    p {
-                        @apply text-[20px]/[150%] font-medium !text-primary;
-                    }
-                }
-                a {
-                    @apply bg-primary !text-white w-[260px] h-[48px] text-[16px]/[150%] font-bold flex items-center justify-center rounded-[8px];
-                }
-                .terdaftar {
-                    @apply flex items-center gap-[30px];
-                    h5 {
-                        @apply text-[16px]/[200%] font-medium text-white;
-                    }
-                    .logo-area {
-                        @apply flex items-center gap-[14px];
-                        .bappebti-logo {
-                            img {
-                                @apply w-[105px] h-[24px];
-                            }
-                        }
-                        .cfx-logo {
-                            img {
-                                @apply w-[51px] h-[20px];
-                            }
-                        }
-                        .kki-logo {
-                            img {
-                                @apply w-[71px] h-[25px];
-                            }
-                        }
-                    }
-                }
-
-            }
-            .section-image {
-                @apply relative w-[586px] h-full;
-                img {
-                    &.img-device {
-                        @apply w-full object-contain absolute bottom-0;
-                    }
-                    &.img-bitcoin {
-                        @apply  w-[111px] h-[113px] absolute right-[370px] top-[30%];
-                    }
-                    &.img-etherium {
-                        @apply  w-[87px] h-[87px] absolute right-[470px] top-[50%];
-                    }
-                    &.img-litecoin {
-                        @apply  w-[76px] h-[76px] absolute right-[-5px] top-[38%];
-                    }
-                    &.img-monero {
-                        @apply  w-[67px] h-[67px] absolute right-[-30px] top-[70%];
-                    }
-                }    
-            }
-           
-        }
-        @media (max-width:1280px) {
-            @apply h-[600px];
-            .futures-hero-section-area {
-                .section-text {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[45px]/[140%];
-                            }
-                        }
-                        p {
-                            @apply text-[18px]/[150%];
-                        }
-                    }
-                    a {
-                        @apply w-[240px] h-[43px] text-[14px]/[150%];
-                    }
-                    .terdaftar {
-                        h5 {
-                            @apply text-[14px]/[200%];
-                        }
-                        .logo-area {
-                            .bappebti-logo {
-                                img {
-                                    @apply w-[100px] h-[22px];
-                                }
-                            }
-                            .cfx-logo {
-                                img {
-                                    @apply w-[45px] h-[18px];
-                                }
-                            }
-                            .kki-logo {
-                                img {
-                                    @apply w-[64px] h-[22.5px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    @apply w-[500px];
-                    img {
-                        &.img-bitcoin {
-                            @apply  w-[80px] h-[83px] absolute right-[330px] top-[35%];
-                        }
-                        &.img-etherium {
-                            @apply  w-[67px] h-[67px] absolute right-[400px] top-[70%];
-                        }
-                        &.img-litecoin {
-                            @apply  w-[56px] h-[56px] absolute right-[0px] top-[42%];
-                        }
-                        &.img-monero {
-                            @apply  w-[47px] h-[47px] absolute right-[-5px] top-[80%];
-                        }
-                    }   
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            @apply h-[600px];
-            .futures-hero-section-area {
-                .section-text {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[40px]/[140%];
-                            }
-                        }
-                        p {
-                            @apply text-[18px]/[150%];
-                        }
-                    }
-                    a {
-                        @apply w-[240px] h-[43px] text-[14px]/[150%];
-                    }
-                    .terdaftar {
-                        h5 {
-                            @apply text-[14px]/[200%];
-                        }
-                        .logo-area {
-                            .bappebti-logo {
-                                img {
-                                    @apply w-[100px] h-[22px];
-                                }
-                            }
-                            .cfx-logo {
-                                img {
-                                    @apply w-[45px] h-[18px];
-                                }
-                            }
-                            .kki-logo {
-                                img {
-                                    @apply w-[64px] h-[22.5px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    @apply w-[500px];
-                    img {
-                        &.img-bitcoin {
-                            @apply  w-[80px] h-[83px] absolute right-[330px] top-[35%];
-                        }
-                        &.img-etherium {
-                            @apply  w-[67px] h-[67px] absolute right-[400px] top-[70%];
-                        }
-                        &.img-litecoin {
-                            @apply  w-[56px] h-[56px] absolute right-[0px] top-[42%];
-                        }
-                        &.img-monero {
-                            @apply  w-[47px] h-[47px] absolute right-[-5px] top-[80%];
-                        }
-                    }   
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            @apply h-[530px];
-            .futures-hero-section-area {
-                .section-text {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[31px]/[140%];
-                            }
-                        }
-                        p {
-                            @apply text-[16px]/[150%];
-                        }
-                    }
-                    a {
-                        @apply w-[200px] h-[38px] text-[13px]/[150%];
-                    }
-                    .terdaftar {
-                        h5 {
-                            @apply text-[12px]/[200%];
-                        }
-                        .logo-area {
-                            .bappebti-logo {
-                                img {
-                                    @apply w-[80px] h-[18px];
-                                }
-                            }
-                            .cfx-logo {
-                                img {
-                                    @apply w-[39px] h-[15px];
-                                }
-                            }
-                            .kki-logo {
-                                img {
-                                    @apply w-[52px] h-[18.5px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    @apply w-[450px];
-                    img {
-                        &.img-bitcoin {
-                            @apply  w-[70px] h-[73px] absolute right-[290px] top-[37%];
-                        }
-                        &.img-etherium {
-                            @apply  w-[57px] h-[57px] absolute right-[335px] top-[70%];
-                        }
-                        &.img-litecoin {
-                            @apply  w-[57px] h-[57px] absolute right-[0px] top-[43%];
-                        }
-                        &.img-monero {
-                            @apply  w-[37px] h-[37px] absolute right-[-5px] top-[80%];
-                        }
-                    }   
-                }
-            }
-        }
-        @media (max-width:1024px) {
-            @apply h-[450px] pt-[20px];
-            .futures-hero-section-area {
-                .section-text {
-                    .text-title {
-                        .title {
-                            h1 {
-                                @apply text-[29px]/[140%];
-                            }
-                        }
-                        p {
-                            @apply text-[15px]/[150%];
-                        }
-                    }
-                    a {
-                        @apply w-[180px] h-[36px] text-[13px]/[150%];
-                    }
-                    .terdaftar {
-                        h5 {
-                            @apply text-[11px]/[200%];
-                        }
-                        .logo-area {
-                            .bappebti-logo {
-                                img {
-                                    @apply w-[72px] h-[16px];
-                                }
-                            }
-                            .cfx-logo {
-                                img {
-                                    @apply w-[37px] h-[14px];
-                                }
-                            }
-                            .kki-logo {
-                                img {
-                                    @apply w-[52px] h-[18.5px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    @apply w-[450px];
-                    img {
-                        &.img-bitcoin {
-                            @apply  w-[60px] h-[63px] absolute right-[290px] top-[25%];
-                        }
-                        &.img-etherium {
-                            @apply  w-[47px] h-[47px] absolute right-[335px] top-[70%];
-                        }
-                        &.img-litecoin {
-                            @apply  w-[47px] h-[47px] absolute right-[0px] top-[30%];
-                        }
-                        &.img-monero {
-                            @apply  w-[37px] h-[37px] absolute right-[-5px] top-[80%];
-                        }
-                    }   
-                }
-            }
-        }
+    p,
+    label,
+    span,
+    a {
+      @apply !text-slate-300;
     }
     .futures-index-crypto-section {
-        @apply py-[60px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
-        .rfm-marquee-container  {
-            @apply flex justify-start overflow-hidden;
-            .rfm-marquee {
-                @apply flex justify-center;
-                .rfm-initial-child-container {
-                    @apply flex justify-between w-full;
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            .index-cyrpto-content {
+              @apply !border-[#2E3339];
+              .crypto-title {
+                label {
+                  @apply !text-[#838899];
+                  span {
+                    @apply !text-[#838899];
+                  }
                 }
-                .rfm-child {
-                    @apply mx-[10px];
-                    .index-cyrpto-content {
-                        @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
-                        .crypto-title{
-                            @apply flex;
-                            label {
-                                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
-                            }
-                        }
-                        .crypto-index{
-                            @apply flex;
-                            label {
-                                @apply text-[12px]/[18px] font-medium flex items-center;
-                                span {
-                                     &.plus {
-                                        @apply !text-primary;
-                                    }
-                                    &.minus {
-                                        @apply !text-[#EB5757];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                
+              }
             }
-
+          }
         }
-        @media (max-width:1280px) {
-            @apply py-[40px];
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
-        @media (max-width:1180px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[10px]/[16px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[10px]/[16px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
-        @media (max-width:1080px) {
-            .rfm-marquee-container  {
-                .rfm-marquee {
-                    .rfm-child {
-                        @apply mx-[10px];
-                        .index-cyrpto-content {
-                            @apply gap-[5px] rounded-[8px] items-center p-[6px];
-                            .crypto-title{
-                                @apply flex;
-                                label {
-                                    @apply text-[9px]/[15px];
-                                }
-                            }
-                            .crypto-index{
-                                @apply flex;
-                                label {
-                                    @apply text-[9px]/[15px];
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-    
-            }
-        }
+      }
     }
     .futures-why-crypto-section {
-        @apply pb-[85px] w-full relative overflow-hidden;
-        .main-container {
-            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
-            .title-subcontainer {
-                @apply flex flex-col justify-center items-center w-full gap-[170px] pt-[85px] z-[1];
-                .what-text {
-                    @apply flex items-center gap-[60px] max-w-container mx-auto px-[100px];
-                    h2 {
-                        @apply w-[315px] text-[38px]/[150%] font-bold text-[#2E3339];
-                        span {
-                            @apply !text-primary;
-                        }
-                    }
+      &::before {
+        content: "";
+        @apply w-full h-[800px] relative flex flex-col justify-start items-center text-center z-0;
+        background: url("/images/backgrounds/title-background.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+      }
+      .swiper-why {
+        .swiper {
+          .swiper-wrapper {
+            .background-container {
+              .image-subcontainer {
+                &::before {
+                  @apply bg-black !bg-opacity-80;
+                }
+              }
+              .area-subcontainer {
+                .img-area {
+                  @apply border-[#2E3339];
+                }
+                .text-area {
+                  h5 {
+                    @apply !text-white;
+                  }
+                  p {
+                    @apply !text-[#C1C3CC];
+                  }
+                }
+              }
+            }
+            &.swiper-slide-active {
+              .background-container {
+                .image-subcontainer {
+                  @apply border-[#275575];
+                  &::before {
+                    @apply bg-opacity-80;
+                  }
+                }
+                .area-subcontainer {
+                  .text-area {
+                    h5,
                     p {
-                        @apply flex-1 text-[20px]/[150%] font-medium text-[#4B5060];
-                        span {
-                            @apply !text-primary;
-                        }
+                      @apply !text-white;
                     }
+                  }
                 }
-                .why-text {
-                    h5 {
-                        @apply text-[38px]/[150%] font-bold text-[#2E3339];
-                        span {
-                            @apply !text-primary;
-                        }
-                    }
-                }
-                    
+              }
             }
+          }
         }
-        .swiper-why {
-            /* @apply flex justify-center max-w-container; */
-            @apply flex w-full max-w-container px-[100px];
-        }
-        @media (max-width:1440px) {
-            .swiper-why {
-                .swiper {
-                    .swiper-wrapper {
-                        .swiper-slide {
-                            @apply  w-[347px] h-[480px];
-                        }
-                    }                            
-                }
-            } 
-        }
-        @media (max-width:1280px) {
-            .main-container {
-                .title-subcontainer {
-                    @apply gap-[140px] pt-[55px];
-                    .what-text {
-                        h2 {
-                            @apply text-[34px]/[150%] ;
-                            span {
-                                @apply !text-primary;
-                            }
-                        }
-                        p {
-                            @apply flex-1 text-[15px]/[150%];
-                        }
-                    }
-                    .why-text {
-                        h5 {
-                            @apply text-[34px]/[150%];
-                        }
-                    }
-                        
-                }
-            }
-            .swiper-why {
-                .swiper {
-                    .swiper-wrapper {
-                        .swiper-slide {
-                            @apply w-[312px] h-[432px] ;
-                            .background-container {
-                                .area-subcontainer {
-                                    @apply px-[13px] gap-[13px];
-                                    .img-area {
-                                        @apply w-[72px] h-[72px] ;
-                                        img {
-                                            @apply w-[44px] h-[44px];
-                                        }
-                                    };
-                                    .text-area {
-                                        h5 {
-                                            @apply text-[18px]/[150%]
-                                        }
-                                        p {
-                                            @apply text-[13px]/[150%];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }                            
-                }
-            } 
-        }
-        @media (max-width:1180px) {
-            .main-container {
-                .title-subcontainer {
-                    @apply gap-[140px];
-                    .what-text {
-                        h2 {
-                            @apply text-[34px]/[150%] w-[270px];
-                            span {
-                                @apply !text-primary;
-                            }
-                        }
-                        p {
-                            @apply flex-1 text-[14px]/[150%];
-                        }
-                    }
-                    .why-text {
-                        h5 {
-                            @apply text-[34px]/[150%];
-                        }
-                    }
-                        
-                }
-            }
-            .swiper-why {
-                .swiper {
-                    .swiper-wrapper {
-                        .swiper-slide {
-                            @apply w-[280px] h-[389px] ;
-                            .background-container {
-                                .area-subcontainer {
-                                    @apply px-[13px] gap-[13px];
-                                    .img-area {
-                                        @apply w-[65px] h-[65px] ;
-                                        img {
-                                            @apply w-[40px] h-[40px];
-                                        }
-                                    };
-                                    .text-area {
-                                        h5 {
-                                            @apply text-[17px]/[150%]
-                                        }
-                                        p {
-                                            @apply text-[12px]/[150%];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }                            
-                }
-            } 
-        }
-        @media (max-width:1080px) {
-            .main-container {
-                .title-subcontainer {
-                    @apply gap-[120px];
-                    .what-text {
-                        h2 {
-                            @apply text-[31px]/[140%] w-[250px] ;
-                            span {
-                                @apply !text-primary;
-                            }
-                        }
-                        p {
-                            @apply flex-1 text-[12.5px]/[150%];
-                        }
-                    }
-                    .why-text {
-                        h5 {
-                            @apply text-[31px]/[140%];
-                        }
-                    }
-                        
-                }
-            }
-            .swiper-why {
-                .swiper {
-                    .swiper-wrapper {
-                        .swiper-slide {
-                            @apply w-[260px] h-[359px] ;
-                            .background-container {
-                                .area-subcontainer {
-                                    @apply px-[13px] gap-[13px];
-                                    .img-area {
-                                        @apply w-[65px] h-[65px] ;
-                                        img {
-                                            @apply w-[40px] h-[40px];
-                                        }
-                                    };
-                                    .text-area {
-                                        h5 {
-                                            @apply text-[17px]/[150%]
-                                        }
-                                        p {
-                                            @apply text-[12px]/[150%];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }                            
-                }
-            } 
-        }
-        @media (max-width:1024px) {
-            .main-container {
-                .title-subcontainer {
-                    @apply gap-[100px];
-                    .what-text {
-                        h2 {
-                            @apply text-[27px]/[140%] w-[250px] ;
-                            span {
-                                @apply !text-primary;
-                            }
-                        }
-                        p {
-                            @apply flex-1 text-[12px]/[150%];
-                        }
-                    }
-                    .why-text {
-                        h5 {
-                            @apply text-[27px]/[140%];
-                        }
-                    }
-                        
-                }
-            }
-            .swiper-why {
-                .swiper {
-                    .swiper-wrapper {
-                        .swiper-slide {
-                            @apply w-[240px] h-[319px] ;
-                            .background-container {
-                                .area-subcontainer {
-                                    @apply px-[13px] gap-[13px];
-                                    .img-area {
-                                        @apply w-[59px] h-[59px] ;
-                                        img {
-                                            @apply w-[36px] h-[36px];
-                                        }
-                                    };
-                                    .text-area {
-                                        h5 {
-                                            @apply text-[14px]/[150%]
-                                        }
-                                        p {
-                                            @apply text-[10.5px]/[150%];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }                            
-                }
-            } 
-        }
+      }
     }
     .futures-list-coin-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
-        .main-container {
-            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
-            h2 {
-                @apply text-[38px]/[150%] font-bold text-[#2E3339];
-                span {
-                    @apply !text-primary;
-                }
-            }
-            .subcontainer {
-                @apply flex gap-[60px] w-full;
-                .list-coin {
-                    @apply px-[20px] py-[40px] flex flex-col gap-[41px] w-1/2 border border-[#EBEEF4] rounded-[10px];
-                    h5 {
-                        @apply text-[24px]/[150%] text-[#2E3339] font-bold;
-                    }
-                    .coins {
-                        @apply flex flex-col gap-[41px];
-                        .coin {
-                            @apply flex items-center justify-between;
-                            .main-coin {
-                                @apply flex items-center gap-[20px];
-                                img {
-                                    @apply w-[46px] h-[46px];
-                                }
-                                .detail-text {
-                                    @apply flex flex-col text-start;
-                                    label {
-                                        @apply text-[18px]/[150%] font-medium text-[#2E3339];
-                                    }
-                                    span {
-                                        @apply text-[14px]/[150%] font-medium text-[#C1C3CC];
-                                    }
-                                }
-                            }
-                            label {
-                                @apply text-[16px]/[150%] font-semibold flex items-center;
-                                &.plus {
-                                    @apply !text-primary;
-                                }
-                                &.minus {
-                                    @apply !text-[#EB5757];
-                                }
-                            }
-                        }
-                    }
-                    a {
-                        @apply w-full text-[18px]/[150%] text-[#2E3339] font-medium text-center;
-                    }
-                }
-            }
+      .main-container {
+        .subcontainer {
+          .list-coin {
+            @apply !border-[#4B5060];
+          }
         }
-        @media (max-width:1280px) {
-            @apply pb-[50px];
-            .main-container {
-                h2 {
-                    @apply text-[34px]/[150%];
-                }
-                .subcontainer {
-                    .list-coin {
-                        @apply gap-[38px];
-                        h5 {
-                            @apply text-[22px]/[150%];
-                        }
-                        .coins {
-                            @apply gap-[38px];
-                            .coin {
-                                .main-coin {
-                                    img {
-                                        @apply w-[42px] h-[42px];
-                                    }
-                                    .detail-text {
-                                        @apply flex flex-col;
-                                        label {
-                                            @apply text-[16px]/[150%];
-                                        }
-                                        span {
-                                            @apply text-[15px]/[150%];
-                                        }
-                                    }
-                                }
-                                label {
-                                    @apply text-[15px]/[150%];
-                                }
-                            }
-                        }
-                        a {
-                            @apply w-full text-[16px]/[150%];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-              .main-container {
-                h2 {
-                    @apply text-[34px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[50px];
-                    .list-coin {
-                        @apply gap-[30px];
-                        h5 {
-                            @apply text-[20px]/[150%];
-                        }
-                        .coins {
-                            @apply gap-[30px];
-                            .coin {
-                                .main-coin {
-                                    img {
-                                        @apply w-[38px] h-[38px];
-                                    }
-                                    .detail-text {
-                                        @apply flex flex-col;
-                                        label {
-                                            @apply text-[15px]/[150%];
-                                        }
-                                        span {
-                                            @apply text-[14px]/[150%];
-                                        }
-                                    }
-                                }
-                                label {
-                                    @apply text-[14px]/[150%];
-                                }
-                            }
-                        }
-                        a {
-                            @apply w-full text-[15px]/[150%];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-              .main-container {
-                h2 {
-                    @apply text-[31px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[50px];
-                    .list-coin {
-                        @apply gap-[30px];
-                        h5 {
-                            @apply text-[18px]/[150%];
-                        }
-                        .coins {
-                            @apply gap-[30px];
-                            .coin {
-                                .main-coin {
-                                    img {
-                                        @apply w-[36px] h-[36px];
-                                    }
-                                    .detail-text {
-                                        @apply flex flex-col;
-                                        label {
-                                            @apply text-[14px]/[150%];
-                                        }
-                                        span {
-                                            @apply text-[13px]/[150%];
-                                        }
-                                    }
-                                }
-                                label {
-                                    @apply text-[13px]/[150%];
-                                }
-                            }
-                        }
-                        a {
-                            @apply w-full text-[14px]/[150%];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1024px) {
-              .main-container {
-                h2 {
-                    @apply text-[27px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[50px];
-                    .list-coin {
-                        @apply gap-[27px];
-                        h5 {
-                            @apply text-[16px]/[150%];
-                        }
-                        .coins {
-                            @apply gap-[27px];
-                            .coin {
-                                .main-coin {
-                                    img {
-                                        @apply w-[32px] h-[32px];
-                                    }
-                                    .detail-text {
-                                        @apply flex flex-col;
-                                        label {
-                                            @apply text-[13px]/[150%];
-                                        }
-                                        span {
-                                            @apply text-[12px]/[150%];
-                                        }
-                                    }
-                                }
-                                label {
-                                    @apply text-[12px]/[150%];
-                                }
-                            }
-                        }
-                        a {
-                            @apply w-full text-[13px]/[150%];
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .futures-step-section {
-        @apply py-[50px] w-full relative overflow-hidden;
-        background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
-        /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
-        background-size: cover;
-        background-position:center ;
-        .main-container {
-            @apply flex flex-col justify-center items-center gap-[60px] px-[100px] w-full h-full max-w-container mx-auto;
-            h2 {
-                @apply text-[38px]/[150%] font-bold text-white;
-                span {
-                    @apply !text-primary;
-                }
-            }
-            .subcontainer {
-                @apply flex flex-col gap-[100px];
-                .step-row {
-                    @apply flex items-center gap-[130px];
-                    .step {
-                        @apply w-1/2 flex gap-[42px] cursor-pointer;
-                        .text-area {
-                            @apply pt-[40px] flex-1 flex flex-col gap-[20px] opacity-50;
-                            h5 {
-                                @apply text-[20px]/[150%] font-semibold text-white flex gap-[4px];
-                            }
-                            p {
-                                @apply text-[12px]/[150%] font-medium text-white;
-                            }
-                        }
-                        .img-area {
-                            @apply w-[185px] h-[240px] opacity-50;
-                            img {
-                                @apply w-full h-full object-contain rounded-[20px];
-                            }
-                        }
-                        &.active {
-                            .text-area {
-                                @apply opacity-100;
-                            }
-                            .img-area {
-                                @apply opacity-100 rounded-[20px];
-                                box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1280px) {
-             .main-container {
-                h2 {
-                    @apply text-[34px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[100px];
-                    .step-row {
-                        @apply gap-[110px];
-                        .step {
-                            @apply gap-[42px];
-                            .text-area {
-                                @apply pt-[40px] gap-[20px];
-                                h5 {
-                                    @apply text-[18px]/[150%];
-                                }
-                                p {
-                                    @apply text-[11px]/[150%];
-                                }
-                            }
-                            .img-area {
-                                @apply w-[185px] h-[240px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-             .main-container {
-                h2 {
-                    @apply text-[31px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[100px];
-                    .step-row {
-                        @apply gap-[90px];
-                        .step {
-                            @apply gap-[42px];
-                            .text-area {
-                                @apply pt-[40px] gap-[20px];
-                                h5 {
-                                    @apply text-[17px]/[150%];
-                                }
-                                p {
-                                    @apply text-[10px]/[150%];
-                                }
-                            }
-                            .img-area {
-                                @apply w-[185px] h-[240px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-             .main-container {
-                h2 {
-                    @apply text-[31px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[100px];
-                    .step-row {
-                        @apply gap-[90px];
-                        .step {
-                            @apply gap-[35px];
-                            .text-area {
-                                @apply pt-[40px] gap-[20px];
-                                h5 {
-                                    @apply text-[15px]/[150%];
-                                }
-                                p {
-                                    @apply text-[10px]/[150%];
-                                }
-                            }
-                            .img-area {
-                                @apply w-[155px] h-[192px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1024px) {
-             .main-container {
-                h2 {
-                    @apply text-[27px]/[150%];
-                }
-                .subcontainer {
-                    @apply gap-[100px];
-                    .step-row {
-                        @apply gap-[90px];
-                        .step {
-                            @apply gap-[35px];
-                            .text-area {
-                                @apply pt-[40px] gap-[20px];
-                                h5 {
-                                    @apply text-[13px]/[150%];
-                                }
-                                p {
-                                    @apply text-[9px]/[150%];
-                                }
-                            }
-                            .img-area {
-                                @apply w-[140px] h-[180px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
     .futures-pemisahan-section {
-        @apply py-[85px] w-full relative overflow-hidden;
-        .main-container {
-            @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
-            .title-subcontainer {
-                @apply flex flex-col justify-center items-center gap-[34px] text-center px-[180px] max-w-container mx-auto;
-                h2 {
-                    @apply text-[38px]/[150%] font-bold text-[#2E3339];
-                    span {
-                        @apply !text-primary;
+      .main-container {
+        .title-subcontainer {
+          p {
+            @apply !text-[#C1C3CC];
+          }
+        }
+        .subcontainer {
+          ul {
+            @apply !bg-[#111111];
+            li {
+              &.active {
+                @apply !text-white !bg-[#000000];
+              }
+            }
+          }
+          .images {
+            &::before {
+              content: "";
+              @apply w-full h-[800px] relative flex flex-col justify-start items-center text-center;
+              background: url("/images/backgrounds/title-background.png")
+                no-repeat;
+              background-position: center;
+              background-size: cover;
+              position: absolute;
+            }
+            .img-area {
+              @apply w-[288px] h-[600px] relative;
+              &.overview {
+                content: "";
+                background: url("/images/futures/iphone-overview-black.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              &.spot {
+                content: "";
+                background: url("/images/futures/iphone-spot-black.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              &.futures {
+                content: "";
+                background: url("/images/futures/iphone-futures-black.png")
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              &::after {
+                @apply !bg-black bg-opacity-70;
+              }
+              &.active {
+                &::after {
+                  @apply !bg-opacity-0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.futures-page {
+  @apply py-0;
+  .futures-hero-section {
+    @apply h-[700px] relative overflow-hidden flex flex-col justify-center;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%),
+      url("/images/backgrounds/bg-futures.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    .futures-hero-section-area {
+      @apply h-full flex px-[100px] max-w-container mx-auto items-center relative;
+      .section-text {
+        @apply flex flex-col w-[65%] gap-[40px] z-[1];
+        .text-title {
+          @apply flex flex-col gap-[28px];
+          .title {
+            @apply flex flex-col w-[90%];
+            h1 {
+              @apply text-[60px]/[140%] text-white font-semibold w-full;
+            }
+            span {
+              @apply !text-primary;
+            }
+          }
+          p {
+            @apply text-[20px]/[150%] font-medium !text-primary;
+          }
+        }
+        a {
+          @apply bg-primary !text-white w-[260px] h-[48px] text-[16px]/[150%] font-bold flex items-center justify-center rounded-[8px];
+        }
+        .terdaftar {
+          @apply flex items-center gap-[30px];
+          h5 {
+            @apply text-[16px]/[200%] font-medium text-white;
+          }
+          .logo-area {
+            @apply flex items-center gap-[14px];
+            .bappebti-logo {
+              img {
+                @apply w-[105px] h-[24px];
+              }
+            }
+            .cfx-logo {
+              img {
+                @apply w-[51px] h-[20px];
+              }
+            }
+            .kki-logo {
+              img {
+                @apply w-[71px] h-[25px];
+              }
+            }
+          }
+        }
+      }
+      .section-image {
+        @apply relative w-[586px] h-full;
+        img {
+          &.img-device {
+            @apply w-full object-contain absolute bottom-0;
+          }
+          &.img-bitcoin {
+            @apply w-[111px] h-[113px] absolute right-[370px] top-[30%];
+          }
+          &.img-etherium {
+            @apply w-[87px] h-[87px] absolute right-[470px] top-[50%];
+          }
+          &.img-litecoin {
+            @apply w-[76px] h-[76px] absolute right-[-5px] top-[38%];
+          }
+          &.img-monero {
+            @apply w-[67px] h-[67px] absolute right-[-30px] top-[70%];
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply h-[600px];
+      .futures-hero-section-area {
+        .section-text {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[45px]/[140%];
+              }
+            }
+            p {
+              @apply text-[18px]/[150%];
+            }
+          }
+          a {
+            @apply w-[240px] h-[43px] text-[14px]/[150%];
+          }
+          .terdaftar {
+            h5 {
+              @apply text-[14px]/[200%];
+            }
+            .logo-area {
+              .bappebti-logo {
+                img {
+                  @apply w-[100px] h-[22px];
+                }
+              }
+              .cfx-logo {
+                img {
+                  @apply w-[45px] h-[18px];
+                }
+              }
+              .kki-logo {
+                img {
+                  @apply w-[64px] h-[22.5px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          @apply w-[500px];
+          img {
+            &.img-bitcoin {
+              @apply w-[80px] h-[83px] absolute right-[330px] top-[35%];
+            }
+            &.img-etherium {
+              @apply w-[67px] h-[67px] absolute right-[400px] top-[70%];
+            }
+            &.img-litecoin {
+              @apply w-[56px] h-[56px] absolute right-[0px] top-[42%];
+            }
+            &.img-monero {
+              @apply w-[47px] h-[47px] absolute right-[-5px] top-[80%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      @apply h-[600px];
+      .futures-hero-section-area {
+        .section-text {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[40px]/[140%];
+              }
+            }
+            p {
+              @apply text-[18px]/[150%];
+            }
+          }
+          a {
+            @apply w-[240px] h-[43px] text-[14px]/[150%];
+          }
+          .terdaftar {
+            h5 {
+              @apply text-[14px]/[200%];
+            }
+            .logo-area {
+              .bappebti-logo {
+                img {
+                  @apply w-[100px] h-[22px];
+                }
+              }
+              .cfx-logo {
+                img {
+                  @apply w-[45px] h-[18px];
+                }
+              }
+              .kki-logo {
+                img {
+                  @apply w-[64px] h-[22.5px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          @apply w-[500px];
+          img {
+            &.img-bitcoin {
+              @apply w-[80px] h-[83px] absolute right-[330px] top-[35%];
+            }
+            &.img-etherium {
+              @apply w-[67px] h-[67px] absolute right-[400px] top-[70%];
+            }
+            &.img-litecoin {
+              @apply w-[56px] h-[56px] absolute right-[0px] top-[42%];
+            }
+            &.img-monero {
+              @apply w-[47px] h-[47px] absolute right-[-5px] top-[80%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      @apply h-[530px];
+      .futures-hero-section-area {
+        .section-text {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[31px]/[140%];
+              }
+            }
+            p {
+              @apply text-[16px]/[150%];
+            }
+          }
+          a {
+            @apply w-[200px] h-[38px] text-[13px]/[150%];
+          }
+          .terdaftar {
+            h5 {
+              @apply text-[12px]/[200%];
+            }
+            .logo-area {
+              .bappebti-logo {
+                img {
+                  @apply w-[80px] h-[18px];
+                }
+              }
+              .cfx-logo {
+                img {
+                  @apply w-[39px] h-[15px];
+                }
+              }
+              .kki-logo {
+                img {
+                  @apply w-[52px] h-[18.5px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          @apply w-[450px];
+          img {
+            &.img-bitcoin {
+              @apply w-[70px] h-[73px] absolute right-[290px] top-[37%];
+            }
+            &.img-etherium {
+              @apply w-[57px] h-[57px] absolute right-[335px] top-[70%];
+            }
+            &.img-litecoin {
+              @apply w-[57px] h-[57px] absolute right-[0px] top-[43%];
+            }
+            &.img-monero {
+              @apply w-[37px] h-[37px] absolute right-[-5px] top-[80%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      @apply h-[450px] pt-[20px];
+      .futures-hero-section-area {
+        .section-text {
+          .text-title {
+            .title {
+              h1 {
+                @apply text-[29px]/[140%];
+              }
+            }
+            p {
+              @apply text-[15px]/[150%];
+            }
+          }
+          a {
+            @apply w-[180px] h-[36px] text-[13px]/[150%];
+          }
+          .terdaftar {
+            h5 {
+              @apply text-[11px]/[200%];
+            }
+            .logo-area {
+              .bappebti-logo {
+                img {
+                  @apply w-[72px] h-[16px];
+                }
+              }
+              .cfx-logo {
+                img {
+                  @apply w-[37px] h-[14px];
+                }
+              }
+              .kki-logo {
+                img {
+                  @apply w-[52px] h-[18.5px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          @apply w-[450px];
+          img {
+            &.img-bitcoin {
+              @apply w-[60px] h-[63px] absolute right-[290px] top-[25%];
+            }
+            &.img-etherium {
+              @apply w-[47px] h-[47px] absolute right-[335px] top-[70%];
+            }
+            &.img-litecoin {
+              @apply w-[47px] h-[47px] absolute right-[0px] top-[30%];
+            }
+            &.img-monero {
+              @apply w-[37px] h-[37px] absolute right-[-5px] top-[80%];
+            }
+          }
+        }
+      }
+    }
+  }
+  .futures-index-crypto-section {
+    @apply py-[60px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+    .rfm-marquee-container {
+      @apply flex justify-start overflow-hidden;
+      .rfm-marquee {
+        @apply flex justify-center;
+        .rfm-initial-child-container {
+          @apply flex justify-between w-full;
+        }
+        .rfm-child {
+          @apply mx-[10px];
+          .index-cyrpto-content {
+            @apply flex border gap-[7px] border-neutral-200 rounded-[8px] items-center p-[8px] w-full;
+            .crypto-title {
+              @apply flex;
+              label {
+                @apply text-[12px]/[18px] font-medium text-neutral-500 line-clamp-1;
+              }
+            }
+            .crypto-index {
+              @apply flex;
+              label {
+                @apply text-[12px]/[18px] font-medium flex items-center;
+                span {
+                  &.plus {
+                    @apply !text-primary;
+                  }
+                  &.minus {
+                    @apply !text-[#EB5757];
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply py-[40px];
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[11px]/[17px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[11px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[10px]/[16px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[10px]/[16px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply mx-[10px];
+            .index-cyrpto-content {
+              @apply gap-[5px] rounded-[8px] items-center p-[6px];
+              .crypto-title {
+                @apply flex;
+                label {
+                  @apply text-[9px]/[15px];
+                }
+              }
+              .crypto-index {
+                @apply flex;
+                label {
+                  @apply text-[9px]/[15px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .futures-why-crypto-section {
+    @apply pb-[85px] w-full relative overflow-hidden;
+    .main-container {
+      @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+      .title-subcontainer {
+        @apply flex flex-col justify-center items-center w-full gap-[170px] pt-[85px] z-[1];
+        .what-text {
+          @apply flex items-center gap-[60px] max-w-container mx-auto px-[100px];
+          h2 {
+            @apply w-[315px] text-[38px]/[150%] font-bold text-[#2E3339];
+            span {
+              @apply !text-primary;
+            }
+          }
+          p {
+            @apply flex-1 text-[20px]/[150%] font-medium text-[#4B5060];
+            span {
+              @apply !text-primary;
+            }
+          }
+        }
+        .why-text {
+          h5 {
+            @apply text-[38px]/[150%] font-bold text-[#2E3339];
+            span {
+              @apply !text-primary;
+            }
+          }
+        }
+      }
+    }
+    .swiper-why {
+      /* @apply flex justify-center max-w-container; */
+      @apply flex w-full max-w-container px-[100px];
+    }
+    @media (max-width: 1440px) {
+      .swiper-why {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              @apply w-[347px] h-[480px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .main-container {
+        .title-subcontainer {
+          @apply gap-[140px] pt-[55px];
+          .what-text {
+            h2 {
+              @apply text-[34px]/[150%];
+              span {
+                @apply !text-primary;
+              }
+            }
+            p {
+              @apply flex-1 text-[15px]/[150%];
+            }
+          }
+          .why-text {
+            h5 {
+              @apply text-[34px]/[150%];
+            }
+          }
+        }
+      }
+      .swiper-why {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              @apply w-[312px] h-[432px];
+              .background-container {
+                .area-subcontainer {
+                  @apply px-[13px] gap-[13px];
+                  .img-area {
+                    @apply w-[72px] h-[72px];
+                    img {
+                      @apply w-[44px] h-[44px];
                     }
+                  }
+                  .text-area {
+                    h5 {
+                      @apply text-[18px]/[150%];
+                    }
+                    p {
+                      @apply text-[13px]/[150%];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .main-container {
+        .title-subcontainer {
+          @apply gap-[140px];
+          .what-text {
+            h2 {
+              @apply text-[34px]/[150%] w-[270px];
+              span {
+                @apply !text-primary;
+              }
+            }
+            p {
+              @apply flex-1 text-[14px]/[150%];
+            }
+          }
+          .why-text {
+            h5 {
+              @apply text-[34px]/[150%];
+            }
+          }
+        }
+      }
+      .swiper-why {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              @apply w-[280px] h-[389px];
+              .background-container {
+                .area-subcontainer {
+                  @apply px-[13px] gap-[13px];
+                  .img-area {
+                    @apply w-[65px] h-[65px];
+                    img {
+                      @apply w-[40px] h-[40px];
+                    }
+                  }
+                  .text-area {
+                    h5 {
+                      @apply text-[17px]/[150%];
+                    }
+                    p {
+                      @apply text-[12px]/[150%];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        .title-subcontainer {
+          @apply gap-[120px];
+          .what-text {
+            h2 {
+              @apply text-[31px]/[140%] w-[250px];
+              span {
+                @apply !text-primary;
+              }
+            }
+            p {
+              @apply flex-1 text-[12.5px]/[150%];
+            }
+          }
+          .why-text {
+            h5 {
+              @apply text-[31px]/[140%];
+            }
+          }
+        }
+      }
+      .swiper-why {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              @apply w-[260px] h-[359px];
+              .background-container {
+                .area-subcontainer {
+                  @apply px-[13px] gap-[13px];
+                  .img-area {
+                    @apply w-[65px] h-[65px];
+                    img {
+                      @apply w-[40px] h-[40px];
+                    }
+                  }
+                  .text-area {
+                    h5 {
+                      @apply text-[17px]/[150%];
+                    }
+                    p {
+                      @apply text-[12px]/[150%];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      .main-container {
+        .title-subcontainer {
+          @apply gap-[100px];
+          .what-text {
+            h2 {
+              @apply text-[27px]/[140%] w-[250px];
+              span {
+                @apply !text-primary;
+              }
+            }
+            p {
+              @apply flex-1 text-[12px]/[150%];
+            }
+          }
+          .why-text {
+            h5 {
+              @apply text-[27px]/[140%];
+            }
+          }
+        }
+      }
+      .swiper-why {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              @apply w-[240px] h-[319px];
+              .background-container {
+                .area-subcontainer {
+                  @apply px-[13px] gap-[13px];
+                  .img-area {
+                    @apply w-[59px] h-[59px];
+                    img {
+                      @apply w-[36px] h-[36px];
+                    }
+                  }
+                  .text-area {
+                    h5 {
+                      @apply text-[14px]/[150%];
+                    }
+                    p {
+                      @apply text-[10.5px]/[150%];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .futures-list-coin-section {
+    @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+    .main-container {
+      @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+      h2 {
+        @apply text-[38px]/[150%] font-bold text-[#2E3339];
+        span {
+          @apply !text-primary;
+        }
+      }
+      .subcontainer {
+        @apply flex gap-[60px] w-full;
+        .list-coin {
+          @apply px-[20px] py-[40px] flex flex-col gap-[41px] w-1/2 border border-[#EBEEF4] rounded-[10px];
+          h5 {
+            @apply text-[24px]/[150%] text-[#2E3339] font-bold;
+          }
+          .coins {
+            @apply flex flex-col gap-[41px];
+            .coin {
+              @apply flex items-center justify-between;
+              .main-coin {
+                @apply flex items-center gap-[20px];
+                img {
+                  @apply w-[46px] h-[46px];
+                }
+                .detail-text {
+                  @apply flex flex-col text-start;
+                  label {
+                    @apply text-[18px]/[150%] font-medium text-[#2E3339];
+                  }
+                  span {
+                    @apply text-[14px]/[150%] font-medium text-[#C1C3CC];
+                  }
+                }
+              }
+              label {
+                @apply text-[16px]/[150%] font-semibold flex items-center;
+                &.plus {
+                  @apply !text-primary;
+                }
+                &.minus {
+                  @apply !text-[#EB5757];
+                }
+              }
+            }
+          }
+          a {
+            @apply w-full text-[18px]/[150%] text-[#2E3339] font-medium text-center;
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply pb-[50px];
+      .main-container {
+        h2 {
+          @apply text-[34px]/[150%];
+        }
+        .subcontainer {
+          .list-coin {
+            @apply gap-[38px];
+            h5 {
+              @apply text-[22px]/[150%];
+            }
+            .coins {
+              @apply gap-[38px];
+              .coin {
+                .main-coin {
+                  img {
+                    @apply w-[42px] h-[42px];
+                  }
+                  .detail-text {
+                    @apply flex flex-col;
+                    label {
+                      @apply text-[16px]/[150%];
+                    }
+                    span {
+                      @apply text-[15px]/[150%];
+                    }
+                  }
+                }
+                label {
+                  @apply text-[15px]/[150%];
+                }
+              }
+            }
+            a {
+              @apply w-full text-[16px]/[150%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .main-container {
+        h2 {
+          @apply text-[34px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[50px];
+          .list-coin {
+            @apply gap-[30px];
+            h5 {
+              @apply text-[20px]/[150%];
+            }
+            .coins {
+              @apply gap-[30px];
+              .coin {
+                .main-coin {
+                  img {
+                    @apply w-[38px] h-[38px];
+                  }
+                  .detail-text {
+                    @apply flex flex-col;
+                    label {
+                      @apply text-[15px]/[150%];
+                    }
+                    span {
+                      @apply text-[14px]/[150%];
+                    }
+                  }
+                }
+                label {
+                  @apply text-[14px]/[150%];
+                }
+              }
+            }
+            a {
+              @apply w-full text-[15px]/[150%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        h2 {
+          @apply text-[31px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[50px];
+          .list-coin {
+            @apply gap-[30px];
+            h5 {
+              @apply text-[18px]/[150%];
+            }
+            .coins {
+              @apply gap-[30px];
+              .coin {
+                .main-coin {
+                  img {
+                    @apply w-[36px] h-[36px];
+                  }
+                  .detail-text {
+                    @apply flex flex-col;
+                    label {
+                      @apply text-[14px]/[150%];
+                    }
+                    span {
+                      @apply text-[13px]/[150%];
+                    }
+                  }
+                }
+                label {
+                  @apply text-[13px]/[150%];
+                }
+              }
+            }
+            a {
+              @apply w-full text-[14px]/[150%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      .main-container {
+        h2 {
+          @apply text-[27px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[50px];
+          .list-coin {
+            @apply gap-[27px];
+            h5 {
+              @apply text-[16px]/[150%];
+            }
+            .coins {
+              @apply gap-[27px];
+              .coin {
+                .main-coin {
+                  img {
+                    @apply w-[32px] h-[32px];
+                  }
+                  .detail-text {
+                    @apply flex flex-col;
+                    label {
+                      @apply text-[13px]/[150%];
+                    }
+                    span {
+                      @apply text-[12px]/[150%];
+                    }
+                  }
+                }
+                label {
+                  @apply text-[12px]/[150%];
+                }
+              }
+            }
+            a {
+              @apply w-full text-[13px]/[150%];
+            }
+          }
+        }
+      }
+    }
+  }
+  .futures-step-section {
+    @apply py-[50px] w-full relative overflow-hidden;
+    background: url("/images/backgrounds/bg-futures-step.png") no-repeat;
+    /* background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 80%), url("/images/backgrounds/bg-futures-step.png") no-repeat; */
+    background-size: cover;
+    background-position: center;
+    .main-container {
+      @apply flex flex-col justify-center items-center gap-[60px] px-[100px] w-full h-full max-w-container mx-auto;
+      h2 {
+        @apply text-[38px]/[150%] font-bold text-white;
+        span {
+          @apply !text-primary;
+        }
+      }
+      .subcontainer {
+        @apply flex flex-col gap-[100px];
+        .step-row {
+          @apply flex items-center gap-[130px];
+          .step {
+            @apply w-1/2 flex gap-[42px] cursor-pointer;
+            .text-area {
+              @apply pt-[40px] flex-1 flex flex-col gap-[20px] opacity-50;
+              h5 {
+                @apply text-[20px]/[150%] font-semibold text-white flex gap-[4px];
+              }
+              p {
+                @apply text-[12px]/[150%] font-medium text-white;
+              }
+            }
+            .img-area {
+              @apply w-[185px] h-[240px] opacity-50;
+              img {
+                @apply w-full h-full object-contain rounded-[20px];
+              }
+            }
+            &.active {
+              .text-area {
+                @apply opacity-100;
+              }
+              .img-area {
+                @apply opacity-100 rounded-[20px];
+                box-shadow: 0px 5.64px 14.11px 0px #ffffff33;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .main-container {
+        h2 {
+          @apply text-[34px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[100px];
+          .step-row {
+            @apply gap-[110px];
+            .step {
+              @apply gap-[42px];
+              .text-area {
+                @apply pt-[40px] gap-[20px];
+                h5 {
+                  @apply text-[18px]/[150%];
                 }
                 p {
-                    @apply text-[20px]/[150%] font-medium text-[#2E3339] w-[80%];
+                  @apply text-[11px]/[150%];
                 }
+              }
+              .img-area {
+                @apply w-[185px] h-[240px];
+              }
             }
-            .subcontainer {
-                @apply flex flex-col justify-center items-center gap-[121px] relative w-full h-full px-[100px];
-                ul {
-                    @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
-                    li {
-                        @apply w-[156px] h-[51px] text-[21px]/[150%] font-medium text-[#646A80] flex flex-col items-center justify-center cursor-pointer;    
-                        &.active {
-                            @apply bg-white rounded-[12px];
-                        }
-                    }
-                }
-                .swiper-images {
-                    @apply flex items-center justify-center;
-                }
-
-                .images {
-                    @apply flex items-center justify-center gap-[61px];
-                    transition: transform 0.4s ease-in-out;
-                    .img-area {
-                        @apply w-[288px] h-[600px] relative max-w-container mx-auto;
-                        &.overview {
-                            content: '';
-                            background: url("/images/futures/iphone-overview.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        &.spot {
-                            content: '';
-                            background: url("/images/futures/iphone-spot.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-                        &.futures {
-                            content: '';
-                            background: url("/images/futures/iphone-futures.png") no-repeat;
-                            background-position: center;
-                            background-size: contain !important;
-                        }
-
-                         &::after {
-                            content: '';
-                            @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[40px];
-                        }
-                                           
-                        &.active {
-                            transition: transform 0.4s ease-in-out;
-                            &::after {
-                                @apply  !bg-opacity-0;
-                                box-shadow: 0px 5.64px 14.11px 0px #FFFFFF33; 
-                            }
-                        }  
-
-                    }
-                }
-            }
+          }
         }
-        @media (max-width:1280px) {
-            @apply py-[50px];
-            .main-container {
-                @apply gap-[60px];
-                .title-subcontainer {
-                    @apply px-[150px];
-                    h2 {
-                        @apply text-[34px]/[150%];
-                    }
-                    p {
-                        @apply text-[18px]/[150%];
-                    }
-                }
-                .subcontainer {
-                    @apply !gap-[100px];
-                    ul {
-                        @apply rounded-[12px] py-[5px] px-[6px];
-                        li {
-                            @apply w-[130px] h-[48px] text-[19px]/[150%];    
-                        }
-                    }
-                    .images {
-                        @apply gap-[54px];
-                        .img-area {
-                            @apply !w-[268px] !h-[540px];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-             .main-container {
-                @apply gap-[50px];
-                .title-subcontainer {
-                    @apply px-[130px];
-                    h2 {
-                        @apply text-[31px]/[150%];
-                    }
-                    p {
-                        @apply text-[16px]/[150%];
-                    }
-                }
-                .subcontainer {
-                    @apply !gap-[80px];
-                    ul {
-                        @apply rounded-[12px] py-[5px] px-[6px];
-                        li {
-                            @apply w-[120px] h-[43px] text-[17px]/[150%];    
-                        }
-                    }
-                    .images {
-                        @apply gap-[54px];
-                        .img-area {
-                            @apply !w-[248px] !h-[500px];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-             .main-container {
-                @apply gap-[50px];
-                .title-subcontainer {
-                    @apply px-[130px];
-                    h2 {
-                        @apply text-[31px]/[150%];
-                    }
-                    p {
-                        @apply text-[14px]/[150%];
-                    }
-                }
-                .subcontainer {
-                    @apply !gap-[80px];
-                    ul {
-                        @apply rounded-[12px] py-[5px] px-[6px];
-                        li {
-                            @apply w-[110px] h-[41px] text-[15px]/[150%];    
-                        }
-                    }
-                    .images {
-                        @apply gap-[50px];
-                        .img-area {
-                            @apply !w-[218px] !h-[450px];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1024px) {
-            .main-container {
-                .title-subcontainer {
-                    @apply px-[100px];
-                    h2 {
-                        @apply text-[27px]/[150%];
-                    }
-                    p {
-                        @apply text-[12px]/[150%];
-                    }
-                }
-                .subcontainer {
-                    @apply !gap-[70px];
-                }
-                ul {
-                    li {
-                        @apply w-[100px] h-[38px] text-[14px]/[150%];
-                    }
-                }
-                .images {
-                    @apply gap-[45px];
-                    .img-area   {
-                       @apply !w-[200px] !h-[415px];
-                    }
-                }
-            }
-        }
-        @media (max-width:639px) {
-            .main-container {
-                .images {
-                    &.translate-overview {
-                        transform: translateX(30%);
-                    }
-                    &.translate-spot {
-                        transform: translateX(0%);
-                    }
-                    &.translate-futures {
-                        transform: translateX(-30%);
-                    }
-                }
-            }
-        }
+      }
     }
-    .futures-buy-sell-assets-section {
-        @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+    @media (max-width: 1180px) {
+      .main-container {
+        h2 {
+          @apply text-[31px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[100px];
+          .step-row {
+            @apply gap-[90px];
+            .step {
+              @apply gap-[42px];
+              .text-area {
+                @apply pt-[40px] gap-[20px];
+                h5 {
+                  @apply text-[17px]/[150%];
+                }
+                p {
+                  @apply text-[10px]/[150%];
+                }
+              }
+              .img-area {
+                @apply w-[185px] h-[240px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        h2 {
+          @apply text-[31px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[100px];
+          .step-row {
+            @apply gap-[90px];
+            .step {
+              @apply gap-[35px];
+              .text-area {
+                @apply pt-[40px] gap-[20px];
+                h5 {
+                  @apply text-[15px]/[150%];
+                }
+                p {
+                  @apply text-[10px]/[150%];
+                }
+              }
+              .img-area {
+                @apply w-[155px] h-[192px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      .main-container {
+        h2 {
+          @apply text-[27px]/[150%];
+        }
+        .subcontainer {
+          @apply gap-[100px];
+          .step-row {
+            @apply gap-[90px];
+            .step {
+              @apply gap-[35px];
+              .text-area {
+                @apply pt-[40px] gap-[20px];
+                h5 {
+                  @apply text-[13px]/[150%];
+                }
+                p {
+                  @apply text-[9px]/[150%];
+                }
+              }
+              .img-area {
+                @apply w-[140px] h-[180px];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .futures-pemisahan-section {
+    @apply py-[85px] w-full relative overflow-hidden;
+    .main-container {
+      @apply flex flex-col justify-center items-center gap-[60px] w-full h-full;
+      .title-subcontainer {
+        @apply flex flex-col justify-center items-center gap-[34px] text-center px-[180px] max-w-container mx-auto;
+        h2 {
+          @apply text-[38px]/[150%] font-bold text-[#2E3339];
+          span {
+            @apply !text-primary;
+          }
+        }
+        p {
+          @apply text-[20px]/[150%] font-medium text-[#2E3339] w-[80%];
+        }
+      }
+      .subcontainer {
+        @apply flex flex-col justify-center items-center gap-[121px] relative w-full h-full px-[100px];
+        ul {
+          @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
+          li {
+            @apply w-[156px] h-[51px] text-[21px]/[150%] font-medium text-[#646A80] flex flex-col items-center justify-center cursor-pointer;
+            &.active {
+              @apply bg-white rounded-[12px];
+            }
+          }
+        }
+        .swiper-images {
+          @apply flex items-center justify-center;
+        }
+
+        .images {
+          @apply flex items-center justify-center gap-[61px];
+          transition: transform 0.4s ease-in-out;
+          .img-area {
+            @apply w-[288px] h-[600px] relative max-w-container mx-auto;
+            &.overview {
+              content: "";
+              background: url("/images/futures/iphone-overview.png") no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            &.spot {
+              content: "";
+              background: url("/images/futures/iphone-spot.png") no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+            &.futures {
+              content: "";
+              background: url("/images/futures/iphone-futures.png") no-repeat;
+              background-position: center;
+              background-size: contain !important;
+            }
+
+            &::after {
+              content: "";
+              @apply bg-white bg-opacity-70 w-full h-full absolute block rounded-[40px];
+            }
+
+            &.active {
+              transition: transform 0.4s ease-in-out;
+              &::after {
+                @apply !bg-opacity-0;
+                box-shadow: 0px 5.64px 14.11px 0px #ffffff33;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply py-[50px];
+      .main-container {
+        @apply gap-[60px];
+        .title-subcontainer {
+          @apply px-[150px];
+          h2 {
+            @apply text-[34px]/[150%];
+          }
+          p {
+            @apply text-[18px]/[150%];
+          }
+        }
+        .subcontainer {
+          @apply !gap-[100px];
+          ul {
+            @apply rounded-[12px] py-[5px] px-[6px];
+            li {
+              @apply w-[130px] h-[48px] text-[19px]/[150%];
+            }
+          }
+          .images {
+            @apply gap-[54px];
+            .img-area {
+              @apply !w-[268px] !h-[540px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .main-container {
+        @apply gap-[50px];
+        .title-subcontainer {
+          @apply px-[130px];
+          h2 {
+            @apply text-[31px]/[150%];
+          }
+          p {
+            @apply text-[16px]/[150%];
+          }
+        }
+        .subcontainer {
+          @apply !gap-[80px];
+          ul {
+            @apply rounded-[12px] py-[5px] px-[6px];
+            li {
+              @apply w-[120px] h-[43px] text-[17px]/[150%];
+            }
+          }
+          .images {
+            @apply gap-[54px];
+            .img-area {
+              @apply !w-[248px] !h-[500px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        @apply gap-[50px];
+        .title-subcontainer {
+          @apply px-[130px];
+          h2 {
+            @apply text-[31px]/[150%];
+          }
+          p {
+            @apply text-[14px]/[150%];
+          }
+        }
+        .subcontainer {
+          @apply !gap-[80px];
+          ul {
+            @apply rounded-[12px] py-[5px] px-[6px];
+            li {
+              @apply w-[110px] h-[41px] text-[15px]/[150%];
+            }
+          }
+          .images {
+            @apply gap-[50px];
+            .img-area {
+              @apply !w-[218px] !h-[450px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      .main-container {
+        .title-subcontainer {
+          @apply px-[100px];
+          h2 {
+            @apply text-[27px]/[150%];
+          }
+          p {
+            @apply text-[12px]/[150%];
+          }
+        }
+        .subcontainer {
+          @apply !gap-[70px];
+        }
+        ul {
+          li {
+            @apply w-[100px] h-[38px] text-[14px]/[150%];
+          }
+        }
+        .images {
+          @apply gap-[45px];
+          .img-area {
+            @apply !w-[200px] !h-[415px];
+          }
+        }
+      }
+    }
+    @media (max-width: 639px) {
+      .main-container {
+        .images {
+          &.translate-overview {
+            transform: translateX(30%);
+          }
+          &.translate-spot {
+            transform: translateX(0%);
+          }
+          &.translate-futures {
+            transform: translateX(-30%);
+          }
+        }
+      }
+    }
+  }
+  .futures-buy-sell-assets-section {
+    @apply pb-[85px] px-[100px] w-full relative overflow-hidden max-w-container mx-auto;
+    .main-container {
+      @apply flex items-center gap-[100px] w-full h-full;
+      .image-subcontainer {
+        @apply w-[500px] h-[500px] flex flex-col justify-center items-end;
+        img {
+          @apply w-[615px] h-[450px] left-0 object-cover absolute;
+        }
+      }
+      .description-subcontainer {
+        @apply flex flex-1 flex-col gap-[30px];
+        .start-now-description {
+          @apply flex flex-col gap-[10px];
+          h2 {
+            @apply text-[38px]/[140%] font-black text-[#2E3339];
+            span {
+              background: linear-gradient(
+                89.49deg,
+                #1b4ca7 -18.69%,
+                #318ac6 98.33%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+          h5 {
+            @apply text-[20px]/[150%] font-bold;
+            background: linear-gradient(
+              89.33deg,
+              #0c29c1 0.57%,
+              #fa00ff 147.17%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          p {
+            @apply text-[16px]/[200%] font-medium text-neutral-700;
+          }
+        }
+        .start-button-logo {
+          @apply flex flex-col gap-[30px];
+          a {
+            &.button {
+              @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+              svg {
+                path {
+                  @apply fill-white;
+                }
+              }
+            }
+          }
+          .start-now-store {
+            @apply flex gap-[14px] items-center;
+            img {
+              &.apple-logo {
+                @apply w-[130.64px] h-[38.71px];
+              }
+              &.playstore-logo {
+                @apply w-[114.43px] h-[37.02px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply pt-[50px];
+      .main-container {
+        @apply gap-[40px];
+        .image-subcontainer {
+          @apply w-[450px] h-[450px];
+          img {
+            @apply w-[555px] h-[400px];
+          }
+        }
+        .description-subcontainer {
+          @apply gap-[30px];
+          .start-now-description {
+            @apply gap-[10px];
+            h2 {
+              @apply text-[34px]/[140%];
+            }
+            h5 {
+              @apply text-[18px]/[150%];
+            }
+            p {
+              @apply text-[14px]/[200%];
+            }
+          }
+          .start-button-logo {
+            @apply gap-[30px];
+            a {
+              &.button {
+                @apply py-[13px] w-[220px] text-[12px]/[150%];
+              }
+            }
+            .start-now-store {
+              @apply flex gap-[14px] items-center;
+              img {
+                &.apple-logo {
+                  @apply w-[130.64px] h-[38.71px];
+                }
+                &.playstore-logo {
+                  @apply w-[114.43px] h-[37.02px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .main-container {
+        @apply gap-[40px];
+        .image-subcontainer {
+          @apply w-[400px] h-[400px];
+          img {
+            @apply w-[500px] h-[350px];
+          }
+        }
+        .description-subcontainer {
+          @apply gap-[30px];
+          .start-now-description {
+            @apply gap-[10px];
+            h2 {
+              @apply text-[31px]/[140%];
+            }
+            h5 {
+              @apply text-[16px]/[150%];
+            }
+            p {
+              @apply text-[12px]/[200%];
+            }
+          }
+          .start-button-logo {
+            @apply gap-[30px];
+            a {
+              &.button {
+                @apply py-[13px] w-[200px] text-[12px]/[150%];
+              }
+            }
+            .start-now-store {
+              @apply flex gap-[14px] items-center;
+              img {
+                &.apple-logo {
+                  @apply w-[130.64px] h-[38.71px];
+                }
+                &.playstore-logo {
+                  @apply w-[114.43px] h-[37.02px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        @apply gap-0;
+        .image-subcontainer {
+          @apply w-[360px] h-[360px];
+          img {
+            @apply w-[450px] h-[315px];
+          }
+        }
+        .description-subcontainer {
+          @apply gap-[30px];
+          .start-now-description {
+            @apply gap-[10px];
+            h2 {
+              @apply text-[30px]/[140%];
+            }
+            h5 {
+              @apply text-[15px]/[150%];
+            }
+            p {
+              @apply text-[11.5px]/[200%];
+            }
+          }
+          .start-button-logo {
+            @apply gap-[30px];
+            a {
+              &.button {
+                @apply py-[13px] w-[200px] text-[12px]/[150%];
+              }
+            }
+            .start-now-store {
+              @apply flex gap-[14px] items-center;
+              img {
+                &.apple-logo {
+                  @apply w-[130.64px] h-[38.71px];
+                }
+                &.playstore-logo {
+                  @apply w-[114.43px] h-[37.02px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      .main-container {
+        @apply gap-0;
+        .image-subcontainer {
+          @apply w-[300px] h-[300px];
+          img {
+            @apply w-[400px] h-[295px];
+          }
+        }
+        .description-subcontainer {
+          @apply gap-[30px];
+          .start-now-description {
+            @apply gap-[10px];
+            h2 {
+              @apply text-[29px]/[140%];
+            }
+            h5 {
+              @apply text-[15px]/[150%];
+            }
+            p {
+              @apply text-[11.5px]/[200%];
+            }
+          }
+          .start-button-logo {
+            @apply gap-[30px];
+            a {
+              &.button {
+                @apply py-[13px] w-[200px] text-[12px]/[150%];
+              }
+            }
+            .start-now-store {
+              @apply flex gap-[14px] items-center;
+              img {
+                &.apple-logo {
+                  @apply w-[130.64px] h-[38.71px];
+                }
+                &.playstore-logo {
+                  @apply w-[114.43px] h-[37.02px];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @layer components {
+    &.mobile-responsive {
+      .futures-hero-section {
+        @apply pt-[65px] pb-[20px] h-[656px];
+        .futures-hero-section-area {
+          @apply flex-col px-[20px];
+          .section-text {
+            @apply items-center text-center gap-[30px] w-[80%];
+            .text-title {
+              @apply flex flex-col gap-[14px];
+              .title {
+                @apply w-[100%];
+                h1 {
+                  @apply text-[14px]/[150%];
+                }
+              }
+              p {
+                @apply text-[12px]/[150%];
+              }
+            }
+            a {
+              @apply w-[260px] h-[30px] text-[12px]/[150%];
+            }
+            .terdaftar {
+              @apply flex-col gap-[16px];
+              h5 {
+                @apply text-[12px]/[150%];
+              }
+              .logo-area {
+                @apply flex items-center gap-[14px];
+                .bappebti-logo {
+                  img {
+                    @apply w-[70px] h-[16px];
+                  }
+                }
+                .cfx-logo {
+                  img {
+                    @apply w-[37px] h-[13px];
+                  }
+                }
+                .kki-logo {
+                  img {
+                    @apply w-[51px] h-[18px];
+                  }
+                }
+              }
+            }
+          }
+          .section-image {
+            @apply relative w-full h-full;
+            img {
+              &.img-device {
+                @apply w-full object-contain absolute bottom-0;
+              }
+              &.img-bitcoin {
+                @apply w-[57px] h-[58px] absolute right-[75%] top-[20%];
+              }
+              &.img-etherium {
+                @apply w-[47px] h-[47px] absolute right-[88%] top-[60%];
+              }
+              &.img-litecoin {
+                @apply w-[39px] h-[39px] absolute right-[0px] top-[28%];
+              }
+              &.img-monero {
+                @apply w-[34px] h-[34px] absolute right-[-10px] top-[70%];
+              }
+            }
+          }
+        }
+      }
+      .futures-index-crypto-section {
+        @apply py-[20px] px-[0px];
+        .rfm-marquee-container {
+          @apply flex justify-start overflow-hidden;
+          .rfm-marquee {
+            @apply flex justify-center;
+            .rfm-initial-child-container {
+              @apply flex justify-between w-full;
+            }
+            .rfm-child {
+              @apply mx-[5px];
+              .index-cyrpto-content {
+                @apply w-[147px] h-[24px] items-center;
+                .crypto-title {
+                  label {
+                    @apply text-[8px]/[12px];
+                  }
+                }
+                .crypto-index {
+                  label {
+                    @apply text-[8px]/[12px];
+                    svg {
+                      @apply w-[12px] h-[12px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .futures-why-crypto-section {
+        @apply py-[20px] w-full relative overflow-hidden;
+        &::before {
+          @apply h-[400px];
+        }
         .main-container {
-            @apply flex items-center gap-[100px] w-full h-full;
-            .image-subcontainer {
-                @apply w-[500px] h-[500px] flex flex-col justify-center items-end;
-                img {
-                    @apply  w-[615px] h-[450px] left-0 object-cover absolute;
-                }
+          @apply flex flex-col justify-center items-center gap-[20px] w-full h-full;
+          .title-subcontainer {
+            @apply flex flex-col justify-center items-center w-full gap-[60px] pt-[40px];
+            .what-text {
+              @apply flex-col text-center gap-[20px] px-[20px];
+              h2 {
+                @apply text-[18px]/[150%] w-full;
+              }
+              p {
+                @apply text-[10px]/[150%] w-full;
+              }
             }
-            .description-subcontainer {
-                @apply flex flex-1 flex-col gap-[30px];
-                .start-now-description {
-                    @apply flex flex-col gap-[10px];
-                    h2 {
-                        @apply text-[38px]/[140%] font-black text-[#2E3339];
-                        span {
-                            background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-                    h5 {
-                        @apply text-[20px]/[150%] font-bold;
-                        background: linear-gradient(89.33deg, #0C29C1 0.57%, #FA00FF 147.17%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                    p {
-                        @apply text-[16px]/[200%] font-medium text-neutral-700
-                    }
-                }
-                .start-button-logo {
-                    @apply flex flex-col gap-[30px];
-                    a {
-                        @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                        svg {
-                            path {
-                                @apply fill-white;
-                            }
-                        }
-                    }
-                    .start-now-store {
-                        @apply flex gap-[14px] items-center;
-                        img {
-                            &.apple-logo {
-                                @apply w-[130.64px] h-[38.71px];
-                            }
-                            &.playstore-logo {
-                                @apply w-[114.43px] h-[37.02px];
-        
-                            }
-                        }
-                    }
-                }
+            .why-text {
+              h5 {
+                @apply text-[18px]/[150%];
+              }
             }
+          }
         }
-        @media (max-width:1280px) {
-            @apply pt-[50px];
-             .main-container {
-                @apply gap-[40px];
-                .image-subcontainer {
-                    @apply w-[450px] h-[450px];
+        .swiper-why {
+          @apply px-0;
+          .swiper {
+            .swiper-wrapper {
+              .swiper-slide {
+                @apply w-[159px] h-[220px] px-[6px];
+                .background-container {
+                  .image-subcontainer {
+                    @apply rounded-[9px];
+                    &::before {
+                      @apply rounded-[9px];
+                    }
+                  }
+                  .area-subcontainer {
+                    @apply px-[13px] gap-[13px];
+                    .img-area {
+                      @apply w-[36px] h-[36px];
+                      img {
+                        @apply w-[22px] h-[22px];
+                      }
+                    }
+                    .text-area {
+                      @apply gap-[9px];
+                      h5 {
+                        @apply text-[9px]/[150%];
+                      }
+                      p {
+                        @apply text-[6px]/[150%];
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .futures-list-coin-section {
+        @apply py-[20px] px-[20px];
+        .main-container {
+          @apply gap-[30px];
+          h2 {
+            @apply text-[18px]/[150%];
+          }
+          .subcontainer {
+            @apply flex-col gap-[37px];
+            .list-coin {
+              @apply w-full gap-[24px] px-[12px] py-[24px];
+              h5 {
+                @apply text-[14px]/[150%];
+              }
+              .coins {
+                @apply flex flex-col gap-[28px];
+                .coin {
+                  @apply flex items-center justify-between;
+                  .main-coin {
+                    @apply flex items-center gap-[20px];
                     img {
-                        @apply  w-[555px] h-[400px];
+                      @apply w-[46px] h-[46px];
                     }
+                    .detail-text {
+                      @apply flex flex-col;
+                      label {
+                        @apply text-[11.14px]/[150%];
+                      }
+                      span {
+                        @apply text-[8.67px]/[150%];
+                      }
+                    }
+                  }
+                  label {
+                    @apply text-[9.9px]/[150%];
+                  }
                 }
-                .description-subcontainer {
-                    @apply gap-[30px];
-                    .start-now-description {
-                        @apply gap-[10px];
-                        h2 {
-                            @apply text-[34px]/[140%];
-                        }
-                        h5 {
-                            @apply text-[18px]/[150%];
-                        }
-                        p {
-                            @apply text-[14px]/[200%];
-                        }
-                    }
-                    .start-button-logo {
-                        @apply gap-[30px];
-                        a {
-                            @apply py-[13px] w-[220px] text-[12px]/[150%];
-                        }
-                        .start-now-store {
-                            @apply flex gap-[14px] items-center;
-                            img {
-                                &.apple-logo {
-                                    @apply w-[130.64px] h-[38.71px];
-                                }
-                                &.playstore-logo {
-                                    @apply w-[114.43px] h-[37.02px];
-            
-                                }
-                            }
-                        }
-                    }
-                }
+              }
+              a {
+                @apply text-[11.14px]/[150%];
+              }
             }
+          }
         }
-        @media (max-width:1180px) {
-             .main-container {
-                @apply gap-[40px];
-                .image-subcontainer {
-                    @apply w-[400px] h-[400px];
-                    img {
-                        @apply  w-[500px] h-[350px];
-                    }
+      }
+      .futures-step-section {
+        @apply py-[20px] w-full relative overflow-hidden;
+        .main-container {
+          @apply gap-[30px] px-[20px];
+          h2 {
+            @apply text-center text-[18px]/[150%];
+          }
+          .subcontainer {
+            @apply flex flex-col gap-[40px];
+            .step-row {
+              @apply flex-col gap-[40px];
+              .step {
+                @apply w-full gap-[26px];
+                .text-area {
+                  @apply gap-[12px] pt-[25px];
+                  h5 {
+                    @apply text-[12px]/[150%];
+                  }
+                  p {
+                    @apply text-[7.54px]/[150%];
+                  }
                 }
-                .description-subcontainer {
-                    @apply gap-[30px];
-                    .start-now-description {
-                        @apply gap-[10px];
-                        h2 {
-                            @apply text-[31px]/[140%];
-                        }
-                        h5 {
-                            @apply text-[16px]/[150%];
-                        }
-                        p {
-                            @apply text-[12px]/[200%];
-                        }
-                    }
-                    .start-button-logo {
-                        @apply gap-[30px];
-                        a {
-                            @apply py-[13px] w-[200px] text-[12px]/[150%];
-                        }
-                        .start-now-store {
-                            @apply flex gap-[14px] items-center;
-                            img {
-                                &.apple-logo {
-                                    @apply w-[130.64px] h-[38.71px];
-                                }
-                                &.playstore-logo {
-                                    @apply w-[114.43px] h-[37.02px];
-            
-                                }
-                            }
-                        }
-                    }
+                .img-area {
+                  @apply w-[116px] h-[150px];
+                  img {
+                    @apply rounded-[12px];
+                  }
                 }
+              }
             }
+          }
         }
-        @media (max-width:1080px) {
-             .main-container {
-                @apply gap-0;
-                .image-subcontainer {
-                    @apply w-[360px] h-[360px];
-                    img {
-                        @apply  w-[450px] h-[315px];
-                    }
-                }
-                .description-subcontainer {
-                    @apply gap-[30px];
-                    .start-now-description {
-                        @apply gap-[10px];
-                        h2 {
-                            @apply text-[30px]/[140%];
-                        }
-                        h5 {
-                            @apply text-[15px]/[150%];
-                        }
-                        p {
-                            @apply text-[11.5px]/[200%];
-                        }
-                    }
-                    .start-button-logo {
-                        @apply gap-[30px];
-                        a {
-                            @apply py-[13px] w-[200px] text-[12px]/[150%];
-                        }
-                        .start-now-store {
-                            @apply flex gap-[14px] items-center;
-                            img {
-                                &.apple-logo {
-                                    @apply w-[130.64px] h-[38.71px];
-                                }
-                                &.playstore-logo {
-                                    @apply w-[114.43px] h-[37.02px];
-            
-                                }
-                            }
-                        }
-                    }
-                }
+      }
+      .futures-pemisahan-section {
+        @apply py-[20px];
+        .main-container {
+          @apply gap-[34px];
+          .title-subcontainer {
+            @apply gap-[14px] px-[20px];
+            h2 {
+              @apply text-[18px]/[150%];
+              span {
+                @apply !text-primary;
+              }
             }
-        }
-         @media (max-width:1024px) {
-             .main-container {
-                @apply gap-0;
-                .image-subcontainer {
-                    @apply w-[300px] h-[300px];
-                    img {
-                        @apply  w-[400px] h-[295px];
-                    }
-                }
-                .description-subcontainer {
-                    @apply gap-[30px];
-                    .start-now-description {
-                        @apply gap-[10px];
-                        h2 {
-                            @apply text-[29px]/[140%];
-                        }
-                        h5 {
-                            @apply text-[15px]/[150%];
-                        }
-                        p {
-                            @apply text-[11.5px]/[200%];
-                        }
-                    }
-                    .start-button-logo {
-                        @apply gap-[30px];
-                        a {
-                            @apply py-[13px] w-[200px] text-[12px]/[150%];
-                        }
-                        .start-now-store {
-                            @apply flex gap-[14px] items-center;
-                            img {
-                                &.apple-logo {
-                                    @apply w-[130.64px] h-[38.71px];
-                                }
-                                &.playstore-logo {
-                                    @apply w-[114.43px] h-[37.02px];
-            
-                                }
-                            }
-                        }
-                    }
-                }
+            p {
+              @apply text-[10px]/[150%];
             }
+          }
+          .subcontainer {
+            @apply gap-[59px] px-0;
+            ul {
+              @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
+              li {
+                @apply w-[104px] h-[40px] text-[14px]/[150%];
+                &.active {
+                  @apply bg-white rounded-[12px];
+                }
+              }
+            }
+            .images {
+              @apply gap-[30px];
+              &::before {
+                @apply h-[400px];
+              }
+              .img-area {
+                @apply w-[203px] h-[423px];
+              }
+            }
+          }
         }
+      }
+      .futures-buy-sell-assets-section {
+        @apply pt-[20px] pb-[40px] px-[20px];
+        .main-container {
+          @apply gap-[20px] flex-col;
+          .image-subcontainer {
+            @apply relative h-full w-full items-center;
+            img {
+              @apply h-[281px] w-full relative;
+            }
+            &::before {
+              content: "";
+              @apply absolute left-[-50px] w-[250px] h-[250px] z-0;
+              background: url("/images/ornaments/circle-loop-ornament-2.png")
+                no-repeat;
+              background-size: contain;
+            }
+          }
+          .description-subcontainer {
+            @apply w-full;
+            .start-now-description {
+              @apply text-center gap-[10px];
+              h2 {
+                @apply text-[14px]/[21px];
+              }
+              h5,
+              p {
+                @apply text-[12px]/[18px];
+              }
+            }
+            .start-button-logo {
+              @apply flex-col justify-center items-center gap-[30px];
+              a {
+                &.button {
+                  @apply w-[200px] text-[12px]/[18px] py-[10px];
+                  svg {
+                    @apply w-[18px] h-[18px];
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    
-    @layer components {
-        &.mobile-responsive {
-            .futures-hero-section {
-                @apply pt-[65px] pb-[20px] h-[656px];
-                .futures-hero-section-area {
-                    @apply flex-col px-[20px];
-                    .section-text {
-                        @apply items-center text-center gap-[30px] w-[80%];
-                        .text-title {
-                            @apply flex flex-col gap-[14px];
-                            .title {
-                                @apply w-[100%];
-                                h1 {
-                                    @apply text-[14px]/[150%];
-                                }
-                            }
-                            p {
-                                @apply text-[12px]/[150%];
-                            }
-                        }
-                        a {
-                            @apply w-[260px] h-[30px] text-[12px]/[150%] ;
-                        }
-                        .terdaftar {
-                            @apply flex-col gap-[16px];
-                            h5 {
-                                @apply text-[12px]/[150%];
-                            }
-                            .logo-area {
-                                @apply flex items-center gap-[14px];
-                                .bappebti-logo {
-                                    img {
-                                        @apply w-[70px] h-[16px];
-                                    }
-                                }
-                                .cfx-logo {
-                                    img {
-                                        @apply w-[37px] h-[13px];
-                                    }
-                                }
-                                .kki-logo {
-                                    img {
-                                        @apply w-[51px] h-[18px];
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-                    .section-image {
-                        @apply relative w-full h-full;
-                        img {
-                            &.img-device {
-                                @apply w-full object-contain absolute bottom-0;
-                            }
-                            &.img-bitcoin {
-                                @apply  w-[57px] h-[58px] absolute right-[75%] top-[20%];
-                            }
-                            &.img-etherium {
-                                @apply  w-[47px] h-[47px] absolute right-[88%] top-[60%];
-                            }
-                            &.img-litecoin {
-                                @apply  w-[39px] h-[39px] absolute right-[0px] top-[28%];
-                            }
-                            &.img-monero {
-                                @apply  w-[34px] h-[34px] absolute right-[-10px] top-[70%];
-                            }
-                        }    
-                    }
-                
-                }
-            }
-            .futures-index-crypto-section {
-                @apply py-[20px] px-[0px];
-                .rfm-marquee-container  {
-                    @apply flex justify-start overflow-hidden;
-                    .rfm-marquee {
-                        @apply flex justify-center;
-                        .rfm-initial-child-container {
-                            @apply flex justify-between w-full;
-                        }
-                        .rfm-child {
-                            @apply mx-[5px];
-                            .index-cyrpto-content {
-                                @apply w-[147px] h-[24px] items-center ;
-                                .crypto-title{
-                                    label {
-                                        @apply text-[8px]/[12px];
-                                    }
-                                }
-                                .crypto-index{
-                                    label {
-                                        @apply text-[8px]/[12px];
-                                        svg {
-                                            @apply w-[12px] h-[12px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
-            .futures-why-crypto-section {
-                @apply py-[20px] w-full relative overflow-hidden;
-                &::before {
-                    @apply h-[400px];
-                }
-                .main-container {
-                    @apply flex flex-col justify-center items-center gap-[20px] w-full h-full;
-                    .title-subcontainer {
-                        @apply flex flex-col justify-center items-center w-full gap-[60px] pt-[40px];
-                        .what-text {
-                            @apply flex-col text-center gap-[20px] px-[20px];
-                            h2 {
-                                @apply text-[18px]/[150%] w-full;
-                            }
-                            p {
-                                @apply text-[10px]/[150%] w-full;
-                            }
-                        }
-                        .why-text {
-                            h5 {
-                                @apply text-[18px]/[150%];
-                            }
-                        }
-                            
-                    }
-                }
-                .swiper-why {
-                    @apply px-0;
-                    .swiper {
-                        .swiper-wrapper {
-                            .swiper-slide {
-                                @apply w-[159px] h-[220px] px-[6px];
-                                .background-container {
-                                    .image-subcontainer {
-                                        @apply rounded-[9px];
-                                        &::before {
-                                            @apply rounded-[9px];
-                                        }
-                                    }
-                                    .area-subcontainer {
-                                        @apply px-[13px] gap-[13px];
-                                        .img-area {
-                                            @apply w-[36px] h-[36px] ;
-                                            img {
-                                                @apply w-[22px] h-[22px];
-                                            }
-                                        };
-                                        .text-area {
-                                            @apply gap-[9px];
-                                            h5 {
-                                                @apply text-[9px]/[150%]
-                                            }
-                                            p {
-                                                @apply text-[6px]/[150%];
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }                            
-                    }
-                } 
-            }
-            .futures-list-coin-section {
-                @apply py-[20px] px-[20px];
-                .main-container {
-                    @apply gap-[30px];
-                    h2 {
-                        @apply text-[18px]/[150%];
-                    }
-                    .subcontainer {
-                        @apply flex-col gap-[37px];
-                        .list-coin {
-                            @apply w-full gap-[24px] px-[12px] py-[24px];
-                            h5 {
-                                @apply text-[14px]/[150%];
-                            }
-                            .coins {
-                                @apply flex flex-col gap-[28px];
-                                .coin {
-                                    @apply flex items-center justify-between;
-                                    .main-coin {
-                                        @apply flex items-center gap-[20px];
-                                        img {
-                                            @apply w-[46px] h-[46px];
-                                        }
-                                        .detail-text {
-                                            @apply flex flex-col;
-                                            label {
-                                                @apply text-[11.14px]/[150%];
-                                            }
-                                            span {
-                                                @apply text-[8.67px]/[150%];
-                                            }
-                                        }
-                                    }
-                                    label {
-                                        @apply text-[9.9px]/[150%];
-                                    }
-                                }
-                            }
-                            a {
-                                @apply text-[11.14px]/[150%];
-                            }
-                        }
-                    }
-                }
-            }
-            .futures-step-section {
-                @apply py-[20px] w-full relative overflow-hidden;
-                .main-container {
-                    @apply gap-[30px] px-[20px];
-                    h2 {
-                        @apply text-center text-[18px]/[150%];
-                    }
-                    .subcontainer {
-                        @apply flex flex-col gap-[40px];
-                        .step-row {
-                            @apply flex-col gap-[40px];
-                            .step {
-                                @apply w-full gap-[26px];
-                                .text-area {
-                                    @apply gap-[12px] pt-[25px];
-                                    h5 {
-                                        @apply text-[12px]/[150%];
-                                    }
-                                    p {
-                                        @apply text-[7.54px]/[150%];
-                                    }
-                                }
-                                .img-area {
-                                    @apply w-[116px] h-[150px];
-                                    img {
-                                        @apply rounded-[12px];
-                                    }
-                                }
-                               
-                            }
-                        }
-                    }
-                }
-            }
-            .futures-pemisahan-section {
-                @apply py-[20px];
-                .main-container {
-                    @apply gap-[34px];
-                    .title-subcontainer {
-                        @apply gap-[14px] px-[20px];
-                        h2 {
-                            @apply text-[18px]/[150%];
-                            span {
-                                @apply !text-primary;
-                            }
-                        }
-                        p {
-                            @apply text-[10px]/[150%];
-                        }
-                    }
-                    .subcontainer {
-                        @apply gap-[59px] px-0;
-                        ul {
-                            @apply flex items-center justify-between bg-[#F0F1F3] rounded-[12px] py-[5px] px-[6px] max-w-container mx-auto;
-                            li {
-                                @apply w-[104px] h-[40px] text-[14px]/[150%];    
-                                &.active {
-                                    @apply bg-white rounded-[12px];
-                                }
-                            }
-                        }
-                        .images {
-                            @apply gap-[30px];
-                            &::before {
-                                @apply h-[400px];
-                            }
-                            .img-area {
-                                @apply w-[203px] h-[423px];
-                            }
-                        }
-                    }
-                }
-            }
-            .futures-buy-sell-assets-section  {
-                @apply pt-[20px] pb-[40px] px-[20px];
-                .main-container {
-                    @apply  gap-[20px] flex-col;
-                    .image-subcontainer {
-                        @apply relative h-full w-full items-center;
-                        img {
-                            @apply h-[281px] w-full relative;
-                        }
-                        &::before {
-                            content: '';
-                            @apply absolute left-[-50px] w-[250px] h-[250px] z-0;
-                            background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-                            background-size: contain;
-                        }
-                    }
-                    .description-subcontainer {
-                        @apply w-full;
-                        .start-now-description {
-                            @apply text-center gap-[10px];
-                            h2 {
-                                @apply text-[14px]/[21px];
-                            }
-                            h5,p {
-                                @apply text-[12px]/[18px];
-                            }
-                        }
-                        .start-button-logo {
-                            @apply flex-col justify-center items-center gap-[30px];
-                            a {
-                                @apply w-[200px] text-[12px]/[18px] py-[10px];
-                                svg {
-                                    @apply w-[18px] h-[18px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }
