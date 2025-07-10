@@ -18,6 +18,10 @@
   }
   .home-page {
     .home-hero-section {
+      @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
+      background: url("/images/ornaments/home-ornament-dark.png") no-repeat;
+      background-position: center;
+      background-size: cover;
       @apply bg-[#000000];
       .home-hero-section-area {
         .section-text {
@@ -88,7 +92,7 @@
 
   .home-hero-section {
     @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
-    background: url("/images/ornaments/home-ornament.png") no-repeat;
+    background: url("/images/ornaments/home-ornament-light.png") no-repeat;
     background-position: center;
     background-size: cover;
     .home-hero-section-area {
@@ -292,7 +296,7 @@
       .section-device {
         @apply flex-1 flex flex-col justify-center items-center;
         img {
-          @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-[-80px] bottom-0;
+          @apply w-[990px] h-[700px] object-cover absolute right-[-130px] top-0 bottom-0;
         }
         @media (max-width: 1280px) {
           img {
