@@ -75,11 +75,11 @@
     }
     .home-ewallet-section {
       .ewallet-image {
-        @apply w-[550px] h-[400px] relative;
+        /* @apply w-[550px] h-[400px] relative; */
         .img {
           @apply w-full h-full;
           content: "";
-          background: url("/images/others/wallets-dark.png") no-repeat;
+          background: url("/images/others/ewallets-dark.png") no-repeat;
           background-position: center;
           background-size: contain !important;
         }
@@ -970,7 +970,7 @@
       .img {
         @apply w-full h-full;
         content: "";
-        background: url("/images/others/wallets.png") no-repeat;
+        background: url("/images/others/ewallets-light.png") no-repeat;
         background-position: center;
         background-size: contain !important;
       }
