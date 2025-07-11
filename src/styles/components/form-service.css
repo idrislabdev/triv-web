@@ -3,89 +3,87 @@
 @tailwind utilities;
 
 .form-service {
-    @apply rounded-[40px] flex flex-col p-[44px] gap-[30px] bg-white;    
-    box-shadow: 0px 4px 40px 0px #00000033;
-    .button-tab {
-        @apply flex items-center relative;
-        button {
-            @apply h-[60px] text-[20px]/[30px] font-black text-neutral-800 w-1/2 bg-neutral-100 rounded-none;
-            &.active {
-                @apply bg-primary text-white;
-            }
-        }
-        &.buy {
-            &::after {
-                content: '';
-                @apply absolute left-[calc(50%-15px)] z-[1] h-full w-[30px] bg-primary skew-x-[-25deg];
-            }
-        }
-        &.sell {
-            &::after {
-                content: '';
-                @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
-            }
-            button {
-                &.active {
-                    @apply bg-red-600;
-                }
-            }
-        }
-    }
-    .title {
-        @apply text-[22px]/[33px] font-black text-black;
-        span {
-            @apply inline-block;
-            img {
-                @apply w-[105px] object-cover;
-            }
-        }
-    }
-    .form-title {
-        @apply flex items-center flex-wrap;
-        h5 {
-            @apply text-[22px]/[33px] font-black text-black inline-block;
-        }
-        img {
-            @apply w-[105px] object-cover px-[8px];
-        }
-    }
-    .description {
-        @apply text-[16px]/[24px] text-neutral-700 font-medium;
-    }
-    .group-input {
-        span {
-            &.append {
-                @apply text-[24px]/[36px] font-bold text-neutral-800 top-[2px];
-            }
-        }
-        input {
-            @apply text-[24px]/[36px] font-bold text-neutral-800 !px-[45px];
-
-        }
-    }
-    .button-group {
-        @apply flex items-center gap-[10px];
-        button {
-            @apply rounded-[12px] bg-neutral-100 text-[14px]/[21px] font-semibold text-neutral-800 px-[16px] py-[6px] h-[33px];
-        }
-    }
-    .get-input {
-        @apply flex flex-col gap-[18px];
-        label {
-            @apply text-[16px]/[24px] font-medium text-neutral-700;
-        }
-        .label-value {
-            @apply bg-neutral-100 rounded-[4px] h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
-            span {
-                @apply text-[24px]/[36px] text-neutral-800 font-bold;
-            }
-        }
-    }
+  @apply rounded-[40px] flex flex-col p-[44px] gap-[30px] bg-white;
+  box-shadow: 0px 4px 40px 0px #00000033;
+  .button-tab {
+    @apply flex items-center relative;
     button {
-        @apply rounded-[14px] text-[16px]/[24px] h-[54px];
-        &.btn-danger {
-            @apply bg-red-600 border-red-600 text-white;
-        }
+      @apply h-[60px] text-[20px]/[30px] font-black text-neutral-800 w-1/2 bg-neutral-100 rounded-none;
+      &.active {
+        @apply bg-primary text-white;
+      }
     }
+    &.buy {
+      &::after {
+        content: "";
+        @apply absolute left-[calc(50%-15px)] z-[1] h-full w-[30px] bg-primary skew-x-[-25deg];
+      }
+    }
+    &.sell {
+      &::after {
+        content: "";
+        @apply absolute right-[calc(50%-15px)] z-[1] h-full w-[30px] bg-red-600 skew-x-[-25deg];
+      }
+      button {
+        &.active {
+          @apply bg-red-600;
+        }
+      }
+    }
+  }
+  .title {
+    @apply text-[22px]/[33px] font-black text-black;
+    span {
+      @apply inline-block;
+      img {
+        @apply w-[105px] object-cover;
+      }
+    }
+  }
+  .form-title {
+    @apply flex items-center flex-wrap;
+    h5 {
+      @apply text-[22px]/[33px] font-black text-black inline-block;
+    }
+    img {
+      @apply w-[105px] object-cover px-[8px];
+    }
+  }
+  .description {
+    @apply text-[16px]/[24px] text-neutral-700 font-medium;
+  }
+  .group-input {
+    span {
+      &.append {
+        @apply text-[24px]/[36px] font-bold text-neutral-800 top-[5px];
+      }
+    }
+    input {
+      @apply text-[24px]/[36px] font-bold text-neutral-800 !px-[45px] h-[48px];
+    }
+  }
+  .button-group {
+    @apply flex items-center gap-[10px];
+    button {
+      @apply rounded-[12px] bg-neutral-100 text-[14px]/[21px] font-semibold text-neutral-800 px-[16px] py-[6px] h-[33px];
+    }
+  }
+  .get-input {
+    @apply flex flex-col gap-[18px];
+    label {
+      @apply text-[16px]/[24px] font-medium text-neutral-700;
+    }
+    .label-value {
+      @apply bg-neutral-100 rounded-[4px] h-[52px] w-full flex flex-col justify-center px-[20px] py-[8px];
+      span {
+        @apply text-[24px]/[36px] text-neutral-800 font-bold;
+      }
+    }
+  }
+  button {
+    @apply rounded-[14px] text-[16px]/[24px] h-[54px];
+    &.btn-danger {
+      @apply bg-red-600 border-red-600 text-white;
+    }
+  }
 }
-

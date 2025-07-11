@@ -18,7 +18,6 @@
   }
   .home-page {
     .home-hero-section {
-      @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
       background: url("/images/ornaments/home-ornament-dark.png") no-repeat;
       background-position: center;
       background-size: cover;
@@ -71,6 +70,18 @@
           h6 {
             @apply !text-[#191B20];
           }
+        }
+      }
+    }
+    .home-ewallet-section {
+      .ewallet-image {
+        @apply w-[550px] h-[400px] relative;
+        .img {
+          @apply w-full h-full;
+          content: "";
+          background: url("/images/others/wallets-dark.png") no-repeat;
+          background-position: center;
+          background-size: contain !important;
         }
       }
     }
@@ -956,8 +967,12 @@
     }
     .ewallet-image {
       @apply w-[550px] h-[400px] relative;
-      img {
-        @apply w-full;
+      .img {
+        @apply w-full h-full;
+        content: "";
+        background: url("/images/others/wallets.png") no-repeat;
+        background-position: center;
+        background-size: contain !important;
       }
     }
     @media (max-width: 1280px) {
@@ -1773,8 +1788,8 @@
         }
         .ewallet-image {
           @apply w-[246px] h-full flex flex-col justify-center items-center;
-          img {
-            @apply w-[246px] h-[219px] relative;
+          .img {
+            @apply w-[246px] h-[219px];
           }
         }
       }

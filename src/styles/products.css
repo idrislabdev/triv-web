@@ -1,933 +1,940 @@
 @tailwind components;
 .dark-theme {
-    /* @apply !bg-[#141414]; */
-    @apply !bg-[#000000];
-    h1, h2, h3, h4, h5, h6 {
-      @apply !text-slate-200;
-    }
-    p,label,span {
-        @apply !text-slate-300;
-    }
-    .products-page {
-        .products-service-header-section {
-            button {
-                @apply !bg-[#3A80AF] !text-white;
-                &.white {
-                    @apply !bg-white !text-[#3A80AF];
-
-                }
-            }
-        }
-        .products-average-section{
-            .box-container {
-                @apply bg-[#1b1f22];
-                .sub-container {
-                    .detail-subcontainer {
-                        .detail-description-subcontainer {
-                            p {
-                                span {
-                                    @apply !text-[#FF7F17];   
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .products-affliate-section {
-            button {
-                @apply !bg-[#3A80AF] !text-white;
-            }
-        }
-        .products-investasi-now-section {
-            a {
-                @apply !bg-[#3A80AF] !text-white;
-            }
-        }
-    }
-}
-.products-page {
-    @apply max-w-container mx-auto;
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
-    .products-header-section {
-        @apply flex flex-col items-center py-[50px] px-[100px] gap-[60px];
-        .title-container {
-            @apply flex flex-col items-center text-center justify-center gap-[40px];
-            h2 {
-                @apply text-[28px]/[42px] text-black font-bold;
-            }
-            p {
-                @apply text-[18px]/[27px] text-neutral-700;
-            }
-        }
-        .image-container {
-            @apply w-full flex flex-col justify-center items-center relative;
-            img {
-                @apply  w-[392px] h-[355px] ;
-            }
-            &::before {
-                content: '';
-                @apply absolute ml-[-200px] w-[500px] h-[500px] z-[-1];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-            }
-        }
-    }
+  /* @apply !bg-[#141414]; */
+  @apply !bg-[#000000];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !text-slate-200;
+  }
+  p,
+  label,
+  span {
+    @apply !text-slate-300;
+  }
+  .products-page {
     .products-service-header-section {
-        @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px];
-        .service-header-container {
-            @apply flex flex-col justify-center gap-[20px] px-[20px];
-            .title-container {
-                @apply flex flex-col items-center text-center justify-center gap-[10px];
-                h2 {
-                    @apply text-[28px]/[42px] text-black font-bold;
-                }
-                p {
-                    @apply text-[18px]/[27px] text-neutral-700;
-                }
-            }
-            .button-group {
-                @apply flex gap-[22px] items-center justify-center;
-                button {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] h-[48px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                    &.white {
-                        @apply text-primary bg-white border border-primary;
-                        svg {
-                            path {
-                                @apply fill-primary;
-                            }
-                        }
-                    }
-                }
-    
-            }
+      button {
+        @apply !bg-[#3A80AF] !text-white;
+        &.white {
+          @apply !bg-white !text-[#3A80AF];
         }
-    }
-    .products-service-header-new-section {
-        @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px];
-        .service-header-container {
-            @apply flex flex-col justify-center gap-[20px] px-[20px];
-            .title-container {
-                @apply flex flex-col items-center text-center justify-center gap-[10px];
-                h2 {
-                    @apply text-[28px]/[42px] text-black font-bold;
-                }
-                p {
-                    @apply text-[18px]/[27px] text-neutral-700;
-                }
-            }
-            .button-group {
-                @apply flex gap-[22px] items-center justify-center;
-                button {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] h-[48px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                    &.white {
-                        @apply text-primary bg-white border border-primary;
-                        svg {
-                            path {
-                                @apply fill-primary;
-                            }
-                        }
-                    }
-                }
-    
-            }
-        }
-    }
-    .products-device-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative;
-        .box-container {
-            @apply flex flex-col justify-center items-center relative w-[90%];
-            img {
-                @apply w-[617px] h-[387px] object-contain;
-            }
-        }
-    }
-    .products-regulasi-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
-        .regulasi-container {
-            @apply flex gap-[50px];
-            .box-subcontainer {
-                @apply w-1/2 flex flex-col gap-[20px];
-                img {
-                    @apply w-[87px] h-[73px] object-cover;
-                }
-                h5 {
-                    @apply text-[28px]/[42px] font-bold text-black;
-                }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700;
-                }
-            }
-        }
-        .regulator-container {
-            @apply flex gap-[30px];
-            img {
-                &.kominfo {
-                    @apply w-[85px] h-[26px];
-                }
-                &.bsi {
-                    @apply w-[59px] h-[31px];
-                }
-                &.cisa {
-                    @apply w-[85px] h-[34px];
-                }
-                &.bappebti {
-                    @apply w-[105px] h-[24px];
-                }
-            }
-        }
-    }
-    .products-regulasi-device-section {
-        @apply flex items-center px-[100px] py-[50px] relative;
-        .image-container {
-            @apply w-[500px] flex flex-col justify-center items-center;
-            img {
-                @apply w-[266px] h-[553px];
-            }
-        }
-        .regulasi-container {
-            @apply flex-1 flex flex-col gap-[40px];
-            .box-subcontainer {
-                @apply flex flex-col gap-[20px];
-                .box-title {
-                    @apply flex items-center gap-[20px];
-                    img {
-                        @apply w-[70px] h-[43px] object-cover;
-                    }
-                    h5 {
-                        @apply text-[20px]/[30px] font-bold text-black;
-                    }
-                }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700;
-                }
-            }
-            .regulator-subcontainer {
-                @apply flex gap-[30px];
-                img {
-                    &.kominfo {
-                        @apply w-[85px] h-[26px];
-                    }
-                    &.bsi {
-                        @apply w-[59px] h-[31px];
-                    }
-                    &.cisa {
-                        @apply w-[85px] h-[34px];
-                    }
-                    &.bappebti {
-                        @apply w-[105px] h-[24px];
-                    }
-                }
-            }
-        }
-    }
-    .products-layanan-section {
-        @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
-        .title-container {
-            @apply flex flex-col items-center text-center justify-center gap-[20px];
-            h2 {
-                @apply text-[28px]/[42px] text-black font-bold;
-            }
-            p {
-                @apply text-[18px]/[27px] text-neutral-700;
-            }
-        }
-        .layanan-container {
-            @apply flex flex-wrap;
-           .card-subcontainer {
-                @apply w-1/3 p-[20px];
-                .card-layanan {
-                    @apply flex flex-col justify-center items-center text-center gap-[30px] cursor-pointer p-[20px];
-                    &:hover {
-                        @apply rounded-[20px];
-                        box-shadow: 0px 4px 16px 0px #0000001A;
-                    }
-                    span {
-                        @apply w-[80px] h-[80px] rounded-[50%] flex flex-col justify-center items-center;
-                        &.jual-beli {
-                            @apply bg-[#EEF7FD];
-                        }
-                        &.kirim {
-                            @apply bg-[#EBFBF9];
-                        }
-                        &.terima {
-                            @apply bg-[#FFF9E6];
-                        }
-                        &.hoddl {
-                            @apply bg-[#FFF3E8];
-                        }
-                        &.swap {
-                            @apply bg-[#F0FAF0];
-                        }
-                        &.isi-pulsa {
-                            @apply bg-[#F8ECF5];
-                        }
-                    }
-                    .content {
-                        @apply flex flex-col gap-[16px];
-                        h5 {
-                            @apply text-[18px]/[27px] text-black font-bold;
-                        }
-                        p {
-                            @apply text-[12px]/[18px] text-neutral-700;
-                        }
-                    }
-                }
-           }
-        }
+      }
     }
     .products-average-section {
-        @apply flex flex-col items-center px-[100px] py-[75px] relative;
-        .box-container {
-            @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
-            .sub-container {
-                @apply flex gap-[100px];
-                .detail-subcontainer {
-                    @apply flex flex-col items-center gap-[30px] w-1/2;
-                    .detail-info {
-                        @apply flex items-center gap-[4px];
-                        label {
-                            @apply text-[38px]/[57px] font-medium text-neutral-900;
-                            span {
-                                @apply text-[30px]/[45px];
-                            }
-                            
-                        }
-                    }
-                    .detail-description-subcontainer {
-                        @apply flex flex-col gap-[10px] items-center text-center;
-                        h5 {
-                            @apply text-[18px]/[27px] font-bold text-neutral-900;
-                        }
-                        p {
-                            @apply text-[12px]/[18px] font-medium text-neutral-900;
-                            span {
-                                @apply text-[#FF7F17];
-                            }
-                        }
-                    }
+      .box-container {
+        @apply bg-[#1b1f22];
+        .sub-container {
+          .detail-subcontainer {
+            .detail-description-subcontainer {
+              p {
+                span {
+                  @apply !text-[#FF7F17];
                 }
+              }
             }
-            &::after {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-            }
-            &::before {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-            }
+          }
         }
-    
-    }
-    .products-topup-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
-        .image-container {
-            @apply w-1/3 flex flex-col justify-center items-end relative;
-            img {
-                @apply  w-[230px] h-[478px] ;
-            }
-            &::before {
-                content: '';
-                @apply absolute mr-[-50px] w-[500px] h-[500px] z-[-1];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-            }
-        }
-        .description-container {
-            @apply flex w-3/4 flex-col gap-[30px];
-            .start-now-description {
-                @apply flex-1 flex flex-col gap-[18px];
-                h2 {
-                    @apply text-[28px]/[42px] font-bold text-neutral-900;
-                }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700;
-                }
-            }
-            .form-topup{
-                @apply flex gap-[10px] items-center;
-                label {
-                    @apply text-[12px]/[18px] text-neutral-700 font-medium;
-                }
-                select {
-                    @apply w-[220px];
-                }
-            }
-            button {
-                @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
-                svg {
-                    path {
-                        @apply fill-white;
-                    }
-                }
-            }
-        }
+      }
     }
     .products-affliate-section {
-        @apply h-[490px] relative flex flex-col justify-center px-[100px];
-        background: url("/images/backgrounds/affliate.png") no-repeat;
-        background-position: center;
-        background-size: cover;
-        .affliate-container {
-            @apply flex justify-between gap-[80px];
-            img {
-                @apply w-[245px] h-[226px];
-            }
-            .middle-subcontainer {
-                @apply flex flex-col gap-[44px];
-                .sub-subcontainer {
-                    @apply flex flex-col gap-[10px];
-                    h5 {
-                        @apply text-[20px]/[30px] font-semibold text-white;
-                    }
-                    p {
-                        @apply text-[16px]/[32px] font-medium text-neutral-200;
-                    }
-                }
-            }
-            .end-subcontainer {
-                @apply flex flex-col gap-[40px];
-                h5 {
-                    @apply text-[28px]/[42px] font-bold text-white;
-                }
-                .button-group {
-                    @apply flex flex-col gap-[22px];
-                    button {
-                        @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[13px] w-[379px] h-[40px] text-[14px]/[21px] font-bold;
-                    }
-    
-                }
-            }
-        }
+      button {
+        @apply !bg-[#3A80AF] !text-white;
+      }
     }
     .products-investasi-now-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[60px];
-        .image-container {
-            @apply w-1/2 flex flex-col justify-center items-end relative;
-            img {
-                @apply  w-[392px] h-[355px] ;
-            }
-            &::before {
-                content: '';
-                @apply absolute right-[50px] w-[500px] h-[500px] z-[-1];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
-            }
-        }
-        .description-container {
-            @apply flex w-1/2 flex-col gap-[30px];
-            .start-now-description {
-                @apply flex-1 flex flex-col gap-[18px];
-                h2 {
-                    @apply text-[28px]/[42px] font-bold text-neutral-900;
-                }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700;
-                }
-            }
-           .start-button-logo {
-                @apply flex gap-[30px];
-                a {
-                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .start-now-store {
-                    @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[31px] h-[37px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[30px] h-[32px];
-    
-                        }
-                    }
-                }
-                .start-now-store-mobile {
-                    @apply hidden gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
-                        }
-                    }
-                }
-           }
-
-            .start-button-logo {
-                @apply flex gap-[30px];
-                a {
-                    @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .start-now-store {
-                    @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[31px] h-[37px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[30px] h-[32px];
-    
-                        }
-                    }
-                }
-                .start-now-store-mobile {
-                    @apply hidden gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
-                        }
-                    }
-                }
-            }
-
-            .start-button-logo-product {
-                @apply flex flex-col gap-[30px];
-                a {
-                    @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .start-now-store {
-                    @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
-                        }
-                    }
-                }
-            }
-        }
+      a {
+        @apply !bg-[#3A80AF] !text-white;
+      }
     }
-    .products-ewallet-section {
-        @apply flex items-center  px-[100px] py-[50px];
-        .ewallet-description {
-            @apply flex-1 flex flex-col gap-[26px] py-[20px];
-            h2 {
-                @apply text-[28px]/[42px] font-bold text-neutral-900;
+  }
+}
+.products-page {
+  @apply max-w-container mx-auto;
+  &.dark-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @apply text-slate-200;
+    }
+    p {
+      @apply text-slate-300;
+    }
+    a {
+      @apply text-[#737aff];
+    }
+  }
+  &.light-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @apply text-black;
+    }
+    p {
+      @apply text-neutral-700;
+    }
+  }
+  .products-header-section {
+    @apply flex flex-col items-center py-[50px] px-[100px] gap-[60px];
+    .title-container {
+      @apply flex flex-col items-center text-center justify-center gap-[40px];
+      h2 {
+        @apply text-[28px]/[42px] text-black font-bold;
+      }
+      p {
+        @apply text-[18px]/[27px] text-neutral-700;
+      }
+    }
+    .image-container {
+      @apply w-full flex flex-col justify-center items-center relative;
+      img {
+        @apply w-[392px] h-[355px];
+      }
+      &::before {
+        content: "";
+        @apply absolute ml-[-200px] w-[500px] h-[500px] z-[-1];
+        background: url("/images/ornaments/circle-loop-ornament-2.png")
+          no-repeat;
+      }
+    }
+  }
+  .products-service-header-section {
+    @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px];
+    .service-header-container {
+      @apply flex flex-col justify-center gap-[20px] px-[20px];
+      .title-container {
+        @apply flex flex-col items-center text-center justify-center gap-[10px];
+        h2 {
+          @apply text-[28px]/[42px] text-black font-bold;
+        }
+        p {
+          @apply text-[18px]/[27px] text-neutral-700;
+        }
+      }
+      .button-group {
+        @apply flex gap-[22px] items-center justify-center;
+        button {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] h-[48px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
             }
+          }
+          &.white {
+            @apply text-primary bg-white border border-primary;
+            svg {
+              path {
+                @apply fill-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-service-header-new-section {
+    @apply flex flex-col justify-center items-center py-[50px] px-[100px] gap-[20px];
+    .service-header-container {
+      @apply flex flex-col justify-center gap-[20px] px-[20px];
+      .title-container {
+        @apply flex flex-col items-center text-center justify-center gap-[10px];
+        h2 {
+          @apply text-[28px]/[42px] text-black font-bold;
+        }
+        p {
+          @apply text-[18px]/[27px] text-neutral-700;
+        }
+      }
+      .button-group {
+        @apply flex gap-[22px] items-center justify-center;
+        button {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] h-[48px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+          &.white {
+            @apply text-primary bg-white border border-primary;
+            svg {
+              path {
+                @apply fill-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-device-section {
+    @apply flex flex-col items-center px-[100px] py-[50px] relative;
+    .box-container {
+      @apply flex flex-col justify-center items-center relative w-[90%];
+      img {
+        @apply w-[617px] h-[387px] object-contain;
+      }
+    }
+  }
+  .products-regulasi-section {
+    @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
+    .regulasi-container {
+      @apply flex gap-[50px];
+      .box-subcontainer {
+        @apply w-1/2 flex flex-col gap-[20px];
+        img {
+          @apply w-[87px] h-[73px] object-cover;
+        }
+        h5 {
+          @apply text-[28px]/[42px] font-bold text-black;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+      }
+    }
+    .regulator-container {
+      @apply flex gap-[30px];
+      img {
+        &.kominfo {
+          @apply w-[85px] h-[26px];
+        }
+        &.bsi {
+          @apply w-[59px] h-[31px];
+        }
+        &.cisa {
+          @apply w-[85px] h-[34px];
+        }
+        &.bappebti {
+          @apply w-[105px] h-[24px];
+        }
+      }
+    }
+  }
+  .products-regulasi-device-section {
+    @apply flex items-center px-[100px] py-[50px] relative;
+    .image-container {
+      @apply w-[500px] flex flex-col justify-center items-center;
+      img {
+        @apply w-[266px] h-[553px];
+      }
+    }
+    .regulasi-container {
+      @apply flex-1 flex flex-col gap-[40px];
+      .box-subcontainer {
+        @apply flex flex-col gap-[20px];
+        .box-title {
+          @apply flex items-center gap-[20px];
+          img {
+            @apply w-[70px] h-[43px] object-cover;
+          }
+          h5 {
+            @apply text-[20px]/[30px] font-bold text-black;
+          }
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+      }
+      .regulator-subcontainer {
+        @apply flex gap-[30px];
+        img {
+          &.kominfo {
+            @apply w-[85px] h-[26px];
+          }
+          &.bsi {
+            @apply w-[59px] h-[31px];
+          }
+          &.cisa {
+            @apply w-[85px] h-[34px];
+          }
+          &.bappebti {
+            @apply w-[105px] h-[24px];
+          }
+        }
+      }
+    }
+  }
+  .products-layanan-section {
+    @apply flex flex-col items-center px-[100px] py-[50px] relative gap-[50px];
+    .title-container {
+      @apply flex flex-col items-center text-center justify-center gap-[20px];
+      h2 {
+        @apply text-[28px]/[42px] text-black font-bold;
+      }
+      p {
+        @apply text-[18px]/[27px] text-neutral-700;
+      }
+    }
+    .layanan-container {
+      @apply flex flex-wrap;
+      .card-subcontainer {
+        @apply w-1/3 p-[20px];
+        .card-layanan {
+          @apply flex flex-col justify-center items-center text-center gap-[30px] cursor-pointer p-[20px];
+          &:hover {
+            @apply rounded-[20px];
+            box-shadow: 0px 4px 16px 0px #0000001a;
+          }
+          span {
+            @apply w-[80px] h-[80px] rounded-[50%] flex flex-col justify-center items-center;
+            &.jual-beli {
+              @apply bg-[#EEF7FD];
+            }
+            &.kirim {
+              @apply bg-[#EBFBF9];
+            }
+            &.terima {
+              @apply bg-[#FFF9E6];
+            }
+            &.hoddl {
+              @apply bg-[#FFF3E8];
+            }
+            &.swap {
+              @apply bg-[#F0FAF0];
+            }
+            &.isi-pulsa {
+              @apply bg-[#F8ECF5];
+            }
+          }
+          .content {
+            @apply flex flex-col gap-[16px];
             h5 {
-                @apply text-[20px]/[30px] font-bold text-neutral-900;
+              @apply text-[18px]/[27px] text-black font-bold;
             }
             p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700;
+              @apply text-[12px]/[18px] text-neutral-700;
             }
+          }
+        }
+      }
+    }
+  }
+  .products-average-section {
+    @apply flex flex-col items-center px-[100px] py-[75px] relative;
+    .box-container {
+      @apply flex flex-col items-center bg-[#F4F8FB] rounded-tr-[40px] rounded-tl-[40px] px-[50px] pt-[40px] pb-[80px] gap-[60px] relative w-[90%];
+      .sub-container {
+        @apply flex gap-[100px];
+        .detail-subcontainer {
+          @apply flex flex-col items-center gap-[30px] w-1/2;
+          .detail-info {
+            @apply flex items-center gap-[4px];
+            label {
+              @apply text-[38px]/[57px] font-medium text-neutral-900;
+              span {
+                @apply text-[30px]/[45px];
+              }
+            }
+          }
+          .detail-description-subcontainer {
+            @apply flex flex-col gap-[10px] items-center text-center;
+            h5 {
+              @apply text-[18px]/[27px] font-bold text-neutral-900;
+            }
+            p {
+              @apply text-[12px]/[18px] font-medium text-neutral-900;
+              span {
+                @apply text-[#FF7F17];
+              }
+            }
+          }
+        }
+      }
+      &::after {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+        background: url("/images/ornaments/investasi-right-ornament.png")
+          no-repeat;
+      }
+      &::before {
+        content: "";
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+        background: url("/images/ornaments/investasi-left-ornament.png")
+          no-repeat;
+      }
+    }
+  }
+  .products-topup-section {
+    @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+    .image-container {
+      @apply w-1/3 flex flex-col justify-center items-end relative;
+      img {
+        @apply w-[230px] h-[478px];
+      }
+      &::before {
+        content: "";
+        @apply absolute mr-[-50px] w-[500px] h-[500px] z-[-1];
+        background: url("/images/ornaments/circle-loop-ornament-2.png")
+          no-repeat;
+      }
+    }
+    .description-container {
+      @apply flex w-3/4 flex-col gap-[30px];
+      .start-now-description {
+        @apply flex-1 flex flex-col gap-[18px];
+        h2 {
+          @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+      }
+      .form-topup {
+        @apply flex gap-[10px] items-center;
+        label {
+          @apply text-[12px]/[18px] text-neutral-700 font-medium;
+        }
+        select {
+          @apply w-[220px];
+        }
+      }
+      button {
+        @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
+        svg {
+          path {
+            @apply fill-white;
+          }
+        }
+      }
+    }
+  }
+  .products-affliate-section {
+    @apply h-[490px] relative flex flex-col justify-center px-[100px];
+    background: url("/images/backgrounds/affliate.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .affliate-container {
+      @apply flex justify-between gap-[80px];
+      img {
+        @apply w-[245px] h-[226px];
+      }
+      .middle-subcontainer {
+        @apply flex flex-col gap-[44px];
+        .sub-subcontainer {
+          @apply flex flex-col gap-[10px];
+          h5 {
+            @apply text-[20px]/[30px] font-semibold text-white;
+          }
+          p {
+            @apply text-[16px]/[32px] font-medium text-neutral-200;
+          }
+        }
+      }
+      .end-subcontainer {
+        @apply flex flex-col gap-[40px];
+        h5 {
+          @apply text-[28px]/[42px] font-bold text-white;
+        }
+        .button-group {
+          @apply flex flex-col gap-[22px];
+          button {
+            @apply flex justify-center items-center bg-primary text-white rounded-[10px] py-[13px] w-[379px] h-[40px] text-[14px]/[21px] font-bold;
+          }
+        }
+      }
+    }
+  }
+  .products-investasi-now-section {
+    @apply flex items-center py-[50px]  px-[100px] gap-[60px];
+    .image-container {
+      @apply w-1/2 flex flex-col justify-center items-end relative;
+      img {
+        @apply w-[392px] h-[355px];
+      }
+      &::before {
+        content: "";
+        @apply absolute right-[50px] w-[500px] h-[500px] z-[-1];
+        background: url("/images/ornaments/circle-loop-ornament-2.png")
+          no-repeat;
+      }
+    }
+    .description-container {
+      @apply flex w-1/2 flex-col gap-[30px];
+      .start-now-description {
+        @apply flex-1 flex flex-col gap-[18px];
+        h2 {
+          @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+      }
+      .start-button-logo {
+        @apply flex gap-[30px];
+        a {
+          @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .start-now-store {
+          @apply flex gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[31px] h-[37px];
+            }
+            &.playstore-logo {
+              @apply w-[30px] h-[32px];
+            }
+          }
+        }
+        .start-now-store-mobile {
+          @apply hidden gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[130.64px] h-[38.71px];
+            }
+            &.playstore-logo {
+              @apply w-[114.43px] h-[37.02px];
+            }
+          }
+        }
+      }
+
+      .start-button-logo {
+        @apply flex gap-[30px];
+        a {
+          @apply flex justify-center items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold gap-[10px];
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .start-now-store {
+          @apply flex gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[31px] h-[37px];
+            }
+            &.playstore-logo {
+              @apply w-[30px] h-[32px];
+            }
+          }
+        }
+        .start-now-store-mobile {
+          @apply hidden gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[130.64px] h-[38.71px];
+            }
+            &.playstore-logo {
+              @apply w-[114.43px] h-[37.02px];
+            }
+          }
+        }
+      }
+
+      .start-button-logo-product {
+        @apply flex flex-col gap-[30px];
+        a {
+          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .start-now-store {
+          @apply flex gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[130.64px] h-[38.71px];
+            }
+            &.playstore-logo {
+              @apply w-[114.43px] h-[37.02px];
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-ewallet-section {
+    @apply flex items-center  px-[100px] py-[50px];
+    .ewallet-description {
+      @apply flex-1 flex flex-col gap-[26px] py-[20px];
+      h2 {
+        @apply text-[28px]/[42px] font-bold text-neutral-900;
+      }
+      h5 {
+        @apply text-[20px]/[30px] font-bold text-neutral-900;
+      }
+      p {
+        @apply text-[16px]/[32px] font-medium text-neutral-700;
+      }
+    }
+    .ewallet-image {
+      @apply w-[455px];
+      img {
+        @apply w-[455px] h-[435px];
+      }
+    }
+  }
+  .products-testimony-carousel-section {
+    @apply px-[100px] pt-[50px] pb-[100px] gap-[60px] flex justify-center items-center;
+  }
+  @layer components {
+    &.mobile-responsive {
+      @apply pt-[40px];
+      .products-header-section {
+        @apply py-[30px] px-[20px] gap-[30px];
+        .title-container {
+          @apply gap-[10px];
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply text-[10px]/[15px];
+          }
+        }
+        .image-container {
+          img {
+            @apply w-[199px] h-[186px];
+          }
+          &::before {
+            @apply absolute ml-[-100px] w-[254px] h-[254px] z-[-1];
+            background-size: cover;
+          }
+        }
+      }
+      .products-service-header-section {
+        @apply py-[30px] px-[20px] gap-[30px];
+        .service-header-container {
+          @apply px-0;
+          .title-container {
+            h2 {
+              @apply text-[14px]/[21px] text-black font-bold;
+            }
+            p {
+              @apply text-[10px]/[15px] text-neutral-700;
+            }
+          }
+          .button-group {
+            @apply flex-col gap-[20px];
+            button {
+              @apply w-[200px] h-[34px] text-[12px]/[18px] gap-[4px];
+              svg {
+                @apply w-[15px] h-[15px];
+              }
+            }
+          }
+        }
+      }
+      .products-device-section {
+        @apply py-[30px] px-[20px] gap-[30px];
+        .box-container {
+          img {
+            @apply w-[276px] h-[173px];
+          }
+        }
+      }
+      .products-regulasi-section {
+        @apply py-[30px] px-[20px] gap-[30px];
+        .regulasi-container {
+          @apply flex-col gap-[38px];
+          .box-subcontainer {
+            @apply w-full justify-center items-center text-center;
+            img {
+              @apply w-[60px] h-[38px] object-cover;
+            }
+            h5 {
+              @apply text-[14px]/[21px];
+            }
+            p {
+              @apply text-[12px]/[18px];
+            }
+          }
+        }
+        .regulator-container {
+          @apply flex gap-[30px];
+          img {
+            &.kominfo {
+              @apply w-[56px] h-[17px];
+            }
+            &.bsi {
+              @apply w-[40px] h-[21px];
+            }
+            &.cisa {
+              @apply w-[57px] h-[22px];
+            }
+            &.bappebti {
+              @apply w-[70px] h-[16px];
+            }
+          }
+        }
+      }
+      .products-regulasi-device-section {
+        @apply py-[30px] px-[20px] gap-[50px] flex-col;
+        .image-container {
+          @apply w-full;
+          img {
+            @apply w-[114px] h-[238px];
+          }
+        }
+        .regulasi-container {
+          @apply w-full justify-center items-center text-center;
+          .box-subcontainer {
+            .box-title {
+              @apply flex-col;
+              img {
+                @apply w-[70px] h-[43px] object-cover;
+              }
+              h5 {
+                @apply text-[14px]/[21px];
+              }
+            }
+            p {
+              @apply text-[12px]/[18px];
+            }
+          }
+          .regulator-subcontainer {
+            @apply flex gap-[30px];
+            img {
+              &.kominfo {
+                @apply w-[56px] h-[17px];
+              }
+              &.bsi {
+                @apply w-[40px] h-[21px];
+              }
+              &.cisa {
+                @apply w-[57px] h-[22px];
+              }
+              &.bappebti {
+                @apply w-[70px] h-[16px];
+              }
+            }
+          }
+        }
+      }
+      .products-layanan-section {
+        @apply py-[30px] px-[20px] gap-[30px];
+        .title-container {
+          h2 {
+            @apply text-[16px]/[24px];
+          }
+          p {
+            @apply text-[12px]/[18px];
+          }
+        }
+        .layanan-container {
+          .card-subcontainer {
+            @apply w-1/2 p-[10px];
+            .card-layanan {
+              @apply p-0;
+              &:hover {
+                @apply rounded-[20px];
+                box-shadow: 0px 4px 16px 0px #0000001a;
+              }
+              span {
+                @apply w-[42px] h-[42px];
+                svg {
+                  @apply w-[50%] h-[50%];
+                }
+              }
+              .content {
+                @apply gap-[8px];
+                h5 {
+                  @apply text-[10px]/[15px];
+                }
+                p {
+                  @apply text-[8px]/[12px];
+                }
+              }
+            }
+          }
+        }
+      }
+      .products-average-section {
+        @apply p-[20px];
+        .box-container {
+          @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] w-full;
+          .sub-container {
+            @apply flex-col gap-[30px];
+            .detail-subcontainer {
+              @apply w-full gap-[20px];
+              label {
+                @apply gap-[4px] text-[16px]/[24px];
+                svg {
+                  @apply w-[16px] h-[16px];
+                }
+              }
+              .detail-info {
+                svg {
+                  @apply w-[16px] h-[16px];
+                }
+                label {
+                  @apply text-[16px]/[24px] font-semibold;
+                  span {
+                    @apply text-[12px]/[18px];
+                  }
+                }
+              }
+              .detail-description-subcontainer {
+                h5 {
+                  @apply text-[16px]/[24px];
+                }
+                p {
+                  @apply text-[10px]/[15px];
+                }
+              }
+            }
+          }
+          &::after {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-right-ornament-mobile.png")
+              no-repeat;
+          }
+          &::before {
+            content: "";
+            @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
+            background: url("/images/ornaments/investasi-left-ornament-mobile.png")
+              no-repeat;
+          }
+        }
+      }
+      .products-topup-section {
+        @apply flex-col-reverse py-[30px] px-[20px];
+        .image-container {
+          @apply w-full items-center;
+          img {
+            @apply w-[158px] h-[329px];
+          }
+          &::before {
+            content: "";
+            @apply w-[350px] h-[350px] z-[-1] right-[50px];
+            background-size: cover;
+          }
+        }
+        .description-container {
+          @apply text-center justify-center items-center gap-[20px];
+          .start-now-description {
+            h2 {
+              @apply text-[14px]/[21px];
+            }
+            p {
+              @apply text-[10px]/[15px];
+            }
+          }
+          .form-topup {
+            @apply flex-col;
+            label {
+              @apply text-[12px]/[18px] text-neutral-700 font-medium;
+            }
+            select {
+              @apply w-[200px];
+            }
+          }
+          button {
+            @apply w-[200px] h-[34px] rounded-[8px] text-[12px]/[18px] gap-[5px];
+            svg {
+              @apply w-[20px] h-[20px];
+            }
+          }
+        }
+      }
+      .products-affliate-section {
+        @apply h-[680px] px-[20px];
+        .affliate-container {
+          @apply flex-col gap-[20px] items-center justify-center;
+          img {
+            @apply w-[168px] h-[155px];
+          }
+          .middle-subcontainer {
+            @apply gap-[30px] items-center justify-center text-center;
+            .sub-subcontainer {
+              h5 {
+                @apply text-[14px]/[21px];
+              }
+              p {
+                @apply text-[12px]/[18px];
+              }
+            }
+          }
+          .end-subcontainer {
+            @apply justify-center items-center text-center;
+            h5 {
+              @apply text-[16px]/[24px];
+            }
+            .button-group {
+              @apply flex flex-col gap-[22px];
+              button {
+                @apply rounded-[30px] w-[200px] h-[34px] text-[12px]/[18px];
+              }
+            }
+          }
+        }
+      }
+      .products-investasi-now-section {
+        @apply py-[30px] px-[20px] gap-[20px] flex-col;
+        .image-container {
+          @apply hidden;
+        }
+        .description-container {
+          @apply w-full;
+          .start-now-description {
+            @apply text-center gap-[10px];
+            h2 {
+              @apply text-[14px]/[21px];
+            }
+            p {
+              @apply text-[12px]/[18px];
+            }
+          }
+        }
+        .start-button-logo {
+          @apply flex-col justify-center items-center gap-[30px];
+          a {
+            @apply w-[80%] text-[12px]/[18px] py-[8px];
+            svg {
+              @apply w-[18px] h-[18px];
+            }
+          }
+        }
+
+        .start-button-logo-product {
+          @apply flex-col justify-center items-center gap-[30px];
+          a {
+            @apply w-[80%] text-[12px]/[18px] py-[8px];
+            svg {
+              @apply w-[18px] h-[18px];
+            }
+          }
+        }
+      }
+      .products-ewallet-section {
+        @apply flex-col py-[30px] px-[20px];
+        .ewallet-description {
+          @apply justify-center items-center w-full text-center p-0;
+          h2 {
+            @apply text-[14px]/[21px];
+          }
+          h5 {
+            @apply text-[10px]/[15px];
+          }
+          p {
+            @apply text-[10px]/[15px];
+          }
         }
         .ewallet-image {
-            @apply w-[455px];
-            img {
-               @apply w-[455px] h-[435px];
-            }
+          @apply w-[246px] flex flex-col justify-center items-center;
+          .img {
+            @apply w-[246px] h-[219px];
+          }
         }
+      }
+      .products-testimony-carousel-section {
+        @apply py-[30px] px-[20px];
+      }
     }
-    .products-testimony-carousel-section {
-        @apply px-[100px] pt-[50px] pb-[100px] gap-[60px] flex justify-center items-center;
-    }
-    @layer components {
-        &.mobile-responsive {
-            @apply pt-[40px];
-            .products-header-section {
-                @apply py-[30px] px-[20px] gap-[30px];
-                .title-container {
-                    @apply gap-[10px];
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                        @apply text-[10px]/[15px];
-                    }
-                }
-                .image-container {
-                    img {
-                        @apply  w-[199px] h-[186px] ;
-                    }
-                    &::before {
-                        @apply absolute ml-[-100px] w-[254px] h-[254px] z-[-1];
-                        background-size: cover;
-                    }
-                }
-            }
-            .products-service-header-section {
-                @apply py-[30px] px-[20px] gap-[30px];
-                .service-header-container {
-                    @apply px-0;
-                    .title-container {
-                        h2 {
-                            @apply text-[14px]/[21px] text-black font-bold;
-                        }
-                        p {
-                            @apply text-[10px]/[15px] text-neutral-700;
-                        }
-                    }
-                    .button-group {
-                        @apply  flex-col gap-[20px];
-                        button {
-                            @apply w-[200px] h-[34px] text-[12px]/[18px] gap-[4px];
-                            svg {
-                                @apply w-[15px] h-[15px];
-                            }
-                        }
-                    }
-                }
-            }
-            .products-device-section {
-                @apply py-[30px] px-[20px] gap-[30px];
-                .box-container {
-                    img {
-                        @apply w-[276px] h-[173px];
-                    }
-                }
-            }
-            .products-regulasi-section {
-                @apply py-[30px] px-[20px] gap-[30px];
-                .regulasi-container {
-                    @apply flex-col gap-[38px];
-                    .box-subcontainer {
-                        @apply w-full justify-center items-center text-center;
-                        img {
-                            @apply w-[60px] h-[38px] object-cover;
-                        }
-                        h5 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[12px]/[18px] ;
-                        }
-                    }
-                }
-                .regulator-container {
-                    @apply flex gap-[30px];
-                    img {
-                        &.kominfo {
-                            @apply w-[56px] h-[17px];
-                        }
-                        &.bsi {
-                            @apply w-[40px] h-[21px];
-                        }
-                        &.cisa {
-                            @apply w-[57px] h-[22px];
-                        }
-                        &.bappebti {
-                            @apply w-[70px] h-[16px];
-                        }
-                    }
-                }
-            }
-            .products-regulasi-device-section {
-                @apply py-[30px] px-[20px] gap-[50px] flex-col;
-                .image-container {
-                    @apply w-full;
-                    img {
-                        @apply w-[114px] h-[238px];
-                    }
-                }
-                .regulasi-container {
-                    @apply w-full justify-center items-center text-center;
-                    .box-subcontainer {
-                        .box-title {
-                            @apply flex-col;
-                            img {
-                                @apply w-[70px] h-[43px] object-cover;
-                            }
-                            h5 {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                        p {
-                            @apply text-[12px]/[18px] ;
-                        }
-                    }
-                    .regulator-subcontainer {
-                        @apply flex gap-[30px];
-                        img {
-                            &.kominfo {
-                                @apply w-[56px] h-[17px];
-                            }
-                            &.bsi {
-                                @apply w-[40px] h-[21px];
-                            }
-                            &.cisa {
-                                @apply w-[57px] h-[22px];
-                            }
-                            &.bappebti {
-                                @apply w-[70px] h-[16px];
-                            }
-                        }
-                    }
-                }
-            }
-            .products-layanan-section {
-                @apply py-[30px] px-[20px] gap-[30px];
-                .title-container {
-                    h2 {
-                        @apply text-[16px]/[24px];
-                    }
-                    p {
-                        @apply text-[12px]/[18px];
-                    }
-                }
-                .layanan-container {
-                   .card-subcontainer {
-                        @apply w-1/2 p-[10px];
-                        .card-layanan {
-                            @apply p-0;
-                            &:hover {
-                                @apply rounded-[20px];
-                                box-shadow: 0px 4px 16px 0px #0000001A;
-                            }
-                            span {
-                                @apply w-[42px] h-[42px] ;
-                                svg {
-                                    @apply w-[50%] h-[50%];
-                                }
-                            }
-                            .content {
-                                @apply gap-[8px];
-                                h5 {
-                                    @apply text-[10px]/[15px] ;
-                                }
-                                p {
-                                    @apply text-[8px]/[12px] ;
-                                }
-                            }
-                        }
-                   }
-                }
-            }
-            .products-average-section  {
-                @apply p-[20px] ;
-                .box-container {
-                    @apply overflow-hidden pb-[10px] px-[15px] gap-[23px] w-full;
-                    .sub-container {
-                        @apply flex-col gap-[30px];
-                        .detail-subcontainer {
-                            @apply w-full gap-[20px];
-                            label {
-                                @apply gap-[4px] text-[16px]/[24px];
-                                svg {
-                                    @apply w-[16px] h-[16px];
-                                }
-                            }
-                            .detail-info {
-                                svg {
-                                    @apply w-[16px] h-[16px];
-                                }
-                                label {
-                                    @apply text-[16px]/[24px] font-semibold;
-                                    span {
-                                        @apply text-[12px]/[18px];
-                                    }
-                                    
-                                }
-                            }
-                            .detail-description-subcontainer {
-                                h5 {
-                                    @apply text-[16px]/[24px];
-                                }
-                                p {
-                                    @apply text-[10px]/[15px];
-                                }
-                            }
-                        }
-                    }
-                    &::after {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-right-ornament-mobile.png") no-repeat;
-                    }
-                    &::before {
-                        content: '';
-                        @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-                        background: url("/images/ornaments/investasi-left-ornament-mobile.png") no-repeat;
-                    }
-                }
-            
-            }
-            .products-topup-section {
-                @apply flex-col-reverse py-[30px] px-[20px];
-                .image-container {
-                    @apply w-full items-center;
-                    img {
-                        @apply  w-[158px] h-[329px] ;
-                    }
-                    &::before {
-                        content: '';
-                        @apply  w-[350px] h-[350px] z-[-1] right-[50px];
-                        background-size: cover
-                    }
-                }
-                .description-container {
-                    @apply text-center justify-center items-center gap-[20px];
-                    .start-now-description {
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[10px]/[15px];
-                        }
-                    }
-                    .form-topup{
-                        @apply flex-col;
-                        label {
-                            @apply text-[12px]/[18px] text-neutral-700 font-medium;
-                        }
-                        select {
-                            @apply w-[200px];
-                        }
-                    }
-                    button {
-                       @apply w-[200px] h-[34px] rounded-[8px] text-[12px]/[18px] gap-[5px];
-                       svg {
-                        @apply w-[20px] h-[20px];
-                       }
-                    }
-                }
-            }
-            .products-affliate-section {
-                @apply h-[680px] px-[20px];
-                .affliate-container {
-                    @apply flex-col gap-[20px] items-center justify-center;
-                    img {
-                        @apply w-[168px] h-[155px];
-                    }
-                    .middle-subcontainer {
-                        @apply gap-[30px] items-center justify-center text-center;
-                        .sub-subcontainer {
-                            h5 {
-                                @apply text-[14px]/[21px];
-                            }
-                            p {
-                                @apply text-[12px]/[18px];
-                            }
-                        }
-                    }
-                    .end-subcontainer {
-                        @apply justify-center items-center text-center;
-                        h5 {
-                            @apply text-[16px]/[24px];
-                        }
-                        .button-group {
-                            @apply flex flex-col gap-[22px];
-                            button {
-                                @apply rounded-[30px] w-[200px] h-[34px] text-[12px]/[18px];
-                            }
-            
-                        }
-                    }
-                }
-            }
-            .products-investasi-now-section {
-                @apply py-[30px] px-[20px] gap-[20px] flex-col;
-                .image-container {
-                    @apply hidden;
-                }
-                .description-container {
-                    @apply w-full;
-                    .start-now-description {
-                        @apply text-center gap-[10px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[12px]/[18px];
-                        }
-                    }
-                }
-                .start-button-logo {
-                    @apply flex-col justify-center items-center gap-[30px];
-                    a {
-                        @apply w-[80%] text-[12px]/[18px] py-[8px];
-                        svg {
-                            @apply w-[18px] h-[18px];
-                        }
-                    }
-                }
-
-                .start-button-logo-product {
-                    @apply flex-col justify-center items-center gap-[30px];
-                    a {
-                        @apply w-[80%] text-[12px]/[18px] py-[8px];
-                        svg {
-                            @apply w-[18px] h-[18px];
-                        }
-                    }
-                }
-                
-            }
-            .products-ewallet-section {
-                @apply flex-col py-[30px] px-[20px];
-                .ewallet-description {
-                    @apply justify-center items-center w-full text-center p-0;
-                    h2 {
-                        @apply text-[14px]/[21px];
-                    }
-                    h5 {
-                        @apply text-[10px]/[15px];
-                    }
-                    p {
-                        @apply text-[10px]/[15px];
-                    }
-                }
-                .ewallet-image {
-                    @apply w-[246px] flex flex-col justify-center items-center;
-                    img {
-                        @apply w-[246px] h-[219px];
-                    }
-                }
-            }
-            .products-testimony-carousel-section {
-                @apply py-[30px] px-[20px];
-            }
-        }
-    }
+  }
 }

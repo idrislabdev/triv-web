@@ -237,6 +237,18 @@
         }
       }
     }
+    .products-ewallet-new-section {
+      .ewallet-image {
+        @apply w-[550px] h-[400px] relative;
+        .img {
+          @apply w-full h-full;
+          content: "";
+          background: url("/images/others/wallets-dark.png") no-repeat;
+          background-position: center;
+          background-size: contain !important;
+        }
+      }
+    }
   }
 }
 .products-page {
@@ -475,7 +487,7 @@
                 }
               }
               input {
-                @apply text-[21px]/[31px] px-[30px];
+                @apply text-[21px]/[31px] px-[30px] h-[40px];
               }
             }
             .button-group {
@@ -1473,8 +1485,12 @@
     }
     .ewallet-image {
       @apply w-[550px] h-[400px] relative;
-      img {
-        @apply w-full;
+      .img {
+        @apply w-full h-full;
+        content: "";
+        background: url("/images/others/wallets.png") no-repeat;
+        background-position: center;
+        background-size: contain !important;
       }
     }
     @media (max-width: 1280px) {
@@ -1493,7 +1509,7 @@
       .ewallet-image {
         @apply w-[380px] h-[230px];
         img {
-          @apply w-full;
+          @apply w-full h-full;
         }
       }
     }
@@ -1533,7 +1549,7 @@
       .ewallet-image {
         @apply w-[350px] h-[200px];
         img {
-          @apply w-full;
+          @apply w-full h-full;
         }
       }
     }
@@ -2003,8 +2019,8 @@
         }
         .ewallet-image {
           @apply w-[246px] h-full flex flex-col justify-center items-center;
-          img {
-            @apply w-[246px] h-[219px] relative;
+          .img {
+            @apply w-[246px] h-[219px];
           }
         }
       }
