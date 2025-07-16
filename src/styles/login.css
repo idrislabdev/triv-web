@@ -2,298 +2,322 @@
 @tailwind components;
 @tailwind utilities;
 .dark-theme {
-    /* @apply !bg-[#141414]; */
-    @apply !bg-[#000000];
-    h1, h2, h3, h4, h5, h6 {
-      @apply !text-slate-200;
+  /* @apply !bg-[#141414]; */
+  @apply !bg-[#000000];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !text-slate-200;
+  }
+  p,
+  label,
+  span {
+    @apply !text-slate-300;
+  }
+  input,
+  select {
+    @apply bg-[#2E3339] !text-white border-[#2E3339] caret-white;
+    &::placeholder {
+      @apply text-slate-400;
     }
-    p,label,span {
-        @apply !text-slate-300;
-    }
-    input,select {
-        @apply bg-[#2E3339] !text-white border-[#2E3339] caret-white;
-        &::placeholder {
-            @apply text-slate-400;
-        }
-    }
-    .login-page {
-        .login-container {
-            .left-subcontainer {
-                button {
-                    @apply !bg-primary !text-white;
-                }
-                .form-subcontainer {
-                    .captcha-checkbox {
-                        /* @apply bg-slate-800; */
-                        label {
-                            @apply !text-[#2E3339];
-                        }
-                    }
-                }
+  }
+  .login-page {
+    .login-container {
+      .left-subcontainer {
+        .left-main-subcontainer {
+          .title-subcontainer {
+            h1 {
+              @apply !text-primary;
             }
-            .right-subcontainer {
-                @apply bg-[#111111];
-            }
+          }
         }
+        button {
+          @apply !bg-primary !text-white;
+        }
+        .form-subcontainer {
+          .captcha-checkbox {
+            /* @apply bg-slate-800; */
+            label {
+              @apply !text-[#2E3339];
+            }
+          }
+        }
+      }
+      .right-subcontainer {
+        @apply bg-[#111111];
+        .title-subcontainer {
+          h1 {
+            @apply !text-primary;
+          }
+        }
+      }
     }
+  }
 }
 .login-page {
-    @apply p-0 min-h-screen flex justify-center max-w-container mx-auto;
+  @apply p-0 min-h-screen flex justify-center mx-auto;
 
-    .login-container {
-        @apply flex w-full relative;
-        .left-subcontainer {
-            @apply flex flex-col gap-[30px] px-[60px]  w-1/2 relative justify-center items-start py-[20px];
-            .logo-subcontainer {
-                @apply flex-col justify-center items-center hidden;
-                svg {
-                    @apply w-[101px] h-[28px];
-                }
-            }
-            .title-subcontainer {
-                @apply flex flex-col gap-[18px];
-                h1 {
-                    @apply text-[28px]/[42px] text-primary font-bold;
-                }
-                p {
-                    @apply text-[20px]/[30px] text-neutral-800 font-medium;
-                }
-            }
-            .form-subcontainer {
-                @apply flex flex-col gap-[30px] w-full;
-                .group-input {
-                    input {
-                        @apply w-full h-[54px] !px-[40px];
-                    }
-                    .append,.prepend {
-                        @apply top-[15px];
-                    }
-                }
-                .keepme-login {
-                    .checkbox-input {
-                        @apply h-[14px] text-[20px]/[30px] text-neutral-600 pl-[25px] font-medium;
-                        input {
-                            &:checked ~ .checkmark {
-                                &:after {
-                                    @apply left-[5px] top-[2px] w-[2px] h-[6px] border-t-[0px] border-r-[1px] border-b-[1px] border-l-[0px];
-                                }
-                            }
-                        }
-                        .checkmark {
-                            @apply w-[14px] h-[14px] border;
-                        }
-                    }
-                }
-                .captcha-checkbox {
-                    @apply flex justify-between items-center py-[16px] px-[20px] bg-[#FAFBFE];
-                    .checkbox-input {
-                        @apply font-bold text-neutral-800 text-[20px]/[30px];
-                    }
-                    .captcha-image {
-                        img {
-                            @apply w-[80px] h-[80px];
-                        }
-                    }
-                }
-                .button-flex {
-                    @apply flex flex-col gap-[10px];
-                    button {
-                        @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
-                    }
-                    a {
-                        @apply text-primary text-right text-[20px]/[30px] font-medium;
-                    }
-                }
-                label {
-                    &.new-user {
-                        @apply text-[20px]/[30px] text-neutral-600 w-full text-center font-bold;
-                        a {
-                            @apply text-primary;
-                        }
-                    }
-                }
-            }
+  .login-container {
+    @apply flex w-full relative;
+    .left-subcontainer {
+      @apply flex justify-center items-center w-1/2 h-full py-[20px];
+      .logo-subcontainer {
+        @apply flex-col justify-center items-center hidden;
+        svg {
+          @apply w-[101px] h-[28px];
         }
-        .right-subcontainer {
-            @apply flex flex-col gap-[15px] px-[60px] justify-center  w-1/2 relative py-[20px] bg-[#FAFBFE];
-            .title-subcontainer {
-                @apply flex flex-col gap-[18px] text-center;
-                h1 {
-                    @apply text-[28px]/[42px] text-primary font-bold;
-                }
-                p {
-                    @apply text-[16px]/[24px] text-neutral-800 font-medium;
-                }
+      }
+      .left-main-subcontainer {
+        @apply relative justify-center items-start flex flex-col gap-[30px] max-w-[560px] w-full;
+        .title-subcontainer {
+          @apply flex flex-col gap-[18px];
+          h1 {
+            @apply text-[28px]/[42px] text-primary font-bold;
+          }
+          p {
+            @apply text-[20px]/[30px] text-neutral-800 font-medium;
+          }
+        }
+        .form-subcontainer {
+          @apply flex flex-col gap-[30px] w-full;
+          .group-input {
+            input {
+              @apply w-full h-[54px] !px-[40px];
             }
-            .image-subcontainer {
-                @apply flex flex-col justify-center items-center;
+            .append,
+            .prepend {
+              @apply top-[15px];
+            }
+          }
+          .keepme-login {
+            .checkbox-input {
+              @apply h-[14px] text-[20px]/[30px] text-neutral-600 pl-[25px] font-medium;
+              input {
+                &:checked ~ .checkmark {
+                  &:after {
+                    @apply left-[5px] top-[2px] w-[2px] h-[6px] border-t-[0px] border-r-[1px] border-b-[1px] border-l-[0px];
+                  }
+                }
+              }
+              .checkmark {
+                @apply w-[14px] h-[14px] border;
+              }
+            }
+          }
+          .captcha-checkbox {
+            @apply flex justify-between items-center py-[16px] px-[20px] bg-[#FAFBFE];
+            .checkbox-input {
+              @apply font-bold text-neutral-800 text-[20px]/[30px];
+            }
+            .captcha-image {
+              img {
+                @apply w-[80px] h-[80px];
+              }
+            }
+          }
+          .button-flex {
+            @apply flex flex-col gap-[10px];
+            button {
+              @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
+            }
+            a {
+              @apply text-primary text-right text-[20px]/[30px] font-medium;
+            }
+          }
+          label {
+            &.new-user {
+              @apply text-[20px]/[30px] text-neutral-600 w-full text-center font-bold;
+              a {
+                @apply text-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right-subcontainer {
+      @apply flex flex-col gap-[15px] px-[60px] justify-center  w-1/2 relative py-[20px] bg-[#FAFBFE];
+      .title-subcontainer {
+        @apply flex flex-col gap-[18px] text-center;
+        h1 {
+          @apply text-[28px]/[42px] text-primary font-bold;
+        }
+        p {
+          @apply text-[16px]/[24px] text-neutral-800 font-medium;
+        }
+      }
+      .image-subcontainer {
+        @apply flex flex-col justify-center items-center;
+        img {
+          @apply w-[471px] h-[392px] object-contain;
+        }
+      }
+      .logo-subcontainer {
+        @apply flex flex-col justify-center items-center;
+        svg {
+          @apply w-[172px] h-[54px];
+        }
+      }
+    }
+  }
+
+  @layer components {
+    &.medium-responsive {
+      .left-subcontainer {
+        @apply py-[26px] px-[50px] !gap-[20px];
+        /* .logo-subcontainer {
+          @apply flex;
+        } */
+        .title-subcontainer {
+          h1 {
+            @apply !text-[24px]/[36px];
+          }
+          p {
+            @apply !text-[16px]/[24px];
+          }
+        }
+        .form-subcontainer {
+          @apply !gap-[20px];
+          .group-input {
+            span {
+              @apply !top-[9px];
+              svg {
+                @apply w-[17px] h-[17px];
+              }
+            }
+            input {
+              @apply text-[12.96px]/[19.43px] !h-[40px]  rounded-[5px];
+            }
+          }
+
+          .keepme-login {
+            .checkbox-input {
+              @apply !text-[12.96px]/[19.43px];
+            }
+          }
+          .captcha-checkbox {
+            @apply !py-[8px];
+            .checkbox-input {
+              @apply !text-[12.96px]/[19.43px];
+              .checkmark {
+                @apply !w-[20px] !h-[20px] !top-[2px];
+                &::after {
+                  @apply !left-[6px] !top-[2px];
+                }
+              }
+            }
+            .captcha-image {
+              img {
+                @apply !w-[60px] !h-[60px];
+              }
+            }
+          }
+          .button-flex {
+            @apply flex flex-col gap-[10px];
+            button {
+              @apply !h-[40px] !text-[14px]/[21px] !rounded-[8px];
+            }
+            a {
+              @apply !text-[12.96px]/[19.43px];
+            }
+          }
+          label {
+            &.new-user {
+              @apply !text-[12.96px]/[19.43px];
+            }
+          }
+        }
+      }
+      .right-subcontainer {
+        .title-subcontainer {
+          @apply flex flex-col gap-[18px] text-center;
+          h1 {
+            @apply !text-[24px]/[36px];
+          }
+          p {
+            @apply !text-[16px]/[24px];
+          }
+        }
+        .image-subcontainer {
+          @apply flex flex-col justify-center items-center;
+          img {
+            @apply !w-[400px] !h-[300px] object-contain;
+          }
+        }
+        .logo-subcontainer {
+          @apply flex flex-col justify-center items-center;
+          svg {
+            @apply !w-[140px] !h-[42px];
+          }
+        }
+      }
+    }
+    &.mobile-responsive {
+      .left-subcontainer {
+        @apply w-full !py-[26px] !px-[20px] items-start flex-col gap-[20px] justify-start;
+        .logo-subcontainer {
+          @apply block pb-[20px];
+        }
+        .left-main-subcontainer {
+          .title-subcontainer {
+            h1 {
+              @apply text-[24px]/[36px];
+            }
+            p {
+              @apply text-[16px]/[24px];
+            }
+          }
+          .form-subcontainer {
+            .group-input {
+              span {
+                @apply top-[11px];
+                svg {
+                  @apply w-[17px] h-[17px];
+                }
+              }
+              input {
+                @apply text-[17.02px]/[25.53px] h-[40px] rounded-[6px];
+              }
+            }
+
+            .keepme-login {
+              .checkbox-input {
+                @apply text-[17.02px]/[25.53px];
+              }
+            }
+            .captcha-checkbox {
+              .checkbox-input {
+                @apply text-[17.02px]/[25.53px];
+              }
+              .captcha-image {
                 img {
-                    @apply w-[471px] h-[392px] object-contain;
+                  @apply w-[60px] h-[60px];
                 }
+              }
             }
-            .logo-subcontainer {
-                @apply flex flex-col justify-center items-center;
-                svg {
-                    @apply w-[172px] h-[54px];
-                }
+            .button-flex {
+              @apply flex flex-col gap-[10px];
+              button {
+                @apply h-[45px] rounded-[11.91px];
+              }
+              a {
+                @apply text-left text-[17px]/[25px];
+              }
             }
+            label {
+              &.new-user {
+                @apply text-left text-[17px]/[25px];
+              }
+            }
+          }
         }
+      }
+      .right-subcontainer {
+        @apply hidden;
+      }
     }
-
-    
-    @layer components {
-        &.medium-responsive {
-            .left-subcontainer {
-                @apply !gap-[20px];
-                .logo-subcontainer {
-                    @apply flex;
-                }
-                .title-subcontainer {
-                    h1 {
-                        @apply !text-[24px]/[36px];
-                    }
-                    p {
-                        @apply !text-[16px]/[24px] ;
-                    }
-                }
-                .form-subcontainer {
-                    @apply !gap-[20px];
-                    .group-input {
-                        span {
-                            @apply !top-[9px];
-                            svg {
-                                @apply w-[17px] h-[17px];
-                            }
-                        }
-                        input {
-                            @apply text-[12.96px]/[19.43px] !h-[40px]  rounded-[5px];
-                        }
-                    }
-                    
-                    .keepme-login {
-                        .checkbox-input {
-                            @apply !text-[12.96px]/[19.43px];
-                        }
-                    }
-                    .captcha-checkbox {
-                        @apply !py-[8px];
-                        .checkbox-input {
-                            @apply !text-[12.96px]/[19.43px];
-                            .checkmark {
-                                @apply !w-[20px] !h-[20px] !top-[2px];
-                                &::after {
-                                    @apply !left-[6px] !top-[2px];
-                                }
-                            }
-
-                        }
-                        .captcha-image {
-                            img {
-                                @apply !w-[60px] !h-[60px];
-                            }
-                        }
-                    }
-                    .button-flex {
-                        @apply flex flex-col gap-[10px];
-                        button {
-                            @apply !h-[40px] !text-[14px]/[21px] !rounded-[8px];
-                        }
-                        a {
-                            @apply !text-[12.96px]/[19.43px];
-                        }
-                    }
-                    label {
-                        &.new-user {
-                            @apply !text-[12.96px]/[19.43px];
-                        }
-                    }
-                }
-            }
-            .right-subcontainer {
-                .title-subcontainer {
-                    @apply flex flex-col gap-[18px] text-center;
-                    h1 {
-                        @apply !text-[24px]/[36px];
-                    }
-                    p {
-                        @apply !text-[16px]/[24px] ;
-                    }
-                }
-                .image-subcontainer {
-                    @apply flex flex-col justify-center items-center;
-                    img {
-                        @apply !w-[400px] !h-[300px] object-contain;
-                    }
-                }
-                .logo-subcontainer {
-                    @apply flex flex-col justify-center items-center;
-                    svg {
-                        @apply !w-[140px] !h-[42px];
-                    }
-                }
-            }
-        }
-        &.mobile-responsive {
-            .left-subcontainer {
-                @apply w-full py-[26px] px-[20px] gap-[34px] justify-start;
-                .logo-subcontainer {
-                    @apply block pb-[20px];
-                }
-                .title-subcontainer {
-                    h1 {
-                        @apply text-[24px]/[36px];
-                    }
-                    p {
-                        @apply text-[16px]/[24px] ;
-                    }
-                }
-                .form-subcontainer {
-                    .group-input {
-                        span {
-                            @apply top-[11px];
-                            svg {
-                                @apply w-[17px] h-[17px];
-                            }
-                        }
-                        input {
-                            @apply text-[17.02px]/[25.53px] h-[40px] rounded-[6px];
-                        }
-                    }
-                    
-                    .keepme-login {
-                        .checkbox-input {
-                            @apply text-[17.02px]/[25.53px];
-                        }
-                    }
-                    .captcha-checkbox {
-                        .checkbox-input {
-                            @apply text-[17.02px]/[25.53px];
-                        }
-                        .captcha-image {
-                            img {
-                                @apply w-[60px] h-[60px];
-                            }
-                        }
-                    }
-                    .button-flex {
-                        @apply flex flex-col gap-[10px];
-                        button {
-                            @apply h-[45px] rounded-[11.91px];
-                        }
-                        a {
-                            @apply text-left text-[17px]/[25px];
-                        }
-                    }
-                    label {
-                        &.new-user {
-                            @apply text-left text-[17px]/[25px];
-                        }
-                    }
-                }
-            }
-            .right-subcontainer {
-                @apply hidden;
-            }
-        }
-    }
+  }
 }
