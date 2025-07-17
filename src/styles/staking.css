@@ -2,1993 +2,2032 @@
 @tailwind components;
 @tailwind utilities;
 .dark-theme {
-    /* @apply !bg-[#141414]; */
-    @apply !bg-[#000000];
-    h1, h2, h3, h4, h5, h6 {
-      @apply !text-slate-200;
+  /* @apply !bg-[#141414]; */
+  @apply !bg-[#000000];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply !text-slate-200;
+  }
+  p,
+  label,
+  span {
+    @apply !text-slate-300;
+  }
+  input,
+  select {
+    @apply !bg-[#2E3339] !text-white border-[#2E3339];
+    &::placeholder {
+      @apply text-slate-400;
     }
-    p,label,span {
-        @apply !text-slate-300;
+  }
+  select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="black"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="white"/></svg>') !important;
+    option {
+      @apply text-white;
     }
-    input,select {
-        @apply !bg-[#2E3339] !text-white border-[#2E3339];
-        &::placeholder {
-            @apply text-slate-400;
-        }
+    option:disabled {
+      @apply text-slate-400;
     }
-    select {
-        appearance:none;
-        background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="black"/></svg>');
-        background-repeat: no-repeat;
-        background-position-x: 95%;
-        background-position-y: 15px;
-        background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="white"/></svg>') !important;
-        option {
-            @apply text-white;
-        }
-        option:disabled {
-            @apply text-slate-400;
-        }
-    }
-    .staking-page {
-        .staking-benefit-section {
-            button {
-                @apply !bg-[#3A80AF] !text-white;
-            }
-            .media-container{
-                .description-media {
-                    @apply !bg-[#13171a] ;
-                }
-            }
-        }
-        .staking-calculator-section {
-            .card-staking-calculator {
-                @apply bg-[#1b1f22];
-                
-            }
-        }
-        .staking-faq-section {
-            .question-faq-staking {
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    svg {
-                                        path {
-                                            @apply stroke-slate-300;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .staking-start-now-section {
-            a {
-                @apply !bg-[#3A80AF] !text-white;
-
-            }
-        }
-        .staking-coins-section {
-            .list-coins-staking {
-                .coin-staking-container {
-                    .card-coin-staking-new {
-                        @apply bg-[#1b1f22];
-
-                    }
-                }
-            }
-        }
-    }
-}
-.staking-page {
-    @apply py-0;
-    &.dark-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-slate-200;
-        }
-        p {
-            @apply text-slate-300;
-        }
-        a {
-            @apply text-[#737aff]
-        }
-    }
-    &.light-theme {
-        h1, h2, h3, h4, h5 {
-            @apply text-black;
-        }
-        p {
-            @apply text-neutral-700;
-        }
-    }
+  }
+  .staking-page {
     .staking-hero-section {
-        @apply relative bg-[#000000] overflow-hidden flex flex-col justify-center;
-        .staking-hero-section-area {
-            @apply flex p-[100px] max-w-container mx-auto items-center relative;
-            &::before {
-                    content: '';
-                    @apply absolute top-0 w-[70%] h-full right-0 ;
-                    background: url("/images/ornaments/device-ornament.png") no-repeat;
-                    background-position: right;
-            }
-            .section-text {
-                @apply flex flex-col w-[75%] gap-[25px] z-[1];
-                .text-title {
-                    @apply flex flex-col gap-[17px];
-                    .title {
-                        @apply flex flex-col w-[90%];
-                        h1 {
-                            @apply text-[60px]/[72px] text-white font-black w-full;
-                        }
-                        span {
-                            background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-                    p {
-                        @apply text-[16px]/[32px] text-[#C1C3CC] font-medium w-[65%] text-justify;
-                    }
+      .staking-hero-section-area {
+        .section-text {
+          .text-info-register {
+            .text-info {
+              .text-detail-info {
+                label {
+                  @apply !text-primary;
                 }
-                .text-info-register {
-                    @apply flex flex-col gap-[54px];
-                    .text-info {
-                        @apply flex gap-[60px];
-                        .text-detail-info {
-                            @apply flex flex-col;
-                            label {
-                                @apply text-[36px]/[54px] text-primary font-bold;
-                            }
-                            span {
-                                @apply text-[15px]/[22px] text-[#DEDEDE] font-medium
-                            }
-                        }
-                    }
-                    .registered-logo {
-                        @apply flex flex-col gap-[14px];
-                        h5 {
-                            @apply text-[16px]/[200%] font-medium text-white;
-                        }
-                        .logo-area {
-                            @apply flex items-center gap-[30px];
-                            .bappebti-logo {
-                                @apply w-[147px] h-[34px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/bappebti-big-white.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .kominfo-logo {
-                                @apply w-[118px] h-[37px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/kominfo-light-logo.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .bsi-logo {
-                                @apply w-[83px] h-[44px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/bsi-white.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                            .cisa-logo {
-                                @apply w-[110px] h-[44px];
-                                content: '';
-                                background: url("/images/otoritas-keuangans/cisa-light-logo.png") no-repeat;
-                                background-position: center;
-                                background-size: contain !important;
-                            }
-                        }
-                    }
-                }
+              }
             }
-            .section-image {
-                @apply flex-1 flex flex-col justify-center items-center;
-                img {
-                    &.img-device {
-                        @apply w-[625px] h-[800px] object-contain absolute right-[-20px] top-[100px];
-                    }
-                    &.img-coin-1 {
-                        @apply  w-[174px] h-[167px] absolute right-[435px] top-[45%];
-                    }
-                    &.img-coin-2 {
-                        @apply  w-[162px] h-[154px] absolute right-[20px] top-[20%];
-                    }
-                    &.img-coin-3 {
-                        @apply  w-[174px] h-[186px] absolute right-[20px] top-[70%];
-                    }
-                }    
-            }
-           
+          }
         }
-        @media (max-width:1280px) {
-            .staking-hero-section-area {
-                .section-text {
-                    .text-title {
-                        @apply gap-[28px];
-                        .title {
-                            @apply w-[90%];
-                            h1 {
-                                @apply text-[44px]/[53px];
-                            }
-                        }
-                        p {
-                            @apply text-[16px]/[23px] w-[65%];
-                        }
-                    }
-                    .text-info-register {
-                        .text-info {
-                            @apply gap-[60px];
-                            .text-detail-info {
-                                label {
-                                    @apply text-[26px]/[33px] text-primary font-bold;
-                                }
-                                span {
-                                    @apply text-[16px]/[23px];
-                                }
-                            }
-                        }
-                        .registered-logo {
-                            @apply flex flex-col gap-[14px];
-                            h5 {
-                                @apply text-[14px]/[21px];
-                            }
-                            .logo-area {
-                                @apply gap-[20px];
-                                .bappebti-logo {
-                                    @apply w-[137px] h-[34px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[108px] h-[37px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[73px] h-[44px];
-
-                                }
-                                .cisa-logo {
-                                    @apply w-[100px] h-[43px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    img {
-                        &.img-device {
-                            @apply w-[445px] h-[570px] right-[20px] top-[200px];
-                        }
-                        &.img-coin-1 {
-                            @apply  w-[154px] h-[147px] absolute right-[330px] top-[55%];
-                        }
-                        &.img-coin-2 {
-                            @apply  w-[142px] h-[134px] absolute right-[10px] top-[35%];
-                        }
-                        &.img-coin-3 {
-                            @apply  w-[154px] h-[166px] absolute right-[10px] top-[70%];
-                        }
-                    }    
-                }
-               
-            }
-        }
-        @media (max-width:1180px) {
-            .staking-hero-section-area {
-                .section-text {
-                    .text-title {
-                        @apply gap-[28px];
-                        .title {
-                            @apply w-[90%];
-                            h1 {
-                                @apply text-[43px]/[52px];
-                            }
-                        }
-                        p {
-                            @apply text-[15px]/[22px] w-[65%];
-                        }
-                    }
-                    .text-info-register {
-                        .text-info {
-                            @apply gap-[60px];
-                            .text-detail-info {
-                                label {
-                                    @apply text-[25px]/[32px] text-primary font-bold;
-                                }
-                                span {
-                                    @apply text-[15px]/[22px];
-                                }
-                            }
-                        }
-                        .registered-logo {
-                            @apply flex flex-col gap-[14px];
-                            h5 {
-                                @apply text-[14px]/[21px];
-                            }
-                            .logo-area {
-                                @apply gap-[20px];
-                                .bappebti-logo {
-                                    @apply w-[127px] h-[34px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[98px] h-[37px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[83px] h-[44px];
-
-                                }
-                                .cisa-logo {
-                                    @apply w-[90px] h-[43px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    img {
-                         &.img-device {
-                            @apply w-[445px] h-[570px] right-[20px] top-[200px];
-                        }
-                        &.img-coin-1 {
-                            @apply  w-[154px] h-[147px] absolute right-[330px] top-[55%];
-                        }
-                        &.img-coin-2 {
-                            @apply  w-[142px] h-[134px] absolute right-[10px] top-[35%];
-                        }
-                        &.img-coin-3 {
-                            @apply  w-[154px] h-[166px] absolute right-[10px] top-[70%];
-                        }
-                    }    
-                }
-               
-            }
-        }
-        @media (max-width:1080px) {
-            .staking-hero-section-area {
-                .section-text {
-                    .text-title {
-                        @apply gap-[28px];
-                        .title {
-                            @apply w-[90%];
-                            h1 {
-                                @apply text-[42px]/[51px];
-                            }
-                        }
-                        p {
-                            @apply text-[14px]/[21px] w-[65%];
-                        }
-                    }
-                    .text-info-register {
-                        .text-info {
-                            @apply gap-[60px];
-                            .text-detail-info {
-                                label {
-                                    @apply text-[24px]/[31px] text-primary font-bold;
-                                }
-                                span {
-                                    @apply text-[14px]/[21px];
-                                }
-                            }
-                        }
-                        .registered-logo {
-                            .logo-area {
-                                @apply flex items-center gap-[15px];
-                                .bappebti-logo {
-                                    @apply w-[117px] h-[34px];
-                                }
-                                .kominfo-logo {
-                                    @apply w-[88px] h-[37px];
-                                }
-                                .bsi-logo {
-                                    @apply w-[73px] h-[44px];
-
-                                }
-                                .cisa-logo {
-                                    @apply w-[80px] h-[43px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .section-image {
-                    img {
-                        &.img-device {
-                            @apply w-[425px] h-[550px] right-[20px] top-[220px];
-                        }
-                        &.img-coin-1 {
-                            @apply  w-[144px] h-[137px] absolute right-[330px] top-[55%];
-                        }
-                        &.img-coin-2 {
-                            @apply  w-[132px] h-[124px] absolute right-[10px] top-[35%];
-                        }
-                        &.img-coin-3 {
-                            @apply  w-[144px] h-[156px] absolute right-[10px] top-[70%];
-                        }
-                    }    
-                }
-               
-            }
-        }
+      }
     }
     .staking-benefit-section {
-        @apply py-[50px] px-[100px] flex gap-[80px] max-w-container mx-auto;
-        .media-container {
-            @apply w-1/2;
-            .frame-media {
-                iframe {
-                    @apply w-full h-[324px] rounded-tl-[11px] rounded-tr-[11px];
-                }
-            }
-            .description-media {
-                @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
-                box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
-                h5 {
-                    @apply text-[17.68px]/[26.51px] font-bold;
-                }
-                p {
-                    @apply text-[11.05px]/[16.57px] font-normal;
-                }
-            }
+      button {
+        @apply !bg-[#3A80AF] !text-white;
+      }
+      .media-container {
+        .description-media {
+          @apply !bg-[#13171a];
         }
-        .benefit-container {
-            @apply w-1/2 flex flex-col gap-[15px];
-            h2 {
-                @apply text-[48px]/[72px] font-black;
-                span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            .benefit-type-container {
-                @apply flex gap-[20px];
-                .benefit-icon {
-                    @apply w-[101px];
-                    img {
-                        @apply w-[101px] h-[101px];
-
-                    }
-                }
-                .benefit-desc {
-                    @apply flex flex-col flex-1 gap-[4px];
-                    h4 {
-                        @apply text-[18px]/[27px] font-bold;
-                    }
-                    p {
-                        @apply text-[14px]/[21px] font-medium;
-                    }
-                }
-            }
-            button {
-               @apply hidden;   
-            }
-        }
-        @media (max-width:1280px) {
-            @apply gap-[40px];
-            .media-container {
-                @apply w-1/2;
-                .frame-media {
-                    iframe {
-                        @apply w-full h-[244px] rounded-tl-[11px] rounded-tr-[11px];
-                    }
-                }
-                .description-media {
-                    @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
-                    box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
-                    h5 {
-                        @apply text-[16px]/[23px];
-                    }
-                    p {
-                        @apply text-[12px]/[20px];
-                    }
-                }
-            }
-            .benefit-container {
-                @apply gap-[10px];
-                h2 {
-                    @apply text-[39px]/[59px];
-                }
-                .benefit-type-container {
-                    @apply flex gap-[20px];
-                    .benefit-icon {
-                        @apply w-[91px];
-                        img {
-                            @apply w-[91px] h-[91px];
-    
-                        }
-                    }
-                    .benefit-desc {
-                        h4 {
-                            @apply text-[17px]/[28px];
-                        }
-                        p {
-                            @apply text-[13px]/[20px];
-                        }
-                    }
-                }
-                button {
-                   @apply hidden;   
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            @apply gap-[40px];
-            .media-container {
-                @apply w-1/2;
-                .frame-media {
-                    iframe {
-                        @apply w-full h-[234px] rounded-tl-[11px] rounded-tr-[11px];
-                    }
-                }
-                .description-media {
-                    @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
-                    box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
-                    h5 {
-                        @apply text-[15px]/[22px];
-                    }
-                    p {
-                        @apply text-[11px]/[19px];
-                    }
-                }
-            }
-            .benefit-container {
-                @apply gap-[10px];
-                h2 {
-                    @apply text-[37px]/[57px];
-                }
-                .benefit-type-container {
-                    @apply flex gap-[20px];
-                    .benefit-icon {
-                        @apply w-[81px];
-                        img {
-                            @apply w-[81px] h-[81px];
-    
-                        }
-                    }
-                    .benefit-desc {
-                        h4 {
-                            @apply text-[16px]/[27px];
-                        }
-                        p {
-                            @apply text-[12px]/[19px];
-                        }
-                    }
-                }
-                button {
-                   @apply hidden;   
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            @apply gap-[40px];
-            .media-container {
-                @apply w-1/2;
-                .frame-media {
-                    iframe {
-                        @apply w-full h-[224px] rounded-tl-[11px] rounded-tr-[11px];
-                    }
-                }
-                .description-media {
-                    @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
-                    box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
-                    h5 {
-                        @apply text-[14px]/[21px];
-                    }
-                    p {
-                        @apply text-[10px]/[17px];
-                    }
-                }
-            }
-            .benefit-container {
-                @apply gap-[10px];
-                h2 {
-                    @apply text-[36px]/[56px];
-                }
-                .benefit-type-container {
-                    @apply flex gap-[20px];
-                    .benefit-icon {
-                        @apply w-[71px];
-                        img {
-                            @apply w-[71px] h-[71px];
-    
-                        }
-                    }
-                    .benefit-desc {
-                        h4 {
-                            @apply text-[15px]/[26px];
-                        }
-                        p {
-                            @apply text-[11px]/[17px];
-                        }
-                    }
-                }
-                button {
-                   @apply hidden;   
-                }
-            }
-        }
-    }
-    .staking-guide-crypto-section {
-        @apply  py-[50px] px-[100px] flex max-w-container mx-auto;
-        .guide-container {
-            @apply flex flex-col gap-[34px] flex-1;
-            h2 {
-                @apply text-[48px]/[72px] font-black;
-                span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            .guide-steps {
-                @apply px-[30px];
-                ul {
-                    li {
-                        @apply list-none flex gap-[23px] pl-[60px] relative;
-                        &:not(:last-child) {
-                            @apply pb-[55px] border-l-4 border-[#94CCF2] border-dashed;
-                        }
-                        .guide-icon {
-                            @apply w-[65px] absolute left-[-33px];
-                            img {
-                                @apply w-full h-full;
-                            }
-                        }
-                        .guide-desc {
-                            @apply flex flex-col flex-1 gap-[8px];
-                            h5 {
-                                @apply text-[18px]/[27px] font-bold text-neutral-800;
-                            }
-                            p {
-                                @apply text-[14px]/[21px] font-medium text-neutral-700;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .image-container {
-            @apply flex flex-col justify-center w-[500px] relative;
-            img {
-                @apply w-full;
-            }
-        }
-        @media (max-width:1280px) {
-            .guide-container {
-                @apply flex flex-col gap-[34px] flex-1;
-                h2 {
-                    @apply text-[27px]/[40px];
-                }
-                .guide-steps {
-                    ul {
-                        li {
-                            @apply list-none flex gap-[23px] pl-[50px] relative;
-                            &:not(:last-child) {
-                                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
-                            }
-                            .guide-icon {
-                                @apply w-[75px] absolute left-[-38px];
-                                img {
-                                    @apply w-full h-full;
-                                }
-                            }
-                            .guide-desc {
-                                @apply flex flex-col flex-1 gap-[8px];
-                                h5 {
-                                    @apply text-[17px]/[24px];
-                                }
-                                p {
-                                    @apply text-[14px]/[21px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .image-container {
-                @apply flex flex-col justify-center w-[400px] relative;
-                img {
-                    @apply w-full;
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .guide-container {
-                @apply flex flex-col gap-[34px] flex-1;
-                h2 {
-                    @apply text-[25px]/[38px];
-                }
-                .guide-steps {
-                    ul {
-                        li {
-                            @apply list-none flex gap-[23px] pl-[45px] relative;
-                            &:not(:last-child) {
-                                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
-                            }
-                            .guide-icon {
-                                @apply w-[55px] absolute left-[-28px];
-                                img {
-                                    @apply w-full h-full;
-                                }
-                            }
-                            .guide-desc {
-                                @apply flex flex-col flex-1 gap-[8px];
-                                h5 {
-                                    @apply text-[15px]/[22px];
-                                }
-                                p {
-                                    @apply text-[12px]/[18px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .image-container {
-                @apply flex flex-col justify-center w-[380px] relative;
-                img {
-                    @apply w-full;
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .guide-container {
-                @apply flex flex-col gap-[34px] flex-1;
-                h2 {
-                    @apply text-[24px]/[37px];
-                }
-                .guide-steps {
-                    ul {
-                        li {
-                            @apply list-none flex gap-[23px] pl-[40px] relative;
-                            &:not(:last-child) {
-                                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
-                            }
-                            .guide-icon {
-                                @apply w-[45px] absolute left-[-23px];
-                                img {
-                                    @apply w-full h-full;
-                                }
-                            }
-                            .guide-desc {
-                                @apply flex flex-col flex-1 gap-[8px];
-                                h5 {
-                                    @apply text-[14px]/[21px];
-                                }
-                                p {
-                                    @apply text-[11px]/[17px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .image-container {
-                @apply flex flex-col justify-center w-[350px] relative;
-                img {
-                    @apply w-full;
-                }
-            }
-        }
+      }
     }
     .staking-calculator-section {
-        @apply px-[100px] py-[50px] gap-[80px] flex flex-col justify-center items-center max-w-container mx-auto;
-        
-        .card-staking-calculator{
-            @apply flex items-center p-[60px] rounded-[20px] bg-[#F4F8FB] relative w-full;
-            .title-container {
-                @apply w-[330px] z-[1];
-                h2 {
-                    @apply text-[48px]/[72px] font-black;
-                }
-            }
-            .calculator-container {
-                @apply flex flex-col flex-1 gap-[14px] z-[1];
-                .top-subcontainer {
-                    @apply flex flex-col gap-[20px];
-                    .sub-subcontainer {
-                        @apply flex gap-[30px];
-                        .form-input {
-                            @apply flex gap-[8px] items-center w-1/2;
-                            label {
-                                @apply text-[13px]/[19px] font-medium text-neutral-700 w-auto;
-                            }
-                            input {
-                                @apply w-full;
-                            }
-                            select {
-                                @apply flex-1;
-                            }
-                            .group-input {
-                                @apply flex-1;
-                                span {
-                                    @apply top-[12px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .middle-subcontainer {
-                    @apply flex gap-[30px];
-                    .sub-subcontainer {
-                        @apply flex flex-col w-[47%];
-                        label {
-                            @apply text-[48px]/[72px] font-bold text-primary;
-                            background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            span {
-                                @apply text-[24px]/[36px] font-medium;
-                                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                                background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                            }
-                        }
-                        span {
-                            @apply text-[14px]/[21px] text-neutral-700 font-medium;
-                        }
-                    }
-                }
-                .bottom-subcontainer{
-                    p {
-                        @apply text-[10px]/[15px] font-medium text-neutral-500;
-                    }
-                }
-            }
-            &::after {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-            }
-            &::before {
-                content: '';
-                @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-            }
-        }
-        @media (max-width:1280px) {
-            .card-staking-calculator{
-                @apply gap-[20px] p-[40px];
-                .title-container {
-                    @apply w-[165px] z-[1];
-                    h2 {
-                        @apply text-[26px]/[39px];
-                    }
-                }
-                .calculator-container {
-                    @apply gap-[10px];
-                    .top-subcontainer {
-                        @apply gap-[20px];
-                        .sub-subcontainer {
-                            @apply gap-[25px];
-                            .form-input {
-                                @apply gap-[8px];
-                                label {
-                                    @apply text-[14px]/[21px];
-                                }
-                                input {
-                                    @apply w-full;
-                                }
-                                select {
-                                    @apply flex-1;
-                                }
-                                .group-input {
-                                    @apply flex-1;
-                                    span {
-                                        @apply top-[12px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .middle-subcontainer {
-                        @apply flex gap-[30px];
-                        .sub-subcontainer {
-                            @apply flex flex-col w-[47%];
-                            label {
-                                @apply text-[26px]/[39px];
-                            }
-                            span {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                    }
-                    .bottom-subcontainer{
-                        p {
-                            @apply text-[12px]/[19px] font-medium text-neutral-500;
-                        }
-                    }
-                }
-                &::after {
-                    content: '';
-                    @apply absolute bottom-[-50px] w-[221px] h-[221px] right-[-10px] top-0;
-                    background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-                }
-                &::before {
-                    content: '';
-                    @apply absolute bottom-[-50px] w-[221px] h-[221px] left-0 top-0;
-                    background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .card-staking-calculator{
-                @apply gap-[20px] p-[40px];
-                .title-container {
-                    @apply w-[150px] z-[1];
-                    h2 {
-                        @apply text-[24px]/[37px];
-                    }
-                }
-                .calculator-container {
-                    @apply gap-[10px];
-                    .top-subcontainer {
-                        @apply gap-[20px];
-                        .sub-subcontainer {
-                            @apply gap-[25px];
-                            .form-input {
-                                @apply gap-[8px];
-                                label {
-                                    @apply text-[11px]/[14px];
-                                }
-                                input {
-                                    @apply w-full;
-                                }
-                                select {
-                                    @apply flex-1;
-                                }
-                                .group-input {
-                                    @apply flex-1;
-                                    span {
-                                        @apply top-[12px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .middle-subcontainer {
-                        @apply flex gap-[30px];
-                        .sub-subcontainer {
-                            @apply flex flex-col w-[47%];
-                            label {
-                                @apply text-[24px]/[37px];
-                            }
-                            span {
-                                @apply text-[11px]/[17px];
-                            }
-                        }
-                    }
-                    .bottom-subcontainer{
-                        p {
-                            @apply text-[10px]/[15px] font-medium text-neutral-500;
-                        }
-                    }
-                }
-                &::after {
-                    content: '';
-                    @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                    background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-                }
-                &::before {
-                    content: '';
-                    @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                    background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .card-staking-calculator{
-                @apply gap-[20px] p-[40px];
-                .title-container {
-                    @apply w-[150px] z-[1];
-                    h2 {
-                        @apply text-[24px]/[37px];
-                    }
-                }
-                .calculator-container {
-                    @apply gap-[10px];
-                    .top-subcontainer {
-                        @apply gap-[20px];
-                        .sub-subcontainer {
-                            @apply gap-[25px];
-                            .form-input {
-                                @apply gap-[8px];
-                                label {
-                                    @apply text-[11px]/[14px];
-                                }
-                                input {
-                                    @apply w-full;
-                                }
-                                select {
-                                    @apply flex-1;
-                                }
-                                .group-input {
-                                    @apply flex-1;
-                                    span {
-                                        @apply top-[12px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .middle-subcontainer {
-                        @apply flex gap-[30px];
-                        .sub-subcontainer {
-                            @apply flex flex-col w-[47%];
-                            label {
-                                @apply text-[24px]/[37px];
-                            }
-                            span {
-                                @apply text-[11px]/[17px];
-                            }
-                        }
-                    }
-                    .bottom-subcontainer{
-                        p {
-                            @apply text-[10px]/[15px] font-medium text-neutral-500;
-                        }
-                    }
-                }
-                &::after {
-                    content: '';
-                    @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-                    background: url("/images/ornaments/investasi-right-ornament.png") no-repeat;
-                }
-                &::before {
-                    content: '';
-                    @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-                    background: url("/images/ornaments/investasi-left-ornament.png") no-repeat;
-                }
-            }
-        }
-    }
-    .staking-coins-section {
-        @apply px-[80px] py-[50px] gap-[40px] flex flex-col justify-center items-center max-w-container mx-auto;
-        
-        .header-coins-staking {
-            @apply flex flex-col gap-[8px] text-center;
-            h2 {
-                @apply text-[48px]/[72px] font-black;
-                span {
-                    background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            p {
-                @apply text-[16px]/[32px] font-medium text-neutral-700;
-            }
-        }
-        .list-coins-staking {
-            @apply flex flex-wrap;
-            .coin-staking-container {
-                @apply w-1/4 p-[20px];
-            }
-        }
-        @media (max-width:1280px) {
-            .header-coins-staking {
-                h2 {
-                    @apply text-[27px]/[40px];
-                }
-                p {
-                    @apply text-[15px]/[22px];
-                }
-            }
-            .list-coins-staking {
-                @apply flex flex-wrap;
-                .coin-staking-container {
-                    @apply w-1/4 p-[20px];
-                    .card-coin-staking-new {
-                        @apply h-[200px] gap-0;
-                        .card-coin-desc {
-                            label {
-                                @apply text-[17px]/[23px] line-clamp-1;
-                            }
-                            span {
-                                @apply text-[14px]/[21px];
-                                &.span-text {
-                                    @apply line-clamp-2;
-                                }
-                            }
-                        }
-                        .card-coin-logo {
-                            img {
-                                @apply w-[180px] h-[180px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            .header-coins-staking {
-                h2 {
-                    @apply text-[25px]/[38px];
-                }
-                p {
-                    @apply text-[14px]/[21px];
-                }
-            }
-            .list-coins-staking {
-                @apply flex flex-wrap;
-                .coin-staking-container {
-                    @apply w-1/4 p-[20px];
-                    .card-coin-staking-new {
-                        @apply h-[190px] gap-0;
-                        .card-coin-desc {
-                            label {
-                                @apply text-[15px]/[22px] line-clamp-1;
-                            }
-                            span {
-                                @apply text-[11px]/[17px];
-                                &.span-text {
-                                    @apply line-clamp-2;
-                                }
-                            }
-                        }
-                        .card-coin-logo {
-                            img {
-                                @apply w-[160px] h-[160px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            .header-coins-staking {
-                h2 {
-                    @apply text-[24px]/[37px];
-                }
-                p {
-                    @apply text-[14px]/[21px];
-                }
-            }
-            .list-coins-staking {
-                @apply flex flex-wrap;
-                .coin-staking-container {
-                    @apply w-1/4 p-[20px];
-                    .card-coin-staking-new {
-                        @apply h-[170px] gap-0;
-                        .card-coin-desc {
-                            label {
-                                @apply text-[14px]/[21px] line-clamp-1;
-                            }
-                            span {
-                                @apply text-[10px]/[17px];
-                                &.span-text {
-                                    @apply line-clamp-2;
-                                }
-                            }
-                        }
-                        .card-coin-logo {
-                            img {
-                                @apply w-[140px] h-[140px];
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      .card-staking-calculator {
+        @apply bg-[#1b1f22];
+      }
     }
     .staking-faq-section {
-        @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
-        h2 {
-            @apply text-[48px]/[72px] font-black text-center;
-            span {
-                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+      .question-faq-staking {
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  svg {
+                    path {
+                      @apply stroke-slate-300;
+                    }
+                  }
+                }
+              }
             }
+          }
         }
-        .question-faq-staking {
-            @apply flex gap-[80px] items-center w-[85%];
-            .question-faq-accordion {
-                @apply flex-1;
-                ul {
-                    li {
-                        &:not(:last-child) {
-                            @apply relative pb-[10px];
-                        }
-                        button {
-                            @apply w-full py-[8px] text-left;
-                            .header-button {
-                                @apply flex items-center justify-between;
-                                label {
-                                    @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
-                                }
-                            }
-                        }
-                        .accordion-content {
-                            @apply relative overflow-hidden transition-all duration-700;
-                            .content-area {
-                                @apply py-[8px];
-                                p {
-                                    @apply text-[14px]/[21px] font-normal text-justify;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .question-faq-image {
-                @apply w-[197px] flex flex-col justify-center;
-                img {
-                    @apply w-[197px] h-[252px];
-                }
-            }
-        }
-        @media (max-width:1280px) {
-            h2 {
-                @apply text-[27px]/[41px];
-            }
-            .question-faq-staking {
-                @apply gap-[40px];
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    label {
-                                        @apply text-[17px]/[25px];
-                                    }
-                                }
-                            }
-                            .accordion-content {
-                                .content-area {
-                                    @apply py-[8px];
-                                    p {
-                                        @apply text-[14px]/[21px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .question-faq-image {
-                    @apply w-[187px];
-                    img {
-                        @apply w-[187px] h-[242px];
-                    }
-                }
-            }
-        }
-        @media (max-width:1180px) {
-            h2 {
-                @apply text-[25px]/[39px];
-            }
-            .question-faq-staking {
-                @apply gap-[40px];
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    label {
-                                        @apply text-[15px]/[23px];
-                                    }
-                                }
-                            }
-                            .accordion-content {
-                                .content-area {
-                                    @apply py-[8px];
-                                    p {
-                                        @apply text-[12px]/[19px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .question-faq-image {
-                    @apply w-[167px];
-                    img {
-                        @apply w-[167px] h-[222px];
-                    }
-                }
-            }
-        }
-        @media (max-width:1080px) {
-            h2 {
-                @apply text-[24px]/[37px];
-            }
-            .question-faq-staking {
-                @apply gap-[40px];
-                .question-faq-accordion {
-                    ul {
-                        li {
-                            button {
-                                .header-button {
-                                    label {
-                                        @apply text-[14px]/[21px];
-                                    }
-                                }
-                            }
-                            .accordion-content {
-                                .content-area {
-                                    @apply py-[8px];
-                                    p {
-                                        @apply text-[11px]/[17px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .question-faq-image {
-                    @apply w-[157px];
-                    img {
-                        @apply w-[157px] h-[212px];
-                    }
-                }
-            }
-        }
+      }
     }
     .staking-start-now-section {
-        @apply flex items-center py-[50px]  px-[100px] gap-[100px] max-w-container mx-auto;
-        .image-container {
-            @apply w-1/2 flex flex-col justify-center items-end relative;
-            img {
-                @apply  w-[392px] h-[355px] ;
+      a {
+        @apply !bg-[#3A80AF] !text-white;
+      }
+    }
+    .staking-coins-section {
+      .list-coins-staking {
+        .coin-staking-container {
+          .card-coin-staking-new {
+            @apply bg-[#1b1f22];
+          }
+        }
+      }
+    }
+  }
+}
+.staking-page {
+  @apply py-0;
+  &.dark-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @apply text-slate-200;
+    }
+    p {
+      @apply text-slate-300;
+    }
+    a {
+      @apply text-[#737aff];
+    }
+  }
+  &.light-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @apply text-black;
+    }
+    p {
+      @apply text-neutral-700;
+    }
+  }
+  .staking-hero-section {
+    @apply relative bg-[#000000] overflow-hidden flex flex-col justify-center;
+    .staking-hero-section-area {
+      @apply flex p-[100px] max-w-container mx-auto items-center relative;
+      &::before {
+        content: '';
+        @apply absolute top-0 w-[70%] h-full right-0;
+        background: url('/images/ornaments/device-ornament.png') no-repeat;
+        background-position: right;
+      }
+      .section-text {
+        @apply flex flex-col w-[75%] gap-[25px] z-[1];
+        .text-title {
+          @apply flex flex-col gap-[17px];
+          .title {
+            @apply flex flex-col w-[90%];
+            h1 {
+              @apply text-[60px]/[72px] text-white font-black w-full;
             }
-            &::before {
+            span {
+              background: linear-gradient(
+                89.49deg,
+                #1b4ca7 -18.69%,
+                #318ac6 98.33%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+          p {
+            @apply text-[16px]/[32px] text-[#C1C3CC] font-medium w-[65%] text-justify;
+          }
+        }
+        .text-info-register {
+          @apply flex flex-col gap-[54px];
+          .text-info {
+            @apply flex gap-[60px];
+            .text-detail-info {
+              @apply flex flex-col;
+              label {
+                @apply text-[36px]/[54px] text-primary font-bold;
+              }
+              span {
+                @apply text-[15px]/[22px] text-[#DEDEDE] font-medium;
+              }
+            }
+          }
+          .registered-logo {
+            @apply flex flex-col gap-[14px];
+            h5 {
+              @apply text-[16px]/[200%] font-medium text-white;
+            }
+            .logo-area {
+              @apply flex items-center gap-[30px];
+              .bappebti-logo {
+                @apply w-[147px] h-[34px];
                 content: '';
-                @apply absolute right-[50px]  w-[500px] h-[500px] z-[-1];
-                background: url("/images/ornaments/circle-loop-ornament-2.png") no-repeat;
+                background: url('/images/otoritas-keuangans/bappebti-big-white.png')
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .kominfo-logo {
+                @apply w-[118px] h-[37px];
+                content: '';
+                background: url('/images/otoritas-keuangans/kominfo-light-logo.png')
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .bsi-logo {
+                @apply w-[83px] h-[44px];
+                content: '';
+                background: url('/images/otoritas-keuangans/bsi-white.png')
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cisa-logo {
+                @apply w-[110px] h-[44px];
+                content: '';
+                background: url('/images/otoritas-keuangans/cisa-light-logo.png')
+                  no-repeat;
+                background-position: center;
+                background-size: contain !important;
+              }
             }
+          }
+        }
+      }
+      .section-image {
+        @apply flex-1 flex flex-col justify-center items-center;
+        img {
+          &.img-device {
+            @apply w-[625px] h-[800px] object-contain absolute right-[-20px] top-[100px];
+          }
+          &.img-coin-1 {
+            @apply w-[174px] h-[167px] absolute right-[435px] top-[45%];
+          }
+          &.img-coin-2 {
+            @apply w-[162px] h-[154px] absolute right-[20px] top-[20%];
+          }
+          &.img-coin-3 {
+            @apply w-[174px] h-[186px] absolute right-[20px] top-[70%];
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .staking-hero-section-area {
+        .section-text {
+          .text-title {
+            @apply gap-[28px];
+            .title {
+              @apply w-[90%];
+              h1 {
+                @apply text-[44px]/[53px];
+              }
+            }
+            p {
+              @apply text-[16px]/[23px] w-[65%];
+            }
+          }
+          .text-info-register {
+            .text-info {
+              @apply gap-[60px];
+              .text-detail-info {
+                label {
+                  @apply text-[26px]/[33px] text-primary font-bold;
+                }
+                span {
+                  @apply text-[16px]/[23px];
+                }
+              }
+            }
+            .registered-logo {
+              @apply flex flex-col gap-[14px];
+              h5 {
+                @apply text-[14px]/[21px];
+              }
+              .logo-area {
+                @apply gap-[20px];
+                .bappebti-logo {
+                  @apply w-[137px] h-[34px];
+                }
+                .kominfo-logo {
+                  @apply w-[108px] h-[37px];
+                }
+                .bsi-logo {
+                  @apply w-[73px] h-[44px];
+                }
+                .cisa-logo {
+                  @apply w-[100px] h-[43px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          img {
+            &.img-device {
+              @apply w-[445px] h-[570px] right-[20px] top-[200px];
+            }
+            &.img-coin-1 {
+              @apply w-[154px] h-[147px] absolute right-[330px] top-[55%];
+            }
+            &.img-coin-2 {
+              @apply w-[142px] h-[134px] absolute right-[10px] top-[35%];
+            }
+            &.img-coin-3 {
+              @apply w-[154px] h-[166px] absolute right-[10px] top-[70%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .staking-hero-section-area {
+        .section-text {
+          .text-title {
+            @apply gap-[28px];
+            .title {
+              @apply w-[90%];
+              h1 {
+                @apply text-[43px]/[52px];
+              }
+            }
+            p {
+              @apply text-[15px]/[22px] w-[65%];
+            }
+          }
+          .text-info-register {
+            .text-info {
+              @apply gap-[60px];
+              .text-detail-info {
+                label {
+                  @apply text-[25px]/[32px] text-primary font-bold;
+                }
+                span {
+                  @apply text-[15px]/[22px];
+                }
+              }
+            }
+            .registered-logo {
+              @apply flex flex-col gap-[14px];
+              h5 {
+                @apply text-[14px]/[21px];
+              }
+              .logo-area {
+                @apply gap-[20px];
+                .bappebti-logo {
+                  @apply w-[127px] h-[34px];
+                }
+                .kominfo-logo {
+                  @apply w-[98px] h-[37px];
+                }
+                .bsi-logo {
+                  @apply w-[83px] h-[44px];
+                }
+                .cisa-logo {
+                  @apply w-[90px] h-[43px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          img {
+            &.img-device {
+              @apply w-[445px] h-[570px] right-[20px] top-[200px];
+            }
+            &.img-coin-1 {
+              @apply w-[154px] h-[147px] absolute right-[330px] top-[55%];
+            }
+            &.img-coin-2 {
+              @apply w-[142px] h-[134px] absolute right-[10px] top-[35%];
+            }
+            &.img-coin-3 {
+              @apply w-[154px] h-[166px] absolute right-[10px] top-[70%];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .staking-hero-section-area {
+        .section-text {
+          .text-title {
+            @apply gap-[28px];
+            .title {
+              @apply w-[90%];
+              h1 {
+                @apply text-[42px]/[51px];
+              }
+            }
+            p {
+              @apply text-[14px]/[21px] w-[65%];
+            }
+          }
+          .text-info-register {
+            .text-info {
+              @apply gap-[60px];
+              .text-detail-info {
+                label {
+                  @apply text-[24px]/[31px] text-primary font-bold;
+                }
+                span {
+                  @apply text-[14px]/[21px];
+                }
+              }
+            }
+            .registered-logo {
+              .logo-area {
+                @apply flex items-center gap-[15px];
+                .bappebti-logo {
+                  @apply w-[117px] h-[34px];
+                }
+                .kominfo-logo {
+                  @apply w-[88px] h-[37px];
+                }
+                .bsi-logo {
+                  @apply w-[73px] h-[44px];
+                }
+                .cisa-logo {
+                  @apply w-[80px] h-[43px];
+                }
+              }
+            }
+          }
+        }
+        .section-image {
+          img {
+            &.img-device {
+              @apply w-[425px] h-[550px] right-[20px] top-[220px];
+            }
+            &.img-coin-1 {
+              @apply w-[144px] h-[137px] absolute right-[330px] top-[55%];
+            }
+            &.img-coin-2 {
+              @apply w-[132px] h-[124px] absolute right-[10px] top-[35%];
+            }
+            &.img-coin-3 {
+              @apply w-[144px] h-[156px] absolute right-[10px] top-[70%];
+            }
+          }
+        }
+      }
+    }
+  }
+  .staking-benefit-section {
+    @apply py-[50px] px-[100px] flex gap-[80px] max-w-container mx-auto;
+    .media-container {
+      @apply w-1/2;
+      .frame-media {
+        iframe {
+          @apply w-full h-[324px] rounded-tl-[11px] rounded-tr-[11px];
+        }
+      }
+      .description-media {
+        @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
+        box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
+        h5 {
+          @apply text-[17.68px]/[26.51px] font-bold;
+        }
+        p {
+          @apply text-[11.05px]/[16.57px] font-normal;
+        }
+      }
+    }
+    .benefit-container {
+      @apply w-1/2 flex flex-col gap-[15px];
+      h2 {
+        @apply text-[48px]/[72px] font-black;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .benefit-type-container {
+        @apply flex gap-[20px];
+        .benefit-icon {
+          @apply w-[101px];
+          img {
+            @apply w-[101px] h-[101px];
+          }
+        }
+        .benefit-desc {
+          @apply flex flex-col flex-1 gap-[4px];
+          h4 {
+            @apply text-[18px]/[27px] font-bold;
+          }
+          p {
+            @apply text-[14px]/[21px] font-medium;
+          }
+        }
+      }
+      button {
+        @apply hidden;
+      }
+    }
+    @media (max-width: 1280px) {
+      @apply gap-[40px];
+      .media-container {
+        @apply w-1/2;
+        .frame-media {
+          iframe {
+            @apply w-full h-[244px] rounded-tl-[11px] rounded-tr-[11px];
+          }
+        }
+        .description-media {
+          @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
+          box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
+          h5 {
+            @apply text-[16px]/[23px];
+          }
+          p {
+            @apply text-[12px]/[20px];
+          }
+        }
+      }
+      .benefit-container {
+        @apply gap-[10px];
+        h2 {
+          @apply text-[39px]/[59px];
+        }
+        .benefit-type-container {
+          @apply flex gap-[20px];
+          .benefit-icon {
+            @apply w-[91px];
+            img {
+              @apply w-[91px] h-[91px];
+            }
+          }
+          .benefit-desc {
+            h4 {
+              @apply text-[17px]/[28px];
+            }
+            p {
+              @apply text-[13px]/[20px];
+            }
+          }
+        }
+        button {
+          @apply hidden;
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      @apply gap-[40px];
+      .media-container {
+        @apply w-1/2;
+        .frame-media {
+          iframe {
+            @apply w-full h-[234px] rounded-tl-[11px] rounded-tr-[11px];
+          }
+        }
+        .description-media {
+          @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
+          box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
+          h5 {
+            @apply text-[15px]/[22px];
+          }
+          p {
+            @apply text-[11px]/[19px];
+          }
+        }
+      }
+      .benefit-container {
+        @apply gap-[10px];
+        h2 {
+          @apply text-[37px]/[57px];
+        }
+        .benefit-type-container {
+          @apply flex gap-[20px];
+          .benefit-icon {
+            @apply w-[81px];
+            img {
+              @apply w-[81px] h-[81px];
+            }
+          }
+          .benefit-desc {
+            h4 {
+              @apply text-[16px]/[27px];
+            }
+            p {
+              @apply text-[12px]/[19px];
+            }
+          }
+        }
+        button {
+          @apply hidden;
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      @apply gap-[40px];
+      .media-container {
+        @apply w-1/2;
+        .frame-media {
+          iframe {
+            @apply w-full h-[224px] rounded-tl-[11px] rounded-tr-[11px];
+          }
+        }
+        .description-media {
+          @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
+          box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
+          h5 {
+            @apply text-[14px]/[21px];
+          }
+          p {
+            @apply text-[10px]/[17px];
+          }
+        }
+      }
+      .benefit-container {
+        @apply gap-[10px];
+        h2 {
+          @apply text-[36px]/[56px];
+        }
+        .benefit-type-container {
+          @apply flex gap-[20px];
+          .benefit-icon {
+            @apply w-[71px];
+            img {
+              @apply w-[71px] h-[71px];
+            }
+          }
+          .benefit-desc {
+            h4 {
+              @apply text-[15px]/[26px];
+            }
+            p {
+              @apply text-[11px]/[17px];
+            }
+          }
+        }
+        button {
+          @apply hidden;
+        }
+      }
+    }
+  }
+  .staking-guide-crypto-section {
+    @apply py-[50px] px-[100px] flex max-w-container mx-auto;
+    .guide-container {
+      @apply flex flex-col gap-[34px] flex-1;
+      h2 {
+        @apply text-[48px]/[72px] font-black;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .guide-steps {
+        @apply px-[30px];
+        ul {
+          li {
+            @apply list-none flex gap-[23px] pl-[60px] relative;
+            &:not(:last-child) {
+              @apply pb-[55px] border-l-4 border-[#94CCF2] border-dashed;
+            }
+            .guide-icon {
+              @apply w-[65px] absolute left-[-33px];
+              img {
+                @apply w-full h-full;
+              }
+            }
+            .guide-desc {
+              @apply flex flex-col flex-1 gap-[8px];
+              h5 {
+                @apply text-[18px]/[27px] font-bold text-neutral-800;
+              }
+              p {
+                @apply text-[14px]/[21px] font-medium text-neutral-700;
+              }
+            }
+          }
+        }
+      }
+    }
+    .image-container {
+      @apply flex flex-col justify-center w-[500px] relative;
+      img {
+        @apply w-full;
+      }
+    }
+    @media (max-width: 1280px) {
+      .guide-container {
+        @apply flex flex-col gap-[34px] flex-1;
+        h2 {
+          @apply text-[27px]/[40px];
+        }
+        .guide-steps {
+          ul {
+            li {
+              @apply list-none flex gap-[23px] pl-[50px] relative;
+              &:not(:last-child) {
+                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
+              }
+              .guide-icon {
+                @apply w-[75px] absolute left-[-38px];
+                img {
+                  @apply w-full h-full;
+                }
+              }
+              .guide-desc {
+                @apply flex flex-col flex-1 gap-[8px];
+                h5 {
+                  @apply text-[17px]/[24px];
+                }
+                p {
+                  @apply text-[14px]/[21px];
+                }
+              }
+            }
+          }
+        }
+      }
+      .image-container {
+        @apply flex flex-col justify-center w-[400px] relative;
+        img {
+          @apply w-full;
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .guide-container {
+        @apply flex flex-col gap-[34px] flex-1;
+        h2 {
+          @apply text-[25px]/[38px];
+        }
+        .guide-steps {
+          ul {
+            li {
+              @apply list-none flex gap-[23px] pl-[45px] relative;
+              &:not(:last-child) {
+                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
+              }
+              .guide-icon {
+                @apply w-[55px] absolute left-[-28px];
+                img {
+                  @apply w-full h-full;
+                }
+              }
+              .guide-desc {
+                @apply flex flex-col flex-1 gap-[8px];
+                h5 {
+                  @apply text-[15px]/[22px];
+                }
+                p {
+                  @apply text-[12px]/[18px];
+                }
+              }
+            }
+          }
+        }
+      }
+      .image-container {
+        @apply flex flex-col justify-center w-[380px] relative;
+        img {
+          @apply w-full;
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .guide-container {
+        @apply flex flex-col gap-[34px] flex-1;
+        h2 {
+          @apply text-[24px]/[37px];
+        }
+        .guide-steps {
+          ul {
+            li {
+              @apply list-none flex gap-[23px] pl-[40px] relative;
+              &:not(:last-child) {
+                @apply pb-[35px] border-l-[3px] border-[#94CCF2] border-dashed;
+              }
+              .guide-icon {
+                @apply w-[45px] absolute left-[-23px];
+                img {
+                  @apply w-full h-full;
+                }
+              }
+              .guide-desc {
+                @apply flex flex-col flex-1 gap-[8px];
+                h5 {
+                  @apply text-[14px]/[21px];
+                }
+                p {
+                  @apply text-[11px]/[17px];
+                }
+              }
+            }
+          }
+        }
+      }
+      .image-container {
+        @apply flex flex-col justify-center w-[350px] relative;
+        img {
+          @apply w-full;
+        }
+      }
+    }
+  }
+  .staking-calculator-section {
+    @apply px-[100px] py-[50px] gap-[80px] flex flex-col justify-center items-center max-w-container mx-auto;
+
+    .card-staking-calculator {
+      @apply flex items-center p-[60px] rounded-[20px] bg-[#F4F8FB] relative w-full;
+      .title-container {
+        @apply w-[330px] z-[1];
+        h2 {
+          @apply text-[48px]/[72px] font-black;
+        }
+      }
+      .calculator-container {
+        @apply flex flex-col flex-1 gap-[14px] z-[1];
+        .top-subcontainer {
+          @apply flex flex-col gap-[20px];
+          .sub-subcontainer {
+            @apply flex gap-[30px];
+            .form-input {
+              @apply flex gap-[8px] items-center w-1/2;
+              label {
+                @apply text-[13px]/[19px] font-medium text-neutral-700 w-auto;
+              }
+              input {
+                @apply w-full;
+              }
+              select {
+                @apply flex-1;
+              }
+              .group-input {
+                @apply flex-1;
+                span {
+                  @apply top-[12px];
+                }
+              }
+            }
+          }
+        }
+        .middle-subcontainer {
+          @apply flex gap-[30px];
+          .sub-subcontainer {
+            @apply flex flex-col w-[47%];
+            label {
+              @apply text-[48px]/[72px] font-bold text-primary;
+              background: linear-gradient(
+                89.49deg,
+                #1b4ca7 -18.69%,
+                #318ac6 98.33%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              span {
+                @apply text-[24px]/[36px] font-medium;
+                background: linear-gradient(
+                  89.49deg,
+                  #1b4ca7 -18.69%,
+                  #318ac6 98.33%
+                );
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+            span {
+              @apply text-[14px]/[21px] text-neutral-700 font-medium;
+            }
+          }
+        }
+        .bottom-subcontainer {
+          p {
+            @apply text-[10px]/[15px] font-medium text-neutral-500;
+          }
+        }
+      }
+      &::after {
+        content: '';
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+        background: url('/images/ornaments/investasi-right-ornament.png')
+          no-repeat;
+      }
+      &::before {
+        content: '';
+        @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+        background: url('/images/ornaments/investasi-left-ornament.png')
+          no-repeat;
+      }
+    }
+    @media (max-width: 1280px) {
+      .card-staking-calculator {
+        @apply gap-[20px] p-[40px];
+        .title-container {
+          @apply w-[165px] z-[1];
+          h2 {
+            @apply text-[26px]/[39px];
+          }
+        }
+        .calculator-container {
+          @apply gap-[10px];
+          .top-subcontainer {
+            @apply gap-[20px];
+            .sub-subcontainer {
+              @apply gap-[25px];
+              .form-input {
+                @apply gap-[8px];
+                label {
+                  @apply text-[14px]/[21px];
+                }
+                input {
+                  @apply w-full;
+                }
+                select {
+                  @apply flex-1;
+                }
+                .group-input {
+                  @apply flex-1;
+                  span {
+                    @apply top-[12px];
+                  }
+                }
+              }
+            }
+          }
+          .middle-subcontainer {
+            @apply flex gap-[30px];
+            .sub-subcontainer {
+              @apply flex flex-col w-[47%];
+              label {
+                @apply text-[26px]/[39px];
+              }
+              span {
+                @apply text-[14px]/[21px];
+              }
+            }
+          }
+          .bottom-subcontainer {
+            p {
+              @apply text-[12px]/[19px] font-medium text-neutral-500;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          @apply absolute bottom-[-50px] w-[221px] h-[221px] right-[-10px] top-0;
+          background: url('/images/ornaments/investasi-right-ornament.png')
+            no-repeat;
+        }
+        &::before {
+          content: '';
+          @apply absolute bottom-[-50px] w-[221px] h-[221px] left-0 top-0;
+          background: url('/images/ornaments/investasi-left-ornament.png')
+            no-repeat;
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .card-staking-calculator {
+        @apply gap-[20px] p-[40px];
+        .title-container {
+          @apply w-[150px] z-[1];
+          h2 {
+            @apply text-[24px]/[37px];
+          }
+        }
+        .calculator-container {
+          @apply gap-[10px];
+          .top-subcontainer {
+            @apply gap-[20px];
+            .sub-subcontainer {
+              @apply gap-[25px];
+              .form-input {
+                @apply gap-[8px];
+                label {
+                  @apply text-[11px]/[14px];
+                }
+                input {
+                  @apply w-full;
+                }
+                select {
+                  @apply flex-1;
+                }
+                .group-input {
+                  @apply flex-1;
+                  span {
+                    @apply top-[12px];
+                  }
+                }
+              }
+            }
+          }
+          .middle-subcontainer {
+            @apply flex gap-[30px];
+            .sub-subcontainer {
+              @apply flex flex-col w-[47%];
+              label {
+                @apply text-[24px]/[37px];
+              }
+              span {
+                @apply text-[11px]/[17px];
+              }
+            }
+          }
+          .bottom-subcontainer {
+            p {
+              @apply text-[10px]/[15px] font-medium text-neutral-500;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+          background: url('/images/ornaments/investasi-right-ornament.png')
+            no-repeat;
+        }
+        &::before {
+          content: '';
+          @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+          background: url('/images/ornaments/investasi-left-ornament.png')
+            no-repeat;
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .card-staking-calculator {
+        @apply gap-[20px] p-[40px];
+        .title-container {
+          @apply w-[150px] z-[1];
+          h2 {
+            @apply text-[24px]/[37px];
+          }
+        }
+        .calculator-container {
+          @apply gap-[10px];
+          .top-subcontainer {
+            @apply gap-[20px];
+            .sub-subcontainer {
+              @apply gap-[25px];
+              .form-input {
+                @apply gap-[8px];
+                label {
+                  @apply text-[11px]/[14px];
+                }
+                input {
+                  @apply w-full;
+                }
+                select {
+                  @apply flex-1;
+                }
+                .group-input {
+                  @apply flex-1;
+                  span {
+                    @apply top-[12px];
+                  }
+                }
+              }
+            }
+          }
+          .middle-subcontainer {
+            @apply flex gap-[30px];
+            .sub-subcontainer {
+              @apply flex flex-col w-[47%];
+              label {
+                @apply text-[24px]/[37px];
+              }
+              span {
+                @apply text-[11px]/[17px];
+              }
+            }
+          }
+          .bottom-subcontainer {
+            p {
+              @apply text-[10px]/[15px] font-medium text-neutral-500;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
+          background: url('/images/ornaments/investasi-right-ornament.png')
+            no-repeat;
+        }
+        &::before {
+          content: '';
+          @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
+          background: url('/images/ornaments/investasi-left-ornament.png')
+            no-repeat;
+        }
+      }
+    }
+  }
+  .staking-coins-section {
+    @apply px-[80px] py-[50px] gap-[40px] flex flex-col justify-center items-center max-w-container mx-auto;
+
+    .header-coins-staking {
+      @apply flex flex-col gap-[8px] text-center;
+      h2 {
+        @apply text-[48px]/[72px] font-black;
+        span {
+          background: linear-gradient(
+            89.49deg,
+            #1b4ca7 -18.69%,
+            #318ac6 98.33%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      p {
+        @apply text-[16px]/[32px] font-medium text-neutral-700;
+      }
+    }
+    .list-coins-staking {
+      @apply flex flex-wrap;
+      .coin-staking-container {
+        @apply w-1/4 p-[20px];
+      }
+    }
+    @media (max-width: 1280px) {
+      .header-coins-staking {
+        h2 {
+          @apply text-[27px]/[40px];
+        }
+        p {
+          @apply text-[15px]/[22px];
+        }
+      }
+      .list-coins-staking {
+        @apply flex flex-wrap;
+        .coin-staking-container {
+          @apply w-1/4 p-[20px];
+          .card-coin-staking-new {
+            @apply h-[200px] gap-0;
+            .card-coin-desc {
+              label {
+                @apply text-[17px]/[23px] line-clamp-1;
+              }
+              span {
+                @apply text-[14px]/[21px];
+                &.span-text {
+                  @apply line-clamp-2;
+                }
+              }
+            }
+            .card-coin-logo {
+              img {
+                @apply w-[180px] h-[180px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .header-coins-staking {
+        h2 {
+          @apply text-[25px]/[38px];
+        }
+        p {
+          @apply text-[14px]/[21px];
+        }
+      }
+      .list-coins-staking {
+        @apply flex flex-wrap;
+        .coin-staking-container {
+          @apply w-1/4 p-[20px];
+          .card-coin-staking-new {
+            @apply h-[190px] gap-0;
+            .card-coin-desc {
+              label {
+                @apply text-[15px]/[22px] line-clamp-1;
+              }
+              span {
+                @apply text-[11px]/[17px];
+                &.span-text {
+                  @apply line-clamp-2;
+                }
+              }
+            }
+            .card-coin-logo {
+              img {
+                @apply w-[160px] h-[160px];
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .header-coins-staking {
+        h2 {
+          @apply text-[24px]/[37px];
+        }
+        p {
+          @apply text-[14px]/[21px];
+        }
+      }
+      .list-coins-staking {
+        @apply flex flex-wrap;
+        .coin-staking-container {
+          @apply w-1/4 p-[20px];
+          .card-coin-staking-new {
+            @apply h-[170px] gap-0;
+            .card-coin-desc {
+              label {
+                @apply text-[14px]/[21px] line-clamp-1;
+              }
+              span {
+                @apply text-[10px]/[17px];
+                &.span-text {
+                  @apply line-clamp-2;
+                }
+              }
+            }
+            .card-coin-logo {
+              img {
+                @apply w-[140px] h-[140px];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .staking-faq-section {
+    @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
+    h2 {
+      @apply text-[48px]/[72px] font-black text-center;
+      span {
+        background: linear-gradient(89.49deg, #1b4ca7 -18.69%, #318ac6 98.33%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .question-faq-staking {
+      @apply flex gap-[80px] items-center w-[85%];
+      .question-faq-accordion {
+        @apply flex-1;
+        ul {
+          li {
+            &:not(:last-child) {
+              @apply relative pb-[10px];
+            }
+            button {
+              @apply w-full py-[8px] text-left;
+              .header-button {
+                @apply flex items-center justify-between;
+                label {
+                  @apply text-[18px]/[27px] font-bold cursor-pointer text-black;
+                }
+              }
+            }
+            .accordion-content {
+              @apply relative overflow-hidden transition-all duration-700;
+              .content-area {
+                @apply py-[8px];
+                p {
+                  @apply text-[14px]/[21px] font-normal text-justify;
+                }
+              }
+            }
+          }
+        }
+      }
+      .question-faq-image {
+        @apply w-[197px] flex flex-col justify-center;
+        img {
+          @apply w-[197px] h-[252px];
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      h2 {
+        @apply text-[27px]/[41px];
+      }
+      .question-faq-staking {
+        @apply gap-[40px];
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  label {
+                    @apply text-[17px]/[25px];
+                  }
+                }
+              }
+              .accordion-content {
+                .content-area {
+                  @apply py-[8px];
+                  p {
+                    @apply text-[14px]/[21px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .question-faq-image {
+          @apply w-[187px];
+          img {
+            @apply w-[187px] h-[242px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      h2 {
+        @apply text-[25px]/[39px];
+      }
+      .question-faq-staking {
+        @apply gap-[40px];
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  label {
+                    @apply text-[15px]/[23px];
+                  }
+                }
+              }
+              .accordion-content {
+                .content-area {
+                  @apply py-[8px];
+                  p {
+                    @apply text-[12px]/[19px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .question-faq-image {
+          @apply w-[167px];
+          img {
+            @apply w-[167px] h-[222px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      h2 {
+        @apply text-[24px]/[37px];
+      }
+      .question-faq-staking {
+        @apply gap-[40px];
+        .question-faq-accordion {
+          ul {
+            li {
+              button {
+                .header-button {
+                  label {
+                    @apply text-[14px]/[21px];
+                  }
+                }
+              }
+              .accordion-content {
+                .content-area {
+                  @apply py-[8px];
+                  p {
+                    @apply text-[11px]/[17px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .question-faq-image {
+          @apply w-[157px];
+          img {
+            @apply w-[157px] h-[212px];
+          }
+        }
+      }
+    }
+  }
+  .staking-start-now-section {
+    @apply flex items-center py-[50px]  px-[100px] gap-[100px] max-w-container mx-auto;
+    .image-container {
+      @apply w-1/2 flex flex-col justify-center items-end relative;
+      img {
+        @apply w-[392px] h-[355px];
+      }
+      &::before {
+        content: '';
+        @apply absolute right-[50px]  w-[500px] h-[500px] z-[-1];
+        background: url('/images/ornaments/circle-loop-ornament-2.png')
+          no-repeat;
+      }
+    }
+    .description-container {
+      @apply w-1/2 flex flex-col gap-[30px];
+      .start-now-description {
+        @apply flex-1 flex flex-col gap-[18px];
+        h2 {
+          @apply text-[28px]/[42px] font-bold text-neutral-900;
+        }
+        p {
+          @apply text-[16px]/[32px] font-medium text-neutral-700;
+        }
+      }
+      .start-button-logo {
+        @apply flex gap-[30px];
+        a {
+          @apply flex justify-center gap-[8px] items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .start-now-store {
+          @apply flex gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[31px] h-[37px];
+            }
+            &.playstore-logo {
+              @apply w-[30px] h-[32px];
+            }
+          }
+        }
+        .start-now-store-mobile {
+          @apply hidden gap-[14px] items-center;
+          img {
+            &.apple-logo {
+              @apply w-[130.64px] h-[38.71px];
+            }
+            &.playstore-logo {
+              @apply w-[114.43px] h-[37.02px];
+            }
+          }
+        }
+      }
+    }
+  }
+  .staking-testimony-carousel-section {
+    @apply px-[100px] py-[50px] gap-[60px] flex justify-center items-center max-w-container mx-auto;
+  }
+  .staking-banner-section {
+    @apply p-[100px] max-w-container mx-auto;
+    .main-container {
+      .sub-container {
+        @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
+        background: linear-gradient(89.49deg, #1b4ca7 -18.69%, #318ac6 98.33%);
+        .text-area {
+          @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
+          .text-header {
+            @apply flex flex-col gap-[10px] w-[98%];
+            h2 {
+              @apply text-[40px]/[60px] text-white font-black;
+            }
+            p {
+              @apply text-[16px]/[32px] text-white font-medium w-[80%];
+            }
+          }
+          .button-area {
+            @apply flex items-center gap-[39px];
+            a {
+              @apply flex justify-center items-center gap-[4px] bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;
+            }
+            .app-store-list {
+              @apply flex items-center gap-[14px];
+              img {
+                &.playstore-logo {
+                  @apply w-[130px] h-[38px];
+                }
+                &.apple-logo {
+                  @apply w-[114px] h-[37px];
+                }
+              }
+            }
+          }
+        }
+        .image-area {
+          @apply flex-1 overflow-hidden;
+          img {
+            @apply absolute bottom-0 right-0 w-[510px];
+          }
+        }
+      }
+    }
+    @media (max-width: 1380px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[360px];
+          .text-area {
+            @apply flex flex-col w-[60%] gap-[20px] justify-center pl-[50px];
+            .text-header {
+              @apply flex flex-col gap-[10px] w-[90%];
+              h2 {
+                @apply text-[32px]/[40px];
+              }
+              p {
+                @apply text-[15px]/[30px] w-full;
+              }
+            }
+            .button-area {
+              @apply flex items-center gap-[39px];
+              a {
+                @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px];
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[480px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1180px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[260px];
+          .text-area {
+            @apply gap-[20px];
+            .text-header {
+              h2 {
+                @apply text-[25px]/[38px];
+              }
+              p {
+                @apply text-[14px]/[21px];
+              }
+            }
+            .button-area {
+              @apply gap-[20px];
+              a {
+                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px];
+              }
+              .app-store-list {
+                @apply flex items-center gap-[14px];
+                img {
+                  &.playstore-logo {
+                    @apply w-[110px] h-[30px];
+                  }
+                  &.apple-logo {
+                    @apply w-[94px] h-[29px];
+                  }
+                }
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[430px];
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1080px) {
+      .main-container {
+        .sub-container {
+          @apply gap-[30px] h-[260px];
+          .text-area {
+            @apply gap-[20px];
+            .text-header {
+              h2 {
+                @apply text-[24px]/[37px];
+              }
+              p {
+                @apply text-[12px]/[17px];
+              }
+            }
+            .button-area {
+              @apply gap-[20px];
+              a {
+                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px];
+              }
+              .app-store-list {
+                @apply flex items-center gap-[14px];
+                img {
+                  &.playstore-logo {
+                    @apply w-[110px] h-[30px];
+                  }
+                  &.apple-logo {
+                    @apply w-[94px] h-[29px];
+                  }
+                }
+              }
+            }
+          }
+          .image-area {
+            img {
+              @apply w-[380px];
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @layer components {
+    &.mobile-responsive {
+      /* @apply pt-[40px]; */
+      .staking-header-section {
+        @apply gap-[10px];
+        h1 {
+          @apply text-[16px]/[24px];
+        }
+        p {
+          @apply text-[10px]/[15px];
+        }
+      }
+      .staking-hero-section {
+        @apply h-full pb-0;
+        .staking-hero-section-area {
+          @apply flex-col px-[20px] pb-[20px] pt-[60px] gap-[0px];
+          &::before {
+            content: unset;
+          }
+          .section-text {
+            @apply w-full gap-[20px] items-center;
+            .text-title {
+              @apply flex flex-col gap-[20px] text-center items-center;
+              .title {
+                @apply flex flex-col;
+                h1 {
+                  @apply text-[14px]/[21px] w-full;
+                }
+              }
+              p {
+                @apply text-[10px]/[15px] w-full text-center;
+              }
+            }
+            .text-info-register {
+              @apply gap-[20px];
+              .text-info {
+                @apply flex gap-0 justify-between items-center;
+                .text-detail-info {
+                  @apply flex flex-col;
+                  label {
+                    @apply text-[18px]/[28px];
+                  }
+                  span {
+                    @apply text-[7px]/[11px];
+                  }
+                }
+              }
+              .registered-logo {
+                @apply justify-center items-center;
+                h5 {
+                  @apply text-[12px]/[150%];
+                }
+                .logo-area {
+                  @apply justify-between;
+                  .bappebti-logo {
+                    @apply w-[60px] h-[13px];
+                  }
+                  .kominfo-logo {
+                    @apply w-[60px] h-[20px];
+                  }
+                  .bsi-logo {
+                    @apply w-[37px] h-[20px];
+                  }
+                  .cisa-logo {
+                    @apply w-[51px] h-[22px];
+                  }
+                }
+              }
+            }
+          }
+          .section-image {
+            @apply relative flex flex-col justify-center w-[325px];
+            &::before {
+              content: '';
+              @apply absolute bottom-0 w-[100%] h-full right-0 top-[25px];
+              background: url('/images/ornaments/device-ornament.png') no-repeat;
+              background-size: cover;
+              width: 500px;
+            }
+            img {
+              &.img-device {
+                @apply h-[350px] relative right-0;
+              }
+              &.img-coin-1 {
+                @apply w-[64px] h-[61px] absolute right-[235px] top-[45%];
+              }
+              &.img-coin-2 {
+                @apply w-[64px] h-[61px] absolute right-[45px] top-[20%];
+              }
+              &.img-coin-3 {
+                @apply w-[64px] h-[61px] absolute right-[45px] top-[70%];
+              }
+            }
+          }
+        }
+      }
+      .staking-benefit-section {
+        @apply py-[30px] px-[20px] gap-[60px] flex-col-reverse;
+        .benefit-container {
+          @apply gap-[30px] w-full;
+          h2 {
+            @apply text-[16px]/[24px] text-center;
+          }
+          .benefit-type-container {
+            .benefit-icon {
+              @apply w-[40px];
+              img {
+                @apply w-[40px] h-[40px];
+              }
+            }
+            .benefit-desc {
+              h4 {
+                @apply text-[14px]/[21px];
+              }
+              p {
+                @apply text-[12px]/[18px];
+              }
+            }
+          }
+        }
+        button {
+          @apply w-full h-[30px] rounded-[30px] text-[12px]/[18px] flex gap-[10px] justify-center items-center bg-primary text-white;
+          svg {
+            path {
+              @apply fill-white;
+            }
+          }
+        }
+        .media-container {
+          @apply w-full;
+          .frame-media {
+            iframe {
+              @apply h-[320px] rounded-tl-[11px] rounded-tr-[11px];
+            }
+          }
+          .description-media {
+            @apply rounded-[11px] p-[11px];
+            h5 {
+              @apply text-[10px]/[15px] font-bold;
+            }
+            p {
+              @apply text-[6px]/[9px] font-normal;
+            }
+          }
+        }
+      }
+      .staking-guide-crypto-section {
+        @apply py-[30px] px-[20px] gap-[60px] flex-col-reverse;
+        .guide-container {
+          @apply w-full gap-[14px];
+          h2 {
+            @apply text-[16px]/[24px] text-center;
+          }
+          .guide-steps {
+            @apply px-[30px];
+            ul {
+              li {
+                @apply list-none flex gap-[23px] pl-[40px] relative;
+                &:not(:last-child) {
+                  @apply pb-[30px] border-l-2 border-[#94CCF2] border-dashed;
+                }
+                .guide-icon {
+                  @apply w-[35px] absolute left-[-19px];
+                  img {
+                    @apply w-[34.89px] h-[34.89px];
+                    &.step-koin {
+                      @apply w-[34.89px] h-[40px];
+                    }
+                  }
+                }
+                .guide-desc {
+                  @apply flex flex-col flex-1 gap-[8px];
+                  h5 {
+                    @apply text-[12px]/[18px];
+                  }
+                  p {
+                    @apply text-[10px]/[15px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .image-container {
+          @apply w-full justify-center items-center;
+          img {
+            @apply w-full h-full object-cover;
+          }
+        }
+      }
+      .staking-calculator-section {
+        @apply py-[30px] px-[20px] gap-[60px];
+        .card-staking-calculator {
+          @apply flex-col gap-[30px] p-[40px];
+          &::before,
+          &::after {
+            content: none;
+          }
+
+          .image-container {
+            @apply w-[240px];
+            img {
+              @apply w-[240px] h-[142px];
+            }
+          }
+          .title-container {
+            @apply w-full;
+            h2 {
+              @apply text-[16px]/[24px];
+            }
+          }
+          .calculator-container {
+            @apply flex-col;
+            .top-subcontainer {
+              h2 {
+                @apply text-[16px]/[24px];
+              }
+              .sub-subcontainer {
+                @apply flex-col gap-[20px] w-full;
+                .form-input {
+                  @apply flex-col w-full gap-[8px] items-start;
+                  label {
+                    @apply text-[12px]/[18px] font-medium text-neutral-700;
+                  }
+                  .group-input {
+                    @apply w-full;
+                    input {
+                      @apply w-full h-[41px];
+                    }
+                  }
+                  select {
+                    @apply w-full !min-h-[41px] bg-white;
+                    appearance: none;
+                    background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="black"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position-x: 95%;
+                    background-position-y: 15px;
+                  }
+                }
+              }
+            }
+            .middle-subcontainer {
+              @apply flex-col gap-[23px];
+              .sub-subcontainer {
+                @apply flex-row-reverse justify-between items-center w-full;
+                span {
+                  @apply text-[10px]/[15px];
+                }
+                label {
+                  @apply text-[14px]/[21px];
+                }
+              }
+            }
+            .bottom-subcontainer {
+              p {
+                @apply text-[8px]/[12px];
+              }
+            }
+          }
+        }
+      }
+      .staking-coins-section {
+        @apply py-[30px] px-[20px] gap-[30px];
+        .header-coins-staking {
+          @apply gap-[10px];
+          h2 {
+            @apply text-[14px]/[21px] text-center;
+          }
+          p {
+            @apply text-[10px]/[15px] text-center;
+          }
+        }
+        .list-coins-staking {
+          .coin-staking-container {
+            @apply w-1/3 p-[10px];
+            .card-coin-staking-new {
+              @apply h-[87px] gap-0 rounded-[7px] pt-[10px] w-full;
+              .card-coin-logo {
+                img {
+                  @apply w-[57px] h-[57px];
+                }
+              }
+              .card-coin-desc {
+                @apply text-center gap-0 h-[30px] w-full;
+                label {
+                  @apply text-[7px]/[10px] line-clamp-1;
+                }
+                span {
+                  @apply text-[5px]/[7px] w-full;
+                  &.span-text {
+                    @apply line-clamp-2;
+                  }
+                }
+              }
+              .card-button {
+                a {
+                  @apply text-[8px]/[13px] px-[10px] py-[5px] rounded-[4px];
+                }
+              }
+            }
+          }
+        }
+      }
+      .staking-faq-section {
+        @apply py-[30px] px-[20px] gap-[20px];
+        h2 {
+          @apply text-[16px]/[24px];
+        }
+        .question-faq-staking {
+          @apply flex-col gap-[31px];
+          .question-faq-image {
+            @apply w-full items-center;
+            img {
+              @apply w-[157px] h-[201px];
+            }
+          }
+          .question-faq-accordion {
+            @apply w-full;
+            ul {
+              li {
+                button {
+                  @apply py-[4px];
+                  .header-button {
+                    label {
+                      @apply text-[12px]/[18px];
+                    }
+                  }
+                }
+                .accordion-content {
+                  .content-area {
+                    @apply py-[4px];
+                    p {
+                      @apply text-[10px]/[15px];
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .staking-start-now-section {
+        @apply py-[30px] px-[20px] gap-[20px] flex-col;
+        .image-container {
+          @apply hidden;
         }
         .description-container {
-            @apply w-1/2 flex flex-col gap-[30px];
-            .start-now-description {
-                @apply flex-1 flex flex-col gap-[18px];
-                h2 {
-                    @apply text-[28px]/[42px] font-bold text-neutral-900;
-                }
-                p {
-                    @apply text-[16px]/[32px] font-medium text-neutral-700;
-                }
+          @apply w-full;
+          .start-now-description {
+            @apply text-center gap-[10px];
+            h2 {
+              @apply text-[14px]/[21px];
             }
-           .start-button-logo {
-                @apply flex gap-[30px];
-                a {
-                    @apply flex justify-center gap-[8px] items-center bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .start-now-store {
-                    @apply flex gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[31px] h-[37px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[30px] h-[32px];
-    
-                        }
-                    }
-                }
-                .start-now-store-mobile {
-                    @apply hidden gap-[14px] items-center;
-                    img {
-                        &.apple-logo {
-                            @apply w-[130.64px] h-[38.71px];
-                        }
-                        &.playstore-logo {
-                            @apply w-[114.43px] h-[37.02px];
-    
-                        }
-                    }
-                }
-           }
+            p {
+              @apply text-[12px]/[18px];
+            }
+          }
         }
-    }
-    .staking-testimony-carousel-section {
-        @apply px-[100px] py-[50px] gap-[60px] flex justify-center items-center max-w-container mx-auto;
-    }
-    .staking-banner-section {
-        @apply p-[100px] max-w-container mx-auto;
+        .start-button-logo {
+          @apply flex-col justify-center items-center gap-[30px];
+          a {
+            @apply w-[80%] text-[12px]/[18px] py-[8px];
+            svg {
+              @apply w-[18px] h-[18px];
+            }
+          }
+        }
+      }
+      .staking-testimony-carousel-section {
+        @apply py-[30px] px-[20px];
+      }
+      .staking-banner-section {
+        @apply px-[20px] py-[50px];
         .main-container {
-            .sub-container {
-                @apply rounded-tl-[40px] rounded-tr-[40px] h-[380px] flex gap-[20px] relative;
-                background: linear-gradient(89.49deg, #1B4CA7 -18.69%, #318AC6 98.33%);
-                .text-area {
-                    @apply flex flex-col w-[60%] gap-[10px] justify-center pl-[50px];
-                    .text-header {
-                        @apply flex flex-col gap-[10px] w-[98%];
-                        h2 {
-                            @apply text-[40px]/[60px] text-white font-black;
-                        }
-                        p {
-                            @apply text-[16px]/[32px] text-white font-medium w-[80%];
-                        }
-                    }
-                    .button-area {
-                        @apply flex items-center gap-[39px];
-                        a {
-                            @apply flex justify-center items-center gap-[4px] bg-white text-primary rounded-[30px] py-[9px] w-[200px] h-[48px] text-[14px]/[21px] font-bold;   
-                             
-                        }
-                        .app-store-list {
-                            @apply flex items-center gap-[14px];
-                            img {
-                                &.playstore-logo {
-                                    @apply w-[130px] h-[38px];
-                                }
-                                &.apple-logo {
-                                    @apply w-[114px] h-[37px];
-                                }
-                            }
-                        }
-                    }
-                }
-                .image-area {
-                    @apply flex-1 overflow-hidden;
-                    img {
-                        @apply absolute bottom-0 right-0 w-[510px];
-                    }
-                }
-            }
-        }
-        @media (max-width: 1380px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[360px];
-                    .text-area {
-                        @apply flex flex-col w-[60%] gap-[20px] justify-center pl-[50px];
-                        .text-header {
-                            @apply flex flex-col gap-[10px] w-[90%];
-                            h2 {
-                                @apply text-[32px]/[40px];
-                            }
-                            p {
-                                @apply text-[15px]/[30px] w-full;
-                            }
-                        }
-                        .button-area {
-                            @apply flex items-center gap-[39px];
-                            a {
-                                @apply rounded-[24px] py-[9px] w-[200px] h-[42px] text-[14px]/[21px] ;   
-                                 
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[480px];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width: 1180px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[260px];
-                    .text-area {
-                        @apply gap-[20px];
-                        .text-header {
-                            h2 {
-                                @apply text-[25px]/[38px];
-                            }
-                            p {
-                                @apply text-[14px]/[21px];
-                            }
-                        }
-                        .button-area {
-                            @apply gap-[20px];
-                            a {
-                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
-                                 
-                            }
-                            .app-store-list {
-                                @apply flex items-center gap-[14px];
-                                img {
-                                    &.playstore-logo {
-                                        @apply w-[110px] h-[30px];
-                                    }
-                                    &.apple-logo {
-                                        @apply w-[94px] h-[29px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[430px];
-                        }
-                    }
-                }
-            }
-        }
-        @media (max-width: 1080px) {
-            .main-container {
-                .sub-container {
-                    @apply gap-[30px] h-[260px];
-                    .text-area {
-                        @apply gap-[20px];
-                        .text-header {
-                            h2 {
-                                @apply text-[24px]/[37px];
-                            }
-                            p {
-                                @apply text-[12px]/[17px];
-                            }
-                        }
-                        .button-area {
-                            @apply gap-[20px];
-                            a {
-                                @apply rounded-[20px] py-[8px] w-[150px] h-[36px] text-[12px]/[19px] ;   
-                                 
-                            }
-                            .app-store-list {
-                                @apply flex items-center gap-[14px];
-                                img {
-                                    &.playstore-logo {
-                                        @apply w-[110px] h-[30px];
-                                    }
-                                    &.apple-logo {
-                                        @apply w-[94px] h-[29px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .image-area {
-                        img {
-                            @apply w-[380px];
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    @layer components {
-        &.mobile-responsive {
-            /* @apply pt-[40px]; */
-            .staking-header-section {
-                @apply  gap-[10px];
-                h1 {
-                    @apply text-[16px]/[24px];
+          .sub-container {
+            @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
+            .text-area {
+              @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
+              .text-header {
+                @apply flex flex-col gap-[2px];
+                h2 {
+                  @apply text-[10px]/[15px] text-white font-black;
                 }
                 p {
-                    @apply text-[10px]/[15px];
+                  @apply text-[4px]/[8px] text-white font-medium w-[80%];
                 }
+                @media (max-width: 330px) {
+                  h2 {
+                    @apply text-[9px]/[13px];
+                  }
+                  p {
+                    @apply text-[4px]/[6px];
+                  }
+                }
+              }
+              .button-area {
+                @apply gap-[7px];
+                a {
+                  @apply w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];
+                  svg {
+                    @apply w-[4px] h-[4px];
+                  }
+                }
+                .app-store-list {
+                  @apply gap-[3px];
+                  img {
+                    &.playstore-logo {
+                      @apply w-[33px] h-[10px];
+                    }
+                    &.apple-logo {
+                      @apply w-[30px] h-[10px];
+                    }
+                  }
+                }
+              }
             }
-            .staking-hero-section {
-                @apply h-full pb-0;
-                .staking-hero-section-area {
-                    @apply flex-col px-[20px] pb-[20px] pt-[60px] gap-[0px];
-                    &::before {
-                        content: unset;
-                    }
-                    .section-text {
-                        @apply w-full gap-[20px] items-center;
-                        .text-title {
-                            @apply flex flex-col gap-[20px] text-center items-center;
-                            .title {
-                                @apply flex flex-col;
-                                h1 {
-                                    @apply text-[14px]/[21px] w-full;
-                                }
-                            }
-                            p {
-                                @apply text-[10px]/[15px] w-full text-center;
-                            }
-                        }
-                        .text-info-register {
-                            @apply gap-[20px];
-                            .text-info {
-                                @apply flex gap-0 justify-between items-center;
-                                .text-detail-info {
-                                    @apply flex flex-col;
-                                    label {
-                                        @apply text-[18px]/[28px];
-                                    }
-                                    span {
-                                        @apply text-[7px]/[11px];
-                                    }
-                                }
-                            }
-                            .registered-logo {
-                                @apply justify-center items-center;
-                                h5 {
-                                    @apply text-[12px]/[150%];
-                                }
-                                .logo-area {
-                                    @apply justify-between;
-                                    .bappebti-logo {
-                                        @apply w-[60px] h-[13px];
-                                    }
-                                    .kominfo-logo {
-                                        @apply w-[60px] h-[20px];
-                                    }
-                                    .bsi-logo {
-                                        @apply w-[37px] h-[20px];
-                                    }
-                                    .cisa-logo {
-                                        @apply w-[51px] h-[22px];
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .section-image {
-                        @apply relative flex flex-col justify-center w-[325px];
-                        &::before {
-                            content: '';
-                            @apply absolute bottom-0 w-[100%] h-full right-0 top-[25px] ;
-                            background: url("/images/ornaments/device-ornament.png") no-repeat;
-                            background-size: cover;
-                            width: 500px;
-                        }
-                        img {
-                            &.img-device {
-                                @apply h-[350px] relative right-0;
-                            }
-                            &.img-coin-1 {
-                                @apply  w-[64px] h-[61px] absolute right-[235px] top-[45%];
-                            }
-                            &.img-coin-2 {
-                                @apply  w-[64px] h-[61px] absolute right-[45px] top-[20%];
-                            }
-                            &.img-coin-3 {
-                                @apply  w-[64px] h-[61px] absolute right-[45px] top-[70%];
-                            }
-                        }
-                    }
-        
-                   
+            .image-area {
+              @apply flex-1 overflow-hidden;
+              img {
+                @apply absolute bottom-0 right-0 w-[150px];
+              }
+              @media (max-width: 330px) {
+                img {
+                  @apply w-[130px];
                 }
+              }
             }
-            .staking-benefit-section {
-                @apply  py-[30px] px-[20px] gap-[60px] flex-col-reverse;
-                .benefit-container {
-                    @apply gap-[30px] w-full;
-                    h2 {
-                        @apply text-[16px]/[24px] text-center;
-                    }
-                    .benefit-type-container {
-                        .benefit-icon {
-                            @apply w-[40px];
-                            img {
-                                @apply w-[40px] h-[40px];
-        
-                            }
-                        }
-                        .benefit-desc {
-                            h4 {
-                                @apply text-[14px]/[21px];
-                            }
-                            p {
-                                @apply text-[12px]/[18px];
-
-                            }
-                        }
-                    }
-                }
-                button {
-                    @apply w-full h-[30px] rounded-[30px] text-[12px]/[18px] flex gap-[10px] justify-center items-center bg-primary text-white;
-                    svg {
-                        path {
-                            @apply fill-white;
-                        }
-                    }
-                }
-                .media-container {
-                    @apply w-full;
-                    .frame-media {
-                        iframe {
-                            @apply h-[320px] rounded-tl-[11px] rounded-tr-[11px];
-                        }
-                    }
-                    .description-media {
-                        @apply rounded-[11px] p-[11px];
-                        h5 {
-                            @apply text-[10px]/[15px] font-bold;
-                        }
-                        p {
-                            @apply text-[6px]/[9px] font-normal;
-                        }
-                    }
-                }
-            }
-            .staking-guide-crypto-section {
-                @apply  py-[30px] px-[20px] gap-[60px] flex-col-reverse;
-                .guide-container {
-                    @apply w-full gap-[14px];
-                    h2 {
-                        @apply text-[16px]/[24px] text-center;
-                    }
-                    .guide-steps {
-                        @apply px-[30px];
-                        ul {
-                            li {
-                                @apply list-none flex gap-[23px] pl-[40px] relative;
-                                &:not(:last-child) {
-                                    @apply pb-[30px] border-l-2 border-[#94CCF2] border-dashed;
-                                }
-                                .guide-icon {
-                                    @apply w-[35px] absolute left-[-19px];
-                                    img {
-                                        @apply w-[34.89px] h-[34.89px];
-                                        &.step-koin {
-                                            @apply w-[34.89px] h-[40px]
-                                        }
-                                    }
-                                }
-                                .guide-desc {
-                                    @apply flex flex-col flex-1 gap-[8px];
-                                    h5 {
-                                        @apply text-[12px]/[18px];
-                                    }
-                                    p {
-                                        @apply text-[10px]/[15px];
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .image-container {
-                    @apply w-full justify-center items-center;
-                    img {
-                        @apply w-full h-full object-cover;
-                    }
-                }
-            }
-            .staking-calculator-section {
-                @apply py-[30px] px-[20px] gap-[60px];
-                .card-staking-calculator {
-                    @apply flex-col gap-[30px] p-[40px];
-                    &::before,&::after {
-                        content: none;
-                    }
-
-                    .image-container {
-                        @apply w-[240px];
-                        img {
-                            @apply w-[240px] h-[142px];
-                        }
-                    }
-                    .title-container {
-                        @apply w-full;
-                        h2 {
-                            @apply text-[16px]/[24px];
-                        }
-                    }
-                    .calculator-container {
-                        @apply flex-col;
-                        .top-subcontainer {
-                            h2 {
-                                @apply text-[16px]/[24px];
-                            }
-                            .sub-subcontainer {
-                                @apply flex-col gap-[20px] w-full;
-                                .form-input {
-                                    @apply flex-col w-full gap-[8px] items-start;
-                                    label {
-                                        @apply text-[12px]/[18px] font-medium text-neutral-700;
-                                    }
-                                    .group-input {
-                                        @apply w-full;
-                                        input {
-                                            @apply w-full h-[41px];
-                                        }
-                                    }
-                                    select {
-                                        @apply w-full !min-h-[41px] bg-white;
-                                        appearance:none;
-                                        background-image: url('data:image/svg+xml;utf8,<svg width="11" height="11" viewBox="0 0 8 5" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" fill="black"/></svg>');
-                                        background-repeat: no-repeat;
-                                        background-position-x: 95%;
-                                        background-position-y: 15px;
-                                    }
-                                }
-                            }
-                        }
-                        .middle-subcontainer {
-                            @apply flex-col gap-[23px];  
-                            .sub-subcontainer {
-                                @apply flex-row-reverse justify-between items-center w-full;
-                                span {
-                                    @apply text-[10px]/[15px];
-                                }
-                                label {
-                                    @apply text-[14px]/[21px];
-                                }
-                            }
-                        }
-                        .bottom-subcontainer{
-                            p {
-                                @apply text-[8px]/[12px];
-                            }
-                        }
-                    }
-                }
-            }
-            .staking-coins-section {
-                @apply py-[30px] px-[20px] gap-[30px];
-                .header-coins-staking {
-                    @apply gap-[10px];
-                    h2 {
-                        @apply text-[14px]/[21px] text-center;
-                    }
-                    p {
-                        @apply text-[10px]/[15px] text-center;
-                    }
-                }
-                .list-coins-staking {
-                    .coin-staking-container {
-                        @apply w-1/3 p-[10px] ;
-                        .card-coin-staking-new {
-                            @apply h-[87px] gap-0 rounded-[7px] pt-[10px] w-full;
-                            .card-coin-logo {
-                                img {
-                                    @apply w-[57px] h-[57px];
-                                }
-                            }
-                            .card-coin-desc {
-                                @apply text-center gap-0 h-[30px] w-full;
-                                label {
-                                    @apply text-[7px]/[10px] line-clamp-1;
-                                }
-                                span {
-                                    @apply text-[5px]/[7px] w-full;
-                                    &.span-text {
-                                        @apply line-clamp-2;
-                                    }
-                                }
-                            }
-                            .card-button {
-                                a {
-                                    @apply text-[8px]/[13px] px-[10px] py-[5px] rounded-[4px];
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .staking-faq-section {
-                @apply py-[30px] px-[20px] gap-[20px];
-                h2 {
-                    @apply text-[16px]/[24px];
-                }
-                .question-faq-staking{
-                    @apply flex-col gap-[31px];
-                    .question-faq-image{
-                        @apply w-full items-center;
-                        img {
-                            @apply w-[157px] h-[201px];
-                        }
-                    }
-                    .question-faq-accordion {
-                        @apply w-full;
-                        ul {
-                            li {
-                                button {
-                                    @apply py-[4px];
-                                    .header-button {
-                                        label {
-                                            @apply text-[12px]/[18px];
-                                        }
-                                    }
-                                }
-                                .accordion-content {
-                                    .content-area {
-                                        @apply py-[4px];
-                                        p {
-                                            @apply text-[10px]/[15px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .staking-start-now-section {
-                @apply py-[30px] px-[20px] gap-[20px] flex-col;
-                .image-container {
-                    @apply hidden;
-                }
-                .description-container {
-                    @apply w-full;
-                    .start-now-description {
-                        @apply text-center gap-[10px];
-                        h2 {
-                            @apply text-[14px]/[21px];
-                        }
-                        p {
-                            @apply text-[12px]/[18px];
-                        }
-                    }
-                }
-                .start-button-logo {
-                    @apply flex-col justify-center items-center gap-[30px];
-                    a {
-                        @apply w-[80%] text-[12px]/[18px] py-[8px];
-                        svg {
-                            @apply w-[18px] h-[18px];
-                        }
-                    }
-                }
-            }
-            .staking-testimony-carousel-section {
-                @apply py-[30px] px-[20px];
-            }
-            .staking-banner-section {
-                @apply px-[20px] py-[50px];
-                .main-container {
-                    .sub-container {
-                        @apply h-[98px] rounded-tl-[10px] rounded-tr-[10px];
-                        .text-area {
-                            @apply flex flex-col w-[60%] gap-[7px] justify-center pl-[15px];
-                            .text-header {
-                                @apply flex flex-col gap-[2px];
-                                h2 {
-                                    @apply text-[10px]/[15px] text-white font-black;
-                                }
-                                p {
-                                    @apply text-[4px]/[8px] text-white font-medium w-[80%];
-                                }
-                                @media (max-width:330px) {
-                                    h2 {
-                                        @apply text-[9px]/[13px];
-                                    }
-                                    p {
-                                        @apply text-[4px]/[6px];
-                                    }
-                                }
-                            }
-                            .button-area {
-                                @apply gap-[7px];
-                                a {
-                                    @apply  w-[51px] h-[12px] text-[3px]/[5px] py-[3px] px-[8px] rounded-[7px];   
-                                    svg {
-                                        @apply w-[4px] h-[4px];
-                                    }
-                                }
-                                .app-store-list {
-                                    @apply gap-[3px];
-                                    img {
-                                        &.playstore-logo {
-                                            @apply w-[33px] h-[10px];
-                                        }
-                                        &.apple-logo {
-                                            @apply w-[30px] h-[10px];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .image-area {
-                            @apply flex-1 overflow-hidden;
-                            img {
-                                @apply absolute bottom-0 right-0 w-[150px];
-                            }
-                            @media (max-width:330px) {
-                                img {
-                                    @apply w-[130px];
-                                }
-                            }
-                        }
-                    }
-                }
-        
-            }
+          }
         }
+      }
     }
-      
+  }
 }
-
-
-
