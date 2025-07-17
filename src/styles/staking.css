@@ -39,21 +39,6 @@
     }
   }
   .staking-page {
-    .staking-hero-section {
-      .staking-hero-section-area {
-        .section-text {
-          .text-info-register {
-            .text-info {
-              .text-detail-info {
-                label {
-                  @apply !text-primary;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
     .staking-benefit-section {
       button {
         @apply !bg-[#3A80AF] !text-white;
@@ -455,17 +440,17 @@
         @apply flex flex-col gap-[11px] bg-white rounded-br-[22px] rounded-bl-[22px] p-[22px];
         box-shadow: 4.42px 15.47px 33.14px 0px #00000014;
         h5 {
-          @apply text-[17.68px]/[26.51px] font-bold;
+          @apply text-[17.68px]/[26.51px] font-bold text-[#4B5060];
         }
         p {
-          @apply text-[11.05px]/[16.57px] font-normal;
+          @apply text-[11.05px]/[16.57px] font-normal text-[#4B5060];
         }
       }
     }
     .benefit-container {
       @apply w-1/2 flex flex-col gap-[15px];
       h2 {
-        @apply text-[48px]/[72px] font-black;
+        @apply text-[48px]/[72px] font-black text-[#191B20];
         span {
           background: linear-gradient(
             89.49deg,
@@ -487,10 +472,10 @@
         .benefit-desc {
           @apply flex flex-col flex-1 gap-[4px];
           h4 {
-            @apply text-[18px]/[27px] font-bold;
+            @apply text-[18px]/[27px] font-bold text-[#2E3339];
           }
           p {
-            @apply text-[14px]/[21px] font-medium;
+            @apply text-[14px]/[21px] font-medium text-[#4B5060];
           }
         }
       }
@@ -645,7 +630,7 @@
     .guide-container {
       @apply flex flex-col gap-[34px] flex-1;
       h2 {
-        @apply text-[48px]/[72px] font-black;
+        @apply text-[48px]/[72px] font-black text-[#191B20];
         span {
           background: linear-gradient(
             89.49deg,
@@ -815,7 +800,7 @@
       .title-container {
         @apply w-[330px] z-[1];
         h2 {
-          @apply text-[48px]/[72px] font-black;
+          @apply text-[48px]/[72px] font-black text-[#191B20];
         }
       }
       .calculator-container {
@@ -1100,7 +1085,7 @@
     .header-coins-staking {
       @apply flex flex-col gap-[8px] text-center;
       h2 {
-        @apply text-[48px]/[72px] font-black;
+        @apply text-[48px]/[72px] font-black text-[#191B20];
         span {
           background: linear-gradient(
             89.49deg,
@@ -1230,7 +1215,7 @@
   .staking-faq-section {
     @apply py-[50px] px-[100px] flex flex-col gap-[20px] items-center max-w-container mx-auto;
     h2 {
-      @apply text-[48px]/[72px] font-black text-center;
+      @apply text-[48px]/[72px] font-black text-center text-[#000000];
       span {
         background: linear-gradient(89.49deg, #1b4ca7 -18.69%, #318ac6 98.33%);
         background-clip: text;
@@ -1260,7 +1245,7 @@
               .content-area {
                 @apply py-[8px];
                 p {
-                  @apply text-[14px]/[21px] font-normal text-justify;
+                  @apply text-[14px]/[21px] font-normal text-justify text-[#4B5060];
                 }
               }
             }
