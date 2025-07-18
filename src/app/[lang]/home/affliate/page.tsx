@@ -186,7 +186,7 @@ export default async function Affliate({ params }: any) {
       <body>
         <MainHeader classText={'header-affliate'} lang={params.lang} />
         <main className="affliate-page sm:mobile-responsive md:mobile-responsive">
-          <AffliateHeroSection objLang={hero_section} />
+          <AffliateHeroSection lang={params.lang} objLang={hero_section} />
           <AffliateComissionsection objLang={comission_section} />
           <AffliateDownlineSection objLang={downline_section} />
           <AffliateWithdrawSection objLang={withdraw_section} />
