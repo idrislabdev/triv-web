@@ -9,7 +9,7 @@
   h4,
   h5,
   h6 {
-    @apply !text-slate-200;
+    @apply text-slate-200;
   }
   p,
   label,
@@ -52,27 +52,66 @@
       }
       .right-subcontainer {
         @apply bg-[#111111];
+        .right-main-subcontainer {
+          .title-subcontainer {
+            h1 {
+              @apply !text-primary;
+            }
+            .terdaftar-diawasi {
+              @apply flex gap-[17.75px] items-center justify-center;
+              .bsi-logo {
+                @apply w-[49.76px] h-[27.22px];
+                background: url('/images/otoritas-keuangans/bsi-white.png')
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cisa-logo {
+                @apply w-[39.66px] h-[36.54px];
+                background: url('/images/otoritas-keuangans/cisa-white-logo.png')
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cism-logo {
+                @apply w-[87.1px] h-[33.44px];
+                background: url('/images/otoritas-keuangans/cism-white-logo.png')
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .pci-logo {
+                @apply w-[39.66px] h-[31.88px];
+                background: url('/images/otoritas-keuangans/pci-white-logo.png')
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+              .cissp-logo {
+                @apply w-[117.14px] h-[34.32px];
+                background: url('/images/otoritas-keuangans/cisp-white-logo.png')
+                  no-repeat !important;
+                background-position: center;
+                background-size: contain !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    @layer components {
+      &.mobile-responsive {
+        .register-container {
+          .right-subcontainer {
+            @apply bg-[#000000];
+          }
+        }
       }
     }
   }
 }
 .register-page {
   @apply p-0 flex min-h-screen justify-center  mx-auto;
-  &.dark-theme {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      @apply text-slate-200;
-    }
-    p {
-      @apply text-slate-300;
-    }
-    a {
-      @apply text-[#737aff];
-    }
-  }
   &.light-theme {
     h1,
     h2,
@@ -96,7 +135,7 @@
         }
       }
       .left-main-subcontainer {
-        @apply relative justify-center items-start flex flex-col max-w-[560px] w-full;
+        @apply relative justify-center items-start flex flex-col max-w-[560px] w-full gap-[36px];
         &.fit-screen {
           @apply h-screen;
         }
@@ -333,22 +372,40 @@
           }
           .terdaftar-diawasi {
             @apply flex gap-[17.75px] items-center justify-center;
-            img {
-              &.bsi-logo {
-                @apply w-[24.88px] h-[13.61px];
-              }
-              &.cisa-logo {
-                @apply w-[19.83px] h-[18.27px];
-              }
-              &.cism-logo {
-                @apply w-[24.88px] h-[16.72px];
-              }
-              &.pci-logo {
-                @apply w-[19.83px] h-[15.94px];
-              }
-              &.cissp-logo {
-                @apply w-[58.57px] h-[17.16px];
-              }
+            .bsi-logo {
+              @apply w-[49.76px] h-[27.22px];
+              background: url('/images/otoritas-keuangans/bsi-logo.png')
+                no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .cisa-logo {
+              @apply w-[39.66px] h-[36.54px];
+              background: url('/images/otoritas-keuangans/cisa-logo.png')
+                no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .cism-logo {
+              @apply w-[87.1px] h-[33.44px];
+              background: url('/images/otoritas-keuangans/cism-logo.png')
+                no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .pci-logo {
+              @apply w-[39.66px] h-[31.88px];
+              background: url('/images/otoritas-keuangans/pci-logo.png')
+                no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .cissp-logo {
+              @apply w-[117.14px] h-[34.32px];
+              background: url('/images/otoritas-keuangans/cissp-logo-new.png')
+                no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
             }
           }
         }
@@ -371,21 +428,18 @@
   @layer components {
     &.medium-responsive {
       .left-subcontainer {
-        @apply py-[26px] px-[50px] !gap-[10px];
+        @apply py-[26px] px-[50px] !gap-[20px];
         .title-subcontainer {
           @apply !gap-[12px];
           h1 {
-            @apply !text-[18px]/[27px];
-          }
-          h1 {
-            @apply !text-[20px]/[30px];
+            @apply !text-[28px]/[150%];
           }
           p {
-            @apply !text-[12.96px]/[19.43px];
+            @apply !text-[20px]/[30px];
           }
         }
         .form-subcontainer {
-          @apply !gap-[10px];
+          @apply !gap-[20px];
           form {
             @apply !gap-[10px];
             .form-name {
@@ -546,148 +600,171 @@
       }
     }
     &.mobile-responsive {
-      .left-subcontainer {
-        @apply w-full !py-[26px] !px-[20px] items-start flex-col gap-[20px] justify-start;
-        &.fit-screen {
-          @apply justify-center;
+      .register-container {
+        @apply flex-col;
+        .left-subcontainer {
+          @apply w-full !py-[26px] !px-[20px] items-start flex-col gap-[20px] justify-start;
+          &.fit-screen {
+            @apply justify-center;
+            .logo-subcontainer {
+              @apply absolute top-[26px] left-[26px];
+            }
+          }
           .logo-subcontainer {
-            @apply absolute top-[26px] left-[26px];
+            @apply !block top-[26px] left-[26px];
           }
-        }
-        .logo-subcontainer {
-          @apply !block top-[26px] left-[26px];
-        }
-        .left-main-subcontainer {
-          .title-subcontainer {
-            @apply flex flex-col !gap-[10px];
-            h1 {
-              @apply text-[18px]/[27px];
-            }
-            h1 {
-              @apply text-[20px]/[30px];
-            }
-            p {
-              @apply text-[12.96px]/[19.43px];
-            }
-          }
-          .form-subcontainer {
-            @apply !gap-[10px];
-            .form-name {
-              label {
+          .left-main-subcontainer {
+            .title-subcontainer {
+              @apply flex flex-col !gap-[10px];
+              h1 {
+                @apply text-[18px]/[27px];
+              }
+              h1 {
+                @apply text-[20px]/[30px];
+              }
+              p {
                 @apply text-[12.96px]/[19.43px];
               }
-              .form-input {
-                @apply flex gap-[25.91px];
-                input {
-                  @apply text-[12.96px]/[19.43px] !h-[40px]  rounded-[5px];
+            }
+            .form-subcontainer {
+              @apply !gap-[20px];
+              .form-name {
+                label {
+                  @apply text-[12.96px]/[19.43px];
+                }
+                .form-input {
+                  @apply flex gap-[25.91px];
+                  input {
+                    @apply text-[12.96px]/[19.43px] !h-[40px]  rounded-[5px];
+                  }
                 }
               }
-            }
-            .form-email {
-              @apply flex flex-col gap-[10px];
-              label {
-                @apply text-[12.96px]/[19.43px];
+              .form-email {
+                @apply flex flex-col gap-[10px];
+                label {
+                  @apply text-[12.96px]/[19.43px];
+                }
+                input {
+                  @apply text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
+                }
               }
-              input {
-                @apply text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
-              }
-            }
-            .form-password {
-              @apply flex flex-col gap-[10px];
-              label {
-                @apply text-[12.96px]/[19.43px];
-              }
-              .form-input {
-                .group-input {
-                  .prepend {
-                    @apply !top-[10px];
-                    svg {
-                      @apply w-[15px] h-[15px];
+              .form-password {
+                @apply flex flex-col gap-[10px];
+                label {
+                  @apply text-[12.96px]/[19.43px];
+                }
+                .form-input {
+                  .group-input {
+                    .prepend {
+                      @apply !top-[10px];
+                      svg {
+                        @apply w-[15px] h-[15px];
+                      }
+                    }
+                    input {
+                      @apply text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
                     }
                   }
-                  input {
-                    @apply text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
-                  }
+                }
+              }
+              .form-jobs {
+                @apply flex flex-col gap-[10px];
+                label {
+                  @apply text-[12.96px]/[19.43px];
+                }
+                select {
+                  @apply w-full text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
+                }
+              }
+              .form-note {
+                p {
+                  @apply !text-[11.66px]/[17.49px];
+                }
+              }
+              button {
+                @apply !rounded-[9px] !h-[40px] !text-[11.66px]/[17.49px];
+              }
+              .sub-title-subcontainer {
+                @apply !flex gap-[10px];
+              }
+              label {
+                &.has-user {
+                  @apply hidden;
                 }
               }
             }
-            .form-jobs {
-              @apply flex flex-col gap-[10px];
-              label {
-                @apply text-[12.96px]/[19.43px];
-              }
-              select {
-                @apply w-full text-[12.96px]/[19.43px] !h-[40px] rounded-[5px];
-              }
-            }
-            .form-note {
-              p {
-                @apply !text-[11.66px]/[17.49px];
-              }
-            }
-            button {
-              @apply !rounded-[9px] !h-[40px] !text-[11.66px]/[17.49px];
-            }
-            .sub-title-subcontainer {
-              @apply !flex gap-[10px];
-            }
-            label {
-              &.has-user {
-                @apply hidden;
-              }
-            }
-          }
-          .information-subcontainer {
-            @apply pb-[40px];
-            &.success {
-              @apply gap-[60px];
-            }
-            p {
-              @apply text-[16px]/[24px];
-              &.small {
-                @apply text-[12px]/[18px];
-              }
-            }
-            button {
+            .information-subcontainer {
+              @apply pb-[40px];
               &.success {
-                @apply py-[7px] rounded-[9px];
-                span {
+                @apply gap-[60px];
+              }
+              p {
+                @apply text-[16px]/[24px];
+                &.small {
                   @apply text-[12px]/[18px];
                 }
-                svg {
-                  &.CircularProgressbar {
-                    @apply w-[31px] h-[31px];
+              }
+              button {
+                &.success {
+                  @apply py-[7px] rounded-[9px];
+                  span {
+                    @apply text-[12px]/[18px];
+                  }
+                  svg {
+                    &.CircularProgressbar {
+                      @apply w-[31px] h-[31px];
+                    }
+                  }
+                }
+              }
+              .otp-input {
+                @apply w-full;
+                div {
+                  @apply gap-[3px];
+                }
+                input {
+                  @apply h-[50px] text-[30px]/[20px];
+                  &::placeholder {
+                    @apply text-[23px]/[23px];
                   }
                 }
               }
             }
-            .otp-input {
-              @apply w-full;
-              div {
-                @apply gap-[3px];
-              }
-              input {
-                @apply h-[50px] text-[30px]/[20px];
-                &::placeholder {
-                  @apply text-[23px]/[23px];
-                }
+            .notice-subcontainer {
+              @apply pt-[16px];
+              p,
+              a {
+                @apply text-[16px]/[24px];
               }
             }
-          }
-          .notice-subcontainer {
-            @apply pt-[16px];
-            p,
-            a {
-              @apply text-[16px]/[24px];
+            .terdaftar-subcontainer {
+              @apply !flex w-full pt-[40px];
             }
-          }
-          .terdaftar-subcontainer {
-            @apply !flex w-full pt-[40px];
           }
         }
-      }
-      .right-subcontainer {
-        @apply !hidden;
+        .right-subcontainer {
+          @apply w-full pt-0 bg-white;
+          .right-main-subcontainer {
+            .title-subcontainer {
+              @apply gap-[18px];
+              h1 {
+                @apply !text-[14px]/[150%];
+              }
+              p {
+                @apply !text-[12px]/[150%];
+              }
+              .terdaftar-diawasi {
+                @apply flex-wrap gap-[20px];
+              }
+            }
+          }
+          .image-subcontainer {
+            @apply hidden;
+          }
+          .logo-subcontainer {
+            @apply hidden;
+          }
+        }
       }
     }
   }

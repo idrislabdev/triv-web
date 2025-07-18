@@ -1092,8 +1092,9 @@
                       @apply text-[10px]/[20px] font-medium text-[#4B5060];
                     }
                   }
+                  a,
                   button {
-                    @apply bg-[#71BBED] rounded-[20px] text-white text-[12px]/[18px] font-semibold w-[82px] h-[26px];
+                    @apply bg-[#71BBED] rounded-[20px] text-white text-[12px]/[18px] font-semibold w-[82px] h-[26px] flex items-center justify-center;
                   }
                 }
                 img {

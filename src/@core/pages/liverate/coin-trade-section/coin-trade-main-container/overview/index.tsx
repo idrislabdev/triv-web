@@ -4,10 +4,11 @@ import {
   ChartPPT,
   TrendChartIcon,
   TrendChartIcon2,
-} from "@/@core/components/custom-icons";
-import { nFormatter2 } from "@/@core/utils/general";
-import Image from "next/image";
-import React from "react";
+} from '@/@core/components/custom-icons';
+import { nFormatter2 } from '@/@core/utils/general';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const CoinTradeOverview = (props: {
   lang: string;
@@ -17,27 +18,27 @@ const CoinTradeOverview = (props: {
   const { lang, objLang, asset } = props;
   const nFormatter = (num: number, digits: number) => {
     const lookup = [
-      { value: 1, symbol: "" },
-      { value: 1e3, symbol: "Rb" },
-      { value: 1e6, symbol: "Jt" },
-      { value: 1e9, symbol: "M" },
-      { value: 1e12, symbol: "T" },
-      { value: 1e15, symbol: "Q" },
-      { value: 1e18, symbol: "Qi" },
+      { value: 1, symbol: '' },
+      { value: 1e3, symbol: 'Rb' },
+      { value: 1e6, symbol: 'Jt' },
+      { value: 1e9, symbol: 'M' },
+      { value: 1e12, symbol: 'T' },
+      { value: 1e15, symbol: 'Q' },
+      { value: 1e18, symbol: 'Qi' },
     ];
     const regexp = /\.0+$|(?<=\.[0-9]*[1-9])0+$/;
     const item = lookup.findLast((item) => num >= item.value);
     return item
       ? (num / item.value)
           .toFixed(digits)
-          .replace(regexp, "")
+          .replace(regexp, '')
           .concat(item.symbol)
-      : "0";
+      : '0';
   };
   const progressJual = (asset.key_statistic.sell * 100).toFixed(0);
   const progressBeli = (asset.key_statistic.buy * 100).toFixed(0);
-  const market = asset.features.find((x: any) => x.name == "market");
-  const stake = asset.features.find((x: any) => x.name == "stake");
+  const market = asset.features.find((x: any) => x.name == 'market');
+  const stake = asset.features.find((x: any) => x.name == 'stake');
   return (
     <div className="overview-area">
       <div className="activity-subcontainer">
@@ -65,7 +66,7 @@ const CoinTradeOverview = (props: {
           </div>
         </div>
         <p>
-          {objLang.trade_overview.header.replaceAll("__code__", asset.code)}
+          {objLang.trade_overview.header.replaceAll('__code__', asset.code)}
         </p>
       </div>
       <div className="trade-stake-subcontainer">
@@ -76,7 +77,7 @@ const CoinTradeOverview = (props: {
                 <h5>{stake.label}</h5>
                 <p>{stake.description}</p>
               </div>
-              <button>Stake</button>
+              <Link href={`/${lang}/login`}>Stake</Link>
             </div>
             <Image
               src="/images/3d-icons/brankas-new-vector.png"
@@ -113,55 +114,55 @@ const CoinTradeOverview = (props: {
         <div className="key-statistic-subcontainer">
           <div className="key-statistic">
             <div className="key-statistic-label">
-              <TrendChartIcon2 color={"#fff"} />
+              <TrendChartIcon2 color={'#fff'} />
               <label>{objLang.market_activity}</label>
             </div>
             <p>
-              {lang == "id"
+              {lang == 'id'
                 ? nFormatter(asset.key_statistic.market_cap, 1)
                 : nFormatter2(asset.key_statistic.market_cap, 1)}
             </p>
           </div>
           <div className="key-statistic">
             <div className="key-statistic-label">
-              <TrendChartIcon color={"#fff"} />
+              <TrendChartIcon color={'#fff'} />
               <label>{objLang.full_value}</label>
             </div>
             <p>
-              {lang == "id"
+              {lang == 'id'
                 ? nFormatter(asset.key_statistic.fully_diluted_valuation, 1)
                 : nFormatter2(asset.key_statistic.fully_diluted_valuation, 1)}
             </p>
           </div>
           <div className="key-statistic">
             <div className="key-statistic-label">
-              <ChartPie color={"#fff"} />
+              <ChartPie color={'#fff'} />
               <label>{objLang.supply_circulate}</label>
             </div>
             <p>
-              {lang == "id"
+              {lang == 'id'
                 ? nFormatter(asset.key_statistic.circulating_supply, 1)
                 : nFormatter2(asset.key_statistic.circulating_supply, 1)}
             </p>
           </div>
           <div className="key-statistic">
             <div className="key-statistic-label">
-              <ChartPie2 color={"#fff"} />
+              <ChartPie2 color={'#fff'} />
               <label>{objLang.supply_maksimum}</label>
             </div>
             <p className="!text-[#71BBED]">
-              {lang == "id"
+              {lang == 'id'
                 ? nFormatter(asset.key_statistic.max_supply, 1)
                 : nFormatter2(asset.key_statistic.max_supply, 1)}
             </p>
           </div>
           <div className="key-statistic">
             <div className="key-statistic-label">
-              <ChartPPT color={"#fff"} />
+              <ChartPPT color={'#fff'} />
               <label>{objLang.volume_global}</label>
             </div>
             <p className="!text-[#EB5757]">
-              {lang == "id"
+              {lang == 'id'
                 ? nFormatter(asset.key_statistic.volume_24h, 1)
                 : nFormatter(asset.key_statistic.volume_24h, 1)}
             </p>
