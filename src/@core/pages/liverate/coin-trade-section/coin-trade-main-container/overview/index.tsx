@@ -96,9 +96,7 @@ const CoinTradeOverview = (props: {
                 <h5>{market.label}</h5>
                 <p>{market.description}</p>
               </div>
-              <Link href={`/${lang}/markets/${asset.code}_${asset.currency}`}>
-                Trade
-              </Link>
+              <Link href={`/${lang}/markets/${asset.code}_IDR`}>Trade</Link>
             </div>
             <Image
               src="/images/3d-icons/iphone-new-vector.png"
