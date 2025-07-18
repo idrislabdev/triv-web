@@ -279,7 +279,7 @@
   .liverate-top-mover-section {
     @apply py-[30px] px-[100px] flex flex-col gap-[20px] max-w-container mx-auto;
     h2 {
-      @apply text-[28px]/[42px] font-bold;
+      @apply text-[28px]/[42px] font-bold text-[#000000];
     }
     .top-mover-containers {
       @apply flex items-center justify-between gap-[40px];
@@ -938,10 +938,12 @@
       .start-button-logo {
         @apply flex gap-[30px];
         a {
-          @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
-          svg {
-            path {
-              @apply fill-white;
+          &.button {
+            @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
+            svg {
+              path {
+                @apply fill-white;
+              }
             }
           }
         }
@@ -1005,7 +1007,9 @@
         .start-button-logo {
           @apply flex gap-[30px];
           a {
-            @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            &.button {
+              @apply rounded-[28px] py-[10px] w-[260px] text-[14px]/[21px];
+            }
           }
           .start-now-store {
             @apply flex gap-[14px] items-center;
