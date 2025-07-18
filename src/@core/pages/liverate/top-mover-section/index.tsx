@@ -1,9 +1,9 @@
-import { IHighlight, ILiverateMini } from "@/@core/@types/interfaces";
-import { CaretUpIcon, GraphIcon } from "@/@core/components/custom-icons";
-import { formatterNumber, formatterNumber2 } from "@/@core/utils/general";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { IHighlight, ILiverateMini } from '@/@core/@types/interfaces';
+import { CaretUpIcon, GraphIcon } from '@/@core/components/custom-icons';
+import { formatterNumber, formatDecimalSmart } from '@/@core/utils/general';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const LiverateTopMoverSection = (props: {
   lang: string;
@@ -33,19 +33,17 @@ const LiverateTopMoverSection = (props: {
               />
               <div className="top-mover-text">
                 <label>{hightlight.top_gainer.label}</label>
-                <p>
-                  IDR {formatterNumber2(hightlight.top_gainer.rate.toFixed(2))}
-                </p>
+                <p>IDR {formatDecimalSmart(hightlight.top_gainer.rate)}</p>
               </div>
             </div>
           </div>
           <p className="top-mover-text-mobile truncate">
-            IDR {formatterNumber2(hightlight.top_gainer.rate.toFixed(2))}
+            IDR {formatDecimalSmart(hightlight.top_gainer.rate)}
           </p>
           <div className="top-mover-container-right">
             <span>
               <span>
-                <CaretUpIcon color={"#71BBED"} />
+                <CaretUpIcon color={'#71BBED'} />
               </span>
               14.93%
             </span>
@@ -74,20 +72,17 @@ const LiverateTopMoverSection = (props: {
               />
               <div className="top-mover-text">
                 <label>{hightlight.highest_volume.label}</label>
-                <p>
-                  IDR{" "}
-                  {formatterNumber2(hightlight.highest_volume.rate.toFixed(2))}
-                </p>
+                <p>IDR {formatDecimalSmart(hightlight.highest_volume.rate)}</p>
               </div>
             </div>
           </div>
           <p className="top-mover-text-mobile truncate">
-            IDR {formatterNumber2(hightlight.highest_volume.rate.toFixed(2))}
+            IDR {formatDecimalSmart(hightlight.highest_volume.rate)}
           </p>
           <div className="top-mover-container-right">
             <span>
               <span>
-                <CaretUpIcon color={"#71BBED"} />
+                <CaretUpIcon color={'#71BBED'} />
               </span>
               14.93%
             </span>
@@ -116,20 +111,17 @@ const LiverateTopMoverSection = (props: {
               />
               <div className="top-mover-text">
                 <label>{hightlight.most_popular.label}</label>
-                <p>
-                  IDR{" "}
-                  {formatterNumber2(hightlight.most_popular.rate.toFixed(2))}
-                </p>
+                <p>IDR {formatDecimalSmart(hightlight.most_popular.rate)}</p>
               </div>
             </div>
           </div>
           <p className="top-mover-text-mobile">
-            IDR {formatterNumber2(hightlight.most_popular.rate.toFixed(2))}
+            IDR {formatDecimalSmart(hightlight.most_popular.rate)}
           </p>
           <div className="top-mover-container-right">
             <span>
               <span>
-                <CaretUpIcon color={"#71BBED"} />
+                <CaretUpIcon color={'#71BBED'} />
               </span>
               14.93%
             </span>

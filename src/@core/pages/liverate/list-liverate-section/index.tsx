@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { ILiverate } from "@/@core/@types/interfaces";
+import { ILiverate } from '@/@core/@types/interfaces';
 import {
   CaretDownIcon,
   CaretUpIcon,
@@ -10,13 +10,14 @@ import {
   SearchIcon,
   TrendUpIcon,
   UsdIcon,
-} from "@/@core/components/custom-icons";
-import Pagination from "@/@core/components/pagination";
-import axiosInstance from "@/@core/utils/axios";
-import debounce from "debounce";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useCallback, useEffect, useState } from "react";
+} from '@/@core/components/custom-icons';
+import Pagination from '@/@core/components/pagination';
+import axiosInstance from '@/@core/utils/axios';
+import { formatDecimalSmart } from '@/@core/utils/general';
+import debounce from 'debounce';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useCallback, useEffect, useState } from 'react';
 
 const LiverateListSection = (props: {
   objLang: any;
@@ -25,7 +26,7 @@ const LiverateListSection = (props: {
 }) => {
   const { objLang, liverates, lang } = props;
   const [dataLiverates, setDataLiverates] = useState(liverates);
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState('');
   const [page, setPage] = useState(1);
   const TOTAL_PAGES = 10;
   const [params, setParams] = useState<{
@@ -79,13 +80,13 @@ const LiverateListSection = (props: {
             <li>
               <a
                 className={
-                  category === "crypto" ? "!text-[#71BBED]" : "!text-[#838899]"
+                  category === 'crypto' ? '!text-[#71BBED]' : '!text-[#838899]'
                 }
-                onClick={(_) => changeCategory("crypto")}
+                onClick={(_) => changeCategory('crypto')}
               >
                 <span>
                   <CryptoIcon
-                    color={category === "crypto" ? "#71BBED" : "#838899"}
+                    color={category === 'crypto' ? '#71BBED' : '#838899'}
                   />
                 </span>
                 Crypto
@@ -94,14 +95,14 @@ const LiverateListSection = (props: {
             <li>
               <a
                 className={
-                  category === "usd"
-                    ? "!text-[#71BBED]"
-                    : "!text-[rgb(131,136,153)]"
+                  category === 'usd'
+                    ? '!text-[#71BBED]'
+                    : '!text-[rgb(131,136,153)]'
                 }
-                onClick={(_) => changeCategory("usd")}
+                onClick={(_) => changeCategory('usd')}
               >
                 <span>
-                  <UsdIcon color={category === "usd" ? "#71BBED" : "#838899"} />
+                  <UsdIcon color={category === 'usd' ? '#71BBED' : '#838899'} />
                 </span>
                 USD
               </a>
@@ -109,13 +110,13 @@ const LiverateListSection = (props: {
             <li>
               <a
                 className={
-                  category === "stocks" ? "!text-[#71BBED]" : "!text-[#838899]"
+                  category === 'stocks' ? '!text-[#71BBED]' : '!text-[#838899]'
                 }
-                onClick={(_) => changeCategory("stocks")}
+                onClick={(_) => changeCategory('stocks')}
               >
                 <span>
                   <TrendUpIcon
-                    color={category === "stocks" ? "#71BBED" : "#838899"}
+                    color={category === 'stocks' ? '#71BBED' : '#838899'}
                   />
                 </span>
                 Stock
@@ -124,13 +125,13 @@ const LiverateListSection = (props: {
             <li>
               <a
                 className={
-                  category === "gold" ? "!text-[#71BBED]" : "!text-[#838899]"
+                  category === 'gold' ? '!text-[#71BBED]' : '!text-[#838899]'
                 }
-                onClick={(_) => changeCategory("gold")}
+                onClick={(_) => changeCategory('gold')}
               >
                 <span>
                   <GoldIcon
-                    color={category === "gold" ? "#71BBED" : "#838899"}
+                    color={category === 'gold' ? '#71BBED' : '#838899'}
                   />
                 </span>
                 Gold
@@ -139,13 +140,13 @@ const LiverateListSection = (props: {
             <li>
               <a
                 className={
-                  category === "euro" ? "!text-[#71BBED]" : "!text-[#838899]"
+                  category === 'euro' ? '!text-[#71BBED]' : '!text-[#838899]'
                 }
-                onClick={(_) => changeCategory("euro")}
+                onClick={(_) => changeCategory('euro')}
               >
                 <span>
                   <EuroIcon
-                    color={category === "euro" ? "#71BBED" : "#838899"}
+                    color={category === 'euro' ? '#71BBED' : '#838899'}
                   />
                 </span>
                 Euro
@@ -155,7 +156,7 @@ const LiverateListSection = (props: {
         </div>
         <div className="group-input append">
           <span className="append">
-            <SearchIcon color={"#fff"} />
+            <SearchIcon color={'#fff'} />
           </span>
           <input
             placeholder="Asset name"
@@ -213,29 +214,31 @@ const LiverateListSection = (props: {
               <div className="col-right">
                 <div className="col-beli">
                   <label>
-                    IDR {item.buy_rate ? item.buy_rate.toLocaleString() : "0"}
+                    IDR{' '}
+                    {item.buy_rate ? formatDecimalSmart(item.buy_rate) : '0'}
                   </label>
                 </div>
                 <div className="col-jual">
                   <label>
-                    IDR {item.sell_rate ? item.sell_rate.toLocaleString() : "0"}
+                    IDR{' '}
+                    {item.sell_rate ? formatDecimalSmart(item.sell_rate) : '0'}
                   </label>
                 </div>
                 <div className="col-change">
                   <label>
                     {item.change_24h < 0 && (
                       <span>
-                        <CaretDownIcon color={"#EB5757"} />
+                        <CaretDownIcon color={'#EB5757'} />
                       </span>
                     )}
                     {item.change_24h >= 0 && (
                       <span>
-                        <CaretUpIcon color={"#71BBED"} />
+                        <CaretUpIcon color={'#71BBED'} />
                       </span>
                     )}
                     <span
                       className={
-                        item.change_24h >= 0 ? "text-primary" : "text-red-500"
+                        item.change_24h >= 0 ? 'text-primary' : 'text-red-500'
                       }
                     >
                       {(item.change_24h * 100).toFixed(0)}%
