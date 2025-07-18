@@ -21,6 +21,16 @@ export const formatterNumber3 = (val: number) => {
     .replace(/\.(?=\d{0,2}$)/g, '.');
 };
 
+export const formatDecimal = (num: number) => {
+  const desimal = num.toString().split('.')[1];
+  const digitDesimal = desimal ? desimal.length : 0;
+
+  return num.toLocaleString('id-ID', {
+    minimumFractionDigits: digitDesimal,
+    maximumFractionDigits: digitDesimal,
+  });
+};
+
 export const formatDecimalSmart = (num: number) => {
   const isWhole = num % 1 === 0;
   const formatted = num.toLocaleString('id-ID', {
@@ -69,7 +79,7 @@ export const formatPlusMinus = (val: number) => {
   if (val > 0) {
     returnVal = `+${returnVal}`;
   } else if (val < 0) {
-    returnVal = `-${returnVal}`;
+    returnVal = `${returnVal}`;
   }
   return returnVal;
 };

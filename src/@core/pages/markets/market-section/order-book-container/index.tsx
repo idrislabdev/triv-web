@@ -4,11 +4,11 @@ import React, {
   useCallback,
   useEffect,
   useState,
-} from "react";
-import axiosInstance from "@/@core/utils/axios";
-import { IBookOrder, ITrade } from "@/@core/@types/interfaces";
-import moment from "moment";
-import { formatterNumber, formatterNumber2 } from "@/@core/utils/general";
+} from 'react';
+import axiosInstance from '@/@core/utils/axios';
+import { IBookOrder, ITrade } from '@/@core/@types/interfaces';
+import moment from 'moment';
+import { formatterNumber, formatterNumber2 } from '@/@core/utils/general';
 
 const MarketOrderBookContainer = (props: {
   market: any;
@@ -19,7 +19,7 @@ const MarketOrderBookContainer = (props: {
   const { market, setMarket, orderBook, trades } = props;
   const asks = orderBook.asks;
   const bids = orderBook.bids;
-  const symbol = market.symbol.split("_");
+  const symbol = market.symbol.split('_');
   let arrAsks: IBookOrder[] = [] as IBookOrder[];
   let arrBids: IBookOrder[] = [] as IBookOrder[];
   let increment = 0;
@@ -83,7 +83,7 @@ const MarketOrderBookContainer = (props: {
       <div className="subcontainer-title">
         <h5 className="down">
           {formatterNumber2(
-            dataBids.reduce((a, b) => a + (b["total"] || 0), 0).toFixed(2)
+            dataBids.reduce((a, b) => a + (b['total'] || 0), 0).toFixed(2)
           )}
         </h5>
       </div>
@@ -132,7 +132,7 @@ const MarketOrderBookContainer = (props: {
                 {formatterNumber2(item.price.toFixed(0))}
               </label>
               <label>{formatterNumber2(item.quantity.toString())}</label>
-              <label>{moment.unix(item.timestamp).format("HH:mm:ss")}</label>
+              <label>{moment.unix(item.timestamp).format('HH:mm:ss')}</label>
             </div>
           ))}
         </div>
