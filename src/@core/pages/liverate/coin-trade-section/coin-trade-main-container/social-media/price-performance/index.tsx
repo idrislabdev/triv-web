@@ -96,7 +96,7 @@ const PricePerformance = (props: { data: any }) => {
                   : 'text-minus'
               }`}
             >
-              {formatDecimalSmart(dataAllTime.quote.IDR.price_change, 1)}%
+              {formatDecimalSmart(dataAllTime.quote.IDR.price_change)}%
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ const PricePerformance = (props: { data: any }) => {
                   : 'text-minus'
               }`}
             >
-              {formatDecimalSmart(dataAllTime.quote.IDR.percent_change, 1)}%
+              {formatDecimalSmart(dataAllTime.quote.IDR.percent_change)}%
             </p>
           </div>
         </div>
