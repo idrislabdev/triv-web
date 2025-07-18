@@ -203,10 +203,10 @@
         .start-now-store {
           @apply flex gap-[14px] items-center;
           .apple-logo {
-            background: url("/images/apps-store/apple-white.png") no-repeat !important;
+            background: url('/images/apps-store/apple-white.png') no-repeat !important;
           }
           .playstore-logo {
-            background: url("/images/apps-store/playstore.png") no-repeat !important;
+            background: url('/images/apps-store/playstore.png') no-repeat !important;
           }
         }
       }
@@ -245,10 +245,10 @@
   .liverate-header-section {
     @apply pt-[30px] pb-[20px] px-[100px] flex flex-col gap-[20px] max-w-container mx-auto;
     h2 {
-      @apply text-[28px]/[42px] font-bold;
+      @apply text-[28px]/[42px] font-bold text-[#000000];
     }
     p {
-      @apply text-[18px]/[36px] font-medium;
+      @apply text-[18px]/[36px] font-medium text-[#4B5060];
     }
     @media (max-width: 1280px) {
       h2 {
@@ -918,9 +918,9 @@
         @apply w-[392px] h-[355px];
       }
       &::before {
-        content: "";
+        content: '';
         @apply absolute right-[50px] w-[500px] h-[500px] z-[-1];
-        background: url("/images/ornaments/circle-loop-ornament-2.png")
+        background: url('/images/ornaments/circle-loop-ornament-2.png')
           no-repeat;
       }
     }
@@ -949,15 +949,15 @@
           @apply flex gap-[14px] items-center;
           .apple-logo {
             @apply w-[31px] h-[37px];
-            content: "";
-            background: url("/images/apps-store/apple.png") no-repeat;
+            content: '';
+            background: url('/images/apps-store/apple.png') no-repeat;
             background-position: center;
             background-size: contain !important;
           }
           .playstore-logo {
             @apply w-[30px] h-[32px];
-            content: "";
-            background: url("/images/apps-store/playstore.png") no-repeat;
+            content: '';
+            background: url('/images/apps-store/playstore.png') no-repeat;
             background-position: center;
             background-size: contain !important;
           }
@@ -966,15 +966,15 @@
           @apply hidden gap-[14px] items-center;
           .apple-logo {
             @apply w-[130.64px] h-[38.71px];
-            content: "";
-            background: url("/images/apps-store/appstore-logo.png") no-repeat;
+            content: '';
+            background: url('/images/apps-store/appstore-logo.png') no-repeat;
             background-position: center;
             background-size: contain !important;
           }
           .playstore-logo {
             @apply w-[130.43px] h-[37.02px];
-            content: "";
-            background: url("/images/apps-store/playstore-logo.png") no-repeat;
+            content: '';
+            background: url('/images/apps-store/playstore-logo.png') no-repeat;
             background-position: center;
             background-size: contain !important;
           }
