@@ -21,7 +21,15 @@ const PrivacyContentSection = () => {
         <ul>
           {contents.map((item, index: number) => (
             <li className={item.selected ? 'active' : ''} key={index}>
-              <a onClick={() => setActive(item.id)}>{item.title}</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive(item.id);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              >
+                {item.title}
+              </a>
             </li>
           ))}
         </ul>

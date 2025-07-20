@@ -23,12 +23,9 @@ const KetentuanLayananContentSection = () => {
             <li className={item.selected ? 'active' : ''} key={index}>
               <a
                 onClick={(e) => {
-                  e.preventDefault(); // Hindari default anchor scroll
+                  e.preventDefault();
                   setActive(item.id);
-                  const el = document.getElementById('contentlayanan');
-                  if (el) {
-                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
               >
                 {item.title}
@@ -38,7 +35,6 @@ const KetentuanLayananContentSection = () => {
         </ul>
       </div>
       <div
-        id="contentlayanan"
         className={`content-container ${
           contents.find((x) => x.selected)?.gap ? 'with-gap' : ''
         }`}
