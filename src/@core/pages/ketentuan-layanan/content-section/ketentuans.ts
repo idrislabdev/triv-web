@@ -1196,73 +1196,495 @@ const ketentuans = [
     id: 7,
     title: 'PERNYATAAN DAN JAMINAN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Tidak menjamin bahwa Platform Triv akan selalu dapat diakses setiap waktu dikarenakan adanya gangguan atau pemeliharaan sistem dan jaringan secara berkala.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin akan menggunakan Layanan dengan baik dan penuh tanggung jawab serta tidak melakukan tindakan yang berlawanan dengan hukum, undang-undang serta peraturan yang berlaku di wilayah Republik Indonesia.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin tidak akan menggunakan Layanan dalam perdagangan Aset Kripto yang berhubungan dengan:',
+            sub_type: 'rome',
+            subs: [
+              { text: 'narkotika, bahan dan/atau zat kimia untuk penelitian;' },
+              {
+                text: 'uang dan apapun yang sejenis dengan uang, termasuk derivatif;',
+              },
+              {
+                text: 'barang dan/atau jasa yang melanggar Hak Kekayaan Intelektual;',
+              },
+              {
+                text: 'amunisi, senjata api, bahan peledak, senjata tajam sesuai dengan Ketentuan Hukum yang berlaku;',
+              },
+              {
+                text: 'barang dan/atau jasa yang menunjukkan informasi pribadi dari pihak ketiga yang melanggar hukum;',
+              },
+              {
+                text: 'barang dan/atau jasa yang berhubungan dengan pembelian lotre, lay-away;',
+              },
+              {
+                text: 'jasa yang terkait dengan perbankan yang berada di luar wilayah Republik Indonesia;',
+              },
+              { text: 'Pembayaran kartu;' },
+              { text: 'Penyelesaian kredit;' },
+              {
+                text: 'Dukungan terhadap organisasi terlarang atau dilarang oleh pemerintah.',
+              },
+            ],
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin untuk tidak menggunakan Layanan terhadap perbuatan yang terlibat dalam praktek perjudian dan/atau kegiatan lain yang mengenakan biaya masuk dan menjanjikan hadiah, termasuk namun tidak terbatas pada permainan kasino, perjudian dalam olahraga, usaha yang memfasilitasi perjudian dan cara undian.',
+          },
+          {
+            content:
+              'Pengguna Badan Hukum menyatakan dan menjamin bahwa Akun Pengguna hanya digunakan untuk Aktivitas Perdagangan Aset Kripto, tidak sebagai sarana pembayaran atau transfer kekayaan, sebagaimana tercantum pada surat pernyataan yang ditandatangani oleh Pengguna Badan Hukum atau pihak yang mewakili berdasarkan surat kuasa.',
+          },
+          {
+            content:
+              'Pengguna Badan hukum menyatakan dan menjamin bahwa sumber dana dalam Aktivitas Perdagangan Aset Kripto berasal dari kekayaan badan hukum sendiri, bukan dari dana atau aset kripto milik pihak lain, pengumpulan masyarakat, hasil tindak pidana, pencucian uang, pendanaan terorisme, atau proliferasi senjata pemusnah massal, sebagaimana tercantum pada surat pernyataan yang ditandatangani oleh Pengguna Badan Hukum atau pihak yang mewakili berdasarkan surat kuasa.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin bahwa seluruh data, informasi dan dokumen yang diberikan Pengguna kepada Triv merupakan data, informasi dan dokumen yang sebenar-benarnya, sah, jujur, transparan, lengkap dan akurat. Pengguna menyatakan bersedia dituntut secara pidana maupun digugat secara perdata apabila Triv mengetahui atau memperoleh informasi dari pihak manapun bahwa data, informasi dan dokumen yang diberikan Pengguna ternyata tidak benar/tidak sepenuhnya benar/palsu. Pengguna bersedia untuk melakukan pembaharuan data/informasi (profile update) apabila sewaktu-waktu diminta oleh Triv dan selanjutnya seluruh dokumen yang sudah diberikan menjadi sepenuhnya milik Triv.',
+          },
+          {
+            content:
+              'Triv telah memberikan keterangan dan penjelasan yang cukup mengenai layanan Triv yang akan dipergunakan Pengguna sesuai dengan ketentuan pada Syarat dan Ketentuan dan Pengguna telah mengerti dan memahami serta bersedia menanggung segala konsekuensi yang mungkin timbul sehubungan dengan penggunaan layanan Triv termasuk manfaat, risiko dan biaya-biaya yang melekat layanan dan layanan.',
+          },
+          {
+            content:
+              'Pengguna dengan ini menyetujui dan memberi kuasa kepada Triv untuk menggunakan semua data, keterangan dan informasi yang diperoleh Triv mengenai Pengguna termasuk namun tidak terbatas pada penggunaan sarana komunikasi pribadi Pengguna untuk segala keperluan lainnya sepanjang dimungkinkan dan diperkenankan oleh perundang-undangan yang berlaku, termasuk yang bertujuan untuk pemasaran produk- produk Triv ataupun pihak lain, yang bekerjasama dengan Triv. Untuk penggunaan data yang memerlukan persetujuan pihak lain, dengan ini Pengguna menyatakan bahwa telah memperoleh persetujuan tertulis dari pihak ketiga manapun untuk penggunaan data, keterangan dan informasi tersebut, dan karena itu Pengguna menjamin dan menyetujui bahwa Triv tidak akan memberikan ganti rugi dan/atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak manapun atas segala risiko, kerugian, tuntutan dan/atau tanggungjawab yang mungkin timbul dikemudian hari sehubungan dengan penggunaan data, keterangan, dan informasi yang telah memperoleh persetujuan tertulis tersebut oleh Triv.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin bahwa transaksi yang dilakukan dengan menggunakan Layanan adalah transaksi yang tidak melanggar ketentuan peraturan perundang-undangan yang berlaku dan ketentuan mengenai penerimaan pelaksanaan transaksi sebagaimana diatur dalam Syarat dan Ketentuan. Dalam hal Triv menemukan indikasi pelaksanaan transaksi yang tidak sesuai dengan ketentuan peraturan perundang-undangan yang berlaku dan atau ketentuan mengenai penerimaan pelaksanaan transaksi yang diatur dalam Syarat dan Ketentuan, maka Triv mempunyai hak penuh untuk menutup Akun Triv Pengguna dengan menonaktifkan Layanan, dan Pengguna dengan ini setuju bahwa Triv dengan ini tidak akan memberikan ganti rugi dan atau pertanggungjawaban dalam bentuk apapun kepada Pengguna, atau pihak manapun atas segala klaim dan atau tuntutan yang timbul sehubungan dengan penonaktifan Layanan pada Pengguna.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin bahwa risiko terhadap penggunaan layanan, produk dan promosi pihak ketiga dengan Pengguna (apabila ada), ditanggung oleh Pengguna, dan Pengguna menyatakan bahwa Triv tidak bertanggung jawab atas layanan dan kinerja layanan pihak ketiga.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin untuk tidak mengajukan gugatan dalam bentuk apa pun, baik secara pidana, perdata, atau jenis gugatan lainnya, terhadap Triv, afiliasinya, direksi, komisaris, karyawan, agen, dan/atau pihak terkait lainnya atas penggunaan layanan yang disediakan oleh Triv.',
+          },
+          {
+            content:
+              'Pengguna menyatakan dan menjamin bahwa penggunaan platform Triv merupakan bentuk penerimaan terhadap seluruh syarat dan ketentuan yang berlaku, termasuk pelepasan hak untuk melakukan gugatan hukum dalam bentuk apa pun terhadap pihak- pihak yang disebutkan pada angka 12. Apabila Pengguna tetap melakukan gugatan, Pengguna bertanggung jawab penuh atas segala kerugian, baik materiil maupun immateriil, yang dialami oleh Triv dan pihak-pihak terkait lainnya, serta setuju untuk mengganti kerugian tersebut secara penuh.',
+          },
+          {
+            content:
+              'Pengguna dengan ini bertanggung jawab sepenuhnya dan setuju bahwa Triv tidak akan memberikan ganti rugi dan atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak manapun atas segala kerugian dan atau klaim dan atau tuntutan yang timbul atau mungkin dialami oleh Triv sebagai akibat dari kelalaian atau kegagalan Pengguna dalam menjalankan transaksi.',
+          },
+          {
+            content:
+              'Pengguna dengan ini bertanggung jawab sepenuhnya dan setuju bahwa Triv tidak akan memberikan ganti rugi dan atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak manapun atas segala kerugian dan atau klaim dan atau tuntutan yang timbul atau mungkin dialami oleh Triv sebagai akibat dari kelalaian atau kegagalan Pengguna dalam hal keamanan password atau kredensial dari Akun Triv Pengguna.',
+          },
+          {
+            content:
+              'Pengguna dengan ini memberikan jaminan kepada Triv bahwa Pengguna beserta dengan seluruh karyawannya dan atau pihak lain yang bekerja sama dengan Pengguna tidak akan memperbanyak dan/atau membuat, memberikan, menyewakan, menjual, memindahkan, mengalihkan, dan atau mengalih-fungsikan Layanan baik sebagian atau seluruhnya kepada pihak lain dengan alasan apapun, termasuk namun tidak terbatas pada penyalahgunaan Platform Triv untuk melakukan transaksi selain dari yang telah ditentukan dalam Syarat dan Ketentuan dengan maksud apapun, termasuk namun tidak terbatas untuk kejahatan/penipuan/kecurangan. Apabila Pengguna melanggar ketentuan tersebut, maka Pengguna wajib bertanggung jawab atas segala kerugian, tuntutan dan atau gugatan yang timbul akibat dari pelanggaran tersebut dan dengan ini setuju bahwa Triv tidak akan memberikan ganti rugi dan atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak manapun atas segala klaim dan atau tuntutan dan atau gugatan yang timbul akibat pelanggaran tersebut.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 8,
     title: 'TANGGUNG JAWAB',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Pengguna setuju untuk menanggung segala risiko, kerugian, atau akibat yang mungkin timbul sebagai akibat dari hal-hal berikut:',
+            sub_type: 'alphabet',
+            subs: [
+              {
+                text: 'Kerusakan, keterlambatan, kehilangan, atau kesalahan dalam pengiriman perintah atau komunikasi secara elektronik yang disebabkan oleh Pengguna;',
+              },
+              {
+                text: 'Laporan Akun Triv atau pemberitahuan penggunaan layanan Triv yang dikirimkan kepada Pengguna, yang diterima, dibaca, atau disalahgunakan oleh pihak yang tidak berwenang atas Akun Triv;',
+              },
+              {
+                text: 'Password dan/atau kata sandi Akun yang diketahui oleh pihak lain akibat kelalaian Pengguna;',
+              },
+            ],
+          },
+          {
+            content:
+              'Pengguna memahami dan menyetujui bahwa penggunaan Akun dan layanan Triv oleh Pengguna tidak akan melanggar ketentuan peraturan perundang-undangan yang berlaku, kebijakan internal Triv, maupun peraturan lainnya yang berlaku baik di tingkat nasional maupun internasional terkait dengan transaksi tersebut. Triv tidak akan memberikan ganti rugi atau pertanggungjawaban apapun kepada Pengguna atau pihak lainnya atas segala klaim, tuntutan, atau kerugian yang timbul terkait penggunaan layanan Triv untuk transaksi yang termasuk dalam kategori mencurigakan atau dilarang oleh peraturan yang berlaku.',
+          },
+          {
+            content:
+              'Pengguna mengerti dan setuju bahwa terdapat sanksi yang dikenakan oleh pemerintah, termasuk pemerintah negara lain, dan/atau instansi berwenang terhadap beberapa negara, badan, dan individu. Berdasarkan hal ini, Triv berhak untuk menunda atau membatalkan transaksi yang melanggar ketentuan sanksi tersebut. Triv tidak bertanggung jawab jika transaksi tertunda atau gagal dilakukan karena pelanggaran terhadap sanksi tersebut.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 9,
     title: 'PENOLAKAN JAMINAN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        body: 'Triv berusaha untuk menjaga layanan yang aman, nyaman, dan berfungsi dengan baik, namun tidak dapat menjamin bahwa layanan kami akan selalu tersedia tanpa gangguan atau bahwa akses ke layanan kami akan selalu sempurna. Kami tidak dapat menjamin bahwa informasi dan data di platform Triv akan tersedia secara real-time.',
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Triv tidak menjamin bahwa hasil yang diperoleh dari penggunaan layanan akan selalu akurat atau dapat diandalkan.',
+          },
+          {
+            content:
+              'Pengguna setuju untuk menggunakan layanan Triv atas risiko sendiri, dan layanan tersebut disediakan "SEBAGAIMANA ADANYA" dan "SEBAGAIMANA TERSEDIA".',
+          },
+          {
+            content:
+              'Sejauh diizinkan oleh hukum yang berlaku, Triv (termasuk Perusahaan Induk, jajaran direksi, dan karyawan) tidak bertanggung jawab, dan Pengguna setuju untuk tidak menuntut pertanggungjawaban Triv, atas kerusakan atau kerugian (termasuk namun tidak terbatas pada kehilangan uang, reputasi, keuntungan, atau kerugian tidak berwujud lainnya) yang timbul baik secara langsung maupun tidak langsung akibat:',
+            sub_type: 'alphabet',
+            subs: [
+              {
+                text: 'Ketidakmampuan Pengguna dalam menggunakan layanan Triv, termasuk risiko pribadi.',
+              },
+              {
+                text: 'Hilangnya penggunaan, keuntungan, pendapatan, data, niat baik, atau kegagalan untuk mencapai simpanan yang diharapkan, baik secara langsung maupun tidak langsung.',
+              },
+              {
+                text: 'Setiap kerugian tidak langsung, insidental, khusus, atau konsekuensial yang timbul dari atau terkait dengan penggunaan atau ketidakmampuan untuk menggunakan platform atau layanan Triv, bahkan jika Triv telah diberitahu tentang kemungkinan kerugian tersebut.',
+              },
+              {
+                text: 'Kerugian yang disebabkan oleh kelalaian Pengguna, termasuk namun tidak terbatas pada kelalaian dalam login melalui perangkat pihak ketiga dan/atau kegagalan dalam menjaga kerahasiaan perangkat yang digunakan untuk login.',
+              },
+              {
+                text: 'Kerusakan produk atau aset kripto yang diperdagangkan.',
+              },
+              { text: 'Pelanggaran terhadap Hak Kekayaan Intelektual.' },
+              { text: 'Perselisihan antara Pengguna.' },
+              { text: 'Pencemaran nama baik pihak lain.' },
+              { text: 'Penyalahgunaan aset yang dibeli oleh Pengguna.' },
+              {
+                text: 'Kerugian yang timbul akibat pembayaran yang tidak resmi kepada pihak selain rekening resmi Triv yang menggunakan nama Triv atau kelalaian dalam penulisan rekening dan/atau informasi lainnya.',
+              },
+              {
+                text: 'Virus atau malware yang diperoleh dengan mengakses atau menghubungkan ke layanan Triv.',
+              },
+              {
+                text: 'Serangan skimming atau hacking yang menyebabkan kerugian pada Pengguna di layanan Triv.',
+              },
+              {
+                text: 'Gangguan, bug, kesalahan, atau ketidakakuratan dalam layanan Triv.',
+              },
+              {
+                text: 'Kerusakan perangkat keras akibat penggunaan layanan Triv.',
+              },
+              {
+                text: 'Tindakan penegakan yang diambil terkait dengan akun Pengguna.',
+              },
+              { text: 'Peretasan akun Pengguna oleh pihak ketiga.' },
+            ],
+          },
+          {
+            content:
+              'Pengguna mengakui dan menyetujui bahwa hak satu-satunya terkait ketidakpuasan layanan adalah berhenti menggunakan layanan tersebut.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 10,
     title: 'LARANGAN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        body: 'Tanpa mengurangi maksud dari ketentuan mengenai larangan-larangan yang terdapat dalam Syarat dan Ketentuan, maka Pengguna dilarang untuk melakukan hal-hal sebagai berikut:',
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Pengguna tidak diperbolehkan melakukan tindakan-tindakan yang dapat mengakibatkan kerugian bagi Triv dan atau yang bertentangan dengan Syarat dan Ketentuan dan peraturan perundang-undangan yang berlaku.',
+          },
+          {
+            content:
+              'Apabila Pengguna melanggar salah satu atau beberapa ketentuan dalam ketentuan ini, maka Pengguna akan bertanggung jawab sepenuhnya dan dengan ini setuju bahwa atas pelanggaran tersebut Triv berhak untuk membatasi fitur penggunaan layanan Triv dan Pengguna mengetahui dan setuju bahwa Triv tidak akan memberikan ganti rugi dan atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak manapun atas segala risiko atau akibat yang timbul atas pembatasan penggunaan layanan tersebut. Pengguna selanjutnya berkewajiban untuk membayar ganti rugi kepada Triv sebesar nilai kerugian yang mungkin dialami Triv atas pelanggaran tersebut. Pengguna dengan ini memberikan kuasa kepada Triv untuk melakukan pendebetan Akun Pengguna untuk pembayaran ganti rugi tersebut. Dalam hal dana pada Akun Pengguna tidak tersedia dan atau tidak mencukupi, maka Pengguna wajib mengembalikan seluruh dana tersebut secara tunai kepada Triv dalam waktu selambat-lambatnya 7 (tujuh) hari kerja sejak Triv mengajukan klaim dimaksud.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 11,
     title: 'KERAHASIAAN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        body: 'Selama bekerjasama dengan Triv dan pada setiap waktu sesudahnya, maka:',
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Setiap informasi dan atau data yang diberikan oleh Triv kepada Pengguna dan atau data yang diperoleh Pengguna sebagai pelaksanaan dari Syarat dan Ketentuan baik yang diberikan atau disampaikan secara lisan, tertulis, grafik atau yang disampaikan melalui media elektronik atau informasi dan atau data dalam bentuk lainnya selama berlangsungnya pembicaraan atau selama pekerjaan lain adalah bersifat rahasia (selanjutnya disebut sebagai “Informasi Rahasia”).',
+          },
+          {
+            content:
+              'Pengguna setuju dan sepakat bahwa setiap saat akan merahasiakan informasi rahasia yang diperoleh sebagai pelaksanaan dari kerjasama kepada siapapun atau tidak akan menggunakannya untuk kepentingan Pengguna atau kepentingan pihak lainnya, tanpa terlebih dahulu memperoleh persetujuan tertulis dari pejabat yang berwenang dari Triv atau pihak yang berwenang lainnya sesuai dengan ketentuan hukum yang berlaku.',
+          },
+          {
+            content:
+              'Apabila Pengguna melanggar ketentuan sebagaimana dimaksud dalam angka 1 dan 2 ketentuan mengenai kerahasiaan ini, maka segala kerugian, tuntutan dan atau gugatan yang dialami Triv merupakan tanggung jawab Pengguna sepenuhnya, dan atas permintaan pertama dari Triv, Pengguna berkewajiban untuk menyelesaikannya sesuai dengan ketentuan hukum dan perundang-undangan yang berlaku dan memberikan ganti rugi yang mungkin timbul akibat pelanggaran tersebut kepada Triv. Pengguna dengan ini setuju bahwa Triv tidak akan memberikan ganti rugi dan atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak manapun atas segala tuntutan dan atau gugatan yang mungkin timbul dikemudian hari sehubungan dengan pelanggaran tersebut.',
+          },
+          {
+            content:
+              'Kewajiban untuk menyimpan informasi rahasia sebagaimana dimaksud dalam angka 1 dan 2 ketentuan mengenai kerahasiaan menjadi tidak berlaku, apabila:',
+          },
+          {
+            content:
+              'Informasi rahasia tersebut menjadi tersedia untuk masyarakat umum.',
+          },
+          {
+            content:
+              'Informasi rahasia tersebut diperintahkan untuk dibuka untuk memenuhi perintah pengadilan atau badan pemerintahan lain yang berwenang.',
+          },
+          {
+            content:
+              'Informasi rahasia tersebut diberikan sesuai ketentuan hukum yang berlaku.',
+          },
+          {
+            content:
+              'Pengguna selanjutnya menyetujui untuk melakukan segenap upaya dan mengambil setiap tindakan yang diperlukan untuk menghindari pihak-pihak ketiga dalam memperoleh akses terhadap atau mengakibatkan terjadinya pengungkapan atas informasi rahasia.',
+          },
+          {
+            content:
+              'Dalam hal kerjasama telah berakhir, Pengguna sepakat bahwa kewajiban untuk merahasiakan dokumen dan materi yang merupakan informasi rahasia sebagaimana diatur dalam ketentuan ini akan tetap berlaku.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 12,
     title: 'PAJAK',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        body: 'Bahwa pajak atas Aktivitas Perdagangan Aset Kripto adalah pajak yang ditanggung oleh masing-masing pelaku kegiatan disesuaikan dengan ketentuan peraturan perundang- undangan yang berlaku, dalam hal ini Pengguna dan Triv. Kami menganjurkan Pengguna untuk mengkonsultasikan pembayaran pajak kepada Konsultan Pajak Pribadi, dan Triv tidak menanggung pajak Pengguna kecuali ditentukan lain dalam Syarat dan Ketentuan ini.',
+        number: null,
+      },
+    ],
   },
   {
     id: 13,
     title: 'HAK KEKAYAAN INTELEKTUAL',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Pengguna menyatakan dan menyetujui bahwa Triv adalah pemegang hak kepemilikan atas layanan, perangkat lunak, alat teknologi, konten, situs, dan materi lainnya, termasuk Hak Kekayaan Intelektual yang terkait dengan fasilitas Triv.',
+          },
+          {
+            content:
+              'Pengguna hanya diperbolehkan untuk melihat, mencetak, dan/atau mengunduh salinan material dari Website untuk keperluan pribadi dan non-komersial. Seluruh penggunaan komersial wajib mendapatkan izin tertulis dari Triv. Setiap kegiatan komersial tanpa izin dari Triv akan dianggap sebagai pelanggaran atas Hak Kekayaan Intelektual Triv dan dapat mengakibatkan penghentian Akun Pengguna di Platform Triv.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 14,
     title: 'KELALAIAN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Pengguna sepakat bahwa yang dimaksud dengan Kelalaian ("Wanprestasi") adalah hal atau peristiwa sebagai berikut:',
+            sub_type: 'dots',
+            subs: [
+              {
+                text: 'Wanprestasi',
+                description:
+                  'Apabila Pengguna lalai dalam melaksanakan suatu kewajiban atau melanggar suatu ketentuan dalam Syarat dan Ketentuan.',
+              },
+              {
+                text: 'Pernyataan Tidak Benar',
+                description:
+                  'Apabila ternyata suatu pernyataan atau jaminan yang diberikan oleh Pengguna dalam Syarat dan Ketentuan tidak benar atau tidak sesuai dengan kenyataan.',
+              },
+            ],
+          },
+          {
+            content:
+              'Dalam hal terjadi suatu kejadian kelalaian sebagaimana dimaksud pada angka 1, Triv berhak untuk memilih apakah akan tetap meneruskan atau menutup Akun Pengguna . Apabila Triv berkehendak untuk menutup Akun Pengguna , maka kehendak tersebut akan diberitahukan kepada Pengguna dalam waktu yang dianggap wajar oleh Triv.',
+          },
+          {
+            content:
+              'Jika terjadi kelalaian oleh Pengguna sebagaimana dimaksud, maka Triv berhak untuk segera melakukan penonaktifan Akun Pengguna tanpa perlu memberikan pemberitahuan sebelumnya. Pengguna dengan ini menyetujui bahwa Triv tidak akan memberikan ganti rugi atau pertanggungjawaban dalam bentuk apa pun kepada pengguna atau pihak mana pun atas segala tuntutan, gugatan, klaim, atau permintaan ganti kerugian dari pihak mana pun yang mungkin timbul akibat kelalaian tersebut.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 15,
     title: 'KEADAAN KAHAR (FORCE MAJEURE',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Force Majeure mengacu pada kejadian-kejadian di luar kendali dan kewenangan Triv yang berdampak pada pelaksanaan transaksi, termasuk namun tidak terbatas pada:',
+            sub_type: 'dots',
+            subs: [
+              {
+                text: 'Bencana alam seperti gempa bumi, angin topan, banjir, tanah longsor, dan letusan gunung berapi;',
+              },
+              {
+                text: 'Konflik atau gangguan sosial seperti perang, demonstrasi, huru-hara, terorisme, sabotase, embargo, atau pemogokan massal;',
+              },
+              {
+                text: 'Kebijakan ekonomi atau keputusan pemerintah yang langsung memengaruhi operasional.',
+              },
+            ],
+          },
+          {
+            content:
+              'Apabila Force Majeure terjadi, dan Triv telah memenuhi kewajibannya sesuai dengan peraturan perundang-undangan yang berlaku, Triv tidak bertanggung jawab untuk memberikan ganti rugi atau kompensasi dalam bentuk apa pun kepada Pengguna maupun pihak lain atas segala risiko, tuntutan, atau kerugian yang timbul akibat keterlambatan atau ketidakmampuan dalam melaksanakan kewajiban selama periode Force Majeure.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 16,
     title: 'PEMBERITAHUAN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Pengguna menyepakati untuk berkomunikasi dengan Triv dalam format elektronik, serta mengakui bahwa semua syarat, ketentuan, perjanjian, pemberitahuan, pengungkapan, atau bentuk komunikasi lain yang diberikan oleh Triv secara elektronik akan dianggap sebagai komunikasi tertulis yang sah.',
+          },
+          {
+            content:
+              'Pengguna menyepakati untuk menerima e-mail dari Triv, yang dapat mencakup informasi terkait akun, transaksi, sistem, promosi, dan hal lainnya yang relevan.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 17,
     title: 'DOMISILI HUKUM DAN PENYELESAIAN SENGKETA',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Syarat dan Ketentuan ini dibuat, ditafsirkan, dan diberlakukan berdasarkan hukum negara Republik Indonesia.',
+          },
+          {
+            content:
+              'Setiap sengketa, perselisihan atau perbedaan pendapat (selanjutnya disebut sebagai “Sengketa”) yang timbul sehubungan dengan pelaksanaan kerjasama akan diselesaikan dengan cara sepakat untuk menyelesaikannya terlebih dahulu melalui musyawarah untuk mencapai mufakat dalam jangka waktu 30 (tiga puluh) hari kerja.',
+          },
+          {
+            content:
+              'Setiap Sengketa yang tidak dapat diselesaikan secara musyawarah, akan diselesaikan melalui Badan Arbitrase Perdagangan Berjangka Komoditi (BAKTI) atau Pengadilan Negeri Surabaya.',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 18,
     title: 'LAIN-LAIN',
     gap: true,
-    contents: [],
+    contents: [
+      {
+        number: null,
+        child_type: 'number',
+        child: [
+          {
+            content:
+              'Syarat dan Ketentuan ini tunduk dan diberlakukan berdasarkan pada UU Nomor 8 Tahun 2010 tentang Tindak Pidana Pencucian Uang, Undang-Undang Nomor 9 Tahun 2013 tentang Pencegahan dan Pemberantasan Tindak Pidana Pendanaan Terorisme, Peraturan Kepala PPATK PER-09/1.02.2/PPATK/09/12, No. PER-12/1.02/PPATK/06/13, No. PER-02/1.02/PPATK/02/2014 dan Peraturan PPATK Nomor 2 Tahun 2021. Oleh karenanya tunduk kepada kewajiban pelaporan kepada PPATK.',
+          },
+          {
+            content:
+              'Untuk hal-hal yang belum diatur dalam Syarat dan Ketentuan, maka akan berlaku seluruh ketentuan dalam Kitab Undang-Undang Hukum Perdata serta ketentuan-ketentuan peraturan perundang-undangan lainnya yang terkait.',
+          },
+          {
+            content:
+              'Jika Triv melakukan perubahan terhadap isi Syarat dan Ketentuan, Triv akan Pengguna itahukan perubahan tersebut kepada Pengguna melalui media yang dianggap tepat dan sesuai oleh Triv, sesuai dengan peraturan perundang-undangan yang berlaku. Perubahan setiap lampiran dari Syarat dan Ketentuan akan disepakati dan menjadi bagian yang tidak terpisahkan dari Syarat dan Ketentuan.',
+          },
+          {
+            content:
+              'Apabila Pengguna melakukan tindakan yang melanggar ketentuan Syarat dan Ketentuan, Pengguna akan bertanggung jawab sepenuhnya. Triv tidak akan memberikan ganti rugi atau pertanggungjawaban dalam bentuk apapun kepada Pengguna atau pihak lain atas tuntutan, gugatan, atau klaim yang diajukan akibat tindakan tersebut.',
+          },
+          {
+            content:
+              'Pengguna wajib mematuhi seluruh ketentuan yang tercantum dalam Syarat dan Ketentuan. Kelalaian Pengguna dalam mematuhi ketentuan ini pada satu atau beberapa kejadian tidak menghilangkan kewajiban Pengguna untuk tetap tunduk pada Syarat dan Ketentuan di masa depan.',
+          },
+          {
+            content:
+              'Pertanyaan seputar Ketentuan dan Persyaratan atau perihal lain, dilakukan melalui https://triv.co.id/id/home/term-of-service',
+          },
+          {
+            content:
+              'Pengguna memahami dan setuju bahwa Syarat dan Ketentuan ini merupakan perjanjian elektronik. Tindakan Pengguna menekan tombol ‘daftar’ saat pembukaan Akun atau ‘masuk’ saat mengakses Akun merupakan persetujuan aktif untuk mengikatkan diri pada perjanjian ini. Oleh karena itu, Syarat dan Ketentuan berlaku sah dan mengikat secara hukum sepanjang Pengguna menggunakan layanan Triv.',
+          },
+          {
+            content:
+              'Pengguna tidak akan mengajukan tuntutan atau keberatan apapun terhadap keabsahan dari Syarat dan Ketentuan yang dibuat dalam bentuk elektronik.',
+          },
+          {
+            content:
+              'Pengguna tidak dapat mengalihkan haknya berdasarkan Syarat dan Ketentuan ini kepada pihak lain tanpa persetujuan tertulis dari Triv. Namun, Triv berhak mengalihkan haknya kepada pihak lain kapan saja tanpa memerlukan persetujuan atau pemberitahuan kepada Pengguna.',
+          },
+          {
+            content:
+              'Jika Pengguna melanggar Syarat dan Ketentuan dan Triv tidak mengambil tindakan langsung, hal tersebut bukan berarti Triv melepaskan haknya untuk mengambil tindakan yang diperlukan di kemudian hari.',
+          },
+          {
+            content:
+              'Syarat dan Ketentuan ini tetap berlaku meskipun terjadi pembekuan sementara atau permanen, penghapusan Aplikasi, atau setelah perjanjian antara Pengguna dan Triv berakhir.',
+          },
+          {
+            content:
+              'Jika salah satu ketentuan dalam Syarat dan Ketentuan ini dinyatakan tidak dapat diberlakukan, hal tersebut tidak memengaruhi keberlakuan ketentuan lainnya.',
+          },
+        ],
+      },
+    ],
   },
 ];
 

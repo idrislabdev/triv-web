@@ -44,12 +44,16 @@
         &.number {
           @apply list-decimal;
         }
+
         ul {
           &.dots {
             @apply list-disc;
           }
           &.alphabet {
             list-style-type: lower-alpha;
+          }
+          &.rome {
+            list-style-type: lower-roman;
           }
           ul {
             @apply list-disc;

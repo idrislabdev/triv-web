@@ -21,12 +21,24 @@ const KetentuanLayananContentSection = () => {
         <ul>
           {contents.map((item, index: number) => (
             <li className={item.selected ? 'active' : ''} key={index}>
-              <a onClick={() => setActive(item.id)}>{item.title}</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault(); // Hindari default anchor scroll
+                  setActive(item.id);
+                  const el = document.getElementById('contentlayanan');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+              >
+                {item.title}
+              </a>
             </li>
           ))}
         </ul>
       </div>
       <div
+        id="contentlayanan"
         className={`content-container ${
           contents.find((x) => x.selected)?.gap ? 'with-gap' : ''
         }`}
@@ -48,6 +60,7 @@ const KetentuanLayananContentSection = () => {
                           {child.subs.map((sub: any, index3: number) => (
                             <li key={`${index}${index2}${index3}`}>
                               {sub.text}
+                              {sub.description && <p>{sub.description}</p>}
                               {sub.sub_childs && (
                                 <ul>
                                   {sub.sub_childs.map(
