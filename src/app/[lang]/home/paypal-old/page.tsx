@@ -227,7 +227,7 @@ export default async function ServicePaypal({ params }: any) {
           <ProductsInvestasiNowSection objLang={start_now_section} />
           <ProductsTestimonyCarouselSection />
         </main>
-        <Footer lang={lang} />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

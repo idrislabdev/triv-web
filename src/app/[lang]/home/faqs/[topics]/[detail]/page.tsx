@@ -16,7 +16,7 @@ export default async function FaqsTopicsDetail({ params }: any) {
         <main className="faqs-page sm:mobile-responsive md:mobile-responsive">
           <FaqsDetailSection objLang={detail_faq} />
         </main>
-        <Footer lang={lang} />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );
