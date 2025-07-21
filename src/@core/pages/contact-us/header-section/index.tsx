@@ -13,7 +13,7 @@ const ContactUsHeaderSection = (props: { objLang: any }) => {
             </span>{' '}
             |{' '}
             <span>
-              <a href="mailto:help@triv.co.id">Contact our CEO</a>
+              <a href="mailto:rey@triv.co.id">Contact our CEO</a>
             </span>
           </p>
         </div>
