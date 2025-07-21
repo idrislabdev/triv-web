@@ -9,7 +9,7 @@ import LiverateTestimonyCarouselSection from '@/@core/pages/liverate/testimony-c
 import Footer from '@/@core/components/footer';
 
 import { getLiverateHighlights, getLiverates } from '@/@core/services/api';
-import { IHighlight, ILiverate } from '@/@core/@types/interfaces';
+import { IHighlight, ILiverate, IMetaTable } from '@/@core/@types/interfaces';
 import { getDictionaryLierate } from '@/app/dictionaries';
 
 import '@/styles/liverate.css';
@@ -20,6 +20,7 @@ export default async function Liverate({ params }: any) {
 
   const respLiverate = await getLiverates();
   const liverates: ILiverate[] = respLiverate.data.data;
+  const metaLiverate: IMetaTable[] = respLiverate.data.statistic;
 
   const {
     header_section,
@@ -230,6 +231,7 @@ export default async function Liverate({ params }: any) {
             objLang={liverate_coin_section}
             lang={params.lang}
             liverates={liverates}
+            metaLiverate={metaLiverate}
           />
           <LiverateAskSection objLang={faq_section} />
           <LiverateInvestasiNowSection

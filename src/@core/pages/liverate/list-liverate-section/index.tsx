@@ -1,6 +1,6 @@
 'use client';
 
-import { ILiverate } from '@/@core/@types/interfaces';
+import { ILiverate, IMetaTable } from '@/@core/@types/interfaces';
 import {
   CaretDownIcon,
   CaretUpIcon,
@@ -22,9 +22,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 const LiverateListSection = (props: {
   objLang: any;
   liverates: ILiverate[];
+  metaLiverate: IMetaTable;
   lang: string;
 }) => {
-  const { objLang, liverates, lang } = props;
+  const { objLang, liverates, metaLiverate, lang } = props;
   const [dataLiverates, setDataLiverates] = useState(liverates);
   const [category, setCategory] = useState('');
   const [page, setPage] = useState(1);
@@ -35,6 +36,7 @@ const LiverateListSection = (props: {
     category: string | null;
     keyword: string | null;
   }>({ page: 1, per: 10, category: null, keyword: null });
+  const [meta, setMeta] = useState<IMetaTable>(metaLiverate);
 
   const [paramsMobile, setParamsMobile] = useState<{
     page: number;
@@ -48,6 +50,7 @@ const LiverateListSection = (props: {
       params: { ...params },
     });
     setDataLiverates(resp.data.data);
+    setMeta(resp.data.statistic);
   }, [params]);
 
   const changeCategory = (value: string) => {
@@ -275,7 +278,7 @@ const LiverateListSection = (props: {
         <div className="list-table-pagination">
           <Pagination
             currentPage={params.page}
-            totalPages={params.per}
+            totalPages={meta.page_count}
             onPageChange={(val) => setParams({ ...params, page: val })}
             siblingCount={0} // bebas atur 0,1,2 dll
           />
