@@ -18,18 +18,7 @@ import '@/styles/animations/home.css';
 
 const HomePage = (props: { lang: string; objLang: any; liverates: any }) => {
   const { lang, objLang, liverates } = props;
-  const onScroll = useCallback(() => {
-    const { scrollY } = window;
-    if (scrollY >= 60) {
-      console.log('scroll');
-    } else {
-    }
-  }, []);
 
-  useEffect(() => {
-    // window.addEventListener("scroll", onScroll, { passive: true });
-    // const { scrollY } = window;
-  });
   return (
     <>
       <MainHeader classText="header-white" lang={lang} />

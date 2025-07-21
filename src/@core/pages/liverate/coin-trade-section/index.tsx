@@ -13,7 +13,6 @@ const LiverateCoinTradeSection = (props: {
   asset: any;
 }) => {
   const { lang, objLang, blogs, liverateMinies, coin, asset } = props;
-  console.log(asset);
   return (
     <section className="liverate-coin-section">
       <h2>

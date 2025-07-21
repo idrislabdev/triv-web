@@ -18,7 +18,9 @@ const CoinTradeMainContainer = (props: {
 }) => {
   const { lang, objLang, blogs, asset, coin } = props;
 
-  const [tabActive, setTabActive] = useState('overview');
+  const [tabActive, setTabActive] = useState(
+    asset.code === 'PAYPAL' ? 'insight' : 'overview'
+  );
   return (
     <div className="coin-main-container trade">
       <div className="header-subcontainer">
@@ -32,9 +34,12 @@ const CoinTradeMainContainer = (props: {
           />
         </div>
         <ul className="tab-main">
-          <li className={tabActive == 'overview' ? 'active' : ''}>
-            <a onClick={() => setTabActive('overview')}>Overview</a>
-          </li>
+          {asset.code !== 'PAYPAL' && (
+            <li className={tabActive == 'overview' ? 'active' : ''}>
+              <a onClick={() => setTabActive('overview')}>Overview</a>
+            </li>
+          )}
+
           <li className={tabActive == 'insight' ? 'active' : ''}>
             <a onClick={() => setTabActive('insight')}>Market Insight</a>
           </li>
