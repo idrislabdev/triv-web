@@ -122,12 +122,21 @@ const FormRegisterSubcontainer = (props: {
         <p>
           {dictRegister.register_first_text}{' '}
           <span>
-            <Link href={`/${lang}`}>{dictRegister.register_second_text}</Link>{' '}
+            <Link href={`/${lang}/home/ketentuan-layanan`}>
+              {dictRegister.register_second_text}
+            </Link>{' '}
           </span>
-          <Link href={`/${lang}`}>{dictRegister.register_third_text} </Link>
+          <span>
+            <Link href={`/${lang}/home/kyc`}>
+              {dictRegister.register_third_text}{' '}
+            </Link>
+          </span>
           <span>
             {' '}
-            <Link href={`/${lang}`}>{dictRegister.register_fourth_text}</Link>
+            <span>{dictRegister.register_fourth_text} </span>
+            <Link href={`/${lang}/home/privacy-policy`}>
+              {dictRegister.register_fifth_text}
+            </Link>
           </span>
         </p>
       </div>

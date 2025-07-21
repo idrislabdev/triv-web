@@ -1,4 +1,5 @@
 'use client';
+import { ChevronRightIcon } from '@/@core/components/custom-icons';
 import { useState } from 'react';
 const KYCContentSection = () => {
   return (
@@ -65,6 +66,12 @@ const KYCContentSection = () => {
             melakukan verifikasi dalam system kami
           </li>
         </ul>
+        <button>
+          Download Form{' '}
+          <span>
+            <ChevronRightIcon />
+          </span>
+        </button>
       </div>
     </section>
   );

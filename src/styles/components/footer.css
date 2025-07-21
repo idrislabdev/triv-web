@@ -1,279 +1,274 @@
 @tailwind components;
 
 .dark-theme {
-   .footer {
-        @apply !bg-[#111111];
-   }
+  .footer {
+    /* @apply !bg-[#111111]; */
+  }
 }
 .footer {
-    @apply w-full bg-[black];
-    .footer-container {
-        @apply flex flex-col gap-[75px] p-[100px]  text-white max-w-container mx-auto;
-        .footer-primary {
-            @apply flex;
-            .footer-primary-left {
-                @apply flex flex-col gap-[48px] w-[401px];
-                .footer-triv-logo {
-                    @apply flex flex-col;
-                    img {
-                        @apply w-[226px] h-[101px];
-                    }
-                }
-                .footer-triv-address-logo {
-                    @apply flex flex-col gap-[30px];
-                    .footer-socialmedia-list {
-                        @apply flex;
-                        &.mobile {
-                            @apply hidden;
-                        }
-                        ul {
-                            @apply flex gap-[20px] list-none justify-end;
-                        }
-                    }
-                    .footer-address {
-                        @apply text-left w-[50%];
-                        h6, p {
-                            @apply text-[16px]/[28.8px] font-medium;
-                        }
-                    }
-                }
-            }
-            .footer-primary-right {
-                @apply flex flex-col gap-[74px];
-                .list-menu {
-                    @apply flex gap-[100px];
-                    .container-menu {
-                        @apply flex flex-col gap-[16px];
-                        label {
-                            @apply text-[16px]/[24px] font-bold;
-                        }
-                        .container-list-menu {
-                            @apply transition-all duration-500 flex gap-[100px];
-                            ul {
-                                @apply flex flex-col gap-[20px] w-[100px];
-                                li {
-                                    @apply text-[16px]/[24px] font-medium;
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
+  @apply w-full bg-[black];
+  .footer-container {
+    @apply flex flex-col gap-[75px] p-[100px]  text-white max-w-container mx-auto;
+    .footer-primary {
+      @apply flex;
+      .footer-primary-left {
+        @apply flex flex-col gap-[48px] w-[401px];
+        .footer-triv-logo {
+          @apply flex flex-col;
+          img {
+            @apply w-[226px] h-[101px];
+          }
         }
-        hr {
-            @apply border-[#FFFFFF33];
+        .footer-triv-address-logo {
+          @apply flex flex-col gap-[30px];
+          .footer-socialmedia-list {
+            @apply flex;
+            &.mobile {
+              @apply hidden;
+            }
+            ul {
+              @apply flex gap-[20px] list-none justify-end;
+            }
+          }
+          .footer-address {
+            @apply text-left w-[50%];
+            h6,
+            p {
+              @apply text-[16px]/[28.8px] font-medium;
+            }
+          }
+        }
+      }
+      .footer-primary-right {
+        @apply flex flex-col gap-[74px];
+        .list-menu {
+          @apply flex gap-[100px];
+          .container-menu {
+            @apply flex flex-col gap-[16px];
+            label {
+              @apply text-[16px]/[24px] font-bold;
+            }
+            .container-list-menu {
+              @apply transition-all duration-500 flex gap-[100px];
+              ul {
+                @apply flex flex-col gap-[20px] w-[100px];
+                li {
+                  @apply text-[16px]/[24px] font-medium;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    hr {
+      @apply border-[#FFFFFF33];
+    }
+    .footer-secondary {
+      @apply flex justify-between;
+      .footer-secondary-left {
+        @apply flex flex-col gap-[20px];
+        .copyright-text {
+          label {
+            @apply text-[16px]/[28px] font-medium;
+          }
+        }
+        .footer-appstore {
+          @apply flex gap-[8px];
+          img {
+            &.logo-playstore {
+              @apply !w-[130px] h-[38.71px];
+            }
+            &.logo-appstore {
+              @apply !w-[115px] h-[38.71px];
+            }
+          }
+        }
+      }
+      .footer-secondary-right {
+        @apply flex flex-col gap-[20px];
+        .terdaftar-text {
+          @apply flex;
+          label {
+            @apply text-[16px]/[28px] font-medium;
+          }
+        }
+        .footer-terdaftar-list {
+          @apply flex justify-end gap-[37px];
+        }
+      }
+    }
+
+    @media (max-width: 1080px) {
+      @apply gap-[50px];
+      .footer-primary {
+        .footer-primary-right {
+          @apply gap-[30px];
+          .list-menu {
+            .container-menu {
+              @apply gap-[12px];
+              label {
+                @apply text-[13px]/[21px];
+              }
+              .container-list-menu {
+                ul {
+                  @apply gap-[20px];
+                  li {
+                    @apply text-[13px]/[21px];
+                  }
+                }
+              }
+            }
+          }
+        }
+        .footer-primary-left {
+          @apply gap-[40px] w-full;
+          .footer-triv-logo {
+            @apply items-end;
+            img {
+              @apply w-[30%] h-full;
+            }
+          }
+          .footer-triv-address-logo {
+            @apply gap-[20px] flex-col-reverse;
+            .footer-socialmedia-list {
+              ul {
+                @apply gap-[20px];
+                li {
+                  a {
+                    svg {
+                      @apply w-[95%] h-[95%];
+                    }
+                  }
+                }
+              }
+            }
+            .footer-address {
+              @apply text-right;
+              h6,
+              p {
+                @apply text-[13px]/[21px] font-medium;
+              }
+            }
+          }
+        }
+      }
+      .footer-secondary {
+        .footer-secondary-left {
+          @apply gap-[20px];
+          .copyright-text {
+            label {
+              @apply text-[13px]/[21px];
+            }
+          }
+          .footer-appstore {
+            @apply gap-[8px] justify-center;
+            img {
+              &.logo-playstore {
+                @apply !w-[130px] !h-[38.71px];
+              }
+              &.logo-appstore {
+                @apply !w-[114px] !h-[38.71px];
+              }
+            }
+          }
+        }
+        .footer-secondary-right {
+          @apply gap-[10px];
+          .terdaftar-text {
+            label {
+              @apply text-[13px]/[21px];
+            }
+          }
+          .footer-terdaftar-list {
+            @apply gap-[27px];
+            img {
+              @apply w-[100%];
+            }
+          }
+        }
+      }
+    }
+  }
+  @layer components {
+    &.mobile-responsive {
+      .footer-container {
+        @apply p-[20px];
+        .footer-primary {
+          @apply flex-col gap-[30px];
+          .footer-primary-right {
+            @apply flex-col gap-[16px];
+            .list-menu {
+              @apply flex-col gap-[22px];
+              .container-menu {
+                label {
+                  @apply text-[12px]/[150%];
+                }
+                .container-list-menu {
+                  @apply flex-col gap-[22px];
+                  ul {
+                    @apply gap-[10px];
+                    li {
+                      @apply text-[11px]/[150%] font-medium;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .footer-primary-left {
+            @apply gap-[30px] justify-center items-center;
+            &.desktop {
+              @apply hidden;
+            }
+            .footer-triv-logo {
+              img {
+                @apply !w-[120px] !h-[54px];
+              }
+            }
+            .footer-address {
+              @apply text-center;
+              h6 {
+                @apply text-[10px]/[15px];
+              }
+              p {
+                @apply text-[10px]/[15px];
+              }
+            }
+            .footer-triv-address-logo {
+              @apply items-center;
+              .footer-socialmedia-list {
+                @apply justify-center;
+                &.mobile {
+                  @apply block;
+                }
+              }
+              .footer-address {
+                @apply w-[80%];
+              }
+            }
+          }
         }
         .footer-secondary {
-            @apply flex justify-between  ;
-            .footer-secondary-left {
-                @apply flex flex-col gap-[20px];
-                .copyright-text {
-                    label {
-                        @apply text-[16px]/[28px] font-medium;
-                    }
-                }
-                .footer-appstore {
-                    @apply flex gap-[8px];
-                    img {
-                        &.logo-playstore {
-                            @apply !w-[130px] h-[38.71px];
-                        }
-                        &.logo-appstore {
-                            @apply !w-[115px] h-[38.71px]
-    
-                        }
-                    }
-                }
+          @apply flex-col items-center gap-[40px];
+          .footer-secondary-right {
+            @apply items-center;
+            .terdaftar-text {
+              label {
+                @apply text-[12px]/[18px];
+              }
             }
-            .footer-secondary-right {
-                @apply flex flex-col gap-[20px];
-                .terdaftar-text {
-                    @apply flex;
-                    label {
-                        @apply text-[16px]/[28px] font-medium;
-                    }
-                }
-                .footer-terdaftar-list {
-                    @apply flex justify-end gap-[37px];
-                }
+          }
+          .footer-secondary-left {
+            .copyright-text {
+              @apply items-center;
+              label {
+                @apply text-[12px]/[18px];
+              }
             }
+          }
         }
-
-        @media (max-width:1080px) {
-            @apply gap-[50px];
-            .footer-primary {
-                .footer-primary-right {
-                    @apply gap-[30px];
-                    .list-menu {
-                        .container-menu {
-                            @apply gap-[12px];
-                            label {
-                                @apply text-[13px]/[21px];
-                            }
-                            .container-list-menu {
-                                ul {
-                                    @apply gap-[20px];
-                                    li {
-                                        @apply text-[13px]/[21px] ;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .footer-primary-left {
-                    @apply gap-[40px] w-full;
-                    .footer-triv-logo {
-                        @apply items-end;
-                        img {
-                            @apply w-[30%] h-full;
-                        }
-                    }
-                    .footer-triv-address-logo {
-                        @apply gap-[20px] flex-col-reverse;
-                        .footer-socialmedia-list {
-                            ul {
-                                @apply gap-[20px];
-                                li {
-                                    a {
-                                        svg {
-                                            @apply w-[95%] h-[95%];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .footer-address {
-                            @apply text-right;
-                            h6, p {
-                                @apply text-[13px]/[21px] font-medium;
-                            }
-                        }
-                    }
-                }
-            }
-            .footer-secondary {
-                .footer-secondary-left {
-                    @apply  gap-[20px];
-                    .copyright-text {
-                        label {
-                            @apply text-[13px]/[21px];
-                        }
-                    }
-                    .footer-appstore {
-                        @apply gap-[8px] justify-center;
-                        img {
-                            &.logo-playstore {
-                                @apply !w-[130px] !h-[38.71px];
-                            }
-                            &.logo-appstore {
-                                @apply !w-[114px] !h-[38.71px];
-        
-                            }
-                        }
-                    }
-                }
-                .footer-secondary-right {
-                    @apply gap-[10px];
-                    .terdaftar-text {
-                        label {
-                            @apply text-[13px]/[21px] ;
-                        }
-                    }
-                    .footer-terdaftar-list {
-                        @apply gap-[27px];
-                        img {
-                            @apply w-[100%];
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-    @layer components {
-        &.mobile-responsive {
-           .footer-container {
-                @apply p-[20px] ;
-                .footer-primary {
-                    @apply flex-col gap-[30px];
-                    .footer-primary-right {
-                        @apply flex-col gap-[16px];
-                        .list-menu {
-                            @apply flex-col gap-[22px];
-                            .container-menu {
-                                label {
-                                    @apply text-[12px]/[150%];
-                                }
-                                .container-list-menu {
-                                    @apply flex-col gap-[22px];
-                                    ul {
-                                        @apply gap-[10px];
-                                        li {
-                                            @apply text-[11px]/[150%] font-medium;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .footer-primary-left {
-                        @apply gap-[30px] justify-center items-center;
-                        &.desktop {
-                            @apply hidden;
-                        }
-                        .footer-triv-logo {
-                            img {
-                                @apply !w-[120px] !h-[54px];
-                            }
-                        }
-                        .footer-address {
-                            @apply text-center;
-                            h6 {
-                                @apply text-[10px]/[15px];
-                            }
-                            p {
-                                @apply text-[10px]/[15px];
-                            }
-                        }
-                        .footer-triv-address-logo {
-                            @apply items-center;
-                            .footer-socialmedia-list {
-                                @apply justify-center;
-                                &.mobile {
-                                    @apply block;
-                                }
-                            }
-                            .footer-address {
-                                @apply w-[80%];
-                            }
-                        }
-
-                    }
-                }
-                .footer-secondary {
-                    @apply flex-col items-center gap-[40px];
-                    .footer-secondary-right {
-                        @apply items-center;
-                        .terdaftar-text {
-                            label {
-                                @apply text-[12px]/[18px];
-                            }
-                        }
-                    }
-                    .footer-secondary-left {
-                        .copyright-text {
-                            @apply items-center;
-                            label {
-                                @apply text-[12px]/[18px];
-
-                            }
-                        }
-                        
-                    }
-                }
-           }
-
-        }
-    }
+  }
 }
