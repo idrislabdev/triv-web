@@ -191,7 +191,7 @@ export default async function PrivacyPolicy({ params }: any) {
           <PrivacyHeaderSection />
           <PrivacyContentSection />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

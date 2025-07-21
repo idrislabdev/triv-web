@@ -13,7 +13,7 @@ export default async function FaqsTopics({ params }: any) {
         <main className="faqs-page sm:mobile-responsive md:mobile-responsive">
           <FaqsDetailTopicSection objLang={null} />
         </main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

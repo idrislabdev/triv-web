@@ -199,7 +199,7 @@ export default async function ProductsPulsa({ params }: any) {
           <ProductsInvestasiNowSection2 objLang={start_now_section} />
           <ProductsTestimonyCarouselSection />
         </main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

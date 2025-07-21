@@ -33,7 +33,7 @@ const StakingPage = (props: { lang: string; objLang: any; stakings: any }) => {
         <StakingFaqSection objLang={objLang.faq_section} />
         <StakingBannerSection objLang={objLang.start_now_section} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

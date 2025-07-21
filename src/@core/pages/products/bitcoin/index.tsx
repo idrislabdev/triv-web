@@ -1,23 +1,23 @@
-"use client";
+'use client';
 
-import MainHeader from "@/@core/components/main-header";
-import React from "react";
-import ProductsServiceHeaderNewSection from "../sections/service-header-new-section";
-import ProductsRegulasiNewSection from "../sections/regulasi-new-section";
-import ProductsLayananBitcoinNewSection from "../sections/layanan-bitcoin-new-section";
-import ProductsAffliateNewSection from "../sections/affliate-new-section";
-import ProductsAverageNewSection from "../sections/average-new-section";
-import ProductsEwalletNewSection from "../sections/ewallet-new-section";
-import ProductsBannerSection from "../sections/banner-section";
-import Footer from "@/@core/components/footer";
+import MainHeader from '@/@core/components/main-header';
+import React from 'react';
+import ProductsServiceHeaderNewSection from '../sections/service-header-new-section';
+import ProductsRegulasiNewSection from '../sections/regulasi-new-section';
+import ProductsLayananBitcoinNewSection from '../sections/layanan-bitcoin-new-section';
+import ProductsAffliateNewSection from '../sections/affliate-new-section';
+import ProductsAverageNewSection from '../sections/average-new-section';
+import ProductsEwalletNewSection from '../sections/ewallet-new-section';
+import ProductsBannerSection from '../sections/banner-section';
+import Footer from '@/@core/components/footer';
 
-import "@/styles/products-new.css";
-import "@/styles/components/form-service.css";
-import ProductsLayananNewSection from "../sections/layanan-new-section";
+import '@/styles/products-new.css';
+import '@/styles/components/form-service.css';
+import ProductsLayananNewSection from '../sections/layanan-new-section';
 
 const BitcoinPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
   const { asset, lang, objLang } = props;
-  const objProduct = { code: "BTC", name: "Bitcoin" };
+  const objProduct = { code: 'BTC', name: 'Bitcoin' };
 
   return (
     <>
@@ -42,7 +42,7 @@ const BitcoinPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
           objLang={objLang.start_now_section}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

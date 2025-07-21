@@ -1637,8 +1637,10 @@
         }
         .other-coins-subcontainer {
           @apply border border-neutral-200 rounded-[10px] p-[20px] flex flex-col gap-[16px];
-          h5 {
-            @apply text-[20px]/[30px] font-bold text-[#191B20];
+          a {
+            &.other-coin {
+              @apply text-[20px]/[30px] font-bold text-[#191B20] text-left;
+            }
           }
           p {
             @apply text-[12px]/[18px] font-medium text-neutral-700;
@@ -1668,7 +1670,7 @@
                   @apply text-[12px]/[18px] text-[#191B20] font-medium;
                 }
                 span {
-                  @apply text-[12px]/[18px] text-[#191B20] font-medium;
+                  @apply text-[12px]/[18px] text-[#191B20] font-medium flex items-center gap-[4px] justify-end;
                   &.up {
                     @apply !text-[#71BBED];
                   }
@@ -2229,8 +2231,10 @@
             }
             .other-coins-subcontainer {
               @apply border-0 p-0 gap-[18px];
-              h5 {
-                @apply text-[14px]/[21px];
+              a {
+                &.other-coin {
+                  @apply text-[14px]/[21px];
+                }
               }
               p {
                 @apply text-[12px]/[18px];

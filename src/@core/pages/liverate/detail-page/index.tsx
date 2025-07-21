@@ -29,7 +29,7 @@ const LiverateDetailPage = (props: {
           asset={asset}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </GlobalsProvider>
   );
 };

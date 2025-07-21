@@ -78,7 +78,7 @@ export default async function Blog({ params }: any) {
           <BlogBaruCryptoSection objLang={baru_crypto_section} />
           <BlogInvestasiNowSection objLang={start_now_section} />
         </main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ export default async function Faqs({ params }: any) {
           <FaqsTopicSection lang={params.lang} objLang={null} />
           <FaqsPopularSection objLang={null} />
         </main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

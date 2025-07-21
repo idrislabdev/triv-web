@@ -222,7 +222,7 @@ export default async function ServiceBnbPage({ params }: any) {
           <ProductsInvestasiNowSection objLang={start_now_section} />
           <ProductsTestimonyCarouselSection />
         </main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

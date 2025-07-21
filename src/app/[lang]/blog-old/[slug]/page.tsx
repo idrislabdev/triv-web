@@ -102,7 +102,7 @@ export default async function BlogSlug({ params }: any) {
           <BlogBaruCryptoSection objLang={baru_crypto_section} />
           <BlogInvestasiNowSection objLang={start_now_section} />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

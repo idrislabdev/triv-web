@@ -196,7 +196,7 @@ export default async function ContactUsPage({ params }: any) {
           <ContactUsInfoSection objLang={info_section} />
           <ContactUsFaqSection lang={params.lang} objLang={faq_section} />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

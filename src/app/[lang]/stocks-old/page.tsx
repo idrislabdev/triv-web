@@ -225,7 +225,7 @@ export default async function StocksOld({ params }: any) {
           <StocksFaqSection objLang={faq_section} />
           <StocksRegisterNowSection objLang={register_now_section} />
         </main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

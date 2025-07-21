@@ -193,7 +193,7 @@ export default async function KYC({ params }: any) {
           <KYCHeaderSection />
           <KYCContentSection />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

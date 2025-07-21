@@ -97,7 +97,7 @@ export default async function BlogSlug({ params }: any) {
             lang={params.lang}
           />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

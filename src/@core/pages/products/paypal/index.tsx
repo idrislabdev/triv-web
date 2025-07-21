@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import MainHeader from "@/@core/components/main-header";
-import React from "react";
-import ProductsRegulasiNewSection from "../sections/regulasi-new-section";
-import ProductsLayananPaypalNewSection from "../sections/layanan-paypal-new-section";
-import ProductsAffliateNewSection from "../sections/affliate-new-section";
-import ProductsAverageNewSection from "../sections/average-new-section";
-import ProductsEwalletNewSection from "../sections/ewallet-new-section";
-import ProductsBannerSection from "../sections/banner-section";
-import Footer from "@/@core/components/footer";
+import MainHeader from '@/@core/components/main-header';
+import React from 'react';
+import ProductsRegulasiNewSection from '../sections/regulasi-new-section';
+import ProductsLayananPaypalNewSection from '../sections/layanan-paypal-new-section';
+import ProductsAffliateNewSection from '../sections/affliate-new-section';
+import ProductsAverageNewSection from '../sections/average-new-section';
+import ProductsEwalletNewSection from '../sections/ewallet-new-section';
+import ProductsBannerSection from '../sections/banner-section';
+import Footer from '@/@core/components/footer';
 
-import "@/styles/products-new.css";
-import "@/styles/components/form-service.css";
-import ProductsServiceHeaderPaypalNewSection from "../sections/service-header-paypal-new-section";
+import '@/styles/products-new.css';
+import '@/styles/components/form-service.css';
+import ProductsServiceHeaderPaypalNewSection from '../sections/service-header-paypal-new-section';
 
 const PaypalPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
   const { asset, lang, objLang } = props;
-  const objProduct = { code: "USD", name: "Paypal" };
+  const objProduct = { code: 'USD', name: 'Paypal' };
   return (
     <>
       <MainHeader classText="header-white" lang={lang} />
@@ -37,7 +37,7 @@ const PaypalPageWrap = (props: { asset: any; lang: string; objLang: any }) => {
           objLang={objLang.start_now_section}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

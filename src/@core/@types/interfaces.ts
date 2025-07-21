@@ -5,6 +5,7 @@ export interface ILiverateMini {
   rate: number;
   change_24h: number;
   icon_url: string;
+  slug: string;
 }
 
 export interface ITopGainer {

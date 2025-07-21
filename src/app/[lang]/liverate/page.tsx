@@ -240,7 +240,7 @@ export default async function Liverate({ params }: any) {
           />
           <LiverateTestimonyCarouselSection />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

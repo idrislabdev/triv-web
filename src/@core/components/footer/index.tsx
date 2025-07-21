@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useState } from "react";
+import Image from 'next/image';
+import React, { useState } from 'react';
 import {
   FacebookIcon,
   InstagramIcon,
@@ -17,14 +17,16 @@ import {
   TiktokIcon,
   TwiterIcon,
   YoutubeIcon,
-} from "../custom-icons";
+} from '../custom-icons';
+import Link from 'next/link';
 
-const Footer = () => {
-  const [listMarketPlace, setListMarketplace] = useState("1");
-  const [listTrivFeature, setListrTrivFeature] = useState("0");
-  const [listProduct, setListProduct] = useState("0");
-  const [listCompany, setListCompany] = useState("0");
-  const [listOtherCyrpto, setListOtherCrypto] = useState("0");
+const Footer = (props: { lang: string }) => {
+  const { lang } = props;
+  const [listMarketPlace, setListMarketplace] = useState('1');
+  const [listTrivFeature, setListrTrivFeature] = useState('0');
+  const [listProduct, setListProduct] = useState('0');
+  const [listCompany, setListCompany] = useState('0');
+  const [listOtherCyrpto, setListOtherCrypto] = useState('0');
   const year = new Date();
 
   return (
@@ -102,11 +104,13 @@ const Footer = () => {
                 <label>Market Price</label>
                 <div
                   className={`container-list-menu ${
-                    listMarketPlace === "1" ? `!max-h-[400px]` : ""
+                    listMarketPlace === '1' ? `!max-h-[400px]` : ''
                   }`}
                 >
                   <ul>
-                    <li>Live Rate</li>
+                    <li>
+                      <Link href={`/${lang}/liverate`}>Live Rate</Link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -114,13 +118,17 @@ const Footer = () => {
                 <label>Triv Feature</label>
                 <div
                   className={`container-list-menu ${
-                    listTrivFeature === "1" ? `!max-h-[400px]` : ""
+                    listTrivFeature === '1' ? `!max-h-[400px]` : ''
                   }`}
                 >
                   <ul>
-                    <li>Market</li>
+                    <li>
+                      <Link href={`/${lang}/market`}>Market</Link>
+                    </li>
                     <li>Merchant</li>
-                    <li>Affliate</li>
+                    <li>
+                      <Link href={`/${lang}/affliate`}>Affliate</Link>
+                    </li>
                     <li>Gift Cards</li>
                   </ul>
                 </div>
@@ -129,12 +137,16 @@ const Footer = () => {
                 <label>Company</label>
                 <div
                   className={`container-list-menu ${
-                    listCompany === "1" ? `!max-h-[400px]` : ""
+                    listCompany === '1' ? `!max-h-[400px]` : ''
                   }`}
                 >
                   <ul>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
+                    <li>
+                      <Link href={`/${lang}/blog`}>Blog</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/contact-us`}>Contact Us</Link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -144,33 +156,69 @@ const Footer = () => {
                 <label>Crypto & Aset Digital Lain</label>
                 <div
                   className={`container-list-menu ${
-                    listOtherCyrpto === "1" ? `!max-h-[400px]` : ""
+                    listOtherCyrpto === '1' ? `!max-h-[400px]` : ''
                   }`}
                 >
                   <ul>
-                    <li>Bitcoin</li>
-                    <li>Ethereum</li>
-                    <li>Stellar</li>
-                    <li>Ripple</li>
-                    <li>Cardano</li>
+                    <li>
+                      <Link href={`/${lang}/home/bitcoin`}>Bitcoin</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/ethereum`}>Ethereum</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/stellar`}>Stellar</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/ripple`}>Ripple</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/cardano`}>Cardano</Link>
+                    </li>
                   </ul>
                   <ul>
-                    <li>Vaulta</li>
-                    <li>Dash</li>
-                    <li>Tether</li>
-                    <li>Litecoin</li>
-                    <li>Polkadot</li>
+                    <li>
+                      <Link href={`/${lang}/home/vaulta`}>Vaulta</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/dash`}>Dash</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/tether`}>Tether</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/litecoin`}>Litecoin</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/polkadot`}>Polkadot</Link>
+                    </li>
                   </ul>
                   <ul>
-                    <li>BNB</li>
-                    <li>DogeCoin</li>
-                    <li>ChainLink</li>
-                    <li>MaticPolygon</li>
+                    <li>
+                      <Link href={`/${lang}/home/bnb`}>BNB</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/dogecoin`}>DogeCoin</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/chainlink`}>ChainLink</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/polygon`}>Polygon</Link>
+                    </li>
                   </ul>
                   <ul>
-                    <li>Shiba Inu</li>
-                    <li>Axie Infinity</li>
-                    <li>Saham AS</li>
+                    <li>
+                      <Link href={`/${lang}/home/shibainu`}>Shiba Inu</Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/axieinfinity`}>
+                        Axie Infinity
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={`/${lang}/home/stocks`}>Saham AS</Link>
+                    </li>
                     <li>Saham Tesla</li>
                   </ul>
                 </div>

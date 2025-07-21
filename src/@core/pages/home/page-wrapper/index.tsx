@@ -54,7 +54,7 @@ const HomePage = (props: { lang: string; objLang: any; liverates: any }) => {
         />
         <HomeMediaSection objLang={objLang.media_section} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

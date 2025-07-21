@@ -191,7 +191,7 @@ export default async function KetentuanLayanan({ params }: any) {
           <KetentuanLayananHeaderSection />
           <KetentuanLayananContentSection />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import MainHeader from "@/@core/components/main-header";
-import React from "react";
-import ProductsServiceHeaderNewSection from "../sections/service-header-new-section";
-import ProductsRegulasiNewSection from "../sections/regulasi-new-section";
-import ProductsLayananNewSection from "../sections/layanan-new-section";
-import ProductsAffliateNewSection from "../sections/affliate-new-section";
-import ProductsAverageNewSection from "../sections/average-new-section";
-import ProductsEwalletNewSection from "../sections/ewallet-new-section";
-import ProductsBannerSection from "../sections/banner-section";
-import Footer from "@/@core/components/footer";
+import MainHeader from '@/@core/components/main-header';
+import React from 'react';
+import ProductsServiceHeaderNewSection from '../sections/service-header-new-section';
+import ProductsRegulasiNewSection from '../sections/regulasi-new-section';
+import ProductsLayananNewSection from '../sections/layanan-new-section';
+import ProductsAffliateNewSection from '../sections/affliate-new-section';
+import ProductsAverageNewSection from '../sections/average-new-section';
+import ProductsEwalletNewSection from '../sections/ewallet-new-section';
+import ProductsBannerSection from '../sections/banner-section';
+import Footer from '@/@core/components/footer';
 
-import "@/styles/products-new.css";
-import "@/styles/components/form-service.css";
+import '@/styles/products-new.css';
+import '@/styles/components/form-service.css';
 
 const DogecoinPageWrap = (props: {
   asset: any;
@@ -20,7 +20,7 @@ const DogecoinPageWrap = (props: {
   objLang: any;
 }) => {
   const { asset, lang, objLang } = props;
-  const objProduct = { code: "DOGE", name: "DogeCoin" };
+  const objProduct = { code: 'DOGE', name: 'DogeCoin' };
 
   return (
     <>
@@ -34,7 +34,7 @@ const DogecoinPageWrap = (props: {
         />
         <ProductsRegulasiNewSection objLang={objLang.regulasi_section} />
         <ProductsLayananNewSection
-          coin={asset.label.replace(/\s+/g, "").toLowerCase()}
+          coin={asset.label.replace(/\s+/g, '').toLowerCase()}
           objLang={objLang.layanan_section}
         />
         <ProductsAffliateNewSection objLang={objLang.triv_affliate} />
@@ -45,7 +45,7 @@ const DogecoinPageWrap = (props: {
           objLang={objLang.start_now_section}
         />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

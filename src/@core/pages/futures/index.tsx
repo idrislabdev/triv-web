@@ -41,7 +41,7 @@ const FuturesPage = (props: {
         />
         <FuturesBuySellAssetsSection objLang={objLang.invest_section} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

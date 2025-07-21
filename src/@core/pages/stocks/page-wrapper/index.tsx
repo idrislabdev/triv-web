@@ -42,7 +42,7 @@ const StocksPageWrapper = (props: {
         <StocksFaqSection objLang={objLang.faq_section} />
         <StocksBannerSection objLang={objLang.banner_section} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };

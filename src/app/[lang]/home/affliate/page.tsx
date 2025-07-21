@@ -193,7 +193,7 @@ export default async function Affliate({ params }: any) {
           <AffliateHolidaySection objLang={holiday_section} />
           <AffliateExtraSection objLang={extra_section} />
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );
