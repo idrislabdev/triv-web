@@ -14,11 +14,31 @@ const FormRegisterSubcontainer = (props: {
   const { lang, dictRegister, pekerjaans } = props;
   const router = useRouter();
   const [dataPekerjaan, setDataPekerjaans] = useState(pekerjaans);
-  const [pekerjaan, setPekerjaan] = useState('');
+  // const [pekerjaan, setPekerjaan] = useState('');
   const [typePassword, setTypePassword] = useState('password');
   const [typeConfirmPassword, setTypeConfirmPassword] = useState('password');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [occupation, setOccupation] = useState('');
+
+  const checkDisabled = () => {
+    if (
+      firstName == '' ||
+      lastName == '' ||
+      email == '' ||
+      password == '' ||
+      confirmPassword == '' ||
+      occupation == "'"
+    )
+      return true;
+  };
+
   const changePekerjaan = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setPekerjaan(event.target.value);
+    setOccupation(event.target.value);
+    // setPekerjaan(event.target.value);
   };
 
   const onSubmit = () => {
@@ -31,11 +51,15 @@ const FormRegisterSubcontainer = (props: {
         <label>{dictRegister.name_form_text}</label>
         <div className="form-input">
           <input
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
             type="text"
             className="color-1"
             placeholder={dictRegister.name_form_input_first_text}
           />
           <input
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             type="text"
             className="color-1"
             placeholder={dictRegister.name_form_input_second_text}
@@ -45,6 +69,8 @@ const FormRegisterSubcontainer = (props: {
       <div className="form-email">
         <label>{dictRegister.email_text}</label>
         <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           className="color-1"
           placeholder={dictRegister.email_text}
@@ -72,6 +98,8 @@ const FormRegisterSubcontainer = (props: {
               {typePassword === 'text' && <HideEyeIcon color={'#838899'} />}
             </span>
             <input
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               type={typePassword}
               className="color-1"
               placeholder={dictRegister.password_text}
@@ -94,6 +122,8 @@ const FormRegisterSubcontainer = (props: {
               )}
             </span>
             <input
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
               type={typeConfirmPassword}
               className="color-1"
               placeholder={dictRegister.password_repead_text}
@@ -104,8 +134,8 @@ const FormRegisterSubcontainer = (props: {
       <div className="form-jobs">
         <label>{dictRegister.job_text}</label>
         <select
-          className={pekerjaan == '' ? `!text-neutral-500` : `color-1`}
-          defaultValue={pekerjaan}
+          className={occupation == '' ? `!text-neutral-500` : `color-1`}
+          defaultValue={occupation}
           onChange={changePekerjaan}
         >
           <option value="" disabled>
@@ -140,7 +170,12 @@ const FormRegisterSubcontainer = (props: {
           </span>
         </p>
       </div>
-      <button onClick={() => onSubmit()}>{dictRegister.register_text}</button>
+      <button
+        onClick={() => onSubmit()}
+        disabled={checkDisabled() ? true : false}
+      >
+        {dictRegister.register_text}
+      </button>
       <label className="has-user">
         {dictRegister.has_account_1}{' '}
         <Link href={`/${lang}/login`}>{dictRegister.has_account_2}</Link>

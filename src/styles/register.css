@@ -211,6 +211,9 @@
           }
           button {
             @apply bg-primary text-white rounded-[14px] h-[54px] text-[18px]/[27px] w-full font-bold;
+            &:disabled {
+              @apply bg-opacity-35;
+            }
           }
           .sub-title-subcontainer {
             @apply hidden flex-col items-center text-center;
