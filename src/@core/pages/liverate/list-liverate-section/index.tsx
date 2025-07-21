@@ -55,7 +55,7 @@ const LiverateListSection = (props: {
 
   const changeCategory = (value: string) => {
     setCategory(value);
-    setParams({ ...params, category: value });
+    setParams({ ...params, page: 1, category: value });
   };
 
   // const fetchDataLiverateMobile = useCallback(async () => {
@@ -164,7 +164,8 @@ const LiverateListSection = (props: {
           <input
             placeholder="Asset name"
             onChange={debounce(
-              (event) => setParams({ ...params, keyword: event.target.value }),
+              (event) =>
+                setParams({ ...params, page: 1, keyword: event.target.value }),
               1000
             )}
           />
