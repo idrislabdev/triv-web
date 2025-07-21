@@ -1704,12 +1704,13 @@
           }
         }
         button {
-          @apply w-full h-[30px] rounded-[30px] text-[12px]/[18px] flex gap-[10px] justify-center items-center bg-primary text-white;
+          @apply hidden;
+          /* @apply w-full h-[30px] rounded-[30px] text-[12px]/[18px] flex gap-[10px] justify-center items-center bg-primary text-white;
           svg {
             path {
               @apply fill-white;
             }
-          }
+          } */
         }
         .media-container {
           @apply w-full;
