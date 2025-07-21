@@ -20,7 +20,7 @@ export default async function Liverate({ params }: any) {
 
   const respLiverate = await getLiverates();
   const liverates: ILiverate[] = respLiverate.data.data;
-  const metaLiverate: IMetaTable[] = respLiverate.data.statistic;
+  const metaLiverate: IMetaTable = respLiverate.data.statistic;
 
   const {
     header_section,
