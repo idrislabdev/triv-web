@@ -15,6 +15,7 @@ import {
   formatPlusMinus,
   nFormatter2,
 } from '@/@core/utils/general';
+import axiosInstance from '@/@core/utils/axios';
 
 const MarketMainContainer = (props: {
   lang: string;
@@ -27,7 +28,11 @@ const MarketMainContainer = (props: {
   const pathname = usePathname();
   const router = useRouter();
   const searchDropdown: any = useRef(null);
-
+  const tableBodyRef: any = useRef<HTMLDivElement>(null);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [prevScrollTop, setPrevScrollTop] = useState(0);
+  const [dataMarkets, setDataMarkets] = useState(markets);
   const selectMarket = (val: string) => {
     let paths = pathname.split('/');
     paths[3] = val;
@@ -53,6 +58,33 @@ const MarketMainContainer = (props: {
           .concat(item.symbol)
       : '0';
   };
+
+  const handleScroll = () => {
+    const el = tableBodyRef.current;
+    if (!el) return;
+
+    const currentScrollTop = el.scrollTop;
+    const isScrollingDown = currentScrollTop > prevScrollTop;
+    const isNearBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 20;
+
+    if (isScrollingDown && isNearBottom && !loading) {
+      setPage((prev) => prev + 1);
+    }
+
+    setPrevScrollTop(currentScrollTop);
+  };
+
+  useEffect(() => {
+    const fetchMarkets = async () => {
+      setLoading(true);
+      const response = await axiosInstance.get(`/v2/markets?page=${page}`);
+      const data = response.data.data;
+      setDataMarkets((prev: any) => [...prev, ...data]);
+      setLoading(false);
+    };
+
+    fetchMarkets();
+  }, [page]);
 
   useEffect(() => {
     // if (!showMarket) return;
@@ -112,7 +144,11 @@ const MarketMainContainer = (props: {
                   </div>
                 </div>
               </div>
-              <div className="table-body">
+              <div
+                ref={tableBodyRef}
+                onScroll={handleScroll}
+                className="table-body"
+              >
                 {markets.map((item: any, index: number) => (
                   <div
                     className="table-body-row"
