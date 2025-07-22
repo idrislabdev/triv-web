@@ -75,12 +75,14 @@ const MarketMainContainer = (props: {
   };
 
   useEffect(() => {
+    console.log(page);
     const fetchMarkets = async () => {
       setLoading(true);
-      const response = await axiosInstance.get(`/v2/markets?page=${page}`);
-      const data = response.data.data;
-      setDataMarkets((prev: any) => [...prev, ...data]);
-      setLoading(false);
+      axiosInstance.get(`/v2/market?page=${page}&per=10`).then((resp) => {
+        const { data } = resp.data;
+        setDataMarkets((prev: any) => [...prev, ...data]);
+        setLoading(false);
+      });
     };
 
     fetchMarkets();
