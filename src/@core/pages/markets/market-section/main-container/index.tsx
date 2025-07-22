@@ -151,7 +151,7 @@ const MarketMainContainer = (props: {
                 onScroll={handleScroll}
                 className="table-body"
               >
-                {markets.map((item: any, index: number) => (
+                {dataMarkets.map((item: any, index: number) => (
                   <div
                     className="table-body-row"
                     onClick={(_) => selectMarket(item.symbol)}
