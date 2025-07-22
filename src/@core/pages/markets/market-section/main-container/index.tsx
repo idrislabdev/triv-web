@@ -80,7 +80,7 @@ const MarketMainContainer = (props: {
       setLoading(true);
       axiosInstance.get(`/v2/market?page=${page}&per=10`).then((resp) => {
         const { data } = resp.data;
-        setDataMarkets((prev: any) => [...prev, ...data]);
+        if (page > 1) setDataMarkets((prev: any) => [...prev, ...data]);
         setLoading(false);
       });
     };
