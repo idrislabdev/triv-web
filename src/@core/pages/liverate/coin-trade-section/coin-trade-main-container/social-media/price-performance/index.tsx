@@ -1,6 +1,6 @@
 'use client';
 
-import { ChevronUpIcon } from '@/@core/components/custom-icons';
+import { ChevronUpIcon, TrendingIcon } from '@/@core/components/custom-icons';
 import { formatDecimalSmart } from '@/@core/utils/general';
 import moment from 'moment';
 import React, { useCallback, useEffect, useState } from 'react';
@@ -32,7 +32,12 @@ const PricePerformance = (props: { data: any }) => {
     <div className="card card-performance">
       <div className="card-header">
         <div className="card-title">
-          <h5>Price Performance</h5>
+          <div className="flex items-center gap-[6px]">
+            <span>
+              <TrendingIcon />
+            </span>
+            <h5>Price Performance</h5>
+          </div>
           <ChevronUpIcon />
         </div>
         <ul className="tab-time">
