@@ -20,7 +20,7 @@
       @apply !bg-primary !text-white;
     } */
     .stocks-hero-section {
-      background: url("/images/ornaments/home-ornament-dark.png") no-repeat;
+      background: url('/images/ornaments/home-ornament-dark.png') no-repeat;
       background-position: center;
       background-size: cover;
       @apply bg-[#000000];
@@ -29,25 +29,25 @@
           .section-terdaftar {
             .terdaftar-list-logo {
               .bappebti-logo {
-                background: url("/images/otoritas-keuangans/bappebti-big-white.png")
+                background: url('/images/otoritas-keuangans/bappebti-big-white.png')
                   no-repeat !important;
                 background-position: center;
                 background-size: contain !important;
               }
               .kominfo-logo {
-                background: url("/images/otoritas-keuangans/kominfo-light-logo.png")
+                background: url('/images/otoritas-keuangans/kominfo-light-logo.png')
                   no-repeat !important;
                 background-position: center;
                 background-size: contain !important;
               }
               .bsi-logo {
-                background: url("/images/otoritas-keuangans/bsi-white.png")
+                background: url('/images/otoritas-keuangans/bsi-white.png')
                   no-repeat !important;
                 background-position: center;
                 background-size: contain !important;
               }
               .cisa-logo {
-                background: url("/images/otoritas-keuangans/cisa-light-logo.png")
+                background: url('/images/otoritas-keuangans/cisa-light-logo.png')
                   no-repeat !important;
                 background-position: center;
                 background-size: contain !important;
@@ -57,9 +57,9 @@
         }
       }
     }
-    .stocks-banner-section {
+    /* .stocks-banner-section {
       background: linear-gradient(to bottom, transparent, #000) #141414;
-    }
+    } */
     .stocks-assets-crypto-section {
       a {
         @apply !bg-transparent !text-primary;
@@ -108,8 +108,8 @@
         /* @apply w-[550px] h-[400px] relative; */
         .img {
           @apply w-full h-full;
-          content: "";
-          background: url("/images/others/ewallets-dark.png") no-repeat;
+          content: '';
+          background: url('/images/others/ewallets-dark.png') no-repeat;
           background-position: center;
           background-size: contain !important;
         }
@@ -133,7 +133,7 @@
 
   .stocks-hero-section {
     @apply py-[100px] relative bg-[#F6F9FB] overflow-hidden flex flex-col justify-center;
-    background: url("/images/ornaments/home-ornament-light.png") no-repeat;
+    background: url('/images/ornaments/home-ornament-light.png') no-repeat;
     background-position: center;
     background-size: cover;
     .stocks-hero-section-area {
@@ -184,32 +184,32 @@
             @apply flex gap-[30px] items-center;
             .bappebti-logo {
               @apply w-[147px] h-[34px];
-              content: "";
-              background: url("/images/otoritas-keuangans/bappebti-color-big.png")
+              content: '';
+              background: url('/images/otoritas-keuangans/bappebti-color-big.png')
                 no-repeat;
               background-position: center;
               background-size: contain !important;
             }
             .kominfo-logo {
               @apply w-[118px] h-[37px];
-              content: "";
-              background: url("/images/otoritas-keuangans/kominfo-color-big.png")
+              content: '';
+              background: url('/images/otoritas-keuangans/kominfo-color-big.png')
                 no-repeat;
               background-position: center;
               background-size: contain !important;
             }
             .bsi-logo {
               @apply w-[83px] h-[44px];
-              content: "";
-              background: url("/images/otoritas-keuangans/bsi-color-big.png")
+              content: '';
+              background: url('/images/otoritas-keuangans/bsi-color-big.png')
                 no-repeat;
               background-position: center;
               background-size: contain !important;
             }
             .cisa-logo {
               @apply w-[110px] h-[44px];
-              content: "";
-              background: url("/images/otoritas-keuangans/cisa-color-big.png")
+              content: '';
+              background: url('/images/otoritas-keuangans/cisa-color-big.png')
                 no-repeat;
               background-position: center;
               background-size: contain !important;
@@ -870,9 +870,9 @@
         }
       }
       &::before {
-        content: "";
+        content: '';
         @apply absolute w-[500px] h-[500px] z-[-1] bottom-[170px] right-[30px];
-        background: url("/images/ornaments/circle-loop-ornament-2.png")
+        background: url('/images/ornaments/circle-loop-ornament-2.png')
           no-repeat;
       }
     }
@@ -1016,15 +1016,15 @@
         }
       }
       &::after {
-        content: "";
+        content: '';
         @apply absolute bottom-[-50px] w-[201px] h-[201px] right-0 top-0;
-        background: url("/images/ornaments/investasi-right-ornament.png")
+        background: url('/images/ornaments/investasi-right-ornament.png')
           no-repeat;
       }
       &::before {
-        content: "";
+        content: '';
         @apply absolute bottom-[-50px] w-[201px] h-[201px] left-0 top-0;
-        background: url("/images/ornaments/investasi-left-ornament.png")
+        background: url('/images/ornaments/investasi-left-ornament.png')
           no-repeat;
       }
     }
@@ -1155,8 +1155,8 @@
       @apply w-[550px] h-[400px] relative;
       .img {
         @apply w-full h-full;
-        content: "";
-        background: url("/images/others/ewallets-light.png") no-repeat;
+        content: '';
+        background: url('/images/others/ewallets-light.png') no-repeat;
         background-position: center;
         background-size: contain !important;
       }
@@ -1802,15 +1802,15 @@
             }
           }
           &::after {
-            content: "";
+            content: '';
             @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-            background: url("/images/ornaments/investasi-right-ornament-mobile.png")
+            background: url('/images/ornaments/investasi-right-ornament-mobile.png')
               no-repeat;
           }
           &::before {
-            content: "";
+            content: '';
             @apply absolute bottom-[-50px] w-[70px] h-[70px] right-0 top-0;
-            background: url("/images/ornaments/investasi-left-ornament-mobile.png")
+            background: url('/images/ornaments/investasi-left-ornament-mobile.png')
               no-repeat;
           }
         }
