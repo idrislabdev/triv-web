@@ -85,6 +85,71 @@
         }
       }
     }
+    .home-media-section {
+      .rfm-marquee-container {
+        .rfm-marquee {
+          .rfm-child {
+            @apply bg-[#111111];
+            box-shadow: 4px 14px 30px 0px #00000014;
+
+            .tempo-logo {
+              @apply w-[92px] h-[36px];
+              background: url('/images/medias/tempo-new-logo.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .kontan-logo {
+              @apply w-[92px] h-[36px];
+              background: url('/images/medias/kontan-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .dailysocial-logo {
+              @apply w-[135px] h-[36px];
+              background: url('/images/medias/dailysocial-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .tirto-logo {
+              @apply w-[107px] h-[36px];
+              background: url('/images/medias/tirto-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .detikfinance-logo {
+              @apply w-[150px] h-[36px];
+              background: url('/images/medias/detikfinance-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .kumparan-logo {
+              @apply w-[127px] h-[36px];
+              background: url('/images/medias/kumparan-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .suara-logo {
+              @apply w-[142px] h-[36px];
+              background: url('/images/medias/suara-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .beritasatu-logo {
+              @apply w-[89px] h-[36px];
+              background: url('/images/medias/beritasatu-white.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+            .cnbc-logo {
+              @apply w-[107px] h-[36px];
+              background: url('/images/medias/cnbc-logo.png') no-repeat !important;
+              background-position: center;
+              background-size: contain !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .home-page {
@@ -1447,42 +1512,62 @@
           @apply flex justify-between w-full;
         }
         .rfm-child {
-          @apply h-[56px] flex flex-col justify-center items-center p-[20px] rounded-[8px] mx-[20px];
+          @apply h-[56px] flex flex-col justify-center items-center px-[20px] rounded-[8px] mx-[20px];
           box-shadow: 4px 14px 30px 0px #00000014;
-          img {
-            &.tempo-logo {
-              @apply w-[92px] h-[36px];
-            }
-            &.kontan-logo {
-              @apply w-[92px] h-[36px];
-            }
-            &.kontan-logo {
-              @apply w-[107px] h-[36px];
-            }
-            &.dailysocial-logo {
-              @apply w-[135px] h-[36px];
-            }
-            &.tirto-logo {
-              @apply w-[107px] h-[36px];
-            }
-            &.detikfinance-logo {
-              @apply w-[150px] h-[36px];
-            }
-            &.kontan-logo {
-              @apply w-[150px] h-[36px];
-            }
-            &.kumparan-logo {
-              @apply w-[127px] h-[36px];
-            }
-            &.suara-logo {
-              @apply w-[142px] h-[36px];
-            }
-            &.beritasatu-logo {
-              @apply w-[89px] h-[36px];
-            }
-            &.cnbc-logo {
-              @apply w-[107px] h-[36px];
-            }
+
+          .tempo-logo {
+            @apply w-[92px] h-[36px];
+            background: url('/images/medias/tempo-new-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .kontan-logo {
+            @apply w-[92px] h-[36px];
+            background: url('/images/medias/kontan-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .dailysocial-logo {
+            @apply w-[135px] h-[36px];
+            background: url('/images/medias/dailysocial-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .tirto-logo {
+            @apply w-[107px] h-[36px];
+            background: url('/images/medias/tirto-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .detikfinance-logo {
+            @apply w-[150px] h-[36px];
+            background: url('/images/medias/detikfinance-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .kumparan-logo {
+            @apply w-[127px] h-[36px];
+            background: url('/images/medias/kumparan-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .suara-logo {
+            @apply w-[142px] h-[36px];
+            background: url('/images/medias/suara-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .beritasatu-logo {
+            @apply w-[89px] h-[36px];
+            background: url('/images/medias/beritasatu-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
+          }
+          .cnbc-logo {
+            @apply w-[107px] h-[36px];
+            background: url('/images/medias/cnbc-logo.png') no-repeat !important;
+            background-position: center;
+            background-size: contain !important;
           }
         }
       }
