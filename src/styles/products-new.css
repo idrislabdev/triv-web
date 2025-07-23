@@ -159,8 +159,14 @@
       /* @apply p-[20px]; */
       .layanan-container {
         .card-subcontainer {
+          h5 {
+            @apply !text-[#2E3339];
+          }
+          p {
+            @apply !text-[#4B5060];
+          }
           &.swap {
-            @apply bg-[#234324];
+            @apply bg-[#F0FAF0];
             .box-layanan {
               span {
                 @apply bg-[#67C48F];
@@ -173,7 +179,7 @@
             }
           }
           &.hoddl {
-            @apply bg-[#4A270A];
+            @apply bg-[#FFF3E8];
             .box-layanan {
               span {
                 @apply bg-[#FF7F17];
@@ -186,7 +192,7 @@
             }
           }
           &.kirim {
-            @apply bg-[#13413B];
+            @apply bg-[#EBFBF9];
             .box-layanan {
               span {
                 @apply bg-[#289C8C];
@@ -199,7 +205,7 @@
             }
           }
           &.jual-beli {
-            @apply bg-[#1A3647];
+            @apply bg-[#F4F8FB];
             .box-layanan {
               span {
                 @apply bg-[#85C8FA];
@@ -212,7 +218,7 @@
             }
           }
           &.terima {
-            @apply bg-[#4E3C06];
+            @apply bg-[#FFF9E6];
             .box-layanan {
               span {
                 @apply !bg-[#F2AF22];
