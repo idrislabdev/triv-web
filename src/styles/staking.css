@@ -39,6 +39,22 @@
     }
   }
   .staking-page {
+    .staking-hero-section {
+      .staking-hero-section-area {
+        .section-text {
+          .text-info-register {
+            .text-info {
+              .text-detail-info {
+                @apply flex flex-col;
+                label {
+                  @apply !text-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .staking-benefit-section {
       button {
         @apply !bg-[#3A80AF] !text-white;
