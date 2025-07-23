@@ -1035,10 +1035,10 @@
       .baru-crypto-title {
         @apply flex flex-col gap-[20px] pl-[100px] w-[353px];
         h5 {
-          @apply text-[24px]/[42px] font-bold text-black;
+          @apply text-[24px]/[150%] font-bold text-black;
         }
         p {
-          @apply text-[16px]/[32px] font-medium text-black;
+          @apply text-[16px]/[200%] font-medium text-black;
         }
         a {
           @apply flex justify-center items-center gap-[8px] bg-primary text-white rounded-[30px] py-[13px] w-[260px] text-[14px]/[21px] font-bold;
@@ -1091,10 +1091,10 @@
         .baru-crypto-title {
           @apply flex flex-col gap-[20px];
           h5 {
-            @apply text-[26px]/[23px];
+            @apply text-[26px]/[150%];
           }
           p {
-            @apply text-[16px]/[23px];
+            @apply text-[16px]/[200%];
           }
           a {
             @apply text-[14px]/[21px] rounded-[30px] w-[240px] h-[40px] gap-[8px];
