@@ -30,20 +30,20 @@
     "content": "Triv supports a wide variety of transactions and not just buying and selling. Whether it's swaps, staking or anything else you can do in one application. Triv is the app with the most comprehensive features to manage and grow your portfolio.",
     "card": {
       "jual_beli": {
-        "title": "Buy and sell Shibainu 24 hours",
-        "content": "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Shibainu in real-time to your bank / e-wallet in seconds even on holidays.",
+        "title": "Buy and sell Shiba Inu 24 hours",
+        "content": "Unlike traditional investment instruments, Crypto market has no holidays. You can sell your Shiba Inu in real-time to your bank / e-wallet in seconds even on holidays.",
         "image_url": "/images/services/shibainu/buy-shibainu.png",
         "image_class": "macbook"
       },
       "kirim": {
         "title": "Send Shibainnu",
-        "content": "Since it is digital, sending Shibainu can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Dash is free of charge from a fellow Triv users!",
+        "content": "Since it is digital, sending Shiba Inu can be as easy as sending an email. Crypto also doesn't have any physical borders the way dollars or euros do. We may call it the future currency. Sending Dash is free of charge from a fellow Triv users!",
         "image_url": "/images/services/shibainu/send-shibainu.png",
         "image_class": "iphone"
       },
       "terima": {
-        "title": "Receive Shibainu",
-        "content": "You can receive Shibainu through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
+        "title": "Receive Shiba Inu",
+        "content": "You can receive Shiba Inu through your Triv account instantly. Since crypto is unlimited financial ecosystem.",
         "image_url": "/images/services/shibainu/receive-shibainu.png",
         "image_class": "iphone"
       },
@@ -54,7 +54,7 @@
         "image_class": "macbook"
       },
       "swap": {
-        "title": "Swap Shibainu",
+        "title": "Swap Shiba Inu",
         "content": "There are 1000+ supported cryptocurrencies in Triv platform and counting. You can enjoy the benefits of the 24/7 crypto staking service in real time.",
         "image_url": "/images/services/shibainu/swap-shibainu.png",
         "image_class": "iphone"

@@ -20,7 +20,7 @@ const AxieinfinityPageWrap = (props: {
   objLang: any;
 }) => {
   const { asset, lang, objLang } = props;
-  const objProduct = { code: 'AXS', name: 'Axieinfinity' };
+  const objProduct = { code: 'AXS', name: 'Axie Infinity' };
 
   return (
     <>
