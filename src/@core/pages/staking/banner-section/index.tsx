@@ -1,9 +1,10 @@
 import { ArrowRightIcon } from '@/@core/components/custom-icons';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
-const StakingBannerSection = (props: { objLang: any }) => {
-  const { objLang } = props;
+const StakingBannerSection = (props: { lang: string; objLang: any }) => {
+  const { lang, objLang } = props;
   return (
     <section className="staking-banner-section">
       <div className="main-container">
@@ -14,9 +15,9 @@ const StakingBannerSection = (props: { objLang: any }) => {
               <p>{objLang.description}</p>
             </div>
             <div className="button-area">
-              <a className="button">
+              <Link href={`/${lang}/register`} className="button">
                 {objLang.button} <ArrowRightIcon color={'#4DAAE9'} />
-              </a>
+              </Link>
               <div className="app-store-list">
                 <a
                   href="https://play.google.com/store/apps/details?id=id.co.triv"

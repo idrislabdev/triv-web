@@ -16,6 +16,9 @@
   }
   .products-page {
     .products-service-hero-new-section {
+      background: url('/images/ornaments/home-ornament-dark.png') no-repeat;
+      background-position: center;
+      background-size: cover;
       .service-hero-container {
         .left-subcontainer {
           button {
@@ -282,7 +285,7 @@
   }
   .products-service-hero-new-section {
     @apply flex flex-col justify-center items-center py-[50px]  gap-[20px] bg-[#F6F9FB] relative;
-    background: url('/images/ornaments/service-ornament.png') no-repeat;
+    background: url('/images/ornaments/home-ornament-light.png') no-repeat;
     background-position: center;
     background-size: cover;
     .service-hero-container {

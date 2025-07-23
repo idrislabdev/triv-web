@@ -39,9 +39,9 @@ const CoinTradeSideContainer = (props: {
               />
             </div>
             <div className="list-button">
-              <a>100.00</a>
-              <a>500.00</a>
-              <a>1.000.00</a>
+              <a>100.000</a>
+              <a>500.000</a>
+              <a>1.000.000</a>
             </div>
           </div>
         </div>

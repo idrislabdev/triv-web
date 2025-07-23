@@ -175,6 +175,13 @@
               @apply !bg-[#3A80AF];
             }
           }
+          .other-coins-subcontainer {
+            a {
+              &.other-coin {
+                @apply text-[#EBEEF4];
+              }
+            }
+          }
         }
       }
     }

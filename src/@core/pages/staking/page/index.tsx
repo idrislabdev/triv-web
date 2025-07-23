@@ -31,7 +31,7 @@ const StakingPage = (props: { lang: string; objLang: any; stakings: any }) => {
           objLang={objLang.coin_section}
         />
         <StakingFaqSection objLang={objLang.faq_section} />
-        <StakingBannerSection objLang={objLang.start_now_section} />
+        <StakingBannerSection lang={lang} objLang={objLang.start_now_section} />
       </main>
       <Footer lang={lang} />
     </>
