@@ -71,18 +71,18 @@
     "questions": [
       {
         "title": "Apa Itu Staking Kripto?",
-        "description": "Staking kripto adalah proses mengunci koin Anda dalam blockchain proof of stake untuk mengamankan jaringan tersebut dan mendapatkan bunga atau dividen. Bunga ini berasal dari protokol blockchain terkait, bukan dari Triv."
+        "description": "Crypto Staking adalah proses mengunci koin anda dalam blockchain proof of stake untuk mengamankan jaringan koin tersebut agar mendapatkan bunga dividen. Bunga tersebut merupakan bunga dari protokol blockchain terkait dan bukan dari Triv."
       },
       {
         "title": "Apa Keuntungan Staking Kripto?",
-        "description": "Staking kripto cocok bagi investor yang mempunyai pandangan jangka panjang, karena selama anda HODL coin tersebut anda akan terus mendapatkan bunga. Sehingga selama proses investasi, koin anda juga dapat bertumbuh secara nominal coin."
+        "description": "Crypto Staking adalah investasi sangat cocok bagi investor yang mempunyai pandangan jangka panjang, karena selama anda HODL coin tersebut anda akan terus mendapatkan bunga. Sehingga selama proses investasi , koin anda juga dapat bertumbuh secara nominal coin."
       },
       {
         "title": "Apakah Staking Kripto aman?",
-        "description_1": "Staking kripto biasanya membutuhkan modal besar dan keahlian IT yang tinggi. Sebagai contoh, untuk melakukan staking ETH secara mandiri, minimal staking adalah 32 ETH atau setara sekitar 1,5 miliar Rupiah saat artikel ini ditulis.",
-        "description_2": "Selain itu, terdapat berbagai risiko staking kripto terkait aspek teknis, seperti capital loss atau yang dikenal dengan istilah slashing. Risiko ini bisa terjadi jika proses staking tidak dilakukan dengan benar, misalnya server validator offline, sehingga dana staking Anda dikenakan penalti.",
-        "description_3": "Dengan staking di Triv, Anda bisa mulai hanya dengan modal Rp 50.000. Triv menjamin perlindungan modal Anda dari risiko tersebut berkat keahlian teknis kami. Sejak 2015, Triv tidak pernah mengalami downtime atau insiden keamanan yang berarti.",
-        "description_4": "Triv juga tersertifikasi ISO27001, CISA, dan PCI DSS 6.6, menjamin standar keamanan dan kepatuhan yang tinggi."
+        "description_1": "Crypto Staking membutuhkan modal yang besar dan keahlian IT yang tinggi, sebagai contoh untuk ETH jika anda ingin melakukan staking kripto sendiri, minimal staking ETH adalah 32 ETH atau setara 1.5 Milyar rupiah saat artikel ini ditulis.",
+        "description_2": "Selain itu terdapat berbagai resiko staking crypto dari pihak IT yang dapat menyebabkan capital loss atau dikenal dengan nama slashing jika proses staking tidak dilakukan dengan benar seperti server validator offline dan lain sebagainya sehingga menyebabkan dana staking anda dikenakan penalty.",
+        "description_3": "Dengan staking di Triv, anda bisa mulai staking hanya dengan 100.000 IDR dan Triv menjamin capital anda dari resiko dengan berbagai keahlian teknis kami , Sejak 2015, Triv tidak pernah mengalami downtime ataupun insiden keamanan yang berarti.",
+        "description_4": "Triv juga tersertifikasi ISO27001, CISA, dan PCI DSS 6.6"
       }
     ]
   },
