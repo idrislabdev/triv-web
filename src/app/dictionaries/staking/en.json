@@ -1,93 +1,94 @@
 {
-    "header_section": {
-        "title_1": "Earn Additional Income With",
-        "title_2": "Crypto Staking",
-        "description": "Earn extra income by staking your favorite crypto. The way Crypto Staking works is by securing the associated coin protocol and in return you will earn interest on your coins. Unlike bank deposits, staking interest can be taken daily or weekly.",       
-        "registered_text": "Registered and supervised by"
+  "header_section": {
+    "title_1": "Earn Additional Income With",
+    "title_2": "Crypto Staking",
+    "description": "Earn extra income by staking your favorite crypto. The way Crypto Staking works is by securing the associated coin protocol and in return you will earn interest on your coins. Unlike bank deposits, staking interest can be taken daily or weekly.",
+    "registered_text": "Registered and supervised by"
+  },
+  "benefit_section": {
+    "media": {
+      "title": "Watch our youtube video to learn complete tutorial step to do Triv Staking",
+      "description": "By using Triv staking, you will earn additional income while HODLing your coin, it is suitable for long term investor that believe the growth of your coin ecosystem. No fee, No risk and Insured for your all Triv staking transactions."
     },
-    "benefit_section": {
-        "media": {
-            "title" : "Watch our youtube video to learn complete tutorial step to do Triv Staking",
-            "description": "By using Triv staking, you will earn additional income while HODLing your coin, it is suitable for long term investor that believe the growth of your coin ecosystem. No fee, No risk and Insured for your all Triv staking transactions."
+    "benefit": {
+      "title_1": "Benefits of",
+      "title_2": "staking crypto",
+      "title_3": "on Triv",
+      "benefits": [
+        {
+          "title": "100% Insured",
+          "description": "All Triv customer funds in cold storage are guaranteed and insured by Bitgo Custodian and Lloyd's insurance England in the amount of 100,000,000 USD or equivalent to 1.45 trillion Rupiah."
         },
-        "benefit": {
-            "title_1": "Benefits of",
-            "title_2": "staking crypto",
-            "title_3": "on Triv",
-            "benefits": [
-                {
-                    "title": "100% Insured",
-                    "description": "All Triv customer funds in cold storage are guaranteed and insured by Bitgo Custodian and Lloyd's insurance England in the amount of 100,000,000 USD or equivalent to 1.45 trillion Rupiah."
-                },
-                {
-                    "title": "0% Fee",
-                    "description": "Receive interest without any deductions, the interest shown is the interest you get clean."
-                },
-                {
-                    "title": "Dividend Yield",
-                    "description": "Interest is distributed regularly and you can disburse it directly to 61 banks & E-wallet supported by the Triv system 24 hours without holidays."
-                }
-            ],
-            "button": "Get Started"
+        {
+          "title": "0% Fee",
+          "description": "Receive interest without any deductions, the interest shown is the interest you get clean."
+        },
+        {
+          "title": "Dividend Yield",
+          "description": "Interest is distributed regularly and you can disburse it directly to 61 banks & E-wallet supported by the Triv system 24 hours without holidays."
         }
-    },
-    "guide_crypto_section": {
-        "title_1": "Guide on how to easily",
-        "title_2": "stake crypto",
-        "title_3": "on TRIV",
-        "guides": [
-            {
-                "title": "Pick your favorite coin",
-                "description": "Choose from a variety of coins supported by Triv. Crypto Staking is suitable for long-term investors who believe in the growth of the coin."
-            },
-            {
-                "title": "Set stake amount",
-                "description": "Enter your desired amount to be staked, you can start staking as low as 100.000 IDR within Triv system."
-            },
-            {
-                "title": "Happy earning !",
-                "description": "You will receive your interest daily or weekly , All interest can be withdrawn to bank instantly or re-stake and grow bigger with your staking stash."
-            }
-        ]
-    },
-    "calculator_section" : {
-        "title": "See how much you can earn🚀",
-        "description": "*The calculation above is only an indicative calculation, staking interest can change at any time according to supply and demand on the related on-chain."
-    },
-    "coin_section": {
-        "title_1": "What Coins Can Be",
-        "title_2": "Staked",
-        "title_3": "at TRIV?",
-        "description": "Start from now. Choose your favorite asset and grow your crypto with TRIV, the best Crypto Staking in Indonesia",
-        "text_card_1" : "Staking",
-        "text_card_2" : "with Interest",
-        "text_card_3" : "year now.",
-        "text_card_4" : "Interest"
-    },
-    "faq_section": {
-        "title_1" : "FAQ",
-        "title_2" : "(Crypto Staking Related Questions)",
-        "questions" : [
-            {
-                "title" : "What is Crypto Staking?",
-                "description": "Crypto Staking is the process of locking your coins in a proof of stake blockchain to secure the coin network for dividend yield. The interest is the interest of the associated blockchain protocol and not of Triv."
-            },
-            {
-                "title" : "What are the Benefits of Crypto Staking?",
-                "description": "Crypto Staking is a very suitable investment for investors who have a long-term view, because as long as you HODL the coins you will continue to earn interest. So that during the investment process, your coins can also grow in nominal coin terms."
-            },
-            {
-                "title" : "Is Crypto Staking Safe?",
-                "description_1": "Crypto Staking is a complex procedure to be done alone. Not only require intensive capital to start staking but an expertise on IT is required. For example, if you choose to stake ETH by yourself, ETH requires minimum 32 ETH to start staking or equal to 1.5 Billion rupiah during this article is written.",
-                "description_2": "In addition, there are various risks of crypto staking from IT parties that can cause capital loss or known as slashing if the staking process is not done properly such as offline validator servers and so on, causing your staking funds to be penalized.",
-                "description_3": "By staking in Triv, we warranty your capital from various risk that can happen during staking process and you can start just by 100.000 IDR .",
-                "description_4" : "Since our founding in 2015, Triv has 0 downtime and perfect record of security. Triv is certified ISO27001 , CISA & PCI DSS 6.6"
-            }
-        ]
-    },
-    "start_now_section": {
-        "title" : "The Best Triv Crypto Staking, Start With Only IDR 50,000 !",
-        "description": "Build a crypto portfolio. Grow it with the best crypto staking in the Triv ecosystem, the Indonesian Cryptocurrency marketplace, registered and supervised by Bappebti.",
-        "button": "Stake Now"
+      ],
+      "button": "Get Started"
     }
+  },
+  "guide_crypto_section": {
+    "title_1": "Guide on how to easily",
+    "title_2": "stake crypto",
+    "title_3": "on TRIV",
+    "guides": [
+      {
+        "title": "Pick your favorite coin",
+        "description": "Choose from a variety of coins supported by Triv. Crypto Staking is suitable for long-term investors who believe in the growth of the coin."
+      },
+      {
+        "title": "Set stake amount",
+        "description": "Enter your desired amount to be staked, you can start staking as low as 100.000 IDR within Triv system."
+      },
+      {
+        "title": "Happy earning !",
+        "description": "You will receive your interest daily or weekly , All interest can be withdrawn to bank instantly or re-stake and grow bigger with your staking stash."
+      }
+    ]
+  },
+  "calculator_section": {
+    "title": "See how much you can earn🚀",
+    "description": "*The calculation above is only an indicative calculation, staking interest can change at any time according to supply and demand on the related on-chain."
+  },
+  "coin_section": {
+    "title_1": "What Coins Can Be",
+    "title_2": "Staked",
+    "title_3": "at TRIV?",
+    "description": "Start from now. Choose your favorite asset and grow your crypto with TRIV, the best Crypto Staking in Indonesia",
+    "text_card_1": "Staking",
+    "text_card_2": "with Interest",
+    "text_card_3": "year now.",
+    "text_card_4": "Interest",
+    "text_card_5": "year"
+  },
+  "faq_section": {
+    "title_1": "FAQ",
+    "title_2": "(Crypto Staking Related Questions)",
+    "questions": [
+      {
+        "title": "What is Crypto Staking?",
+        "description": "Crypto Staking is the process of locking your coins in a proof of stake blockchain to secure the coin network for dividend yield. The interest is the interest of the associated blockchain protocol and not of Triv."
+      },
+      {
+        "title": "What are the Benefits of Crypto Staking?",
+        "description": "Crypto Staking is a very suitable investment for investors who have a long-term view, because as long as you HODL the coins you will continue to earn interest. So that during the investment process, your coins can also grow in nominal coin terms."
+      },
+      {
+        "title": "Is Crypto Staking Safe?",
+        "description_1": "Crypto Staking is a complex procedure to be done alone. Not only require intensive capital to start staking but an expertise on IT is required. For example, if you choose to stake ETH by yourself, ETH requires minimum 32 ETH to start staking or equal to 1.5 Billion rupiah during this article is written.",
+        "description_2": "In addition, there are various risks of crypto staking from IT parties that can cause capital loss or known as slashing if the staking process is not done properly such as offline validator servers and so on, causing your staking funds to be penalized.",
+        "description_3": "By staking in Triv, we warranty your capital from various risk that can happen during staking process and you can start just by 100.000 IDR .",
+        "description_4": "Since our founding in 2015, Triv has 0 downtime and perfect record of security. Triv is certified ISO27001 , CISA & PCI DSS 6.6"
+      }
+    ]
+  },
+  "start_now_section": {
+    "title": "The Best Triv Crypto Staking, Start With Only IDR 50,000 !",
+    "description": "Build a crypto portfolio. Grow it with the best crypto staking in the Triv ecosystem, the Indonesian Cryptocurrency marketplace, registered and supervised by Bappebti.",
+    "button": "Stake Now"
+  }
 }
