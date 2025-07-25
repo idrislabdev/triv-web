@@ -1,80 +1,80 @@
 {
-    "hero_section": {
-        "title_1": "Trade Crypto Futures with",
-        "title_2": "25x Leverage",
-        "title_3": "on a Fully Regulated Platform",
-        "button": "Trade Now",
-        "registered" : "Registered and licensed by"
+  "hero_section": {
+    "title_1": "Trade Crypto Futures with",
+    "title_2": "25x Leverage",
+    "title_3": "on a Fully Regulated Platform",
+    "button": "Trade Now",
+    "registered": "Registered and licensed by"
+  },
+  "what_why_section": {
+    "what_title_1": "What is",
+    "what_title_2": "Crypto",
+    "what_title_3": "Futures",
+    "what_description": "The Crypto Futures Market lets you take advantage of price movements without actually owning the coins. Simply open a long or short position based on market conditions. Start trading now on TRIV and explore endless opportunities with",
+    "why_title_1": "Why Trade Crypto",
+    "why_title_2": "Futures",
+    "why_title_3": "on Triv",
+    "carousel_1": {
+      "title": "Secure, Legal, and Trusted Since 2015",
+      "description": "TRIV has been around since 2015 and is directly supervised by Bappebti. Safe, legal, and lets you focus on trading without worries."
     },
-    "what_why_section" : {
-        "what_title_1" : "What is",
-        "what_title_2" : "Crypto",
-        "what_title_3" : "Futures",
-        "what_description" : "The Crypto Futures Market lets you take advantage of price movements without actually owning the coins. Simply open a long or short position based on market conditions. Start trading now on TRIV and explore endless opportunities with",
-        "why_title_1" : "Why Trade Crypto",
-        "why_title_2" : "Futures",
-        "why_title_3" : "on Triv",
-        "carousel_1" : {
-            "title" : "Secure, Legal, and Trusted Since 2015",
-            "description" : "TRIV has been around since 2015 and is directly supervised by Bappebti. Safe, legal, and lets you focus on trading without worries."
-        },
-        "carousel_2" : {
-            "title" : "More Markets, More Opportunities",
-            "description" : "TRIV features a diverse selection of crypto futures markets, including BTC and trending altcoins. The larger the selection, the greater your profit potential."
-        },
-        "carousel_3" : {
-            "title" : "Maximize Gains in Any Market Condition",
-            "description" : "The futures market lets you go long or short following the market direction, so you can keep profiting even when the market falls."
-        },
-        "carousel_4" : {
-            "title" : "24/7 Support Team, Ready to Assist You Anytime",
-            "description" : "TRIV's 24/7 support team is always ready when you need them. Enjoy a seamless trading experience with maximum assistance."
-        },
-        "carousel_5" : {
-            "title" : "Safe Strategy, Maximum Profit",
-            "description" : "With Take Profit & Stop Loss features, you can set your profit and loss limits from the start. Your strategy becomes more disciplined, and you stay calm even when the market moves fast."
-        }
+    "carousel_2": {
+      "title": "More Markets, More Opportunities",
+      "description": "TRIV features a diverse selection of crypto futures markets, including BTC and trending altcoins. The larger the selection, the greater your profit potential."
     },
-    "list_coints_section": {
-        "title_1" : "Available Crypto",
-        "title_2" : "Futures",
-        "title_3" : "on Triv"
+    "carousel_3": {
+      "title": "Maximize Gains in Any Market Condition",
+      "description": "The futures market lets you go long or short following the market direction, so you can keep profiting even when the market falls."
     },
-    "step_section" : {
-        "title_1" : "4 Easy Steps to Start Trading ",
-        "title_2" : "Futures",
-        "title_3" : "on Triv",
-        "step_1"  : {
-            "title" : "Top up Your USDT Balance First. 🪙",
-            "description" : "Purchase USDT via your Spot account with IDR or swap your crypto assets."
-        },
-         "step_2"  : {
-            "title" : "Transfer Funds To Your Futures Wallet 🔁",
-            "description" : "Enter the amount, pick the sender and destination wallets, and complete the transfer easily."
-        },
-        "step_3"  : {
-            "title" : "Select Your Favorite Market 📈",
-            "description" : "Explore a wide range of crypto markets, from Bitcoin (BTC) to the latest trending altcoins, and discover your ideal trading market."
-        }, 
-        "step_4"  : {
-            "title" : "Set Your Strategy and Take Your Position 🚀",
-            "description" : "Take advantage of up to 25x leverage, plus Take Profit and Stop Loss tools to better optimize your trades and control risk securely."
-        }
+    "carousel_4": {
+      "title": "24/7 Support Team, Ready to Assist You Anytime",
+      "description": "TRIV's 24/7 support team is always ready when you need them. Enjoy a seamless trading experience with maximum assistance."
     },
-    "pemisahan_section" : {
-        "title_1" : "Secure separation between Spot and",
-        "title_2" : "Futures",
-        "title_3" : "assets",
-        "description" : "Clear separation of Spot and Futures portfolios lets you effortlessly manage and move your crypto assets between them."
-    },
-    "invest_section" : {
-        "title_1" : "Buy and sell digital assets",
-        "title_2" : "Anytime",
-        "title_3" : "and",
-        "title_4" : "Anywhere",
-        "title_5" : "with the Triv app.",
-        "subtitle": "Manage all of your portfolio and transaction in 1 device",
-        "description": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
-        "button": "Regsiter Now"
+    "carousel_5": {
+      "title": "Safe Strategy, Maximum Profit",
+      "description": "With Take Profit & Stop Loss features, you can set your profit and loss limits from the start. Your strategy becomes more disciplined, and you stay calm even when the market moves fast."
     }
+  },
+  "list_coints_section": {
+    "title_1": "Available Crypto",
+    "title_2": "Futures",
+    "title_3": "on Triv"
+  },
+  "step_section": {
+    "title_1": "4 Easy Steps to Start Trading ",
+    "title_2": "Futures",
+    "title_3": "on Triv",
+    "step_1": {
+      "title": "Top up Your USDT Balance First. 🪙",
+      "description": "Purchase USDT via your Spot account with IDR or swap your crypto assets."
+    },
+    "step_2": {
+      "title": "Transfer Funds To Your Futures Wallet 🔁",
+      "description": "Enter the amount, pick the sender and destination wallets, and complete the transfer easily."
+    },
+    "step_3": {
+      "title": "Select Your Favorite Market 📈",
+      "description": "Explore a wide range of crypto markets, from Bitcoin (BTC) to the latest trending altcoins, and discover your ideal trading market."
+    },
+    "step_4": {
+      "title": "Set Your Strategy and Take Your Position 🚀",
+      "description": "Take advantage of up to 25x leverage, plus Take Profit and Stop Loss tools to better optimize your trades and control risk securely."
+    }
+  },
+  "pemisahan_section": {
+    "title_1": "Secure separation between Spot and",
+    "title_2": "Futures",
+    "title_3": "assets",
+    "description": "Clear separation of Spot and Futures portfolios lets you effortlessly manage and move your crypto assets between them."
+  },
+  "invest_section": {
+    "title_1": "Buy and sell digital assets",
+    "title_2": "Anytime",
+    "title_3": "and",
+    "title_4": "Anywhere",
+    "title_5": "with the Triv app.",
+    "subtitle": "Manage all of your portfolio and transaction in 1 device",
+    "description": "With the Triv application you can carry out all buying, selling and staking Cryptocurrency transactions in Indonesia Transaction in Indonesia in one hand. Get the best experience in monitoring and building your Digital Asset portfolio with the Triv application.",
+    "button": "Register Now"
+  }
 }
