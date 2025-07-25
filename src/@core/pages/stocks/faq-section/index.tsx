@@ -182,10 +182,8 @@ const StocksFaqSection = (props: { objLang: any }) => {
                 ref={container2}
               >
                 <div className="content-area">
-                  <p>{objLang.questions[4].description}</p>
-                  {objLang.questions[4].description_2 && (
-                    <p>{objLang.questions[4].description_2}</p>
-                  )}
+                  <p>{objLang.questions[4].description_1}</p>
+                  <p>{objLang.questions[4].description_2}</p>
                 </div>
               </div>
             </li>

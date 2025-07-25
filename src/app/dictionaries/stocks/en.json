@@ -102,7 +102,8 @@
       },
       {
         "title": "Are there any limitations?",
-        "description": "The sky is your limit! Tokenized stocks reflect the price of shares on traditional brokers. You can trade as much as you like, or HODL and invest based on your preferences."
+        "description_1": "The sky is your limit!",
+        "description_2": "Tokenized stocks reflect the price of shares on traditional brokers. You can trade as much as you like, or HODL and invest based on your preferences."
       }
     ]
   },
