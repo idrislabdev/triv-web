@@ -51,7 +51,7 @@
   },
   "faq_section": {
     "title_1": "Apa itu kripto?",
-    "title_2": "Crypto berasal dari kata cryptography atau kriptografi. Kriptografi adalah ilmu yang mempelajari teknik-teknik untuk mengamankan informasi, yaitu dengan mengubah pesan menjadi kode rahasia (enkripsi) dan mengembalikannya ke bentuk semula (dekripsi), guna melindungi data dari akses ilegal atau perubahan selama proses pengiriman.",
+    "title_2": "Untuk pemula yang ingin berinvestasi dalam cryptocurrency, langkah awal adalah melakukan penelitian mendalam. Pelajari tentang berbagai jenis cryptocurrency yang ada, buat rencana investasi yang sesuai dengan tujuan dan toleransi risiko Anda, dan mulai beli cryptocurrency yang Anda minati. Penting untuk memahami volatilitas pasar dan melakukan diversifikasi portofolio Anda dengan berinvestasi dalam beberapa cryptocurrency. Pertimbangkan juga untuk berkonsultasi dengan profesional keuangan jika diperlukan. Platform triv memudahkan anda dalam mempelajari berbagai jenis crypto, anda juga bisa menghubungi kontak layanan kami atau gabung dengan komunitas kami. Install aplikasi Triv (Marketplace Cryptocurrency Indonesia) sekarang",
     "questions": [
       {
         "title": "Apa Keuntungan Investasi Kripto?",
@@ -59,8 +59,11 @@
       },
       {
         "title": "Bagaimana Cara Invest Kripto Untuk Pemula?",
-        "description_1": "Untuk pemula yang ingin berinvestasi cryptocurrency, langkah pertama adalah melakukan penelitian mendalam. Pelajari berbagai jenis cryptocurrency, buat rencana investasi sesuai tujuan dan toleransi risiko Anda, lalu mulai beli aset yang diminati. Pahami volatilitas pasar dan lakukan diversifikasi portofolio dengan berinvestasi di beberapa cryptocurrency. Jika perlu, konsultasikan dengan profesional keuangan. Platform Triv memudahkan Anda mempelajari berbagai jenis kripto, serta menyediakan layanan kontak dan komunitas untuk dukungan. Install aplikasi Triv (Marketplace Cryptocurrency Indonesia) sekarang juga!",
-        "description_2": ""
+        "description": {
+          "text_1": "Untuk pemula yang ingin berinvestasi cryptocurrency, langkah pertama adalah melakukan penelitian mendalam. Pelajari berbagai jenis cryptocurrency, buat rencana investasi sesuai tujuan dan toleransi risiko Anda, lalu mulai beli aset yang diminati. Pahami volatilitas pasar dan lakukan diversifikasi portofolio dengan berinvestasi di beberapa cryptocurrency. Jika perlu, konsultasikan dengan profesional keuangan. Platform Triv memudahkan Anda mempelajari berbagai jenis kripto, serta menyediakan layanan kontak dan komunitas untuk dukungan. Install aplikasi Triv (Marketplace Cryptocurrency Indonesia) sekarang juga!",
+          "link_1": "(Marketplace Cryptocurrency Indonesia)",
+          "text_2": "sekarang juga!"
+        }
       },
       {
         "title": "Apakah Investasi Kripto Aman?",

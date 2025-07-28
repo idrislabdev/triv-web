@@ -233,7 +233,7 @@ export default async function Liverate({ params }: any) {
             liverates={liverates}
             metaLiverate={metaLiverate}
           />
-          <LiverateAskSection objLang={faq_section} />
+          <LiverateAskSection lang={params.lang} objLang={faq_section} />
           <LiverateInvestasiNowSection
             lang={params.lang}
             objLang={invest_section}

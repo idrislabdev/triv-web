@@ -4,7 +4,7 @@
     "description": "See the price development of your favorite crypto with Real-time Crypto Charts. Make smart decisions by monitoring live price updates and identify trading opportunities instantly."
   },
   "topmovers_section": {
-    "title": "🔥 Top Movers (24 Jam)"
+    "title": "🔥 Top Movers (24 Hours)"
   },
   "invest_section": {
     "title": "Start Investing Now",
@@ -58,8 +58,11 @@
       },
       {
         "title": "How to invest in crypto for beginners?",
-        "description_1": "For beginners who want to invest in cryptocurrency, the first step is to do in-depth research. Learn about the different types of cryptocurrencies available, create an investment plan that suits your goals and risk tolerance, and start buying the cryptocurrencies you are interested in. It is important to understand market volatility and diversify your portfolio by investing in several cryptocurrencies. Also consider consulting a financial professional if needed. The triv platform makes it easy for you to learn about various types of crypto, you can also contact our service contact or join our community. Install the Triv application (Indonesian Cryptocurrency Marketplace) now",
-        "description_2": ""
+        "description": {
+          "text_1": "For beginners who want to invest in cryptocurrency, the first step is to do in-depth research. Learn about the different types of cryptocurrencies available, create an investment plan that suits your goals and risk tolerance, and start buying the cryptocurrencies you are interested in. It is important to understand market volatility and diversify your portfolio by investing in several cryptocurrencies. Also consider consulting a financial professional if needed. The triv platform makes it easy for you to learn about various types of crypto, you can also contact our service contact or join our community. Install the Triv application",
+          "link_1": "(Indonesian Cryptocurrency Marketplace)",
+          "text_2": "now"
+        }
       },
       {
         "title": "Is crypto investing safe?",
